@@ -1,0 +1,15 @@
+﻿Allow the player to toggle certain rules on and off. Rules have simplistic names but when hovered over they can be explained
+
+Rules:
+* Hints - Does the user want the game to help teach the rules as the game goes on?
+* Force Hand - If you can play, you have to. (Dunno about this being available for toggling) 
+* Ace - toggle between play on anything or play on same suit
+* 2 Pick Up Two
+* 7 Same Suit Runs (and runs on final card of same suit) 
+* 8 or Wait
+* Black Queen
+* Red Queen
+* Suicide King
+* Jack Back
+* [Insert swap hands rule here]
+* Play on till someon comes last
