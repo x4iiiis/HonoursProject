@@ -26,6 +26,8 @@
 % These packages are all incorporated in the memoir class to one degree or another...
 \usepackage{pdfpages}
 % Testing to see how IPO will look as I use this and use it as a pdf
+\usepackage{csquotes}
+%" facing the wrong way so trying to rectify that
 
 %header and footer settings
 \pagestyle{fancyplain}
@@ -67,6 +69,7 @@
 %LaTeX let you define the abstract separately so it wont get sucked into the main document.
 \begin{abstract}
 % fill the abstract in here
+$\\ \clubsuit \\\\ \diamondsuit \\\\ \heartsuit \\\\ \spadesuit$
 
 \end{abstract}
 \pagebreak
@@ -122,7 +125,11 @@ Over several tens of years, a large amount of research and development has been 
 In March of 2016, the goal of getting such an agent to compete and win at the highest level was reached, when AlphaGo, a program engineered by Google, managed to overcome the Go world champion human player, Lee Sedol\cite{2}. This was then reported as a major breakthrough for the artificial intelligence field. 
 \\
 \subsection{What is a Neural Network?}
-Artificial neural networks are a rough representation of the human brain. They are built using a series of layers of network nodes. These nodes are used to represent neurons in the brain. The first is an input layer, followed by two or three hidden layers before a final output layer of nodes\cite{3}. The connection between these nodes is representative of axons in the brain. The input and output layers of the network take data in and output results respectively, with the processing of said data being done within the hidden layers - but how does it work? 
+Artificial neural networks, commonly referred to simply as neural networks, are a rough representation of the human brain. Human brains can be thought of as highly complex and non-linear systems for processing information in parallel\cite{7}. 
+
+To emulate this, neural networks are built using a series of layers of network nodes. These nodes are used to represent neurons in the brain. The first is an input layer, followed by two or three hidden layers before a final output layer of nodes\cite{3}. The connection between these nodes is representative of axons in the brain. 
+
+In an artificial neural network, the input and output layers take data in and produce results respectively, with the processing of said data being done within the hidden layers - but how does it work? 
 
 \subsubsection{Perceptrons}
 One type of artificial neuron (or node) is known as a 'perceptron.' Each perceptron receives several inputs and uses them to produce one binary output\cite{4}.  
@@ -157,27 +164,10 @@ In its full extended form, with \textit{x} being used to symbolise the inputs, t
 
 /////////////////////////////////////////////////////////////////////////////////\\
 To understand the similarity to the perceptron model, suppose 
-z
-$\equiv w \cdot x + b$
-is a large positive number. Then 
-$e^{-z}
-\approx 0$
-and so 
-$\sigma(z) \approx 1$
-. In other words, when 
-$z = w
-\cdot x+b$
-is large and positive, the output from the sigmoid neuron is approximately 1, just as it would have been for a perceptron. Suppose on the other hand that 
-$z = w \cdot x+b$
-is very negative. Then 
-$e^{-z} \rightarrow \infty$
-, and
-$\sigma(z) \approx 0$
-. So when 
-$z = w \cdot x +b$
-is very negative, the behaviour of a sigmoid neuron also closely approximates a perceptron. It's only when 
-$w \cdot x+b$
-is of modest size that there's much deviation from the perceptron model\cite{4}.
+z $\equiv w \cdot x + b$ is a large positive number. Then 
+$e^{-z} \approx 0$ and so $\sigma(z) \approx 1$. In other words, when $z = w \cdot x+b$ is large and positive, the output from the sigmoid neuron is approximately 1, just as it would have been for a perceptron. Suppose on the other hand that $z = w \cdot x+b$ is very negative. Then $e^{-z} \rightarrow \infty$, and $\sigma(z) \approx 0$. So when 
+$z = w \cdot x +b$ is very negative, the behaviour of a sigmoid neuron also closely approximates a perceptron. It's only when 
+$w \cdot x+b$ is of modest size that there's much deviation from the perceptron model\cite{4}.
 
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -194,32 +184,148 @@ The smooth nature of $\sigma$ means that minor changes in the weights and bias -
 \Delta \mbox{output} \approx \sum_j \frac{\partial \, \mbox{output}}{\partial w_j}
 \Delta w_j + \frac{\partial \, \mbox{output}}{\partial b} \Delta b
 \end{eqnarray}
-The sum is over all of the weights, 
-$w_j$, and 
-$\partial \,
-\mbox{output} / \partial w_j$
-and
-$\partial \, \mbox{output} /\partial
-b$
-denote partial derivatives of the output with respect to 
-$w_j$
-and 
-\textit{b}, respectively.
+The sum is over all of the weights, $w_j$, and $\partial \, \mbox{output} / \partial w_j$
+and $\partial \, \mbox{output} /\partial b$ denote partial derivatives of the output with respect to $w_j$ and  \textit{b}, respectively.
 
 As $\Delta \mbox{output}$ is a linear function of the changes
-$\Delta w_j$ and $\Delta b_j$ in the weights and bias. This linearity makes it easy to choose small changes in the weights and biases to achieve any desired small change in the output. So while sigmoid neurons have much of the same qualitative behaviour as perceptrons, they make it much easier to figure out how changing the weights and biases will change the output.
+$\Delta w_j$ and $\Delta b_j$ in the weights and bias, this linearity makes it easy to choose small changes in the weights and biases to achieve any desired small change in the output. So while sigmoid neurons have much of the same qualitative behaviour as perceptrons, they make it much easier to figure out how changing the weights and biases will change the output.
 
 ///////////////////////////////////////////////////////////////////////////////\\
 \subsection{Evolutionary Algorithms}
-As the name might suggest, an evolutionary algorithm is one that evolves. It does so to encourage finding the most optimal solution to a problem. A vast amount of varying evolutionary algorithms exist, but at the core of them all is the same principal idea: "given a population of individuals the environmental pressure causes natural selection (survival of the fittest) and this causes a rise in the fitness of the population"\cite{5}.
-\\
+As the name might suggest, an evolutionary algorithm is one that evolves. It does so to encourage finding the most optimal solution to a problem. A vast amount of varying evolutionary algorithms exist, but at the core of them all is the same principal idea: \enquote{given a population of individuals the environmental pressure causes natural selection (survival of the fittest) and this causes a rise in the fitness of the population}\cite{5}. As a result, the population adapts over time to its environment. 
+
+What is the process of evolution? The generational cycle works as follows:
+
+\subsubsection{Representation}
+Step one when defining an evolutionary algorithm is to bridge the gap between the \enquote{real world} and the \enquote{evolutionary algorithm world}\cite{5}. That is, to link what are known as phenotypes, to representative genotypes. 
+
+%In order to use an evolutionary algorithm, possible solutions must be represented as what are known as chromosomes (or genotypes). 
+
+\begin{itemize}
+	\item Phenotype:
+	\begin{itemize}
+		\item A solution to a problem
+	\end{itemize}
+	
+	\item Genotype 
+	\begin{itemize}
+		\item Chromosome used to represent the solution to a problem
+	\end{itemize}
+\end{itemize}
+
+Representation refers to specifying which genotypes equate to each phenotype\cite{5}. For example, if an integer is the solution to a problem, it is the phenotype, and a binary representation of that particular integer would be the genotype relating to that phenotype. 
+
+A genotype (or chromosome) is made up of genes. Values are assigned to each gene, and may be referred to as alleles. These can be of any type, or even a mixture. Types include binary strings, integers, real values, permutations and symbols. So in the example above, each gene would be either a 1 or 0, combining to form the integer as an overall chromosome.
+
+Sometimes it may not be quite so straightforward, and genotypes need to be explicitly mapped to phenotypes, as seen in Figure 3. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{GenoToPheno.png}
+	\caption{Genotype vs Phenotype}
+\end{figure}
+
+
+\subsubsection{Initialisation}
+In the beginning, we start off with a population comprised completely of random chromosomes. This is likely to yield very poor results, however there is always a chance that some may be better. These individuals must then be evaluated.
+
+\subsubsection{Fitness}
+The fitness of an individual is what defines how fit for purpose it is. This measurement of quality will be defined differently for every algorithm, depending entirely on the context of problems it is being used to solve. In this project, the fitness will correlate to the amount of illegal moves the agent attempts to make, and how many times it is forced to increase its hand rather than decrease it. However, as the game of switch is largely down to luck, this will have to be taken into account to incorporate some form of leniency to fitness calculations.  
+
+The role of an evaluation function (or fitness function) to encourage improvements by defining what an improvement is\cite{5}. This lays the foundation for selection. 
+
+\subsubsection{Selection}
+The process of choosing individuals, based on their fitness, from the population to become parents to the next generation of individuals is called selection\cite{5}. This is the driving force behind progressive evolution as it biases selection towards individuals of higher quality. 
+
+\subsubsection{Crossover}
+Sometimes referred to as recombination, crossover is an operation that merges genes from two parent genotypes together into one or two offspring genotypes\cite{5}. 
+
+Crossover can be defined in a few ways. There is one-point crossover, where a randomly chosen point along the length of a chromosome determines which genes are passed on from that particular genotype, and the rest will come from the other parent. This is demonstrated in Figure 4.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{OnePointCrossover.png}
+	\caption{One-Point Crossover}
+\end{figure}
+
+Next, n-point crossover is when more than one (n) point is chosen, and chromosomes can be split up in different ways, as seen in Figure 5. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{NPointCrossover.png}
+	\caption{N-Point Crossover}
+\end{figure}
+
+Another type of crossover is called uniform. In this case, each gene of the offspring is randomly selected by deciding which of the two parents to inherit from. This is demonstrated in Figure 6.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{UniformCrossover.png}
+	\caption{Uniform Crossover}
+\end{figure}
+
+
+In the case of arithmetic crossover, an average of the two parent genes is calculated and used for the child gene. This is useful if the genes consist of real numbers. Figure 7 depicts this.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{ArithmeticCrossover.png}
+	\caption{Arithmetic Crossover}
+\end{figure}
+
+All of the above techniques are used in binary and integer chromosome representations. Permutations cannot be recombined using any of these techniques, but are beyond the scope of this project. 
+
+\subsubsection{Mutation}
+When applied to a genotype, mutation returns a slightly mutated offspring\cite{5}. It can create new genes in the population, which in turn diversifies the population. 
+
+Like with crossover, there are different ways to perform mutation. In the case of binary chromosomes, we would allow each gene to 'flip' from a 1 to a 0 or vice versa, as demonstrated by Figure 8. Each gene has a probability of being mutated in this way, which will often be calculated as 1/\textit{n} with \textit{n} being representative of the chromosome length.
+
+
+%Binary
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{BinaryMutation.png}
+	\caption{Binary Mutation}
+\end{figure}
+
+Integers are slightly different. The probability is remains the same, but the difference is that a set of possible numbers, for example 0 to 9, is set up and when a gene is chosen for mutation, a number within that range is randomly generated and used in the offspring. This is displayed in Figure 9.
+
+%Integer
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{IntegerMutation.png}
+	\caption{Integer Mutation}
+\end{figure}
+
+---------Don't understand floating point---------\\
+
+Again, permutations work in a completely different way, but are not considered as part of this project. 
+
+\subsubsection{Replacement}
+This is the part where individuals are removed from the population to make way for a generation of new and hopefully improved genotypes. We could just remove the oldest genotype in the population, but this could be one with a high fitness! This can also be done randomly, but again there's a risk that we could be removing individuals of high quality. The other way is to determine which individuals to remove using the fitness. We could just get rid of the least fit genotypes, which could lead to the population improving very quickly, however it could also lead to premature convergence.\\
+
 \subsection{NeuroEvolution for Augmenting Topologies (NEAT)}
-"NEAT is a method for evolving speciated neural networks of arbitrary structures and sizes. NEAT leverages the evolution of structure to make neuroevolution more efficient"\cite{6}.
-\\
+\enquote{NEAT is a method for evolving speciated neural networks of arbitrary structures and sizes. NEAT leverages the evolution of structure to make neuroevolution more efficient}\cite{6}.
+
+It is claimed to result in significantly faster learning than neuroevolution techniques using fixed network topologies.
+ \\
+ 
+ 
 \subsection{Summary}
 .
+
 \newpage
 \section{Literature Review}
+As previously mentioned, video games are a field that has been used as a catalyst for research and development in artificial intelligence due to the relatively risk-free nature of it when compared to other areas where AI might be used for quite some time now, but it was only recently that a program was able to beat a world class human player in the game of Go\cite{2}. This is despite a huge amount of work and time being injected into developing these types of game-playing agents with the desired result of beating the best human players in the world at chess, and more recently, go. 
+
+In this section, a review will take place regarding 
+
+
+
+
+
+\newpage
+\section{title}
 And so on for each of the chapters.  The template automatically starts new chapters on a new page.  The associated guidelines tell you what the available styles do and also how to structure a report.
 There is a section break on this page that you should be careful NOT to delete otherwise the references and appendices will be numbered continuously with the rest of the document.
 
@@ -286,7 +392,7 @@ Whilst the final product will be a playable game, it will really be aimed more a
 \large{\textbf{The Work to be Undertaken:}}
 \begin{itemize}
 	\item Design and build a game of Switch without the AI agent
-	\item Thoroughly test the barebones game to ensure it works perfectly without bugs
+	\item Thoroughly test the bare-bones game to ensure it works perfectly without bugs
 	\item Research neural networks and evolutionary algorithms
 	\item Implement the AI agent
 	\item Experiment with a few different techniques and test how they perform in terms of improving or decreasing the agent’s intelligence/performance in game.

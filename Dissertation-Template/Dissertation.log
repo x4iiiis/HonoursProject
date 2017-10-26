@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.11)  24 OCT 2017 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.11)  26 OCT 2017 04:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -433,35 +433,62 @@ File: pppdftex.def 2015/05/11 v0.4x Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count106
 \AM@templatesizebox=\box28
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2015/04/15 v5.1e context-sensitive quotations (JAW)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count107
+)
+\csq@reset=\count108
+\csq@gtype=\count109
+\csq@glevel=\count110
+\csq@qlevel=\count111
+\csq@maxlvl=\count112
+\csq@tshold=\count113
+\csq@ltx@everypar=\toks23
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2015/04/15 v5.1e csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+
 (./Dissertation.aux)
 \openout1 = `Dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
+\scratchcounter=\count114
 \scratchdimen=\dimen137
 \scratchbox=\box29
-\nofMPsegments=\count108
-\nofMParguments=\count109
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count110
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count117
 \MPscratchDim=\dimen138
-\MPnumerator=\count111
-\makeMPintoPDFobject=\count112
-\everyMPtoPDFconversion=\toks24
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks25
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -522,7 +549,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./Dis
 sertation-Dec.tex) [1] (./Dissertation-DP.tex)
-[2] [3] (./Dissertation.toc)
+[2]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 72.
+ [3] (./Dissertation.toc)
 \tf@toc=\write3
 \openout3 = `Dissertation.toc'.
 
@@ -536,174 +566,274 @@ sertation-Dec.tex) [1] (./Dissertation-DP.tex)
 
 
 [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 106.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 109.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 106.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 109.
  [8]
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
+Underfull \hbox (badness 10000) in paragraph at lines 118--120
 
  []
 
 
-LaTeX Warning: Citation `1' on page 9 undefined on input line 120.
+LaTeX Warning: Citation `1' on page 9 undefined on input line 123.
 
 
-LaTeX Warning: Citation `2' on page 9 undefined on input line 122.
+LaTeX Warning: Citation `2' on page 9 undefined on input line 125.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--124
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 
  []
 
 
-LaTeX Warning: Citation `3' on page 9 undefined on input line 125.
+LaTeX Warning: Citation `7' on page 9 undefined on input line 128.
 
 
-LaTeX Warning: Citation `4' on page 9 undefined on input line 128.
+LaTeX Warning: Citation `3' on page 9 undefined on input line 130.
+
+
+LaTeX Warning: Citation `4' on page 9 undefined on input line 135.
 
 <images/Perceptron.png, id=36, 281.05pt x 138.5175pt>
 File: images/Perceptron.png Graphic file (type png)
 
 <use images/Perceptron.png>
-Package pdftex.def Info: images/Perceptron.png used on input line 132.
+Package pdftex.def Info: images/Perceptron.png used on input line 139.
 (pdftex.def)             Requested size: 281.0493pt x 138.51715pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `4' on page 9 undefined on input line 136.
+LaTeX Warning: Citation `4' on page 9 undefined on input line 143.
 
 [9]
 
-LaTeX Warning: Citation `4' on page 10 undefined on input line 140.
+LaTeX Warning: Citation `4' on page 10 undefined on input line 147.
+
+[10 <./images/Perceptron.png>]
+
+LaTeX Warning: Citation `4' on page 11 undefined on input line 170.
 
 
-LaTeX Warning: Citation `4' on page 10 undefined on input line 180.
-
-
-Overfull \hbox (103.49487pt too wide) in paragraph at lines 158--181
+Overfull \hbox (103.49487pt too wide) in paragraph at lines 165--171
 []\OT1/cmr/m/n/12 /////////////////////////////////////////////////////////////
 //////////////////// 
  []
 
-[10 <./images/Perceptron.png>]
-Overfull \hbox (91.745pt too wide) in paragraph at lines 182--183
+
+Overfull \hbox (91.745pt too wide) in paragraph at lines 172--173
 []\OT1/cmr/m/n/12 /////////////////////////////////////////////////////////////
 ////////////////// 
  []
 
-<images/SigmoidFunction.png, id=50, 781.92125pt x 488.82625pt>
+<images/SigmoidFunction.png, id=49, 781.92125pt x 488.82625pt>
 File: images/SigmoidFunction.png Graphic file (type png)
 
 <use images/SigmoidFunction.png>
-Package pdftex.def Info: images/SigmoidFunction.png used on input line 185.
+Package pdftex.def Info: images/SigmoidFunction.png used on input line 175.
 (pdftex.def)             Requested size: 390.00517pt x 142.26318pt.
 
-Overfull \hbox (91.745pt too wide) in paragraph at lines 191--193
+Overfull \hbox (91.745pt too wide) in paragraph at lines 181--183
 []\OT1/cmr/m/n/12 /////////////////////////////////////////////////////////////
 //////////////////
  []
 
-
-Overfull \hbox (91.745pt too wide) in paragraph at lines 212--213
+[11 <./images/SigmoidFunction.png>]
+Overfull \hbox (91.745pt too wide) in paragraph at lines 193--194
 []\OT1/cmr/m/n/12 /////////////////////////////////////////////////////////////
 ////////////////// 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
-
- []
-
-[11 <./images/SigmoidFunction.png>]
-
-LaTeX Warning: Citation `5' on page 12 undefined on input line 214.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 214--216
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
 
-LaTeX Warning: Citation `6' on page 12 undefined on input line 217.
+LaTeX Warning: Citation `5' on page 12 undefined on input line 195.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--219
+LaTeX Warning: Citation `5' on page 12 undefined on input line 200.
+
+
+LaTeX Warning: Citation `5' on page 12 undefined on input line 216.
+
+
+Overfull \hbox (33.26512pt too wide) in paragraph at lines 216--217
+[]\OT1/cmr/m/n/12 Representation refers to spec-i-fy-ing which geno-types equat
+e to each phenotype[[]].
+ []
+
+<images/GenoToPheno.png, id=55, 1473.505pt x 232.87pt>
+File: images/GenoToPheno.png Graphic file (type png)
+
+<use images/GenoToPheno.png>
+Package pdftex.def Info: images/GenoToPheno.png used on input line 224.
+(pdftex.def)             Requested size: 390.0pt x 61.63208pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12]
+
+LaTeX Warning: Citation `5' on page 13 undefined on input line 235.
+
+
+LaTeX Warning: Citation `5' on page 13 undefined on input line 238.
+
+
+LaTeX Warning: Citation `5' on page 13 undefined on input line 241.
+
+
+Overfull \hbox (11.56256pt too wide) in paragraph at lines 241--242
+\OT1/cmr/m/n/12 genes from two par-ent geno-types to-gether into one or two off
+-spring genotypes[[]]. 
+ []
+
+<images/OnePointCrossover.png, id=60, 1761.58125pt x 475.7775pt>
+File: images/OnePointCrossover.png Graphic file (type png)
+
+<use images/OnePointCrossover.png>
+Package pdftex.def Info: images/OnePointCrossover.png used on input line 247.
+(pdftex.def)             Requested size: 390.0pt x 105.332pt.
+ [13 <./images/GenoToPheno.png>]
+<images/NPointCrossover.png, id=65, 1723.43875pt x 504.88625pt>
+File: images/NPointCrossover.png Graphic file (type png)
+
+<use images/NPointCrossover.png>
+Package pdftex.def Info: images/NPointCrossover.png used on input line 255.
+(pdftex.def)             Requested size: 390.0pt x 114.24933pt.
+
+<images/UniformCrossover.png, id=66, 1767.60374pt x 335.2525pt>
+File: images/UniformCrossover.png Graphic file (type png)
+
+<use images/UniformCrossover.png>
+Package pdftex.def Info: images/UniformCrossover.png used on input line 263.
+(pdftex.def)             Requested size: 390.0pt x 73.96552pt.
+
+<images/ArithmeticCrossover.png, id=67, 1047.915pt x 583.17876pt>
+File: images/ArithmeticCrossover.png Graphic file (type png)
+
+<use images/ArithmeticCrossover.png>
+Package pdftex.def Info: images/ArithmeticCrossover.png used on input line 272.
+
+(pdftex.def)             Requested size: 390.0pt x 217.03636pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14 <./images/OnePointCrossover.png> <./images/NPointCrossover.png> <./images/U
+niformCrossover.png>]
+
+LaTeX Warning: Citation `5' on page 15 undefined on input line 279.
+
+<images/BinaryMutation.png, id=74, 1756.5625pt x 231.86626pt>
+File: images/BinaryMutation.png Graphic file (type png)
+
+<use images/BinaryMutation.png>
+Package pdftex.def Info: images/BinaryMutation.png used on input line 287.
+(pdftex.def)             Requested size: 390.0pt x 51.47774pt.
+ [15 <./images/ArithmeticCrossover.png> <./images/BinaryMutation.png>]
+<images/IntegerMutation.png, id=80, 1627.07875pt x 145.54375pt>
+File: images/IntegerMutation.png Graphic file (type png)
+
+<use images/IntegerMutation.png>
+Package pdftex.def Info: images/IntegerMutation.png used on input line 296.
+(pdftex.def)             Requested size: 390.0pt x 34.88457pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
-[12] [13] [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
+LaTeX Warning: Citation `6' on page 16 undefined on input line 308.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--312
+
+ []
+
+[16 <./images/IntegerMutation.png>]
+
+LaTeX Warning: Citation `2' on page 17 undefined on input line 319.
+
+[17] [18] [19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--272
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
 
-[16]
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
+
+ []
+
+[21]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 276.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 382.
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
  []
 
-[17]
-Overfull \hbox (1.1135pt too wide) in paragraph at lines 292--293
+[22]
+Overfull \hbox (1.1135pt too wide) in paragraph at lines 398--399
 \OT1/cmr/m/n/14.4 they per-form in terms of im-prov-ing or de-creas-ing the age
 nt's
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--298
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
 
  []
 
 
-Overfull \hbox (6.90292pt too wide) in paragraph at lines 301--302
+Overfull \hbox (6.90292pt too wide) in paragraph at lines 407--408
 []\OT1/cmr/m/n/14.4 Lubberts, & Mi-ikku-lainen (2001). Co-Evolving a Go-Playing
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--309
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
 
-[18] [19] (./Dissertation.aux)
+[23] [24] (./Dissertation.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4927 strings out of 493089
- 73191 string characters out of 6134842
- 147909 words of memory out of 5000000
- 8321 multiletter control sequences out of 15000+600000
- 10411 words of font info for 36 fonts, out of 8000000 for 9000
+ 5786 strings out of 493089
+ 86128 string characters out of 6134842
+ 171017 words of memory out of 5000000
+ 9161 multiletter control sequences out of 15000+600000
+ 11027 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,11n,43p,783b,286s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,43p,801b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -715,10 +845,10 @@ al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on Dissertation.pdf (20 pages, 159610 bytes).
+Output written on Dissertation.pdf (25 pages, 298032 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 148 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
