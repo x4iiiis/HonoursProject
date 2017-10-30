@@ -1,28 +1,34 @@
-\contentsline {section}{\numberline {1}Introduction}{8}
-\contentsline {subsection}{\numberline {1.1}Project Aims and Structure}{8}
-\contentsline {subsubsection}{\numberline {1.1.1}Overview Of Project Content and Milestones}{8}
-\contentsline {section}{\numberline {2}Background}{9}
-\contentsline {subsection}{\numberline {2.1}Introduction}{9}
-\contentsline {subsection}{\numberline {2.2}History of AI in Games}{9}
-\contentsline {subsection}{\numberline {2.3}What is a Neural Network?}{9}
-\contentsline {subsubsection}{\numberline {2.3.1}Perceptrons}{9}
-\contentsline {subsubsection}{\numberline {2.3.2}Sigmoid Neurons}{10}
-\contentsline {subsection}{\numberline {2.4}Evolutionary Algorithms}{12}
-\contentsline {subsubsection}{\numberline {2.4.1}Representation}{12}
-\contentsline {subsubsection}{\numberline {2.4.2}Initialisation}{13}
-\contentsline {subsubsection}{\numberline {2.4.3}Fitness}{13}
-\contentsline {subsubsection}{\numberline {2.4.4}Selection}{13}
-\contentsline {subsubsection}{\numberline {2.4.5}Crossover}{13}
-\contentsline {subsubsection}{\numberline {2.4.6}Mutation}{15}
-\contentsline {subsubsection}{\numberline {2.4.7}Replacement}{16}
-\contentsline {subsection}{\numberline {2.5}NeuroEvolution for Augmenting Topologies (NEAT)}{16}
-\contentsline {subsection}{\numberline {2.6}Summary}{16}
-\contentsline {section}{\numberline {3}Literature Review}{17}
-\contentsline {section}{\numberline {4}title}{18}
-\contentsline {section}{\numberline {5}Additional Information / Knowledge Required}{19}
-\contentsline {section}{Appendices}{21}
-\contentsline {section}{\numberline {A}Project Overview}{21}
-\contentsline {subsection}{\numberline {A.A}Example sub appendices}{24}
-\contentsline {section}{\numberline {B}Second Formal Review Output}{24}
-\contentsline {section}{\numberline {C}Diary Sheets (or other project management evidence)}{24}
-\contentsline {section}{\numberline {D}Appendix 4 and following}{24}
+\contentsline {section}{\numberline {1}Introduction}{9}
+\contentsline {subsection}{\numberline {1.1}Project Aims and Structure}{9}
+\contentsline {subsubsection}{\numberline {1.1.1}Overview Of Project Content and Milestones}{9}
+\contentsline {section}{\numberline {2}Background}{10}
+\contentsline {subsection}{\numberline {2.1}Introduction}{10}
+\contentsline {subsection}{\numberline {2.2}History of AI in Games}{10}
+\contentsline {subsection}{\numberline {2.3}What is a Neural Network?}{10}
+\contentsline {subsubsection}{\numberline {2.3.1}Perceptrons}{10}
+\contentsline {subsubsection}{\numberline {2.3.2}Sigmoid Neurons}{11}
+\contentsline {subsection}{\numberline {2.4}Evolutionary Algorithms}{13}
+\contentsline {subsubsection}{\numberline {2.4.1}Representation}{13}
+\contentsline {subsubsection}{\numberline {2.4.2}Initialisation}{14}
+\contentsline {subsubsection}{\numberline {2.4.3}Fitness}{14}
+\contentsline {subsubsection}{\numberline {2.4.4}Selection}{14}
+\contentsline {subsubsection}{\numberline {2.4.5}Crossover}{14}
+\contentsline {subsubsection}{\numberline {2.4.6}Mutation}{16}
+\contentsline {subsubsection}{\numberline {2.4.7}Replacement}{17}
+\contentsline {subsection}{\numberline {2.5}NeuroEvolution for Augmenting Topologies (NEAT)}{17}
+\contentsline {subsection}{\numberline {2.6}Summary}{17}
+\contentsline {section}{\numberline {3}Literature Review}{18}
+\contentsline {subsection}{\numberline {3.1}AI for Playing Games}{18}
+\contentsline {subsection}{\numberline {3.2}Why Neural Networks?}{18}
+\contentsline {subsection}{\numberline {3.3}Why Evolve Neural Networks?}{18}
+\contentsline {subsection}{\numberline {3.4}Why Co-Evolve Topologies and Weights?}{18}
+\contentsline {subsection}{\numberline {3.5}How intelligent is it?}{18}
+\contentsline {subsection}{\numberline {3.6}Summary}{18}
+\contentsline {section}{\numberline {4}title}{19}
+\contentsline {section}{\numberline {5}Additional Information / Knowledge Required}{20}
+\contentsline {section}{Appendices}{22}
+\contentsline {section}{\numberline {A}Project Overview}{22}
+\contentsline {subsection}{\numberline {A.A}Example sub appendices}{25}
+\contentsline {section}{\numberline {B}Second Formal Review Output}{25}
+\contentsline {section}{\numberline {C}Diary Sheets (or other project management evidence)}{25}
+\contentsline {section}{\numberline {D}Appendix 4 and following}{25}
