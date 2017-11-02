@@ -124,7 +124,7 @@ Video games have been a popular area of interest for artificial intelligence dev
 
 Over several tens of years, a large amount of research and development has been done in an attempt to perfect chess-playing artificial intelligence agents\citep{L2PChess}, and work has more recently been put in to do the same with the game of Go.  
 
-In March of 2016, the goal of getting such an agent to compete and win at the highest level was reached, when AlphaGo, a program engineered by Google, managed to overcome the Go world champion human player, Lee Sedol\citep{ABriefHistoryOfGameAI}. This was then reported as a major breakthrough for the artificial intelligence field. 
+In March of 2016, the goal of getting such an agent to compete and win at the highest level was reached when AlphaGo, a program engineered by Google, managed to overcome the Go world champion human player, Lee Sedol\citep{ABriefHistoryOfGameAI}. This was then reported as a major breakthrough for the artificial intelligence field. 
 \\
 \subsection{What is a Neural Network?}
 Artificial neural networks, commonly referred to simply as neural networks, are a rough representation of the human brain. Human brains can be thought of as highly complex and non-linear systems for processing information in parallel\citep{NeuralNetworksAComprehensiveFoundation}. 
@@ -134,7 +134,7 @@ To emulate this, neural networks are built using a series of layers of network n
 In an artificial neural network, the input and output layers take data in and produce results respectively, with the processing of said data being done within the hidden layers - but how does it work? 
 
 \subsubsection{Perceptrons}
-One type of artificial neuron (or node) is known as a 'perceptron.' Each perceptron receives several inputs and uses them to produce one binary output\citep{NeuralNetworksAndDeepLearning}.  
+One type of artificial neuron (or node) is known as a \enquote{perceptron.} Each perceptron receives several inputs and uses them to produce one binary output\citep{NeuralNetworksAndDeepLearning}.  
 
 \begin{figure}[h]
 	\centering
@@ -142,7 +142,7 @@ One type of artificial neuron (or node) is known as a 'perceptron.' Each percept
 	\caption{A Single Perceptron}
 \end{figure}
 
-Frank Rosenblatt, the scientist who developed the perceptron in the 1950s and 1960s, devised a rule for computing the output from these neurons. Using what he called 'weights,' the importance of each input is assessed and expressed. Each input has a weight assigned to it, and the resultant output from these inputs - either a 1 or 0 - is dependent on whether or not some threshold value is less than or greater than the sum of the weights from all of the inputs to that particular perceptron. Therefore, if the weighted sum is less than or equal to the threshold value, the output is a 0. Otherwise, a 1\citep{NeuralNetworksAndDeepLearning}. Both the threshold value and the input weights are real numbers. These can be tweaked to alter the decisions made by a neural network. 
+Frank Rosenblatt, the scientist who developed the perceptron in the 1950s and 1960s, devised a rule for computing the output from these neurons. Using what he called \enquote{weights,} the importance of each input is assessed and expressed. Each input has a weight assigned to it, and the resultant output from these inputs - either a 1 or 0 - is dependent on whether or not some threshold value is less than or greater than the sum of the weights from all of the inputs to that particular perceptron. Therefore, if the weighted sum is less than or equal to the threshold value, the output is a 0. Otherwise, a 1\citep{NeuralNetworksAndDeepLearning}. Both the threshold value and the input weights are real numbers. These can be tweaked to alter the decisions made by a neural network. 
 
 \subsubsection{Sigmoid Neurons}
 
@@ -330,9 +330,9 @@ It is claimed to result in significantly faster learning than neuroevolution tec
 \section{Literature Review}
 Video games are a field that has been used as a catalyst for research and development in artificial intelligence due to the relatively risk-free nature of it when compared to other areas where AI might be used for quite some time now, but it was only recently that a program was able to beat a world class human player in the game of Go\citep{ABriefHistoryOfGameAI}. This is despite a huge amount of work and time being injected into developing these types of game-playing agents with the desired result of beating the best human players in the world at Chess, and more recently, Go. 
 
-This project aims to create a digital version of the card game Switch. While playing, each competitor has no idea what cards their opponent(s) hold. They only know what cards they themselves hold, and what the most recently played card was. They will also know whose turn it is and what direction the play is going (if there are multiple remaining opponents). 
+This project aims to create a digital version of the card game Switch. While playing, each competitor has no idea what cards are held by their opponent(s). They only know what cards they themselves hold, and what the most recently played card was. They will also know whose turn it is and what direction the play is going (if there are multiple remaining opponents). 
 
-Solutions for Chess and Go might use search trees for decision making, however this requires knowing the full state of the game, including the location of every game piece on the board. This is what is known as 'perfect information.' However, in card games such as Poker or Switch, there are unknowns such as the hands other players have or the value of cards that are face down. Therefore, we are faced with \textit{'imperfect information.'}\\
+Solutions for Chess and Go might use search trees for decision making, however this requires knowing the full state of the game, including the location of every game piece on the board. This is what is known as \enquote{perfect information.} However, in card games such as Poker or Switch, there are unknowns such as the hands other players have or the value of cards that are face down. Therefore, we are faced with \textit{\enquote{imperfect information.}}\\
 
 %The game can also be described as dynamic, as each player takes their turn in sequence. This sequence can also be reversed if a Jack card is played. 
 
@@ -379,7 +379,7 @@ Imagine having to write the code for a solution to every single possible game st
 
 Additionally, hard-coding solutions to given situations would make the game predictable, and could also lead to making moves that are not actually the best for that current game state. The flexible nature of a neural network provides the potential to reach better solutions that hard-coding might miss out on. 
 
-In our Switch card game for example, there is a rule that states if the previous player played a 2, you must pick up two cards unless you have another 2. Knowing this, and wanting to force our opponents to inherit more cards, we might hard-code a strategy that says, "if you have a 2 and it's available to be played, play it." This could cost us a chance to win the game though! 
+In our Switch card game for example, there is a rule that states if the previous player played a 2, you must pick up two cards unless you have another 2. Knowing this, and wanting to force our opponent to inherit more cards, we might hard-code a strategy that says, \enquote{if you have a 2 and it's available to be played, play it.} This could cost us a chance to win the game though! 
 
 If we only had two cards left, both of the same suit and matching the suit of the most recently played card, one being a 2 and the other being a 7, we could play the 7 first, and that would allow us to play a run of that suit. This would allow us to play both cards and win the game. A neural network might learn that playing a 7 is better than deploying a 2, but our hard-coded strategy may not.\\
 
@@ -387,13 +387,11 @@ If we only had two cards left, both of the same suit and matching the suit of th
 %RELATE IT TO A (CARD) GAME 
 
 \subsection{Why Evolve Neural Networks?}
-Artificial neural network evolution has demonstrated positive results with tasks involving reinforcement learning, and has performed especially well with those that include hidden state information\citep{EfficientEvolutionOfNeuralNetworkTopologies}. This appeals to the needs of this project as it deals with unknown game aspects, such as the hand our opponent(s) hold. 
+Artificial neural network evolution has demonstrated positive results with tasks involving reinforcement learning, and has performed especially well with those that include hidden state information\citep{EfficientEvolutionOfNeuralNetworkTopologies}. This appeals to the needs of this project as it deals with unknown game aspects, such as the cards in other people's hands. 
 
 The evolution of neural networks has demonstrated a large degree of potential when coupled with tasks solvable by reinforcement learning techniques\citep{EfficientEvolutionOfNeuralNetworkTopologies}. It outperforms the basic methods of reinforcement learning against tasks that are considered benchmarks, and is therefore a justifiably sought after means of decision making. 
 
-Another arcade-style game that has been used in the research of neural networks is PAC-MAN. In a particular paper introducing the concept of trying to evolve a player for the retro classic, a simple ghost avoidance strategy was given a hard-coded implementation for comparison purposes. Perhaps expectedly, the results were underwhelming. The aim was to demonstrate that the neural networks were learning something more sophisticated than such a simple strategy\citep{MSPacMan}. 
-
-Evolving neural networks and allowing the controller to develop its own strategies, as opposed to hard-coding them, produced universally superior results.\\
+Another arcade-style game that has been used in the research of neural networks is PAC-MAN. In a particular paper introducing the concept of trying to evolve a player for the retro classic, a simple ghost avoidance strategy was given a hard-coded implementation for comparison purposes. Perhaps expectedly, the results were underwhelming. The aim was to demonstrate that the neural networks were learning something more sophisticated than such a simple strategy\citep{MSPacMan}. Evolving neural networks and allowing the controller to develop its own strategies, as opposed to hard-coding them, produced universally superior results.\\
 
 \subsection{Why Co-Evolve Topologies and Weights?}
 Much like when we compare evolving neural networks to standard reinforcement learning techniques, evolving network topologies often performs in a significantly superior manner to the alternative - in this case fixed topology neural network evolution\citep{EfficientEvolutionOfNeuralNetworkTopologies}. 
