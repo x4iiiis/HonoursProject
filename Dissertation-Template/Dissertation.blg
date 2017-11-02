@@ -7,7 +7,7 @@ Warning--empty year in ABriefHistoryOfGameAI
 Warning--empty year in TuringTest
 You've used 12 entries,
             2773 wiz_defined-function locations,
-            656 strings with 6631 characters,
+            656 strings with 6675 characters,
 and the built_in function-call counts, 3850 in all, are:
 = -- 322
 > -- 164
