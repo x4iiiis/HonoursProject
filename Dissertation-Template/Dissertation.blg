@@ -5,45 +5,45 @@ The style file: plainnat.bst
 Database file #1: Citations.bib
 Warning--empty year in ABriefHistoryOfGameAI
 Warning--empty year in TuringTest
-You've used 11 entries,
+You've used 12 entries,
             2773 wiz_defined-function locations,
-            650 strings with 6436 characters,
-and the built_in function-call counts, 3552 in all, are:
-= -- 296
-> -- 154
-< -- 11
-+ -- 57
-- -- 45
-* -- 203
-:= -- 568
-add.period$ -- 33
-call.type$ -- 11
-change.case$ -- 45
-chr.to.int$ -- 10
-cite$ -- 24
-duplicate$ -- 200
-empty$ -- 343
-format.name$ -- 64
-if$ -- 740
+            656 strings with 6631 characters,
+and the built_in function-call counts, 3850 in all, are:
+= -- 322
+> -- 164
+< -- 12
++ -- 61
+- -- 48
+* -- 218
+:= -- 617
+add.period$ -- 36
+call.type$ -- 12
+change.case$ -- 49
+chr.to.int$ -- 11
+cite$ -- 26
+duplicate$ -- 219
+empty$ -- 373
+format.name$ -- 68
+if$ -- 802
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 11
-newline$ -- 63
-num.names$ -- 44
-pop$ -- 123
+missing$ -- 12
+newline$ -- 68
+num.names$ -- 48
+pop$ -- 132
 preamble$ -- 1
-purify$ -- 37
+purify$ -- 40
 quote$ -- 0
-skip$ -- 153
+skip$ -- 166
 stack$ -- 0
-substring$ -- 22
-swap$ -- 13
+substring$ -- 24
+swap$ -- 14
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 106
+type$ -- 117
 warning$ -- 2
-while$ -- 33
+while$ -- 36
 width$ -- 0
-write$ -- 137
+write$ -- 149
 (There were 2 warnings)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -8,7 +8,7 @@
 \bibitem[Eiben and Smith(2015)]{IntroductionToEvolutionaryComputing}
 A.E. Eiben and J.E. Smith.
 \newblock \emph{Introduction to {E}volutionary {C}omputing}.
-\newblock Springer {B}erlin {H}eidelberg, 2015, 2015.
+\newblock Springer {B}erlin {H}eidelberg, 2015.
 
 \bibitem[Haykin(1999)]{NeuralNetworksAComprehensiveFoundation}
 Simon Haykin.
@@ -20,6 +20,13 @@ Andrey Kurenkov.
 \newblock A {B}rief {H}istory of {G}ame {AI}.
 \newblock URL
   \url{http://www.andreykurenkov.com/writing/a-brief-history-of-game-ai/}.
+
+\bibitem[Lucas(2005)]{MSPacMan}
+Simon~M. Lucas.
+\newblock Evolving a {N}eural {N}etwork {L}ocation {E}valuator to {P}lay {M}s.
+  {P}ac-{M}an.
+\newblock \emph{Proceedings of the 2005 {IEEE S}ymposium on {C}omputational
+  {I}ntelligence and {G}ames}, 2005.
 
 \bibitem[Nielsen(2015)]{NeuralNetworksAndDeepLearning}
 Michael~A Nielsen.

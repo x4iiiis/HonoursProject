@@ -290,7 +290,7 @@ Like with crossover, there are different ways to perform mutation. In the case o
 	\caption{Binary Mutation}
 \end{figure}
 
-Integers are slightly different. The probability is remains the same, but the difference is that a set of possible numbers, for example 0 to 9, is set up and when a gene is chosen for mutation, a number within that range is randomly generated and used in the offspring. This is displayed in Figure 9.
+Integers are slightly different. The probability is remains the same, but the difference is that a set of possible numbers, for example 0 to 9, is set up and when a gene is chosen for mutation, a number within that range is randomly generated and used in the offspring. This is displayed in Figure 9.\\
 
 %Integer
 \begin{figure}[h]
@@ -298,22 +298,19 @@ Integers are slightly different. The probability is remains the same, but the di
 	\includegraphics[width = \textwidth]{IntegerMutation.png}
 	\caption{Integer Mutation}
 \end{figure}
-
----------Don't understand floating point---------\\
-
+ 
 Again, permutations work in a completely different way, but are not considered as part of this project. 
 
 \subsubsection{Replacement}
 This is the part where individuals are removed from the population to make way for a generation of new and hopefully improved genotypes. We could just remove the oldest genotype in the population, but this could be one with a high fitness! This can also be done randomly, but again there's a risk that we could be removing individuals of high quality. The other way is to determine which individuals to remove using the fitness. We could just get rid of the least fit genotypes, which could lead to the population improving very quickly, however it could also lead to premature convergence.\\
 
+\newpage
 \subsection{NeuroEvolution for Augmenting Topologies (NEAT)}
 \enquote{NEAT is a method for evolving speciated neural networks of arbitrary structures and sizes. NEAT leverages the evolution of structure to make neuroevolution more efficient}\citep{NEAT}.
 
 It is claimed to result in significantly faster learning than neuroevolution techniques using fixed network topologies.
- \\
  
- 
- In NEAT, the mutation phase can alter network structures as well as connection weights \citep{EfficientEvolutionOfNeuralNetworkTopologies}. While connection weights are mutated in the same way as described in the previous section, network structure can be mutated in two ways:
+ In NEAT, the mutation phase can alter network structures as well as connection weights\citep{EfficientEvolutionOfNeuralNetworkTopologies}. While connection weights are mutated in the same way as described in the previous section, network structure can be mutated in two ways:
  
  \begin{itemize}
  	\item Add Connection
@@ -322,14 +319,12 @@ It is claimed to result in significantly faster learning than neuroevolution tec
  	\end{itemize}
  	\item Add Node
  	\begin{itemize}
- 		\item A connection that already exists is split and the new node replaces the old connection. The previous connection is disabled and the genome gains two new connections. 
+ 		\item A connection that already exists is split and the new node replaces the old connection. That previous connection is disabled and the genome gains two new connections. 
  	\end{itemize}
  \end{itemize}
  
  
- SOME GOOD STUFF IN \citep{EvolvingARovingEyeForGo}
-\subsection{Summary}
-.
+ %SOME GOOD STUFF IN \citep{EvolvingARovingEyeForGo}
 
 \newpage
 \section{Literature Review}
@@ -337,11 +332,7 @@ Video games are a field that has been used as a catalyst for research and develo
 
 This project aims to create a digital version of the card game Switch. While playing, each competitor has no idea what cards their opponent(s) hold. They only know what cards they themselves hold, and what the most recently played card was. They will also know whose turn it is and what direction the play is going (if there are multiple remaining opponents). 
 
-Solutions for Chess and Go might use search trees for decision making, however this requires knowing the full state of the game, including the location of every game piece on the board. This is what is known as 'perfect information.' However, in card games such as Poker or Switch, there are unknowns such as the hands other players have or the value of cards that are face down. Therefore, we are faced with \textit{'imperfect information.'}
-
-This is where neural networks come in.
-
-MIGHT DELETE THAT LINE AND PUT IT IN Why Neural Networks
+Solutions for Chess and Go might use search trees for decision making, however this requires knowing the full state of the game, including the location of every game piece on the board. This is what is known as 'perfect information.' However, in card games such as Poker or Switch, there are unknowns such as the hands other players have or the value of cards that are face down. Therefore, we are faced with \textit{'imperfect information.'}\\
 
 %The game can also be described as dynamic, as each player takes their turn in sequence. This sequence can also be reversed if a Jack card is played. 
 
@@ -358,11 +349,10 @@ MIGHT DELETE THAT LINE AND PUT IT IN Why Neural Networks
 %Dynamic: Players take multiple turns taken in sequence
 %Imperfect information
 
--------------------------------------------
 \subsection{AI for Playing Games}
 When researching neural networks in relation to games, a stand-out is MarI/O. There is a video on YouTube showcasing its solution after 34 generations using NEAT. It is described on the page of that video as the following:\\
 
-\textit{"MarI/O is a program made of neural networks and genetic algorithms that kicks butt at Super Mario World"} \citep{MarIO}. \\
+\textit{\enquote{MarI/O is a program made of neural networks and genetic algorithms that kicks butt at Super Mario World}}\citep{MarIO}. \\
 
 Despite that description, the intelligence of MarI/O is questionable. Although it has mastered the art of manoeuvring its way across the level in question, that is all it has done. In other words, if we were to take the same agent and run it on another Super Mario level, it wouldn't do so well. It has figured out how to pass through the level by continually moving right, and jumping at optimal times to avoid enemies and gaps in the map. Albeit successful, this is not a strategy that could be deemed as intelligent. 
 
@@ -375,61 +365,57 @@ Despite that description, the intelligence of MarI/O is questionable. Although i
 %Probably need to ask for permission to use that 
 %Sent a message on facebook to request permission
 
-For Alan Turing to consider a machine intelligent, it must be able to act in a way that would be indistinguishable from the way a human would act. The Turing Test, created by Turing himself in 1950, was an imitation game whereby a human would hold textual conversations with another human, and with a computer. If the testing human is unable to successfully differentiate between the two based on interrogation within those conversations, then Turing would deem it unreasonable not to call the computer intelligent \citep{TuringTest}.
+For Alan Turing to consider a machine intelligent, it must be able to act in a way that would be indistinguishable from the way a human would act. The Turing Test, created by Turing himself in 1950, was an imitation game whereby a human would hold textual conversations with another human, and with a computer. If the testing human is unable to successfully differentiate between the two based on interrogation within those conversations, then Turing would deem it unreasonable not to call the computer intelligent\citep{TuringTest}.
 
-Although dealing in a different realm altogether, applying the same principle to MarI/O and questioning if the strategy it presents could pass a similar test of human judgement to decide whether or not it is a strategy that is likely to have been played by a human, then we cannot possibly declare MarI/O's technique as an intelligent solution. 
+Although dealing in a different realm altogether, applying the same principle to MarI/O and questioning if the strategy it presents could pass a similar test of human judgement to decide whether or not it is a strategy that is likely to have been played by a human, then we cannot possibly declare MarI/O's technique as an intelligent solution. \\
 
-Particularly card games
+%Particularly card games
 \subsection{Why Neural Networks?}
 This project has dealt a hand presenting a problem in which a decision making process will have to make use of imperfect information. Not only can neural networks cope with this, in fact, they excel in situations of imperfect information.
 
 Without a neural network, any given scenario within a problem would need to have some kind of hard-coded solution that is step-by-step in nature. Through a learning process, a neural network can find solutions to these scenarios on its own, via exploration of the possibilities thrown up by its decision making process over several generations. 
 
-Imagine having to write the code for a solution to every single possible game state in Chess. For every move, you would have to write a solution for it as many times as there are possible opportunities for that particular move, i.e, every possible board configuration in which that single move is legal. This would take an unthinkable amount of time, and in reality is probably not even possible. 
-
-Using a neural network and allowing it to analyse every situation it encounters on its own, decide what move to make and learn from the results is a far better idea. 
+Imagine having to write the code for a solution to every single possible game state in Chess. For every move, you would have to write a solution for it as many times as there are possible opportunities for that particular move, i.e, every possible board configuration in which that single move is legal. This would take an unthinkable amount of time, and in reality is probably not even possible. Using a neural network and allowing it to analyse every situation it encounters on its own, decide what move to make and learn from the results is a far better idea. 
 
 Additionally, hard-coding solutions to given situations would make the game predictable, and could also lead to making moves that are not actually the best for that current game state. The flexible nature of a neural network provides the potential to reach better solutions that hard-coding might miss out on. 
 
 In our Switch card game for example, there is a rule that states if the previous player played a 2, you must pick up two cards unless you have another 2. Knowing this, and wanting to force our opponents to inherit more cards, we might hard-code a strategy that says, "if you have a 2 and it's available to be played, play it." This could cost us a chance to win the game though! 
 
-If we only had two cards left, both of the same suit and matching the suit of the most recently played card, one being a 2 and the other being a 7, we could play the 7 first, and that would allow us to play a run of that suit. Thus allowing us to play both cards and win the game. A neural network might learn that playing a 7 is better than deploying a 2, but our hard-coded strategy may not.
+If we only had two cards left, both of the same suit and matching the suit of the most recently played card, one being a 2 and the other being a 7, we could play the 7 first, and that would allow us to play a run of that suit. This would allow us to play both cards and win the game. A neural network might learn that playing a 7 is better than deploying a 2, but our hard-coded strategy may not.\\
 
 %what have people used neural networks for with control problems and how is it related to my problem
 %RELATE IT TO A (CARD) GAME 
 
 \subsection{Why Evolve Neural Networks?}
-"Neuroevolution, i.e. evolving artificial neural networks with genetic algorithms, has been highly effective in reinforcement learning tasks, particularly those with hidden state information" \citep{EfficientEvolutionOfNeuralNetworkTopologies}.
+Artificial neural network evolution has demonstrated positive results with tasks involving reinforcement learning, and has performed especially well with those that include hidden state information\citep{EfficientEvolutionOfNeuralNetworkTopologies}. This appeals to the needs of this project as it deals with unknown game aspects, such as the hand our opponent(s) hold. 
 
-%Above is plaigurised but following isn't, from same paper though
-The evolution of neural networks has demonstrated a large degree of potential when coupled with tasks solvable by reinforcement learning techniques \citep{EfficientEvolutionOfNeuralNetworkTopologies}. It outperforms the basic methods of reinforcement learning against tasks that are considered benchmarks, and is therefore a justifiably sought after means of decision making. 
+The evolution of neural networks has demonstrated a large degree of potential when coupled with tasks solvable by reinforcement learning techniques\citep{EfficientEvolutionOfNeuralNetworkTopologies}. It outperforms the basic methods of reinforcement learning against tasks that are considered benchmarks, and is therefore a justifiably sought after means of decision making. 
 
-NICELY DONE x4iiiis NOW RELATE IT TO A (CARD) GAME 
+Another arcade-style game that has been used in the research of neural networks is PAC-MAN. In a particular paper introducing the concept of trying to evolve a player for the retro classic, a simple ghost avoidance strategy was given a hard-coded implementation for comparison purposes. Perhaps expectedly, the results were underwhelming. The aim was to demonstrate that the neural networks were learning something more sophisticated than such a simple strategy\citep{MSPacMan}. 
+
+Evolving neural networks and allowing the controller to develop its own strategies, as opposed to hard-coding them, produced universally superior results.\\
 
 \subsection{Why Co-Evolve Topologies and Weights?}
-Much like when we compare evolving neural networks to standard reinforcement learning techniques, evolving network topologies often performs in a significantly superior manner to the alternative - in this case fixed topology neural network evolution \citep{EfficientEvolutionOfNeuralNetworkTopologies}. 
+Much like when we compare evolving neural networks to standard reinforcement learning techniques, evolving network topologies often performs in a significantly superior manner to the alternative - in this case fixed topology neural network evolution\citep{EfficientEvolutionOfNeuralNetworkTopologies}. 
 
-There is always a chance with evolving topologies of making the search overly complex, but in contrast to that possibility there is also the potential to find the optimal amount of hidden nodes for any given problem by itself, which would save some time \citep{EfficientEvolutionOfNeuralNetworkTopologies}.
+There is always a chance with evolving topologies of making the search overly complex, but in contrast to that possibility there is also the potential to find the optimal amount of hidden nodes for any given problem by itself, which would save some time\citep{EfficientEvolutionOfNeuralNetworkTopologies}. It is also possible for NEAT to reduce the complexity of a network's structure when evolving the topology. 
 
- Simple networks are where NEAT begins, before expanding the search space when necessary\citep{EvolvingARovingEyeForGo}. This flexibility is what allows it to find far more complex controllers than evolution networks with a non-negotiable topology. 
+ Simple networks are where NEAT begins, before expanding the search space when necessary\citep{EvolvingARovingEyeForGo}. This flexibility is what allows it to find far more complex controllers than evolution networks with a non-negotiable topology.\\
 
-RELATE IT TO A (CARD) GAME 
-\subsection{How intelligent is it?}
-What did the evolved strategy look like
--Did it come up with something cheap and easy like the mario thing where it jumps all the time, or does it resemble a strategy a human player might use
+%RELATE IT TO A (CARD) GAME \\
 
 \subsection{Summary}
-
 %Given previous work it suggests that NEAT will be an appropriate algorithm for solving this problem
 %The unanswered questions (that we will go on to answer):
 %-How intelligent is the solution
 %-How many generations did it take
 %-How computationally complex is it regarding hidden layers and topology. 
+Evolving artificial neural networks, including structural network evolution, allows us to create solutions that perhaps would not be feasible to build with step-by-step hard-coding approaches. For a project such as this where we cannot write a fool-proof strategy to deal with any given situation within the game, it is ideal to have tools such as NEAT. 
 
-
+As Switch is largely down to luck like most (if not all) card games, there is never going to be a perfect solution. However, evolving neural networks is a lot more capable of finding an optimal solution than a programmer implementing a strategy in advance could ever be. 
 
 \newpage
-\section{title}
+\section{Methodology}
 And so on for each of the chapters.  The template automatically starts new chapters on a new page.  The associated guidelines tell you what the available styles do and also how to structure a report.
 There is a section break on this page that you should be careful NOT to delete otherwise the references and appendices will be numbered continuously with the rest of the document.
 
