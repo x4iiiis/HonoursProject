@@ -29,6 +29,8 @@
 \usepackage{csquotes}
 %" facing the wrong way so trying to rectify that
 
+\usepackage[round]{natbib}
+
 %header and footer settings
 \pagestyle{fancyplain}
 \fancyhf{}
@@ -120,19 +122,19 @@ The following section of this dissertation will go on to discuss the history of 
 \subsection{History of AI in Games}
 Video games have been a popular area of interest for artificial intelligence developers and researchers for many decades. 
 
-Over several tens of years, a large amount of research and development has been done in an attempt to perfect chess-playing artificial intelligence agents\cite{1}, and work has more recently been put in to do the same with the game of Go.  
+Over several tens of years, a large amount of research and development has been done in an attempt to perfect chess-playing artificial intelligence agents\citep{L2PChess}, and work has more recently been put in to do the same with the game of Go.  
 
-In March of 2016, the goal of getting such an agent to compete and win at the highest level was reached, when AlphaGo, a program engineered by Google, managed to overcome the Go world champion human player, Lee Sedol\cite{2}. This was then reported as a major breakthrough for the artificial intelligence field. 
+In March of 2016, the goal of getting such an agent to compete and win at the highest level was reached, when AlphaGo, a program engineered by Google, managed to overcome the Go world champion human player, Lee Sedol\citep{ABriefHistoryOfGameAI}. This was then reported as a major breakthrough for the artificial intelligence field. 
 \\
 \subsection{What is a Neural Network?}
-Artificial neural networks, commonly referred to simply as neural networks, are a rough representation of the human brain. Human brains can be thought of as highly complex and non-linear systems for processing information in parallel\cite{7}. 
+Artificial neural networks, commonly referred to simply as neural networks, are a rough representation of the human brain. Human brains can be thought of as highly complex and non-linear systems for processing information in parallel\citep{NeuralNetworksAComprehensiveFoundation}. 
 
-To emulate this, neural networks are built using a series of layers of network nodes. These nodes are used to represent neurons in the brain. The first is an input layer, followed by two or three hidden layers before a final output layer of nodes\cite{3}. The connection between these nodes is representative of axons in the brain. 
+To emulate this, neural networks are built using a series of layers of network nodes. These nodes are used to represent neurons in the brain. The first is an input layer, followed by two or three hidden layers before a final output layer of nodes\citep{ArtificialNeuralNetwork}. The connection between these nodes is representative of axons in the brain. 
 
 In an artificial neural network, the input and output layers take data in and produce results respectively, with the processing of said data being done within the hidden layers - but how does it work? 
 
 \subsubsection{Perceptrons}
-One type of artificial neuron (or node) is known as a 'perceptron.' Each perceptron receives several inputs and uses them to produce one binary output\cite{4}.  
+One type of artificial neuron (or node) is known as a 'perceptron.' Each perceptron receives several inputs and uses them to produce one binary output\citep{NeuralNetworksAndDeepLearning}.  
 
 \begin{figure}[h]
 	\centering
@@ -140,11 +142,11 @@ One type of artificial neuron (or node) is known as a 'perceptron.' Each percept
 	\caption{A Single Perceptron}
 \end{figure}
 
-Frank Rosenblatt, the scientist who developed the perceptron in the 1950s and 1960s, devised a rule for computing the output from these neurons. Using what he called 'weights,' the importance of each input is assessed and expressed. Each input has a weight assigned to it, and the resultant output from these inputs - either a 1 or 0 - is dependent on whether or not some threshold value is less than or greater than the sum of the weights from all of the inputs to that particular perceptron. Therefore, if the weighted sum is less than or equal to the threshold value, the output is a 0. Otherwise, a 1\cite{4}. Both the threshold value and the input weights are real numbers. These can be tweaked to alter the decisions made by a neural network. 
+Frank Rosenblatt, the scientist who developed the perceptron in the 1950s and 1960s, devised a rule for computing the output from these neurons. Using what he called 'weights,' the importance of each input is assessed and expressed. Each input has a weight assigned to it, and the resultant output from these inputs - either a 1 or 0 - is dependent on whether or not some threshold value is less than or greater than the sum of the weights from all of the inputs to that particular perceptron. Therefore, if the weighted sum is less than or equal to the threshold value, the output is a 0. Otherwise, a 1\citep{NeuralNetworksAndDeepLearning}. Both the threshold value and the input weights are real numbers. These can be tweaked to alter the decisions made by a neural network. 
 
 \subsubsection{Sigmoid Neurons}
 
-Sigmoid neurons are akin to perceptrons, however, they are modified in such a way that marginal alterations in their weights and bias cause only a small change to their output\cite{4}. This crucial difference is what affords a network consisting of sigmoid neurons the ability to learn.
+Sigmoid neurons are akin to perceptrons, however, they are modified in such a way that marginal alterations in their weights and bias cause only a small change to their output\citep{NeuralNetworksAndDeepLearning}. This crucial difference is what affords a network consisting of sigmoid neurons the ability to learn.
 
 The inputs to a sigmoid neuron also differ from those of perceptrons. Rather than being binary (1 or 0), these inputs are any number \textit{between} 1 and 0. %probably pointless italics
 Much like with perceptrons, these sigmoid neuron inputs are weighted, with an overall bias included. These can be denoted \textit{b, $w_1$, $w_2$, ... $w_n$}
@@ -167,7 +169,7 @@ To understand the similarity to the perceptron model, suppose
 z $\equiv w \cdot x + b$ is a large positive number. Then 
 $e^{-z} \approx 0$ and so $\sigma(z) \approx 1$. In other words, when $z = w \cdot x+b$ is large and positive, the output from the sigmoid neuron is approximately 1, just as it would have been for a perceptron. Suppose on the other hand that $z = w \cdot x+b$ is very negative. Then $e^{-z} \rightarrow \infty$, and $\sigma(z) \approx 0$. So when 
 $z = w \cdot x +b$ is very negative, the behaviour of a sigmoid neuron also closely approximates a perceptron. It's only when 
-$w \cdot x+b$ is of modest size that there's much deviation from the perceptron model\cite{4}.
+$w \cdot x+b$ is of modest size that there's much deviation from the perceptron model\citep{NeuralNetworksAndDeepLearning}.
 
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -192,12 +194,12 @@ $\Delta w_j$ and $\Delta b_j$ in the weights and bias, this linearity makes it e
 
 ///////////////////////////////////////////////////////////////////////////////\\
 \subsection{Evolutionary Algorithms}
-As the name might suggest, an evolutionary algorithm is one that evolves. It does so to encourage finding the most optimal solution to a problem. A vast amount of varying evolutionary algorithms exist, but at the core of them all is the same principal idea: \enquote{given a population of individuals the environmental pressure causes natural selection (survival of the fittest) and this causes a rise in the fitness of the population}\cite{5}. As a result, the population adapts over time to its environment. 
+As the name might suggest, an evolutionary algorithm is one that evolves. It does so to encourage finding the most optimal solution to a problem. A vast amount of varying evolutionary algorithms exist, but at the core of them all is the same principal idea: \enquote{given a population of individuals the environmental pressure causes natural selection (survival of the fittest) and this causes a rise in the fitness of the population}\citep{IntroductionToEvolutionaryComputing}. As a result, the population adapts over time to its environment. 
 
 What is the process of evolution? The generational cycle works as follows:
 
 \subsubsection{Representation}
-Step one when defining an evolutionary algorithm is to bridge the gap between the \enquote{real world} and the \enquote{evolutionary algorithm world}\cite{5}. That is, to link what are known as phenotypes, to representative genotypes. 
+Step one when defining an evolutionary algorithm is to bridge the gap between the \enquote{real world} and the \enquote{evolutionary algorithm world}\citep{IntroductionToEvolutionaryComputing}. That is, to link what are known as phenotypes, to representative genotypes. 
 
 %In order to use an evolutionary algorithm, possible solutions must be represented as what are known as chromosomes (or genotypes). 
 
@@ -213,7 +215,7 @@ Step one when defining an evolutionary algorithm is to bridge the gap between th
 	\end{itemize}
 \end{itemize}
 
-Representation refers to specifying which genotypes equate to each phenotype\cite{5}. For example, if an integer is the solution to a problem, it is the phenotype, and a binary representation of that particular integer would be the genotype relating to that phenotype. 
+Representation refers to specifying which genotypes equate to each phenotype\citep{IntroductionToEvolutionaryComputing}. For example, if an integer is the solution to a problem, it is the phenotype, and a binary representation of that particular integer would be the genotype relating to that phenotype. 
 
 A genotype (or chromosome) is made up of genes. Values are assigned to each gene, and may be referred to as alleles. These can be of any type, or even a mixture. Types include binary strings, integers, real values, permutations and symbols. So in the example above, each gene would be either a 1 or 0, combining to form the integer as an overall chromosome.
 
@@ -232,13 +234,13 @@ In the beginning, we start off with a population comprised completely of random 
 \subsubsection{Fitness}
 The fitness of an individual is what defines how fit for purpose it is. This measurement of quality will be defined differently for every algorithm, depending entirely on the context of problems it is being used to solve. In this project, the fitness will correlate to the amount of illegal moves the agent attempts to make, and how many times it is forced to increase its hand rather than decrease it. However, as the game of switch is largely down to luck, this will have to be taken into account to incorporate some form of leniency to fitness calculations.  
 
-The role of an evaluation function (or fitness function) to encourage improvements by defining what an improvement is\cite{5}. This lays the foundation for selection. 
+The role of an evaluation function (or fitness function) to encourage improvements by defining what an improvement is\citep{IntroductionToEvolutionaryComputing}. This lays the foundation for selection. 
 
 \subsubsection{Selection}
-The process of choosing individuals, based on their fitness, from the population to become parents to the next generation of individuals is called selection\cite{5}. This is the driving force behind progressive evolution as it biases selection towards individuals of higher quality. 
+The process of choosing individuals, based on their fitness, from the population to become parents to the next generation of individuals is called selection\citep{IntroductionToEvolutionaryComputing}. This is the driving force behind progressive evolution as it biases selection towards individuals of higher quality. 
 
 \subsubsection{Crossover}
-Sometimes referred to as recombination, crossover is an operation that merges genes from two parent genotypes together into one or two offspring genotypes\cite{5}. 
+Sometimes referred to as recombination, crossover is an operation that merges genes from two parent genotypes together into one or two offspring genotypes\citep{IntroductionToEvolutionaryComputing}. 
 
 Crossover can be defined in a few ways. There is one-point crossover, where a randomly chosen point along the length of a chromosome determines which genes are passed on from that particular genotype, and the rest will come from the other parent. This is demonstrated in Figure 4.
 
@@ -276,7 +278,7 @@ In the case of arithmetic crossover, an average of the two parent genes is calcu
 All of the above techniques are used in binary and integer chromosome representations. Permutations cannot be recombined using any of these techniques, but are beyond the scope of this project. 
 
 \subsubsection{Mutation}
-When applied to a genotype, mutation returns a slightly mutated offspring\cite{5}. It can create new genes in the population, which in turn diversifies the population. 
+When applied to a genotype, mutation returns a slightly mutated offspring\citep{IntroductionToEvolutionaryComputing}. It can create new genes in the population, which in turn diversifies the population. 
 
 Like with crossover, there are different ways to perform mutation. In the case of binary chromosomes, we would allow each gene to 'flip' from a 1 to a 0 or vice versa, as demonstrated by Figure 8. Each gene has a probability of being mutated in this way, which will often be calculated as 1/\textit{n} with \textit{n} being representative of the chromosome length.
 
@@ -305,22 +307,52 @@ Again, permutations work in a completely different way, but are not considered a
 This is the part where individuals are removed from the population to make way for a generation of new and hopefully improved genotypes. We could just remove the oldest genotype in the population, but this could be one with a high fitness! This can also be done randomly, but again there's a risk that we could be removing individuals of high quality. The other way is to determine which individuals to remove using the fitness. We could just get rid of the least fit genotypes, which could lead to the population improving very quickly, however it could also lead to premature convergence.\\
 
 \subsection{NeuroEvolution for Augmenting Topologies (NEAT)}
-\enquote{NEAT is a method for evolving speciated neural networks of arbitrary structures and sizes. NEAT leverages the evolution of structure to make neuroevolution more efficient}\cite{6}.
+\enquote{NEAT is a method for evolving speciated neural networks of arbitrary structures and sizes. NEAT leverages the evolution of structure to make neuroevolution more efficient}\citep{NEAT}.
 
 It is claimed to result in significantly faster learning than neuroevolution techniques using fixed network topologies.
  \\
  
  
+ In NEAT, the mutation phase can alter network structures as well as connection weights \citep{EfficientEvolutionOfNeuralNetworkTopologies}. While connection weights are mutated in the same way as described in the previous section, network structure can be mutated in two ways:
+ 
+ \begin{itemize}
+ 	\item Add Connection
+ 	\begin{itemize}
+ 		\item A new connection gene is added, linking two nodes that were not connected beforehand
+ 	\end{itemize}
+ 	\item Add Node
+ 	\begin{itemize}
+ 		\item A connection that already exists is split and the new node replaces the old connection. The previous connection is disabled and the genome gains two new connections. 
+ 	\end{itemize}
+ \end{itemize}
+ 
+ 
+ SOME GOOD STUFF IN \citep{EvolvingARovingEyeForGo}
 \subsection{Summary}
 .
 
 \newpage
 \section{Literature Review}
-As previously mentioned, video games are a field that has been used as a catalyst for research and development in artificial intelligence due to the relatively risk-free nature of it when compared to other areas where AI might be used for quite some time now, but it was only recently that a program was able to beat a world class human player in the game of Go\cite{2}. This is despite a huge amount of work and time being injected into developing these types of game-playing agents with the desired result of beating the best human players in the world at Chess, and more recently, Go. 
+Video games are a field that has been used as a catalyst for research and development in artificial intelligence due to the relatively risk-free nature of it when compared to other areas where AI might be used for quite some time now, but it was only recently that a program was able to beat a world class human player in the game of Go\citep{ABriefHistoryOfGameAI}. This is despite a huge amount of work and time being injected into developing these types of game-playing agents with the desired result of beating the best human players in the world at Chess, and more recently, Go. 
 
-This project aims to create a digital version of the card game Switch. While playing, each competitor has no idea what cards their opponent(s) hold. They only know what cards they themselves hold, and what the most recently played card was. They will also know whose turn it is and what direction the play is going (if there are multiple remaining opponents). This is what can be referred to as having \textit{imperfect information}. The game can also be described as dynamic, as each player takes their turn in sequence. This sequence can also be reversed if a Jack card is played. 
+This project aims to create a digital version of the card game Switch. While playing, each competitor has no idea what cards their opponent(s) hold. They only know what cards they themselves hold, and what the most recently played card was. They will also know whose turn it is and what direction the play is going (if there are multiple remaining opponents). 
 
+Solutions for Chess and Go might use search trees for decision making, however this requires knowing the full state of the game, including the location of every game piece on the board. This is what is known as 'perfect information.' However, in card games such as Poker or Switch, there are unknowns such as the hands other players have or the value of cards that are face down. Therefore, we are faced with \textit{'imperfect information.'}
 
+This is where neural networks come in.
+
+MIGHT DELETE THAT LINE AND PUT IT IN Why Neural Networks
+
+%The game can also be described as dynamic, as each player takes their turn in sequence. This sequence can also be reversed if a Jack card is played. 
+
+%Making some notes here:\\
+
+%I want to create the card game Switch - but the question is, how? \\
+
+%From one he gave me:\\
+%Chess and Go use search trees for decision making, however this requires knowing the full state of the game, including the location of every game piece on the board. This is what is known as 'perfect information.' However, in card games such as Poker or Switch, we do not know what hands other players have, nor do we know the value of cards that are face down. Therefore, we are faced with 'imperfect information.' \\
+
+%This is where neural networks come in. \\\\\\\\
 
 %Looking at dissertation he gave me
 %Dynamic: Players take multiple turns taken in sequence
@@ -328,23 +360,71 @@ This project aims to create a digital version of the card game Switch. While pla
 
 -------------------------------------------
 \subsection{AI for Playing Games}
+When researching neural networks in relation to games, a stand-out is MarI/O. There is a video on YouTube showcasing its solution after 34 generations using NEAT. It is described on the page of that video as the following:\\
 
+\textit{"MarI/O is a program made of neural networks and genetic algorithms that kicks butt at Super Mario World"} \citep{MarIO}. \\
+
+Despite that description, the intelligence of MarI/O is questionable. Although it has mastered the art of manoeuvring its way across the level in question, that is all it has done. In other words, if we were to take the same agent and run it on another Super Mario level, it wouldn't do so well. It has figured out how to pass through the level by continually moving right, and jumping at optimal times to avoid enemies and gaps in the map. Albeit successful, this is not a strategy that could be deemed as intelligent. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{MarIO.png}
+	\caption{MarI/O}
+	\citep{MarIO} 
+\end{figure}
+%Probably need to ask for permission to use that 
+%Sent a message on facebook to request permission
+
+For Alan Turing to consider a machine intelligent, it must be able to act in a way that would be indistinguishable from the way a human would act. The Turing Test, created by Turing himself in 1950, was an imitation game whereby a human would hold textual conversations with another human, and with a computer. If the testing human is unable to successfully differentiate between the two based on interrogation within those conversations, then Turing would deem it unreasonable not to call the computer intelligent \citep{TuringTest}.
+
+Although dealing in a different realm altogether, applying the same principle to MarI/O and questioning if the strategy it presents could pass a similar test of human judgement to decide whether or not it is a strategy that is likely to have been played by a human, then we cannot possibly declare MarI/O's technique as an intelligent solution. 
+
+Particularly card games
 \subsection{Why Neural Networks?}
-what have people used neural networks for with control problems and how is it related to my problem
+This project has dealt a hand presenting a problem in which a decision making process will have to make use of imperfect information. Not only can neural networks cope with this, in fact, they excel in situations of imperfect information.
+
+Without a neural network, any given scenario within a problem would need to have some kind of hard-coded solution that is step-by-step in nature. Through a learning process, a neural network can find solutions to these scenarios on its own, via exploration of the possibilities thrown up by its decision making process over several generations. 
+
+Imagine having to write the code for a solution to every single possible game state in Chess. For every move, you would have to write a solution for it as many times as there are possible opportunities for that particular move, i.e, every possible board configuration in which that single move is legal. This would take an unthinkable amount of time, and in reality is probably not even possible. 
+
+Using a neural network and allowing it to analyse every situation it encounters on its own, decide what move to make and learn from the results is a far better idea. 
+
+Additionally, hard-coding solutions to given situations would make the game predictable, and could also lead to making moves that are not actually the best for that current game state. The flexible nature of a neural network provides the potential to reach better solutions that hard-coding might miss out on. 
+
+In our Switch card game for example, there is a rule that states if the previous player played a 2, you must pick up two cards unless you have another 2. Knowing this, and wanting to force our opponents to inherit more cards, we might hard-code a strategy that says, "if you have a 2 and it's available to be played, play it." This could cost us a chance to win the game though! 
+
+If we only had two cards left, both of the same suit and matching the suit of the most recently played card, one being a 2 and the other being a 7, we could play the 7 first, and that would allow us to play a run of that suit. Thus allowing us to play both cards and win the game. A neural network might learn that playing a 7 is better than deploying a 2, but our hard-coded strategy may not.
+
+%what have people used neural networks for with control problems and how is it related to my problem
+%RELATE IT TO A (CARD) GAME 
+
 \subsection{Why Evolve Neural Networks?}
+"Neuroevolution, i.e. evolving artificial neural networks with genetic algorithms, has been highly effective in reinforcement learning tasks, particularly those with hidden state information" \citep{EfficientEvolutionOfNeuralNetworkTopologies}.
+
+%Above is plaigurised but following isn't, from same paper though
+The evolution of neural networks has demonstrated a large degree of potential when coupled with tasks solvable by reinforcement learning techniques \citep{EfficientEvolutionOfNeuralNetworkTopologies}. It outperforms the basic methods of reinforcement learning against tasks that are considered benchmarks, and is therefore a justifiably sought after means of decision making. 
+
+NICELY DONE x4iiiis NOW RELATE IT TO A (CARD) GAME 
 
 \subsection{Why Co-Evolve Topologies and Weights?}
+Much like when we compare evolving neural networks to standard reinforcement learning techniques, evolving network topologies often performs in a significantly superior manner to the alternative - in this case fixed topology neural network evolution \citep{EfficientEvolutionOfNeuralNetworkTopologies}. 
 
+There is always a chance with evolving topologies of making the search overly complex, but in contrast to that possibility there is also the potential to find the optimal amount of hidden nodes for any given problem by itself, which would save some time \citep{EfficientEvolutionOfNeuralNetworkTopologies}.
+
+ Simple networks are where NEAT begins, before expanding the search space when necessary\citep{EvolvingARovingEyeForGo}. This flexibility is what allows it to find far more complex controllers than evolution networks with a non-negotiable topology. 
+
+RELATE IT TO A (CARD) GAME 
 \subsection{How intelligent is it?}
 What did the evolved strategy look like
 -Did it come up with something cheap and easy like the mario thing where it jumps all the time, or does it resemble a strategy a human player might use
 
 \subsection{Summary}
-Given previous work it suggests that NEAT will be an appropriate algorithm for solving this problem
-The unanswered questions (that we will go on to answer):
--How intelligent is the solution
--How many generations did it take
--How computationally complex is it regarding hidden layers and topology. 
+
+%Given previous work it suggests that NEAT will be an appropriate algorithm for solving this problem
+%The unanswered questions (that we will go on to answer):
+%-How intelligent is the solution
+%-How many generations did it take
+%-How computationally complex is it regarding hidden layers and topology. 
 
 
 
@@ -360,20 +440,13 @@ Experience with Linux and managing Virtual machines, networking.
 So on and so forth...
 
 \newpage
-\begin{thebibliography}{9}
-
-\bibitem{lamport94}
-  Leslie Lamport,
-  \emph{\LaTeX: A Document Preparation System}.
-  Addison Wesley, Massachusetts,
-  2nd Edition,
-  1994.
-
-\end{thebibliography}
+\bibliographystyle{plainnat}
+\bibliography{Citations}
 %example of References. See https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management
 %might be good to use a separate document for these so your main work is not one really long text file. 
 
 %you can crate this on a extra tex document just like the title or any other part of the document.
+
 \newpage
 \begin{appendices}
 \section{Project Overview}

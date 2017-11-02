@@ -1,0 +1,69 @@
+\begin{thebibliography}{11}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Eiben and Smith(2015)]{IntroductionToEvolutionaryComputing}
+A.E. Eiben and J.E. Smith.
+\newblock \emph{Introduction to {E}volutionary {C}omputing}.
+\newblock Springer {B}erlin {H}eidelberg, 2015, 2015.
+
+\bibitem[Haykin(1999)]{NeuralNetworksAComprehensiveFoundation}
+Simon Haykin.
+\newblock \emph{Neural {N}etworks - {A C}omprehensive {F}oundation}.
+\newblock Prentice {H}all, 1999.
+
+\bibitem[Kurenkov()]{ABriefHistoryOfGameAI}
+Andrey Kurenkov.
+\newblock A {B}rief {H}istory of {G}ame {AI}.
+\newblock URL
+  \url{http://www.andreykurenkov.com/writing/a-brief-history-of-game-ai/}.
+
+\bibitem[Nielsen(2015)]{NeuralNetworksAndDeepLearning}
+Michael~A Nielsen.
+\newblock \emph{Neural {N}etworks and {D}eep {L}earning}.
+\newblock Determination {P}ress, 2015.
+
+\bibitem[SethBling(2015)]{MarIO}
+SethBling.
+\newblock Mar{I/O}, 2015.
+\newblock URL \url{https://www.youtube.com/watch?v=qv6UVOQ0F44}.
+
+\bibitem[Stanley and
+  Miikkulainen(2002{\natexlab{a}})]{EfficientEvolutionOfNeuralNetworkTopologies}
+Kenneth~O. Stanley and Risto Miikkulainen.
+\newblock Efficient {E}volution of {N}eural {N}etwork {T}opologies.
+\newblock \emph{Proceedings of the {G}enetic and {E}volutionary {C}omputation
+  {C}onference}, 2002{\natexlab{a}}.
+
+\bibitem[Stanley and Miikkulainen(2002{\natexlab{b}})]{NEAT}
+Kenneth~O. Stanley and Risto Miikkulainen.
+\newblock Evolving {N}eural {N}etworks through {A}ugmenting {T}opologies.
+\newblock \emph{Evolutionary {C}omputation}, 2002{\natexlab{b}}.
+
+\bibitem[Stanley and Miikkulainen(2004)]{EvolvingARovingEyeForGo}
+Kenneth~O. Stanley and Risto Miikkulainen.
+\newblock Evolving a {R}oving {E}ye for {G}o.
+\newblock \emph{Proceedings of the {G}enetic and {E}volutionary {C}omputation
+  {C}onference}, 2004.
+
+\bibitem[Thrun(1995)]{L2PChess}
+Sebastian Thrun.
+\newblock Learning to {P}lay the {G}ame of {C}hess.
+\newblock \emph{{MIT P}ress}, 1995.
+
+\bibitem[Turing()]{TuringTest}
+Alan Turing.
+\newblock The {A}lan {T}uring {I}nternet {S}crapbook.
+\newblock URL \url{http://www.turing.org.uk/scrapbook/test.html}.
+
+\bibitem[Wang(2003)]{ArtificialNeuralNetwork}
+Sun-Chong Wang.
+\newblock Artificial {N}eural {N}etwork.
+\newblock \emph{{I}nterdisciplinary {C}omputing in {J}ava {P}rogramming. {T}he
+  {S}pringer {I}nternational {S}eries in {E}ngineering and {C}omputer
+  {S}cience, vol 743}, 2003.
+
+\end{thebibliography}
