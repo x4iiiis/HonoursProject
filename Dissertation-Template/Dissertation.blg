@@ -3,47 +3,66 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Dissertation.aux
 The style file: plainnat.bst
 Database file #1: Citations.bib
+Warning--string name "archives" is undefined
+--line 103 of file Citations.bib
+I was expecting a `,' or a `}'---line 103 of file Citations.bib
+ :  journal = archives 
+ :                     of {P}athology {\&} {L}aboratory {M}edicine",
+I'm skipping whatever remains of this entry
+Warning--empty journal in 18
+Warning--empty year in 20
+Warning--empty year in 17
+Warning--empty journal in 13
+Warning--empty year in 13
+Warning--empty year in 13
+Warning--empty year in 15
+Warning--empty year in 16
+Warning--empty year in 25
+Warning--empty year in 25
 Warning--empty year in ABriefHistoryOfGameAI
+Warning--empty year in 22
+Warning--empty year in 23
+Warning--empty year in 21
 Warning--empty year in TuringTest
-You've used 12 entries,
+You've used 25 entries,
             2773 wiz_defined-function locations,
-            656 strings with 6675 characters,
-and the built_in function-call counts, 3850 in all, are:
-= -- 322
-> -- 164
-< -- 12
-+ -- 61
-- -- 48
-* -- 218
-:= -- 617
-add.period$ -- 36
-call.type$ -- 12
-change.case$ -- 49
-chr.to.int$ -- 11
-cite$ -- 26
-duplicate$ -- 219
-empty$ -- 373
-format.name$ -- 68
-if$ -- 802
-int.to.chr$ -- 2
+            707 strings with 9515 characters,
+and the built_in function-call counts, 11542 in all, are:
+= -- 892
+> -- 963
+< -- 19
++ -- 333
+- -- 306
+* -- 919
+:= -- 1882
+add.period$ -- 74
+call.type$ -- 25
+change.case$ -- 174
+chr.to.int$ -- 23
+cite$ -- 65
+duplicate$ -- 445
+empty$ -- 791
+format.name$ -- 339
+if$ -- 2310
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 12
-newline$ -- 68
-num.names$ -- 48
-pop$ -- 132
+missing$ -- 18
+newline$ -- 132
+num.names$ -- 100
+pop$ -- 425
 preamble$ -- 1
-purify$ -- 40
+purify$ -- 152
 quote$ -- 0
-skip$ -- 166
+skip$ -- 405
 stack$ -- 0
-substring$ -- 24
-swap$ -- 14
+substring$ -- 69
+swap$ -- 27
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 117
-warning$ -- 2
-while$ -- 36
+type$ -- 260
+warning$ -- 15
+while$ -- 77
 width$ -- 0
-write$ -- 149
-(There were 2 warnings)
+write$ -- 297
+(There was 1 error message)

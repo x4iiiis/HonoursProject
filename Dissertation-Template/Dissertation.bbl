@@ -1,19 +1,93 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Abadi et~al.(2016)Abadi, Barham, Chen, Chen, Davis, Dean, Devlin,
+  Ghemawat, Irving, Isard, Kudlur, Levenberg, Monga, Moore, Murray, Steiner,
+  Tucker, Vasudevan, Warden, Wicke, Yu, Zheng, and Brain]{19}
+Mart{\'i}n Abadi, Paul Barham, Jianmin Chen, Zhifeng Chen, Andy Davis, Jeffrey
+  Dean, Matthieu Devlin, Sanjay Ghemawat, Geoffrey Irving, Michael Isard,
+  Manjunath Kudlur, Josh Levenberg, Rajat Monga, Sherry Moore, Derek~G. Murray,
+  Benoit Steiner, Paul Tucker, Vijay Vasudevan, Pete Warden, Martin Wicke, Yuan
+  Yu, Xiaoqiang Zheng, and Google Brain.
+\newblock Tensor{F}low: {A} {S}ystem for {L}arge-{S}cale {M}achine {L}earning.
+\newblock \emph{{P}roceedings of the 12th {USENIX S}ymposium on {O}perating
+  {S}ystems {D}esign and {I}mplementation ({OSDI} ’16)}, 2016.
+
+\bibitem[Abadim et~al.(2015)Abadim, Agarwal, Barham, Brevdo, Chen, Citro,
+  Corrado, Davis, Dean, Devin, Ghemawat, Goodfellow, Harp, Irving, Isard, Jia,
+  Jozefowicz, Kaiser, Judlur, Levenberg, Mane, Monga, Moore, Murray, Olah,
+  Schuster, Shlens, Steiner, Sutskever, Talwar, Tucker, Vanhoucke, Vasudevan,
+  Vi{\'e}gas, Vinyals, Warden, Wattenberg, Wicke, Yu, and Zheng]{18}
+Martın Abadim, Ashish Agarwal, Paul Barham, Eugene Brevdo, Zhifeng Chen, Craig
+  Citro, Greg~S. Corrado, Andy Davis, Jeffrey Dean, Matthieu Devin, Sanjay
+  Ghemawat, Ian Goodfellow, Andrew Harp, Geoffrey Irving, Michael Isard,
+  Yangqing Jia, Rafal Jozefowicz, Lukasz Kaiser, Manjunath Judlur, Josh
+  Levenberg, Dan Mane, Rajat Monga, Sherry Moore, Derek Murray, Chris Olah,
+  Mike Schuster, Jonathon Shlens, Benoit Steiner, Ilya Sutskever, Kunal Talwar,
+  Paul Tucker, Vincent Vanhoucke, Vijay Vasudevan, Fernanda Vi{\'e}gas, Oriol
+  Vinyals, Pete Warden, Martin Wattenberg, Martin Wicke, Yuan Yu, and Xiaoqiang
+  Zheng.
+\newblock Tensor{F}low: {L}arge-{S}cale {M}achine {L}earning on {H}eterogeneous
+  {D}istributed {S}ystems.
+\newblock 2015.
+
+\bibitem[Campbell et~al.(2002)Campbell, Hoane, and Hsu]{14}
+Murray Campbell, Joseph~A. Hoane, and Feng-hsiung Hsu.
+\newblock Deep {B}lue.
+\newblock \emph{Artificial {I}ntelligence}, 134:\penalty0 57--83, 2002.
+
 \bibitem[Eiben and Smith(2015)]{IntroductionToEvolutionaryComputing}
 A.E. Eiben and J.E. Smith.
 \newblock \emph{Introduction to {E}volutionary {C}omputing}.
 \newblock Springer {B}erlin {H}eidelberg, 2015.
 
+\bibitem[Fuhriman()]{20}
+David Fuhriman.
+\newblock How {M}any {P}ossible {M}ove {C}ombinations are there in {C}hess.
+\newblock URL
+  \url{http://www.bernmedical.com/blog/how-many-possible-move-{\\}combinations-are-there-in-chess}.
+
+\bibitem[Google()]{17}
+Google.
+\newblock Tensorflow.
+\newblock URL \url{https://www.tensorflow.org}.
+
+\bibitem[Granter et~al.()Granter, Beck, and Papke~Jr]{13}
+Scott~R. Granter, Andrew~H. Beck, and David~J. Papke~Jr.
+\newblock Alpha{G}o, {D}eep {L}earning, and the {F}uture of the {H}uman
+  {M}icroscopist.
+
 \bibitem[Haykin(1999)]{NeuralNetworksAComprehensiveFoundation}
 Simon Haykin.
 \newblock \emph{Neural {N}etworks - {A C}omprehensive {F}oundation}.
 \newblock Prentice {H}all, 1999.
+
+\bibitem[IBM({\natexlab{a}})]{15}
+IBM.
+\newblock Deep {B}lue, {\natexlab{a}}.
+\newblock URL \url{www-03.ibm.com/ibm/history/ibm100/us/en/icons/deepblue/}.
+
+\bibitem[IBM({\natexlab{b}})]{16}
+IBM.
+\newblock Deep {B}lue - {F}requently {A}sked {Q}uestions, {\natexlab{b}}.
+\newblock URL
+  \url{https://www.research.ibm.com/deepblue/meet/html/d.3.3a.html}.
+
+\bibitem[Kaufmann et~al.(2004)Kaufmann, Mayer, Kraetzschmar, and Palm]{24}
+Ulrich Kaufmann, Gerd Mayer, Gerhard Kraetzschmar, and G{\"u}nther Palm.
+\newblock Visual {R}obot {D}etection in {R}obo{C}up using {N}eural {N}etworks.
+\newblock \emph{Robo{C}up 2004: {R}obot {S}occer {W}orld {C}up {VIII}}, 2004.
+
+\bibitem[Kitano et~al.()Kitano, Asada, Kuniyoshi, Noda, Osawa, and
+  Matsubara]{25}
+Hiroaki Kitano, Minoru Asada, Yasuo Kuniyoshi, Itsuki Noda, Eiichi Osawa, and
+  Hitoshi Matsubara.
+\newblock Robo{C}up - {A C}hallenge {P}roblem for {AI}.
+\newblock \emph{{AI M}agazine}, 18\penalty0 (1).
 
 \bibitem[Kurenkov()]{ABriefHistoryOfGameAI}
 Andrey Kurenkov.
@@ -33,11 +107,29 @@ Michael~A Nielsen.
 \newblock \emph{Neural {N}etworks and {D}eep {L}earning}.
 \newblock Determination {P}ress, 2015.
 
+\bibitem[Orf()]{22}
+Darren Orf.
+\newblock This {R}obot {T}hat {R}uns {E}ntirely off a {N}eural {N}etwork is
+  {C}reepy as {H}ell.
+\newblock URL
+  \url{https://gizmodo.com/this-robot-that-runs-entirely-off-a-neural{\\}-network-is-c-1784649778}.
+
+\bibitem[RoboCup()]{23}
+RoboCup.
+\newblock Robo{C}up.
+\newblock URL \url{http://www.robocup.org/objective}.
+
 \bibitem[SethBling(2015)]{MarIO}
 SethBling.
 \newblock Mar{I/O}, 2015.
 \newblock URL \url{https://www.youtube.com/watch?v=qv6UVOQ0F44, source code:
   https://pastebin.com/ZZmSNaHX}.
+
+\bibitem[Smith()]{21}
+Mat Smith.
+\newblock Japan's {L}atest {H}umanoid {R}obot {M}akes its {O}wn {M}oves.
+\newblock URL
+  \url{https://www.engadget.com/2016/07/30/japan-humanoid-alter-robot/}.
 
 \bibitem[Stanley and
   Miikkulainen(2002{\natexlab{a}})]{EfficientEvolutionOfNeuralNetworkTopologies}
