@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.11)  2 NOV 2017 11:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.11)  9 NOV 2017 03:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -590,91 +590,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--122
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--129
+Package natbib Warning: Citation `13' on page 10 undefined on input line 129.
+
+
+Package natbib Warning: Citation `13' on page 10 undefined on input line 131.
+
+
+Package natbib Warning: Citation `14' on page 10 undefined on input line 133.
+
+
+Package natbib Warning: Citation `14' on page 10 undefined on input line 133.
+
+
+Package natbib Warning: Citation `15' on page 10 undefined on input line 133.
+
+
+Package natbib Warning: Citation `16' on page 10 undefined on input line 133.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
-<images/Perceptron.png, id=39, 281.05pt x 138.5175pt>
+[10] <images/Perceptron.png, id=42, 281.05pt x 138.5175pt>
 File: images/Perceptron.png Graphic file (type png)
 
 <use images/Perceptron.png>
-Package pdftex.def Info: images/Perceptron.png used on input line 141.
+Package pdftex.def Info: images/Perceptron.png used on input line 147.
 (pdftex.def)             Requested size: 281.0493pt x 138.51715pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10] [11 <./images/Perceptron.png>]
-Overfull \hbox (103.49487pt too wide) in paragraph at lines 167--173
+ [11 <./images/Perceptron.png>]
+Overfull \hbox (103.49487pt too wide) in paragraph at lines 173--179
 []\OT1/cmr/m/n/12 /////////////////////////////////////////////////////////////
 //////////////////// 
  []
 
 
-Overfull \hbox (91.745pt too wide) in paragraph at lines 174--175
+Overfull \hbox (91.745pt too wide) in paragraph at lines 180--181
 []\OT1/cmr/m/n/12 /////////////////////////////////////////////////////////////
 ////////////////// 
  []
 
-<images/SigmoidFunction.png, id=52, 781.92125pt x 488.82625pt>
+<images/SigmoidFunction.png, id=48, 781.92125pt x 488.82625pt>
 File: images/SigmoidFunction.png Graphic file (type png)
 
 <use images/SigmoidFunction.png>
-Package pdftex.def Info: images/SigmoidFunction.png used on input line 177.
+Package pdftex.def Info: images/SigmoidFunction.png used on input line 183.
 (pdftex.def)             Requested size: 390.00517pt x 142.26318pt.
 
-Overfull \hbox (91.745pt too wide) in paragraph at lines 183--185
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (91.745pt too wide) in paragraph at lines 189--191
 []\OT1/cmr/m/n/12 /////////////////////////////////////////////////////////////
 //////////////////
  []
 
-[12 <./images/SigmoidFunction.png>]
-Overfull \hbox (91.745pt too wide) in paragraph at lines 195--196
+[12]
+Overfull \hbox (91.745pt too wide) in paragraph at lines 201--202
 []\OT1/cmr/m/n/12 /////////////////////////////////////////////////////////////
 ////////////////// 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
-<images/GenoToPheno.png, id=59, 1473.505pt x 232.87pt>
+[13 <./images/SigmoidFunction.png>]
+<images/GenoToPheno.png, id=62, 1473.505pt x 232.87pt>
 File: images/GenoToPheno.png Graphic file (type png)
 
 <use images/GenoToPheno.png>
-Package pdftex.def Info: images/GenoToPheno.png used on input line 226.
+Package pdftex.def Info: images/GenoToPheno.png used on input line 232.
 (pdftex.def)             Requested size: 390.0pt x 61.63208pt.
- [13] [14 <./images/GenoToPheno.png>]
+ [14 <./images/GenoToPheno.png>]
 <images/OnePointCrossover.png, id=67, 1761.58125pt x 475.7775pt>
 File: images/OnePointCrossover.png Graphic file (type png)
 
 <use images/OnePointCrossover.png>
-Package pdftex.def Info: images/OnePointCrossover.png used on input line 249.
+Package pdftex.def Info: images/OnePointCrossover.png used on input line 255.
 (pdftex.def)             Requested size: 390.0pt x 105.332pt.
 
 <images/NPointCrossover.png, id=68, 1723.43875pt x 504.88625pt>
 File: images/NPointCrossover.png Graphic file (type png)
 
 <use images/NPointCrossover.png>
-Package pdftex.def Info: images/NPointCrossover.png used on input line 257.
+Package pdftex.def Info: images/NPointCrossover.png used on input line 263.
 (pdftex.def)             Requested size: 390.0pt x 114.24933pt.
-
-<images/UniformCrossover.png, id=69, 1767.60374pt x 335.2525pt>
+ [15 <./images/OnePointCrossover.png>]
+<images/UniformCrossover.png, id=73, 1767.60374pt x 335.2525pt>
 File: images/UniformCrossover.png Graphic file (type png)
 
 <use images/UniformCrossover.png>
-Package pdftex.def Info: images/UniformCrossover.png used on input line 265.
+Package pdftex.def Info: images/UniformCrossover.png used on input line 271.
 (pdftex.def)             Requested size: 390.0pt x 73.96552pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/ArithmeticCrossover.png, id=70, 1047.915pt x 583.17876pt>
+<images/ArithmeticCrossover.png, id=74, 1047.915pt x 583.17876pt>
 File: images/ArithmeticCrossover.png Graphic file (type png)
 
 <use images/ArithmeticCrossover.png>
-Package pdftex.def Info: images/ArithmeticCrossover.png used on input line 274.
+Package pdftex.def Info: images/ArithmeticCrossover.png used on input line 280.
 
 (pdftex.def)             Requested size: 390.0pt x 217.03636pt.
 
@@ -682,87 +698,151 @@ Package pdftex.def Info: images/ArithmeticCrossover.png used on input line 274.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (17.29022pt too wide) in paragraph at lines 281--282
+Overfull \hbox (17.29022pt too wide) in paragraph at lines 287--288
 \OT1/cmr/m/n/12 When ap-plied to a geno-type, mu-ta-tion re-turns a slightly mu
 -tated off-spring(Eiben
  []
 
-[15 <./images/OnePointCrossover.png> <./images/NPointCrossover.png>]
-<images/BinaryMutation.png, id=76, 1756.5625pt x 231.86626pt>
+<images/BinaryMutation.png, id=75, 1756.5625pt x 231.86626pt>
 File: images/BinaryMutation.png Graphic file (type png)
 
 <use images/BinaryMutation.png>
-Package pdftex.def Info: images/BinaryMutation.png used on input line 289.
+Package pdftex.def Info: images/BinaryMutation.png used on input line 295.
 (pdftex.def)             Requested size: 390.0pt x 51.47774pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
  []
 
-<images/IntegerMutation.png, id=77, 1627.07875pt x 145.54375pt>
+[16 <./images/NPointCrossover.png> <./images/UniformCrossover.png>]
+<images/IntegerMutation.png, id=81, 1627.07875pt x 145.54375pt>
 File: images/IntegerMutation.png Graphic file (type png)
 
 <use images/IntegerMutation.png>
-Package pdftex.def Info: images/IntegerMutation.png used on input line 298.
+Package pdftex.def Info: images/IntegerMutation.png used on input line 304.
 (pdftex.def)             Requested size: 390.0pt x 34.88457pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[16 <./images/UniformCrossover.png> <./images/ArithmeticCrossover.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
 
  []
 
-[17 <./images/BinaryMutation.png> <./images/IntegerMutation.png>] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
+[17 <./images/ArithmeticCrossover.png> <./images/BinaryMutation.png> <./images/
+IntegerMutation.png>] [18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
-<images/MarIO.png, id=92, 1649.16125pt x 1368.11125pt>
+<images/MarIO.png, id=95, 1649.16125pt x 1368.11125pt>
 File: images/MarIO.png Graphic file (type png)
  <use images/MarIO.png>
-Package pdftex.def Info: images/MarIO.png used on input line 361.
+Package pdftex.def Info: images/MarIO.png used on input line 367.
 (pdftex.def)             Requested size: 390.0pt x 323.53113pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 370--371
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
 
-[20 <./images/MarIO.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 384--385
+[21 <./images/MarIO.png>]
 
- []
+Package natbib Warning: Citation `20' on page 22 undefined on input line 388.
 
-[21]
+
 Underfull \hbox (badness 10000) in paragraph at lines 394--395
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
+Package natbib Warning: Citation `21' on page 22 undefined on input line 398.
+
+[22]
+
+Package natbib Warning: Citation `21' on page 23 undefined on input line 400.
+
+
+Package natbib Warning: Citation `22' on page 23 undefined on input line 400.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 
  []
 
-[22] [23] [24] (./Dissertation.bbl
+
+Package natbib Warning: Citation `23' on page 23 undefined on input line 405.
+
+
+Package natbib Warning: Citation `23' on page 23 undefined on input line 405.
+
+
+Package natbib Warning: Citation `24' on page 23 undefined on input line 407.
+
+
+Package natbib Warning: Citation `25' on page 23 undefined on input line 409.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--419
+
+ []
+
+[23]
+
+Package natbib Warning: Citation `19' on page 24 undefined on input line 422.
+
+
+Package natbib Warning: Citation `17' on page 24 undefined on input line 422.
+
+
+Package natbib Warning: Citation `18' on page 24 undefined on input line 422.
+
+
+Package natbib Warning: Citation `17' on page 24 undefined on input line 424.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
+
+ []
+
+
+Package natbib Warning: Citation `24' on page 24 undefined on input line 426.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
+
+ []
+
+[25] [26] [27] (./Dissertation.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 19--23
 []\OT1/cmr/m/n/12 Andrey Kurenkov.  A Brief His-tory of Game AI.  URL
  []
@@ -784,81 +864,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--69
 []\OT1/cmr/m/n/12 Alan Tur-ing.  The Alan Tur-ing In-ter-net Scrap-book.  URL
  []
 
-) [25]
-Underfull \hbox (badness 10000) in paragraph at lines 439--440
+) [28]
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--442
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 458--459
+Underfull \hbox (badness 10000) in paragraph at lines 492--493
 
  []
 
-[26]
+[29]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 463.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 497.
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--471
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
  []
 
-[27]
-Overfull \hbox (1.1135pt too wide) in paragraph at lines 479--480
+[30]
+Overfull \hbox (1.1135pt too wide) in paragraph at lines 513--514
 \OT1/cmr/m/n/14.4 they per-form in terms of im-prov-ing or de-creas-ing the age
 nt's
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--485
+Underfull \hbox (badness 10000) in paragraph at lines 518--519
 
  []
 
 
-Overfull \hbox (6.90292pt too wide) in paragraph at lines 488--489
+Overfull \hbox (6.90292pt too wide) in paragraph at lines 522--523
 []\OT1/cmr/m/n/14.4 Lubberts, & Mi-ikku-lainen (2001). Co-Evolving a Go-Playing
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--496
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
 
  []
 
-[28] [29] (./Dissertation.aux) ) 
+[31]
+
+Package natbib Warning: There were undefined citations.
+
+[32] (./Dissertation.aux) ) 
 Here is how much of TeX's memory you used:
- 6155 strings out of 493089
- 91188 string characters out of 6134842
+ 6168 strings out of 493089
+ 91240 string characters out of 6134842
  178162 words of memory out of 5000000
- 9522 multiletter control sequences out of 15000+600000
+ 9535 multiletter control sequences out of 15000+600000
  10844 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,12n,43p,836b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmtt12.pfb>
-Output written on Dissertation.pdf (30 pages, 1269435 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmtt12.pfb>
+Output written on Dissertation.pdf (33 pages, 1275787 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
+ 176 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
