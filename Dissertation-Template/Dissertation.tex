@@ -89,36 +89,56 @@ $\\ \clubsuit \\\\ \diamondsuit \\\\ \heartsuit \\\\ \spadesuit$
 \newpage
 
 \section*{Acknowledgements}
-Insert acknowledgements here
-\subsection*{}
-	I would like to thank my cat, dog and family.
+The Games Development course has been journey of personal development in addition to gaining a higher education by obtaining and improving skills. It has been the proverbial roller-coaster ride with several highs, lows, moments of complete disorientation, and a feeling of wishing you could do it all over again. The last four years have gone by in the blink of an eye, but have provided experiences and created friendships that will remain far beyond graduation.\\
+
+I would like to thank my friends and family for ensuring that I remained positive and motivated along the way, and for their participation in the testing phases. All of the support, assistance and feedback has been invaluable to both myself and the project as a whole. \\
+
+I am also hugely appreciative of my project supervisor, Dr Simon Powers. Simon has provided me with excellent support and guidance throughout the process and for that I am extremely grateful.
 
 \newpage
 \section{Introduction}
-
-You can fill out sections as you please. \\ %adds a line brake
-
-Most of the formatting is taken care for you but you can add this yourself as you please.
+This chapter highlights the aims and objectives for this honours project, providing a brief insight into the what is to come. It also outlines the desired deliverables for the completed project. \\
 
 \subsection{Project Aims and Structure}
-Or have sections that are relevant to your main body of work above but warrant there own section. Both - with numbering would be entered into the Table of contents.
+%Or have sections that are relevant to your main body of work above but warrant their own section. Both - with numbering would be entered into the Table of contents.
 
+This project intends to provide a digitally playable card game that can be played by a human user against one or more artificial intelligence agents. The underlying purpose of the project is to research and demonstrate the effectiveness of artificial neural networks and evolutionary algorithms in a game of this type. 
 
- \subsubsection{Overview Of Project Content and Milestones}
+It plans to do so by using the NeuroEvolution of Augmenting Topologies (NEAT) library to co-evolve neural network structures as well as input weights to make decisions relating to in-game moves that can be made, and to learn from the results of those decisions. 
 
-This is a sub sub section with a list of bullet points.
-\begin{itemize}\itemsep0pt
-	\item A working X, that will be used for this investigation.
-	\item Investigation of current tools and their potential use during an investigation of X .
-	\item Programming of X with related frameworks Y and Z.
-	\item That is all.
-\end{itemize}
+This report will document how well the agent performs over a vast amount of games and topologies, presenting the results through a mixture of figures and charts. An in-depth explanation of the way in which the performance is measured will be described in the methodology section. 
+
+While the project has research at its core, it is also intended to be a game that can provide an enjoyable experience for a playing user who may not appreciate what is going on under the hood.\\
+
+ \subsection{Overview Of Project Content and Milestones}
+
+Milestone proposals for the project are as follows: 
+\subsubsection{Research}
+Neural networks and Evolutionary algorithms research is necessary to aid with the project development and to make up for current lack of knowledge
+
+\subsubsection{Game Foundation}
+A short-term goal of the project is to create a bare-bones version of the card game without any artificial intelligence. This has to be created as it is the foundation on which the rest of the project will reside, and as such it needs to be rigorously tested to ensure that the rules of the game have been correctly implemented without any bugs. That way, any future problems will be related to the artificial intelligence itself.
+
+\subsubsection{Implementation of Artificial Intelligence}
+Most likely the phase of greatest difficulty and complexity, the implementation of artificial neural networks and evolutionary algorithms is expected to be a largely time consuming task. 
+
+This will be where the game will transition from a hard-coded, bare-bones implementation to something of more interest. Once this has been successfully set up, we can begin testing and tweaking it to analyse the varying results.
+
+\subsubsection{Experiments and Testing}
+A large amount of games will be required to allow the evolution process to grow into something that performs to a decent level in our game. This will mean the game will have to be played multiple times, and so it will be beneficial to get other people to play-test the game too. 
+
+Each time tweaks are made in our algorithm, the game will need to be thoroughly re-tested, with the results of these tests being accurately documented to provide a solid basis for the next stage of tweaking. 
+
+The aim is to have a very large set of data to analyse and draw conclusions from in the latter stages of the project. 
+
+\subsubsection{Evalution and Conclusion}
+The aforementioned dataset will be used extensively to deeply examine the performance of each machine learning techniques implemented throughout the experimental stage of the project, with regards to both our hard-coded solutions and the results of other attempted solutions. 
 
 \newpage
 \section{Background}
 \subsection{Introduction}
-The following section of this dissertation will go on to discuss the history of artificial intelligence within the context of video games, before going on to explain neural networks, evolutionary algorithms, and the NeuroEvolution of Augmenting Topologies (NEAT) library.
-\\
+The following section of this dissertation will go on to discuss the history of artificial intelligence within the context of video games, before going on to explain neural networks, evolutionary algorithms, and the NeuroEvolution of Augmenting Topologies (NEAT) library.\\
+
 \subsection{History of AI in Games}
 Video games have been a popular area of interest for artificial intelligence developers and researchers for many decades. 
 
@@ -181,7 +201,8 @@ $w \cdot x+b$ is of modest size that there's much deviation from the perceptron 
 
 \begin{figure}[h]
 	\includegraphics[width=\textwidth, height=5cm]{SigmoidFunction.png}
-	\caption{Sigmoid Function}
+	\caption{Sigmoid Function} \centering{\citep{NeuralNetworksAndDeepLearning}}
+	
 \end{figure}
 
 The shape of a plotted $\sigma$ function can be seen in Figure 2. 
@@ -310,7 +331,6 @@ Again, permutations work in a completely different way, but are not considered a
 \subsubsection{Replacement}
 This is the part where individuals are removed from the population to make way for a generation of new and hopefully improved genotypes. We could just remove the oldest genotype in the population, but this could be one with a high fitness! This can also be done randomly, but again there's a risk that we could be removing individuals of high quality. The other way is to determine which individuals to remove using the fitness. We could just get rid of the least fit genotypes, which could lead to the population improving very quickly, however it could also lead to premature convergence.\\
 
-\newpage
 \subsection{NeuroEvolution for Augmenting Topologies (NEAT)}
 \enquote{NEAT is a method for evolving speciated neural networks of arbitrary structures and sizes. NEAT leverages the evolution of structure to make neuroevolution more efficient}\citep{NEAT}.
 
@@ -448,14 +468,45 @@ As Switch is largely down to luck like most (if not all) card games, there is ne
 
 \newpage
 \section{Methodology}
-And so on for each of the chapters.  The template automatically starts new chapters on a new page.  The associated guidelines tell you what the available styles do and also how to structure a report.
-There is a section break on this page that you should be careful NOT to delete otherwise the references and appendices will be numbered continuously with the rest of the document.
+%And so on for each of the chapters.  The template automatically starts new chapters on a new page.  The associated guidelines tell you what the available styles do and also how to structure a report.
+%There is a section break on this page that you should be careful NOT to delete otherwise the references and appendices will be numbered continuously with the rest of the document.
 
-% another example section
+\subsection{Language and Libraries}
+The programming language used to build this project is C++. It is used in collaboration with the NeuroEvolution of Augmenting Topologies (NEAT) library. 
+
+\subsection{Neural Network}
+
+\subsection{Evolutionary Algorithm}
+
+\subsection{Fitness Evaluation}
+
+
 \newpage
-\section{Additional Information / Knowledge Required}
-Experience with Linux and managing Virtual machines, networking.
-So on and so forth...
+\section{Results}
+A compilation of results from all of the test phases.
+\subsection{Result 1}
+.
+\subsection{Result 2}
+.
+\subsection{Result 3}
+.
+
+\newpage
+\section{Critical Evaluation}
+Include updated gantt charts here (I think)
+
+\begin{itemize}
+	\item Gantt chart from beginning of project
+	\item Gantt chart from week 9 milestone (ie now, when lit review is done)
+	\item Gantt chart at Christmas/New Year
+	\item Completed project gantt chart 
+\end{itemize}
+
+Gantt charts are based on "work to be undertaken" section of the IPO. 
+
+\newpage
+\section{Conclusion}
+
 
 \newpage
 \bibliographystyle{plainnat}

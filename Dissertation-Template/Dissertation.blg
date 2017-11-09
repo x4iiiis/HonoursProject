@@ -4,8 +4,8 @@ The top-level auxiliary file: Dissertation.aux
 The style file: plainnat.bst
 Database file #1: Citations.bib
 Warning--string name "archives" is undefined
---line 103 of file Citations.bib
-I was expecting a `,' or a `}'---line 103 of file Citations.bib
+--line 105 of file Citations.bib
+I was expecting a `,' or a `}'---line 105 of file Citations.bib
  :  journal = archives 
  :                     of {P}athology {\&} {L}aboratory {M}edicine",
 I'm skipping whatever remains of this entry
@@ -26,7 +26,7 @@ Warning--empty year in 21
 Warning--empty year in TuringTest
 You've used 25 entries,
             2773 wiz_defined-function locations,
-            707 strings with 9515 characters,
+            707 strings with 9518 characters,
 and the built_in function-call counts, 11542 in all, are:
 = -- 892
 > -- 963
