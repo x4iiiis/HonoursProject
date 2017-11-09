@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.11)  9 NOV 2017 14:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.11)  9 NOV 2017 21:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -799,7 +799,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 453--454
 
  []
 
-[25] [26] [27] [28] [29] (./Dissertation.bbl
+[25] [26] [27] <images/Gantt1.png, id=122, 553.1064pt x 257.2812pt>
+File: images/Gantt1.png Graphic file (type png)
+
+<use images/Gantt1.png>
+Package pdftex.def Info: images/Gantt1.png used on input line 506.
+(pdftex.def)             Requested size: 390.0pt x 181.41467pt.
+ <images/Gantt2.png, id=123, 553.1064pt x 257.2812pt>
+File: images/Gantt2.png Graphic file (type png)
+
+<use images/Gantt2.png>
+Package pdftex.def Info: images/Gantt2.png used on input line 512.
+(pdftex.def)             Requested size: 390.0pt x 181.41467pt.
+ [28 <./images/Gantt1.png> <./images/Gantt2.png>]
+[29] (./Dissertation.bbl
 Overfull \hbox (80.21378pt too wide) in paragraph at lines 70--73
 []\OT1/cmr/m/n/12 IBM.  Deep Blue, a.  URL \OT1/cmtt/m/n/12 www-03.ibm.com/ibm/
 history/ibm100/us/en/icons/deepblue/\OT1/cmr/m/n/12 . 
@@ -855,61 +868,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--161
  []
 
 [31]) [32]
-Underfull \hbox (badness 10000) in paragraph at lines 524--525
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 530--531
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 543--544
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
 
  []
 
 [33]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 548.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 570.
 
-Underfull \hbox (badness 10000) in paragraph at lines 555--556
+Underfull \hbox (badness 10000) in paragraph at lines 577--578
 
  []
 
 [34]
-Overfull \hbox (1.1135pt too wide) in paragraph at lines 564--565
+Overfull \hbox (1.1135pt too wide) in paragraph at lines 586--587
 \OT1/cmr/m/n/14.4 they per-form in terms of im-prov-ing or de-creas-ing the age
 nt's
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 569--570
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
 
  []
 
 
-Overfull \hbox (6.90292pt too wide) in paragraph at lines 573--574
+Overfull \hbox (6.90292pt too wide) in paragraph at lines 595--596
 []\OT1/cmr/m/n/14.4 Lubberts, & Mi-ikku-lainen (2001). Co-Evolving a Go-Playing
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 580--581
+Underfull \hbox (badness 10000) in paragraph at lines 602--603
 
  []
 
 [35] [36] (./Dissertation.aux) ) 
 Here is how much of TeX's memory you used:
- 6197 strings out of 493089
- 91603 string characters out of 6134842
+ 6207 strings out of 493089
+ 91797 string characters out of 6134842
  180156 words of memory out of 5000000
- 9564 multiletter control sequences out of 15000+600000
+ 9572 multiletter control sequences out of 15000+600000
  10844 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,12n,43p,836b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -925,10 +938,10 @@ fonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt12.pfb>
-Output written on Dissertation.pdf (37 pages, 1288134 bytes).
+Output written on Dissertation.pdf (37 pages, 1362450 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
+ 195 PDF objects out of 1000 (max. 8388607)
  119 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

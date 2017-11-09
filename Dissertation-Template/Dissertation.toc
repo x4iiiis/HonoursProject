@@ -40,7 +40,6 @@
 \contentsline {section}{\numberline {7}Conclusion}{29}
 \contentsline {section}{Appendices}{33}
 \contentsline {section}{\numberline {A}Project Overview}{33}
-\contentsline {subsection}{\numberline {A.A}Example sub appendices}{36}
 \contentsline {section}{\numberline {B}Second Formal Review Output}{36}
 \contentsline {section}{\numberline {C}Diary Sheets (or other project management evidence)}{36}
 \contentsline {section}{\numberline {D}Appendix 4 and following}{36}
