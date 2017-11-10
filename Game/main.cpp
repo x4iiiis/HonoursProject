@@ -188,28 +188,73 @@ int main() {
 	  }
   }
 
+  //It's important that we don't get allCards and cardStack mixed up.
+  //A reference to all cards is now pushed back onto the card stack.
+  for (auto &c : allCards)
+  {
+	  cardStack.push_back(c);
+  }
 
-  //for (int i = 0; i < allCards->size(); i++)
-  //{
-	 // if (allCards[i].data()->cardSuit == card::suit::Diamonds)
-	 // {
-		//  cout << "Diamonds!";
-	 // }
-	 // if (allCards[i].data()->cardSuit == card::suit::Clubs)
-	 // {
-		//  cout << "Clubs!";
-	 // }
-	 // if (allCards[i].data()->cardSuit == card::suit::Hearts)
-	 // {
-		//  cout << "Hearts!";
-	 // }
-	 // if (allCards[i].data()->cardSuit == card::suit::Spades)
-	 // {
-		//  cout << "Spades!";
-	 // }
 
-  //}
+  //Right now that the pack is shuffled, it's time to deal it out!
+  //But first, we need some players to deal to!
+  player Ryan;		Ryan.name = "Ryan";
+  player Nick;		Nick.name = "Nick";
+  player Blair;		Blair.name = "Blair";
+  player Declan;	Declan.name = "Decy";
 
+
+  //Let's add them to a vector array now - note that it's of pointers/references
+  vector<player> PlayerList;
+
+  //This is just hardcoded now, but we'll need to think of a strategy for
+  //adding all of the players later, as I imagine we'll be letting the user
+  //decide how many players there are, and what their names are.
+  //They could just be created via a button or something and added directly to
+  //the vector array I suppose.
+  PlayerList.push_back(Ryan);
+  PlayerList.push_back(Nick);
+  PlayerList.push_back(Blair);
+  PlayerList.push_back(Declan);
+
+  //We need to know how many cards each player is going to be dealt.
+  //This could be something we let the user decide...
+  //But for now let's make it 7.
+  int CardsPerPlayer = 7;
+
+  //Let's deal!
+  //We need a nested for loop here so that the outside loop deals 7 times
+  //but the inside loop makes sure that it doesn't just deal 7 cards to each player
+  //sequentially. Cards should be dealt 1 by 1 around the table until everyone has 
+  //[CardsPerPlayer] cards.
+  //The inner loop decides who is recieving the next card.
+  for (int i = 0; i < CardsPerPlayer; i++)
+  {
+	  for (int j = 0; j < PlayerList.size(); j++)
+	  {
+		  //PlayerList[j].hand.push_back(cardStack.begin());			//PROBLEMMMMMMMM
+		  cardStack.erase(cardStack.begin());
+	  }
+  }
+
+
+  //I'm not confident about the * notation so let's get some tests done here
+  cout << endl;
+
+  cout << "Ryan has " << Ryan.hand.size() << " cards." << endl;
+  cout << "Nick has " << Nick.hand.size() << " cards." << endl;
+  cout << "Blair has " << Blair.hand.size() << " cards." << endl;
+  cout << "Declan has " << Declan.hand.size() << " cards." << endl;
+
+  cout << endl;
+
+  cout << "allCards.size() = " << allCards.size() << endl;
+  cout << "cardStack.size() = " << cardStack.size() << endl;
+
+  cout << endl;
+
+  cout << "If that worked, each player should have 7 cards." << endl << "allCards should still have 52 cards, and cardstack should have "
+	  << 52 - (PlayerList.size() * CardsPerPlayer) << endl;
 
 
   ////For checking if arrays are empty
