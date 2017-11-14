@@ -29,6 +29,15 @@
 \usepackage{csquotes}
 %" facing the wrong way so trying to rectify that
 
+\usepackage[breaklinks = true]{hyperref}
+\hypersetup
+{
+	colorlinks=false, %set true if you want colored links
+	linktoc=all,     %set to all if you want both sections and subsections linked
+}
+%\usepackage[hyphenbreaks]{breakurl}
+\usepackage[anythingbreaks]{breakurl}
+\usepackage{gensymb}
 \usepackage[round]{natbib}
 
 %header and footer settings
@@ -89,7 +98,7 @@ $\\ \clubsuit \\\\ \diamondsuit \\\\ \heartsuit \\\\ \spadesuit$
 \newpage
 
 \section*{Acknowledgements}
-The Games Development course has been journey of personal development in addition to gaining a higher education by obtaining and improving skills. It has been the proverbial roller-coaster ride with several highs, lows, moments of complete disorientation, and a feeling of wishing you could do it all over again. The last four years have gone by in the blink of an eye, but have provided experiences and created friendships that will remain far beyond graduation.\\
+%The Games Development course has been journey of personal development in addition to gaining a higher education by obtaining and improving skills. It has been the proverbial roller-coaster ride with several highs, lows, moments of complete disorientation, and a feeling of wishing you could do it all over again. The last four years have gone by in the blink of an eye, but have provided experiences and created friendships that will remain far beyond graduation.\\
 
 I would like to thank my friends and family for ensuring that I remained positive and motivated along the way, and for their participation in the testing phases. All of the support, assistance and feedback has been invaluable to both myself and the project as a whole. \\
 
@@ -175,51 +184,46 @@ Frank Rosenblatt, the scientist who developed the perceptron in the 1950s and 19
 Sigmoid neurons are akin to perceptrons, however, they are modified in such a way that marginal alterations in their weights and bias cause only a small change to their output\citep{NeuralNetworksAndDeepLearning}. This crucial difference is what affords a network consisting of sigmoid neurons the ability to learn.
 
 The inputs to a sigmoid neuron also differ from those of perceptrons. Rather than being binary (1 or 0), these inputs are any number \textit{between} 1 and 0. %probably pointless italics
-Much like with perceptrons, these sigmoid neuron inputs are weighted, with an overall bias included. These can be denoted \textit{b, $w_1$, $w_2$, ... $w_n$}
-where \textit{b} represents the bias, and each \textit{w} is an input weight. This time however, the output is non-binary. To calculate it, we use 
-\begin{eqnarray}
-\sigma (w \cdot x+b)
-\end{eqnarray}
-where $\sigma$ is known as the sigmoid function, which is defined as:
-\begin{eqnarray} 
-\sigma(z) \equiv \frac{1}{1+e^{-z}}.
-\end{eqnarray}
-%*Incidentally, $\sigma$ is sometimes called the logistic function, and this new class of neurons called logistic neurons. It's useful to remember this terminology, since these terms are used by many people working with neural nets. However, we'll stick with the sigmoid terminology.*
-In its full extended form, with \textit{x} being used to symbolise the inputs, the output of a sigmoid neuron is calculated as
-\begin{eqnarray} 
-\frac{1}{1+\exp(-\sum_j w_j x_j-b)}.
-\end{eqnarray}
+Much like with perceptrons, these sigmoid neuron inputs are weighted, with an overall bias included. 
 
-/////////////////////////////////////////////////////////////////////////////////\\
-To understand the similarity to the perceptron model, suppose 
-z $\equiv w \cdot x + b$ is a large positive number. Then 
-$e^{-z} \approx 0$ and so $\sigma(z) \approx 1$. In other words, when $z = w \cdot x+b$ is large and positive, the output from the sigmoid neuron is approximately 1, just as it would have been for a perceptron. Suppose on the other hand that $z = w \cdot x+b$ is very negative. Then $e^{-z} \rightarrow \infty$, and $\sigma(z) \approx 0$. So when 
-$z = w \cdot x +b$ is very negative, the behaviour of a sigmoid neuron also closely approximates a perceptron. It's only when 
-$w \cdot x+b$ is of modest size that there's much deviation from the perceptron model\citep{NeuralNetworksAndDeepLearning}.
-
-///////////////////////////////////////////////////////////////////////////////
+The shape of a plotted sigmoid function ($\sigma$) can be seen in Figure 2. 
 
 \begin{figure}[h]
 	\includegraphics[width=\textwidth, height=5cm]{SigmoidFunction.png}
 	\caption{Sigmoid Function} \centering{\citep{NeuralNetworksAndDeepLearning}}
-	
 \end{figure}
 
-The shape of a plotted $\sigma$ function can be seen in Figure 2. 
-
-///////////////////////////////////////////////////////////////////////////////
-The smooth nature of $\sigma$ means that minor changes in the weights and bias - which are depicted as $\Delta w_j$ and $\Delta b_j$ respectively - will consequently create small changes to the output from the neuron. That change - $\Delta \mbox{output}$ - can be approximated with calculus:
-\begin{eqnarray} 
-\Delta \mbox{output} \approx \sum_j \frac{\partial \, \mbox{output}}{\partial w_j}
-\Delta w_j + \frac{\partial \, \mbox{output}}{\partial b} \Delta b
+To give sigmoid neurons the smoothness required for a non-linear activation function, the following logistic function defining sigmoidal non-linearity is used:
+\begin{eqnarray}
+y_j = \frac{1}{1+exp(-v_j)}
 \end{eqnarray}
-The sum is over all of the weights, $w_j$, and $\partial \, \mbox{output} / \partial w_j$
-and $\partial \, \mbox{output} /\partial b$ denote partial derivatives of the output with respect to $w_j$ and  \textit{b}, respectively.
 
-As $\Delta \mbox{output}$ is a linear function of the changes
-$\Delta w_j$ and $\Delta b_j$ in the weights and bias, this linearity makes it easy to choose small changes in the weights and biases to achieve any desired small change in the output. So while sigmoid neurons have much of the same qualitative behaviour as perceptrons, they make it much easier to figure out how changing the weights and biases will change the output.
+\begin{center}
+	\citep[Chapter 4, page 179] {NeuralNetworksAComprehensiveFoundation}
+\end{center}
 
-///////////////////////////////////////////////////////////////////////////////\\
+This calculates the output from our neuron \textit{{$y_j$}}, with \textit{j} being the neuron itself, and \textit{$v_j$} representing the sum of all inputs (with weighting applied) plus the bias\citep{NeuralNetworksAComprehensiveFoundation}.
+
+Input weights can be calculated via the dot product. Thus, using \textit{w}, \textit{x} and \textit{b} as symbols for weights, inputs and bias, we can represent $v_j$ as 
+\begin{eqnarray}
+(w \cdot x+b).
+\end{eqnarray}
+
+\begin{center}
+	\citep{NeuralNetworksAndDeepLearning}
+\end{center}
+
+Therefore, extending the output calculation gives us
+\begin{eqnarray} 
+%y_j = \frac{1}{1+\exp(-\sum_j w_j x_j-b)}.\\\\
+y_j = \frac{1}{1+\exp(-\sum_j w_j \cdot x_j - b)}.
+\end{eqnarray}
+
+
+When $v_j$ is a large, positive number the sigmoid neuron output is approximately 1. On the other hand, the output is approximately 0 if $v_j$ is heavily negative. These outputs are similar to that of perceptrons. However, when $v_j$ is somewhere in between, the similarities cease. 
+
+Even the smallest alterations to the weighting or bias can create small changes to the output from a sigmoid neuron, due to the smooth nature of the function\citep{NeuralNetworksAndDeepLearning}.\\
+
 \subsection{Evolutionary Algorithms}
 As the name might suggest, an evolutionary algorithm is one that evolves. It does so to encourage finding the most optimal solution to a problem. A vast amount of varying evolutionary algorithms exist, but at the core of them all is the same principal idea: \enquote{given a population of individuals the environmental pressure causes natural selection (survival of the fittest) and this causes a rise in the fitness of the population}\citep{IntroductionToEvolutionaryComputing}. As a result, the population adapts over time to its environment. 
 
@@ -231,15 +235,8 @@ Step one when defining an evolutionary algorithm is to bridge the gap between th
 %In order to use an evolutionary algorithm, possible solutions must be represented as what are known as chromosomes (or genotypes). 
 
 \begin{itemize}
-	\item Phenotype:
-	\begin{itemize}
-		\item A solution to a problem
-	\end{itemize}
-	
-	\item Genotype 
-	\begin{itemize}
-		\item Chromosome used to represent the solution to a problem
-	\end{itemize}
+	\item Phenotype: A solution to a problem
+	\item Genotype: Chromosome used to represent the solution to a problem
 \end{itemize}
 
 Representation refers to specifying which genotypes equate to each phenotype\citep{IntroductionToEvolutionaryComputing}. For example, if an integer is the solution to a problem, it is the phenotype, and a binary representation of that particular integer would be the genotype relating to that phenotype. 
@@ -378,22 +375,24 @@ Solutions for Chess and Go might use search trees for decision making, however t
 \subsection{AI for Playing Games}
 When researching neural networks in relation to games, a stand-out is MarI/O. There is a video on YouTube showcasing its solution after 34 generations using NEAT. It is described on the page of that video as the following:\\
 
-\textit{\enquote{MarI/O is a program made of neural networks and genetic algorithms that kicks butt at Super Mario World}}\citep{MarIO}. \\
-
-Despite that description, the intelligence of MarI/O is questionable. Although it has mastered the art of manoeuvring its way across the level in question, that is all it has done. In other words, if we were to take the same agent and run it on another Super Mario level, it wouldn't do so well. It has figured out how to pass through the level by continually moving right, and jumping at optimal times to avoid enemies and gaps in the map. Albeit successful, this is not a strategy that could be deemed as intelligent. 
+\textit{\enquote{MarI/O is a program made of neural networks and genetic algorithms that kicks butt at Super Mario World}}\citep{MarIO}.\\
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = \textwidth]{MarIO.png}
-	\caption{MarI/O}
+	\caption{MarI/O [image permission pending]}
 	\citep{MarIO} 
 \end{figure}
 %Probably need to ask for permission to use that 
 %Sent a message on facebook to request permission
 
-For Alan Turing to consider a machine intelligent, it must be able to act in a way that would be indistinguishable from the way a human would act. The Turing Test, created by Turing himself in 1950, was an imitation game whereby a human would hold textual conversations with another human, and with a computer. If the testing human is unable to successfully differentiate between the two based on interrogation within those conversations, then Turing would deem it unreasonable not to call the computer intelligent\citep{TuringTest}.
+Despite that description, the intelligence of MarI/O is questionable. Although it has mastered the art of manoeuvring its way across the level in question, that is all it has done. In other words, if we were to take the same agent and run it on another Super Mario level, it wouldn't do so well. It has figured out how to pass through the level by continually moving right, and jumping at optimal times to avoid enemies and gaps in the map. Albeit successful, this is not a strategy that could be deemed as \textit{intelligent}.\\
 
-Although dealing in a different realm altogether, applying the same principle to MarI/O and questioning if the strategy it presents could pass a similar test of human judgement to decide whether or not it is a strategy that is likely to have been played by a human, then we cannot possibly declare MarI/O's technique as an intelligent solution. \\
+For Alan Turing to consider a machine intelligent, it must be able to act in a way that would be indistinguishable from the way a human would act. The Turing Test, created by Turing himself in 1950, was an imitation game whereby a human would hold textual conversations with another human, and with a computer. If the testing human is unable to successfully differentiate between the two based on interrogation within those conversations, then Turing would deem it unreasonable not to call the computer intelligent\citep{TuringTest}.\\
+
+Although dealing in a different realm altogether, applying the same principle to MarI/O and questioning if the strategy it presents could pass a similar test of human judgement to decide whether or not it is a strategy that is likely to have been played by a human, then we cannot possibly declare MarI/O's technique as an intelligent solution.\\
+
+Related videos include a Unity3D project that uses NeuroEvolution of Augmenting Technologies (NEAT) to teach a car model how to drive around a purpose-build track\citep{26}, and another neural network that plays Mario Kart 64\citep{27}. Furthermore, there is an interesting tutorial series entitled, \enquote{Python Plays: Grand Theft Auto V}\citep{28}, which makes use of TensorFlow\citep{17}.\\
 
 %Particularly card games
 \subsection{Why Neural Networks?}
@@ -405,28 +404,37 @@ Imagine having to write the code for a solution to every single possible game st
 
 On top of that, it could take the machine a long time to search through all of the conditions to find the one that applies to the situation at hand. 
 
-In Chess, there are 400 configurations possible after each player has made a single move each, and over 72,000 after two each\citep{20}. This continues to grow at an exponential rate, making it easy to see why implementing a fully coded strategy is unrealistic. Using a neural network and allowing it to analyse every situation it encounters on its own, deciding what moves to make and learning from the results is a far better idea. 
+In Chess, there are 400 configurations possible after each player has made a single move each, and over 72,000 after two each\citep{20}. This continues to grow at an exponential rate, making it easy to see why implementing a fully coded strategy is unrealistic. Additionally, this renders using a search tree for exploration of the full search space infeasible\citep{29}. Using a neural network and allowing it to analyse every situation it encounters on its own, deciding what moves to make and learning from the results is a far better idea. 
 
 Additionally, hard-coding solutions to given situations would make the game predictable, and could also lead to making moves that are not actually the best for that current game state. The flexible nature of a neural network provides the potential to reach better solutions that hard-coding might miss out on. 
 
-In our Switch card game for example, there is a rule that states if the previous player played a 2, you must pick up two cards unless you have another 2. Knowing this, and wanting to force our opponent to inherit more cards, we might hard-code a strategy that says, \enquote{if you have a 2 and it's available to be played, play it.} This could cost us a chance to win the game though! 
+In our Switch card game for example, there is a rule that states if the previous player played a 2, you must pick up two cards unless you have another 2. Knowing this, and wanting to force our opponent to inherit more cards, we might hard-code a strategy that says, \enquote{if you have a 2 and it is available to be played, play it.} This could cost us a chance to win the game though! 
 
 If we only had two cards left, both of the same suit and matching the suit of the most recently played card, one being a 2 and the other being a 7, we could play the 7 first, and that would allow us to play a run of that suit. This would allow us to play both cards and win the game. A neural network might learn that playing a 7 is better than deploying a 2, but our hard-coded strategy may not.\\
 
 %*****what have people used neural networks for with control problems and how is it related to my problem******\\
 
-Another implementation of artificial neural networks, albeit eerie, is Alter\citep{21}. Replicating the upper-body of a human, Alter is a robot that can almost be described as being \textit{alive}. 
+Alter\citep{21} is another example implementation of artificial neural networks. Replicating the upper-body of a human, Alter is a robot that can almost be described as being \textit{alive}. 
 
 Technologically, it consists of 42 pneumatic actuators and a \enquote{central pattern generator} with a neural network used to let the robot develop movement patterns\citep{21}. The network receives input in the form of sensory data relating to temperature and humidity as well as proximity and noise\citep{22}. 
 
 Although it does not behave in a human-esque manner, Alter is continually perceiving the nearby environment, and reacting to it in such a way that is completely uncontrolled by a human, and not pre-programmed. This is how it somewhat provides the illusion of life. \\
 
-
 RoboCup\citep{23} is a robotics competition whereby robots compete in a game of football (soccer). The competition was launched by Japanese researchers in 1993, who soon after found themselves inundated with requests from other nations to make the project an international joint effort\citep{23}. 
 
-The robots that participate in these competitions vary in size and shape. Thus, detecting fellow robots visually is not a simple task. It is however a job for a neural network of multi-layer perceptrons\citep{24}. Robots should also be able to recognise team-mates and tell them apart from opposing players. 
+RoboCup Soccer is an annual competition, and the performance of contestants is seen to increase across the various leagues yearly\citep{30}. Each league has a different type of robot, and so certain league alternate artificial intelligence problems with respect to the way in which they interpret and play the game. For example, not all of the leagues have robots with human-style bodies, and instead have wheels and 360$\degree$ vision. These variations allow for the RoboCup competition to encourage and facilitate research into an array of varying aspects within the artificial intelligence field. 
 
-In terms of playing the game, it is infeasible due to the dynamic nature of the game to consider all situations ahead of time when programming the robot\cite{25}. Machine learning is therefore a necessity for RoboCup participation.\\
+As the robots that participate in these competitions vary in size and shape, detecting fellow robots visually is not a simple task. It is however a job for a neural network of multi-layer perceptrons\citep{24}. Robots should also be able to recognise team-mates and tell them apart from opposing players. 
+
+In terms of playing the game, it is infeasible due to the dynamic nature of the game to consider all situations ahead of time when programming the robot\citep{25}. Machine learning is therefore a necessity for RoboCup participation.\\
+
+To demonstrate the significance of neural networks in the real world, let's look at an open source software library that is used worldwide. 
+
+Google initially developed TensorFlow, the successor to the DistBelief system they used from 2011\citep{19}, for research in neural networks and machine learning\citep{17}, but has since grown into a much wider-serving interface. It has found itself deployed in complex computational areas such as speech recognition and natural language processing, as well as image recognition\citep{18}. 
+
+Google themselves use TensorFlow for a variety of different projects;  Massively Multitask Networks for Drug Discovery and RankBrain are examples of large-scale deep neural network projects owned by Google, used for drug discovery and information retrieval respectively\citep{17}. 
+
+Other companies which benefit from the use of TensorFlow include Nvidia, Snapchat, Intel, Twitter, Dropbox, Ebay and Uber to name a few. \\
 
 %RELATE IT TO A (CARD) GAME 
 
@@ -435,22 +443,16 @@ Artificial neural network evolution has demonstrated positive results with tasks
 
 The evolution of neural networks has demonstrated a large degree of potential when coupled with tasks solvable by reinforcement learning techniques\citep{EfficientEvolutionOfNeuralNetworkTopologies}. It outperforms the basic methods of reinforcement learning against tasks that are considered benchmarks, and is therefore a justifiably sought after means of decision making.\\
 
-Another arcade-style game that has been used in the research of neural networks is PAC-MAN. In a particular paper introducing the concept of trying to evolve a player for the retro classic, a simple ghost avoidance strategy was given a hard-coded implementation for comparison purposes. Perhaps expectedly, the results were underwhelming. The aim was to demonstrate that the neural networks were learning something more sophisticated than such a simple strategy\citep{MSPacMan}. Evolving neural networks and allowing the controller to develop its own strategies, as opposed to hard-coding them, produced universally superior results.\\
+Another arcade-style game that has been used in the research of neural networks is PAC-MAN. In a particular paper introducing the concept of trying to evolve a player for the retro classic, a simple ghost avoidance strategy was given a hard-coded implementation for comparison purposes. Perhaps expectedly, the results were underwhelming - in particular when compared to other implementations in the same project. The aim was to demonstrate that the neural networks were learning something more sophisticated than such a simple strategy\citep{MSPacMan}. Evolving neural networks and allowing the controller to develop its own strategies, as opposed to hard-coding them, produced universally superior results.\\
 
-To demonstrate the significance of evolved neural networks in the real world, let's look at an open source software library that is used worldwide. 
-
-Google initially developed TensorFlow, the successor to the DistBelief system they used from 2011\citep{19}, for research in neural networks and machine learning\citep{17}, but has since grown into a much wider-serving interface. It has found itself deployed in complex computational areas such as speech recognition and natural language processing, as well as image recognition\citep{18}. 
-
-Google themselves use TensorFlow for a variety of different projects;  Massively Multitask Networks for Drug Discovery and RankBrain are examples of large-scale deep neural network projects owned by Google, used for drug discovery and information retrieval respectively\citep{17}. Other companies which benefit from the use of TensorFlow include Snapchat, Nvidia, Twitter, Intel, Dropbox, Ebay and Uber to name a few. \\
-
-Evolved neural networks are not without disadvantages. Their black-box nature means that we don't get an understanding of why it makes certain decisions or takes particular actions, and it can be difficult to modify behaviours. Furthermore, there is the problem of potential overfitting, as previously described with the MarI/O\citep{MarIO} example where the agent has perfected that particular Mario map, but if it were to be placed in a new environment, the same strategy would not suffice. It would be the same as introducing a robot of never before seen size or shape in our RoboCup\cite{24} example, without allowing retraining with images of the new robot machine.\\
+Evolved neural networks are not without disadvantages. Their black-box nature means that we don't get an understanding of why it makes certain decisions or takes particular actions, and it can be difficult to modify behaviours. Furthermore, there is the problem of potential overfitting, as previously described with the MarI/O\citep{MarIO} example where the agent has perfected that particular Mario map, but if it were to be placed in a new environment, the same strategy would not suffice. It would be the same as introducing a robot of never before seen size or shape in our RoboCup\citep{24} example, without allowing retraining with images of the new robot machine.\\
 
 \subsection{Why Co-Evolve Topologies and Weights?}
 Much like when we compare evolving neural networks to standard reinforcement learning techniques, evolving network topologies often performs in a significantly superior manner to the alternative - in this case fixed topology neural network evolution\citep{EfficientEvolutionOfNeuralNetworkTopologies}. 
 
 There is always a chance with evolving topologies of making the search overly complex, but in contrast to that possibility there is also the potential to find the optimal amount of hidden nodes for any given problem by itself, which would save some time\citep{EfficientEvolutionOfNeuralNetworkTopologies}. It is also possible for NEAT to reduce the complexity of a network's structure when evolving the topology. 
 
- Simple networks are where NEAT begins, before expanding the search space when necessary\citep{EvolvingARovingEyeForGo}. This flexibility is what allows it to find far more complex controllers than evolution networks with a non-negotiable topology.\\
+Rather than searching through topology space using a brute force approach, NEAT begins with small, simple networks before expanding the search space only when necessary\citep{EvolvingARovingEyeForGo}. This strategy attempts to counter the problem of overfitting, and the flexibility is what allows it to find far more complex controllers than evolution networks with a non-negotiable topology.\\
 
 %RELATE IT TO A (CARD) GAME \\
 
@@ -462,9 +464,9 @@ There is always a chance with evolving topologies of making the search overly co
 %-How computationally complex is it regarding hidden layers and topology. 
 Evolving artificial neural networks, including structural network evolution, allows us to create solutions that perhaps would not be feasible to build with step-by-step hard-coding approaches. For a project such as this where we cannot write a fool-proof strategy to deal with any given situation within the game, it is ideal to have tools such as NEAT. 
 
-Despite the disadvantages of evolved neural networks, the negatives are outweighed by positives and the undisputed fact is that they are able to achieve things that developers alone cannot. 
+Despite the disadvantages and complexities of evolved neural networks, the negatives are outweighed by positives. They are able to achieve things that developers alone cannot, and so it would be difficult and perhaps unwise to overlook them for some projects, particularly those with huge search spaces like Chess and Go.  
 
-As Switch is largely down to luck like most (if not all) card games, there is never going to be a perfect solution. However, evolving neural networks is a lot more capable of finding a consistently positive solution than a programmer implementing a strategy in advance could ever be. 
+As Switch is largely down to luck like most (if not all) card games, there is never going to be a perfect solution. That said, the aim of this project is to see whether evolved neural networks are more capable of finding a consistently positive solution than a programmer implementing a strategy in advance could be. 
 
 \newpage
 \section{Methodology}
@@ -483,12 +485,12 @@ The programming language used to build this project is C++. It is used in collab
 
 \newpage
 \section{Results}
-A compilation of results from all of the test phases.
-\subsection{Result 1}
+A compilation of results from all of the test phases.\\
+\subsection{Agent vs Hard-coded Strategy}
 .
-\subsection{Result 2}
+\subsection{Agent vs Human(s)}
 .
-\subsection{Result 3}
+\subsection{Agent vs Agent}
 .
 
 \newpage
@@ -606,12 +608,19 @@ Exploring possibilities and limits of AI in games, particularly evolved controll
 	\item Complete lack of knowledge and experience with Artificial Intelligence techniques
 \end{itemize}
 
+\newpage
 \section{Second Formal Review Output}
 Insert a copy of the project review form you were given at the end of the review by the second marker
 
-\section{Diary Sheets (or other project management evidence)}
-Insert diary sheets here together with any project management plan you have
+\newpage
+\section{Diary Sheets}
+%(or other project management evidence)
+%Insert diary sheets here together with any project management plan you have
 
+%Includepdf starts on a new page which is kinda a pain
+\includepdf[ pages=-,pagecommand={},width=\textwidth]{SupervisorMeetings/All.pdf}
+
+\newpage
 \section{Appendix 4 and following}
 insert content here and for each of the other appendices, the title may be just on a page by itself, the pages of the appendices are not numbered, unless an included document such as a user manual or design document is itself pager numbered.
 \end{appendices}

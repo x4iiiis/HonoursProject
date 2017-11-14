@@ -4,8 +4,8 @@ The top-level auxiliary file: Dissertation.aux
 The style file: plainnat.bst
 Database file #1: Citations.bib
 Warning--string name "archives" is undefined
---line 105 of file Citations.bib
-I was expecting a `,' or a `}'---line 105 of file Citations.bib
+--line 107 of file Citations.bib
+I was expecting a `,' or a `}'---line 107 of file Citations.bib
  :  journal = archives 
  :                     of {P}athology {\&} {L}aboratory {M}edicine",
 I'm skipping whatever remains of this entry
@@ -15,54 +15,55 @@ Warning--empty year in 17
 Warning--empty journal in 13
 Warning--empty year in 13
 Warning--empty year in 13
+Warning--empty year in TuringTest
 Warning--empty year in 15
 Warning--empty year in 16
 Warning--empty year in 25
 Warning--empty year in 25
 Warning--empty year in ABriefHistoryOfGameAI
+Warning--empty journal in 29
 Warning--empty year in 22
 Warning--empty year in 23
 Warning--empty year in 21
-Warning--empty year in TuringTest
-You've used 25 entries,
+You've used 30 entries,
             2773 wiz_defined-function locations,
-            707 strings with 9518 characters,
-and the built_in function-call counts, 11542 in all, are:
-= -- 892
-> -- 963
-< -- 19
-+ -- 333
-- -- 306
-* -- 919
-:= -- 1882
-add.period$ -- 74
-call.type$ -- 25
-change.case$ -- 174
-chr.to.int$ -- 23
-cite$ -- 65
-duplicate$ -- 445
-empty$ -- 791
-format.name$ -- 339
-if$ -- 2310
+            729 strings with 10220 characters,
+and the built_in function-call counts, 13054 in all, are:
+= -- 1027
+> -- 1013
+< -- 24
++ -- 353
+- -- 321
+* -- 994
+:= -- 2116
+add.period$ -- 92
+call.type$ -- 30
+change.case$ -- 194
+chr.to.int$ -- 28
+cite$ -- 76
+duplicate$ -- 524
+empty$ -- 949
+format.name$ -- 359
+if$ -- 2633
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 18
-newline$ -- 132
-num.names$ -- 100
-pop$ -- 425
+missing$ -- 19
+newline$ -- 160
+num.names$ -- 120
+pop$ -- 484
 preamble$ -- 1
-purify$ -- 152
+purify$ -- 167
 quote$ -- 0
-skip$ -- 405
+skip$ -- 471
 stack$ -- 0
-substring$ -- 69
-swap$ -- 27
+substring$ -- 79
+swap$ -- 31
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 260
-warning$ -- 15
-while$ -- 77
+type$ -- 315
+warning$ -- 16
+while$ -- 92
 width$ -- 0
-write$ -- 297
+write$ -- 362
 (There was 1 error message)

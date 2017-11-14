@@ -1,45 +1,45 @@
-\contentsline {section}{\numberline {1}Introduction}{9}
-\contentsline {subsection}{\numberline {1.1}Project Aims and Structure}{9}
-\contentsline {subsection}{\numberline {1.2}Overview Of Project Content and Milestones}{9}
-\contentsline {subsubsection}{\numberline {1.2.1}Research}{9}
-\contentsline {subsubsection}{\numberline {1.2.2}Game Foundation}{9}
-\contentsline {subsubsection}{\numberline {1.2.3}Implementation of Artificial Intelligence}{10}
-\contentsline {subsubsection}{\numberline {1.2.4}Experiments and Testing}{10}
-\contentsline {subsubsection}{\numberline {1.2.5}Evalution and Conclusion}{10}
-\contentsline {section}{\numberline {2}Background}{11}
-\contentsline {subsection}{\numberline {2.1}Introduction}{11}
-\contentsline {subsection}{\numberline {2.2}History of AI in Games}{11}
-\contentsline {subsection}{\numberline {2.3}What is a Neural Network?}{12}
-\contentsline {subsubsection}{\numberline {2.3.1}Perceptrons}{12}
-\contentsline {subsubsection}{\numberline {2.3.2}Sigmoid Neurons}{13}
-\contentsline {subsection}{\numberline {2.4}Evolutionary Algorithms}{14}
-\contentsline {subsubsection}{\numberline {2.4.1}Representation}{15}
-\contentsline {subsubsection}{\numberline {2.4.2}Initialisation}{15}
-\contentsline {subsubsection}{\numberline {2.4.3}Fitness}{16}
-\contentsline {subsubsection}{\numberline {2.4.4}Selection}{16}
-\contentsline {subsubsection}{\numberline {2.4.5}Crossover}{16}
-\contentsline {subsubsection}{\numberline {2.4.6}Mutation}{17}
-\contentsline {subsubsection}{\numberline {2.4.7}Replacement}{19}
-\contentsline {subsection}{\numberline {2.5}NeuroEvolution for Augmenting Topologies (NEAT)}{19}
-\contentsline {section}{\numberline {3}Literature Review}{20}
-\contentsline {subsection}{\numberline {3.1}AI for Playing Games}{20}
-\contentsline {subsection}{\numberline {3.2}Why Neural Networks?}{21}
-\contentsline {subsection}{\numberline {3.3}Why Evolve Neural Networks?}{23}
-\contentsline {subsection}{\numberline {3.4}Why Co-Evolve Topologies and Weights?}{24}
-\contentsline {subsection}{\numberline {3.5}Summary}{25}
-\contentsline {section}{\numberline {4}Methodology}{26}
-\contentsline {subsection}{\numberline {4.1}Language and Libraries}{26}
-\contentsline {subsection}{\numberline {4.2}Neural Network}{26}
-\contentsline {subsection}{\numberline {4.3}Evolutionary Algorithm}{26}
-\contentsline {subsection}{\numberline {4.4}Fitness Evaluation}{26}
-\contentsline {section}{\numberline {5}Results}{27}
-\contentsline {subsection}{\numberline {5.1}Result 1}{27}
-\contentsline {subsection}{\numberline {5.2}Result 2}{27}
-\contentsline {subsection}{\numberline {5.3}Result 3}{27}
-\contentsline {section}{\numberline {6}Critical Evaluation}{28}
-\contentsline {section}{\numberline {7}Conclusion}{29}
-\contentsline {section}{Appendices}{33}
-\contentsline {section}{\numberline {A}Project Overview}{33}
-\contentsline {section}{\numberline {B}Second Formal Review Output}{36}
-\contentsline {section}{\numberline {C}Diary Sheets (or other project management evidence)}{36}
-\contentsline {section}{\numberline {D}Appendix 4 and following}{36}
+\contentsline {section}{\numberline {1}Introduction}{9}{section.1}
+\contentsline {subsection}{\numberline {1.1}Project Aims and Structure}{9}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Overview Of Project Content and Milestones}{9}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Research}{9}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Game Foundation}{9}{subsubsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.3}Implementation of Artificial Intelligence}{10}{subsubsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.4}Experiments and Testing}{10}{subsubsection.1.2.4}
+\contentsline {subsubsection}{\numberline {1.2.5}Evalution and Conclusion}{10}{subsubsection.1.2.5}
+\contentsline {section}{\numberline {2}Background}{11}{section.2}
+\contentsline {subsection}{\numberline {2.1}Introduction}{11}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}History of AI in Games}{11}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}What is a Neural Network?}{12}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Perceptrons}{12}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Sigmoid Neurons}{13}{subsubsection.2.3.2}
+\contentsline {subsection}{\numberline {2.4}Evolutionary Algorithms}{14}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Representation}{14}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Initialisation}{15}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Fitness}{15}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Selection}{16}{subsubsection.2.4.4}
+\contentsline {subsubsection}{\numberline {2.4.5}Crossover}{16}{subsubsection.2.4.5}
+\contentsline {subsubsection}{\numberline {2.4.6}Mutation}{17}{subsubsection.2.4.6}
+\contentsline {subsubsection}{\numberline {2.4.7}Replacement}{18}{subsubsection.2.4.7}
+\contentsline {subsection}{\numberline {2.5}NeuroEvolution for Augmenting Topologies (NEAT)}{18}{subsection.2.5}
+\contentsline {section}{\numberline {3}Literature Review}{20}{section.3}
+\contentsline {subsection}{\numberline {3.1}AI for Playing Games}{20}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Why Neural Networks?}{22}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Why Evolve Neural Networks?}{24}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Why Co-Evolve Topologies and Weights?}{25}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Summary}{25}{subsection.3.5}
+\contentsline {section}{\numberline {4}Methodology}{27}{section.4}
+\contentsline {subsection}{\numberline {4.1}Language and Libraries}{27}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Neural Network}{27}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Evolutionary Algorithm}{27}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Fitness Evaluation}{27}{subsection.4.4}
+\contentsline {section}{\numberline {5}Results}{28}{section.5}
+\contentsline {subsection}{\numberline {5.1}Agent vs Hard-coded Strategy}{28}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Agent vs Human(s)}{28}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Agent vs Agent}{28}{subsection.5.3}
+\contentsline {section}{\numberline {6}Critical Evaluation}{29}{section.6}
+\contentsline {section}{\numberline {7}Conclusion}{30}{section.7}
+\contentsline {section}{Appendices}{34}{section*.20}
+\contentsline {section}{\numberline {A}Project Overview}{34}{Appendix.a.A}
+\contentsline {section}{\numberline {B}Second Formal Review Output}{37}{Appendix.a.B}
+\contentsline {section}{\numberline {C}Diary Sheets}{38}{Appendix.a.C}
+\contentsline {section}{\numberline {D}Appendix 4 and following}{47}{Appendix.a.D}
