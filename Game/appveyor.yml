@@ -1,4 +1,3 @@
-version: 1.0.{build}
 image: Visual Studio 2017
 
 configuration:
@@ -9,9 +8,9 @@ before_build:
 - cmd: >-
     mkdir build
     
-    cmake -G "Visual Studio 15 2017 Win64" ../
-    
     cd build
+
+    cmake -G "Visual Studio 15 2017 Win64" ../
     
 build:
   project: build/HonoursProject.vcxproj
@@ -20,6 +19,7 @@ build:
   
 after_build:
 - cmd: 7z a HonoursProject_%CONFIGURATION%.zip %APPVEYOR_BUILD_FOLDER%/build/bin/bin/%CONFIGURATION%/HonoursProject.exe %APPVEYOR_BUILD_FOLDER%/build/bin/bin/%CONFIGURATION%/*.dll  %APPVEYOR_BUILD_FOLDER%/build/bin/bin/%CONFIGURATION%/**/*
+
 artifacts:
   - path: build/HonoursProject_%CONFIGURATION%.zip
     name: HonoursProject_%CONFIGURATION%
