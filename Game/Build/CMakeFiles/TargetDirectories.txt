@@ -1,3 +1,0 @@
-E:/Uni/Year-4/Honours Project/HonoursProject/HonoursProject/Game/Build/CMakeFiles/HonoursProject.dir
-E:/Uni/Year-4/Honours Project/HonoursProject/HonoursProject/Game/Build/CMakeFiles/ALL_BUILD.dir
-E:/Uni/Year-4/Honours Project/HonoursProject/HonoursProject/Game/Build/CMakeFiles/ZERO_CHECK.dir
