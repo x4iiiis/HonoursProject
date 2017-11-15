@@ -1,0 +1,26 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+
+configuration:
+- Debug
+- Release
+
+before_build:
+- cmd: >-
+    mkdir build
+    
+    cd build
+    
+    cmake -G "Visual Studio 15 2017 Win64" ../
+    
+build:
+  project: build/HonoursProject.vcxproj
+  parallel: true
+  verbosity: minimal
+  
+after_build:
+- cmd: 7z a HonoursProject_%CONFIGURATION%.zip %APPVEYOR_BUILD_FOLDER%/build/bin/%CONFIGURATION%/HonoursProject.exe %APPVEYOR_BUILD_FOLDER%/build/bin/%CONFIGURATION%/*.dll  %APPVEYOR_BUILD_FOLDER%/build/bin/%CONFIGURATION%/**/*   
+
+artifacts:
+  - path: build/HonoursProject_%CONFIGURATION%.zip
+    name: HonoursProject_%CONFIGURATION%
