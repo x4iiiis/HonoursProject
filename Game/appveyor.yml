@@ -19,8 +19,7 @@ build:
   verbosity: minimal
   
 after_build:
-- cmd: 7z a HonoursProject_%CONFIGURATION%.zip %APPVEYOR_BUILD_FOLDER%/build/bin/%CONFIGURATION%/HonoursProject.exe %APPVEYOR_BUILD_FOLDER%/build/bin/%CONFIGURATION%/*.dll  %APPVEYOR_BUILD_FOLDER%/build/bin/%CONFIGURATION%/**/*   
-
+- cmd: 7z a HonoursProject_%CONFIGURATION%.zip %APPVEYOR_BUILD_FOLDER%/build/bin/bin/%CONFIGURATION%/HonoursProject.exe %APPVEYOR_BUILD_FOLDER%/build/bin/bin/%CONFIGURATION%/*.dll  %APPVEYOR_BUILD_FOLDER%/build/bin/bin/%CONFIGURATION%/**/*
 artifacts:
   - path: build/HonoursProject_%CONFIGURATION%.zip
     name: HonoursProject_%CONFIGURATION%
