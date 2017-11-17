@@ -9,7 +9,7 @@ configuration:
 
 before_build:
 - cd ..
--cd ..
+- cd ..
 - cd HonoursProjectBuild
 
 build:
