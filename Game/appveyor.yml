@@ -13,7 +13,6 @@ before_build:
 - cd HonoursProjectBuild
 
 build:
-project_build_folder: 
 project: HonoursProject.sln
 parallel: true
 verbosity: minimal
