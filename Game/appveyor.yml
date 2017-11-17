@@ -10,7 +10,7 @@ configuration:
 before_build:
 
 build:
-project: ../../HonoursProject.sln
+project: ../../HonoursProjectBuild/HonoursProject.sln
 parallel: true
 verbosity: minimal
 
