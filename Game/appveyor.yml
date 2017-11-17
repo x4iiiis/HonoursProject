@@ -10,9 +10,9 @@ configuration:
 before_build:
 
 build:
-project: HonoursProject.sln
+project: ../../HonoursProject.sln
 parallel: true
 verbosity: minimal
 
 artifacts:
-- path: ../../HonoursProjectBuild/x64/Release$(configuration)/HonoursProject.exe
+- path: x64/Release$(configuration)/HonoursProject.exe
