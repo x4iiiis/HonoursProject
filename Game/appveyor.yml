@@ -8,10 +8,13 @@ configuration:
 - Release
 
 before_build:
+- cd ..
+-cd ..
+- cd HonoursProjectBuild
 
 build:
 project_build_folder: 
-project: ..\..\HonoursProjectBuild\HonoursProject.sln
+project: HonoursProject.sln
 parallel: true
 verbosity: minimal
 
