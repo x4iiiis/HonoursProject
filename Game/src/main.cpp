@@ -89,7 +89,8 @@ int main()
 	//We need to know how many cards each player is going to be dealt.
 	//This could be something we let the user decide...
 	//But for now let's make it 7.
-	int CardsPerPlayer = 7;
+	//int CardsPerPlayer = 7;
+	GameManager::Manager()->SetCardsPerPlayer(7);
 
 	//Let's deal!
 	//We need a nested for loop here so that the outside loop deals 7 times
@@ -117,7 +118,7 @@ int main()
 	cout << endl;
 
 	cout << "If that worked, each player should have 7 cards." << endl << "allCards should still have 52 cards, and cardstack should have "
-		<< 52 - (GameManager::Manager()->GetListOfPlayers().size() * CardsPerPlayer) << endl << endl;
+		<< 52 - (GameManager::Manager()->GetListOfPlayers().size() * GameManager::Manager()->GetCardsPerPlayer()) << endl << endl;
 
 
 	//At the point of writing this we're using a hacky get-around for the PlayerList creating copies of players
