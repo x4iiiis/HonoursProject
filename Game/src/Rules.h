@@ -12,8 +12,7 @@ using namespace std;
 class Rules
 {
 private:
-	GameManager GM;
-	Deck DeckOfCards;
+	GameManager *GM = GameManager::Manager();
 public:
 	void ConsultRules(vector<shared_ptr<card>> lastCard, vector<shared_ptr<player>> PlayerList, vector<shared_ptr<card>> cardStack)
 	{
@@ -35,7 +34,7 @@ public:
 				}
 				//Display PlayerList[0]'s updated hand
 				cout << PlayerList[0]->name << "'s updated hand:" << endl;
-				DeckOfCards.identify_cards(PlayerList[0]->hand);
+				GM->DeckOfCards.identify_cards(PlayerList[0]->hand);
 			}
 			break;
 		}
@@ -54,7 +53,7 @@ public:
 
 			//Display PlayerList[0]'s updated hand
 			cout << PlayerList[0]->name << "'s updated hand:" << endl;
-			DeckOfCards.identify_cards(PlayerList[0]->hand);
+			GM->DeckOfCards.identify_cards(PlayerList[0]->hand);
 
 			break;
 		}

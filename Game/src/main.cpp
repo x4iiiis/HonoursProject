@@ -19,14 +19,14 @@ using namespace std;
 
 int main()
 {
-	GameManager GM;
-	Deck DeckOfCards;
-	Rules Rulebook;
+	//shared_ptr<GameManager> GM;
+	//make_shared<GameManager>(GM);
 
+	GameManager *GM = GameManager::Manager();
 
-	GM.PlayerCreation();
-	DeckOfCards.SetUpDeck();
-	DeckOfCards.Deal();
+	GM->PlayerCreation();
+	GM->DeckOfCards.SetUpDeck();
+	GM->DeckOfCards.Deal();
 
 
 	//Gonna add one to allcards to see if that fixes push_back
@@ -54,7 +54,7 @@ int main()
 
 	//For all cards in allCards, shout out the suit (testing that populating and shuffling works)
 	//For some reason both this and the [i] method are getting a first result but then crashing the program
-	DeckOfCards.identify_cards(DeckOfCards.allCards);
+	GM->DeckOfCards.identify_cards(GM->DeckOfCards.allCards);
 
 	//It's important that we don't get allCards and cardStack mixed up.
 	//A reference to all cards is now pushed back onto the card stack.
@@ -97,7 +97,7 @@ int main()
 	//sequentially. Cards should be dealt 1 by 1 around the table until everyone has 
 	//[CardsPerPlayer] cards.
 	//The inner loop decides who is recieving the next card.
-	DeckOfCards.Deal();
+	GM->DeckOfCards.Deal();
 
 
 	//I'm not confident about the * notation so let's get some tests done here
@@ -110,13 +110,13 @@ int main()
 	//
 	cout << endl;
 
-	cout << "allCards.size() = " << DeckOfCards.allCards.size() << endl;
-	cout << "cardStack.size() = " << DeckOfCards.cardStack.size() << endl;
+	cout << "allCards.size() = " << GM->DeckOfCards.allCards.size() << endl;
+	cout << "cardStack.size() = " << GM->DeckOfCards.cardStack.size() << endl;
 
 	cout << endl;
 
 	cout << "If that worked, each player should have 7 cards." << endl << "allCards should still have 52 cards, and cardstack should have "
-		<< 52 - (GM.GetListOfPlayers().size() * CardsPerPlayer) << endl << endl;
+		<< 52 - (GM->GetListOfPlayers().size() * CardsPerPlayer) << endl << endl;
 
 
 	//At the point of writing this we're using a hacky get-around for the PlayerList creating copies of players
@@ -128,22 +128,22 @@ int main()
 
 
 	//Right let's turn the top (or bottom in our case) card over and see what we're playing on				--Wait who dealt? We should point that out
-	DeckOfCards.lastCard.push_back(DeckOfCards.cardStack[0]);
-	DeckOfCards.cardStack.erase(DeckOfCards.cardStack.begin());
+	GM->DeckOfCards.lastCard.push_back(GM->DeckOfCards.cardStack[0]);
+	GM->DeckOfCards.cardStack.erase(GM->DeckOfCards.cardStack.begin());
 
 	cout << "The cards have been dealt and our first card to be played on is" << endl;
-	DeckOfCards.identify_cards(DeckOfCards.lastCard);
-	cout << "which is " << DeckOfCards.checkColour(DeckOfCards.lastCard[0]) << endl;
+	GM->DeckOfCards.identify_cards(GM->DeckOfCards.lastCard);
+	cout << "which is " << GM->DeckOfCards.checkColour(GM->DeckOfCards.lastCard[0]) << endl;
 
-	cout << GM.GetListOfPlayers()[0]->name << " will start." << endl;
-	cout << GM.GetListOfPlayers()[0]->name << ", do you have any cards that match either in suit or in type?" << endl << endl;
+	cout << GM->GetListOfPlayers()[0]->name << " will start." << endl;
+	cout << GM->GetListOfPlayers()[0]->name << ", do you have any cards that match either in suit or in type?" << endl << endl;
 
 	//Display PlayerList[0]'s hand
-	cout << GM.GetListOfPlayers()[0]->name << "'s hand:" << endl;
-	DeckOfCards.identify_cards(GM.GetListOfPlayers()[0]->hand);
+	cout << GM->GetListOfPlayers()[0]->name << "'s hand:" << endl;
+	GM->DeckOfCards.identify_cards(GM->GetListOfPlayers()[0]->hand);
 
 	//Function to check whether PlayerList[0] can play
-	GM.GetListOfPlayers()[0]->canPlay = GM.can_play_checker(DeckOfCards.lastCard[0], GM.GetListOfPlayers()[0]->hand);
+	GM->GetListOfPlayers()[0]->canPlay = GM->can_play_checker(GM->DeckOfCards.lastCard[0], GM->GetListOfPlayers()[0]->hand);
 
 	//if (PlayerList[0]->canPlay == false)
 	//{
@@ -157,17 +157,17 @@ int main()
 	//	identify_cards(PlayerList[0]->hand);
 	//}
 
-	if (GM.GetListOfPlayers()[0]->canPlay == true)
+	if (GM->GetListOfPlayers()[0]->canPlay == true)
 	{
-		cout << GM.GetListOfPlayers()[0]->name << " can play." << endl << endl;
+		cout << GM->GetListOfPlayers()[0]->name << " can play." << endl << endl;
 	}
 
 
 
 	//Every time a card is played, call:
-	if (GM.DoesLastCardAffectCurrentPlayer(GM.WhoPlayedTheLastCard(), GM.GetCurrentPlayer()) == true)
+	if (GM->DoesLastCardAffectCurrentPlayer(GM->WhoPlayedTheLastCard(), GM->GetCurrentPlayer()) == true)
 	{
-		Rulebook.ConsultRules(DeckOfCards.lastCard, GM.GetListOfPlayers(), DeckOfCards.cardStack);
+		GM->Rulebook.ConsultRules(GM->DeckOfCards.lastCard, GM->GetListOfPlayers(), GM->DeckOfCards.cardStack);
 	}
 	//This checks the last card against the rules relating to certain cards
 	//At the moment, a black queen forces 5 cards, a two forces 2, and
@@ -182,20 +182,20 @@ int main()
 	//Ranking for when players get out
 	vector<shared_ptr<player>> ranking;
 
-	for (int i = 0; i < GM.GetListOfPlayers().size(); i++)
+	for (int i = 0; i < GM->GetListOfPlayers().size(); i++)
 	{
-		if (GM.GetListOfPlayers()[i]->hand.empty())
+		if (GM->GetListOfPlayers()[i]->hand.empty())
 		{
-			ranking.push_back(GM.GetListOfPlayers()[i]);
-			GM.GetListOfPlayers().erase(GM.GetListOfPlayers().begin() + i); 
+			ranking.push_back(GM->GetListOfPlayers()[i]);
+			GM->GetListOfPlayers().erase(GM->GetListOfPlayers().begin() + i); 
 			i--;
 		}
 
 		//Thinking this will put last place in but only when real placers have got out
-		if (GM.GetListOfPlayers().size() == 1)
+		if (GM->GetListOfPlayers().size() == 1)
 		{
-			ranking.push_back(GM.GetListOfPlayers()[0]);
-			GM.GetListOfPlayers().erase(GM.GetListOfPlayers().begin());
+			ranking.push_back(GM->GetListOfPlayers()[0]);
+			GM->GetListOfPlayers().erase(GM->GetListOfPlayers().begin());
 		}
 	}
 
@@ -203,7 +203,7 @@ int main()
 
 	//If everyone has placed (obviously last place doesn't get out 
 	//and automatically places), display rankings!
-	if (ranking.size() == GM.GetNumberOfPlayers())
+	if (ranking.size() == GM->GetNumberOfPlayers())
 	{
 		cout << "Ranking:" << endl;
 

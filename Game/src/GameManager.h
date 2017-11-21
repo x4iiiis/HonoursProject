@@ -3,11 +3,21 @@
 #include <vector>
 #include <iostream>
 
+
 #include "player.h"
+#include "Deck.h"
+#include "Rules.h"
 
 class GameManager
 {
 private:
+
+	static GameManager *instance;
+
+	GameManager() {}
+
+	/////////////////////////////
+
 	int NumberOfPlayers;
 	int CardsPerPlayer;
 
@@ -40,6 +50,22 @@ private:
 
 public:
 
+	static GameManager *Manager()
+	{
+		if (instance == NULL)
+		{
+			instance = new GameManager();
+		}
+
+		return instance;
+	}
+
+
+
+	Deck DeckOfCards;
+	Rules Rulebook;
+
+
 	void PlayerCreation()
 	{
 		string PlayerName;
@@ -71,7 +97,7 @@ public:
 		return NumberOfPlayers;
 	}
 
-
+	//Think I've already done this with PlayerCreation()?
 	void AddPlayer(shared_ptr<player> NewPlayer)
 	{
 		ListOfPlayers.push_back(NewPlayer);

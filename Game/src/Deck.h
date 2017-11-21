@@ -12,6 +12,8 @@ using namespace std;
 class Deck
 {
 private:
+	GameManager *GM = GameManager::Manager();
+
 	//Creating all the cards
 	//Clubs
 	card ca, c2, c3, c4, c5, c6, c7, c8, c9, c10, cj, cq, ck;		
@@ -22,7 +24,7 @@ private:
 	//Spades
 	card sa, s2, s3, s4, s5, s6, s7, s8, s9, s10, sj, sq, sk;		
 
-	GameManager GM;
+	//GameManager GM;
 
 public:
 	//52 cards, first index = 0
@@ -32,11 +34,11 @@ public:
 
 	void Deal()
 	{
-		for (int i = 0; i < GM.GetCardsPerPlayer(); i++)
+		for (int i = 0; i < GM->GetCardsPerPlayer(); i++)
 		{
-			for (int j = 0; j < GM.GetListOfPlayers().size(); j++)
+			for (int j = 0; j < GM->GetListOfPlayers().size(); j++)
 			{
-				GM.GetListOfPlayers()[j]->hand.push_back(cardStack[0]);			//////////////////////////////////////////////////////////////////PROBLEMMMMMMMM
+				GM->GetListOfPlayers()[j]->hand.push_back(cardStack[0]);			//////////////////////////////////////////////////////////////////PROBLEMMMMMMMM
 				cardStack.erase(cardStack.begin());
 			}
 		}
