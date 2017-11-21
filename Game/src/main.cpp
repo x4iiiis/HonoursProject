@@ -22,43 +22,43 @@ int main()
 	//shared_ptr<GameManager> GM;
 	//make_shared<GameManager>(GM);
 
-	GameManager *GM = GameManager::Manager();
+	//GameManager *GM = GameManager::Manager();
 
-	GM->PlayerCreation();
-	GM->DeckOfCards.SetUpDeck();
-	GM->DeckOfCards.Deal();
+	GameManager::Manager()->PlayerCreation();
+	GameManager::Manager()->DeckOfCards.SetUpDeck();
+	//GameManager::Manager()->DeckOfCards.Deal(GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->GetCardsPerPlayer());
 
 
 	//Gonna add one to allcards to see if that fixes push_back
-   /* allCards->push_back(ca);
+	/* allCards->push_back(ca);
 	clubsArray.erase(clubsArray.begin());*/
 
 
-	
 
 
 
 
-	
+
+
 
 
 
 	//Testing that all 52 cards are in the vector array
-   /* cout << allCards.size() << endl;
+	/* cout << allCards.size() << endl;
 
 	for (int i = 0; i < allCards.size(); i++)
 	{
-		cout << i << endl;
+	cout << i << endl;
 	}*/
 
 
 	//For all cards in allCards, shout out the suit (testing that populating and shuffling works)
 	//For some reason both this and the [i] method are getting a first result but then crashing the program
-	GM->DeckOfCards.identify_cards(GM->DeckOfCards.allCards);
+	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->DeckOfCards.allCards);
 
 	//It's important that we don't get allCards and cardStack mixed up.
 	//A reference to all cards is now pushed back onto the card stack.
-	
+
 
 
 	//Now that the pack is shuffled, it's time to deal some cards!
@@ -72,7 +72,7 @@ int main()
 	//Let's add them to a vector array now								--note that it's of shared pointers
 	//vector<shared_ptr<player>> PlayerList;
 
-	
+
 
 
 	//This is just hardcoded now, but we'll need to think of a strategy for
@@ -84,7 +84,7 @@ int main()
 	//PlayerList.push_back(Blair);
 	//PlayerList.push_back(Ryan);
 	//PlayerList.push_back(Declan);
-	
+
 
 	//We need to know how many cards each player is going to be dealt.
 	//This could be something we let the user decide...
@@ -97,7 +97,8 @@ int main()
 	//sequentially. Cards should be dealt 1 by 1 around the table until everyone has 
 	//[CardsPerPlayer] cards.
 	//The inner loop decides who is recieving the next card.
-	GM->DeckOfCards.Deal();
+	//GameManager::Manager()->DeckOfCards.Deal();
+	GameManager::Manager()->DeckOfCards.Deal(GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->GetCardsPerPlayer());
 
 
 	//I'm not confident about the * notation so let's get some tests done here
@@ -110,13 +111,13 @@ int main()
 	//
 	cout << endl;
 
-	cout << "allCards.size() = " << GM->DeckOfCards.allCards.size() << endl;
-	cout << "cardStack.size() = " << GM->DeckOfCards.cardStack.size() << endl;
+	cout << "allCards.size() = " << GameManager::Manager()->DeckOfCards.allCards.size() << endl;
+	cout << "cardStack.size() = " << GameManager::Manager()->DeckOfCards.cardStack.size() << endl;
 
 	cout << endl;
 
 	cout << "If that worked, each player should have 7 cards." << endl << "allCards should still have 52 cards, and cardstack should have "
-		<< 52 - (GM->GetListOfPlayers().size() * CardsPerPlayer) << endl << endl;
+		<< 52 - (GameManager::Manager()->GetListOfPlayers().size() * CardsPerPlayer) << endl << endl;
 
 
 	//At the point of writing this we're using a hacky get-around for the PlayerList creating copies of players
@@ -128,22 +129,22 @@ int main()
 
 
 	//Right let's turn the top (or bottom in our case) card over and see what we're playing on				--Wait who dealt? We should point that out
-	GM->DeckOfCards.lastCard.push_back(GM->DeckOfCards.cardStack[0]);
-	GM->DeckOfCards.cardStack.erase(GM->DeckOfCards.cardStack.begin());
+	GameManager::Manager()->DeckOfCards.lastCard.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
+	GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
 
 	cout << "The cards have been dealt and our first card to be played on is" << endl;
-	GM->DeckOfCards.identify_cards(GM->DeckOfCards.lastCard);
-	cout << "which is " << GM->DeckOfCards.checkColour(GM->DeckOfCards.lastCard[0]) << endl;
+	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->DeckOfCards.lastCard);
+	cout << "which is " << GameManager::Manager()->DeckOfCards.checkColour(GameManager::Manager()->DeckOfCards.lastCard[0]) << endl;
 
-	cout << GM->GetListOfPlayers()[0]->name << " will start." << endl;
-	cout << GM->GetListOfPlayers()[0]->name << ", do you have any cards that match either in suit or in type?" << endl << endl;
+	cout << GameManager::Manager()->GetListOfPlayers()[0]->name << " will start." << endl;
+	cout << GameManager::Manager()->GetListOfPlayers()[0]->name << ", do you have any cards that match either in suit or in type?" << endl << endl;
 
 	//Display PlayerList[0]'s hand
-	cout << GM->GetListOfPlayers()[0]->name << "'s hand:" << endl;
-	GM->DeckOfCards.identify_cards(GM->GetListOfPlayers()[0]->hand);
+	cout << GameManager::Manager()->GetListOfPlayers()[0]->name << "'s hand:" << endl;
+	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetListOfPlayers()[0]->hand);
 
 	//Function to check whether PlayerList[0] can play
-	GM->GetListOfPlayers()[0]->canPlay = GM->can_play_checker(GM->DeckOfCards.lastCard[0], GM->GetListOfPlayers()[0]->hand);
+	GameManager::Manager()->GetListOfPlayers()[0]->canPlay = GameManager::Manager()->can_play_checker(GameManager::Manager()->DeckOfCards.lastCard[0], GameManager::Manager()->GetListOfPlayers()[0]->hand);
 
 	//if (PlayerList[0]->canPlay == false)
 	//{
@@ -157,23 +158,23 @@ int main()
 	//	identify_cards(PlayerList[0]->hand);
 	//}
 
-	if (GM->GetListOfPlayers()[0]->canPlay == true)
+	if (GameManager::Manager()->GetListOfPlayers()[0]->canPlay == true)
 	{
-		cout << GM->GetListOfPlayers()[0]->name << " can play." << endl << endl;
+		cout << GameManager::Manager()->GetListOfPlayers()[0]->name << " can play." << endl << endl;
 	}
 
 
 
 	//Every time a card is played, call:
-	if (GM->DoesLastCardAffectCurrentPlayer(GM->WhoPlayedTheLastCard(), GM->GetCurrentPlayer()) == true)
+	if (GameManager::Manager()->DoesLastCardAffectCurrentPlayer(GameManager::Manager()->WhoPlayedTheLastCard(), GameManager::Manager()->GetCurrentPlayer()) == true)
 	{
-		GM->Rulebook.ConsultRules(GM->DeckOfCards.lastCard, GM->GetListOfPlayers(), GM->DeckOfCards.cardStack);
+		GameManager::Manager()->Rulebook.ConsultRules(GameManager::Manager()->DeckOfCards.lastCard, GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->DeckOfCards.cardStack);
 	}
 	//This checks the last card against the rules relating to certain cards
 	//At the moment, a black queen forces 5 cards, a two forces 2, and
 	//eight and jack are there but just produce cout statements at this point.
 
-	
+
 
 
 
@@ -182,20 +183,20 @@ int main()
 	//Ranking for when players get out
 	vector<shared_ptr<player>> ranking;
 
-	for (int i = 0; i < GM->GetListOfPlayers().size(); i++)
+	for (int i = 0; i < GameManager::Manager()->GetListOfPlayers().size(); i++)
 	{
-		if (GM->GetListOfPlayers()[i]->hand.empty())
+		if (GameManager::Manager()->GetListOfPlayers()[i]->hand.empty())
 		{
-			ranking.push_back(GM->GetListOfPlayers()[i]);
-			GM->GetListOfPlayers().erase(GM->GetListOfPlayers().begin() + i); 
+			ranking.push_back(GameManager::Manager()->GetListOfPlayers()[i]);
+			GameManager::Manager()->GetListOfPlayers().erase(GameManager::Manager()->GetListOfPlayers().begin() + i);
 			i--;
 		}
 
 		//Thinking this will put last place in but only when real placers have got out
-		if (GM->GetListOfPlayers().size() == 1)
+		if (GameManager::Manager()->GetListOfPlayers().size() == 1)
 		{
-			ranking.push_back(GM->GetListOfPlayers()[0]);
-			GM->GetListOfPlayers().erase(GM->GetListOfPlayers().begin());
+			ranking.push_back(GameManager::Manager()->GetListOfPlayers()[0]);
+			GameManager::Manager()->GetListOfPlayers().erase(GameManager::Manager()->GetListOfPlayers().begin());
 		}
 	}
 
@@ -203,13 +204,13 @@ int main()
 
 	//If everyone has placed (obviously last place doesn't get out 
 	//and automatically places), display rankings!
-	if (ranking.size() == GM->GetNumberOfPlayers())
+	if (ranking.size() == GameManager::Manager()->GetNumberOfPlayers())
 	{
 		cout << "Ranking:" << endl;
 
 		for (int i = 0; i < ranking.size(); i++)
 		{
-			cout << i+1 << ": " << ranking[i]->name << endl;
+			cout << i + 1 << ": " << ranking[i]->name << endl;
 		}
 		cout << endl;
 	}
@@ -217,7 +218,7 @@ int main()
 
 	/*if (player gets out) [pseudocode]
 	{
-		ranking.push_back(player);
+	ranking.push_back(player);
 	}*/
 
 	return 0;

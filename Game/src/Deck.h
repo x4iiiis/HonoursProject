@@ -12,17 +12,17 @@ using namespace std;
 class Deck
 {
 private:
-	GameManager *GM = GameManager::Manager();
+	//GameManager *GM = GameManager::Manager();
 
 	//Creating all the cards
 	//Clubs
-	card ca, c2, c3, c4, c5, c6, c7, c8, c9, c10, cj, cq, ck;		
+	card ca, c2, c3, c4, c5, c6, c7, c8, c9, c10, cj, cq, ck;
 	//Diamonds
-	card da, d2, d3, d4, d5, d6, d7, d8, d9, d10, dj, dq, dk;		
+	card da, d2, d3, d4, d5, d6, d7, d8, d9, d10, dj, dq, dk;
 	//Hearts
-	card ha, h2, h3, h4, h5, h6, h7, h8, h9, h10, hj, hq, hk;		
+	card ha, h2, h3, h4, h5, h6, h7, h8, h9, h10, hj, hq, hk;
 	//Spades
-	card sa, s2, s3, s4, s5, s6, s7, s8, s9, s10, sj, sq, sk;		
+	card sa, s2, s3, s4, s5, s6, s7, s8, s9, s10, sj, sq, sk;
 
 	//GameManager GM;
 
@@ -32,13 +32,16 @@ public:
 	vector<shared_ptr<card>> cardStack;		//Cards available to be picked up 
 	vector<shared_ptr<card>> lastCard;		//Card we're going to play on top of
 
-	void Deal()
+	void Deal(vector<shared_ptr<player>> PlayersVector, int CardsPerPlayer)
 	{
-		for (int i = 0; i < GM->GetCardsPerPlayer(); i++)
+		//for (int i = 0; i < GameManager::Manager()->GetCardsPerPlayer(); i++)
+		for (int i = 0; i < CardsPerPlayer; i++)
 		{
-			for (int j = 0; j < GM->GetListOfPlayers().size(); j++)
+			//for (int j = 0; j < GameManager::Manager()->GetListOfPlayers().size(); j++)
+			for (int j = 0; j < PlayersVector.size(); j++)
 			{
-				GM->GetListOfPlayers()[j]->hand.push_back(cardStack[0]);			//////////////////////////////////////////////////////////////////PROBLEMMMMMMMM
+				//GameManager::Manager()->GetListOfPlayers()[j]->hand.push_back(cardStack[0]);			//////////////////////////////////////////////////////////////////PROBLEMMMMMMMM
+				PlayersVector[j]->hand.push_back(cardStack[0]);
 				cardStack.erase(cardStack.begin());
 			}
 		}

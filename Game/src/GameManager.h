@@ -8,6 +8,7 @@
 #include "Deck.h"
 #include "Rules.h"
 
+
 class GameManager
 {
 private:
@@ -236,3 +237,6 @@ public:
 	}
 
 };
+
+//Turns out this is SUPER important for the singleton to work
+GameManager *GameManager::instance = NULL;
