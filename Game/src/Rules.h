@@ -3,9 +3,9 @@
 #include <vector>
 #include <iostream>
 
-#include "player.h"
-#include "GameManager.h"
-#include "Deck.h"
+//#include "player.h"
+//#include "GameManager.h"
+//#include "Deck.h"
 
 using namespace std;
 
@@ -13,7 +13,9 @@ class Rules
 {
 private:
 	//GameManager *GM = GameManager::Manager();
+
 public:
+
 	void ConsultRules(vector<shared_ptr<card>> lastCard, vector<shared_ptr<player>> PlayerList, vector<shared_ptr<card>> cardStack)
 	{
 		switch (lastCard[0]->cardType)
@@ -34,6 +36,7 @@ public:
 					}
 					//Display PlayerList[0]'s updated hand
 					cout << PlayerList[0]->name << "'s updated hand:" << endl;
+					//DeckOfCards->identify_cards(PlayerList[0]->hand);
 					//GameManager::Manager()->DeckOfCards.identify_cards(PlayerList[0]->hand);
 				}
 				break;
@@ -53,6 +56,7 @@ public:
 
 				//Display PlayerList[0]'s updated hand
 				cout << PlayerList[0]->name << "'s updated hand:" << endl;
+				//DeckOfCards->identify_cards(PlayerList[0]->hand);
 				//GameManager::Manager()->DeckOfCards.identify_cards(PlayerList[0]->hand);
 
 				break;
@@ -61,6 +65,7 @@ public:
 			case(card::type::Jack):
 			{
 				cout << "The last card was a jack!" << endl;
+				//GameManager::Manager()->ChangeDirectionOfPlay();
 				cout << "The direction of play has been reversed." << endl << endl;
 				cout << "*Previous Player*, it's your turn." << endl << endl;
 

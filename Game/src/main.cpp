@@ -5,11 +5,11 @@
 #include <istream>
 #include <random> 
 /////////////////////////////
-#include "card.h"
-#include "player.h"
+//#include "card.h"
+//#include "player.h"
 #include "GameManager.h"
-#include "Rules.h"
-#include "Deck.h"
+//#include "Rules.h"
+//#include "Deck.h"
 #include <vector>
 #include <ctime>
 
