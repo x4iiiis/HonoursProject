@@ -25,6 +25,7 @@ int main()
 	//GameManager *GM = GameManager::Manager();
 
 	GameManager::Manager()->PlayerCreation();
+	GameManager::Manager()->setFirstPlayer();
 	GameManager::Manager()->DeckOfCards.SetUpDeck();
 	//GameManager::Manager()->DeckOfCards.Deal(GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->GetCardsPerPlayer());
 
@@ -32,34 +33,6 @@ int main()
 	//Gonna add one to allcards to see if that fixes push_back
 	/* allCards->push_back(ca);
 	clubsArray.erase(clubsArray.begin());*/
-
-
-
-
-
-
-
-	//tEstinsgskaghklashgklahgklaklgjlkajglkjagkljalkgjlkajglkjalkgjlkajgkjgag
-	GameManager::Manager()->NextPlayer();
-	cout << GameManager::Manager()->GetCurrentPlayer()->name;
-	//tEstinsgskaghklashgklahgklaklgjlkajglkjagkljalkgjlkajglkjalkgjlkajgkjgag
-	GameManager::Manager()->NextPlayer();
-	cout << GameManager::Manager()->GetCurrentPlayer()->name;
-	//tEstinsgskaghklashgklahgklaklgjlkajglkjagkljalkgjlkajglkjalkgjlkajgkjgag
-	GameManager::Manager()->NextPlayer();
-	cout << GameManager::Manager()->GetCurrentPlayer()->name;
-	//tEstinsgskaghklashgklahgklaklgjlkajglkjagkljalkgjlkajglkjalkgjlkajgkjgag
-	GameManager::Manager()->NextPlayer();
-	cout << GameManager::Manager()->GetCurrentPlayer()->name;
-	//tEstinsgskaghklashgklahgklaklgjlkajglkjagkljalkgjlkajglkjalkgjlkajgkjgag
-	GameManager::Manager()->NextPlayer();
-	cout << GameManager::Manager()->GetCurrentPlayer()->name;
-
-
-
-
-
-
 
 
 
@@ -112,6 +85,31 @@ int main()
 	//int CardsPerPlayer = 7;
 	GameManager::Manager()->SetCardsPerPlayer(7);
 
+
+
+
+
+
+	
+
+
+	//testing next player works
+	GameManager::Manager()->NextPlayer();
+	cout << GameManager::Manager()->GetCurrentPlayer()->name << endl;
+	GameManager::Manager()->NextPlayer();
+	cout << GameManager::Manager()->GetCurrentPlayer()->name << endl;
+	GameManager::Manager()->NextPlayer();
+	cout << GameManager::Manager()->GetCurrentPlayer()->name << endl;
+	GameManager::Manager()->NextPlayer();
+	cout << GameManager::Manager()->GetCurrentPlayer()->name << endl;
+	GameManager::Manager()->NextPlayer();
+	cout << GameManager::Manager()->GetCurrentPlayer()->name << endl;
+	cout << endl;
+	
+
+
+
+
 	//Let's deal!
 	//We need a nested for loop here so that the outside loop deals 7 times
 	//but the inside loop makes sure that it doesn't just deal 7 cards to each player
@@ -162,15 +160,15 @@ int main()
 	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->DeckOfCards.lastCard);
 	cout << "which is " << GameManager::Manager()->DeckOfCards.checkColour(GameManager::Manager()->DeckOfCards.lastCard[0]) << endl;
 
-	cout << GameManager::Manager()->GetListOfPlayers()[0]->name << " will start." << endl;
-	cout << GameManager::Manager()->GetListOfPlayers()[0]->name << ", do you have any cards that match either in suit or in type?" << endl << endl;
+	cout << GameManager::Manager()->GetCurrentPlayer()->name << " will start." << endl;
+	cout << GameManager::Manager()->GetCurrentPlayer()->name << ", do you have any cards that match either in suit or in type?" << endl << endl;
 
 	//Display PlayerList[0]'s hand
-	cout << GameManager::Manager()->GetListOfPlayers()[0]->name << "'s hand:" << endl;
-	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetListOfPlayers()[0]->hand);
+	cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s hand:" << endl;
+	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
 
 	//Function to check whether PlayerList[0] can play
-	GameManager::Manager()->GetListOfPlayers()[0]->canPlay = GameManager::Manager()->can_play_checker(GameManager::Manager()->DeckOfCards.lastCard[0], GameManager::Manager()->GetListOfPlayers()[0]->hand);
+	GameManager::Manager()->GetCurrentPlayer()->canPlay = GameManager::Manager()->can_play_checker(GameManager::Manager()->DeckOfCards.lastCard[0], GameManager::Manager()->GetCurrentPlayer()->hand);
 
 	//if (PlayerList[0]->canPlay == false)
 	//{

@@ -32,7 +32,7 @@ private:
 	shared_ptr<player> LastCardPlayer;
 
 	//Will be a part of ListOfPlayers (aka []) and will be set dependant on direction 
-	shared_ptr<player> CurrentPlayer;
+	shared_ptr<player> CurrentPlayer; 
 
 	//whose turn is it?
 	//Maybe players could have a bool IsItMyTurn that we set either here or somewhere else
@@ -109,6 +109,10 @@ vector<shared_ptr<player>> GetListOfPlayers()
 	return ListOfPlayers;
 }
 
+void setFirstPlayer()
+{
+	CurrentPlayer = ListOfPlayers[0];
+}
 
 void SetCardsPerPlayer(int NumCards)
 {
@@ -129,42 +133,46 @@ void NextPlayer()
 {
 	if (DirectionOfPlay == GameDirection::Clockwise)
 	{
-
-		if (CurrentPlayer == ListOfPlayers[ListOfPlayers.size()])
+		if (CurrentPlayer == ListOfPlayers[ListOfPlayers.size()-1])
 		{
 			CurrentPlayer = ListOfPlayers[0];
 		}
-		else
+		else if (CurrentPlayer == ListOfPlayers[0])
 		{
-			//Stolen from https://stackoverflow.com/questions/15099707/how-to-get-position-of-a-certain-element-in-strings-vector-to-use-it-as-an-inde
-			ptrdiff_t pos = find(ListOfPlayers.begin(), ListOfPlayers.end(), CurrentPlayer) - ListOfPlayers.begin();
-			//auto curr = find(ListOfPlayers.begin(), ListOfPlayers.end(), CurrentPlayer);
-
-			if (pos < ListOfPlayers.size())
-			{
-				CurrentPlayer = ListOfPlayers[pos + 1];
-			}
+			CurrentPlayer = ListOfPlayers[1];
+		}
+		else if (CurrentPlayer == ListOfPlayers[1] && ListOfPlayers.size() > 2)
+		{
+			CurrentPlayer = ListOfPlayers[2];
+		}
+		else if (CurrentPlayer == ListOfPlayers[2] && ListOfPlayers.size() > 3)
+		{
+			CurrentPlayer = ListOfPlayers[3];
 		}
 	}
 	else if (DirectionOfPlay == GameDirection::AntiClockwise)
 	{
 		if (CurrentPlayer == ListOfPlayers[0])
 		{
-			CurrentPlayer = ListOfPlayers[ListOfPlayers.size()];
+			CurrentPlayer = ListOfPlayers[ListOfPlayers.size()-1];
 		}
-		else
+		else if (CurrentPlayer == ListOfPlayers[1])
 		{
-			//Stolen from https://stackoverflow.com/questions/15099707/how-to-get-position-of-a-certain-element-in-strings-vector-to-use-it-as-an-inde
-			ptrdiff_t pos = find(ListOfPlayers.begin(), ListOfPlayers.end(), CurrentPlayer) - ListOfPlayers.begin();
-			//auto curr = find(ListOfPlayers.begin(), ListOfPlayers.end(), CurrentPlayer);
-
-			if (pos < ListOfPlayers.size())
-			{
-				CurrentPlayer = ListOfPlayers[pos - 1];
-			}
+			CurrentPlayer = ListOfPlayers[0];
+		}
+		else if (CurrentPlayer == ListOfPlayers[2])
+		{
+			CurrentPlayer = ListOfPlayers[1];
+		}
+		else if (CurrentPlayer == ListOfPlayers[3])
+		{
+			CurrentPlayer = ListOfPlayers[2];
 		}
 	}
 }
+
+
+
 
 //Don't think you can return enums so I'm passing strings
 auto getDirectionOfPlay()
@@ -332,7 +340,7 @@ auto getDirectionOfPlay()
 			cout << "The last card was a jack!" << endl;
 			ChangeDirectionOfPlay();
 			cout << "The direction of play has been reversed." << endl << endl;
-			cout << "*Previous Player*, it's your turn." << endl << endl;
+			//cout << "*Previous Player*, it's your turn." << endl << endl;
 
 			break;
 		}
