@@ -19,6 +19,10 @@ using namespace std;
 
 int main()
 {
+
+	//Ranking for when players get out
+	vector<shared_ptr<player>> ranking;
+
 	//shared_ptr<GameManager> GM;
 	//make_shared<GameManager>(GM);
 
@@ -94,17 +98,17 @@ int main()
 
 
 	//testing next player works
-	GameManager::Manager()->NextPlayer();
-	cout << GameManager::Manager()->GetCurrentPlayer()->name << endl;
-	GameManager::Manager()->NextPlayer();
-	cout << GameManager::Manager()->GetCurrentPlayer()->name << endl;
-	GameManager::Manager()->NextPlayer();
-	cout << GameManager::Manager()->GetCurrentPlayer()->name << endl;
-	GameManager::Manager()->NextPlayer();
-	cout << GameManager::Manager()->GetCurrentPlayer()->name << endl;
-	GameManager::Manager()->NextPlayer();
-	cout << GameManager::Manager()->GetCurrentPlayer()->name << endl;
-	cout << endl;
+	//GameManager::Manager()->NextPlayer();
+	//cout << GameManager::Manager()->GetCurrentPlayer()->name << endl;
+	//GameManager::Manager()->NextPlayer();
+	//cout << GameManager::Manager()->GetCurrentPlayer()->name << endl;
+	//GameManager::Manager()->NextPlayer();
+	//cout << GameManager::Manager()->GetCurrentPlayer()->name << endl;
+	//GameManager::Manager()->NextPlayer();
+	//cout << GameManager::Manager()->GetCurrentPlayer()->name << endl;
+	//GameManager::Manager()->NextPlayer();
+	//cout << GameManager::Manager()->GetCurrentPlayer()->name << endl;
+	//cout << endl;
 	
 
 
@@ -151,19 +155,22 @@ int main()
 	GameManager::Manager()->DeckOfCards.lastCard.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
 	GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
 
-	cout << "The cards have been dealt and our first card to be played on is" << endl;
+	cout << "The cards have been dealt by " << GameManager::Manager()->GetCurrentPlayer()->name << " and our first card to be played on is" << endl;
+	
+	//Player left of the dealer starts, so we need to move current player on to that player
+	GameManager::Manager()->NextPlayer();
 //****************************************************************************************************************************************************************************************
 //1337haxx to make it a jack
-	GameManager::Manager()->DeckOfCards.lastCard[0]->PickYourOwnLastCard(card::type::Jack, card::suit::Clubs);
+	//GameManager::Manager()->DeckOfCards.lastCard[0]->PickYourOwnLastCard(card::type::Jack, card::suit::Clubs);
 //*****************************************************************************************************************************************************************************************
 
 	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->DeckOfCards.lastCard);
 	cout << "which is " << GameManager::Manager()->DeckOfCards.checkColour(GameManager::Manager()->DeckOfCards.lastCard[0]) << endl;
 
-	cout << GameManager::Manager()->GetCurrentPlayer()->name << " will start." << endl;
+	cout << "The player left of the dealer will start." << endl;
 	cout << GameManager::Manager()->GetCurrentPlayer()->name << ", do you have any cards that match either in suit or in type?" << endl << endl;
 
-	//Display PlayerList[0]'s hand
+	//Display Current Player's hand
 	cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s hand:" << endl;
 	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
 
@@ -189,6 +196,36 @@ int main()
 
 
 
+
+
+	//Start Game loop here?
+	while (ranking.size() < GameManager::Manager()->GetNumberOfPlayers() - 1)
+	{
+		cout << "in the game loop" << endl;
+
+		cout << GameManager::Manager()->GetCurrentPlayer()->name << ", it's your turn." << endl << endl;
+		if (GameManager::Manager()->GetCurrentPlayer()->canPlay)
+		{
+			cout << "Yo dood I can play" << endl << endl << endl;
+			//GameManager::Manager()->play(); 
+		}
+		cout << GameManager::Manager()->GetCurrentPlayer()->name << " does something... use your imagination..." << endl << endl;
+		GameManager::Manager()->ConsultRules(GameManager::Manager()->DeckOfCards.lastCard, GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->DeckOfCards.cardStack);
+		GameManager::Manager()->NextPlayer();
+
+
+
+		cout << GameManager::Manager()->GetCurrentPlayer()->name << ", it's your turn." << endl << endl;
+		cout << GameManager::Manager()->GetCurrentPlayer()->name << " does something... use your imagination..." << endl << endl;
+		GameManager::Manager()->ConsultRules(GameManager::Manager()->DeckOfCards.lastCard, GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->DeckOfCards.cardStack);
+		GameManager::Manager()->NextPlayer();
+		break;
+	}
+
+
+
+
+
 	//Every time a card is played, call:
 	if (GameManager::Manager()->DoesLastCardAffectCurrentPlayer(GameManager::Manager()->WhoPlayedTheLastCard(), GameManager::Manager()->GetCurrentPlayer()) == true)
 	{
@@ -204,8 +241,7 @@ int main()
 
 
 
-	//Ranking for when players get out
-	vector<shared_ptr<player>> ranking;
+	
 
 	for (int i = 0; i < GameManager::Manager()->GetListOfPlayers().size(); i++)
 	{

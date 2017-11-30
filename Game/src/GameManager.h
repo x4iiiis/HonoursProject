@@ -2,6 +2,7 @@
 
 #include <vector>
 #include <iostream>
+#include <string>
 
 
 #include "player.h"
@@ -96,12 +97,6 @@ void SetNumberOfPlayers(int NumPlayers)
 int GetNumberOfPlayers()
 {
 	return NumberOfPlayers;
-}
-
-//Think I've already done this with PlayerCreation()?
-void AddPlayer(shared_ptr<player> NewPlayer)
-{
-	ListOfPlayers.push_back(NewPlayer);
 }
 
 vector<shared_ptr<player>> GetListOfPlayers()
@@ -248,7 +243,11 @@ auto getDirectionOfPlay()
 		return false;
 	}
 
-
+	//Fuck all in here atm bruh
+	shared_ptr<card> play()
+	{
+		
+	}
 	
 
 	bool can_play_checker(shared_ptr<card> lastCard, vector<shared_ptr<card>> hand)
