@@ -23,4 +23,21 @@ public:
 			cardColour = card::colour::Red;
 		}
 	}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	//Hacky debug methods
+	void PickYourOwnLastCard(card::type ctype, card::suit csuit)
+	{
+		cardType = ctype;
+		cardSuit = csuit;
+	}
+
+
+
+
+
 };

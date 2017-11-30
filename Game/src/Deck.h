@@ -285,5 +285,4 @@ public:
 		//If it's not black it must be red
 		return "Red";
 	}
-
 };

@@ -6,11 +6,12 @@
 
 #include "player.h"
 #include "Deck.h"
-#include "Rules.h"
 
 
 class GameManager
 {
+public:
+	enum GameDirection { Clockwise, AntiClockwise };
 private:
 
 	static GameManager *instance;
@@ -24,8 +25,8 @@ private:
 
 	vector<shared_ptr<player>> ListOfPlayers;
 
-	enum GameDirection { Clockwise, AntiClockwise };
-	GameDirection DirectionOfPlay;
+	//enum GameDirection { Clockwise, AntiClockwise };
+	GameDirection DirectionOfPlay = GameDirection::Clockwise;
 
 	//Player who played the most recent card
 	shared_ptr<player> LastCardPlayer;
@@ -51,103 +52,132 @@ private:
 
 public:
 
-	static GameManager *Manager()
+static GameManager *Manager()
+{
+	if (instance == NULL)
 	{
-		if (instance == NULL)
-		{
-			instance = new GameManager();
-		}
-
-		return instance;
+		instance = new GameManager();
 	}
 
+	return instance;
+}
 
 
-	Deck DeckOfCards;
-	Rules Rulebook;
+
+Deck DeckOfCards;
 
 
-	void PlayerCreation()
+void PlayerCreation()
+{
+	string PlayerName;
+
+	cout << "How many players do you want in the game? (2-4)" << endl;		//--This will need validation to ensure it's between 2 and 4 later, useful to put 1 for testing the now though
+	cin >> NumberOfPlayers;
+	cout << endl;
+
+	for (int i = 0; i < NumberOfPlayers; i++)
 	{
-		string PlayerName;
-
-		cout << "How many players do you want in the game? (2-4)" << endl;		//--This will need validation to ensure it's between 2 and 4 later, useful to put 1 for testing the now though
-		cin >> NumberOfPlayers;
+		cout << "Enter a player name:" << endl;
+		cin >> PlayerName;
 		cout << endl;
 
-		for (int i = 0; i < NumberOfPlayers; i++)
-		{
-			cout << "Enter a player name:" << endl;
-			cin >> PlayerName;
-			cout << endl;
-
-			player newPlayer;
-			newPlayer.name = PlayerName;
-			ListOfPlayers.push_back(make_shared<player>(newPlayer));
-		}
+		player newPlayer;
+		newPlayer.name = PlayerName;
+		ListOfPlayers.push_back(make_shared<player>(newPlayer));
 	}
+}
 
 
-	void SetNumberOfPlayers(int NumPlayers)
+void SetNumberOfPlayers(int NumPlayers)
+{
+	NumberOfPlayers = NumPlayers;
+}
+
+int GetNumberOfPlayers()
+{
+	return NumberOfPlayers;
+}
+
+//Think I've already done this with PlayerCreation()?
+void AddPlayer(shared_ptr<player> NewPlayer)
+{
+	ListOfPlayers.push_back(NewPlayer);
+}
+
+vector<shared_ptr<player>> GetListOfPlayers()
+{
+	return ListOfPlayers;
+}
+
+
+void SetCardsPerPlayer(int NumCards)
+{
+	CardsPerPlayer = NumCards;
+}
+
+int GetCardsPerPlayer()
+{
+	return CardsPerPlayer;
+}
+
+shared_ptr<player>GetCurrentPlayer()
+{
+	return CurrentPlayer;
+}
+
+void NextPlayer()
+{
+	if (DirectionOfPlay == GameDirection::Clockwise)
 	{
-		NumberOfPlayers = NumPlayers;
-	}
 
-	int GetNumberOfPlayers()
-	{
-		return NumberOfPlayers;
-	}
-
-	//Think I've already done this with PlayerCreation()?
-	void AddPlayer(shared_ptr<player> NewPlayer)
-	{
-		ListOfPlayers.push_back(NewPlayer);
-	}
-
-	vector<shared_ptr<player>> GetListOfPlayers()
-	{
-		return ListOfPlayers;
-	}
-
-
-	void SetCardsPerPlayer(int NumCards)
-	{
-		CardsPerPlayer = NumCards;
-	}
-
-	int GetCardsPerPlayer()
-	{
-		return CardsPerPlayer;
-	}
-
-	shared_ptr<player>GetCurrentPlayer()
-	{
-		return CurrentPlayer;
-	}
-
-	void NextPlayer()
-	{
-		//Move Current Player to be a pointer to the next ListOfPlayers[]
 		if (CurrentPlayer == ListOfPlayers[ListOfPlayers.size()])
 		{
 			CurrentPlayer = ListOfPlayers[0];
 		}
-
-		else if (CurrentPlayer == ListOfPlayers[0])
+		else
 		{
-			CurrentPlayer = ListOfPlayers[1];
-		}
+			//Stolen from https://stackoverflow.com/questions/15099707/how-to-get-position-of-a-certain-element-in-strings-vector-to-use-it-as-an-inde
+			ptrdiff_t pos = find(ListOfPlayers.begin(), ListOfPlayers.end(), CurrentPlayer) - ListOfPlayers.begin();
+			//auto curr = find(ListOfPlayers.begin(), ListOfPlayers.end(), CurrentPlayer);
 
-		else if (CurrentPlayer == ListOfPlayers[1])
-		{
-			CurrentPlayer = ListOfPlayers[2];
-		}
-
-		else if (CurrentPlayer == ListOfPlayers[2])
-		{
-			CurrentPlayer = ListOfPlayers[3];
+			if (pos < ListOfPlayers.size())
+			{
+				CurrentPlayer = ListOfPlayers[pos + 1];
+			}
 		}
 	}
+	else if (DirectionOfPlay == GameDirection::AntiClockwise)
+	{
+		if (CurrentPlayer == ListOfPlayers[0])
+		{
+			CurrentPlayer = ListOfPlayers[ListOfPlayers.size()];
+		}
+		else
+		{
+			//Stolen from https://stackoverflow.com/questions/15099707/how-to-get-position-of-a-certain-element-in-strings-vector-to-use-it-as-an-inde
+			ptrdiff_t pos = find(ListOfPlayers.begin(), ListOfPlayers.end(), CurrentPlayer) - ListOfPlayers.begin();
+			//auto curr = find(ListOfPlayers.begin(), ListOfPlayers.end(), CurrentPlayer);
+
+			if (pos < ListOfPlayers.size())
+			{
+				CurrentPlayer = ListOfPlayers[pos - 1];
+			}
+		}
+	}
+}
+
+//Don't think you can return enums so I'm passing strings
+auto getDirectionOfPlay()
+{
+	return DirectionOfPlay;
+	
+	//if (DirectionOfPlay == GameDirection::Clockwise)
+	//{
+	//	return Direction
+	//	//return "Clockwise";
+	//}
+	//return "Anti-Clockwise";
+}
 
 	void ChangeDirectionOfPlay()
 	{
@@ -236,6 +266,92 @@ public:
 		return false;
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//Rules
+	void ConsultRules(vector<shared_ptr<card>> lastCard, vector<shared_ptr<player>> PlayerList, vector<shared_ptr<card>> cardStack)
+	{
+		switch (lastCard[0]->cardType)
+		{
+			//Need to be able to tell who played it, otherwise that black queen is gonna make everyone pick up 5 until we run out of cards
+			//Also it isn't PlayerList[0], it'll be whoever's turn it is once we've got that figured out
+		case(card::type::Queen):
+		{
+			if (lastCard[0]->cardColour == card::colour::Black)
+			{
+				cout << "The last card was a black queen!" << endl;
+				cout << "You must now pick up 5 cards." << endl << endl;
+
+				for (int i = 0; i < 5; i++)
+				{
+					PlayerList[0]->hand.push_back(cardStack[0]);
+					cardStack.erase(cardStack.begin());
+				}
+				//Display PlayerList[0]'s updated hand
+				cout << PlayerList[0]->name << "'s updated hand:" << endl;
+				DeckOfCards.identify_cards(PlayerList[0]->hand);
+				//GameManager::Manager()->DeckOfCards.identify_cards(PlayerList[0]->hand);
+			}
+			break;
+		}
+		//Need to be able to tell who played it, otherwise that 2 is gonna make everyone pick up 2 until we run out of cards
+		//Also it isn't PlayerList[0], it'll be whoever's turn it is once we've got that figured out
+		case(card::type::Two):
+		{
+			cout << "The last card was a two!" << endl;
+			cout << "You must now pick 2 cards." << endl << endl;
+
+			for (int i = 0; i < 2; i++)
+			{
+				PlayerList[0]->hand.push_back(cardStack[0]);
+				cardStack.erase(cardStack.begin());
+			}
+
+			//Display PlayerList[0]'s updated hand
+			cout << PlayerList[0]->name << "'s updated hand:" << endl;
+			DeckOfCards.identify_cards(PlayerList[0]->hand);
+			//GameManager::Manager()->DeckOfCards.identify_cards(PlayerList[0]->hand);
+
+			break;
+		}
+		//Game management - we need the direction of play to be defined somewhere
+		case(card::type::Jack):
+		{
+			cout << "The last card was a jack!" << endl;
+			ChangeDirectionOfPlay();
+			cout << "The direction of play has been reversed." << endl << endl;
+			cout << "*Previous Player*, it's your turn." << endl << endl;
+
+			break;
+		}
+		//Again, needing game management to know whose turn it is and when the card was played, otherwise
+		//everybody's gonna skip their turn forever
+		case(card::type::Eight):
+		{
+			cout << "The last card was an eight!" << endl;
+			cout << "You are forced to skip your turn." << endl << endl;
+
+			cout << "*Next player*, it's your turn." << endl << endl;
+		}
+
+		default:
+		{
+			break;
+		}
+		}
+	}
 };
 
 //Turns out this is SUPER important for the singleton to work

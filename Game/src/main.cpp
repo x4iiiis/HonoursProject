@@ -39,6 +39,26 @@ int main()
 
 
 
+	//tEstinsgskaghklashgklahgklaklgjlkajglkjagkljalkgjlkajglkjalkgjlkajgkjgag
+	GameManager::Manager()->NextPlayer();
+	cout << GameManager::Manager()->GetCurrentPlayer()->name;
+	//tEstinsgskaghklashgklahgklaklgjlkajglkjagkljalkgjlkajglkjalkgjlkajgkjgag
+	GameManager::Manager()->NextPlayer();
+	cout << GameManager::Manager()->GetCurrentPlayer()->name;
+	//tEstinsgskaghklashgklahgklaklgjlkajglkjagkljalkgjlkajglkjalkgjlkajgkjgag
+	GameManager::Manager()->NextPlayer();
+	cout << GameManager::Manager()->GetCurrentPlayer()->name;
+	//tEstinsgskaghklashgklahgklaklgjlkajglkjagkljalkgjlkajglkjalkgjlkajgkjgag
+	GameManager::Manager()->NextPlayer();
+	cout << GameManager::Manager()->GetCurrentPlayer()->name;
+	//tEstinsgskaghklashgklahgklaklgjlkajglkjagkljalkgjlkajglkjalkgjlkajgkjgag
+	GameManager::Manager()->NextPlayer();
+	cout << GameManager::Manager()->GetCurrentPlayer()->name;
+
+
+
+
+
 
 
 
@@ -134,6 +154,11 @@ int main()
 	GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
 
 	cout << "The cards have been dealt and our first card to be played on is" << endl;
+//****************************************************************************************************************************************************************************************
+//1337haxx to make it a jack
+	GameManager::Manager()->DeckOfCards.lastCard[0]->PickYourOwnLastCard(card::type::Jack, card::suit::Clubs);
+//*****************************************************************************************************************************************************************************************
+
 	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->DeckOfCards.lastCard);
 	cout << "which is " << GameManager::Manager()->DeckOfCards.checkColour(GameManager::Manager()->DeckOfCards.lastCard[0]) << endl;
 
@@ -169,7 +194,7 @@ int main()
 	//Every time a card is played, call:
 	if (GameManager::Manager()->DoesLastCardAffectCurrentPlayer(GameManager::Manager()->WhoPlayedTheLastCard(), GameManager::Manager()->GetCurrentPlayer()) == true)
 	{
-		GameManager::Manager()->Rulebook.ConsultRules(GameManager::Manager()->DeckOfCards.lastCard, GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->DeckOfCards.cardStack);
+		GameManager::Manager()->ConsultRules(GameManager::Manager()->DeckOfCards.lastCard, GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->DeckOfCards.cardStack);
 	}
 	//This checks the last card against the rules relating to certain cards
 	//At the moment, a black queen forces 5 cards, a two forces 2, and
