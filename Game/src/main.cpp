@@ -15,10 +15,19 @@
 
 #include <memory>
 
+
+
+#include <SFML/Graphics.hpp>
+using namespace sf;
 using namespace std;
 
 int main()
 {
+	RenderWindow window(VideoMode(400, 400), "SFML works!");
+
+
+
+
 
 	//Ranking for when players get out
 	vector<shared_ptr<player>> ranking;
