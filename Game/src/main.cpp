@@ -22,6 +22,8 @@ using namespace std;
 
 int main()
 {
+	GameManager::Manager()->DeckOfCards.LoadTextures();
+
 	//Ranking for when players get out
 	vector<shared_ptr<player>> ranking;
 
@@ -43,9 +45,10 @@ int main()
 	//Testing SFML
 	//RenderWindow window(VideoMode(800,600), "Welcome to NeuroSwitch!", Style::Fullscreen);
 	RenderWindow window(VideoMode(800, 600), "Welcome to NeuroSwitch!");
-	window.setFramerateLimit(60);
-	window.draw(GameManager::Manager()->DeckOfCards.Draw().sprite);
-	window.display();
+	window.setFramerateLimit(60);	//60FPS (not really necessary for this project tbh but meh) 
+	window.clear(Color(63, 191, 127, 255));	//Setting the background colour
+	//window.draw(GameManager::Manager()->DeckOfCards.Draw().sprite);
+	//window.display();
 
 
 
@@ -187,12 +190,29 @@ int main()
 	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->DeckOfCards.lastCard);
 	cout << "which is " << GameManager::Manager()->DeckOfCards.checkColour(GameManager::Manager()->DeckOfCards.lastCard[0]) << endl;
 
+
+	//Testing SFML - Drawing first card to be played on
+	GameManager::Manager()->DeckOfCards.lastCard[0]->sprite.setPosition(Vector2f(365, 5));
+	window.draw(GameManager::Manager()->DeckOfCards.lastCard[0]->sprite);
+	//window.display();
+
+
+
 	cout << "The player left of the dealer will start." << endl;
 	cout << GameManager::Manager()->GetCurrentPlayer()->name << ", do you have any cards that match either in suit or in type?" << endl << endl;
 
 	//Display Current Player's hand
 	cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s hand:" << endl;
 	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
+
+	
+	//Drawing the current player's hand
+	for (int i = 0; i < GameManager::Manager()->GetCurrentPlayer()->hand.size(); i++)
+	{
+		GameManager::Manager()->GetCurrentPlayer()->hand[i]->sprite.setPosition(Vector2f((i * 75) + 5, 500));
+		window.draw(GameManager::Manager()->GetCurrentPlayer()->hand[i]->sprite);
+	}
+	//window.display();
 
 	//Function to check whether PlayerList[0] can play
 	GameManager::Manager()->GetCurrentPlayer()->canPlay = GameManager::Manager()->can_play_checker(GameManager::Manager()->DeckOfCards.lastCard[0], GameManager::Manager()->GetCurrentPlayer()->hand);
@@ -209,11 +229,28 @@ int main()
 	//	identify_cards(PlayerList[0]->hand);
 	//}
 
-	if (GameManager::Manager()->GetListOfPlayers()[0]->canPlay == true)
+	//if (GameManager::Manager()->GetListOfPlayers()[0]->canPlay == true)
+	if (GameManager::Manager()->GetCurrentPlayer()->canPlay == true)
 	{
-		cout << GameManager::Manager()->GetListOfPlayers()[0]->name << " can play." << endl << endl;
+		cout << GameManager::Manager()->GetCurrentPlayer()->name << " can play." << endl << endl;
 	}
+	else
+	{
+		cout << GameManager::Manager()->GetCurrentPlayer()->name << " can't play, and must pick up 1 card." << endl << endl;
+		GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);					//Should it be 0 or should it be .size()?
+		GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());							//Should it be 0 or should it be .size()?
 
+		//Update Hand and draw it
+		cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+		GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
+
+		//Drawing the current player's hand
+		for (int i = 0; i < GameManager::Manager()->GetCurrentPlayer()->hand.size(); i++)
+		{
+			GameManager::Manager()->GetCurrentPlayer()->hand[i]->sprite.setPosition(Vector2f((i * 75) + 5, 500));
+			window.draw(GameManager::Manager()->GetCurrentPlayer()->hand[i]->sprite);
+		}
+	}
 
 
 
@@ -281,6 +318,8 @@ int main()
 	}
 
 
+	//SFML
+	window.display();
 
 	//If everyone has placed (obviously last place doesn't get out 
 	//and automatically places), display rankings!
