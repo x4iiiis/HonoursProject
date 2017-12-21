@@ -1,5 +1,9 @@
 #pragma once
 
+#include <SFML/Graphics.hpp>
+
+using namespace sf;
+
 class card
 {
 public:
@@ -10,6 +14,7 @@ public:
 	suit cardSuit;
 	type cardType;
 	colour cardColour;
+	Sprite sprite;
 
 	void setColour()
 	{

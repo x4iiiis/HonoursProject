@@ -12,23 +12,74 @@
 //#include "Deck.h"
 #include <vector>
 #include <ctime>
-
 #include <memory>
-
-
-
+//SFML
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
+
 using namespace sf;
 using namespace std;
 
+
+////Card Textures - tidy these up later (texture ca, c2.. just have a line for each suit)
+//Texture caTex;
+//Texture	c2Tex;
+//Texture	c3Tex;
+//Texture	c4Tex;
+//Texture	c5Tex;
+//Texture	c6Tex;
+//Texture	c7Tex;
+//Texture	c8Tex;
+//Texture	c9Tex;
+//Texture	c1Tex;
+//Texture	cjTex;
+//Texture	cqTex;
+//Texture	ckTex;
+//
+//Texture	daTex;
+//Texture	d2Tex;
+//Texture	d3Tex;
+//Texture	d4Tex;
+//Texture	d5Tex;
+//Texture	d6Tex;
+//Texture	d7Tex;
+//Texture	d8Tex;
+//Texture	d9Tex;
+//Texture	d1Tex;
+//Texture	djTex;
+//Texture	dqTex;
+//Texture	dkTex;
+//
+//Texture	haTex;
+//Texture	h2Tex;
+//Texture	h3Tex;
+//Texture	h4Tex;
+//Texture	h5Tex;
+//Texture	h6Tex;
+//Texture	h7Tex;
+//Texture	h8Tex;
+//Texture	h9Tex;
+//Texture	h1Tex;
+//Texture	hjTex;
+//Texture	hqTex;
+//Texture	hkTex;
+//
+//Texture	saTex;
+//Texture	s2Tex;
+//Texture	s3Tex;
+//Texture	s4Tex;
+//Texture	s5Tex;
+//Texture	s6Tex;
+//Texture	s7Tex;
+//Texture	s8Tex;
+//Texture	s9Tex;
+//Texture	s1Tex;
+//Texture	sjTex;
+//Texture	sqTex;
+//Texture	skTex;
+
 int main()
 {
-	RenderWindow window(VideoMode(400, 400), "SFML works!");
-
-
-
-
-
 	//Ranking for when players get out
 	vector<shared_ptr<player>> ranking;
 
@@ -41,6 +92,23 @@ int main()
 	GameManager::Manager()->setFirstPlayer();
 	GameManager::Manager()->DeckOfCards.SetUpDeck();
 	//GameManager::Manager()->DeckOfCards.Deal(GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->GetCardsPerPlayer());
+
+
+
+
+
+
+	//Testing SFML
+	RenderWindow window(VideoMode(400, 400), "SFML works!");
+	window.setFramerateLimit(60);
+	window.draw(GameManager::Manager()->DeckOfCards.Draw().sprite);
+	window.display();
+
+
+
+
+
+
 
 
 	//Gonna add one to allcards to see if that fixes push_back
@@ -289,6 +357,8 @@ int main()
 	{
 	ranking.push_back(player);
 	}*/
+
+
 
 	return 0;
 }
