@@ -88,19 +88,19 @@ private:
 		if (!hqTex.loadFromFile("Cards/cardHeartsQ.png")) { throw std::invalid_argument("hqTex is fucked!"); }
 		if (!hkTex.loadFromFile("Cards/cardHeartsK.png")) { throw std::invalid_argument("hkTex is fucked!"); }
 		//Spades
-		if (!saTex.loadFromFile("Cards/cardClubsA.png")) { throw std::invalid_argument("saTex is fucked!"); }
-		if (!s2Tex.loadFromFile("Cards/cardClubs2.png")) { throw std::invalid_argument("s2Tex is fucked!"); }
-		if (!s3Tex.loadFromFile("Cards/cardClubs3.png")) { throw std::invalid_argument("s3Tex is fucked!"); }
-		if (!s4Tex.loadFromFile("Cards/cardClubs4.png")) { throw std::invalid_argument("s4Tex is fucked!"); }
-		if (!s5Tex.loadFromFile("Cards/cardClubs5.png")) { throw std::invalid_argument("s5Tex is fucked!"); }
-		if (!s6Tex.loadFromFile("Cards/cardClubs6.png")) { throw std::invalid_argument("s6Tex is fucked!"); }
-		if (!s7Tex.loadFromFile("Cards/cardClubs7.png")) { throw std::invalid_argument("s7Tex is fucked!"); }
-		if (!s8Tex.loadFromFile("Cards/cardClubs8.png")) { throw std::invalid_argument("s8Tex is fucked!"); }
-		if (!s9Tex.loadFromFile("Cards/cardClubs9.png")) { throw std::invalid_argument("s9Tex is fucked!"); }
-		if (!s10Tex.loadFromFile("Cards/cardClubs10.png")) { throw std::invalid_argument("s10Tex is fucked!"); }
-		if (!sjTex.loadFromFile("Cards/cardClubsJ.png")) { throw std::invalid_argument("sjTex is fucked!"); }
-		if (!sqTex.loadFromFile("Cards/cardClubsQ.png")) { throw std::invalid_argument("sqTex is fucked!"); }
-		if (!skTex.loadFromFile("Cards/cardClubsK.png")) { throw std::invalid_argument("skTex is fucked!"); }
+		if (!saTex.loadFromFile("Cards/cardSpadesA.png")) { throw std::invalid_argument("saTex is fucked!"); }
+		if (!s2Tex.loadFromFile("Cards/cardSpades2.png")) { throw std::invalid_argument("s2Tex is fucked!"); }
+		if (!s3Tex.loadFromFile("Cards/cardSpades3.png")) { throw std::invalid_argument("s3Tex is fucked!"); }
+		if (!s4Tex.loadFromFile("Cards/cardSpades4.png")) { throw std::invalid_argument("s4Tex is fucked!"); }
+		if (!s5Tex.loadFromFile("Cards/cardSpades5.png")) { throw std::invalid_argument("s5Tex is fucked!"); }
+		if (!s6Tex.loadFromFile("Cards/cardSpades6.png")) { throw std::invalid_argument("s6Tex is fucked!"); }
+		if (!s7Tex.loadFromFile("Cards/cardSpades7.png")) { throw std::invalid_argument("s7Tex is fucked!"); }
+		if (!s8Tex.loadFromFile("Cards/cardSpades8.png")) { throw std::invalid_argument("s8Tex is fucked!"); }
+		if (!s9Tex.loadFromFile("Cards/cardSpades9.png")) { throw std::invalid_argument("s9Tex is fucked!"); }
+		if (!s10Tex.loadFromFile("Cards/cardSpades10.png")) { throw std::invalid_argument("s10Tex is fucked!"); }
+		if (!sjTex.loadFromFile("Cards/cardSpadesJ.png")) { throw std::invalid_argument("sjTex is fucked!"); }
+		if (!sqTex.loadFromFile("Cards/cardSpadesQ.png")) { throw std::invalid_argument("sqTex is fucked!"); }
+		if (!skTex.loadFromFile("Cards/cardSpadesK.png")) { throw std::invalid_argument("skTex is fucked!"); }
 	}
 
 public:
@@ -127,7 +127,7 @@ public:
 	//Temp (probably)
 	card Draw()
 	{
-		return ca;
+		return d7;
 	}
 
 
