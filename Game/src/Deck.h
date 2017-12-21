@@ -60,12 +60,6 @@ public:
 		}
 	}
 
-	//Temp (probably)
-	card Draw()
-	{
-		return h7;
-	}
-
 
 	void SetUpDeck()
 	{
@@ -369,11 +363,18 @@ public:
 		sk.sprite.setTexture(skTex);		sk.sprite.setScale(Vector2f(0.5f, 0.5f));
 	}
 
+	//Change texture to FaceDownTex
+	void SetFaceDown(shared_ptr<card> c)
+	{
+		c->sprite.setTexture(FaceDownTex);
+		//c.sprite.setScale(Vector2f(0.5f, 0.5f));		//Not sure if this is necessary
+	}
+
 	//Load image files for card textures
 	void LoadTextures()
 	{
 		//Cards that are face down
-		if (!FaceDownTex.loadFromFile("Cards/cardBack_green5.png")) { throw std::invalid_argument("FaceDownTex is fucked!"); }
+		if (!FaceDownTex.loadFromFile("Cards/cardBack_blue5.png")) { throw std::invalid_argument("FaceDownTex is fucked!"); }
 
 		//Clubs
 		if (!caTex.loadFromFile("Cards/cardClubsA.png")) { throw std::invalid_argument("caTex is fucked!"); }

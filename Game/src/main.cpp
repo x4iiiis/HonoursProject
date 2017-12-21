@@ -178,6 +178,15 @@ int main()
 	GameManager::Manager()->DeckOfCards.lastCard.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
 	GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
 
+	//Unnecessary here (I think), but every time the card on the top of the card stack changes, call this to sort the texture of the one moving out, and then next call to flip one coming in
+	GameManager::Manager()->DeckOfCards.SetTextures();
+	//Setting the new top card of the cardStack to be facedown (texture wise)
+	GameManager::Manager()->DeckOfCards.SetFaceDown(GameManager::Manager()->DeckOfCards.cardStack[0]);
+
+	//Draw card at top of the stack
+	GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.setPosition(Vector2f(365, 250));
+	window.draw(GameManager::Manager()->DeckOfCards.cardStack[0]->sprite);
+
 	cout << "The cards have been dealt by " << GameManager::Manager()->GetCurrentPlayer()->name << " and our first card to be played on is" << endl;
 	
 	//Player left of the dealer starts, so we need to move current player on to that player
@@ -188,7 +197,7 @@ int main()
 //*****************************************************************************************************************************************************************************************
 
 	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->DeckOfCards.lastCard);
-	cout << "which is " << GameManager::Manager()->DeckOfCards.checkColour(GameManager::Manager()->DeckOfCards.lastCard[0]) << endl;
+	cout << "(which is " << GameManager::Manager()->DeckOfCards.checkColour(GameManager::Manager()->DeckOfCards.lastCard[0]) << ")" << endl << endl << endl;
 
 
 	//Testing SFML - Drawing first card to be played on
