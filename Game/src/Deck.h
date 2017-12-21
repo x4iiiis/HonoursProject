@@ -370,6 +370,46 @@ public:
 		//c.sprite.setScale(Vector2f(0.5f, 0.5f));		//Not sure if this is necessary
 	}
 
+	void SetCardPositions(vector<shared_ptr<card>> Hand)
+	{
+		//Set all cards to be face up by default, and cards in the stack will be changed to being face down later in the method
+		SetTextures();
+
+		for (auto &c : allCards) //&?
+		{
+			//Just set all cards to be positioned offscreen, and those that are in the stack, hand, or are the last played card will be moved back
+			c->sprite.setPosition(Vector2f(-100, -100));
+
+			//If the card is in the stack, set it's position to 365, 250
+			for (auto &stackCard : cardStack)
+			{
+				if ((c->cardSuit == stackCard->cardSuit) && (c->cardType == stackCard->cardType))
+				{
+					c->sprite.setPosition(Vector2f(365, 250));
+					SetFaceDown(c);
+				}
+			}
+
+			//If it's the last played card, put it at 365, 5
+			for (auto &prevCard : lastCard)
+			{
+				if ((c->cardSuit == prevCard->cardSuit) && (c->cardType == prevCard->cardType))
+				{
+					c->sprite.setPosition(Vector2f(365, 5));
+				}
+			}
+
+			for (int i = 0; i < Hand.size(); i++)
+			{
+				if ((c->cardSuit == Hand[i]->cardSuit) && (c->cardType == Hand[i]->cardType))
+				{
+					c->sprite.setPosition(Vector2f((i * 75) + 5, 500));
+				}
+			}
+		}
+
+	}
+
 	//Load image files for card textures
 	void LoadTextures()
 	{

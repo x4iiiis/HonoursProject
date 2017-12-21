@@ -202,7 +202,7 @@ int main()
 
 	//Testing SFML - Drawing first card to be played on
 	GameManager::Manager()->DeckOfCards.lastCard[0]->sprite.setPosition(Vector2f(365, 5));
-	window.draw(GameManager::Manager()->DeckOfCards.lastCard[0]->sprite);
+	//window.draw(GameManager::Manager()->DeckOfCards.lastCard[0]->sprite);
 	//window.display();
 
 
@@ -215,10 +215,13 @@ int main()
 	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
 
 	
+	//Updating the positions of all sprites
+	GameManager::Manager()->DeckOfCards.SetCardPositions(GameManager::Manager()->GetCurrentPlayer()->hand);
+
 	//Drawing the current player's hand
 	for (int i = 0; i < GameManager::Manager()->GetCurrentPlayer()->hand.size(); i++)
 	{
-		GameManager::Manager()->GetCurrentPlayer()->hand[i]->sprite.setPosition(Vector2f((i * 75) + 5, 500));
+		//GameManager::Manager()->GetCurrentPlayer()->hand[i]->sprite.setPosition(Vector2f((i * 75) + 5, 500));			//Should be taken care of with SetCardPositions()
 		window.draw(GameManager::Manager()->GetCurrentPlayer()->hand[i]->sprite);
 	}
 	//window.display();
@@ -253,11 +256,21 @@ int main()
 		cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
 		GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
 
+
+
+		//Updating the positions of all sprites
+		GameManager::Manager()->DeckOfCards.SetCardPositions(GameManager::Manager()->GetCurrentPlayer()->hand);
+
 		//Drawing the current player's hand
-		for (int i = 0; i < GameManager::Manager()->GetCurrentPlayer()->hand.size(); i++)
+		//for (int i = 0; i < GameManager::Manager()->GetCurrentPlayer()->hand.size(); i++)
+		//{
+		//	//GameManager::Manager()->GetCurrentPlayer()->hand[i]->sprite.setPosition(Vector2f((i * 75) + 5, 500));
+		//	window.draw(GameManager::Manager()->GetCurrentPlayer()->hand[i]->sprite);
+		//}
+
+		for (auto &c : GameManager::Manager()->DeckOfCards.allCards)
 		{
-			GameManager::Manager()->GetCurrentPlayer()->hand[i]->sprite.setPosition(Vector2f((i * 75) + 5, 500));
-			window.draw(GameManager::Manager()->GetCurrentPlayer()->hand[i]->sprite);
+			window.draw(c->sprite);
 		}
 	}
 
@@ -328,6 +341,11 @@ int main()
 
 
 	//SFML
+	GameManager::Manager()->DeckOfCards.SetCardPositions(GameManager::Manager()->GetCurrentPlayer()->hand);
+	for (auto &c : GameManager::Manager()->DeckOfCards.allCards)
+	{
+		window.draw(c->sprite);
+	}
 	window.display();
 
 	//If everyone has placed (obviously last place doesn't get out 
