@@ -370,7 +370,7 @@ public:
 		//c.sprite.setScale(Vector2f(0.5f, 0.5f));		//Not sure if this is necessary
 	}
 
-	void SetCardPositions(vector<shared_ptr<card>> Hand)
+	void UpdatePositionsAndTextures(vector<shared_ptr<card>> Hand)
 	{
 		//Set all cards to be face up by default, and cards in the stack will be changed to being face down later in the method
 		SetTextures();
@@ -385,7 +385,7 @@ public:
 			{
 				if ((c->cardSuit == stackCard->cardSuit) && (c->cardType == stackCard->cardType))
 				{
-					c->sprite.setPosition(Vector2f(365, 250));
+					c->sprite.setPosition(Vector2f(325, 250));
 					SetFaceDown(c);
 				}
 			}
@@ -395,7 +395,7 @@ public:
 			{
 				if ((c->cardSuit == prevCard->cardSuit) && (c->cardType == prevCard->cardType))
 				{
-					c->sprite.setPosition(Vector2f(365, 5));
+					c->sprite.setPosition(Vector2f(405, 250));
 				}
 			}
 

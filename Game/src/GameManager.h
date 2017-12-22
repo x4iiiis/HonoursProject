@@ -288,7 +288,7 @@ auto getDirectionOfPlay()
 
 
 	//Rules
-	void ConsultRules(vector<shared_ptr<card>> lastCard, vector<shared_ptr<player>> PlayerList, vector<shared_ptr<card>> cardStack)
+	void ConsultRules(vector<shared_ptr<card>> lastCard, vector<shared_ptr<card>> cardStack)
 	{
 		switch (lastCard[0]->cardType)
 		{
@@ -303,12 +303,12 @@ auto getDirectionOfPlay()
 
 				for (int i = 0; i < 5; i++)
 				{
-					PlayerList[0]->hand.push_back(cardStack[0]);
+					GameManager::Manager()->GetCurrentPlayer()->hand.push_back(cardStack[0]);
 					cardStack.erase(cardStack.begin());
 				}
 				//Display PlayerList[0]'s updated hand
-				cout << PlayerList[0]->name << "'s updated hand:" << endl;
-				DeckOfCards.identify_cards(PlayerList[0]->hand);
+				cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+				DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
 				//GameManager::Manager()->DeckOfCards.identify_cards(PlayerList[0]->hand);
 			}
 			break;
@@ -322,13 +322,13 @@ auto getDirectionOfPlay()
 
 			for (int i = 0; i < 2; i++)
 			{
-				PlayerList[0]->hand.push_back(cardStack[0]);
+				GameManager::Manager()->GetCurrentPlayer()->hand.push_back(cardStack[0]);
 				cardStack.erase(cardStack.begin());
 			}
 
 			//Display PlayerList[0]'s updated hand
-			cout << PlayerList[0]->name << "'s updated hand:" << endl;
-			DeckOfCards.identify_cards(PlayerList[0]->hand);
+			cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+			DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
 			//GameManager::Manager()->DeckOfCards.identify_cards(PlayerList[0]->hand);
 
 			break;

@@ -184,8 +184,8 @@ int main()
 	GameManager::Manager()->DeckOfCards.SetFaceDown(GameManager::Manager()->DeckOfCards.cardStack[0]);
 
 	//Draw card at top of the stack
-	GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.setPosition(Vector2f(365, 250));
-	window.draw(GameManager::Manager()->DeckOfCards.cardStack[0]->sprite);
+	//GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.setPosition(Vector2f(365, 250));
+	//window.draw(GameManager::Manager()->DeckOfCards.cardStack[0]->sprite);
 
 	cout << "The cards have been dealt by " << GameManager::Manager()->GetCurrentPlayer()->name << " and our first card to be played on is" << endl;
 	
@@ -216,7 +216,7 @@ int main()
 
 	
 	//Updating the positions of all sprites
-	GameManager::Manager()->DeckOfCards.SetCardPositions(GameManager::Manager()->GetCurrentPlayer()->hand);
+	GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
 
 	//Drawing the current player's hand
 	for (int i = 0; i < GameManager::Manager()->GetCurrentPlayer()->hand.size(); i++)
@@ -259,7 +259,7 @@ int main()
 
 
 		//Updating the positions of all sprites
-		GameManager::Manager()->DeckOfCards.SetCardPositions(GameManager::Manager()->GetCurrentPlayer()->hand);
+		GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
 
 		//Drawing the current player's hand
 		//for (int i = 0; i < GameManager::Manager()->GetCurrentPlayer()->hand.size(); i++)
@@ -288,16 +288,16 @@ int main()
 			cout << "Yo dood I can play" << endl << endl << endl;
 			//GameManager::Manager()->play(); 
 		}
-		cout << GameManager::Manager()->GetCurrentPlayer()->name << " does something... use your imagination..." << endl << endl;
-		GameManager::Manager()->ConsultRules(GameManager::Manager()->DeckOfCards.lastCard, GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->DeckOfCards.cardStack);
-		GameManager::Manager()->NextPlayer();
-
-
-
-		cout << GameManager::Manager()->GetCurrentPlayer()->name << ", it's your turn." << endl << endl;
-		cout << GameManager::Manager()->GetCurrentPlayer()->name << " does something... use your imagination..." << endl << endl;
-		GameManager::Manager()->ConsultRules(GameManager::Manager()->DeckOfCards.lastCard, GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->DeckOfCards.cardStack);
-		GameManager::Manager()->NextPlayer();
+		//cout << GameManager::Manager()->GetCurrentPlayer()->name << " does something... use your imagination..." << endl << endl;
+		//GameManager::Manager()->ConsultRules(GameManager::Manager()->DeckOfCards.lastCard, GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->DeckOfCards.cardStack);
+		//GameManager::Manager()->NextPlayer();
+		//
+		//
+		//
+		//cout << GameManager::Manager()->GetCurrentPlayer()->name << ", it's your turn." << endl << endl;
+		//cout << GameManager::Manager()->GetCurrentPlayer()->name << " does something... use your imagination..." << endl << endl;
+		//GameManager::Manager()->ConsultRules(GameManager::Manager()->DeckOfCards.lastCard, GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->DeckOfCards.cardStack);
+		//GameManager::Manager()->NextPlayer();
 		break;
 	}
 
@@ -308,7 +308,7 @@ int main()
 	//Every time a card is played, call:
 	if (GameManager::Manager()->DoesLastCardAffectCurrentPlayer(GameManager::Manager()->WhoPlayedTheLastCard(), GameManager::Manager()->GetCurrentPlayer()) == true)
 	{
-		GameManager::Manager()->ConsultRules(GameManager::Manager()->DeckOfCards.lastCard, GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->DeckOfCards.cardStack);
+		GameManager::Manager()->ConsultRules(GameManager::Manager()->DeckOfCards.lastCard, GameManager::Manager()->DeckOfCards.cardStack);
 	}
 	//This checks the last card against the rules relating to certain cards
 	//At the moment, a black queen forces 5 cards, a two forces 2, and
@@ -341,7 +341,7 @@ int main()
 
 
 	//SFML
-	GameManager::Manager()->DeckOfCards.SetCardPositions(GameManager::Manager()->GetCurrentPlayer()->hand);
+	GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
 	for (auto &c : GameManager::Manager()->DeckOfCards.allCards)
 	{
 		window.draw(c->sprite);
