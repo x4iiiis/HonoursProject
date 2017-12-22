@@ -373,7 +373,7 @@ public:
 	void UpdatePositionsAndTextures(vector<shared_ptr<card>> Hand)
 	{
 		//Set all cards to be face up by default, and cards in the stack will be changed to being face down later in the method
-		SetTextures();
+		SetTextures();	//Don't think this works so gonna have to loop through them	.. wait sheeit how's that gonna work 
 
 		for (auto &c : allCards) //&?
 		{

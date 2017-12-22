@@ -348,6 +348,10 @@ int main()
 	}
 	window.display();
 
+	
+
+
+
 	//If everyone has placed (obviously last place doesn't get out 
 	//and automatically places), display rankings!
 	if (ranking.size() == GameManager::Manager()->GetNumberOfPlayers())
@@ -373,6 +377,29 @@ int main()
 		{
 			window.setSize(Style::Fullscreen));
 		}*/
+
+
+		//Messing about with clicking sprites
+		for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
+		{
+			//Getting the position of the mouse (in relation to the window)
+			Vector2i mousePos = Mouse::getPosition(window);
+			//If sprite is clicked on
+			if(mousePos.x > c->sprite.getPosition().x
+				&& mousePos.x < c->sprite.getPosition().x + c->sprite.getGlobalBounds().width
+				&& mousePos.y > c->sprite.getPosition().y
+				&& mousePos.y < c->sprite.getPosition().y + c->sprite.getGlobalBounds().height
+				&& Mouse::isButtonPressed(Mouse::Left))
+			{
+				//Set clicked-on sprite to be face down
+				GameManager::Manager()->DeckOfCards.SetFaceDown(c);
+			}
+
+			window.draw(c->sprite);
+		}
+		window.display();
+
+		//window.clear(Color(63, 191, 127, 255));	//Setting the background colour
 	}
 
 	return 0;
