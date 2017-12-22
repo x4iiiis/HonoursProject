@@ -14,4 +14,5 @@ public:
 	string name;
 	vector<shared_ptr<card>> hand;
 	bool canPlay = false;
+	bool myTurn = false;
 };

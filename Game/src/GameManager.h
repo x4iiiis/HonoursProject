@@ -128,21 +128,28 @@ void NextPlayer()
 {
 	if (DirectionOfPlay == GameDirection::Clockwise)
 	{
+		//Set the previous (current before this method is complete) player's myTurn boolean to false
+		CurrentPlayer->myTurn = false;
+
 		if (CurrentPlayer == ListOfPlayers[ListOfPlayers.size()-1])
 		{
 			CurrentPlayer = ListOfPlayers[0];
+			CurrentPlayer->myTurn = true;
 		}
 		else if (CurrentPlayer == ListOfPlayers[0])
 		{
 			CurrentPlayer = ListOfPlayers[1];
+			CurrentPlayer->myTurn = true;
 		}
 		else if (CurrentPlayer == ListOfPlayers[1] && ListOfPlayers.size() > 2)
 		{
 			CurrentPlayer = ListOfPlayers[2];
+			CurrentPlayer->myTurn = true;
 		}
 		else if (CurrentPlayer == ListOfPlayers[2] && ListOfPlayers.size() > 3)
 		{
 			CurrentPlayer = ListOfPlayers[3];
+			CurrentPlayer->myTurn = true;
 		}
 	}
 	else if (DirectionOfPlay == GameDirection::AntiClockwise)
@@ -150,18 +157,22 @@ void NextPlayer()
 		if (CurrentPlayer == ListOfPlayers[0])
 		{
 			CurrentPlayer = ListOfPlayers[ListOfPlayers.size()-1];
+			CurrentPlayer->myTurn = true;
 		}
 		else if (CurrentPlayer == ListOfPlayers[1])
 		{
 			CurrentPlayer = ListOfPlayers[0];
+			CurrentPlayer->myTurn = true;
 		}
 		else if (CurrentPlayer == ListOfPlayers[2])
 		{
 			CurrentPlayer = ListOfPlayers[1];
+			CurrentPlayer->myTurn = true;
 		}
 		else if (CurrentPlayer == ListOfPlayers[3])
 		{
 			CurrentPlayer = ListOfPlayers[2];
+			CurrentPlayer->myTurn = true;
 		}
 	}
 }
