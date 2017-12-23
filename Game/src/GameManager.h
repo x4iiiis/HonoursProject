@@ -285,6 +285,28 @@ auto getDirectionOfPlay()
 	}
 
 
+	bool card_is_playable(shared_ptr<card> c)
+	{
+		if (c->cardSuit == DeckOfCards.lastCard[0]->cardSuit)
+		{
+			return true;
+		}
+		else if (c->cardType == DeckOfCards.lastCard[0]->cardType)
+		{
+			return true;
+		}
+		return false;
+	}
+
+
+	bool cards_match(shared_ptr<card> c1, shared_ptr<card> c2)
+	{
+		if ((c1->cardSuit == c2->cardSuit) && c1->cardType == c2->cardType)
+		{
+			return true;
+		}
+		return false;
+	}
 
 
 

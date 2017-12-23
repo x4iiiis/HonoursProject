@@ -373,6 +373,9 @@ int main()
 
 	while (window.isOpen())
 	{
+		//Getting the position of the mouse (in relation to the window)
+		Vector2i mousePos = Mouse::getPosition(window);
+
 		/*if (Keyboard::isKeyPressed(Keyboard::F))
 		{
 			window.setSize(Style::Fullscreen));
@@ -382,36 +385,78 @@ int main()
 		//Messing about with clicking sprites
 		for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
 		{
-			//Getting the position of the mouse (in relation to the window)
-			Vector2i mousePos = Mouse::getPosition(window);
 			//If sprite is clicked on
-			if(mousePos.x > c->sprite.getPosition().x
+			//if(mousePos.x > c->sprite.getPosition().x
+			//	&& mousePos.x < c->sprite.getPosition().x + c->sprite.getGlobalBounds().width
+			//	&& mousePos.y > c->sprite.getPosition().y
+			//	&& mousePos.y < c->sprite.getPosition().y + c->sprite.getGlobalBounds().height
+			//	&& Mouse::isButtonPressed(Mouse::Left))
+			//{
+			//	//Set clicked-on sprite to be face down
+			//	GameManager::Manager()->DeckOfCards.SetFaceDown(c);
+			//}
+
+
+			//if (mousePos.x > c->sprite.getPosition().x
+			//	&& mousePos.x < c->sprite.getPosition().x + c->sprite.getGlobalBounds().width
+			//	&& mousePos.y > c->sprite.getPosition().y
+			//	&& mousePos.y < c->sprite.getPosition().y + c->sprite.getGlobalBounds().height
+			//	&& Mouse::isButtonPressed(Mouse::Right))
+			//{
+			//	//Set clicked-on sprite to be face down
+			//	GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
+			//}
+
+			//GameManager::Manager()->DeckOfCards.checkColour(c);
+
+
+
+			//More serious now, going to 'play' a card (add it to last card[])
+			//If sprite is clicked on
+			if (mousePos.x > c->sprite.getPosition().x
 				&& mousePos.x < c->sprite.getPosition().x + c->sprite.getGlobalBounds().width
 				&& mousePos.y > c->sprite.getPosition().y
 				&& mousePos.y < c->sprite.getPosition().y + c->sprite.getGlobalBounds().height
 				&& Mouse::isButtonPressed(Mouse::Left))
 			{
-				//Set clicked-on sprite to be face down
-				GameManager::Manager()->DeckOfCards.SetFaceDown(c);
+				if (GameManager::Manager()->card_is_playable(c))
+				{
+					GameManager::Manager()->DeckOfCards.lastCard.push_back(c);
+					GameManager::Manager()->DeckOfCards.cardStack.push_back(GameManager::Manager()->DeckOfCards.lastCard[0]);
+					GameManager::Manager()->DeckOfCards.lastCard.erase(GameManager::Manager()->DeckOfCards.lastCard.begin());
+					
+
+
+					for (int i = 0; i < GameManager::Manager()->GetCurrentPlayer()->hand.size(); i++)
+					//for (auto i = GameManager::Manager()->GetCurrentPlayer()->hand.begin(); i != GameManager::Manager()->GetCurrentPlayer()->hand.end(); i++)
+					{
+						if (GameManager::Manager()->cards_match(GameManager::Manager()->GetCurrentPlayer()->hand[i], c))
+						{
+							GameManager::Manager()->GetCurrentPlayer()->hand.erase(GameManager::Manager()->GetCurrentPlayer()->hand.begin() + i);
+							break;
+						}
+					}
+
+
+
+					
+
+					//GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
+				}
 			}
 
-
-			if (mousePos.x > c->sprite.getPosition().x
-				&& mousePos.x < c->sprite.getPosition().x + c->sprite.getGlobalBounds().width
-				&& mousePos.y > c->sprite.getPosition().y
-				&& mousePos.y < c->sprite.getPosition().y + c->sprite.getGlobalBounds().height
-				&& Mouse::isButtonPressed(Mouse::Right))
-			{
-				//Set clicked-on sprite to be face down
-				GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
-			}
-
-
+			//GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
+			//window.draw(c->sprite);
+		}
+		GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
+		
+		for (auto &c : GameManager::Manager()->DeckOfCards.allCards)
+		{
 			window.draw(c->sprite);
 		}
 		window.display();
 
-		//window.clear(Color(63, 191, 127, 255));	//Setting the background colour
+		window.clear(Color(63, 191, 127, 255));	//Setting the background colour
 	}
 
 	return 0;
