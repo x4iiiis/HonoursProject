@@ -283,6 +283,49 @@ public:
 		cout << endl;
 	}
 
+	void identify_card(shared_ptr<card> c)
+	{
+		if (c->cardType == card::type::Ace)
+		{
+			cout << "Ace of ";
+		}
+		if (c->cardType == card::type::Jack)
+		{
+			cout << "Jack of ";
+		}
+		if (c->cardType == card::type::Queen)
+		{
+			cout << "Queen of ";
+		}
+		if (c->cardType == card::type::King)
+		{
+			cout << "King of ";
+		}
+		if (c->cardType != card::type::Ace && c->cardType != card::type::Jack && c->cardType != card::type::Queen && c->cardType != card::type::King)
+		{
+			cout << (static_cast<int>(c->cardType) + 1) << " of ";
+		}
+
+
+		if (c->cardSuit == card::suit::Diamonds)
+		{
+			cout << "Diamonds!" << endl;
+		}
+		if (c->cardSuit == card::suit::Clubs)
+		{
+			cout << "Clubs!" << endl;
+		}
+		if (c->cardSuit == card::suit::Hearts)
+		{
+			cout << "Hearts!" << endl;
+		}
+		if (c->cardSuit == card::suit::Spades)
+		{
+			cout << "Spades!" << endl;
+		}
+		cout << endl;
+	}
+
 	void defineCardColours(vector<shared_ptr<card>> allCards)
 	{
 		for (auto c : allCards)
@@ -310,10 +353,6 @@ public:
 
 	void UpdatePositionsAndTextures(vector<shared_ptr<card>> Hand)
 	{
-		//Set all cards to be face up by default, and cards in the stack will be changed to being face down later in the method
-		//SetTextures();	//Don't think this works so gonna have to loop through them	.. wait sheeit how's that gonna work 
-
-
 		for (auto &c : allCards) //&?
 		{
 			//Just set all cards to be positioned offscreen, and those that are in the stack, hand, or are the last played card will be moved back
@@ -322,12 +361,12 @@ public:
 			//Set all cards to be face up by default, and cards in the stack will be changed to being face down later in the method
 			c->sprite.setTexture(c->texture);
 
-			//If the card is in the stack, set it's position to 365, 250
+			//If the card is in the stack, set it to be face down. Leave it offscreen - only cardStack[0] needs to be at position (325, 250)
+					
 			for (auto &stackCard : cardStack)
 			{
 				if ((c->cardSuit == stackCard->cardSuit) && (c->cardType == stackCard->cardType))
 				{
-					c->sprite.setPosition(Vector2f(325, 250));
 					SetFaceDown(c);
 				}
 			}
@@ -349,7 +388,8 @@ public:
 				}
 			}
 		}
-
+		//Set only the first available card in the stack to be picked up to be in the middle of the screen
+		cardStack[0]->sprite.setPosition(Vector2f(325, 250));
 	}
 
 	//Load image files for card textures
