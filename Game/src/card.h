@@ -15,6 +15,7 @@ public:
 	type cardType;
 	colour cardColour;
 	Sprite sprite;
+	Texture texture;
 
 	void setColour()
 	{

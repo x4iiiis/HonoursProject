@@ -63,64 +63,62 @@ public:
 
 	void SetUpDeck()
 	{
-		//			Suits								Card Types						
-		ca.cardSuit = card::suit::Clubs;		ca.cardType = card::type::Ace;			
-		c2.cardSuit = card::suit::Clubs;		c2.cardType = card::type::Two;			
-		c3.cardSuit = card::suit::Clubs;		c3.cardType = card::type::Three;		
-		c4.cardSuit = card::suit::Clubs;		c4.cardType = card::type::Four;			
-		c5.cardSuit = card::suit::Clubs;		c5.cardType = card::type::Five;			
-		c6.cardSuit = card::suit::Clubs;		c6.cardType = card::type::Six;			
-		c7.cardSuit = card::suit::Clubs;		c7.cardType = card::type::Seven;		
-		c8.cardSuit = card::suit::Clubs;		c8.cardType = card::type::Eight;		
-		c9.cardSuit = card::suit::Clubs;		c9.cardType = card::type::Nine;			
-		c10.cardSuit = card::suit::Clubs;		c10.cardType = card::type::Ten;			
-		cj.cardSuit = card::suit::Clubs;		cj.cardType = card::type::Jack;			
-		cq.cardSuit = card::suit::Clubs;		cq.cardType = card::type::Queen;		
-		ck.cardSuit = card::suit::Clubs;		ck.cardType = card::type::King;			
+		//			Suits								Card Types						Passing textures to cards				Setting Textures						Scaling Sprites						
+		ca.cardSuit = card::suit::Clubs;		ca.cardType = card::type::Ace;				ca.texture = caTex;			ca.sprite.setTexture(caTex);		ca.sprite.setScale(Vector2f(0.5f, 0.5f));
+		c2.cardSuit = card::suit::Clubs;		c2.cardType = card::type::Two;				c2.texture = c2Tex;			c2.sprite.setTexture(c2Tex);		c2.sprite.setScale(Vector2f(0.5f, 0.5f));
+		c3.cardSuit = card::suit::Clubs;		c3.cardType = card::type::Three;			c3.texture = c3Tex;			c3.sprite.setTexture(c3Tex);		c3.sprite.setScale(Vector2f(0.5f, 0.5f));
+		c4.cardSuit = card::suit::Clubs;		c4.cardType = card::type::Four;				c4.texture = c4Tex;			c4.sprite.setTexture(c4Tex);		c4.sprite.setScale(Vector2f(0.5f, 0.5f));
+		c5.cardSuit = card::suit::Clubs;		c5.cardType = card::type::Five;				c5.texture = c5Tex;			c5.sprite.setTexture(c5Tex);		c5.sprite.setScale(Vector2f(0.5f, 0.5f));
+		c6.cardSuit = card::suit::Clubs;		c6.cardType = card::type::Six;				c6.texture = c6Tex;			c6.sprite.setTexture(c6Tex);		c6.sprite.setScale(Vector2f(0.5f, 0.5f));
+		c7.cardSuit = card::suit::Clubs;		c7.cardType = card::type::Seven;			c7.texture = c7Tex;			c7.sprite.setTexture(c7Tex);		c7.sprite.setScale(Vector2f(0.5f, 0.5f));
+		c8.cardSuit = card::suit::Clubs;		c8.cardType = card::type::Eight;			c8.texture = c8Tex;			c8.sprite.setTexture(c8Tex);		c8.sprite.setScale(Vector2f(0.5f, 0.5f));
+		c9.cardSuit = card::suit::Clubs;		c9.cardType = card::type::Nine;				c9.texture = c9Tex;			c9.sprite.setTexture(c9Tex);		c9.sprite.setScale(Vector2f(0.5f, 0.5f));
+		c10.cardSuit = card::suit::Clubs;		c10.cardType = card::type::Ten;				c10.texture = c10Tex;		c10.sprite.setTexture(c10Tex);		c10.sprite.setScale(Vector2f(0.5f, 0.5f));
+		cj.cardSuit = card::suit::Clubs;		cj.cardType = card::type::Jack;				cj.texture = cjTex;			cj.sprite.setTexture(cjTex);		cj.sprite.setScale(Vector2f(0.5f, 0.5f));
+		cq.cardSuit = card::suit::Clubs;		cq.cardType = card::type::Queen;			cq.texture = cqTex;			cq.sprite.setTexture(cqTex);		cq.sprite.setScale(Vector2f(0.5f, 0.5f));
+		ck.cardSuit = card::suit::Clubs;		ck.cardType = card::type::King;				ck.texture = ckTex;			ck.sprite.setTexture(ckTex);		ck.sprite.setScale(Vector2f(0.5f, 0.5f));
 
-		da.cardSuit = card::suit::Diamonds;		da.cardType = card::type::Ace;			
-		d2.cardSuit = card::suit::Diamonds;		d2.cardType = card::type::Two;			
-		d3.cardSuit = card::suit::Diamonds;		d3.cardType = card::type::Three;		
-		d4.cardSuit = card::suit::Diamonds;		d4.cardType = card::type::Four;			
-		d5.cardSuit = card::suit::Diamonds;		d5.cardType = card::type::Five;			
-		d6.cardSuit = card::suit::Diamonds;		d6.cardType = card::type::Six;			
-		d7.cardSuit = card::suit::Diamonds;		d7.cardType = card::type::Seven;		
-		d8.cardSuit = card::suit::Diamonds;		d8.cardType = card::type::Eight;		
-		d9.cardSuit = card::suit::Diamonds;		d9.cardType = card::type::Nine;			
-		d10.cardSuit = card::suit::Diamonds;	d10.cardType = card::type::Ten;			
-		dj.cardSuit = card::suit::Diamonds;		dj.cardType = card::type::Jack;			
-		dq.cardSuit = card::suit::Diamonds;		dq.cardType = card::type::Queen;		
-		dk.cardSuit = card::suit::Diamonds;		dk.cardType = card::type::King;			
+		da.cardSuit = card::suit::Diamonds;		da.cardType = card::type::Ace;				da.texture = daTex;			da.sprite.setTexture(daTex);		da.sprite.setScale(Vector2f(0.5f, 0.5f));
+		d2.cardSuit = card::suit::Diamonds;		d2.cardType = card::type::Two;				d2.texture = d2Tex;			d2.sprite.setTexture(d2Tex);		d2.sprite.setScale(Vector2f(0.5f, 0.5f));
+		d3.cardSuit = card::suit::Diamonds;		d3.cardType = card::type::Three;			d3.texture = d3Tex;			d3.sprite.setTexture(d3Tex);		d3.sprite.setScale(Vector2f(0.5f, 0.5f));
+		d4.cardSuit = card::suit::Diamonds;		d4.cardType = card::type::Four;				d4.texture = d4Tex;			d4.sprite.setTexture(d4Tex);		d4.sprite.setScale(Vector2f(0.5f, 0.5f));
+		d5.cardSuit = card::suit::Diamonds;		d5.cardType = card::type::Five;				d5.texture = d5Tex;			d5.sprite.setTexture(d5Tex);		d5.sprite.setScale(Vector2f(0.5f, 0.5f));
+		d6.cardSuit = card::suit::Diamonds;		d6.cardType = card::type::Six;				d6.texture = d6Tex;			d6.sprite.setTexture(d6Tex);		d6.sprite.setScale(Vector2f(0.5f, 0.5f));
+		d7.cardSuit = card::suit::Diamonds;		d7.cardType = card::type::Seven;			d7.texture = d7Tex;			d7.sprite.setTexture(d7Tex);		d7.sprite.setScale(Vector2f(0.5f, 0.5f));
+		d8.cardSuit = card::suit::Diamonds;		d8.cardType = card::type::Eight;			d8.texture = d8Tex;			d8.sprite.setTexture(d8Tex);		d8.sprite.setScale(Vector2f(0.5f, 0.5f));
+		d9.cardSuit = card::suit::Diamonds;		d9.cardType = card::type::Nine;				d9.texture = d9Tex;			d9.sprite.setTexture(d9Tex);		d9.sprite.setScale(Vector2f(0.5f, 0.5f));
+		d10.cardSuit = card::suit::Diamonds;	d10.cardType = card::type::Ten;				d10.texture = d10Tex;		d10.sprite.setTexture(d10Tex);		d10.sprite.setScale(Vector2f(0.5f, 0.5f));
+		dj.cardSuit = card::suit::Diamonds;		dj.cardType = card::type::Jack;				dj.texture = djTex;			dj.sprite.setTexture(djTex);		dj.sprite.setScale(Vector2f(0.5f, 0.5f));
+		dq.cardSuit = card::suit::Diamonds;		dq.cardType = card::type::Queen;			dq.texture = dqTex;			dq.sprite.setTexture(dqTex);		dq.sprite.setScale(Vector2f(0.5f, 0.5f));
+		dk.cardSuit = card::suit::Diamonds;		dk.cardType = card::type::King;				dk.texture = dkTex;			dk.sprite.setTexture(dkTex);		dk.sprite.setScale(Vector2f(0.5f, 0.5f));
 
-		ha.cardSuit = card::suit::Hearts;		ha.cardType = card::type::Ace;			
-		h2.cardSuit = card::suit::Hearts;		h2.cardType = card::type::Two;			
-		h3.cardSuit = card::suit::Hearts;		h3.cardType = card::type::Three;		
-		h4.cardSuit = card::suit::Hearts;		h4.cardType = card::type::Four;			
-		h5.cardSuit = card::suit::Hearts;		h5.cardType = card::type::Five;			
-		h6.cardSuit = card::suit::Hearts;		h6.cardType = card::type::Six;			
-		h7.cardSuit = card::suit::Hearts;		h7.cardType = card::type::Seven;		
-		h8.cardSuit = card::suit::Hearts;		h8.cardType = card::type::Eight;		
-		h9.cardSuit = card::suit::Hearts;		h9.cardType = card::type::Nine;			
-		h10.cardSuit = card::suit::Hearts;		h10.cardType = card::type::Ten;			
-		hj.cardSuit = card::suit::Hearts;		hj.cardType = card::type::Jack;			
-		hq.cardSuit = card::suit::Hearts;		hq.cardType = card::type::Queen;		
-		hk.cardSuit = card::suit::Hearts;		hk.cardType = card::type::King;			
+		ha.cardSuit = card::suit::Hearts;		ha.cardType = card::type::Ace;				ha.texture = haTex;			ha.sprite.setTexture(haTex);		ha.sprite.setScale(Vector2f(0.5f, 0.5f));
+		h2.cardSuit = card::suit::Hearts;		h2.cardType = card::type::Two;				h2.texture = h2Tex;			h2.sprite.setTexture(h2Tex);		h2.sprite.setScale(Vector2f(0.5f, 0.5f));
+		h3.cardSuit = card::suit::Hearts;		h3.cardType = card::type::Three;			h3.texture = h3Tex;			h3.sprite.setTexture(h3Tex);		h3.sprite.setScale(Vector2f(0.5f, 0.5f));
+		h4.cardSuit = card::suit::Hearts;		h4.cardType = card::type::Four;				h4.texture = h4Tex;			h4.sprite.setTexture(h4Tex);		h4.sprite.setScale(Vector2f(0.5f, 0.5f));
+		h5.cardSuit = card::suit::Hearts;		h5.cardType = card::type::Five;				h5.texture = h5Tex;			h5.sprite.setTexture(h5Tex);		h5.sprite.setScale(Vector2f(0.5f, 0.5f));
+		h6.cardSuit = card::suit::Hearts;		h6.cardType = card::type::Six;				h6.texture = h6Tex;			h6.sprite.setTexture(h6Tex);		h6.sprite.setScale(Vector2f(0.5f, 0.5f));
+		h7.cardSuit = card::suit::Hearts;		h7.cardType = card::type::Seven;			h7.texture = h7Tex;			h7.sprite.setTexture(h7Tex);		h7.sprite.setScale(Vector2f(0.5f, 0.5f));
+		h8.cardSuit = card::suit::Hearts;		h8.cardType = card::type::Eight;			h8.texture = h8Tex;			h8.sprite.setTexture(h8Tex);		h8.sprite.setScale(Vector2f(0.5f, 0.5f));
+		h9.cardSuit = card::suit::Hearts;		h9.cardType = card::type::Nine;				h9.texture = h9Tex;			h9.sprite.setTexture(h9Tex);		h9.sprite.setScale(Vector2f(0.5f, 0.5f));
+		h10.cardSuit = card::suit::Hearts;		h10.cardType = card::type::Ten;				h10.texture = h10Tex;		h10.sprite.setTexture(h10Tex);		h10.sprite.setScale(Vector2f(0.5f, 0.5f));
+		hj.cardSuit = card::suit::Hearts;		hj.cardType = card::type::Jack;				hj.texture = hjTex;			hj.sprite.setTexture(hjTex);		hj.sprite.setScale(Vector2f(0.5f, 0.5f));
+		hq.cardSuit = card::suit::Hearts;		hq.cardType = card::type::Queen;			hq.texture = hqTex;			hq.sprite.setTexture(hqTex);		hq.sprite.setScale(Vector2f(0.5f, 0.5f));
+		hk.cardSuit = card::suit::Hearts;		hk.cardType = card::type::King;				hk.texture = hkTex;			hk.sprite.setTexture(hkTex);		hk.sprite.setScale(Vector2f(0.5f, 0.5f));
 
-		sa.cardSuit = card::suit::Spades;		sa.cardType = card::type::Ace;			
-		s2.cardSuit = card::suit::Spades;		s2.cardType = card::type::Two;			
-		s3.cardSuit = card::suit::Spades;		s3.cardType = card::type::Three;		
-		s4.cardSuit = card::suit::Spades;		s4.cardType = card::type::Four;			
-		s5.cardSuit = card::suit::Spades;		s5.cardType = card::type::Five;			
-		s6.cardSuit = card::suit::Spades;		s6.cardType = card::type::Six;			
-		s7.cardSuit = card::suit::Spades;		s7.cardType = card::type::Seven;		
-		s8.cardSuit = card::suit::Spades;		s8.cardType = card::type::Eight;		
-		s9.cardSuit = card::suit::Spades;		s9.cardType = card::type::Nine;			
-		s10.cardSuit = card::suit::Spades;		s10.cardType = card::type::Ten;			
-		sj.cardSuit = card::suit::Spades;		sj.cardType = card::type::Jack;			
-		sq.cardSuit = card::suit::Spades;		sq.cardType = card::type::Queen;		
-		sk.cardSuit = card::suit::Spades;		sk.cardType = card::type::King;			
-
-		SetTextures();
+		sa.cardSuit = card::suit::Spades;		sa.cardType = card::type::Ace;				sa.texture = saTex;			sa.sprite.setTexture(saTex);		sa.sprite.setScale(Vector2f(0.5f, 0.5f));
+		s2.cardSuit = card::suit::Spades;		s2.cardType = card::type::Two;				s2.texture = s2Tex;			s2.sprite.setTexture(s2Tex);		s2.sprite.setScale(Vector2f(0.5f, 0.5f));
+		s3.cardSuit = card::suit::Spades;		s3.cardType = card::type::Three;			s3.texture = s3Tex;			s3.sprite.setTexture(s3Tex);		s3.sprite.setScale(Vector2f(0.5f, 0.5f));
+		s4.cardSuit = card::suit::Spades;		s4.cardType = card::type::Four;				s4.texture = s4Tex;			s4.sprite.setTexture(s4Tex);		s4.sprite.setScale(Vector2f(0.5f, 0.5f));
+		s5.cardSuit = card::suit::Spades;		s5.cardType = card::type::Five;				s5.texture = s5Tex;			s5.sprite.setTexture(s5Tex);		s5.sprite.setScale(Vector2f(0.5f, 0.5f));
+		s6.cardSuit = card::suit::Spades;		s6.cardType = card::type::Six;				s6.texture = s6Tex;			s6.sprite.setTexture(s6Tex);		s6.sprite.setScale(Vector2f(0.5f, 0.5f));
+		s7.cardSuit = card::suit::Spades;		s7.cardType = card::type::Seven;			s7.texture = s7Tex;			s7.sprite.setTexture(s7Tex);		s7.sprite.setScale(Vector2f(0.5f, 0.5f));
+		s8.cardSuit = card::suit::Spades;		s8.cardType = card::type::Eight;			s8.texture = s8Tex;			s8.sprite.setTexture(s8Tex);		s8.sprite.setScale(Vector2f(0.5f, 0.5f));
+		s9.cardSuit = card::suit::Spades;		s9.cardType = card::type::Nine;				s9.texture = s9Tex;			s9.sprite.setTexture(s9Tex);		s9.sprite.setScale(Vector2f(0.5f, 0.5f));
+		s10.cardSuit = card::suit::Spades;		s10.cardType = card::type::Ten;				s10.texture = s10Tex;		s10.sprite.setTexture(s10Tex);		s10.sprite.setScale(Vector2f(0.5f, 0.5f));
+		sj.cardSuit = card::suit::Spades;		sj.cardType = card::type::Jack;				sj.texture = sjTex;			sj.sprite.setTexture(sjTex);		sj.sprite.setScale(Vector2f(0.5f, 0.5f));
+		sq.cardSuit = card::suit::Spades;		sq.cardType = card::type::Queen;			sq.texture = sqTex;			sq.sprite.setTexture(sqTex);		sq.sprite.setScale(Vector2f(0.5f, 0.5f));
+		sk.cardSuit = card::suit::Spades;		sk.cardType = card::type::King;				sk.texture = skTex;			sk.sprite.setTexture(skTex);		sk.sprite.setScale(Vector2f(0.5f, 0.5f));
 
 		//All cards into an array of their respected suit
 		vector<shared_ptr<card>> clubsArray
@@ -303,67 +301,7 @@ public:
 		return "Red";
 	}
 
-	void SetTextures()
-	{
-		//		Textures								Sprite Scaling					
-		ca.sprite.setTexture(caTex);		ca.sprite.setScale(Vector2f(0.5f, 0.5f));
-		c2.sprite.setTexture(c2Tex);		c2.sprite.setScale(Vector2f(0.5f, 0.5f));
-		c3.sprite.setTexture(c3Tex);		c3.sprite.setScale(Vector2f(0.5f, 0.5f));
-		c4.sprite.setTexture(c4Tex);		c4.sprite.setScale(Vector2f(0.5f, 0.5f));
-		c5.sprite.setTexture(c5Tex);		c5.sprite.setScale(Vector2f(0.5f, 0.5f));
-		c6.sprite.setTexture(c6Tex);		c6.sprite.setScale(Vector2f(0.5f, 0.5f));
-		c7.sprite.setTexture(c7Tex);		c7.sprite.setScale(Vector2f(0.5f, 0.5f));
-		c8.sprite.setTexture(c8Tex);		c8.sprite.setScale(Vector2f(0.5f, 0.5f));
-		c9.sprite.setTexture(c9Tex);		c9.sprite.setScale(Vector2f(0.5f, 0.5f));
-		c10.sprite.setTexture(c10Tex);		c10.sprite.setScale(Vector2f(0.5f, 0.5f));
-		cj.sprite.setTexture(cjTex);		cj.sprite.setScale(Vector2f(0.5f, 0.5f));
-		cq.sprite.setTexture(cqTex);		cq.sprite.setScale(Vector2f(0.5f, 0.5f));
-		ck.sprite.setTexture(ckTex);		ck.sprite.setScale(Vector2f(0.5f, 0.5f));
-		
-		da.sprite.setTexture(daTex);		da.sprite.setScale(Vector2f(0.5f, 0.5f));
-		d2.sprite.setTexture(d2Tex);		d2.sprite.setScale(Vector2f(0.5f, 0.5f));
-		d3.sprite.setTexture(d3Tex);		d3.sprite.setScale(Vector2f(0.5f, 0.5f));
-		d4.sprite.setTexture(d4Tex);		d4.sprite.setScale(Vector2f(0.5f, 0.5f));
-		d5.sprite.setTexture(d5Tex);		d5.sprite.setScale(Vector2f(0.5f, 0.5f));
-		d6.sprite.setTexture(d6Tex);		d6.sprite.setScale(Vector2f(0.5f, 0.5f));
-		d7.sprite.setTexture(d7Tex);		d7.sprite.setScale(Vector2f(0.5f, 0.5f));
-		d8.sprite.setTexture(d8Tex);		d8.sprite.setScale(Vector2f(0.5f, 0.5f));
-		d9.sprite.setTexture(d9Tex);		d9.sprite.setScale(Vector2f(0.5f, 0.5f));
-		d10.sprite.setTexture(d10Tex);		d10.sprite.setScale(Vector2f(0.5f, 0.5f));
-		dj.sprite.setTexture(djTex);		dj.sprite.setScale(Vector2f(0.5f, 0.5f));
-		dq.sprite.setTexture(dqTex);		dq.sprite.setScale(Vector2f(0.5f, 0.5f));
-		dk.sprite.setTexture(dkTex);		dk.sprite.setScale(Vector2f(0.5f, 0.5f));
-		
-		ha.sprite.setTexture(haTex);		ha.sprite.setScale(Vector2f(0.5f, 0.5f));
-		h2.sprite.setTexture(h2Tex);		h2.sprite.setScale(Vector2f(0.5f, 0.5f));
-		h3.sprite.setTexture(h3Tex);		h3.sprite.setScale(Vector2f(0.5f, 0.5f));
-		h4.sprite.setTexture(h4Tex);		h4.sprite.setScale(Vector2f(0.5f, 0.5f));
-		h5.sprite.setTexture(h5Tex);		h5.sprite.setScale(Vector2f(0.5f, 0.5f));
-		h6.sprite.setTexture(h6Tex);		h6.sprite.setScale(Vector2f(0.5f, 0.5f));
-		h7.sprite.setTexture(h7Tex);		h7.sprite.setScale(Vector2f(0.5f, 0.5f));
-		h8.sprite.setTexture(h8Tex);		h8.sprite.setScale(Vector2f(0.5f, 0.5f));
-		h9.sprite.setTexture(h9Tex);		h9.sprite.setScale(Vector2f(0.5f, 0.5f));
-		h10.sprite.setTexture(h10Tex);		h10.sprite.setScale(Vector2f(0.5f, 0.5f));
-		hj.sprite.setTexture(hjTex);		hj.sprite.setScale(Vector2f(0.5f, 0.5f));
-		hq.sprite.setTexture(hqTex);		hq.sprite.setScale(Vector2f(0.5f, 0.5f));
-		hk.sprite.setTexture(hkTex);		hk.sprite.setScale(Vector2f(0.5f, 0.5f));
-		
-		sa.sprite.setTexture(saTex);		sa.sprite.setScale(Vector2f(0.5f, 0.5f));
-		s2.sprite.setTexture(s2Tex);		s2.sprite.setScale(Vector2f(0.5f, 0.5f));
-		s3.sprite.setTexture(s3Tex);		s3.sprite.setScale(Vector2f(0.5f, 0.5f));
-		s4.sprite.setTexture(s4Tex);		s4.sprite.setScale(Vector2f(0.5f, 0.5f));
-		s5.sprite.setTexture(s5Tex);		s5.sprite.setScale(Vector2f(0.5f, 0.5f));
-		s6.sprite.setTexture(s6Tex);		s6.sprite.setScale(Vector2f(0.5f, 0.5f));
-		s7.sprite.setTexture(s7Tex);		s7.sprite.setScale(Vector2f(0.5f, 0.5f));
-		s8.sprite.setTexture(s8Tex);		s8.sprite.setScale(Vector2f(0.5f, 0.5f));
-		s9.sprite.setTexture(s9Tex);		s9.sprite.setScale(Vector2f(0.5f, 0.5f));
-		s10.sprite.setTexture(s10Tex);		s10.sprite.setScale(Vector2f(0.5f, 0.5f));
-		sj.sprite.setTexture(sjTex);		sj.sprite.setScale(Vector2f(0.5f, 0.5f));
-		sq.sprite.setTexture(sqTex);		sq.sprite.setScale(Vector2f(0.5f, 0.5f));
-		sk.sprite.setTexture(skTex);		sk.sprite.setScale(Vector2f(0.5f, 0.5f));
-	}
-
-	//Change texture to FaceDownTex
+	//Change texture to FaceDownTex 
 	void SetFaceDown(shared_ptr<card> c)
 	{
 		c->sprite.setTexture(FaceDownTex);
@@ -373,12 +311,16 @@ public:
 	void UpdatePositionsAndTextures(vector<shared_ptr<card>> Hand)
 	{
 		//Set all cards to be face up by default, and cards in the stack will be changed to being face down later in the method
-		SetTextures();	//Don't think this works so gonna have to loop through them	.. wait sheeit how's that gonna work 
+		//SetTextures();	//Don't think this works so gonna have to loop through them	.. wait sheeit how's that gonna work 
+
 
 		for (auto &c : allCards) //&?
 		{
 			//Just set all cards to be positioned offscreen, and those that are in the stack, hand, or are the last played card will be moved back
 			c->sprite.setPosition(Vector2f(-100, -100));
+
+			//Set all cards to be face up by default, and cards in the stack will be changed to being face down later in the method
+			c->sprite.setTexture(c->texture);
 
 			//If the card is in the stack, set it's position to 365, 250
 			for (auto &stackCard : cardStack)

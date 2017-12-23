@@ -179,7 +179,7 @@ int main()
 	GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
 
 	//Unnecessary here (I think), but every time the card on the top of the card stack changes, call this to sort the texture of the one moving out, and then next call to flip one coming in
-	GameManager::Manager()->DeckOfCards.SetTextures();
+	GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
 	//Setting the new top card of the cardStack to be facedown (texture wise)
 	GameManager::Manager()->DeckOfCards.SetFaceDown(GameManager::Manager()->DeckOfCards.cardStack[0]);
 
@@ -394,6 +394,18 @@ int main()
 				//Set clicked-on sprite to be face down
 				GameManager::Manager()->DeckOfCards.SetFaceDown(c);
 			}
+
+
+			if (mousePos.x > c->sprite.getPosition().x
+				&& mousePos.x < c->sprite.getPosition().x + c->sprite.getGlobalBounds().width
+				&& mousePos.y > c->sprite.getPosition().y
+				&& mousePos.y < c->sprite.getPosition().y + c->sprite.getGlobalBounds().height
+				&& Mouse::isButtonPressed(Mouse::Right))
+			{
+				//Set clicked-on sprite to be face down
+				GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
+			}
+
 
 			window.draw(c->sprite);
 		}
