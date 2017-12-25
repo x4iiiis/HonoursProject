@@ -404,18 +404,11 @@ public:
 				}
 			}
 		}
-		//If the card is in the stack, set it to be face down. Leave it offscreen - only cardStack[0] needs to be at position (325, 250)
-		/*for (auto &stackCard : cardStack)
-		{
-			SetFaceDown(stackCard);
-		}*/
-
 		//Set only the first available card in the stack to be picked up to be in the middle of the screen
 		cardStack[0]->sprite.setPosition(Vector2f(325, 5));
 
-		//Fuck it what if only cardstack[0] is facedown
+		//Only cardstack[0] is facedown
 		SetFaceDown(cardStack[0]);
-
 
 		//If it's the last played card, put it at 405, 5
 		lastCard[0]->sprite.setPosition(Vector2f(405, 5));

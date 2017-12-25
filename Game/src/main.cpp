@@ -131,72 +131,91 @@ int main()
 		//Getting the position of the mouse (in relation to the window)
 		Vector2i mousePos = Mouse::getPosition(window);
 
-		
-		//TeSting
-		//cout << "It's " << GameManager::Manager()->GetCurrentPlayer()->name << "'s turn" << endl << endl;
-		
-		
+		//For checking if mouse is released
+		sf::Event eventt;
 
-		/*if (Keyboard::isKeyPressed(Keyboard::F))
+		while (window.pollEvent(eventt))
 		{
-			window.setSize(Style::Fullscreen));
-		}*/
+			//TeSting
+			//cout << "It's " << GameManager::Manager()->GetCurrentPlayer()->name << "'s turn" << endl << endl;
 
 
-		//Messing about with clicking sprites
-		for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
-		{
-			//More serious now, going to 'play' a card (add it to last card[])
-			//If sprite is clicked on
-			if (mousePos.x > c->sprite.getPosition().x
-				&& mousePos.x < c->sprite.getPosition().x + c->sprite.getGlobalBounds().width
-				&& mousePos.y > c->sprite.getPosition().y
-				&& mousePos.y < c->sprite.getPosition().y + c->sprite.getGlobalBounds().height
-				&& Mouse::isButtonPressed(Mouse::Left))
+
+			/*if (Keyboard::isKeyPressed(Keyboard::F))
 			{
-				if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
-				{
-					GameManager::Manager()->play(c, GameManager::Manager()->GetCurrentPlayer()->hand);
-					GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
-					//Setting the background colour
-					window.clear(Color(63, 191, 127, 255));
+				window.setSize(Style::Fullscreen));
+			}*/
 
-					break;
+
+			//Messing about with clicking sprites
+			for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
+			{
+				//More serious now, going to 'play' a card (add it to last card[])
+				//If sprite is clicked on
+				if (mousePos.x > c->sprite.getPosition().x
+					&& mousePos.x < c->sprite.getPosition().x + c->sprite.getGlobalBounds().width
+					&& mousePos.y > c->sprite.getPosition().y
+					&& mousePos.y < c->sprite.getPosition().y + c->sprite.getGlobalBounds().height
+					)//&& Mouse::isButtonPressed(Mouse::Left))
+				{
+					if (eventt.type == Event::MouseButtonReleased)
+
+					{
+
+						if (eventt.mouseButton.button == Mouse::Left)
+						{
+
+							if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
+							{
+								GameManager::Manager()->play(c, GameManager::Manager()->GetCurrentPlayer()->hand);
+								GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
+								//Setting the background colour
+								window.clear(Color(63, 191, 127, 255));
+
+								break;
+							}
+						}
+					}
+				}
+			}
+
+
+			if (mousePos.x > GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().x
+				&& mousePos.x < GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().x + GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getGlobalBounds().width
+				&& mousePos.y > GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().y
+				&& mousePos.y < GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().y + GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getGlobalBounds().height
+				)//&& Mouse::isButtonPressed(Mouse::Left))
+			{
+
+				if (eventt.type == Event::MouseButtonReleased)
+				{
+					if (eventt.mouseButton.button == Mouse::Left)
+					{
+
+						//If the current player cannot play
+						if (!GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
+						{
+							if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
+							{
+								GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
+								//Update Hand and draw it
+								cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+								GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
+
+								GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
+								GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
+
+								GameManager::Manager()->NextPlayer();
+								GameManager::Manager()->ConsultRules();
+
+								//Setting the background colour
+								window.clear(Color(63, 191, 127, 255));
+							}
+						}
+					}
 				}
 			}
 		}
-
-
-		
-		if (mousePos.x > GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().x
-			&& mousePos.x < GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().x + GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getGlobalBounds().width
-			&& mousePos.y > GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().y
-			&& mousePos.y < GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().y + GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getGlobalBounds().height
-			&& Mouse::isButtonPressed(Mouse::Left))
-		{
-			//If the current player cannot play
-			if (!GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
-			{
-				//if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
-				{
-					GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
-					//Update Hand and draw it
-					cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
-					GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
-
-					GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
-					GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
-
-					GameManager::Manager()->NextPlayer();
-					GameManager::Manager()->ConsultRules();
-
-					//Setting the background colour
-					window.clear(Color(63, 191, 127, 255));
-				}
-			}
-		}
-
-		
 
 		GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
 		
@@ -218,6 +237,9 @@ int main()
 			window.close();
 		}
 	}
+
+	cout << "GAME OVER" << endl << endl << "Press any key" << endl;
+	cin;
 
 	return 0;
 }

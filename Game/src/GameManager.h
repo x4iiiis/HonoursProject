@@ -279,7 +279,7 @@ auto getDirectionOfPlay()
 			{
 				if (cards_match(Hand[i], c))
 				{
-					Hand.erase(Hand.begin() + i);
+					GetCurrentPlayer()->hand.erase(GetCurrentPlayer()->hand.begin() + i);
 				}
 			}
 			NextPlayer();
@@ -315,16 +315,16 @@ auto getDirectionOfPlay()
 			if (c->cardSuit == DeckOfCards.lastCard[0]->cardSuit)
 			{
 				//cout << "Suit match!" << endl;
-				CurrentPlayer->canPlay = true;
-				CurrentPlayer->canPickUp = false;
+				GetCurrentPlayer()->canPlay = true;
+				GetCurrentPlayer()->canPickUp = false;
 				return true;
 			}
 
 			if (c->cardType == DeckOfCards.lastCard[0]->cardType)
 			{
 				//cout << "Type match!" << endl;
-				CurrentPlayer->canPlay = true;
-				CurrentPlayer->canPickUp = false;
+				GetCurrentPlayer()->canPlay = true;
+				GetCurrentPlayer()->canPickUp = false;
 				return true;
 			}
 		}
@@ -332,8 +332,8 @@ auto getDirectionOfPlay()
 		//Matches in type or suit throughout the whole hand, so
 		//we return false.
 		//cout << "No matches!" << endl;
-		CurrentPlayer->canPlay = false;
-		CurrentPlayer->canPickUp = true;
+		GetCurrentPlayer()->canPlay = false;
+		GetCurrentPlayer()->canPickUp = true;
 		return false;
 	}
 
@@ -416,7 +416,7 @@ auto getDirectionOfPlay()
 						//GameManager::Manager()->DeckOfCards.identify_cards(PlayerList[0]->hand);
 					}
 
-					can_play_checker(CurrentPlayer->hand);
+					can_play_checker(GetCurrentPlayer()->hand);
 					break;
 				}
 				//Need to be able to tell who played it, otherwise that 2 is gonna make everyone pick up 2 until we run out of cards
@@ -490,6 +490,7 @@ auto getDirectionOfPlay()
 			}
 		}
 		DeckOfCards.UpdatePositionsAndTextures(GetCurrentPlayer()->hand);
+		can_play_checker(GetCurrentPlayer()->hand); //Dunno if this is necessary but it's 4am sooooooooooooooooooooo
 	}
 };
 
