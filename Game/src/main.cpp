@@ -202,7 +202,7 @@ int main()
 
 
 	//Testing SFML - Drawing first card to be played on
-	GameManager::Manager()->DeckOfCards.lastCard[0]->sprite.setPosition(Vector2f(365, 5));
+	//GameManager::Manager()->DeckOfCards.lastCard[0]->sprite.setPosition(Vector2f(365, 5));
 	//window.draw(GameManager::Manager()->DeckOfCards.lastCard[0]->sprite);
 	//window.display();
 
@@ -215,102 +215,18 @@ int main()
 	cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s hand:" << endl;
 	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
 
+	//Check the current player can play (sets canPlay and canPickUp bools)
+	GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand);
 	
-	//Updating the positions of all sprites
-	GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
-
-	//Drawing the current player's hand
-	for (int i = 0; i < GameManager::Manager()->GetCurrentPlayer()->hand.size(); i++)
-	{
-		//GameManager::Manager()->GetCurrentPlayer()->hand[i]->sprite.setPosition(Vector2f((i * 75) + 5, 500));			//Should be taken care of with SetCardPositions()
-		window.draw(GameManager::Manager()->GetCurrentPlayer()->hand[i]->sprite);
-	}
-	//window.display();
-
-	//Function to check whether PlayerList[0] can play
-	GameManager::Manager()->GetCurrentPlayer()->canPlay = GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand);
-
-	//if (PlayerList[0]->canPlay == false)
-	//{
-	//	cout << PlayerList[0]->name << " has to take a card from the deck." << endl << endl;
-	//
-	//	PlayerList[0]->hand.push_back(cardStack[0]);			//////////////////////////////////////////////////////////////////PROBLEMMMMMMMM
-	//	cardStack.erase(cardStack.begin());
-	//
-	//	//Display PlayerList[0]'s updated hand
-	//	cout << PlayerList[0]->name << "'s updated hand:" << endl;
-	//	identify_cards(PlayerList[0]->hand);
-	//}
-
-	//if (GameManager::Manager()->GetListOfPlayers()[0]->canPlay == true)
-	if (GameManager::Manager()->GetCurrentPlayer()->canPlay == true)
-	{
-		cout << GameManager::Manager()->GetCurrentPlayer()->name << " can play." << endl << endl;
-	}
-	else
-	{
-		cout << GameManager::Manager()->GetCurrentPlayer()->name << " can't play, and must pick up 1 card." << endl << endl;
-		GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);					//Should it be 0 or should it be .size()?
-		GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());							//Should it be 0 or should it be .size()?
-
-		//Update Hand and draw it
-		cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
-		GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
 
 
 
-		//Updating the positions of all sprites
-		GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
-
-		//Drawing the current player's hand
-		//for (int i = 0; i < GameManager::Manager()->GetCurrentPlayer()->hand.size(); i++)
-		//{
-		//	//GameManager::Manager()->GetCurrentPlayer()->hand[i]->sprite.setPosition(Vector2f((i * 75) + 5, 500));
-		//	window.draw(GameManager::Manager()->GetCurrentPlayer()->hand[i]->sprite);
-		//}
-
-		for (auto &c : GameManager::Manager()->DeckOfCards.allCards)
-		{
-			window.draw(c->sprite);
-		}
-	}
-
-
-
-
-	//Start Game loop here?
-	while (ranking.size() < GameManager::Manager()->GetNumberOfPlayers() - 1)
-	{
-		cout << "in the game loop" << endl;
-
-		cout << GameManager::Manager()->GetCurrentPlayer()->name << ", it's your turn." << endl << endl;
-		if (GameManager::Manager()->GetCurrentPlayer()->canPlay)
-		{
-			cout << "Yo dood I can play" << endl << endl << endl;
-			//GameManager::Manager()->play(); 
-		}
-		//cout << GameManager::Manager()->GetCurrentPlayer()->name << " does something... use your imagination..." << endl << endl;
-		//GameManager::Manager()->ConsultRules(GameManager::Manager()->DeckOfCards.lastCard, GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->DeckOfCards.cardStack);
-		//GameManager::Manager()->NextPlayer();
-		//
-		//
-		//
-		//cout << GameManager::Manager()->GetCurrentPlayer()->name << ", it's your turn." << endl << endl;
-		//cout << GameManager::Manager()->GetCurrentPlayer()->name << " does something... use your imagination..." << endl << endl;
-		//GameManager::Manager()->ConsultRules(GameManager::Manager()->DeckOfCards.lastCard, GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->DeckOfCards.cardStack);
-		//GameManager::Manager()->NextPlayer();
-		break;
-	}
-
-
-
-
-
+	
 	//Every time a card is played, call:
-	if (GameManager::Manager()->DoesLastCardAffectCurrentPlayer(GameManager::Manager()->WhoPlayedTheLastCard(), GameManager::Manager()->GetCurrentPlayer()) == true)
+	/*if (GameManager::Manager()->DoesLastCardAffectCurrentPlayer(GameManager::Manager()->WhoPlayedTheLastCard(), GameManager::Manager()->GetCurrentPlayer()) == true)
 	{
 		GameManager::Manager()->ConsultRules();
-	}
+	}*/
 	//This checks the last card against the rules relating to certain cards
 	//At the moment, a black queen forces 5 cards, a two forces 2, and
 	//eight and jack are there but just produce cout statements at this point.
@@ -319,28 +235,7 @@ int main()
 
 
 
-
-
 	
-
-	for (int i = 0; i < GameManager::Manager()->GetListOfPlayers().size(); i++)
-	{
-		if (GameManager::Manager()->GetListOfPlayers()[i]->hand.empty())
-		{
-			ranking.push_back(GameManager::Manager()->GetListOfPlayers()[i]);
-			GameManager::Manager()->GetListOfPlayers().erase(GameManager::Manager()->GetListOfPlayers().begin() + i);
-			i--;
-		}
-
-		//Thinking this will put last place in but only when real placers have got out
-		if (GameManager::Manager()->GetListOfPlayers().size() == 1)
-		{
-			ranking.push_back(GameManager::Manager()->GetListOfPlayers()[0]);
-			GameManager::Manager()->GetListOfPlayers().erase(GameManager::Manager()->GetListOfPlayers().begin());
-		}
-	}
-
-
 	//SFML
 	GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
 	for (auto &c : GameManager::Manager()->DeckOfCards.allCards)
@@ -351,27 +246,7 @@ int main()
 
 	
 
-
-
-	//If everyone has placed (obviously last place doesn't get out 
-	//and automatically places), display rankings!
-	if (ranking.size() == GameManager::Manager()->GetNumberOfPlayers())
-	{
-		cout << "Ranking:" << endl;
-
-		for (int i = 0; i < ranking.size(); i++)
-		{
-			cout << i + 1 << ": " << ranking[i]->name << endl;
-		}
-		cout << endl;
-	}
-
-
-	/*if (player gets out) [pseudocode]
-	{
-	ranking.push_back(player);
-	}*/
-
+	//Game Loop
 	while (window.isOpen())
 	{
 		//Setting the background colour
@@ -404,12 +279,15 @@ int main()
 				&& mousePos.y < c->sprite.getPosition().y + c->sprite.getGlobalBounds().height
 				&& Mouse::isButtonPressed(Mouse::Left))
 			{
-				GameManager::Manager()->play(c, GameManager::Manager()->GetCurrentPlayer()->hand);
-				GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
-				//Setting the background colour
-				window.clear(Color(63, 191, 127, 255));
+				if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
+				{
+					GameManager::Manager()->play(c, GameManager::Manager()->GetCurrentPlayer()->hand);
+					GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
+					//Setting the background colour
+					window.clear(Color(63, 191, 127, 255));
 
-				break;
+					break;
+				}
 			}
 		}
 
@@ -417,7 +295,7 @@ int main()
 		//If the current player cannot play
 		if (!GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
 		{
-			if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
+			//if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
 			{
 				if (mousePos.x > GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().x
 					&& mousePos.x < GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().x + GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getGlobalBounds().width

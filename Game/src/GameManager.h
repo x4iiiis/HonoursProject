@@ -176,6 +176,10 @@ void NextPlayer()
 			CurrentPlayer->myTurn = true;
 		}
 	}
+
+	//Set canPlay and canPickUp to false by default, can_play_checker will sort it
+	CurrentPlayer->canPlay = false;
+	CurrentPlayer->canPickUp = false;
 }
 
 
@@ -255,7 +259,7 @@ auto getDirectionOfPlay()
 		return false;
 	}
 
-	//Fuck all in here atm bruh
+	//Play your chosen card
 	void play(shared_ptr<card> c, vector<shared_ptr<card>> Hand)
 	{
 		if (card_is_playable(c))
@@ -276,12 +280,11 @@ auto getDirectionOfPlay()
 				if (cards_match(Hand[i], c))
 				{
 					Hand.erase(Hand.begin() + i);
-					NextPlayer();
-					//DeckOfCards.UpdatePositionsAndTextures(GetCurrentPlayer()->hand);
-					ConsultRules();
-					break;
 				}
 			}
+			NextPlayer();
+			ConsultRules();
+			//break;
 
 			//Check if any hands are empty (can only possibly be the previous player that's hand has changed since last move), remove the player from the list
 			for (int i = 0; i < ListOfPlayers.size(); i++)
@@ -295,9 +298,9 @@ auto getDirectionOfPlay()
 		}
 		else
 		{
-			cout << "You cannot play this card." << endl << "The ";
+			cout << "Sorry " << CurrentPlayer->name << ", you cannot play this card. The " << endl;
 			DeckOfCards.identify_card(c);
-			cout << " cannot be played on top of the ";
+			cout << "cannot be played on top of the ";
 			DeckOfCards.identify_cards(DeckOfCards.lastCard);
 			cout << "." << endl << endl;
 
@@ -373,114 +376,117 @@ auto getDirectionOfPlay()
 	//Rules
 	void ConsultRules()
 	{
-
-		//By default, assume player can play and can't pick up.
-		//If this isn't the case, the following code will sort that out.
-		GetCurrentPlayer()->canPickUp = false;
-		GetCurrentPlayer()->canPlay = true;
-
-
-		switch (DeckOfCards.lastCard[0]->cardType)
+		if (DoesLastCardAffectCurrentPlayer(WhoPlayedTheLastCard(), GetCurrentPlayer()))
 		{
-			//Need to be able to tell who played it, otherwise that black queen is gonna make everyone pick up 5 until we run out of cards
-			//Also it isn't PlayerList[0], it'll be whoever's turn it is once we've got that figured out
-			case(card::type::Queen):
+			//By default, assume player can play and can't pick up.
+			//If this isn't the case, the following code will sort that out.
+			GetCurrentPlayer()->canPickUp = false;
+			GetCurrentPlayer()->canPlay = true;
+
+
+			switch (DeckOfCards.lastCard[0]->cardType)
 			{
-				if (DeckOfCards.lastCard[0]->cardColour == card::colour::Black)
+				//Need to be able to tell who played it, otherwise that black queen is gonna make everyone pick up 5 until we run out of cards
+				//Also it isn't PlayerList[0], it'll be whoever's turn it is once we've got that figured out
+				case(card::type::Queen):
 				{
-					cout << "The last card was a black queen!" << endl;
-					cout << "You must now pick up 5 cards." << endl << endl;
+					if (DeckOfCards.lastCard[0]->cardColour == card::colour::Black)
+					{
+						cout << "The last card was a black queen!" << endl;
+						cout << "You must now pick up 5 cards." << endl << endl;
+
+						GetCurrentPlayer()->canPickUp = true;
+						GetCurrentPlayer()->canPlay = false;
+
+						for (int i = 0; i < 5; i++)
+						{
+							GetCurrentPlayer()->hand.push_back(DeckOfCards.cardStack[0]);
+							DeckOfCards.cardStack.erase(DeckOfCards.cardStack.begin());
+						}
+						//DeckOfCards.UpdatePositionsAndTextures(GetCurrentPlayer()->hand);
+
+						//Display updated hand
+						cout << GetCurrentPlayer()->name << "'s updated hand:" << endl;
+						DeckOfCards.identify_cards(GetCurrentPlayer()->hand);
+
+						GetCurrentPlayer()->canPickUp = false;
+						GetCurrentPlayer()->canPlay = false;
+
+						NextPlayer();
+						//GameManager::Manager()->DeckOfCards.identify_cards(PlayerList[0]->hand);
+					}
+
+					can_play_checker(CurrentPlayer->hand);
+					break;
+				}
+				//Need to be able to tell who played it, otherwise that 2 is gonna make everyone pick up 2 until we run out of cards
+				//Also it isn't PlayerList[0], it'll be whoever's turn it is once we've got that figured out
+				case(card::type::Two):
+				{
+					cout << "The last card was a two!" << endl;
+					cout << "You must now pick 2 cards." << endl << endl;
 
 					GetCurrentPlayer()->canPickUp = true;
 					GetCurrentPlayer()->canPlay = false;
 
-					for (int i = 0; i < 5; i++)
+					for (int i = 0; i < 2; i++)
 					{
 						GetCurrentPlayer()->hand.push_back(DeckOfCards.cardStack[0]);
 						DeckOfCards.cardStack.erase(DeckOfCards.cardStack.begin());
 					}
 					//DeckOfCards.UpdatePositionsAndTextures(GetCurrentPlayer()->hand);
 
-					//Display updated hand
+
+					//Display PlayerList[0]'s updated hand
 					cout << GetCurrentPlayer()->name << "'s updated hand:" << endl;
 					DeckOfCards.identify_cards(GetCurrentPlayer()->hand);
+					//GameManager::Manager()->DeckOfCards.identify_cards(PlayerList[0]->hand);
 
 					GetCurrentPlayer()->canPickUp = false;
 					GetCurrentPlayer()->canPlay = false;
 
 					NextPlayer();
 					can_play_checker(GetCurrentPlayer()->hand);
-					//GameManager::Manager()->DeckOfCards.identify_cards(PlayerList[0]->hand);
+					break;
 				}
-				break;
-			}
-			//Need to be able to tell who played it, otherwise that 2 is gonna make everyone pick up 2 until we run out of cards
-			//Also it isn't PlayerList[0], it'll be whoever's turn it is once we've got that figured out
-			case(card::type::Two):
-			{
-				cout << "The last card was a two!" << endl;
-				cout << "You must now pick 2 cards." << endl << endl;
-
-				GetCurrentPlayer()->canPickUp = true;
-				GetCurrentPlayer()->canPlay = false;
-
-				for (int i = 0; i < 2; i++)
+				//Game management - we need the direction of play to be defined somewhere
+				case(card::type::Jack):
 				{
-					GetCurrentPlayer()->hand.push_back(DeckOfCards.cardStack[0]);
-					DeckOfCards.cardStack.erase(DeckOfCards.cardStack.begin());
+					cout << "The last card was a jack!" << endl;
+					ChangeDirectionOfPlay();
+
+					GetCurrentPlayer()->canPickUp = false;
+					GetCurrentPlayer()->canPlay = false;
+
+					NextPlayer();
+					NextPlayer();
+					cout << "The direction of play has been reversed." << endl << endl;
+					cout << GetCurrentPlayer()->name << ", it's your turn." << endl << endl;
+
+					can_play_checker(GetCurrentPlayer()->hand);
+					break;
 				}
-				//DeckOfCards.UpdatePositionsAndTextures(GetCurrentPlayer()->hand);
+				//Again, needing game management to know whose turn it is and when the card was played, otherwise
+				//everybody's gonna skip their turn forever
+				case(card::type::Eight):
+				{
+					cout << "The last card was an eight!" << endl;
+					cout << "You are forced to skip your turn." << endl << endl;
 
+					GetCurrentPlayer()->canPickUp = false;
+					GetCurrentPlayer()->canPlay = false;
 
-				//Display PlayerList[0]'s updated hand
-				cout << GetCurrentPlayer()->name << "'s updated hand:" << endl;
-				DeckOfCards.identify_cards(GetCurrentPlayer()->hand);
-				//GameManager::Manager()->DeckOfCards.identify_cards(PlayerList[0]->hand);
+					NextPlayer();
+					cout << GetCurrentPlayer()->name << ", it's your turn." << endl << endl;
 
-				GetCurrentPlayer()->canPickUp = false;
-				GetCurrentPlayer()->canPlay = false;
+					can_play_checker(GetCurrentPlayer()->hand);
+				}
 
-				NextPlayer();
-				can_play_checker(GetCurrentPlayer()->hand);
-				break;
-			}
-			//Game management - we need the direction of play to be defined somewhere
-			case(card::type::Jack):
-			{
-				cout << "The last card was a jack!" << endl;
-				ChangeDirectionOfPlay();
-
-				GetCurrentPlayer()->canPickUp = false;
-				GetCurrentPlayer()->canPlay = false;
-
-				NextPlayer();
-				NextPlayer();
-				cout << "The direction of play has been reversed." << endl << endl;
-				cout << GetCurrentPlayer()->name << ", it's your turn." << endl << endl;
-
-				can_play_checker(GetCurrentPlayer()->hand);
-				break;
-			}
-			//Again, needing game management to know whose turn it is and when the card was played, otherwise
-			//everybody's gonna skip their turn forever
-			case(card::type::Eight):
-			{
-				cout << "The last card was an eight!" << endl;
-				cout << "You are forced to skip your turn." << endl << endl;
-
-				GetCurrentPlayer()->canPickUp = false;
-				GetCurrentPlayer()->canPlay = false;
-
-				NextPlayer();
-				cout <<  GetCurrentPlayer()->name << ", it's your turn." << endl << endl;
-				
-				can_play_checker(GetCurrentPlayer()->hand);
-			}
-
-			default:
-			{
-				can_play_checker(GetCurrentPlayer()->hand);
-				break;
+				default:
+				{
+					can_play_checker(GetCurrentPlayer()->hand);
+					break;
+				}
 			}
 		}
 		DeckOfCards.UpdatePositionsAndTextures(GetCurrentPlayer()->hand);
