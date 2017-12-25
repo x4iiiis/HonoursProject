@@ -13,7 +13,7 @@ class player
 public:
 	string name;
 	vector<shared_ptr<card>> hand;
-	bool canPlay = false;
-	bool canPickUp = false;
-	bool myTurn = false;
+	bool canPlay;
+	bool canPickUp;
+	bool myTurn;
 };

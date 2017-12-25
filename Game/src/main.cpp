@@ -111,7 +111,7 @@ int main()
 	//This could be something we let the user decide...
 	//But for now let's make it 7.
 	//int CardsPerPlayer = 7;
-	GameManager::Manager()->SetCardsPerPlayer(7);
+	GameManager::Manager()->SetCardsPerPlayer(2);
 
 
 
@@ -382,6 +382,8 @@ int main()
 		Vector2i mousePos = Mouse::getPosition(window);
 
 		
+		//TeSting
+		//cout << "It's " << GameManager::Manager()->GetCurrentPlayer()->name << "'s turn" << endl << endl;
 		
 		
 
@@ -404,6 +406,9 @@ int main()
 			{
 				GameManager::Manager()->play(c, GameManager::Manager()->GetCurrentPlayer()->hand);
 				GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
+				//Setting the background colour
+				window.clear(Color(63, 191, 127, 255));
+
 				break;
 			}
 		}
@@ -429,10 +434,15 @@ int main()
 					GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
 
 					GameManager::Manager()->NextPlayer();
+					
+
+					//Setting the background colour
+					window.clear(Color(63, 191, 127, 255));
 				}
 			}
 		}
 
+		
 
 		GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer()->hand);
 		
@@ -441,6 +451,18 @@ int main()
 			window.draw(c->sprite);
 		}
 		window.display();
+
+
+
+		
+		//If only one player is left, Gameover will be true. 
+		//Add the loser to the scoreboard and close the SFML window
+		if (GameManager::Manager()->Scoreboard.Gameover(GameManager::Manager()->GetNumberOfPlayers()))
+		{
+			GameManager::Manager()->Scoreboard.PlayerIsOut(GameManager::Manager()->GetCurrentPlayer());	//Must be current player cause they're the only one left..? 
+			GameManager::Manager()->Scoreboard.DisplayScoreboard();
+			window.close();
+		}
 	}
 
 	return 0;
