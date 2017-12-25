@@ -20,7 +20,6 @@
 using namespace sf;
 using namespace std;
 
-
 int main()
 {
 	//Initialising SFML window
@@ -238,8 +237,7 @@ int main()
 		}
 	}
 
-	cout << "GAME OVER" << endl << endl << "Press any key" << endl;
-	cin;
+	GameManager::Manager()->GameOver();
 
 	return 0;
 }

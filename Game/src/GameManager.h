@@ -361,7 +361,15 @@ auto getDirectionOfPlay()
 		return false;
 	}
 
-
+	void GameOver()
+	{
+		cout << endl << endl << endl << "GAME OVER" << endl << endl << "Press return to quit" << endl;
+		
+		while (!sf::Keyboard::isKeyPressed(Keyboard::Return))
+		{
+			//Wait for Return to be pressed 
+		}
+	}
 
 
 

@@ -24,22 +24,22 @@ public:
 
 	void DisplayScoreboard()
 	{
-		cout << "Scoreboard:" << endl;
+		cout << endl << endl << "Scoreboard:" << endl;
 		for (int i = 0; i < Scoreboard.size(); i++)
 		{
 			switch (i)
 			{
 			case 0:
-				cout << "1st:\t\t" << Scoreboard[i]->name;
+				cout << "1st:\t" << Scoreboard[i]->name << endl;
 				break;
 			case 1:
-				cout << "2nd:\t\t" << Scoreboard[i]->name;
+				cout << "2nd:\t" << Scoreboard[i]->name << endl;
 				break;
 			case 2:
-				cout << "3rd:\t\t" << Scoreboard[i]->name;
+				cout << "3rd:\t" << Scoreboard[i]->name << endl;
 				break;
 			case 3:
-				cout << "4th:\t\t" << Scoreboard[i]->name;
+				cout << "4th:\t" << Scoreboard[i]->name << endl;
 				break;
 			default:
 				break;
