@@ -3,7 +3,7 @@
 #include <vector>
 #include <iostream>
 #include <string>
-
+#include <sstream>
 
 #include "player.h"
 #include "Deck.h"
@@ -73,19 +73,37 @@ void PlayerCreation()
 {
 	string PlayerName;
 
-	cout << "How many players do you want in the game? (2-4)" << endl;		//--This will need validation to ensure it's between 2 and 4 later, useful to put 1 for testing the now though
-	cin >> NumberOfPlayers;
-	cout << endl;
+	//Making sure Number of players is between 2 and 4
+	while (!(NumberOfPlayers > 1 && NumberOfPlayers < 5))
+	{
+		cout << "How many players do you want in the game? (2-4)" << endl;
+		cin >> NumberOfPlayers;
+		cout << endl;
 
+		//If non-numeric characters are input, ignore it and try again
+		if (cin.fail())
+		{
+			cin.clear();
+			cin.ignore(100, '\n');
+		}
+	}
+
+	//Take in player names and create players with said names
 	for (int i = 0; i < NumberOfPlayers; i++)
 	{
 		cout << "Enter a player name:" << endl;
-		cin >> PlayerName;
+
+		while (PlayerName == "")
+		{
+			getline(cin, PlayerName);
+		}
 		cout << endl;
 
 		player newPlayer;
 		newPlayer.name = PlayerName;
 		ListOfPlayers.push_back(make_shared<player>(newPlayer));
+		
+		PlayerName = "";
 	}
 }
 
@@ -363,7 +381,7 @@ auto getDirectionOfPlay()
 
 	void GameOver()
 	{
-		cout << endl << endl << endl << "GAME OVER" << endl << endl << "Press return to quit" << endl;
+		cout << endl << endl << endl << "GAME OVER \t\t\t\t\t\t\t Press enter to quit" << endl;
 		
 		while (!sf::Keyboard::isKeyPressed(Keyboard::Return))
 		{
