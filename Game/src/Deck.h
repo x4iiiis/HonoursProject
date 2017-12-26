@@ -356,7 +356,7 @@ public:
 		for (auto &c : allCards) //&?
 		{
 			//Just set all cards to be positioned offscreen, and those that are in the stack, hand, or are the last played card will be moved back
-			c->sprite.setPosition(Vector2f(-100, -100));
+			c->sprite.setPosition(Vector2f(-100.0, -100.0));
 
 			//Set all cards to be face up by default, and cards in the stack will be changed to being face down later in the method
 			c->sprite.setTexture(c->texture);
@@ -367,7 +367,7 @@ public:
 				{
 					if ((c->cardSuit == Hand[i]->cardSuit) && (c->cardType == Hand[i]->cardType))
 					{
-						c->sprite.setPosition(Vector2f((i * 75) + 5, 500));
+						c->sprite.setPosition(Vector2f((i * 75.0f) + 5.0f, 500.0f));
 					}
 				}
 
@@ -375,7 +375,7 @@ public:
 				{
 					if ((c->cardSuit == Hand[i]->cardSuit) && (c->cardType == Hand[i]->cardType))
 					{
-						c->sprite.setPosition(Vector2f(((i - 10) * 75) + 5, 400));
+						c->sprite.setPosition(Vector2f(((i - 10) * 75.0f) + 5.0f, 400.0f));
 					}
 				}
 
@@ -383,7 +383,7 @@ public:
 				{
 					if ((c->cardSuit == Hand[i]->cardSuit) && (c->cardType == Hand[i]->cardType))
 					{
-						c->sprite.setPosition(Vector2f(((i - 20) * 75) + 5, 300));
+						c->sprite.setPosition(Vector2f(((i - 20) * 75.0f) + 5.0f, 300.0f));
 					}
 				}
 
@@ -391,7 +391,7 @@ public:
 				{
 					if ((c->cardSuit == Hand[i]->cardSuit) && (c->cardType == Hand[i]->cardType))
 					{
-						c->sprite.setPosition(Vector2f(((i - 30) * 75) + 5, 200));
+						c->sprite.setPosition(Vector2f(((i - 30) * 75.0f) + 5.0f, 200.0f));
 					}
 				}
 
@@ -399,19 +399,19 @@ public:
 				{
 					if ((c->cardSuit == Hand[i]->cardSuit) && (c->cardType == Hand[i]->cardType))
 					{
-						c->sprite.setPosition(Vector2f(((i - 40) * 75) + 5, 100));
+						c->sprite.setPosition(Vector2f(((i - 40) * 75.0f) + 5.0f, 100.0f));
 					}
 				}
 			}
 		}
 		//Set only the first available card in the stack to be picked up to be in the middle of the screen
-		cardStack[0]->sprite.setPosition(Vector2f(325, 5));
+		cardStack[0]->sprite.setPosition(Vector2f(325.0f, 5.0f));
 
 		//Only cardstack[0] is facedown
 		SetFaceDown(cardStack[0]);
 
 		//If it's the last played card, put it at 405, 5
-		lastCard[0]->sprite.setPosition(Vector2f(405, 5));
+		lastCard[0]->sprite.setPosition(Vector2f(405.0f, 5.0f));
 		
 	}
 

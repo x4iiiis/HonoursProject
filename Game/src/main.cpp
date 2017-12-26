@@ -251,7 +251,7 @@ int main()
 //so start with just the black queen and jack rules for now and potentially
 //add others later if things are going well
 
-//Thing what he meant by that was forcing it to pick up will be okay but forcing
+//Think what he meant by that was forcing it to pick up will be okay but forcing
 //certain cards maybe not. Perhaps pickup would have to be something we
 //do automatically, skipping out the agent's turn. 
 //Realistically this is probably something we should do anyway as it would be 

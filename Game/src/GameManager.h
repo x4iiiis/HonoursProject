@@ -535,7 +535,14 @@ auto getDirectionOfPlay()
 
 					can_play_checker(GetCurrentPlayer()->hand);
 				}
-
+				//case(card::type::Ace):
+				//{
+				//	//Can nominate a suit (Won't be in AI version)
+				//}
+				//case(card::type::Seven):
+				//{
+				//	//Can play the rest of that suit (Not in AI version)
+				//}
 				default:
 				{
 					can_play_checker(GetCurrentPlayer()->hand);

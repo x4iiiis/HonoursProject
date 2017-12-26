@@ -9,7 +9,5 @@ Rules:
 * 8 or Wait
 * Black Queen
 * Red Queen
-* Suicide King
 * Jack Back
-* [Insert swap hands rule here]
-* Play on till someon comes last
+* Play on till someone comes last
