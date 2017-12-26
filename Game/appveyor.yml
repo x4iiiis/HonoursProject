@@ -1,21 +1,31 @@
+#image:
+#  - Visual Studio 2017
+#clone_folder: c:\projects\source
 version: 1.0.{build}
 image: Visual Studio 2017
 
-only_commits:
-message: AppVeyorTest
-
 configuration:
+- Debug
 - Release
 
 before_build:
-- cd ..
-- cd ..
-- cd HonoursProjectBuild
+- cmd: >-
+    mkdir build
+    
+    cd build
+    
+    cmake -G "Visual Studio 15 2017 Win64" ../
 
+    echo CMake done I think
+    
 build:
-project: HonoursProject.sln
-parallel: true
-verbosity: minimal
-
+  project: build/HonoursProject.sln
+  parallel: true
+  verbosity: minimal
+  
+after_build:
+- cmd: 7z a HonoursProject_%CONFIGURATION%.zip %APPVEYOR_BUILD_FOLDER%/build/bin/%CONFIGURATION%/HonoursProject.exe %APPVEYOR_BUILD_FOLDER%/build/bin/%CONFIGURATION%/*.dll  %APPVEYOR_BUILD_FOLDER%/build/bin/%CONFIGURATION%/**/*   
+4
 artifacts:
-- path: x64/Release$(configuration)/HonoursProject.exe
+  - path: build/HonoursProject_%CONFIGURATION%.zip
+    name: HonoursProject_%CONFIGURATION%
