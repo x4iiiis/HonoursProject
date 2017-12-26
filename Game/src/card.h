@@ -16,6 +16,8 @@ public:
 	colour cardColour;
 	Sprite sprite;
 	Texture texture;
+	int turnsSincePlayed = 0;
+
 
 	void setColour()
 	{
@@ -29,7 +31,6 @@ public:
 			cardColour = card::colour::Red;
 		}
 	}
-
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

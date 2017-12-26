@@ -198,6 +198,9 @@ void NextPlayer()
 	//Set canPlay and canPickUp to false by default, can_play_checker will sort it
 	CurrentPlayer->canPlay = false;
 	CurrentPlayer->canPickUp = false;
+
+	//Trying to sort recursive rule enforcement
+	DeckOfCards.lastCard[0]->turnsSincePlayed += 1;
 }
 
 
@@ -236,45 +239,56 @@ auto getDirectionOfPlay()
 
 	bool DoesLastCardAffectCurrentPlayer(shared_ptr<player> LastCardPlayer, shared_ptr<player> CurrentPlayer)
 	{
-		int LCP = 0;
-		int CP = 0;
-
-		//Find index of current player and the last player to play a card
-		for (int i = 0; i < ListOfPlayers.size(); i++)
+		//If the card was played more than 0 turns ago, then it doesn't even matter
+		if (DeckOfCards.lastCard[0]->turnsSincePlayed != 1)
 		{
-			if (ListOfPlayers[i] == LastCardPlayer)
+			cout << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
+			return false;
+		}
+
+		//If the card was played more than 0 turns ago, then it doesn't even matter
+		if (DeckOfCards.lastCard[0]->turnsSincePlayed = 1)
+		{
+			int LCP = 0;
+			int CP = 0;
+
+			//Find index of current player and the last player to play a card
+			for (int i = 0; i < ListOfPlayers.size(); i++)
 			{
-				LCP = i;
+				if (ListOfPlayers[i] == LastCardPlayer)
+				{
+					LCP = i;
+				}
+
+				if (ListOfPlayers[i] == CurrentPlayer)
+				{
+					CP = i;
+				}
 			}
 
-			if (ListOfPlayers[i] == CurrentPlayer)
+			//Using the indexes to determine whether or not the card was played by the previous player
+			//Not sure if all of this logic is right yet tbh
+			if (LCP = (CP - 1) || (LCP = (CP + 1)))
 			{
-				CP = i;
+				cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+				return true;
 			}
-		}
-
-		//Using the indexes to determine whether or not the card was played by the previous player
-		//Not sure if all of this logic is right yet tbh
-		if (LCP = (CP - 1) || (LCP = (CP + 1)))
-		{
-			cout << "Last played card DOES affect current player" << endl << endl;
-			return true;
-		}
 
 
-		if ((LCP = (NumberOfPlayers - 1)) && (CP = 0) && (DirectionOfPlay == GameDirection::Clockwise))
-		{
-			cout << "Last played card DOES affect current player" << endl << endl;
-			return true;
-		}
+			if ((LCP = (NumberOfPlayers - 1)) && (CP = 0) && (DirectionOfPlay == GameDirection::Clockwise))
+			{
+				cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+				return true;
+			}
 
-		if ((LCP = 0) && (CP = (NumberOfPlayers - 1)) && (DirectionOfPlay == GameDirection::AntiClockwise))
-		{
-			cout << "Last played card DOES affect current player" << endl << endl;
-			return true;
+			if ((LCP = 0) && (CP = (NumberOfPlayers - 1)) && (DirectionOfPlay == GameDirection::AntiClockwise))
+			{
+				cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+				return true;
+			}
+			cout << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
+			return false;
 		}
-		cout << "Current Player not affected by last played card" << endl << endl;
-		return false;
 	}
 
 	//Play your chosen card
@@ -282,6 +296,10 @@ auto getDirectionOfPlay()
 	{
 		if (card_is_playable(c))
 		{
+			//Trying to sort the problem where rules are enforced more than once if the last card remains the same
+			NoLongerLastCard(DeckOfCards.lastCard[0]);
+			//c->turnsSincePlayed = 0;
+
 			DeckOfCards.lastCard.push_back(c);
 			DeckOfCards.cardStack.push_back(DeckOfCards.lastCard[0]);
 			DeckOfCards.lastCard.erase(DeckOfCards.lastCard.begin());
@@ -390,7 +408,17 @@ auto getDirectionOfPlay()
 	}
 
 
-
+	void NoLongerLastCard(shared_ptr<card> previousLastCard)
+	{
+		for (auto &c : DeckOfCards.allCards)
+		{
+			if (cards_match(c, previousLastCard))
+			{
+				c->turnsSincePlayed = 0;
+				break;
+			}
+		}
+	}
 
 
 

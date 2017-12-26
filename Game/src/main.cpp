@@ -196,6 +196,9 @@ int main()
 						{
 							if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
 							{
+								//Last card is still the same, so increment turnsSincePlayed variable to prevent rules being enforced multiple times
+								//GameManager::Manager()->DeckOfCards.lastCard[0]->turnsSincePlayed += 1;
+
 								GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
 								//Update Hand and draw it
 								cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
