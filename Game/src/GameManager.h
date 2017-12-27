@@ -101,10 +101,26 @@ void PlayerCreation()
 
 		player newPlayer;
 		newPlayer.name = PlayerName;
+
 		ListOfPlayers.push_back(make_shared<player>(newPlayer));
 		
 		PlayerName = "";
 	}
+
+	//TEMP - setting playstyles
+	ListOfPlayers[0]->playstyle = player::Playstyle::Human;
+	ListOfPlayers[1]->playstyle = player::Playstyle::Aggressive;
+
+	if(ListOfPlayers.size() > 2)
+	{
+		ListOfPlayers[2]->playstyle = player::Playstyle::Aggressive;	//Change me back to unaggressive
+		
+		if(ListOfPlayers.size() > 3)
+		{
+		ListOfPlayers[3]->playstyle = player::Playstyle::Aggressive;
+		}
+	}
+
 }
 
 
@@ -145,12 +161,17 @@ shared_ptr<player>GetCurrentPlayer()
 
 void NextPlayer()
 {
+	//if (Scoreboard.Gameover(GetNumberOfPlayers()))
+	//{
+	//	return;  //?? right thing to do? 
+	//}
+
 	if (DirectionOfPlay == GameDirection::Clockwise)
 	{
 		//Set the previous (current before this method is complete) player's myTurn boolean to false
 		CurrentPlayer->myTurn = false;
 
-		if (CurrentPlayer == ListOfPlayers[ListOfPlayers.size()-1])
+		if (CurrentPlayer == ListOfPlayers[ListOfPlayers.size() - 1])
 		{
 			CurrentPlayer = ListOfPlayers[0];
 			CurrentPlayer->myTurn = true;
@@ -175,7 +196,7 @@ void NextPlayer()
 	{
 		if (CurrentPlayer == ListOfPlayers[0])
 		{
-			CurrentPlayer = ListOfPlayers[ListOfPlayers.size()-1];
+			CurrentPlayer = ListOfPlayers[ListOfPlayers.size() - 1];
 			CurrentPlayer->myTurn = true;
 		}
 		else if (CurrentPlayer == ListOfPlayers[1])
@@ -201,8 +222,25 @@ void NextPlayer()
 
 	//Trying to sort recursive rule enforcement
 	DeckOfCards.lastCard[0]->turnsSincePlayed += 1;
-}
 
+	DeckOfCards.UpdatePositionsAndTextures(GetCurrentPlayer());
+
+	if (Scoreboard.Gameover(GetNumberOfPlayers()))
+	{
+		Scoreboard.PlayerIsOut(GetCurrentPlayer(), GetNumberOfPlayers());
+		return;  //?? right thing to do? 
+	}
+
+	//if (GetCurrentPlayer()->playstyle != player::Playstyle::Human)
+	//{
+	//	cout << "Not human, sleeping for 3" << endl << endl;
+	//	//If the current player is not human, take 3 seconds before trying to make a move
+	//	//just to allow us to see what the player is doing, and also to make it feel a bit
+	//	//more authentic, rather than being able to loop through several non-human players'
+	//	//moves in the blink of an eye
+	//	sleep(seconds(3.0f));
+	//}
+}
 
 
 
@@ -239,63 +277,81 @@ auto getDirectionOfPlay()
 
 	bool DoesLastCardAffectCurrentPlayer(shared_ptr<player> LastCardPlayer, shared_ptr<player> CurrentPlayer)
 	{
-		//If the card was played more than 0 turns ago, then it doesn't even matter
-		if (DeckOfCards.lastCard[0]->turnsSincePlayed != 1)
+		//printing whether the player is affected by cards that don't bare rules was annoying me 
+		if ((DeckOfCards.lastCard[0]->cardType == card::type::Queen && DeckOfCards.lastCard[0]->cardColour == card::colour::Black)
+			|| (DeckOfCards.lastCard[0]->cardType == card::type::Two)
+			|| (DeckOfCards.lastCard[0]->cardType == card::type::Eight))
 		{
-			cout << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
-			return false;
-		}
 
-		//If the card was played more than 0 turns ago, then it doesn't even matter
-		if (DeckOfCards.lastCard[0]->turnsSincePlayed = 1)
-		{
-			int LCP = 0;
-			int CP = 0;
-
-			//Find index of current player and the last player to play a card
-			for (int i = 0; i < ListOfPlayers.size(); i++)
+			//If the card was played more than 0 turns ago, then it doesn't even matter
+			if (DeckOfCards.lastCard[0]->turnsSincePlayed != 1)
 			{
-				if (ListOfPlayers[i] == LastCardPlayer)
+				cout << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
+				return false;
+			}
+
+			//If the card was played more than 0 turns ago, then it doesn't even matter
+			if (DeckOfCards.lastCard[0]->turnsSincePlayed = 1)
+			{
+				int LCP = 0;
+				int CP = 0;
+
+				//Find index of current player and the last player to play a card
+				for (int i = 0; i < ListOfPlayers.size(); i++)
 				{
-					LCP = i;
+					if (ListOfPlayers[i] == LastCardPlayer)
+					{
+						LCP = i;
+					}
+
+					if (ListOfPlayers[i] == CurrentPlayer)
+					{
+						CP = i;
+					}
 				}
 
-				if (ListOfPlayers[i] == CurrentPlayer)
+				//Using the indexes to determine whether or not the card was played by the previous player
+				//Not sure if all of this logic is right yet tbh
+				if (LCP = (CP - 1) || (LCP = (CP + 1)))
 				{
-					CP = i;
+					cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+					return true;
 				}
-			}
-
-			//Using the indexes to determine whether or not the card was played by the previous player
-			//Not sure if all of this logic is right yet tbh
-			if (LCP = (CP - 1) || (LCP = (CP + 1)))
-			{
-				cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
-				return true;
-			}
 
 
-			if ((LCP = (NumberOfPlayers - 1)) && (CP = 0) && (DirectionOfPlay == GameDirection::Clockwise))
-			{
-				cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
-				return true;
-			}
+				if ((LCP = (NumberOfPlayers - 1)) && (CP = 0) && (DirectionOfPlay == GameDirection::Clockwise))
+				{
+					cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+					return true;
+				}
 
-			if ((LCP = 0) && (CP = (NumberOfPlayers - 1)) && (DirectionOfPlay == GameDirection::AntiClockwise))
-			{
-				cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
-				return true;
+				if ((LCP = 0) && (CP = (NumberOfPlayers - 1)) && (DirectionOfPlay == GameDirection::AntiClockwise))
+				{
+					cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+					return true;
+				}
+				cout << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
+				return false;
 			}
-			cout << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
-			return false;
 		}
+		return false;
 	}
 
 	//Play your chosen card
-	void play(shared_ptr<card> c, vector<shared_ptr<card>> Hand)
+	void play(shared_ptr<card> c)
 	{
 		if (card_is_playable(c))
 		{
+			//if (GetCurrentPlayer()->playstyle != player::Playstyle::Human)
+			//{
+			//	cout << "Not human, sleeping for 3" << endl << endl;
+			//	//If the current player is not human, take 3 seconds before trying to make a move
+			//	//just to allow us to see what the player is doing, and also to make it feel a bit
+			//	//more authentic, rather than being able to loop through several non-human players'
+			//	//moves in the blink of an eye
+			//	sleep(seconds(3.0f));
+			//}
+
 			//Trying to sort the problem where rules are enforced more than once if the last card remains the same
 			NoLongerLastCard(DeckOfCards.lastCard[0]);
 			//c->turnsSincePlayed = 0;
@@ -308,12 +364,12 @@ auto getDirectionOfPlay()
 			DeckOfCards.identify_card(c);
 			cout << endl << endl;
 
-			CurrentPlayer->canPlay = false;
-			CurrentPlayer->canPickUp = false;
+			GetCurrentPlayer()->canPlay = false;
+			GetCurrentPlayer()->canPickUp = false;
 
-			for (int i = 0; i < Hand.size(); i++)
+			for (int i = 0; i < GetCurrentPlayer()->hand.size(); i++)
 			{
-				if (cards_match(Hand[i], c))
+				if (cards_match(GetCurrentPlayer()->hand[i], c))
 				{
 					GetCurrentPlayer()->hand.erase(GetCurrentPlayer()->hand.begin() + i);
 				}
@@ -327,7 +383,7 @@ auto getDirectionOfPlay()
 			{
 				if (ListOfPlayers[i]->hand.empty())
 				{
-					GameManager::Manager()->Scoreboard.PlayerIsOut(ListOfPlayers[i]);
+					Scoreboard.PlayerIsOut(ListOfPlayers[i], GetNumberOfPlayers());
 					ListOfPlayers.erase(ListOfPlayers.begin() + i);
 				}
 			}
@@ -339,7 +395,6 @@ auto getDirectionOfPlay()
 			cout << "cannot be played on top of the ";
 			DeckOfCards.identify_cards(DeckOfCards.lastCard);
 			cout << "." << endl << endl;
-
 		}
 	}
 	
@@ -447,7 +502,7 @@ auto getDirectionOfPlay()
 					if (DeckOfCards.lastCard[0]->cardColour == card::colour::Black)
 					{
 						cout << "The last card was a black queen!" << endl;
-						cout << "You must now pick up 5 cards." << endl << endl;
+						cout << GetCurrentPlayer()->name << " must now pick up 5 cards." << endl << endl;
 
 						GetCurrentPlayer()->canPickUp = true;
 						GetCurrentPlayer()->canPlay = false;
@@ -478,7 +533,7 @@ auto getDirectionOfPlay()
 				case(card::type::Two):
 				{
 					cout << "The last card was a two!" << endl;
-					cout << "You must now pick 2 cards." << endl << endl;
+					cout << GetCurrentPlayer()->name << " must now pick 2 cards." << endl << endl;
 
 					GetCurrentPlayer()->canPickUp = true;
 					GetCurrentPlayer()->canPlay = false;
@@ -525,7 +580,7 @@ auto getDirectionOfPlay()
 				case(card::type::Eight):
 				{
 					cout << "The last card was an eight!" << endl;
-					cout << "You are forced to skip your turn." << endl << endl;
+					cout << GetCurrentPlayer()->name << " is forced to skip their turn." << endl << endl;
 
 					GetCurrentPlayer()->canPickUp = false;
 					GetCurrentPlayer()->canPlay = false;
@@ -550,7 +605,7 @@ auto getDirectionOfPlay()
 				}
 			}
 		}
-		DeckOfCards.UpdatePositionsAndTextures(GetCurrentPlayer()->hand);
+		DeckOfCards.UpdatePositionsAndTextures(GetCurrentPlayer());
 		can_play_checker(GetCurrentPlayer()->hand); //Dunno if this is necessary but it's 4am sooooooooooooooooooooo
 	}
 };

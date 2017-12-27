@@ -351,7 +351,7 @@ public:
 		//c.sprite.setScale(Vector2f(0.5f, 0.5f));		//Not sure if this is necessary
 	}
 
-	void UpdatePositionsAndTextures(vector<shared_ptr<card>> Hand)
+	void UpdatePositionsAndTextures(shared_ptr<player> player)
 	{
 		for (auto &c : allCards) //&?
 		{
@@ -361,45 +361,100 @@ public:
 			//Set all cards to be face up by default, and cards in the stack will be changed to being face down later in the method
 			c->sprite.setTexture(c->texture);
 
-			for (int i = 0; i < Hand.size(); i++)
+			//Only display the cards of the current player face up if the current player is human
+			if (player->playstyle == player::Playstyle::Human)
 			{
-				if (i < 10)
+				for (int i = 0; i < player->hand.size(); i++)
 				{
-					if ((c->cardSuit == Hand[i]->cardSuit) && (c->cardType == Hand[i]->cardType))
+					if (i < 10)
 					{
-						c->sprite.setPosition(Vector2f((i * 75.0f) + 5.0f, 500.0f));
+						if ((c->cardSuit == player->hand[i]->cardSuit) && (c->cardType == player->hand[i]->cardType))
+						{
+							c->sprite.setPosition(Vector2f((i * 75.0f) + 5.0f, 500.0f));
+						}
+					}
+
+					if (i > 9 && i < 20)
+					{
+						if ((c->cardSuit == player->hand[i]->cardSuit) && (c->cardType == player->hand[i]->cardType))
+						{
+							c->sprite.setPosition(Vector2f(((i - 10) * 75.0f) + 5.0f, 400.0f));
+						}
+					}
+
+					if (i > 19 && i < 30)
+					{
+						if ((c->cardSuit == player->hand[i]->cardSuit) && (c->cardType == player->hand[i]->cardType))
+						{
+							c->sprite.setPosition(Vector2f(((i - 20) * 75.0f) + 5.0f, 300.0f));
+						}
+					}
+
+					if (i > 29 && i < 40)
+					{
+						if ((c->cardSuit == player->hand[i]->cardSuit) && (c->cardType == player->hand[i]->cardType))
+						{
+							c->sprite.setPosition(Vector2f(((i - 30) * 75.0f) + 5.0f, 200.0f));
+						}
+					}
+
+					if (i > 39)
+					{
+						if ((c->cardSuit == player->hand[i]->cardSuit) && (c->cardType == player->hand[i]->cardType))
+						{
+							c->sprite.setPosition(Vector2f(((i - 40) * 75.0f) + 5.0f, 100.0f));
+						}
 					}
 				}
-
-				if (i > 9 && i < 20)
+			}
+			else
+			{
+				//If the current player is not human, display their cards face down (TEMPORARILY(?) commented out so that we can see what they have and what they're playing)
+				for (int i = 0; i < player->hand.size(); i++)
 				{
-					if ((c->cardSuit == Hand[i]->cardSuit) && (c->cardType == Hand[i]->cardType))
+					if (i < 10)
 					{
-						c->sprite.setPosition(Vector2f(((i - 10) * 75.0f) + 5.0f, 400.0f));
+						if ((c->cardSuit == player->hand[i]->cardSuit) && (c->cardType == player->hand[i]->cardType))
+						{
+							c->sprite.setPosition(Vector2f((i * 75.0f) + 5.0f, 500.0f));
+							//SetFaceDown(c);
+						}
 					}
-				}
 
-				if (i > 19 && i < 30)
-				{
-					if ((c->cardSuit == Hand[i]->cardSuit) && (c->cardType == Hand[i]->cardType))
+					if (i > 9 && i < 20)
 					{
-						c->sprite.setPosition(Vector2f(((i - 20) * 75.0f) + 5.0f, 300.0f));
+						if ((c->cardSuit == player->hand[i]->cardSuit) && (c->cardType == player->hand[i]->cardType))
+						{
+							c->sprite.setPosition(Vector2f(((i - 10) * 75.0f) + 5.0f, 400.0f));
+							//SetFaceDown(c);
+						}
 					}
-				}
 
-				if (i > 29 && i < 40)
-				{
-					if ((c->cardSuit == Hand[i]->cardSuit) && (c->cardType == Hand[i]->cardType))
+					if (i > 19 && i < 30)
 					{
-						c->sprite.setPosition(Vector2f(((i - 30) * 75.0f) + 5.0f, 200.0f));
+						if ((c->cardSuit == player->hand[i]->cardSuit) && (c->cardType == player->hand[i]->cardType))
+						{
+							c->sprite.setPosition(Vector2f(((i - 20) * 75.0f) + 5.0f, 300.0f));
+							//SetFaceDown(c);
+						}
 					}
-				}
 
-				if (i > 39 )
-				{
-					if ((c->cardSuit == Hand[i]->cardSuit) && (c->cardType == Hand[i]->cardType))
+					if (i > 29 && i < 40)
 					{
-						c->sprite.setPosition(Vector2f(((i - 40) * 75.0f) + 5.0f, 100.0f));
+						if ((c->cardSuit == player->hand[i]->cardSuit) && (c->cardType == player->hand[i]->cardType))
+						{
+							c->sprite.setPosition(Vector2f(((i - 30) * 75.0f) + 5.0f, 200.0f));
+							//SetFaceDown(c);
+						}
+					}
+
+					if (i > 39)
+					{
+						if ((c->cardSuit == player->hand[i]->cardSuit) && (c->cardType == player->hand[i]->cardType))
+						{
+							c->sprite.setPosition(Vector2f(((i - 40) * 75.0f) + 5.0f, 100.0f));
+							//SetFaceDown(c);		
+						}
 					}
 				}
 			}

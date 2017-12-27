@@ -17,9 +17,20 @@ private:
 
 public:
 	
-	void PlayerIsOut(shared_ptr<player> player)
+	void PlayerIsOut(shared_ptr<player> player, int numberOfPlayers)
 	{
 		Scoreboard.push_back(player);
+
+		if (Scoreboard.size() < numberOfPlayers)
+		{
+			cout << endl << player->name << " is out!";
+
+			if (Scoreboard.size() != numberOfPlayers - 1)
+			{
+				DisplayScoreboard();
+				cout << endl << endl;
+			}
+		}
 	}
 
 	void DisplayScoreboard()
@@ -30,16 +41,16 @@ public:
 			switch (i)
 			{
 			case 0:
-				cout << "1st:\t" << Scoreboard[i]->name << endl;
+				cout << "1st:\t" << Scoreboard[i]->name << "\t\t\t" << Scoreboard[i]->getPlaystyle() << endl;
 				break;
 			case 1:
-				cout << "2nd:\t" << Scoreboard[i]->name << endl;
+				cout << "2nd:\t" << Scoreboard[i]->name << "\t\t\t" << Scoreboard[i]->getPlaystyle() << endl;
 				break;
 			case 2:
-				cout << "3rd:\t" << Scoreboard[i]->name << endl;
+				cout << "3rd:\t" << Scoreboard[i]->name << "\t\t\t" << Scoreboard[i]->getPlaystyle() << endl;
 				break;
 			case 3:
-				cout << "4th:\t" << Scoreboard[i]->name << endl;
+				cout << "4th:\t" << Scoreboard[i]->name << "\t\t\t" << Scoreboard[i]->getPlaystyle() << endl;
 				break;
 			default:
 				break;
