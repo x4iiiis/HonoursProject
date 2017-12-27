@@ -113,7 +113,7 @@ void PlayerCreation()
 
 	if(ListOfPlayers.size() > 2)
 	{
-		ListOfPlayers[2]->playstyle = player::Playstyle::Aggressive;	//Change me back to unaggressive
+		ListOfPlayers[2]->playstyle = player::Playstyle::Unaggressive;	//Change me back to unaggressive
 		
 		if(ListOfPlayers.size() > 3)
 		{

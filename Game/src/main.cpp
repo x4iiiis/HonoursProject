@@ -143,7 +143,7 @@ int main()
 
 		while (window.pollEvent(eventt))
 		{
-			
+
 
 			/*if (Keyboard::isKeyPressed(Keyboard::F))
 			{
@@ -253,7 +253,7 @@ int main()
 				if (!GameManager::Manager()->Scoreboard.Gameover(GameManager::Manager()->GetNumberOfPlayers()))
 				{
 					cout << GameManager::Manager()->GetCurrentPlayer()->name << " to play." << endl << endl;
-				
+
 					//Draw hand etc before sleep
 					GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
 					for (auto &c : GameManager::Manager()->DeckOfCards.allCards)
@@ -343,9 +343,12 @@ int main()
 							}
 						}
 					}
-
-					//If "Aggressive" cannot play
-					if (!GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
+				}
+				//If "Aggressive" cannot play
+				if (!GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
+				{
+					//Checking gameover isn't true cause if not it's gonna try to play on even if it's the last player
+					if (!GameManager::Manager()->Scoreboard.Gameover(GameManager::Manager()->GetNumberOfPlayers()))
 					{
 						if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
 						{
@@ -374,59 +377,77 @@ int main()
 					}
 				}
 			}
-		
+		}
 
-			
 
-			//If "Unaggressive" player is playing
-			if (GameManager::Manager()->GetCurrentPlayer()->playstyle == player::Playstyle::Aggressive)
+
+
+		//If "Unaggressive" player is playing
+		if (GameManager::Manager()->GetCurrentPlayer()->playstyle == player::Playstyle::Unaggressive)
+		{
+			//Checking gameover isn't true cause if not it's gonna try to play on even if it's the last player
+			if (!GameManager::Manager()->Scoreboard.Gameover(GameManager::Manager()->GetNumberOfPlayers()))
 			{
-				//Checking gameover isn't true cause if not it's gonna try to play on even if it's the last player
-				if (!GameManager::Manager()->Scoreboard.Gameover(GameManager::Manager()->GetNumberOfPlayers()))
+				cout << GameManager::Manager()->GetCurrentPlayer()->name << " to play." << endl << endl;
+
+				//Draw hand etc before sleep
+				GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
+				for (auto &c : GameManager::Manager()->DeckOfCards.allCards)
 				{
-					cout << GameManager::Manager()->GetCurrentPlayer()->name << " to play." << endl << endl;
+					window.draw(c->sprite);
+				}
+				window.display();
 
-					//Draw hand etc before sleep
-					GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
-					for (auto &c : GameManager::Manager()->DeckOfCards.allCards)
+
+				cout << "[Not human, sleeping for 3 seconds . . .]" << endl << endl;
+				//If the current player is not human, take 3 seconds before trying to make a move
+				//just to allow us to see what the player is doing, and also to make it feel a bit
+				//more authentic, rather than being able to loop through several non-human players'
+				//moves in the blink of an eye
+				sleep(seconds(3.0f));
+
+				if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
+				{
+					//Avoid playing power cards initially, and just play the first available playable card
+					for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
 					{
-						window.draw(c->sprite);
-					}
-					window.display();
-
-
-					cout << "[Not human, sleeping for 3 seconds . . .]" << endl << endl;
-					//If the current player is not human, take 3 seconds before trying to make a move
-					//just to allow us to see what the player is doing, and also to make it feel a bit
-					//more authentic, rather than being able to loop through several non-human players'
-					//moves in the blink of an eye
-					sleep(seconds(3.0f));
-
-					if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
-					{
-						//Avoid playing power cards initially, and just play the first available playable card
-						for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
+						//If "Unaggressive" has a black queen, it will attempt to avoid playing it.
+						if ((c->cardType == card::type::Queen) && (c->cardColour == card::colour::Black))
 						{
-							//If "Unaggressive" has a black queen, it will attempt to avoid playing it.
-							if ((c->cardType == card::type::Queen) && (c->cardColour == card::colour::Black))
-							{
-								continue;
-							}
-							//If "Unaggressive" has a two, it will attempt to avoid playing it.
-							else if (c->cardType == card::type::Two)
-							{
-								continue;
-							}
-							//If "Unaggressive" has an eight, it will attempt to avoid playing it.
-							else if (c->cardType == card::type::Eight)
-							{
-								continue;
-							}
+							continue;
+						}
+						//If "Unaggressive" has a two, it will attempt to avoid playing it.
+						else if (c->cardType == card::type::Two)
+						{
+							continue;
+						}
+						//If "Unaggressive" has an eight, it will attempt to avoid playing it.
+						else if (c->cardType == card::type::Eight)
+						{
+							continue;
+						}
 
+						//Trying to fix nullptr issue
+						if (GameManager::Manager()->card_is_playable(c))
+						{
+							//If no power cards are held, just attempt to play every card until something works
+							GameManager::Manager()->play(c);
+							GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
+							//Setting the background colour
+							window.clear(Color(63, 191, 127, 255));
+
+							//test
+							break;
+						}
+					}
+					//If power cards are the only playable cards, just play whichever is first available
+					for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
+					{
+						if ((c->cardType == card::type::Queen) && (c->cardColour == card::colour::Black))
+						{
 							//Trying to fix nullptr issue
 							if (GameManager::Manager()->card_is_playable(c))
 							{
-								//If no power cards are held, just attempt to play every card until something works
 								GameManager::Manager()->play(c);
 								GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
 								//Setting the background colour
@@ -436,93 +457,77 @@ int main()
 								break;
 							}
 						}
-						//If power cards are the only playable cards, just play whichever is first available
-						for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
+						else if (c->cardType == card::type::Two)
 						{
-							if ((c->cardType == card::type::Queen) && (c->cardColour == card::colour::Black))
+							//Trying to fix nullptr issue
+							if (GameManager::Manager()->card_is_playable(c))
 							{
-								//Trying to fix nullptr issue
-								if (GameManager::Manager()->card_is_playable(c))
-								{
-									GameManager::Manager()->play(c);
-									GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
-									//Setting the background colour
-									window.clear(Color(63, 191, 127, 255));
+								GameManager::Manager()->play(c);
+								GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
+								//Setting the background colour
+								window.clear(Color(63, 191, 127, 255));
 
-									//test
-									break;
-								}
-							}
-							else if (c->cardType == card::type::Two)
-							{
-								//Trying to fix nullptr issue
-								if (GameManager::Manager()->card_is_playable(c))
-								{
-									GameManager::Manager()->play(c);
-									GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
-									//Setting the background colour
-									window.clear(Color(63, 191, 127, 255));
-
-									//test
-									break;
-								}
-							}
-							else if (c->cardType == card::type::Eight)
-							{
-								//Trying to fix nullptr issue
-								if (GameManager::Manager()->card_is_playable(c))
-								{
-									GameManager::Manager()->play(c);
-									GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
-									//Setting the background colour
-									window.clear(Color(63, 191, 127, 255));
-
-									//test
-									break;
-								}
+								//test
+								break;
 							}
 						}
-					}
-
-					//If "Unggressive" cannot play
-					if (!GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
-					{
-						if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
+						else if (c->cardType == card::type::Eight)
 						{
-							//cout << "Not human, sleeping for 3" << endl << endl;
-							////If the current player is not human, take 3 seconds before trying to make a move
-							////just to allow us to see what the player is doing, and also to make it feel a bit
-							////more authentic, rather than being able to loop through several non-human players'
-							////moves in the blink of an eye
-							//sleep(seconds(3.0f));
+							//Trying to fix nullptr issue
+							if (GameManager::Manager()->card_is_playable(c))
+							{
+								GameManager::Manager()->play(c);
+								GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
+								//Setting the background colour
+								window.clear(Color(63, 191, 127, 255));
 
-							GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
-							//Update Hand and draw it
-							cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
-							cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
-							GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
-
-							GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
-							GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
-
-							GameManager::Manager()->NextPlayer();
-							GameManager::Manager()->ConsultRules();
-
-							//Setting the background colour
-							window.clear(Color(63, 191, 127, 255));
+								//test
+								break;
+							}
 						}
 					}
 				}
 			}
+			//Checking gameover isn't true cause if not it's gonna try to play on even if it's the last player
+			if (!GameManager::Manager()->Scoreboard.Gameover(GameManager::Manager()->GetNumberOfPlayers()))
+			{
+				//If "Unggressive" cannot play
+				if (!GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
+				{
+					if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
+					{
+						//cout << "Not human, sleeping for 3" << endl << endl;
+						////If the current player is not human, take 3 seconds before trying to make a move
+						////just to allow us to see what the player is doing, and also to make it feel a bit
+						////more authentic, rather than being able to loop through several non-human players'
+						////moves in the blink of an eye
+						//sleep(seconds(3.0f));
 
+						GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
+						//Update Hand and draw it
+						cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
+						cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+						GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
 
+						GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
+						GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
 
+						GameManager::Manager()->NextPlayer();
+						GameManager::Manager()->ConsultRules();
 
-
+						//Setting the background colour
+						window.clear(Color(63, 191, 127, 255));
+					}
+				}
+			}
 		}
 
+
+
+
+
 		GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
-		
+
 		for (auto &c : GameManager::Manager()->DeckOfCards.allCards)
 		{
 			window.draw(c->sprite);
@@ -531,7 +536,7 @@ int main()
 
 
 
-		
+
 		//If only one player is left, Gameover will be true. 
 		//Add the loser to the scoreboard and close the SFML window
 		if (GameManager::Manager()->Scoreboard.Gameover(GameManager::Manager()->GetNumberOfPlayers()))
