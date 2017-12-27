@@ -117,7 +117,7 @@ void PlayerCreation()
 		
 		if(ListOfPlayers.size() > 3)
 		{
-		ListOfPlayers[3]->playstyle = player::Playstyle::Aggressive;
+		ListOfPlayers[3]->playstyle = player::Playstyle::Random;
 		}
 	}
 
@@ -454,7 +454,7 @@ auto getDirectionOfPlay()
 
 	void GameOver()
 	{
-		cout << endl << endl << endl << "GAME OVER \t\t\t\t\t\t\t Press enter to quit" << endl;
+		cout << endl << endl << endl << "\t\t      GAME OVER \n\n\n\t\tPress enter to quit" << endl;
 		
 		while (!sf::Keyboard::isKeyPressed(Keyboard::Return))
 		{

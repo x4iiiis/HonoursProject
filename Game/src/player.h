@@ -11,7 +11,7 @@ using namespace std;
 class player
 {
 public:
-	enum class Playstyle { Human, Neural, Aggressive, Unaggressive };
+	enum class Playstyle { Human, Neural, Aggressive, Unaggressive, Random };
 
 	string name;
 	Playstyle playstyle;
@@ -32,6 +32,10 @@ public:
 			return "(Hardcoded - Aggressive)";
 		case(Playstyle::Unaggressive):
 			return "(Hardcoded - Unaggressive)";
+		case(Playstyle::Random):
+			return "(Hardcoded - Random)";
+		default:
+			break;
 		}
 	}
 };

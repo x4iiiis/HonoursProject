@@ -152,7 +152,7 @@ int main()
 
 
 
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			//Human Players playing
 			if (GameManager::Manager()->GetCurrentPlayer()->playstyle == player::Playstyle::Human)
 			{
@@ -233,19 +233,13 @@ int main()
 					}
 				}
 			}
-
-
-
-
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			//If Neural Network AI Agent is playing
 
 			//[insert AI stuff here]
-
-
-
-
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			//If "Aggressive" player is playing
 			if (GameManager::Manager()->GetCurrentPlayer()->playstyle == player::Playstyle::Aggressive)
 			{
@@ -378,10 +372,8 @@ int main()
 				}
 			}
 		}
-
-
-
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//If "Unaggressive" player is playing
 		if (GameManager::Manager()->GetCurrentPlayer()->playstyle == player::Playstyle::Unaggressive)
 		{
@@ -521,7 +513,90 @@ int main()
 				}
 			}
 		}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//If "Random" player is playing
+		if (GameManager::Manager()->GetCurrentPlayer()->playstyle == player::Playstyle::Random)
+		{
+			//Checking gameover isn't true cause if not it's gonna try to play on even if it's the last player
+			if (!GameManager::Manager()->Scoreboard.Gameover(GameManager::Manager()->GetNumberOfPlayers()))
+			{
+				cout << GameManager::Manager()->GetCurrentPlayer()->name << " to play." << endl << endl;
 
+				//Draw hand etc before sleep
+				GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
+				for (auto &c : GameManager::Manager()->DeckOfCards.allCards)
+				{
+					window.draw(c->sprite);
+				}
+				window.display();
+
+				cout << "[Not human, sleeping for 3 seconds . . .]" << endl << endl;
+				//If the current player is not human, take 3 seconds before trying to make a move
+				//just to allow us to see what the player is doing, and also to make it feel a bit
+				//more authentic, rather than being able to loop through several non-human players'
+				//moves in the blink of an eye
+				sleep(seconds(3.0f));
+
+				if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
+				{
+					//Shuffle the hand so that the order of cards attempted varies
+					std::srand(std::time(0));	//For some reason shuffle doesn't work when you restart the program, it uses the previously shuffled version... this line solves that.Needs <ctime> included 
+					std::random_shuffle(GameManager::Manager()->GetCurrentPlayer()->hand.begin(), GameManager::Manager()->GetCurrentPlayer()->hand.end());
+					std::random_shuffle(GameManager::Manager()->GetCurrentPlayer()->hand.begin(), GameManager::Manager()->GetCurrentPlayer()->hand.end());
+					std::random_shuffle(GameManager::Manager()->GetCurrentPlayer()->hand.begin(), GameManager::Manager()->GetCurrentPlayer()->hand.end());
+					
+					//Attempt to play every card until something works
+					for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
+					{
+						//Trying to fix nullptr issue
+						if (GameManager::Manager()->card_is_playable(c))
+						{
+							GameManager::Manager()->play(c);
+							GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
+							//Setting the background colour
+							window.clear(Color(63, 191, 127, 255));
+
+							//test
+							break;
+						}
+					}
+				}
+			}
+			//If "Random" cannot play
+			if (!GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
+			{
+				//Checking gameover isn't true cause if not it's gonna try to play on even if it's the last player
+				if (!GameManager::Manager()->Scoreboard.Gameover(GameManager::Manager()->GetNumberOfPlayers()))
+				{
+					if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
+					{
+						//cout << "Not human, sleeping for 3" << endl << endl;
+						////If the current player is not human, take 3 seconds before trying to make a move
+						////just to allow us to see what the player is doing, and also to make it feel a bit
+						////more authentic, rather than being able to loop through several non-human players'
+						////moves in the blink of an eye
+						//sleep(seconds(3.0f));
+
+						GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
+						//Update Hand and draw it
+						cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
+						cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+						GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
+
+						GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
+						GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
+
+						GameManager::Manager()->NextPlayer();
+						GameManager::Manager()->ConsultRules();
+
+						//Setting the background colour
+						window.clear(Color(63, 191, 127, 255));
+					}
+				}
+			}
+		}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -541,7 +616,7 @@ int main()
 		//Add the loser to the scoreboard and close the SFML window
 		if (GameManager::Manager()->Scoreboard.Gameover(GameManager::Manager()->GetNumberOfPlayers()))
 		{
-			GameManager::Manager()->Scoreboard.PlayerIsOut(GameManager::Manager()->GetCurrentPlayer(), GameManager::Manager()->GetNumberOfPlayers());	//Must be current player cause they're the only one left..? 
+			GameManager::Manager()->Scoreboard.PlayerIsOut(GameManager::Manager()->GetCurrentPlayer(), GameManager::Manager()->GetNumberOfPlayers());	//Must be current player cause they're the onl
 			GameManager::Manager()->Scoreboard.DisplayScoreboard();
 			window.close();
 		}
