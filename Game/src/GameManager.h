@@ -510,7 +510,7 @@ auto getDirectionOfPlay()
 			GameRecords << endl;
 
 			GameRecords << endl << "Scoreboard:" << endl;
-			
+
 			//Printing scoreboard to file
 			for (int i = 0; i < Scoreboard.getScoreboard().size(); i++)
 			{
@@ -532,7 +532,7 @@ auto getDirectionOfPlay()
 					break;
 				}
 			}
-			GameRecords << "------------------------------------------------------------------------------------------------" << endl << endl;
+			GameRecords << "------------------------------------------------------------------------------------" << endl << endl;
 		}
 
 

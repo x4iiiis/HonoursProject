@@ -263,6 +263,8 @@ int main()
 					//moves in the blink of an eye
 					sleep(seconds(3.0f));
 
+					auto tempHand = GameManager::Manager()->GetCurrentPlayer()->hand;
+
 					if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
 					{
 						//Check for a black queen
@@ -280,10 +282,20 @@ int main()
 									window.clear(Color(63, 191, 127, 255));
 
 									//test
-									break;
+									goto draw;
 								}
 							}
 						}
+
+
+						/*for (int i = 0; i < tempHand.size(); i++)
+						{
+							if (!GameManager::Manager()->cards_match(tempHand[i], GameManager::Manager()->GetCurrentPlayer()->hand[i]))
+							{
+								goto draw;
+							}
+						}*/
+
 
 						//If "Aggressive" has a two, it will attempt to play it after searching for a black queen.
 						for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
@@ -299,10 +311,19 @@ int main()
 									window.clear(Color(63, 191, 127, 255));
 
 									//test
-									break;
+									goto draw;
 								}
 							}
 						}
+
+						/*for (int i = 0; i < tempHand.size(); i++)
+						{
+							if (!GameManager::Manager()->cards_match(tempHand[i], GameManager::Manager()->GetCurrentPlayer()->hand[i]))
+							{
+								goto draw;
+							}
+						}*/
+
 						//If "Aggressive" has an eight, it will attempt to play it after searching for a black queen and a two.
 						for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
 						{
@@ -317,10 +338,19 @@ int main()
 									window.clear(Color(63, 191, 127, 255));
 
 									//test
-									break;
+									goto draw;
 								}
 							}
 						}
+
+						/*for (int i = 0; i < tempHand.size(); i++)
+						{
+							if (!GameManager::Manager()->cards_match(tempHand[i], GameManager::Manager()->GetCurrentPlayer()->hand[i]))
+							{
+								goto draw;
+							}
+						}*/
+
 						//If no power cards are held, just attempt to play every card until something works
 						for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
 						{
@@ -333,12 +363,15 @@ int main()
 								window.clear(Color(63, 191, 127, 255));
 
 								//test
-								break;
+								goto draw;
 							}
 						}
 					}
 				}
-				//If "Aggressive" cannot play
+			}
+			if (GameManager::Manager()->GetCurrentPlayer()->playstyle == player::Playstyle::Aggressive)
+			{
+				//If "aggressive" cannot play
 				if (!GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
 				{
 					//Checking gameover isn't true cause if not it's gonna try to play on even if it's the last player
@@ -398,6 +431,8 @@ int main()
 				//moves in the blink of an eye
 				sleep(seconds(3.0f));
 
+				auto tempHand = GameManager::Manager()->GetCurrentPlayer()->hand;
+
 				if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
 				{
 					//Avoid playing power cards initially, and just play the first available playable card
@@ -429,9 +464,18 @@ int main()
 							window.clear(Color(63, 191, 127, 255));
 
 							//test
-							break;
+							goto draw;
 						}
 					}
+
+					/*for (int i = 0; i < tempHand.size(); i++)
+					{
+						if (!GameManager::Manager()->cards_match(tempHand[i], GameManager::Manager()->GetCurrentPlayer()->hand[i]))
+						{
+							goto draw;
+						}
+					}*/
+
 					//If power cards are the only playable cards, just play whichever is first available
 					for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
 					{
@@ -480,6 +524,9 @@ int main()
 					}
 				}
 			}
+		}
+		if (GameManager::Manager()->GetCurrentPlayer()->playstyle == player::Playstyle::Unaggressive)
+		{
 			//Checking gameover isn't true cause if not it's gonna try to play on even if it's the last player
 			if (!GameManager::Manager()->Scoreboard.Gameover(GameManager::Manager()->GetNumberOfPlayers()))
 			{
@@ -538,6 +585,8 @@ int main()
 				//moves in the blink of an eye
 				sleep(seconds(3.0f));
 
+				auto tempHand = GameManager::Manager()->GetCurrentPlayer()->hand;
+
 				if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
 				{
 					//Shuffle the hand so that the order of cards attempted varies
@@ -545,7 +594,7 @@ int main()
 					std::random_shuffle(GameManager::Manager()->GetCurrentPlayer()->hand.begin(), GameManager::Manager()->GetCurrentPlayer()->hand.end());
 					std::random_shuffle(GameManager::Manager()->GetCurrentPlayer()->hand.begin(), GameManager::Manager()->GetCurrentPlayer()->hand.end());
 					std::random_shuffle(GameManager::Manager()->GetCurrentPlayer()->hand.begin(), GameManager::Manager()->GetCurrentPlayer()->hand.end());
-					
+
 					//Attempt to play every card until something works
 					for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
 					{
@@ -563,6 +612,10 @@ int main()
 					}
 				}
 			}
+		}
+
+		if (GameManager::Manager()->GetCurrentPlayer()->playstyle == player::Playstyle::Random)
+		{
 			//If "Random" cannot play
 			if (!GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
 			{
@@ -600,7 +653,7 @@ int main()
 
 
 
-
+		draw:
 		GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
 
 		for (auto &c : GameManager::Manager()->DeckOfCards.allCards)
