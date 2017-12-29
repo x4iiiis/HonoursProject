@@ -5,3 +5,83 @@ Scoreboard:
 2nd:	CPU                                               (Hardcoded - Aggressive)
 ------------------------------------------------------------------------------------
 
+Date:	29/12/2017	Time:	02:04
+
+Scoreboard:
+1st:	Myles Kennedy                                     (Hardcoded - Unaggressive)
+2nd:	Tim McIlrath                                      (Human)
+3rd:	David Draiman                                     (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	29/12/2017	Time:	02:06
+
+Scoreboard:
+1st:	Ryan O'Flaherty                                   (Human)
+2nd:	Angry Adalia                                      (Hardcoded - Aggressive)
+3rd:	Random Rachel                                     (Hardcoded - Random)
+4th:	Passive Pete                                      (Hardcoded - Unaggressive)
+------------------------------------------------------------------------------------
+
+Date:	29/12/2017	Time:	02:52
+
+Scoreboard:
+1st:	Grant                                             (Hardcoded - Random)
+2nd:	InvisiJane                                        (Hardcoded - Unaggressive)
+3rd:	David                                             (Hardcoded - Aggressive)
+4th:	Dean                                              (Human)
+------------------------------------------------------------------------------------
+
+Date:	29/12/2017	Time:	02:56
+
+Scoreboard:
+1st:	Lzzy Hale                                         (Hardcoded - Aggressive)
+2nd:	Avril Lavigne                                     (Hardcoded - Unaggressive)
+3rd:	Jen Ledger                                        (Human)
+4th:	Taylor Momsen                                     (Hardcoded - Random)
+------------------------------------------------------------------------------------
+
+Date:	29/12/2017	Time:	03:58
+
+Scoreboard:
+1st:	Leigh                                             (Human)
+2nd:	Jason                                             (Hardcoded - Aggressive)
+3rd:	Dylan                                             (Hardcoded - Random)
+4th:	John                                              (Hardcoded - Unaggressive)
+------------------------------------------------------------------------------------
+
+Date:	29/12/2017	Time:	04:05
+
+Scoreboard:
+1st:	Mike Shinoda                                      (Hardcoded - Aggressive)
+2nd:	Chester Bennington                                (Human)
+3rd:	Synyster Gates                                    (Hardcoded - Unaggressive)
+4th:	Dan Donegan                                       (Hardcoded - Random)
+------------------------------------------------------------------------------------
+
+Date:	29/12/2017	Time:	04:08
+
+Scoreboard:
+1st:	Bradley Martyn                                    (Hardcoded - Random)
+2nd:	Steve Cook                                        (Human)
+3rd:	Chris Jones                                       (Hardcoded - Unaggressive)
+4th:	Christian Guzman                                  (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	29/12/2017	Time:	04:19
+
+Scoreboard:
+1st:	Kristian                                          (Hardcoded - Unaggressive)
+2nd:	Caelan                                            (Hardcoded - Random)
+3rd:	Ryan                                              (Human)
+4th:	Calum                                             (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	29/12/2017	Time:	04:30
+
+Scoreboard:
+1st:	Rab                                               (Hardcoded - Random)
+2nd:	Ryan                                              (Human)
+3rd:	Debbie                                            (Hardcoded - Unaggressive)
+4th:	Zoe                                               (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+

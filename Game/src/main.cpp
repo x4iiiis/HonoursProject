@@ -93,18 +93,6 @@ int main()
 
 
 
-	//Every time a card is played, call:
-	/*if (GameManager::Manager()->DoesLastCardAffectCurrentPlayer(GameManager::Manager()->WhoPlayedTheLastCard(), GameManager::Manager()->GetCurrentPlayer()) == true)
-	{
-		GameManager::Manager()->ConsultRules();
-	}*/
-	//This checks the last card against the rules relating to certain cards
-	//At the moment, a black queen forces 5 cards, a two forces 2, and
-	//eight and jack are there but just produce cout statements at this point.
-
-
-
-
 	//Initialising SFML window
 	RenderWindow window(VideoMode(800, 600), "Welcome to NeuroSwitch!");
 	window.setFramerateLimit(60);	//60FPS (not really necessary for this project) 
@@ -172,12 +160,9 @@ int main()
 						)//&& Mouse::isButtonPressed(Mouse::Left))
 					{
 						if (eventt.type == Event::MouseButtonReleased)
-
 						{
-
 							if (eventt.mouseButton.button == Mouse::Left)
 							{
-
 								if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
 								{
 									GameManager::Manager()->play(c);
@@ -185,34 +170,29 @@ int main()
 									//Setting the background colour
 									window.clear(Color(63, 191, 127, 255));
 
-									break;
+									goto draw;
 								}
 							}
 						}
 					}
 				}
 
-
+				//If human can't play
 				if (mousePos.x > GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().x
 					&& mousePos.x < GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().x + GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getGlobalBounds().width
 					&& mousePos.y > GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().y
 					&& mousePos.y < GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().y + GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getGlobalBounds().height
 					)//&& Mouse::isButtonPressed(Mouse::Left))
 				{
-
 					if (eventt.type == Event::MouseButtonReleased)
 					{
 						if (eventt.mouseButton.button == Mouse::Left)
 						{
-
 							//If the current player cannot play
 							if (!GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
 							{
 								if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
 								{
-									//Last card is still the same, so increment turnsSincePlayed variable to prevent rules being enforced multiple times
-									//GameManager::Manager()->DeckOfCards.lastCard[0]->turnsSincePlayed += 1;
-
 									GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
 									//Update Hand and draw it
 									cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
@@ -287,16 +267,6 @@ int main()
 							}
 						}
 
-
-						/*for (int i = 0; i < tempHand.size(); i++)
-						{
-							if (!GameManager::Manager()->cards_match(tempHand[i], GameManager::Manager()->GetCurrentPlayer()->hand[i]))
-							{
-								goto draw;
-							}
-						}*/
-
-
 						//If "Aggressive" has a two, it will attempt to play it after searching for a black queen.
 						for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
 						{
@@ -316,14 +286,6 @@ int main()
 							}
 						}
 
-						/*for (int i = 0; i < tempHand.size(); i++)
-						{
-							if (!GameManager::Manager()->cards_match(tempHand[i], GameManager::Manager()->GetCurrentPlayer()->hand[i]))
-							{
-								goto draw;
-							}
-						}*/
-
 						//If "Aggressive" has an eight, it will attempt to play it after searching for a black queen and a two.
 						for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
 						{
@@ -342,14 +304,6 @@ int main()
 								}
 							}
 						}
-
-						/*for (int i = 0; i < tempHand.size(); i++)
-						{
-							if (!GameManager::Manager()->cards_match(tempHand[i], GameManager::Manager()->GetCurrentPlayer()->hand[i]))
-							{
-								goto draw;
-							}
-						}*/
 
 						//If no power cards are held, just attempt to play every card until something works
 						for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
@@ -379,13 +333,6 @@ int main()
 					{
 						if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
 						{
-							//cout << "Not human, sleeping for 3" << endl << endl;
-							////If the current player is not human, take 3 seconds before trying to make a move
-							////just to allow us to see what the player is doing, and also to make it feel a bit
-							////more authentic, rather than being able to loop through several non-human players'
-							////moves in the blink of an eye
-							//sleep(seconds(3.0f));
-
 							GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
 							//Update Hand and draw it
 							cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
@@ -431,8 +378,6 @@ int main()
 				//moves in the blink of an eye
 				sleep(seconds(3.0f));
 
-				auto tempHand = GameManager::Manager()->GetCurrentPlayer()->hand;
-
 				if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
 				{
 					//Avoid playing power cards initially, and just play the first available playable card
@@ -468,58 +413,21 @@ int main()
 						}
 					}
 
-					/*for (int i = 0; i < tempHand.size(); i++)
-					{
-						if (!GameManager::Manager()->cards_match(tempHand[i], GameManager::Manager()->GetCurrentPlayer()->hand[i]))
-						{
-							goto draw;
-						}
-					}*/
-
 					//If power cards are the only playable cards, just play whichever is first available
+					//Attempt to play every card until something works
 					for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
 					{
-						if ((c->cardType == card::type::Queen) && (c->cardColour == card::colour::Black))
+						//Trying to fix nullptr issue
+						if (GameManager::Manager()->card_is_playable(c))
 						{
-							//Trying to fix nullptr issue
-							if (GameManager::Manager()->card_is_playable(c))
-							{
-								GameManager::Manager()->play(c);
-								GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
-								//Setting the background colour
-								window.clear(Color(63, 191, 127, 255));
+							GameManager::Manager()->play(c);
+							GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
+							//Setting the background colour
+							window.clear(Color(63, 191, 127, 255));
 
-								//test
-								break;
-							}
-						}
-						else if (c->cardType == card::type::Two)
-						{
-							//Trying to fix nullptr issue
-							if (GameManager::Manager()->card_is_playable(c))
-							{
-								GameManager::Manager()->play(c);
-								GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
-								//Setting the background colour
-								window.clear(Color(63, 191, 127, 255));
-
-								//test
-								break;
-							}
-						}
-						else if (c->cardType == card::type::Eight)
-						{
-							//Trying to fix nullptr issue
-							if (GameManager::Manager()->card_is_playable(c))
-							{
-								GameManager::Manager()->play(c);
-								GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
-								//Setting the background colour
-								window.clear(Color(63, 191, 127, 255));
-
-								//test
-								break;
-							}
+							//test
+							//continue;
+							goto draw;
 						}
 					}
 				}
@@ -535,13 +443,6 @@ int main()
 				{
 					if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
 					{
-						//cout << "Not human, sleeping for 3" << endl << endl;
-						////If the current player is not human, take 3 seconds before trying to make a move
-						////just to allow us to see what the player is doing, and also to make it feel a bit
-						////more authentic, rather than being able to loop through several non-human players'
-						////moves in the blink of an eye
-						//sleep(seconds(3.0f));
-
 						GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
 						//Update Hand and draw it
 						cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
@@ -585,8 +486,7 @@ int main()
 				//moves in the blink of an eye
 				sleep(seconds(3.0f));
 
-				auto tempHand = GameManager::Manager()->GetCurrentPlayer()->hand;
-
+				
 				if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
 				{
 					//Shuffle the hand so that the order of cards attempted varies
@@ -607,7 +507,8 @@ int main()
 							window.clear(Color(63, 191, 127, 255));
 
 							//test
-							break;
+							//continue;
+							goto draw;
 						}
 					}
 				}
@@ -624,13 +525,6 @@ int main()
 				{
 					if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
 					{
-						//cout << "Not human, sleeping for 3" << endl << endl;
-						////If the current player is not human, take 3 seconds before trying to make a move
-						////just to allow us to see what the player is doing, and also to make it feel a bit
-						////more authentic, rather than being able to loop through several non-human players'
-						////moves in the blink of an eye
-						//sleep(seconds(3.0f));
-
 						GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
 						//Update Hand and draw it
 						cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
@@ -653,7 +547,7 @@ int main()
 
 
 
-		draw:
+draw:
 		GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
 
 		for (auto &c : GameManager::Manager()->DeckOfCards.allCards)

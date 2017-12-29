@@ -375,9 +375,9 @@ auto getDirectionOfPlay()
 					GetCurrentPlayer()->hand.erase(GetCurrentPlayer()->hand.begin() + i);
 				}
 			}
+			
+
 			NextPlayer();
-			ConsultRules();
-			//break;
 
 			//Check if any hands are empty (can only possibly be the previous player that's hand has changed since last move), remove the player from the list
 			for (int i = 0; i < ListOfPlayers.size(); i++)
@@ -388,6 +388,8 @@ auto getDirectionOfPlay()
 					ListOfPlayers.erase(ListOfPlayers.begin() + i);
 				}
 			}
+
+			ConsultRules();
 		}
 		else
 		{
@@ -567,6 +569,11 @@ auto getDirectionOfPlay()
 	//Rules
 	void ConsultRules()
 	{
+		if (Scoreboard.Gameover(GetNumberOfPlayers()))
+		{
+			return;
+		}
+
 		if (DoesLastCardAffectCurrentPlayer(WhoPlayedTheLastCard(), GetCurrentPlayer()))
 		{
 			//By default, assume player can play and can't pick up.
@@ -673,13 +680,13 @@ auto getDirectionOfPlay()
 					can_play_checker(GetCurrentPlayer()->hand);
 				}
 				//case(card::type::Ace):
-				//{
-				//	//Can nominate a suit (Won't be in AI version)
-				//}
+				{
+					//Can nominate a suit (Won't be in AI version)
+				}
 				//case(card::type::Seven):
-				//{
-				//	//Can play the rest of that suit (Not in AI version)
-				//}
+				{
+					//Can play the rest of that suit (Not in AI version)
+				}
 				default:
 				{
 					can_play_checker(GetCurrentPlayer()->hand);
