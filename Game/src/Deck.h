@@ -417,7 +417,7 @@ public:
 						if ((c->cardSuit == player->hand[i]->cardSuit) && (c->cardType == player->hand[i]->cardType))
 						{
 							c->sprite.setPosition(Vector2f((i * 75.0f) + 5.0f, 500.0f));
-							//SetFaceDown(c);
+							SetFaceDown(c);
 						}
 					}
 
@@ -426,7 +426,7 @@ public:
 						if ((c->cardSuit == player->hand[i]->cardSuit) && (c->cardType == player->hand[i]->cardType))
 						{
 							c->sprite.setPosition(Vector2f(((i - 10) * 75.0f) + 5.0f, 400.0f));
-							//SetFaceDown(c);
+							SetFaceDown(c);
 						}
 					}
 
@@ -435,7 +435,7 @@ public:
 						if ((c->cardSuit == player->hand[i]->cardSuit) && (c->cardType == player->hand[i]->cardType))
 						{
 							c->sprite.setPosition(Vector2f(((i - 20) * 75.0f) + 5.0f, 300.0f));
-							//SetFaceDown(c);
+							SetFaceDown(c);
 						}
 					}
 
@@ -444,7 +444,7 @@ public:
 						if ((c->cardSuit == player->hand[i]->cardSuit) && (c->cardType == player->hand[i]->cardType))
 						{
 							c->sprite.setPosition(Vector2f(((i - 30) * 75.0f) + 5.0f, 200.0f));
-							//SetFaceDown(c);
+							SetFaceDown(c);
 						}
 					}
 
@@ -453,7 +453,7 @@ public:
 						if ((c->cardSuit == player->hand[i]->cardSuit) && (c->cardType == player->hand[i]->cardType))
 						{
 							c->sprite.setPosition(Vector2f(((i - 40) * 75.0f) + 5.0f, 100.0f));
-							//SetFaceDown(c);		
+							SetFaceDown(c);		
 						}
 					}
 				}

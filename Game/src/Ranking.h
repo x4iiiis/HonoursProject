@@ -41,16 +41,16 @@ public:
 			switch (i)
 			{
 			case 0:
-				cout << "1st:\t" << Scoreboard[i]->name << "\t\t\t" << Scoreboard[i]->getPlaystyle() << endl;
+				cout << "1st:\t" << setw(50) << left << Scoreboard[i]->name << Scoreboard[i]->getPlaystyle() << endl;
 				break;
 			case 1:
-				cout << "2nd:\t" << Scoreboard[i]->name << "\t\t\t" << Scoreboard[i]->getPlaystyle() << endl;
+				cout << "2nd:\t" << setw(50) << left << Scoreboard[i]->name << Scoreboard[i]->getPlaystyle() << endl;
 				break;
 			case 2:
-				cout << "3rd:\t" << Scoreboard[i]->name << "\t\t\t" << Scoreboard[i]->getPlaystyle() << endl;
+				cout << "3rd:\t" << setw(50) << left << Scoreboard[i]->name << Scoreboard[i]->getPlaystyle() << endl;
 				break;
 			case 3:
-				cout << "4th:\t" << Scoreboard[i]->name << "\t\t\t" << Scoreboard[i]->getPlaystyle() << endl;
+				cout << "4th:\t" << setw(50) << left << Scoreboard[i]->name << Scoreboard[i]->getPlaystyle() << endl;
 				break;
 			default:
 				break;
@@ -65,5 +65,10 @@ public:
 			return true;
 		}
 		return false;
+	}
+
+	vector<shared_ptr<player>> getScoreboard()
+	{
+		return Scoreboard;
 	}
 };

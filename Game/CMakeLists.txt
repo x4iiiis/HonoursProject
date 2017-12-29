@@ -21,7 +21,6 @@ add_executable(HonoursProject ${SOURCE_FILES})
 
 
 
-
 #attempting to get textures to work//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #copy General resources to build post build script
 add_custom_command(TARGET HonoursProject POST_BUILD  
@@ -66,6 +65,13 @@ add_custom_target(copy_resources ALL
         "${CMAKE_SOURCE_DIR}/res/PNG/Cards" "${EXE_LOCATION}/Debug/Cards"
 		COMMAND ${CMAKE_COMMAND} -E copy_directory
         "${CMAKE_SOURCE_DIR}/res/PNG/Cards" "${EXE_LOCATION}/Release/Cards"
+
+		
+		COMMAND ${CMAKE_COMMAND} -E copy_directory  
+		"${EXE_LOCATION}/GameRecords" "${CMAKE_SOURCE_DIR}/GameRecords"
+
+		COMMAND ${CMAKE_COMMAND} -E copy_directory  
+		"${CMAKE_SOURCE_DIR}/GameRecords" "${EXE_LOCATION}/GameRecords"
 
 		#COMMAND ${CMAKE_COMMAND} -E copy_directory
         #"${CMAKE_SOURCE_DIR}/res/PNG/Cards" "${CMAKE_BINARY_DIR}"

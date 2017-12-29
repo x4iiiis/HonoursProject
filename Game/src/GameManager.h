@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <iomanip>
 
 #include "player.h"
 #include "Deck.h"
@@ -454,7 +455,88 @@ auto getDirectionOfPlay()
 
 	void GameOver()
 	{
-		cout << endl << endl << endl << "\t\t      GAME OVER \n\n\n\t\tPress enter to quit" << endl;
+		fstream GameRecords("../GameRecords/GameRecords.txt", ios::in | ios::out | ios::app);
+		if (!GameRecords.is_open())
+		{
+			cout << "Error opening GameRecords.txt" << endl << endl;
+		}
+		else
+		{
+			//Get current date and time - credit to this: https://stackoverflow.com/questions/997946/how-to-get-current-time-and-date-in-c
+			time_t t = time(0);
+			struct tm * now = localtime(&t);
+
+			//Formatting and printing the current date and time
+			GameRecords << "Date:\t";
+
+			if (now->tm_mday < 10)
+			{
+				GameRecords << "0" << now->tm_mday << "/";
+			}
+			else
+			{
+				GameRecords << now->tm_mday << "/";
+			}
+
+			if ((now->tm_mon + 1) < 10)
+			{
+				GameRecords << "0" << now->tm_mon + 1 << "/" << now->tm_year + 1900;
+			}
+			else
+			{
+				GameRecords << now->tm_mon + 1 << "/" << now->tm_year + 1900;
+			}
+
+			GameRecords << "\tTime:\t";
+
+			if (now->tm_hour < 10)
+			{
+				GameRecords << "0" << now->tm_hour << ":";
+			}
+			else
+			{
+				GameRecords << now->tm_hour << ":";
+			}
+
+			if (now->tm_min < 10)
+			{
+				GameRecords << "0" << now->tm_min;
+			}
+			else
+			{
+				GameRecords << now->tm_min;
+			}
+
+			GameRecords << endl;
+
+			GameRecords << endl << "Scoreboard:" << endl;
+			
+			//Printing scoreboard to file
+			for (int i = 0; i < Scoreboard.getScoreboard().size(); i++)
+			{
+				switch (i)
+				{
+				case 0:
+					GameRecords << "1st:\t" << setw(50) << left << Scoreboard.getScoreboard()[i]->name << Scoreboard.getScoreboard()[i]->getPlaystyle() << endl;
+					break;
+				case 1:
+					GameRecords << "2nd:\t" << setw(50) << left << Scoreboard.getScoreboard()[i]->name << Scoreboard.getScoreboard()[i]->getPlaystyle() << endl;
+					break;
+				case 2:
+					GameRecords << "3rd:\t" << setw(50) << left << Scoreboard.getScoreboard()[i]->name << Scoreboard.getScoreboard()[i]->getPlaystyle() << endl;
+					break;
+				case 3:
+					GameRecords << "4th:\t" << setw(50) << left << Scoreboard.getScoreboard()[i]->name << Scoreboard.getScoreboard()[i]->getPlaystyle() << endl;
+					break;
+				default:
+					break;
+				}
+			}
+			GameRecords << "------------------------------------------------------------------------------------------------" << endl << endl;
+		}
+
+
+		cout << endl << endl << endl << "\t\t     GAME OVER \n\n\n\t\tPress enter to quit" << endl;
 		
 		while (!sf::Keyboard::isKeyPressed(Keyboard::Return))
 		{
