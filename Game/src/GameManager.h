@@ -297,7 +297,7 @@ auto getDirectionOfPlay()
 			|| (DeckOfCards.lastCard[0]->cardType == card::type::Eight))
 		{
 			//If the card was played more than 0 turns ago, then it doesn't even matter
-			if (DeckOfCards.lastCard[0]->turnsSincePlayed != 1 && DeckOfCards.lastCard[0]->cardType != card::type::Jack)
+			if (DeckOfCards.lastCard[0]->turnsSincePlayed != 1)
 			{
 				cout << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
 				GameText << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
@@ -352,12 +352,56 @@ auto getDirectionOfPlay()
 				return false;
 			}
 		}
-		////Don't print anything about the Jack but I need this so it works with ConsultRules()
-		//if (DeckOfCards.lastCard[0]->cardType == card::type::Jack)
-		//{
-		//	return true;
-		//}
-		return false;
+		//Same for Jack but no need for prints
+		else if (DeckOfCards.lastCard[0]->cardType == card::type::Jack)
+			{
+				//If the card was played more than 0 turns ago, then it doesn't even matter
+				if (DeckOfCards.lastCard[0]->turnsSincePlayed != 1)
+				{
+					return false;
+				}
+
+				//If the card was played more than 0 turns ago, then it doesn't even matter
+				if (DeckOfCards.lastCard[0]->turnsSincePlayed = 1)
+				{
+					int LCP = 0;
+					int CP = 0;
+
+					//Find index of current player and the last player to play a card
+					for (int i = 0; i < ListOfPlayers.size(); i++)
+					{
+						if (ListOfPlayers[i] == LastCardPlayer)
+						{
+							LCP = i;
+						}
+
+						if (ListOfPlayers[i] == CurrentPlayer)
+						{
+							CP = i;
+						}
+					}
+
+					//Using the indexes to determine whether or not the card was played by the previous player
+					//Not sure if all of this logic is right yet tbh
+					if (LCP = (CP - 1) || (LCP = (CP + 1)))
+					{
+						return true;
+					}
+
+
+					if ((LCP = (NumberOfPlayers - 1)) && (CP = 0) && (DirectionOfPlay == GameDirection::Clockwise))
+					{
+						return true;
+					}
+
+					if ((LCP = 0) && (CP = (NumberOfPlayers - 1)) && (DirectionOfPlay == GameDirection::AntiClockwise))
+					{
+						return true;
+					}
+					return false;
+				}
+			}
+			return false;
 	}
 
 	//Play your chosen card

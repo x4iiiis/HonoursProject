@@ -1,1372 +1,607 @@
 Players:
-Ryan
-Cheree
-Darren
-Kara
+Trigger
+Boycie
+Uncle Albert
+Denzil
 
 
-The cards have been dealt by Ryan and our first card to be played on is
-7 of Hearts!
+The cards have been dealt by Trigger and our first card to be played on is
+Queen of Diamonds!
 
 The player left of the dealer will start.
 
-Queen of Hearts!
-
-Cheree played the 
-
-5 of Hearts!
-
-Darren played the 
-
-Kara picked up.
-Kara's updated hand:
-8 of Spades!
-10 of Diamonds!
-8 of Hearts!
-
-King of Hearts!
-
-Ryan played the 
-
-Cheree picked up.
-Cheree's updated hand:
-3 of Clubs!
-7 of Spades!
-
-Darren picked up.
-Darren's updated hand:
-8 of Clubs!
-9 of Clubs!
-
-8 of Hearts!
-
-Kara played the 
-
-Last played card DOES affect Ryan
-
-The last card was an eight!
-Ryan is forced to skip their turn.
-
-Cheree, it's your turn.
-
-Cheree picked up.
-Cheree's updated hand:
-3 of Clubs!
-7 of Spades!
-9 of Hearts!
-
-Darren is not affected by last played card
-
-8 of Clubs!
-
-Darren played the 
-
-Last played card DOES affect Kara
-
-The last card was an eight!
-Kara is forced to skip their turn.
-
-Ryan, it's your turn.
-
-Ryan picked up.
-Ryan's updated hand:
-4 of Diamonds!
-3 of Hearts!
-
-Cheree is not affected by last played card
-
-3 of Clubs!
-
-Cheree played the 
-
-9 of Clubs!
-
-Darren played the 
-
-
-Darren is out!
-
-Kara picked up.
-Kara's updated hand:
-8 of Spades!
-10 of Diamonds!
-Jack of Clubs!
-
-Ryan picked up.
-Ryan's updated hand:
-4 of Diamonds!
-3 of Hearts!
-7 of Diamonds!
-
-9 of Hearts!
-
-Cheree played the 
-
-Kara picked up.
-Kara's updated hand:
-8 of Spades!
-10 of Diamonds!
-Jack of Clubs!
-2 of Hearts!
-
-3 of Hearts!
-
-Ryan played the 
-
-Cheree picked up.
-Cheree's updated hand:
-7 of Spades!
-6 of Hearts!
-
-2 of Hearts!
-
-Kara played the 
-
-Last played card DOES affect Ryan
-
-The last card was a two!
-Ryan must now pick up 2 cards.
-
-Ryan's updated hand:
-4 of Diamonds!
-7 of Diamonds!
-10 of Spades!
-Ace of Hearts!
-
-6 of Hearts!
-
-Cheree played the 
-
-Kara picked up.
-Kara's updated hand:
-10 of Diamonds!
-8 of Spades!
-Jack of Clubs!
-5 of Diamonds!
-
-Ace of Hearts!
-
-Ryan played the 
-
-Cheree picked up.
-Cheree's updated hand:
-7 of Spades!
-5 of Clubs!
-
-Kara picked up.
-Kara's updated hand:
-10 of Diamonds!
-8 of Spades!
-Jack of Clubs!
-5 of Diamonds!
-2 of Diamonds!
-
-Ryan picked up.
-Ryan's updated hand:
-4 of Diamonds!
-7 of Diamonds!
-10 of Spades!
-6 of Spades!
-
-Cheree picked up.
-Cheree's updated hand:
-7 of Spades!
-5 of Clubs!
-Queen of Diamonds!
-
-Kara picked up.
-Kara's updated hand:
-10 of Diamonds!
-8 of Spades!
-Jack of Clubs!
-5 of Diamonds!
-2 of Diamonds!
-9 of Diamonds!
-
-Ryan picked up.
-Ryan's updated hand:
-4 of Diamonds!
-7 of Diamonds!
-10 of Spades!
-6 of Spades!
-Queen of Spades!
-
-Cheree picked up.
-Cheree's updated hand:
-7 of Spades!
-5 of Clubs!
-Queen of Diamonds!
-4 of Clubs!
-
-Kara picked up.
-Kara's updated hand:
-10 of Diamonds!
-8 of Spades!
-Jack of Clubs!
-5 of Diamonds!
-2 of Diamonds!
-9 of Diamonds!
-3 of Diamonds!
-
-Ryan picked up.
-Ryan's updated hand:
-4 of Diamonds!
-7 of Diamonds!
-10 of Spades!
-6 of Spades!
-Queen of Spades!
+Boycie picked up.
+Boycie's updated hand:
 4 of Spades!
-
-Cheree picked up.
-Cheree's updated hand:
-7 of Spades!
-5 of Clubs!
-Queen of Diamonds!
+7 of Hearts!
 4 of Clubs!
-Ace of Clubs!
 
-Kara picked up.
-Kara's updated hand:
-10 of Diamonds!
-8 of Spades!
-Jack of Clubs!
-5 of Diamonds!
-2 of Diamonds!
-9 of Diamonds!
-3 of Diamonds!
+Uncle Albert picked up.
+Uncle Albert's updated hand:
+6 of Hearts!
+10 of Spades!
+7 of Spades!
+
+7 of Diamonds!
+
+Denzil played the 
+
+Trigger picked up.
+Trigger's updated hand:
+Queen of Spades!
 10 of Clubs!
+9 of Hearts!
 
-Ryan picked up.
-Ryan's updated hand:
-4 of Diamonds!
-7 of Diamonds!
-10 of Spades!
-6 of Spades!
-Queen of Spades!
-4 of Spades!
-Ace of Spades!
+7 of Hearts!
 
-Ace of Clubs!
+Boycie played the 
 
-Cheree played the 
+6 of Hearts!
 
-Jack of Clubs!
+Uncle Albert played the 
 
-Kara played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Cheree, it's your turn.
-
-5 of Clubs!
-
-Cheree played the 
-
-Ryan picked up.
-Ryan's updated hand:
-4 of Diamonds!
-7 of Diamonds!
-10 of Spades!
-6 of Spades!
-Queen of Spades!
-4 of Spades!
-Ace of Spades!
-Jack of Hearts!
-
-5 of Diamonds!
-
-Kara played the 
-
-King of Diamonds!
-
-Cheree played the 
-
-7 of Diamonds!
-
-Ryan played the 
-
-9 of Diamonds!
-
-Kara played the 
-
-Cheree picked up.
-Cheree's updated hand:
-7 of Spades!
-4 of Clubs!
 6 of Diamonds!
 
-4 of Diamonds!
+Denzil played the 
 
-Ryan played the 
 
-2 of Diamonds!
+Denzil is out!
 
-Kara played the 
+Trigger picked up.
+Trigger's updated hand:
+Queen of Spades!
+10 of Clubs!
+9 of Hearts!
+Queen of Spades!
 
-Last played card DOES affect Cheree
-
-The last card was a two!
-Cheree must now pick up 2 cards.
-
-Cheree's updated hand:
-7 of Spades!
+Boycie picked up.
+Boycie's updated hand:
+4 of Spades!
 4 of Clubs!
-6 of Diamonds!
+3 of Diamonds!
+
+Uncle Albert picked up.
+Uncle Albert's updated hand:
+10 of Spades!
+7 of Spades!
+Ace of Diamonds!
+
+Trigger picked up.
+Trigger's updated hand:
+Queen of Spades!
+10 of Clubs!
+9 of Hearts!
+Queen of Spades!
+2 of Hearts!
+
+3 of Diamonds!
+
+Boycie played the 
+
+Ace of Diamonds!
+
+Uncle Albert played the 
+
+Trigger picked up.
+Trigger's updated hand:
+Queen of Spades!
+10 of Clubs!
+9 of Hearts!
+Queen of Spades!
+2 of Hearts!
 3 of Spades!
-Jack of Diamonds!
 
-Ryan picked up.
-Ryan's updated hand:
-10 of Spades!
-6 of Spades!
-Queen of Spades!
+Boycie picked up.
+Boycie's updated hand:
 4 of Spades!
-Ace of Spades!
-Jack of Hearts!
-Jack of Spades!
+4 of Clubs!
+Jack of Clubs!
 
-Kara is not affected by last played card
+Uncle Albert picked up.
+Uncle Albert's updated hand:
+10 of Spades!
+7 of Spades!
+5 of Spades!
+
+Trigger picked up.
+Trigger's updated hand:
+Queen of Spades!
+10 of Clubs!
+9 of Hearts!
+Queen of Spades!
+2 of Hearts!
+3 of Spades!
+10 of Diamonds!
+
+Boycie picked up.
+Boycie's updated hand:
+4 of Spades!
+4 of Clubs!
+Jack of Clubs!
+10 of Hearts!
+
+Uncle Albert picked up.
+Uncle Albert's updated hand:
+10 of Spades!
+7 of Spades!
+5 of Spades!
+Queen of Clubs!
 
 10 of Diamonds!
 
-Kara played the 
+Trigger played the 
 
-6 of Diamonds!
+10 of Hearts!
 
-Cheree played the 
+Boycie played the 
 
-6 of Spades!
+10 of Spades!
 
-Ryan played the 
-
-8 of Spades!
-
-Kara played the 
-
-Last played card DOES affect Cheree
-
-The last card was an eight!
-Cheree is forced to skip their turn.
-
-Ryan, it's your turn.
-
-Jack of Spades!
-
-Ryan played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Cheree, it's your turn.
-
-7 of Spades!
-
-Cheree played the 
-
-Kara picked up.
-Kara's updated hand:
-3 of Diamonds!
-10 of Clubs!
-2 of Spades!
+Uncle Albert played the 
 
 Queen of Spades!
 
-Ryan played the 
+Trigger played the 
 
-Last played card DOES affect Cheree
+Last played card DOES affect Boycie
 
 The last card was a black queen!
-Cheree must now pick up 5 cards.
+Boycie must now pick up 5 cards.
 
-Cheree's updated hand:
+Boycie's updated hand:
+4 of Spades!
 4 of Clubs!
-3 of Spades!
-Jack of Diamonds!
-10 of Hearts!
-2 of Clubs!
-Queen of Clubs!
-9 of Spades!
-4 of Hearts!
-
-2 of Spades!
-
-Kara played the 
-
-Last played card DOES affect Ryan
-
-The last card was a two!
-Ryan must now pick up 2 cards.
-
-Ryan's updated hand:
-10 of Spades!
-4 of Spades!
-Ace of Spades!
-Jack of Hearts!
-Ace of Diamonds!
-7 of Clubs!
-
-2 of Clubs!
-
-Cheree played the 
-
-Last played card DOES affect Kara
-
-The last card was a two!
-Kara must now pick up 2 cards.
-
-Kara's updated hand:
-3 of Diamonds!
-10 of Clubs!
-5 of Spades!
-6 of Clubs!
-
-7 of Clubs!
-
-Ryan played the 
-
-4 of Clubs!
-
-Cheree played the 
-
-6 of Clubs!
-
-Kara played the 
-
-Ryan picked up.
-Ryan's updated hand:
-10 of Spades!
-4 of Spades!
-Ace of Spades!
-Jack of Hearts!
-Ace of Diamonds!
-Queen of Diamonds!
-
-King of Clubs!
-
-Cheree played the 
-
-10 of Clubs!
-
-Kara played the 
-
-10 of Spades!
-
-Ryan played the 
-
-3 of Spades!
-
-Cheree played the 
-
-3 of Diamonds!
-
-Kara played the 
-
-Ace of Diamonds!
-
-Ryan played the 
-
-Jack of Diamonds!
-
-Cheree played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Ryan, it's your turn.
-
-Queen of Diamonds!
-
-Ryan played the 
-
-Kara picked up.
-Kara's updated hand:
-5 of Spades!
-8 of Diamonds!
-
-Cheree picked up.
-Cheree's updated hand:
-10 of Hearts!
-9 of Spades!
-4 of Hearts!
-Queen of Clubs!
-
-Ryan picked up.
-Ryan's updated hand:
-4 of Spades!
-Ace of Spades!
-Jack of Hearts!
-Queen of Spades!
-
-8 of Diamonds!
-
-Kara played the 
-
-Last played card DOES affect Cheree
-
-The last card was an eight!
-Cheree is forced to skip their turn.
-
-Ryan, it's your turn.
-
-Ryan picked up.
-Ryan's updated hand:
-4 of Spades!
-Ace of Spades!
-Jack of Hearts!
-Queen of Spades!
-7 of Hearts!
-
-Kara is not affected by last played card
-
-Kara picked up.
-Kara's updated hand:
-5 of Spades!
-Queen of Hearts!
-
-Cheree is not affected by last played card
-
-Cheree picked up.
-Cheree's updated hand:
-10 of Hearts!
-9 of Spades!
-4 of Hearts!
-Queen of Clubs!
-5 of Hearts!
-
-Ryan is not affected by last played card
-
-Ryan picked up.
-Ryan's updated hand:
-4 of Spades!
-Ace of Spades!
-Jack of Hearts!
-Queen of Spades!
-7 of Hearts!
-Queen of Hearts!
-
-Kara is not affected by last played card
-
-Kara picked up.
-Kara's updated hand:
-5 of Spades!
-Queen of Hearts!
-8 of Hearts!
-
-Cheree is not affected by last played card
-
-Cheree picked up.
-Cheree's updated hand:
-10 of Hearts!
-9 of Spades!
-4 of Hearts!
-Queen of Clubs!
-5 of Hearts!
-8 of Clubs!
-
-Ryan is not affected by last played card
-
-Ryan picked up.
-Ryan's updated hand:
-4 of Spades!
-Ace of Spades!
-Jack of Hearts!
-Queen of Spades!
-7 of Hearts!
-Queen of Hearts!
-3 of Clubs!
-
-Kara is not affected by last played card
-
-8 of Hearts!
-
-Kara played the 
-
-Last played card DOES affect Cheree
-
-The last card was an eight!
-Cheree is forced to skip their turn.
-
-Ryan, it's your turn.
-
-Jack of Hearts!
-
-Ryan played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Cheree, it's your turn.
-
-10 of Hearts!
-
-Cheree played the 
-
-Queen of Hearts!
-
-Kara played the 
-
-7 of Hearts!
-
-Ryan played the 
-
-4 of Hearts!
-
-Cheree played the 
-
-Kara picked up.
-Kara's updated hand:
-5 of Spades!
-9 of Clubs!
-
-4 of Spades!
-
-Ryan played the 
-
-9 of Spades!
-
-Cheree played the 
-
-5 of Spades!
-
-Kara played the 
-
-Ace of Spades!
-
-Ryan played the 
-
-Cheree picked up.
-Cheree's updated hand:
-Queen of Clubs!
-5 of Hearts!
-8 of Clubs!
-9 of Hearts!
-
-Kara picked up.
-Kara's updated hand:
-9 of Clubs!
+Jack of Clubs!
+6 of Spades!
 3 of Hearts!
+9 of Spades!
+4 of Diamonds!
+9 of Diamonds!
+
+7 of Spades!
+
+Uncle Albert played the 
 
 King of Spades!
 
-Ryan played the 
+Trigger played the 
 
-Cheree picked up.
-Cheree's updated hand:
-Queen of Clubs!
-5 of Hearts!
-8 of Clubs!
-9 of Hearts!
-2 of Hearts!
-
-Kara picked up.
-Kara's updated hand:
-9 of Clubs!
-3 of Hearts!
-6 of Hearts!
-
-King of Hearts!
-
-Ryan played the 
-
-2 of Hearts!
-
-Cheree played the 
-
-Last played card DOES affect Kara
-
-The last card was a two!
-Kara must now pick up 2 cards.
-
-Kara's updated hand:
-9 of Clubs!
-3 of Hearts!
-6 of Hearts!
-Ace of Hearts!
-Ace of Clubs!
-
-Ryan picked up.
-Ryan's updated hand:
-3 of Clubs!
-Jack of Clubs!
-
-Cheree is not affected by last played card
-
-5 of Hearts!
-
-Cheree played the 
-
-6 of Hearts!
-
-Kara played the 
-
-Ryan picked up.
-Ryan's updated hand:
-3 of Clubs!
-Jack of Clubs!
-5 of Clubs!
-
-9 of Hearts!
-
-Cheree played the 
-
-9 of Clubs!
-
-Kara played the 
-
-Jack of Clubs!
-
-Ryan played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Kara, it's your turn.
-
-Ace of Clubs!
-
-Kara played the 
-
-Queen of Clubs!
-
-Cheree played the 
-
-Last played card DOES affect Ryan
-
-The last card was a black queen!
-Ryan must now pick up 5 cards.
-
-Ryan's updated hand:
-3 of Clubs!
-5 of Clubs!
-5 of Diamonds!
-Queen of Diamonds!
-7 of Diamonds!
-9 of Diamonds!
-4 of Diamonds!
-
-Kara picked up.
-Kara's updated hand:
-Ace of Hearts!
-3 of Hearts!
-2 of Diamonds!
-
-Cheree is not affected by last played card
-
-8 of Clubs!
-
-Cheree played the 
-
-
-Cheree is out!
-
-Last played card DOES affect Ryan
-
-The last card was an eight!
-Ryan is forced to skip their turn.
-
-Kara, it's your turn.
-
-Kara picked up.
-Kara's updated hand:
-Ace of Hearts!
-3 of Hearts!
-2 of Diamonds!
-10 of Diamonds!
-
-Ryan is not affected by last played card
-
-3 of Clubs!
-
-Ryan played the 
-
-3 of Hearts!
-
-Kara played the 
-
-Ryan picked up.
-Ryan's updated hand:
-5 of Clubs!
-5 of Diamonds!
-Queen of Diamonds!
-7 of Diamonds!
-9 of Diamonds!
-4 of Diamonds!
-6 of Diamonds!
-
-Ace of Hearts!
-
-Kara played the 
-
-Ryan picked up.
-Ryan's updated hand:
-5 of Clubs!
-5 of Diamonds!
-Queen of Diamonds!
-7 of Diamonds!
-9 of Diamonds!
-4 of Diamonds!
-6 of Diamonds!
-6 of Spades!
-
-Kara picked up.
-Kara's updated hand:
-10 of Diamonds!
-2 of Diamonds!
-8 of Spades!
-
-Ryan picked up.
-Ryan's updated hand:
-5 of Clubs!
-5 of Diamonds!
-Queen of Diamonds!
-7 of Diamonds!
-9 of Diamonds!
-4 of Diamonds!
-6 of Diamonds!
-6 of Spades!
-Jack of Spades!
-
-Kara picked up.
-Kara's updated hand:
-10 of Diamonds!
-2 of Diamonds!
-8 of Spades!
-7 of Spades!
-
-Ryan picked up.
-Ryan's updated hand:
-5 of Clubs!
-5 of Diamonds!
-Queen of Diamonds!
-7 of Diamonds!
-9 of Diamonds!
-4 of Diamonds!
-6 of Diamonds!
-6 of Spades!
-Jack of Spades!
-Queen of Spades!
-
-Kara picked up.
-Kara's updated hand:
-10 of Diamonds!
-2 of Diamonds!
-8 of Spades!
-7 of Spades!
-2 of Spades!
-
-Ryan picked up.
-Ryan's updated hand:
-5 of Clubs!
-5 of Diamonds!
-Queen of Diamonds!
-7 of Diamonds!
-9 of Diamonds!
-4 of Diamonds!
-6 of Diamonds!
-6 of Spades!
-Jack of Spades!
-Queen of Spades!
-2 of Clubs!
-
-Kara picked up.
-Kara's updated hand:
-10 of Diamonds!
-2 of Diamonds!
-8 of Spades!
-7 of Spades!
-2 of Spades!
-7 of Clubs!
-
-Ryan picked up.
-Ryan's updated hand:
-5 of Clubs!
-5 of Diamonds!
-Queen of Diamonds!
-7 of Diamonds!
-9 of Diamonds!
-4 of Diamonds!
-6 of Diamonds!
-6 of Spades!
-Jack of Spades!
-Queen of Spades!
-2 of Clubs!
-4 of Clubs!
-
-Kara picked up.
-Kara's updated hand:
-10 of Diamonds!
-2 of Diamonds!
-8 of Spades!
-7 of Spades!
-2 of Spades!
-7 of Clubs!
-6 of Clubs!
-
-Ryan picked up.
-Ryan's updated hand:
-5 of Clubs!
-5 of Diamonds!
-Queen of Diamonds!
-7 of Diamonds!
-9 of Diamonds!
-4 of Diamonds!
-6 of Diamonds!
-6 of Spades!
-Jack of Spades!
-Queen of Spades!
-2 of Clubs!
-4 of Clubs!
-Queen of Clubs!
-
-Kara picked up.
-Kara's updated hand:
-10 of Diamonds!
-2 of Diamonds!
-8 of Spades!
-7 of Spades!
-2 of Spades!
-7 of Clubs!
-6 of Clubs!
-10 of Clubs!
-
-Ryan picked up.
-Ryan's updated hand:
-5 of Clubs!
-5 of Diamonds!
-Queen of Diamonds!
-7 of Diamonds!
-9 of Diamonds!
-4 of Diamonds!
-6 of Diamonds!
-6 of Spades!
-Jack of Spades!
-Queen of Spades!
-2 of Clubs!
-4 of Clubs!
-Queen of Clubs!
-10 of Spades!
-
-Kara picked up.
-Kara's updated hand:
-10 of Diamonds!
-2 of Diamonds!
-8 of Spades!
-7 of Spades!
-2 of Spades!
-7 of Clubs!
-6 of Clubs!
-10 of Clubs!
-3 of Spades!
-
-Ryan picked up.
-Ryan's updated hand:
-5 of Clubs!
-5 of Diamonds!
-Queen of Diamonds!
-7 of Diamonds!
-9 of Diamonds!
-4 of Diamonds!
-6 of Diamonds!
-6 of Spades!
-Jack of Spades!
-Queen of Spades!
-2 of Clubs!
-4 of Clubs!
-Queen of Clubs!
-10 of Spades!
-3 of Diamonds!
-
-Kara picked up.
-Kara's updated hand:
-10 of Diamonds!
-2 of Diamonds!
-8 of Spades!
-7 of Spades!
-2 of Spades!
-7 of Clubs!
-6 of Clubs!
-10 of Clubs!
-3 of Spades!
-Ace of Diamonds!
-
-Ryan picked up.
-Ryan's updated hand:
-5 of Clubs!
-5 of Diamonds!
-Queen of Diamonds!
-7 of Diamonds!
-9 of Diamonds!
-4 of Diamonds!
-6 of Diamonds!
-6 of Spades!
-Jack of Spades!
-Queen of Spades!
-2 of Clubs!
-4 of Clubs!
-Queen of Clubs!
-10 of Spades!
-3 of Diamonds!
-Jack of Diamonds!
-
-Ace of Diamonds!
-
-Kara played the 
-
-Jack of Diamonds!
-
-Ryan played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Kara, it's your turn.
-
-2 of Diamonds!
-
-Kara played the 
-
-Last played card DOES affect Ryan
-
-The last card was a two!
-Ryan must now pick up 2 cards.
-
-Ryan's updated hand:
-5 of Clubs!
-5 of Diamonds!
-Queen of Diamonds!
-7 of Diamonds!
-9 of Diamonds!
-4 of Diamonds!
-6 of Diamonds!
-6 of Spades!
-Jack of Spades!
-Queen of Spades!
-2 of Clubs!
-4 of Clubs!
-Queen of Clubs!
-10 of Spades!
-3 of Diamonds!
-Queen of Diamonds!
-8 of Diamonds!
-
-10 of Diamonds!
-
-Kara played the 
-
-8 of Diamonds!
-
-Ryan played the 
-
-Last played card DOES affect Kara
-
-The last card was an eight!
-Kara is forced to skip their turn.
-
-Ryan, it's your turn.
-
-Queen of Diamonds!
-
-Ryan played the 
-
-Kara picked up.
-Kara's updated hand:
-7 of Spades!
-3 of Spades!
-10 of Clubs!
-8 of Spades!
-6 of Clubs!
-7 of Clubs!
-2 of Spades!
-8 of Hearts!
-
-Queen of Spades!
-
-Ryan played the 
-
-Last played card DOES affect Kara
-
-The last card was a black queen!
-Kara must now pick up 5 cards.
-
-Kara's updated hand:
-7 of Spades!
-3 of Spades!
-10 of Clubs!
-8 of Spades!
-6 of Clubs!
-7 of Clubs!
-2 of Spades!
-8 of Hearts!
-Jack of Hearts!
-10 of Hearts!
-Queen of Hearts!
-7 of Hearts!
-4 of Hearts!
-
-Jack of Spades!
-
-Ryan played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Kara, it's your turn.
-
-2 of Spades!
-
-Kara played the 
-
-Last played card DOES affect Ryan
-
-The last card was a two!
-Ryan must now pick up 2 cards.
-
-Ryan's updated hand:
-5 of Clubs!
-5 of Diamonds!
-Queen of Diamonds!
-7 of Diamonds!
-9 of Diamonds!
-4 of Diamonds!
-6 of Diamonds!
-6 of Spades!
-2 of Clubs!
-4 of Clubs!
-Queen of Clubs!
-10 of Spades!
-3 of Diamonds!
 4 of Spades!
-9 of Spades!
 
-7 of Spades!
-
-Kara played the 
-
-10 of Spades!
-
-Ryan played the 
-
-3 of Spades!
-
-Kara played the 
-
-3 of Diamonds!
-
-Ryan played the 
-
-Kara picked up.
-Kara's updated hand:
-Queen of Hearts!
-10 of Hearts!
-8 of Hearts!
-7 of Clubs!
-10 of Clubs!
-7 of Hearts!
-Jack of Hearts!
-4 of Hearts!
-6 of Clubs!
-8 of Spades!
-5 of Spades!
-
-5 of Diamonds!
-
-Ryan played the 
+Boycie played the 
 
 5 of Spades!
 
-Kara played the 
+Uncle Albert played the 
+
+3 of Spades!
+
+Trigger played the 
+
+6 of Spades!
+
+Boycie played the 
+
+Uncle Albert picked up.
+Uncle Albert's updated hand:
+Queen of Clubs!
+8 of Spades!
+
+Trigger picked up.
+Trigger's updated hand:
+10 of Clubs!
+9 of Hearts!
+2 of Hearts!
+Jack of Hearts!
 
 9 of Spades!
 
-Ryan played the 
+Boycie played the 
 
 8 of Spades!
 
-Kara played the 
+Uncle Albert played the 
 
-Last played card DOES affect Ryan
-
-The last card was an eight!
-Ryan is forced to skip their turn.
-
-Kara, it's your turn.
-
-8 of Hearts!
-
-Kara played the 
-
-Last played card DOES affect Ryan
+Last played card DOES affect Trigger
 
 The last card was an eight!
-Ryan is forced to skip their turn.
+Trigger is forced to skip their turn.
 
-Kara, it's your turn.
+Boycie, it's your turn.
+
+Boycie picked up.
+Boycie's updated hand:
+4 of Clubs!
+Jack of Clubs!
+3 of Hearts!
+4 of Diamonds!
+9 of Diamonds!
+Queen of Hearts!
+
+Uncle Albert is not affected by last played card
+
+Uncle Albert picked up.
+Uncle Albert's updated hand:
+Queen of Clubs!
+Queen of Diamonds!
+
+Trigger is not affected by last played card
+
+Trigger picked up.
+Trigger's updated hand:
+10 of Clubs!
+9 of Hearts!
+2 of Hearts!
+Jack of Hearts!
+6 of Clubs!
+
+Boycie is not affected by last played card
+
+Boycie picked up.
+Boycie's updated hand:
+4 of Clubs!
+Jack of Clubs!
+3 of Hearts!
+4 of Diamonds!
+9 of Diamonds!
+Queen of Hearts!
+Jack of Spades!
+
+Uncle Albert is not affected by last played card
+
+Uncle Albert picked up.
+Uncle Albert's updated hand:
+Queen of Clubs!
+Queen of Diamonds!
+4 of Hearts!
+
+Trigger is not affected by last played card
+
+Trigger picked up.
+Trigger's updated hand:
+10 of Clubs!
+9 of Hearts!
+2 of Hearts!
+Jack of Hearts!
+6 of Clubs!
+Ace of Hearts!
+
+Boycie is not affected by last played card
+
+Jack of Spades!
+
+Boycie played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Trigger, it's your turn.
 
 Jack of Hearts!
 
-Kara played the 
+Trigger played the 
 
 The last card was a jack!
 The direction of play has been reversed.
 
-Ryan, it's your turn.
+Boycie, it's your turn.
 
-Ryan picked up.
-Ryan's updated hand:
-5 of Clubs!
-Queen of Diamonds!
-7 of Diamonds!
-9 of Diamonds!
-4 of Diamonds!
-6 of Diamonds!
-6 of Spades!
-2 of Clubs!
-4 of Clubs!
+Jack of Clubs!
+
+Boycie played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Trigger, it's your turn.
+
+6 of Clubs!
+
+Trigger played the 
+
 Queen of Clubs!
-4 of Spades!
-Ace of Spades!
 
-The last card was a jack!
-The direction of play has been reversed.
+Uncle Albert played the 
 
-Kara, it's your turn.
+Last played card DOES affect Boycie
 
-7 of Hearts!
+The last card was a black queen!
+Boycie must now pick up 5 cards.
 
-Kara played the 
+Boycie's updated hand:
+4 of Clubs!
+3 of Hearts!
+4 of Diamonds!
+9 of Diamonds!
+Queen of Hearts!
+9 of Clubs!
+Ace of Clubs!
+2 of Diamonds!
+3 of Clubs!
+5 of Diamonds!
 
-7 of Diamonds!
+10 of Clubs!
 
-Ryan played the 
+Trigger played the 
 
-7 of Clubs!
-
-Kara played the 
-
+Uncle Albert picked up.
+Uncle Albert's updated hand:
+Queen of Diamonds!
+4 of Hearts!
 2 of Clubs!
 
-Ryan played the 
+4 of Clubs!
 
-Last played card DOES affect Kara
+Boycie played the 
+
+Trigger picked up.
+Trigger's updated hand:
+9 of Hearts!
+2 of Hearts!
+Ace of Hearts!
+Jack of Diamonds!
+
+4 of Hearts!
+
+Uncle Albert played the 
+
+3 of Hearts!
+
+Boycie played the 
+
+2 of Hearts!
+
+Trigger played the 
+
+Last played card DOES affect Uncle Albert
 
 The last card was a two!
-Kara must now pick up 2 cards.
+Uncle Albert must now pick up 2 cards.
 
-Kara's updated hand:
-Queen of Hearts!
-10 of Clubs!
-6 of Clubs!
-10 of Hearts!
-4 of Hearts!
-Queen of Spades!
-Queen of Hearts!
-
-4 of Clubs!
-
-Ryan played the 
-
-4 of Hearts!
-
-Kara played the 
-
-4 of Spades!
-
-Ryan played the 
-
-King of Spades!
-
-Kara played the 
-
+Uncle Albert's updated hand:
+Queen of Diamonds!
+2 of Clubs!
 Ace of Spades!
+Queen of Clubs!
 
-Ryan played the 
+2 of Diamonds!
 
-Kara picked up.
-Kara's updated hand:
-10 of Clubs!
-6 of Clubs!
-Queen of Hearts!
-10 of Hearts!
-Queen of Hearts!
-2 of Hearts!
+Boycie played the 
 
-6 of Spades!
+Last played card DOES affect Trigger
 
-Ryan played the 
+The last card was a two!
+Trigger must now pick up 2 cards.
 
-6 of Clubs!
+Trigger's updated hand:
+9 of Hearts!
+Ace of Hearts!
+Jack of Diamonds!
+5 of Clubs!
+8 of Diamonds!
 
-Kara played the 
+Queen of Diamonds!
 
-6 of Diamonds!
-
-Ryan played the 
-
-Kara picked up.
-Kara's updated hand:
-Queen of Hearts!
-10 of Clubs!
-Queen of Hearts!
-2 of Hearts!
-10 of Hearts!
-5 of Hearts!
+Uncle Albert played the 
 
 4 of Diamonds!
 
-Ryan played the 
+Boycie played the 
 
-Kara picked up.
-Kara's updated hand:
-Queen of Hearts!
-10 of Clubs!
-Queen of Hearts!
-2 of Hearts!
-10 of Hearts!
-5 of Hearts!
-6 of Hearts!
+Jack of Diamonds!
+
+Trigger played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Boycie, it's your turn.
 
 9 of Diamonds!
 
-Ryan played the 
+Boycie played the 
 
-Kara picked up.
-Kara's updated hand:
-Queen of Hearts!
-10 of Clubs!
-Queen of Hearts!
-2 of Hearts!
-10 of Hearts!
-5 of Hearts!
-6 of Hearts!
+Uncle Albert picked up.
+Uncle Albert's updated hand:
+2 of Clubs!
+Ace of Spades!
+Queen of Clubs!
+8 of Clubs!
+
 9 of Hearts!
 
-King of Diamonds!
+Trigger played the 
 
-Ryan played the 
+Queen of Hearts!
 
-King of Hearts!
+Boycie played the 
 
-Kara played the 
+Uncle Albert picked up.
+Uncle Albert's updated hand:
+2 of Clubs!
+Ace of Spades!
+Queen of Clubs!
+8 of Clubs!
+2 of Spades!
+
+Ace of Hearts!
+
+Trigger played the 
+
+Ace of Clubs!
+
+Boycie played the 
+
+Ace of Spades!
+
+Uncle Albert played the 
+
+Trigger picked up.
+Trigger's updated hand:
+5 of Clubs!
+8 of Diamonds!
+8 of Hearts!
+
+Boycie picked up.
+Boycie's updated hand:
+9 of Clubs!
+3 of Clubs!
+5 of Diamonds!
+7 of Clubs!
+
+2 of Spades!
+
+Uncle Albert played the 
+
+Last played card DOES affect Trigger
+
+The last card was a two!
+Trigger must now pick up 2 cards.
+
+Trigger's updated hand:
+5 of Clubs!
+8 of Diamonds!
+8 of Hearts!
+5 of Hearts!
+Queen of Hearts!
+
+Boycie picked up.
+Boycie's updated hand:
+9 of Clubs!
+3 of Clubs!
+5 of Diamonds!
+7 of Clubs!
+Queen of Diamonds!
+
+Uncle Albert is not affected by last played card
+
+2 of Clubs!
+
+Uncle Albert played the 
+
+Last played card DOES affect Trigger
+
+The last card was a two!
+Trigger must now pick up 2 cards.
+
+Trigger's updated hand:
+5 of Clubs!
+8 of Diamonds!
+8 of Hearts!
+5 of Hearts!
+Queen of Hearts!
+7 of Diamonds!
+7 of Hearts!
+
+9 of Clubs!
+
+Boycie played the 
 
 King of Clubs!
 
-Ryan played the 
+Uncle Albert played the 
 
-10 of Clubs!
+King of Hearts!
 
-Kara played the 
+Trigger played the 
+
+King of Diamonds!
+
+Boycie played the 
+
+Uncle Albert picked up.
+Uncle Albert's updated hand:
+8 of Clubs!
+6 of Hearts!
+
+8 of Diamonds!
+
+Trigger played the 
+
+Last played card DOES affect Boycie
+
+The last card was an eight!
+Boycie is forced to skip their turn.
+
+Uncle Albert, it's your turn.
+
+8 of Clubs!
+
+Uncle Albert played the 
+
+Last played card DOES affect Trigger
+
+The last card was an eight!
+Trigger is forced to skip their turn.
+
+Boycie, it's your turn.
+
+3 of Clubs!
+
+Boycie played the 
+
+Uncle Albert picked up.
+Uncle Albert's updated hand:
+6 of Hearts!
+6 of Diamonds!
 
 5 of Clubs!
 
-Ryan played the 
+Trigger played the 
+
+5 of Diamonds!
+
+Boycie played the 
+
+6 of Diamonds!
+
+Uncle Albert played the 
+
+7 of Diamonds!
+
+Trigger played the 
+
+7 of Clubs!
+
+Boycie played the 
 
 
-Ryan is out!
+Boycie is out!
+
+Uncle Albert picked up.
+Uncle Albert's updated hand:
+6 of Hearts!
+3 of Diamonds!
+
+7 of Hearts!
+
+Trigger played the 
+
+6 of Hearts!
+
+Uncle Albert played the 
+
+8 of Hearts!
+
+Trigger played the 
+
+Last played card DOES affect Uncle Albert
+
+The last card was an eight!
+Uncle Albert is forced to skip their turn.
+
+Trigger, it's your turn.
+
+5 of Hearts!
+
+Trigger played the 
+
+
+Trigger is out!
 
 
 Scoreboard:
-1st:	Darren                                            (Hardcoded - Unaggressive)
-2nd:	Cheree                                            (Hardcoded - Aggressive)
-3rd:	Ryan                                              (Human)
-4th:	Kara                                              (Hardcoded - Random)
+1st:	Denzil                                            (Hardcoded - Random)
+2nd:	Boycie                                            (Hardcoded - Aggressive)
+3rd:	Trigger                                           (Human)
+4th:	Uncle Albert                                      (Hardcoded - Unaggressive)
