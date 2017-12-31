@@ -268,7 +268,7 @@ int main()
 					//moves in the blink of an eye
 					sleep(seconds(3.0f));
 
-					auto tempHand = GameManager::Manager()->GetCurrentPlayer()->hand;
+					//auto tempHand = GameManager::Manager()->GetCurrentPlayer()->hand;
 
 					if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
 					{

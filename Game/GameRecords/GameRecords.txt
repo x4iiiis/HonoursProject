@@ -143,12 +143,12 @@ Scoreboard:
 3rd:	Appeal to Reason                                  (Human)
 4th:	Siren Song of the Counter Culture                 (Hardcoded - Random)
 ------------------------------------------------------------------------------------
-
-Date:	31/12/2017	Time:	03:25
+Date:	31/12/2017	Time:	04:54
 
 Scoreboard:
-1st:	out                                               (Hardcoded - Aggressive)
-2nd:	jack                                              (Hardcoded - Unaggressive)
-3rd:	Trying                                            (Human)
+1st:	Darren                                            (Hardcoded - Unaggressive)
+2nd:	Cheree                                            (Hardcoded - Aggressive)
+3rd:	Ryan                                              (Human)
+4th:	Kara                                              (Hardcoded - Random)
 ------------------------------------------------------------------------------------
 

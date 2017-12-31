@@ -262,11 +262,11 @@ auto getDirectionOfPlay()
 	{
 		if (DirectionOfPlay == GameDirection::Clockwise)
 		{
-			DirectionOfPlay == GameDirection::AntiClockwise;
+			DirectionOfPlay = GameDirection::AntiClockwise;
 		}
 		else
 		{
-			DirectionOfPlay == GameDirection::Clockwise;
+			DirectionOfPlay = GameDirection::Clockwise;
 		}
 	}
 
@@ -293,11 +293,11 @@ auto getDirectionOfPlay()
 		//printing whether the player is affected by cards that don't bare rules was annoying me 
 		if ((DeckOfCards.lastCard[0]->cardType == card::type::Queen && DeckOfCards.lastCard[0]->cardColour == card::colour::Black)
 			|| (DeckOfCards.lastCard[0]->cardType == card::type::Two)
+			|| (DeckOfCards.lastCard[0]->cardType == card::type::Eight)
 			|| (DeckOfCards.lastCard[0]->cardType == card::type::Eight))
 		{
-
 			//If the card was played more than 0 turns ago, then it doesn't even matter
-			if (DeckOfCards.lastCard[0]->turnsSincePlayed != 1)
+			if (DeckOfCards.lastCard[0]->turnsSincePlayed != 1 && DeckOfCards.lastCard[0]->cardType != card::type::Jack)
 			{
 				cout << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
 				GameText << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
@@ -352,6 +352,11 @@ auto getDirectionOfPlay()
 				return false;
 			}
 		}
+		////Don't print anything about the Jack but I need this so it works with ConsultRules()
+		//if (DeckOfCards.lastCard[0]->cardType == card::type::Jack)
+		//{
+		//	return true;
+		//}
 		return false;
 	}
 
@@ -433,7 +438,7 @@ auto getDirectionOfPlay()
 
 	bool can_play_checker(vector<shared_ptr<card>> hand)
 	{
-		for (auto c : hand)
+		for (auto &c : hand)
 		{
 			if (c->cardSuit == DeckOfCards.lastCard[0]->cardSuit)
 			{
@@ -622,7 +627,7 @@ auto getDirectionOfPlay()
 			return;
 		}
 
-		if (DoesLastCardAffectCurrentPlayer(WhoPlayedTheLastCard(), GetCurrentPlayer()))
+		if (DoesLastCardAffectCurrentPlayer(WhoPlayedTheLastCard(), GetCurrentPlayer()) || (DeckOfCards.lastCard[0]->cardType == card::type::Jack))
 		{
 			//By default, assume player can play and can't pick up.
 			//If this isn't the case, the following code will sort that out.
@@ -650,7 +655,6 @@ auto getDirectionOfPlay()
 							GetCurrentPlayer()->hand.push_back(DeckOfCards.cardStack[0]);
 							DeckOfCards.cardStack.erase(DeckOfCards.cardStack.begin());
 						}
-						//DeckOfCards.UpdatePositionsAndTextures(GetCurrentPlayer()->hand);
 
 						//Display updated hand
 						cout << GetCurrentPlayer()->name << "'s updated hand:" << endl;
@@ -661,14 +665,13 @@ auto getDirectionOfPlay()
 						GetCurrentPlayer()->canPlay = false;
 
 						NextPlayer();
-						//GameManager::Manager()->DeckOfCards.identify_cards(PlayerList[0]->hand);
+						can_play_checker(GetCurrentPlayer()->hand);
+						break;
 					}
 
 					can_play_checker(GetCurrentPlayer()->hand);
 					break;
 				}
-				//Need to be able to tell who played it, otherwise that 2 is gonna make everyone pick up 2 until we run out of cards
-				//Also it isn't PlayerList[0], it'll be whoever's turn it is once we've got that figured out
 				case(card::type::Two):
 				{
 					cout << "The last card was a two!" << endl;
@@ -685,14 +688,10 @@ auto getDirectionOfPlay()
 						GetCurrentPlayer()->hand.push_back(DeckOfCards.cardStack[0]);
 						DeckOfCards.cardStack.erase(DeckOfCards.cardStack.begin());
 					}
-					//DeckOfCards.UpdatePositionsAndTextures(GetCurrentPlayer()->hand);
 
-
-					//Display PlayerList[0]'s updated hand
 					cout << GetCurrentPlayer()->name << "'s updated hand:" << endl;
 					GameText << GetCurrentPlayer()->name << "'s updated hand:" << endl;
 					DeckOfCards.identify_cards(GetCurrentPlayer()->hand);
-					//GameManager::Manager()->DeckOfCards.identify_cards(PlayerList[0]->hand);
 
 					GetCurrentPlayer()->canPickUp = false;
 					GetCurrentPlayer()->canPlay = false;
@@ -701,7 +700,6 @@ auto getDirectionOfPlay()
 					can_play_checker(GetCurrentPlayer()->hand);
 					break;
 				}
-				//Game management - we need the direction of play to be defined somewhere
 				case(card::type::Jack):
 				{
 					cout << "The last card was a jack!" << endl;
@@ -723,8 +721,6 @@ auto getDirectionOfPlay()
 					can_play_checker(GetCurrentPlayer()->hand);
 					break;
 				}
-				//Again, needing game management to know whose turn it is and when the card was played, otherwise
-				//everybody's gonna skip their turn forever
 				case(card::type::Eight):
 				{
 					cout << "The last card was an eight!" << endl;
@@ -743,17 +739,9 @@ auto getDirectionOfPlay()
 					can_play_checker(GetCurrentPlayer()->hand);
 					break;
 				}
-				//case(card::type::Ace):
-				//{
-					//Can nominate a suit (Won't be in AI version)
-				//}
-				//case(card::type::Seven):
-				//{
-					//Can play the rest of that suit (Not in AI version)
-				//}
 				default:
 				{
-					//can_play_checker(GetCurrentPlayer()->hand);
+					can_play_checker(GetCurrentPlayer()->hand);
 					break;
 				}
 			}

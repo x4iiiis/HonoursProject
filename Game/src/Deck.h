@@ -194,26 +194,26 @@ public:
 		std::random_shuffle(spadesArray.begin(), spadesArray.end());
 
 		//Add shuffled clubs to allCards
-		for (auto c : clubsArray)
+		for (auto &c : clubsArray)
 		{
 			//allCards->push_back(clubsArray);
 			allCards.push_back(c);
 		}
 
 		//Add shuffled diamonds to allCards
-		for (auto c : diamondsArray)
+		for (auto &c : diamondsArray)
 		{
 			allCards.push_back(c);
 		}
 
 		//Add shuffled hearts to allCards
-		for (auto c : heartsArray)
+		for (auto &c : heartsArray)
 		{
 			allCards.push_back(c);
 		}
 
 		//Add shuffled spades to allCards
-		for (auto c : spadesArray)
+		for (auto &c : spadesArray)
 		{
 			allCards.push_back(c);
 		}
@@ -229,7 +229,7 @@ public:
 		std::random_shuffle(allCards.begin(), allCards.end());
 		std::random_shuffle(allCards.begin(), allCards.end());
 
-		for (auto c : allCards)
+		for (auto &c : allCards)
 		{
 			cardStack.push_back(c);
 		}
@@ -245,7 +245,7 @@ public:
 			cout << "Error opening GameRecords.txt" << endl << endl;
 		}
 
-		for (auto c : unidentifiedCards)
+		for (auto &c : unidentifiedCards)
 		{
 			if (c->cardType == card::type::Ace)
 			{
@@ -360,7 +360,7 @@ public:
 
 	void defineCardColours(vector<shared_ptr<card>> allCards)
 	{
-		for (auto c : allCards)
+		for (auto &c : allCards)
 		{
 			c->setColour();
 		}

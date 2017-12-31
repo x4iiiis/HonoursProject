@@ -1,288 +1,1372 @@
 Players:
-jack 
-plz
-work
-ya dick
+Ryan
+Cheree
+Darren
+Kara
 
 
-The cards have been dealt by jack  and our first card to be played on is
-Queen of Spades!
+The cards have been dealt by Ryan and our first card to be played on is
+7 of Hearts!
 
 The player left of the dealer will start.
 
-plz picked up.
-plz's updated hand:
-8 of Clubs!
+Queen of Hearts!
+
+Cheree played the 
+
+5 of Hearts!
+
+Darren played the 
+
+Kara picked up.
+Kara's updated hand:
+8 of Spades!
+10 of Diamonds!
 8 of Hearts!
-6 of Diamonds!
 
-Queen of Spades!
+King of Hearts!
 
-work played the 
+Ryan played the 
 
-Last played card DOES affect ya dick
-
-The last card was a black queen!
-ya dick must now pick up 5 cards.
-
-ya dick's updated hand:
-4 of Clubs!
-8 of Diamonds!
-4 of Spades!
-7 of Spades!
-9 of Hearts!
-10 of Hearts!
-Ace of Clubs!
-
-jack  picked up.
-jack 's updated hand:
-10 of Clubs!
-Jack of Clubs!
-5 of Clubs!
-
-plz is not affected by last played card
-
-plz picked up.
-plz's updated hand:
-8 of Clubs!
-8 of Hearts!
-6 of Diamonds!
-2 of Diamonds!
-
-work is not affected by last played card
-
-work picked up.
-work's updated hand:
-6 of Hearts!
-2 of Hearts!
-
-ya dick is not affected by last played card
-
+Cheree picked up.
+Cheree's updated hand:
+3 of Clubs!
 7 of Spades!
 
-ya dick played the 
-
-jack  picked up.
-jack 's updated hand:
-10 of Clubs!
-Jack of Clubs!
-5 of Clubs!
-10 of Diamonds!
-
-plz picked up.
-plz's updated hand:
+Darren picked up.
+Darren's updated hand:
 8 of Clubs!
+9 of Clubs!
+
 8 of Hearts!
-6 of Diamonds!
-2 of Diamonds!
-Ace of Hearts!
 
-work picked up.
-work's updated hand:
-6 of Hearts!
-2 of Hearts!
-3 of Spades!
+Kara played the 
 
-4 of Spades!
+Last played card DOES affect Ryan
 
-ya dick played the 
+The last card was an eight!
+Ryan is forced to skip their turn.
 
-jack  picked up.
-jack 's updated hand:
-10 of Clubs!
-Jack of Clubs!
-5 of Clubs!
-10 of Diamonds!
-5 of Diamonds!
+Cheree, it's your turn.
 
-plz picked up.
-plz's updated hand:
-8 of Clubs!
-8 of Hearts!
-6 of Diamonds!
-2 of Diamonds!
-Ace of Hearts!
-Jack of Hearts!
-
-3 of Spades!
-
-work played the 
-
-ya dick picked up.
-ya dick's updated hand:
-Ace of Clubs!
-8 of Diamonds!
-10 of Hearts!
+Cheree picked up.
+Cheree's updated hand:
+3 of Clubs!
+7 of Spades!
 9 of Hearts!
-4 of Clubs!
+
+Darren is not affected by last played card
+
+8 of Clubs!
+
+Darren played the 
+
+Last played card DOES affect Kara
+
+The last card was an eight!
+Kara is forced to skip their turn.
+
+Ryan, it's your turn.
+
+Ryan picked up.
+Ryan's updated hand:
+4 of Diamonds!
 3 of Hearts!
 
-jack  picked up.
-jack 's updated hand:
-10 of Clubs!
-Jack of Clubs!
-5 of Clubs!
-10 of Diamonds!
-5 of Diamonds!
-6 of Clubs!
+Cheree is not affected by last played card
 
-plz picked up.
-plz's updated hand:
-8 of Clubs!
-8 of Hearts!
-6 of Diamonds!
-2 of Diamonds!
+3 of Clubs!
+
+Cheree played the 
+
+9 of Clubs!
+
+Darren played the 
+
+
+Darren is out!
+
+Kara picked up.
+Kara's updated hand:
+8 of Spades!
+10 of Diamonds!
+Jack of Clubs!
+
+Ryan picked up.
+Ryan's updated hand:
+4 of Diamonds!
+3 of Hearts!
+7 of Diamonds!
+
+9 of Hearts!
+
+Cheree played the 
+
+Kara picked up.
+Kara's updated hand:
+8 of Spades!
+10 of Diamonds!
+Jack of Clubs!
+2 of Hearts!
+
+3 of Hearts!
+
+Ryan played the 
+
+Cheree picked up.
+Cheree's updated hand:
+7 of Spades!
+6 of Hearts!
+
+2 of Hearts!
+
+Kara played the 
+
+Last played card DOES affect Ryan
+
+The last card was a two!
+Ryan must now pick up 2 cards.
+
+Ryan's updated hand:
+4 of Diamonds!
+7 of Diamonds!
+10 of Spades!
 Ace of Hearts!
+
+6 of Hearts!
+
+Cheree played the 
+
+Kara picked up.
+Kara's updated hand:
+10 of Diamonds!
+8 of Spades!
+Jack of Clubs!
+5 of Diamonds!
+
+Ace of Hearts!
+
+Ryan played the 
+
+Cheree picked up.
+Cheree's updated hand:
+7 of Spades!
+5 of Clubs!
+
+Kara picked up.
+Kara's updated hand:
+10 of Diamonds!
+8 of Spades!
+Jack of Clubs!
+5 of Diamonds!
+2 of Diamonds!
+
+Ryan picked up.
+Ryan's updated hand:
+4 of Diamonds!
+7 of Diamonds!
+10 of Spades!
+6 of Spades!
+
+Cheree picked up.
+Cheree's updated hand:
+7 of Spades!
+5 of Clubs!
+Queen of Diamonds!
+
+Kara picked up.
+Kara's updated hand:
+10 of Diamonds!
+8 of Spades!
+Jack of Clubs!
+5 of Diamonds!
+2 of Diamonds!
+9 of Diamonds!
+
+Ryan picked up.
+Ryan's updated hand:
+4 of Diamonds!
+7 of Diamonds!
+10 of Spades!
+6 of Spades!
+Queen of Spades!
+
+Cheree picked up.
+Cheree's updated hand:
+7 of Spades!
+5 of Clubs!
+Queen of Diamonds!
+4 of Clubs!
+
+Kara picked up.
+Kara's updated hand:
+10 of Diamonds!
+8 of Spades!
+Jack of Clubs!
+5 of Diamonds!
+2 of Diamonds!
+9 of Diamonds!
+3 of Diamonds!
+
+Ryan picked up.
+Ryan's updated hand:
+4 of Diamonds!
+7 of Diamonds!
+10 of Spades!
+6 of Spades!
+Queen of Spades!
+4 of Spades!
+
+Cheree picked up.
+Cheree's updated hand:
+7 of Spades!
+5 of Clubs!
+Queen of Diamonds!
+4 of Clubs!
+Ace of Clubs!
+
+Kara picked up.
+Kara's updated hand:
+10 of Diamonds!
+8 of Spades!
+Jack of Clubs!
+5 of Diamonds!
+2 of Diamonds!
+9 of Diamonds!
+3 of Diamonds!
+10 of Clubs!
+
+Ryan picked up.
+Ryan's updated hand:
+4 of Diamonds!
+7 of Diamonds!
+10 of Spades!
+6 of Spades!
+Queen of Spades!
+4 of Spades!
+Ace of Spades!
+
+Ace of Clubs!
+
+Cheree played the 
+
+Jack of Clubs!
+
+Kara played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Cheree, it's your turn.
+
+5 of Clubs!
+
+Cheree played the 
+
+Ryan picked up.
+Ryan's updated hand:
+4 of Diamonds!
+7 of Diamonds!
+10 of Spades!
+6 of Spades!
+Queen of Spades!
+4 of Spades!
+Ace of Spades!
+Jack of Hearts!
+
+5 of Diamonds!
+
+Kara played the 
+
+King of Diamonds!
+
+Cheree played the 
+
+7 of Diamonds!
+
+Ryan played the 
+
+9 of Diamonds!
+
+Kara played the 
+
+Cheree picked up.
+Cheree's updated hand:
+7 of Spades!
+4 of Clubs!
+6 of Diamonds!
+
+4 of Diamonds!
+
+Ryan played the 
+
+2 of Diamonds!
+
+Kara played the 
+
+Last played card DOES affect Cheree
+
+The last card was a two!
+Cheree must now pick up 2 cards.
+
+Cheree's updated hand:
+7 of Spades!
+4 of Clubs!
+6 of Diamonds!
+3 of Spades!
+Jack of Diamonds!
+
+Ryan picked up.
+Ryan's updated hand:
+10 of Spades!
+6 of Spades!
+Queen of Spades!
+4 of Spades!
+Ace of Spades!
 Jack of Hearts!
 Jack of Spades!
 
-work picked up.
-work's updated hand:
-6 of Hearts!
-2 of Hearts!
-9 of Clubs!
+Kara is not affected by last played card
 
-3 of Hearts!
-
-ya dick played the 
-
-jack  picked up.
-jack 's updated hand:
-10 of Clubs!
-Jack of Clubs!
-5 of Clubs!
 10 of Diamonds!
-5 of Diamonds!
-6 of Clubs!
-4 of Hearts!
 
-8 of Hearts!
-
-plz played the 
-
-Last played card DOES affect work
-
-The last card was an eight!
-work is forced to skip their turn.
-
-ya dick, it's your turn.
-
-10 of Hearts!
-
-ya dick played the 
-
-10 of Clubs!
-
-jack  played the 
-
-8 of Clubs!
-
-plz played the 
-
-Last played card DOES affect work
-
-The last card was an eight!
-work is forced to skip their turn.
-
-ya dick, it's your turn.
-
-8 of Diamonds!
-
-ya dick played the 
-
-Last played card DOES affect jack 
-
-The last card was an eight!
-jack  is forced to skip their turn.
-
-plz, it's your turn.
-
-2 of Diamonds!
-
-plz played the 
-
-Last played card DOES affect work
-
-The last card was a two!
-work must now pick up 2 cards.
-
-work's updated hand:
-6 of Hearts!
-2 of Hearts!
-9 of Clubs!
-Queen of Hearts!
-9 of Diamonds!
-
-ya dick picked up.
-ya dick's updated hand:
-9 of Hearts!
-Ace of Clubs!
-4 of Clubs!
-Ace of Diamonds!
-
-jack  is not affected by last played card
-
-5 of Diamonds!
-
-jack  played the 
+Kara played the 
 
 6 of Diamonds!
 
-plz played the 
+Cheree played the 
 
-6 of Hearts!
+6 of Spades!
 
-work played the 
+Ryan played the 
 
-9 of Hearts!
+8 of Spades!
 
-ya dick played the 
+Kara played the 
 
+Last played card DOES affect Cheree
+
+The last card was an eight!
+Cheree is forced to skip their turn.
+
+Ryan, it's your turn.
+
+Jack of Spades!
+
+Ryan played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Cheree, it's your turn.
+
+7 of Spades!
+
+Cheree played the 
+
+Kara picked up.
+Kara's updated hand:
+3 of Diamonds!
+10 of Clubs!
+2 of Spades!
+
+Queen of Spades!
+
+Ryan played the 
+
+Last played card DOES affect Cheree
+
+The last card was a black queen!
+Cheree must now pick up 5 cards.
+
+Cheree's updated hand:
+4 of Clubs!
+3 of Spades!
+Jack of Diamonds!
+10 of Hearts!
+2 of Clubs!
+Queen of Clubs!
+9 of Spades!
 4 of Hearts!
 
-jack  played the 
+2 of Spades!
 
-Ace of Hearts!
+Kara played the 
 
-plz played the 
+Last played card DOES affect Ryan
 
-Queen of Hearts!
+The last card was a two!
+Ryan must now pick up 2 cards.
 
-work played the 
-
-ya dick picked up.
-ya dick's updated hand:
+Ryan's updated hand:
+10 of Spades!
+4 of Spades!
+Ace of Spades!
+Jack of Hearts!
 Ace of Diamonds!
+7 of Clubs!
+
+2 of Clubs!
+
+Cheree played the 
+
+Last played card DOES affect Kara
+
+The last card was a two!
+Kara must now pick up 2 cards.
+
+Kara's updated hand:
+3 of Diamonds!
+10 of Clubs!
+5 of Spades!
+6 of Clubs!
+
+7 of Clubs!
+
+Ryan played the 
+
 4 of Clubs!
-Ace of Clubs!
+
+Cheree played the 
+
+6 of Clubs!
+
+Kara played the 
+
+Ryan picked up.
+Ryan's updated hand:
+10 of Spades!
+4 of Spades!
+Ace of Spades!
+Jack of Hearts!
+Ace of Diamonds!
+Queen of Diamonds!
+
+King of Clubs!
+
+Cheree played the 
+
+10 of Clubs!
+
+Kara played the 
+
+10 of Spades!
+
+Ryan played the 
+
+3 of Spades!
+
+Cheree played the 
+
+3 of Diamonds!
+
+Kara played the 
+
+Ace of Diamonds!
+
+Ryan played the 
+
 Jack of Diamonds!
 
-jack  picked up.
-jack 's updated hand:
-Jack of Clubs!
-5 of Clubs!
-10 of Diamonds!
-6 of Clubs!
+Cheree played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Ryan, it's your turn.
+
+Queen of Diamonds!
+
+Ryan played the 
+
+Kara picked up.
+Kara's updated hand:
+5 of Spades!
+8 of Diamonds!
+
+Cheree picked up.
+Cheree's updated hand:
+10 of Hearts!
+9 of Spades!
+4 of Hearts!
+Queen of Clubs!
+
+Ryan picked up.
+Ryan's updated hand:
+4 of Spades!
+Ace of Spades!
+Jack of Hearts!
+Queen of Spades!
+
+8 of Diamonds!
+
+Kara played the 
+
+Last played card DOES affect Cheree
+
+The last card was an eight!
+Cheree is forced to skip their turn.
+
+Ryan, it's your turn.
+
+Ryan picked up.
+Ryan's updated hand:
+4 of Spades!
+Ace of Spades!
+Jack of Hearts!
+Queen of Spades!
+7 of Hearts!
+
+Kara is not affected by last played card
+
+Kara picked up.
+Kara's updated hand:
+5 of Spades!
+Queen of Hearts!
+
+Cheree is not affected by last played card
+
+Cheree picked up.
+Cheree's updated hand:
+10 of Hearts!
+9 of Spades!
+4 of Hearts!
+Queen of Clubs!
+5 of Hearts!
+
+Ryan is not affected by last played card
+
+Ryan picked up.
+Ryan's updated hand:
+4 of Spades!
+Ace of Spades!
+Jack of Hearts!
+Queen of Spades!
+7 of Hearts!
+Queen of Hearts!
+
+Kara is not affected by last played card
+
+Kara picked up.
+Kara's updated hand:
+5 of Spades!
+Queen of Hearts!
+8 of Hearts!
+
+Cheree is not affected by last played card
+
+Cheree picked up.
+Cheree's updated hand:
+10 of Hearts!
+9 of Spades!
+4 of Hearts!
+Queen of Clubs!
+5 of Hearts!
+8 of Clubs!
+
+Ryan is not affected by last played card
+
+Ryan picked up.
+Ryan's updated hand:
+4 of Spades!
+Ace of Spades!
+Jack of Hearts!
+Queen of Spades!
+7 of Hearts!
+Queen of Hearts!
 3 of Clubs!
+
+Kara is not affected by last played card
+
+8 of Hearts!
+
+Kara played the 
+
+Last played card DOES affect Cheree
+
+The last card was an eight!
+Cheree is forced to skip their turn.
+
+Ryan, it's your turn.
 
 Jack of Hearts!
 
-plz played the 
+Ryan played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Cheree, it's your turn.
+
+10 of Hearts!
+
+Cheree played the 
+
+Queen of Hearts!
+
+Kara played the 
+
+7 of Hearts!
+
+Ryan played the 
+
+4 of Hearts!
+
+Cheree played the 
+
+Kara picked up.
+Kara's updated hand:
+5 of Spades!
+9 of Clubs!
+
+4 of Spades!
+
+Ryan played the 
+
+9 of Spades!
+
+Cheree played the 
+
+5 of Spades!
+
+Kara played the 
+
+Ace of Spades!
+
+Ryan played the 
+
+Cheree picked up.
+Cheree's updated hand:
+Queen of Clubs!
+5 of Hearts!
+8 of Clubs!
+9 of Hearts!
+
+Kara picked up.
+Kara's updated hand:
+9 of Clubs!
+3 of Hearts!
+
+King of Spades!
+
+Ryan played the 
+
+Cheree picked up.
+Cheree's updated hand:
+Queen of Clubs!
+5 of Hearts!
+8 of Clubs!
+9 of Hearts!
+2 of Hearts!
+
+Kara picked up.
+Kara's updated hand:
+9 of Clubs!
+3 of Hearts!
+6 of Hearts!
+
+King of Hearts!
+
+Ryan played the 
 
 2 of Hearts!
 
-work played the 
+Cheree played the 
 
-Last played card DOES affect ya dick
+Last played card DOES affect Kara
 
 The last card was a two!
-ya dick must now pick up 2 cards.
+Kara must now pick up 2 cards.
 
-ya dick's updated hand:
-Ace of Diamonds!
-4 of Clubs!
+Kara's updated hand:
+9 of Clubs!
+3 of Hearts!
+6 of Hearts!
+Ace of Hearts!
 Ace of Clubs!
-Jack of Diamonds!
-Queen of Clubs!
+
+Ryan picked up.
+Ryan's updated hand:
+3 of Clubs!
+Jack of Clubs!
+
+Cheree is not affected by last played card
+
+5 of Hearts!
+
+Cheree played the 
+
+6 of Hearts!
+
+Kara played the 
+
+Ryan picked up.
+Ryan's updated hand:
+3 of Clubs!
+Jack of Clubs!
+5 of Clubs!
+
+9 of Hearts!
+
+Cheree played the 
+
+9 of Clubs!
+
+Kara played the 
+
+Jack of Clubs!
+
+Ryan played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Kara, it's your turn.
+
+Ace of Clubs!
+
+Kara played the 
+
 Queen of Clubs!
 
+Cheree played the 
+
+Last played card DOES affect Ryan
+
+The last card was a black queen!
+Ryan must now pick up 5 cards.
+
+Ryan's updated hand:
+3 of Clubs!
+5 of Clubs!
+5 of Diamonds!
+Queen of Diamonds!
+7 of Diamonds!
+9 of Diamonds!
+4 of Diamonds!
+
+Kara picked up.
+Kara's updated hand:
+Ace of Hearts!
+3 of Hearts!
+2 of Diamonds!
+
+Cheree is not affected by last played card
+
+8 of Clubs!
+
+Cheree played the 
+
+
+Cheree is out!
+
+Last played card DOES affect Ryan
+
+The last card was an eight!
+Ryan is forced to skip their turn.
+
+Kara, it's your turn.
+
+Kara picked up.
+Kara's updated hand:
+Ace of Hearts!
+3 of Hearts!
+2 of Diamonds!
+10 of Diamonds!
+
+Ryan is not affected by last played card
+
+3 of Clubs!
+
+Ryan played the 
+
+3 of Hearts!
+
+Kara played the 
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Clubs!
+5 of Diamonds!
+Queen of Diamonds!
+7 of Diamonds!
+9 of Diamonds!
+4 of Diamonds!
+6 of Diamonds!
+
+Ace of Hearts!
+
+Kara played the 
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Clubs!
+5 of Diamonds!
+Queen of Diamonds!
+7 of Diamonds!
+9 of Diamonds!
+4 of Diamonds!
+6 of Diamonds!
+6 of Spades!
+
+Kara picked up.
+Kara's updated hand:
+10 of Diamonds!
+2 of Diamonds!
+8 of Spades!
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Clubs!
+5 of Diamonds!
+Queen of Diamonds!
+7 of Diamonds!
+9 of Diamonds!
+4 of Diamonds!
+6 of Diamonds!
+6 of Spades!
+Jack of Spades!
+
+Kara picked up.
+Kara's updated hand:
+10 of Diamonds!
+2 of Diamonds!
+8 of Spades!
+7 of Spades!
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Clubs!
+5 of Diamonds!
+Queen of Diamonds!
+7 of Diamonds!
+9 of Diamonds!
+4 of Diamonds!
+6 of Diamonds!
+6 of Spades!
+Jack of Spades!
+Queen of Spades!
+
+Kara picked up.
+Kara's updated hand:
+10 of Diamonds!
+2 of Diamonds!
+8 of Spades!
+7 of Spades!
+2 of Spades!
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Clubs!
+5 of Diamonds!
+Queen of Diamonds!
+7 of Diamonds!
+9 of Diamonds!
+4 of Diamonds!
+6 of Diamonds!
+6 of Spades!
+Jack of Spades!
+Queen of Spades!
+2 of Clubs!
+
+Kara picked up.
+Kara's updated hand:
+10 of Diamonds!
+2 of Diamonds!
+8 of Spades!
+7 of Spades!
+2 of Spades!
+7 of Clubs!
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Clubs!
+5 of Diamonds!
+Queen of Diamonds!
+7 of Diamonds!
+9 of Diamonds!
+4 of Diamonds!
+6 of Diamonds!
+6 of Spades!
+Jack of Spades!
+Queen of Spades!
+2 of Clubs!
+4 of Clubs!
+
+Kara picked up.
+Kara's updated hand:
+10 of Diamonds!
+2 of Diamonds!
+8 of Spades!
+7 of Spades!
+2 of Spades!
+7 of Clubs!
+6 of Clubs!
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Clubs!
+5 of Diamonds!
+Queen of Diamonds!
+7 of Diamonds!
+9 of Diamonds!
+4 of Diamonds!
+6 of Diamonds!
+6 of Spades!
+Jack of Spades!
+Queen of Spades!
+2 of Clubs!
+4 of Clubs!
+Queen of Clubs!
+
+Kara picked up.
+Kara's updated hand:
+10 of Diamonds!
+2 of Diamonds!
+8 of Spades!
+7 of Spades!
+2 of Spades!
+7 of Clubs!
+6 of Clubs!
+10 of Clubs!
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Clubs!
+5 of Diamonds!
+Queen of Diamonds!
+7 of Diamonds!
+9 of Diamonds!
+4 of Diamonds!
+6 of Diamonds!
+6 of Spades!
+Jack of Spades!
+Queen of Spades!
+2 of Clubs!
+4 of Clubs!
+Queen of Clubs!
+10 of Spades!
+
+Kara picked up.
+Kara's updated hand:
+10 of Diamonds!
+2 of Diamonds!
+8 of Spades!
+7 of Spades!
+2 of Spades!
+7 of Clubs!
+6 of Clubs!
+10 of Clubs!
+3 of Spades!
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Clubs!
+5 of Diamonds!
+Queen of Diamonds!
+7 of Diamonds!
+9 of Diamonds!
+4 of Diamonds!
+6 of Diamonds!
+6 of Spades!
+Jack of Spades!
+Queen of Spades!
+2 of Clubs!
+4 of Clubs!
+Queen of Clubs!
+10 of Spades!
+3 of Diamonds!
+
+Kara picked up.
+Kara's updated hand:
+10 of Diamonds!
+2 of Diamonds!
+8 of Spades!
+7 of Spades!
+2 of Spades!
+7 of Clubs!
+6 of Clubs!
+10 of Clubs!
+3 of Spades!
+Ace of Diamonds!
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Clubs!
+5 of Diamonds!
+Queen of Diamonds!
+7 of Diamonds!
+9 of Diamonds!
+4 of Diamonds!
+6 of Diamonds!
+6 of Spades!
+Jack of Spades!
+Queen of Spades!
+2 of Clubs!
+4 of Clubs!
+Queen of Clubs!
+10 of Spades!
+3 of Diamonds!
+Jack of Diamonds!
+
+Ace of Diamonds!
+
+Kara played the 
+
+Jack of Diamonds!
+
+Ryan played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Kara, it's your turn.
+
+2 of Diamonds!
+
+Kara played the 
+
+Last played card DOES affect Ryan
+
+The last card was a two!
+Ryan must now pick up 2 cards.
+
+Ryan's updated hand:
+5 of Clubs!
+5 of Diamonds!
+Queen of Diamonds!
+7 of Diamonds!
+9 of Diamonds!
+4 of Diamonds!
+6 of Diamonds!
+6 of Spades!
+Jack of Spades!
+Queen of Spades!
+2 of Clubs!
+4 of Clubs!
+Queen of Clubs!
+10 of Spades!
+3 of Diamonds!
+Queen of Diamonds!
+8 of Diamonds!
+
+10 of Diamonds!
+
+Kara played the 
+
+8 of Diamonds!
+
+Ryan played the 
+
+Last played card DOES affect Kara
+
+The last card was an eight!
+Kara is forced to skip their turn.
+
+Ryan, it's your turn.
+
+Queen of Diamonds!
+
+Ryan played the 
+
+Kara picked up.
+Kara's updated hand:
+7 of Spades!
+3 of Spades!
+10 of Clubs!
+8 of Spades!
+6 of Clubs!
+7 of Clubs!
+2 of Spades!
+8 of Hearts!
+
+Queen of Spades!
+
+Ryan played the 
+
+Last played card DOES affect Kara
+
+The last card was a black queen!
+Kara must now pick up 5 cards.
+
+Kara's updated hand:
+7 of Spades!
+3 of Spades!
+10 of Clubs!
+8 of Spades!
+6 of Clubs!
+7 of Clubs!
+2 of Spades!
+8 of Hearts!
+Jack of Hearts!
+10 of Hearts!
+Queen of Hearts!
+7 of Hearts!
+4 of Hearts!
+
+Jack of Spades!
+
+Ryan played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Kara, it's your turn.
+
+2 of Spades!
+
+Kara played the 
+
+Last played card DOES affect Ryan
+
+The last card was a two!
+Ryan must now pick up 2 cards.
+
+Ryan's updated hand:
+5 of Clubs!
+5 of Diamonds!
+Queen of Diamonds!
+7 of Diamonds!
+9 of Diamonds!
+4 of Diamonds!
+6 of Diamonds!
+6 of Spades!
+2 of Clubs!
+4 of Clubs!
+Queen of Clubs!
+10 of Spades!
+3 of Diamonds!
+4 of Spades!
+9 of Spades!
+
+7 of Spades!
+
+Kara played the 
+
+10 of Spades!
+
+Ryan played the 
+
+3 of Spades!
+
+Kara played the 
+
+3 of Diamonds!
+
+Ryan played the 
+
+Kara picked up.
+Kara's updated hand:
+Queen of Hearts!
+10 of Hearts!
+8 of Hearts!
+7 of Clubs!
+10 of Clubs!
+7 of Hearts!
+Jack of Hearts!
+4 of Hearts!
+6 of Clubs!
+8 of Spades!
+5 of Spades!
+
+5 of Diamonds!
+
+Ryan played the 
+
+5 of Spades!
+
+Kara played the 
+
+9 of Spades!
+
+Ryan played the 
+
+8 of Spades!
+
+Kara played the 
+
+Last played card DOES affect Ryan
+
+The last card was an eight!
+Ryan is forced to skip their turn.
+
+Kara, it's your turn.
+
+8 of Hearts!
+
+Kara played the 
+
+Last played card DOES affect Ryan
+
+The last card was an eight!
+Ryan is forced to skip their turn.
+
+Kara, it's your turn.
+
+Jack of Hearts!
+
+Kara played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Ryan, it's your turn.
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Clubs!
+Queen of Diamonds!
+7 of Diamonds!
+9 of Diamonds!
+4 of Diamonds!
+6 of Diamonds!
+6 of Spades!
+2 of Clubs!
+4 of Clubs!
+Queen of Clubs!
+4 of Spades!
+Ace of Spades!
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Kara, it's your turn.
+
+7 of Hearts!
+
+Kara played the 
+
+7 of Diamonds!
+
+Ryan played the 
+
+7 of Clubs!
+
+Kara played the 
+
+2 of Clubs!
+
+Ryan played the 
+
+Last played card DOES affect Kara
+
+The last card was a two!
+Kara must now pick up 2 cards.
+
+Kara's updated hand:
+Queen of Hearts!
+10 of Clubs!
+6 of Clubs!
+10 of Hearts!
+4 of Hearts!
+Queen of Spades!
+Queen of Hearts!
+
+4 of Clubs!
+
+Ryan played the 
+
+4 of Hearts!
+
+Kara played the 
+
+4 of Spades!
+
+Ryan played the 
+
+King of Spades!
+
+Kara played the 
+
+Ace of Spades!
+
+Ryan played the 
+
+Kara picked up.
+Kara's updated hand:
+10 of Clubs!
+6 of Clubs!
+Queen of Hearts!
+10 of Hearts!
+Queen of Hearts!
+2 of Hearts!
+
+6 of Spades!
+
+Ryan played the 
+
+6 of Clubs!
+
+Kara played the 
+
+6 of Diamonds!
+
+Ryan played the 
+
+Kara picked up.
+Kara's updated hand:
+Queen of Hearts!
+10 of Clubs!
+Queen of Hearts!
+2 of Hearts!
+10 of Hearts!
+5 of Hearts!
+
+4 of Diamonds!
+
+Ryan played the 
+
+Kara picked up.
+Kara's updated hand:
+Queen of Hearts!
+10 of Clubs!
+Queen of Hearts!
+2 of Hearts!
+10 of Hearts!
+5 of Hearts!
+6 of Hearts!
+
+9 of Diamonds!
+
+Ryan played the 
+
+Kara picked up.
+Kara's updated hand:
+Queen of Hearts!
+10 of Clubs!
+Queen of Hearts!
+2 of Hearts!
+10 of Hearts!
+5 of Hearts!
+6 of Hearts!
+9 of Hearts!
+
+King of Diamonds!
+
+Ryan played the 
+
+King of Hearts!
+
+Kara played the 
+
+King of Clubs!
+
+Ryan played the 
+
+10 of Clubs!
+
+Kara played the 
+
+5 of Clubs!
+
+Ryan played the 
+
+
+Ryan is out!
+
+
+Scoreboard:
+1st:	Darren                                            (Hardcoded - Unaggressive)
+2nd:	Cheree                                            (Hardcoded - Aggressive)
+3rd:	Ryan                                              (Human)
+4th:	Kara                                              (Hardcoded - Random)
