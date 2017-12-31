@@ -1,607 +1,765 @@
 Players:
-Trigger
-Boycie
-Uncle Albert
-Denzil
+Ryan
+Eleanor
+Karen
+Shaun-Michael
 
 
-The cards have been dealt by Trigger and our first card to be played on is
-Queen of Diamonds!
+The cards have been dealt by Ryan and our first card to be played on is
+9 of Diamonds!
 
 The player left of the dealer will start.
 
-Boycie picked up.
-Boycie's updated hand:
+9 of Spades!
+
+Eleanor played the 
+
+9 of Clubs!
+
+Karen played the 
+
+Ace of Clubs!
+
+Shaun-Michael played the 
+
+Ryan picked up.
+Ryan's updated hand:
+9 of Hearts!
+4 of Diamonds!
 4 of Spades!
-7 of Hearts!
-4 of Clubs!
 
-Uncle Albert picked up.
-Uncle Albert's updated hand:
-6 of Hearts!
-10 of Spades!
-7 of Spades!
+3 of Clubs!
 
+Eleanor played the 
+
+
+Eleanor is out!
+
+Karen picked up.
+Karen's updated hand:
+Jack of Spades!
+5 of Diamonds!
+
+Shaun-Michael picked up.
+Shaun-Michael's updated hand:
+2 of Hearts!
+6 of Clubs!
+
+Ryan picked up.
+Ryan's updated hand:
+9 of Hearts!
+4 of Diamonds!
+4 of Spades!
+8 of Diamonds!
+
+Karen picked up.
+Karen's updated hand:
+Jack of Spades!
+5 of Diamonds!
 7 of Diamonds!
 
-Denzil played the 
+6 of Clubs!
 
-Trigger picked up.
-Trigger's updated hand:
-Queen of Spades!
-10 of Clubs!
+Shaun-Michael played the 
+
+Ryan picked up.
+Ryan's updated hand:
 9 of Hearts!
+4 of Diamonds!
+4 of Spades!
+8 of Diamonds!
+Queen of Hearts!
 
-7 of Hearts!
+Karen picked up.
+Karen's updated hand:
+Jack of Spades!
+5 of Diamonds!
+7 of Diamonds!
+8 of Spades!
 
-Boycie played the 
+Shaun-Michael picked up.
+Shaun-Michael's updated hand:
+2 of Hearts!
+7 of Clubs!
 
+Ryan picked up.
+Ryan's updated hand:
+9 of Hearts!
+4 of Diamonds!
+4 of Spades!
+8 of Diamonds!
+Queen of Hearts!
+4 of Clubs!
+
+Karen picked up.
+Karen's updated hand:
+Jack of Spades!
+5 of Diamonds!
+7 of Diamonds!
+8 of Spades!
+7 of Spades!
+
+7 of Clubs!
+
+Shaun-Michael played the 
+
+4 of Clubs!
+
+Ryan played the 
+
+Karen picked up.
+Karen's updated hand:
+Jack of Spades!
+5 of Diamonds!
+7 of Diamonds!
+8 of Spades!
+7 of Spades!
 6 of Hearts!
 
-Uncle Albert played the 
-
-6 of Diamonds!
-
-Denzil played the 
-
-
-Denzil is out!
-
-Trigger picked up.
-Trigger's updated hand:
-Queen of Spades!
-10 of Clubs!
-9 of Hearts!
-Queen of Spades!
-
-Boycie picked up.
-Boycie's updated hand:
-4 of Spades!
-4 of Clubs!
-3 of Diamonds!
-
-Uncle Albert picked up.
-Uncle Albert's updated hand:
-10 of Spades!
-7 of Spades!
-Ace of Diamonds!
-
-Trigger picked up.
-Trigger's updated hand:
-Queen of Spades!
-10 of Clubs!
-9 of Hearts!
-Queen of Spades!
+Shaun-Michael picked up.
+Shaun-Michael's updated hand:
 2 of Hearts!
+Ace of Spades!
 
-3 of Diamonds!
-
-Boycie played the 
-
-Ace of Diamonds!
-
-Uncle Albert played the 
-
-Trigger picked up.
-Trigger's updated hand:
-Queen of Spades!
-10 of Clubs!
-9 of Hearts!
-Queen of Spades!
-2 of Hearts!
-3 of Spades!
-
-Boycie picked up.
-Boycie's updated hand:
-4 of Spades!
-4 of Clubs!
-Jack of Clubs!
-
-Uncle Albert picked up.
-Uncle Albert's updated hand:
-10 of Spades!
-7 of Spades!
-5 of Spades!
-
-Trigger picked up.
-Trigger's updated hand:
-Queen of Spades!
-10 of Clubs!
-9 of Hearts!
-Queen of Spades!
-2 of Hearts!
-3 of Spades!
-10 of Diamonds!
-
-Boycie picked up.
-Boycie's updated hand:
-4 of Spades!
-4 of Clubs!
-Jack of Clubs!
-10 of Hearts!
-
-Uncle Albert picked up.
-Uncle Albert's updated hand:
-10 of Spades!
-7 of Spades!
-5 of Spades!
-Queen of Clubs!
-
-10 of Diamonds!
-
-Trigger played the 
-
-10 of Hearts!
-
-Boycie played the 
-
-10 of Spades!
-
-Uncle Albert played the 
-
-Queen of Spades!
-
-Trigger played the 
-
-Last played card DOES affect Boycie
-
-The last card was a black queen!
-Boycie must now pick up 5 cards.
-
-Boycie's updated hand:
-4 of Spades!
-4 of Clubs!
-Jack of Clubs!
-6 of Spades!
-3 of Hearts!
-9 of Spades!
 4 of Diamonds!
-9 of Diamonds!
 
-7 of Spades!
+Ryan played the 
 
-Uncle Albert played the 
+5 of Diamonds!
 
-King of Spades!
+Karen played the 
 
-Trigger played the 
-
-4 of Spades!
-
-Boycie played the 
-
-5 of Spades!
-
-Uncle Albert played the 
-
-3 of Spades!
-
-Trigger played the 
-
+Shaun-Michael picked up.
+Shaun-Michael's updated hand:
+2 of Hearts!
+Ace of Spades!
 6 of Spades!
 
-Boycie played the 
+8 of Diamonds!
 
-Uncle Albert picked up.
-Uncle Albert's updated hand:
-Queen of Clubs!
-8 of Spades!
+Ryan played the 
 
-Trigger picked up.
-Trigger's updated hand:
-10 of Clubs!
-9 of Hearts!
-2 of Hearts!
-Jack of Hearts!
-
-9 of Spades!
-
-Boycie played the 
-
-8 of Spades!
-
-Uncle Albert played the 
-
-Last played card DOES affect Trigger
+Last played card DOES affect Karen
 
 The last card was an eight!
-Trigger is forced to skip their turn.
+Karen is forced to skip their turn.
 
-Boycie, it's your turn.
+Shaun-Michael, it's your turn.
 
-Boycie picked up.
-Boycie's updated hand:
-4 of Clubs!
-Jack of Clubs!
-3 of Hearts!
-4 of Diamonds!
-9 of Diamonds!
-Queen of Hearts!
-
-Uncle Albert is not affected by last played card
-
-Uncle Albert picked up.
-Uncle Albert's updated hand:
-Queen of Clubs!
-Queen of Diamonds!
-
-Trigger is not affected by last played card
-
-Trigger picked up.
-Trigger's updated hand:
-10 of Clubs!
-9 of Hearts!
+Shaun-Michael picked up.
+Shaun-Michael's updated hand:
 2 of Hearts!
-Jack of Hearts!
-6 of Clubs!
-
-Boycie is not affected by last played card
-
-Boycie picked up.
-Boycie's updated hand:
-4 of Clubs!
-Jack of Clubs!
-3 of Hearts!
-4 of Diamonds!
-9 of Diamonds!
-Queen of Hearts!
-Jack of Spades!
-
-Uncle Albert is not affected by last played card
-
-Uncle Albert picked up.
-Uncle Albert's updated hand:
-Queen of Clubs!
-Queen of Diamonds!
-4 of Hearts!
-
-Trigger is not affected by last played card
-
-Trigger picked up.
-Trigger's updated hand:
-10 of Clubs!
-9 of Hearts!
-2 of Hearts!
-Jack of Hearts!
-6 of Clubs!
-Ace of Hearts!
-
-Boycie is not affected by last played card
-
-Jack of Spades!
-
-Boycie played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Trigger, it's your turn.
-
+Ace of Spades!
+6 of Spades!
 Jack of Hearts!
 
-Trigger played the 
+Ryan is not affected by last played card
 
-The last card was a jack!
-The direction of play has been reversed.
-
-Boycie, it's your turn.
-
-Jack of Clubs!
-
-Boycie played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Trigger, it's your turn.
-
-6 of Clubs!
-
-Trigger played the 
-
-Queen of Clubs!
-
-Uncle Albert played the 
-
-Last played card DOES affect Boycie
-
-The last card was a black queen!
-Boycie must now pick up 5 cards.
-
-Boycie's updated hand:
-4 of Clubs!
-3 of Hearts!
-4 of Diamonds!
-9 of Diamonds!
-Queen of Hearts!
-9 of Clubs!
-Ace of Clubs!
-2 of Diamonds!
-3 of Clubs!
-5 of Diamonds!
-
-10 of Clubs!
-
-Trigger played the 
-
-Uncle Albert picked up.
-Uncle Albert's updated hand:
-Queen of Diamonds!
-4 of Hearts!
-2 of Clubs!
-
-4 of Clubs!
-
-Boycie played the 
-
-Trigger picked up.
-Trigger's updated hand:
+Ryan picked up.
+Ryan's updated hand:
 9 of Hearts!
-2 of Hearts!
-Ace of Hearts!
-Jack of Diamonds!
-
-4 of Hearts!
-
-Uncle Albert played the 
-
-3 of Hearts!
-
-Boycie played the 
-
-2 of Hearts!
-
-Trigger played the 
-
-Last played card DOES affect Uncle Albert
-
-The last card was a two!
-Uncle Albert must now pick up 2 cards.
-
-Uncle Albert's updated hand:
-Queen of Diamonds!
-2 of Clubs!
-Ace of Spades!
-Queen of Clubs!
-
-2 of Diamonds!
-
-Boycie played the 
-
-Last played card DOES affect Trigger
-
-The last card was a two!
-Trigger must now pick up 2 cards.
-
-Trigger's updated hand:
-9 of Hearts!
-Ace of Hearts!
-Jack of Diamonds!
-5 of Clubs!
-8 of Diamonds!
-
+4 of Spades!
+Queen of Hearts!
 Queen of Diamonds!
 
-Uncle Albert played the 
+Karen is not affected by last played card
 
-4 of Diamonds!
-
-Boycie played the 
-
-Jack of Diamonds!
-
-Trigger played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Boycie, it's your turn.
-
-9 of Diamonds!
-
-Boycie played the 
-
-Uncle Albert picked up.
-Uncle Albert's updated hand:
-2 of Clubs!
-Ace of Spades!
-Queen of Clubs!
-8 of Clubs!
-
-9 of Hearts!
-
-Trigger played the 
-
-Queen of Hearts!
-
-Boycie played the 
-
-Uncle Albert picked up.
-Uncle Albert's updated hand:
-2 of Clubs!
-Ace of Spades!
-Queen of Clubs!
-8 of Clubs!
-2 of Spades!
-
-Ace of Hearts!
-
-Trigger played the 
-
-Ace of Clubs!
-
-Boycie played the 
-
-Ace of Spades!
-
-Uncle Albert played the 
-
-Trigger picked up.
-Trigger's updated hand:
-5 of Clubs!
-8 of Diamonds!
-8 of Hearts!
-
-Boycie picked up.
-Boycie's updated hand:
-9 of Clubs!
-3 of Clubs!
-5 of Diamonds!
-7 of Clubs!
-
-2 of Spades!
-
-Uncle Albert played the 
-
-Last played card DOES affect Trigger
-
-The last card was a two!
-Trigger must now pick up 2 cards.
-
-Trigger's updated hand:
-5 of Clubs!
-8 of Diamonds!
-8 of Hearts!
-5 of Hearts!
-Queen of Hearts!
-
-Boycie picked up.
-Boycie's updated hand:
-9 of Clubs!
-3 of Clubs!
-5 of Diamonds!
-7 of Clubs!
-Queen of Diamonds!
-
-Uncle Albert is not affected by last played card
-
-2 of Clubs!
-
-Uncle Albert played the 
-
-Last played card DOES affect Trigger
-
-The last card was a two!
-Trigger must now pick up 2 cards.
-
-Trigger's updated hand:
-5 of Clubs!
-8 of Diamonds!
-8 of Hearts!
-5 of Hearts!
-Queen of Hearts!
 7 of Diamonds!
-7 of Hearts!
 
-9 of Clubs!
+Karen played the 
 
-Boycie played the 
-
-King of Clubs!
-
-Uncle Albert played the 
-
-King of Hearts!
-
-Trigger played the 
+Shaun-Michael picked up.
+Shaun-Michael's updated hand:
+2 of Hearts!
+Ace of Spades!
+6 of Spades!
+Jack of Hearts!
+10 of Spades!
 
 King of Diamonds!
 
-Boycie played the 
+Ryan played the 
 
-Uncle Albert picked up.
-Uncle Albert's updated hand:
-8 of Clubs!
+Karen picked up.
+Karen's updated hand:
+Jack of Spades!
+8 of Spades!
+7 of Spades!
+6 of Hearts!
+Ace of Hearts!
+
+Shaun-Michael picked up.
+Shaun-Michael's updated hand:
+2 of Hearts!
+Ace of Spades!
+6 of Spades!
+Jack of Hearts!
+10 of Spades!
+Queen of Hearts!
+
+King of Hearts!
+
+Ryan played the 
+
 6 of Hearts!
 
-8 of Diamonds!
+Karen played the 
 
-Trigger played the 
+Jack of Hearts!
 
-Last played card DOES affect Boycie
+Shaun-Michael played the 
 
-The last card was an eight!
-Boycie is forced to skip their turn.
+The last card was a jack!
+The direction of play has been reversed.
 
-Uncle Albert, it's your turn.
+Karen, it's your turn.
 
-8 of Clubs!
+Jack of Spades!
 
-Uncle Albert played the 
+Karen played the 
 
-Last played card DOES affect Trigger
+The last card was a jack!
+The direction of play has been reversed.
 
-The last card was an eight!
-Trigger is forced to skip their turn.
+Shaun-Michael, it's your turn.
 
-Boycie, it's your turn.
+Ace of Spades!
 
-3 of Clubs!
+Shaun-Michael played the 
 
-Boycie played the 
+4 of Spades!
 
-Uncle Albert picked up.
-Uncle Albert's updated hand:
-6 of Hearts!
-6 of Diamonds!
+Ryan played the 
 
+7 of Spades!
+
+Karen played the 
+
+10 of Spades!
+
+Shaun-Michael played the 
+
+Ryan picked up.
+Ryan's updated hand:
+9 of Hearts!
 5 of Clubs!
 
-Trigger played the 
+8 of Spades!
 
-5 of Diamonds!
+Karen played the 
 
-Boycie played the 
+Last played card DOES affect Shaun-Michael
 
-6 of Diamonds!
+The last card was an eight!
+Shaun-Michael is forced to skip their turn.
 
-Uncle Albert played the 
+Ryan, it's your turn.
 
-7 of Diamonds!
+Ryan picked up.
+Ryan's updated hand:
+9 of Hearts!
+5 of Clubs!
+Queen of Spades!
 
-Trigger played the 
+Karen is not affected by last played card
 
-7 of Clubs!
+Karen picked up.
+Karen's updated hand:
+Ace of Hearts!
+Queen of Clubs!
 
-Boycie played the 
+Shaun-Michael is not affected by last played card
 
+6 of Spades!
 
-Boycie is out!
+Shaun-Michael played the 
 
-Uncle Albert picked up.
-Uncle Albert's updated hand:
-6 of Hearts!
-3 of Diamonds!
+King of Spades!
 
+Ryan played the 
+
+Karen picked up.
+Karen's updated hand:
+Ace of Hearts!
+Queen of Clubs!
+4 of Hearts!
+
+Shaun-Michael picked up.
+Shaun-Michael's updated hand:
+2 of Hearts!
+Queen of Hearts!
 7 of Hearts!
 
-Trigger played the 
+Ryan picked up.
+Ryan's updated hand:
+9 of Hearts!
+5 of Clubs!
+Jack of Diamonds!
 
-6 of Hearts!
+Karen picked up.
+Karen's updated hand:
+Ace of Hearts!
+Queen of Clubs!
+4 of Hearts!
+5 of Hearts!
 
-Uncle Albert played the 
+Shaun-Michael picked up.
+Shaun-Michael's updated hand:
+2 of Hearts!
+Queen of Hearts!
+7 of Hearts!
+3 of Diamonds!
+
+Ryan picked up.
+Ryan's updated hand:
+9 of Hearts!
+5 of Clubs!
+Jack of Diamonds!
+8 of Clubs!
+
+Karen picked up.
+Karen's updated hand:
+Ace of Hearts!
+Queen of Clubs!
+4 of Hearts!
+5 of Hearts!
+3 of Spades!
+
+Shaun-Michael picked up.
+Shaun-Michael's updated hand:
+2 of Hearts!
+Queen of Hearts!
+7 of Hearts!
+3 of Diamonds!
+Queen of Diamonds!
+
+Ryan picked up.
+Ryan's updated hand:
+9 of Hearts!
+5 of Clubs!
+Jack of Diamonds!
+8 of Clubs!
+5 of Spades!
+
+3 of Spades!
+
+Karen played the 
+
+3 of Diamonds!
+
+Shaun-Michael played the 
+
+Jack of Diamonds!
+
+Ryan played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Shaun-Michael, it's your turn.
+
+Queen of Diamonds!
+
+Shaun-Michael played the 
+
+Queen of Clubs!
+
+Karen played the 
+
+Last played card DOES affect Ryan
+
+The last card was a black queen!
+Ryan must now pick up 5 cards.
+
+Ryan's updated hand:
+9 of Hearts!
+5 of Clubs!
+8 of Clubs!
+5 of Spades!
+10 of Hearts!
+10 of Diamonds!
+8 of Hearts!
+6 of Diamonds!
+Queen of Spades!
+
+Queen of Hearts!
+
+Shaun-Michael played the 
+
+Ace of Hearts!
+
+Karen played the 
 
 8 of Hearts!
 
-Trigger played the 
+Ryan played the 
 
-Last played card DOES affect Uncle Albert
+Last played card DOES affect Shaun-Michael
 
 The last card was an eight!
-Uncle Albert is forced to skip their turn.
+Shaun-Michael is forced to skip their turn.
 
-Trigger, it's your turn.
+Karen, it's your turn.
+
+4 of Hearts!
+
+Karen played the 
+
+9 of Hearts!
+
+Ryan played the 
+
+2 of Hearts!
+
+Shaun-Michael played the 
+
+Last played card DOES affect Karen
+
+The last card was a two!
+Karen must now pick up 2 cards.
+
+Karen's updated hand:
+5 of Hearts!
+Ace of Diamonds!
+Jack of Clubs!
+
+10 of Hearts!
+
+Ryan played the 
+
+7 of Hearts!
+
+Shaun-Michael played the 
+
+
+Shaun-Michael is out!
 
 5 of Hearts!
 
-Trigger played the 
+Karen played the 
+
+5 of Spades!
+
+Ryan played the 
+
+Karen picked up.
+Karen's updated hand:
+Ace of Diamonds!
+Jack of Clubs!
+10 of Clubs!
+
+Queen of Spades!
+
+Ryan played the 
+
+Last played card DOES affect Karen
+
+The last card was a black queen!
+Karen must now pick up 5 cards.
+
+Karen's updated hand:
+Ace of Diamonds!
+Jack of Clubs!
+10 of Clubs!
+Queen of Clubs!
+3 of Hearts!
+2 of Clubs!
+2 of Diamonds!
+2 of Spades!
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Clubs!
+8 of Clubs!
+10 of Diamonds!
+6 of Diamonds!
+9 of Diamonds!
+
+Karen is not affected by last played card
+
+2 of Spades!
+
+Karen played the 
+
+Last played card DOES affect Ryan
+
+The last card was a two!
+Ryan must now pick up 2 cards.
+
+Ryan's updated hand:
+5 of Clubs!
+8 of Clubs!
+10 of Diamonds!
+6 of Diamonds!
+9 of Diamonds!
+9 of Spades!
+9 of Clubs!
+
+2 of Clubs!
+
+Karen played the 
+
+Last played card DOES affect Ryan
+
+The last card was a two!
+Ryan must now pick up 2 cards.
+
+Ryan's updated hand:
+5 of Clubs!
+8 of Clubs!
+10 of Diamonds!
+6 of Diamonds!
+9 of Diamonds!
+9 of Spades!
+9 of Clubs!
+Ace of Clubs!
+3 of Clubs!
+
+Jack of Clubs!
+
+Karen played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Ryan, it's your turn.
+
+8 of Clubs!
+
+Ryan played the 
+
+Last played card DOES affect Karen
+
+The last card was an eight!
+Karen is forced to skip their turn.
+
+Ryan, it's your turn.
+
+3 of Clubs!
+
+Ryan played the 
+
+10 of Clubs!
+
+Karen played the 
+
+5 of Clubs!
+
+Ryan played the 
+
+King of Clubs!
+
+Karen played the 
+
+Ace of Clubs!
+
+Ryan played the 
+
+Ace of Diamonds!
+
+Karen played the 
+
+6 of Diamonds!
+
+Ryan played the 
+
+2 of Diamonds!
+
+Karen played the 
+
+Last played card DOES affect Ryan
+
+The last card was a two!
+Ryan must now pick up 2 cards.
+
+Ryan's updated hand:
+10 of Diamonds!
+9 of Diamonds!
+9 of Spades!
+9 of Clubs!
+6 of Clubs!
+7 of Clubs!
+
+Karen picked up.
+Karen's updated hand:
+3 of Hearts!
+4 of Clubs!
+
+Ryan is not affected by last played card
+
+10 of Diamonds!
+
+Ryan played the 
+
+Karen picked up.
+Karen's updated hand:
+3 of Hearts!
+4 of Clubs!
+4 of Diamonds!
+
+9 of Diamonds!
+
+Ryan played the 
+
+4 of Diamonds!
+
+Karen played the 
+
+Ryan picked up.
+Ryan's updated hand:
+9 of Spades!
+9 of Clubs!
+6 of Clubs!
+7 of Clubs!
+5 of Diamonds!
+
+4 of Clubs!
+
+Karen played the 
+
+7 of Clubs!
+
+Ryan played the 
+
+Karen picked up.
+Karen's updated hand:
+3 of Hearts!
+8 of Diamonds!
+
+6 of Clubs!
+
+Ryan played the 
+
+Karen picked up.
+Karen's updated hand:
+3 of Hearts!
+8 of Diamonds!
+7 of Diamonds!
+
+9 of Clubs!
+
+Ryan played the 
+
+Karen picked up.
+Karen's updated hand:
+3 of Hearts!
+8 of Diamonds!
+7 of Diamonds!
+Queen of Diamonds!
+
+9 of Spades!
+
+Ryan played the 
+
+Karen picked up.
+Karen's updated hand:
+3 of Hearts!
+8 of Diamonds!
+7 of Diamonds!
+Queen of Diamonds!
+Queen of Hearts!
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Diamonds!
+6 of Hearts!
+
+Karen picked up.
+Karen's updated hand:
+3 of Hearts!
+8 of Diamonds!
+7 of Diamonds!
+Queen of Diamonds!
+Queen of Hearts!
+Jack of Hearts!
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Diamonds!
+6 of Hearts!
+Jack of Spades!
+
+Karen picked up.
+Karen's updated hand:
+3 of Hearts!
+8 of Diamonds!
+7 of Diamonds!
+Queen of Diamonds!
+Queen of Hearts!
+Jack of Hearts!
+Ace of Spades!
+
+Jack of Spades!
+
+Ryan played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Karen, it's your turn.
+
+Jack of Hearts!
+
+Karen played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Ryan, it's your turn.
+
+6 of Hearts!
+
+Ryan played the 
+
+3 of Hearts!
+
+Karen played the 
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Diamonds!
+4 of Spades!
+
+King of Hearts!
+
+Karen played the 
+
+Ryan picked up.
+Ryan's updated hand:
+5 of Diamonds!
+4 of Spades!
+7 of Spades!
+
+King of Diamonds!
+
+Karen played the 
+
+5 of Diamonds!
+
+Ryan played the 
+
+7 of Diamonds!
+
+Karen played the 
+
+7 of Spades!
+
+Ryan played the 
+
+Ace of Spades!
+
+Karen played the 
+
+4 of Spades!
+
+Ryan played the 
 
 
-Trigger is out!
+Ryan is out!
 
 
 Scoreboard:
-1st:	Denzil                                            (Hardcoded - Random)
-2nd:	Boycie                                            (Hardcoded - Aggressive)
-3rd:	Trigger                                           (Human)
-4th:	Uncle Albert                                      (Hardcoded - Unaggressive)
+1st:	Eleanor                                           (Hardcoded - Aggressive)
+2nd:	Shaun-Michael                                     (Hardcoded - Random)
+3rd:	Ryan                                              (Human)
+4th:	Karen                                             (Hardcoded - Unaggressive)

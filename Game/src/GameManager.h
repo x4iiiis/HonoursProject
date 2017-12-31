@@ -303,54 +303,60 @@ auto getDirectionOfPlay()
 				GameText << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
 				return false;
 			}
-
-			//If the card was played more than 0 turns ago, then it doesn't even matter
-			if (DeckOfCards.lastCard[0]->turnsSincePlayed = 1)
+			else
 			{
-				int LCP = 0;
-				int CP = 0;
-
-				//Find index of current player and the last player to play a card
-				for (int i = 0; i < ListOfPlayers.size(); i++)
-				{
-					if (ListOfPlayers[i] == LastCardPlayer)
-					{
-						LCP = i;
-					}
-
-					if (ListOfPlayers[i] == CurrentPlayer)
-					{
-						CP = i;
-					}
-				}
-
-				//Using the indexes to determine whether or not the card was played by the previous player
-				//Not sure if all of this logic is right yet tbh
-				if (LCP = (CP - 1) || (LCP = (CP + 1)))
-				{
-					cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
-					GameText << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
-					return true;
-				}
-
-
-				if ((LCP = (NumberOfPlayers - 1)) && (CP = 0) && (DirectionOfPlay == GameDirection::Clockwise))
-				{
-					cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
-					GameText << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
-					return true;
-				}
-
-				if ((LCP = 0) && (CP = (NumberOfPlayers - 1)) && (DirectionOfPlay == GameDirection::AntiClockwise))
-				{
-					cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
-					GameText << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
-					return true;
-				}
-				cout << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
-				GameText << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
-				return false;
+				cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+				GameText << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+				return true;
 			}
+
+			////If the card was played more than 0 turns ago, then it doesn't even matter
+			//if (DeckOfCards.lastCard[0]->turnsSincePlayed = 1)
+			//{
+			//	int LCP = 0;
+			//	int CP = 0;
+
+			//	//Find index of current player and the last player to play a card
+			//	for (int i = 0; i < ListOfPlayers.size(); i++)
+			//	{
+			//		if (ListOfPlayers[i] == LastCardPlayer)
+			//		{
+			//			LCP = i;
+			//		}
+
+			//		if (ListOfPlayers[i] == CurrentPlayer)
+			//		{
+			//			CP = i;
+			//		}
+			//	}
+
+			//	//Using the indexes to determine whether or not the card was played by the previous player
+			//	//Not sure if all of this logic is right yet tbh
+			//	if (LCP = (CP - 1) || (LCP = (CP + 1)))
+			//	{
+			//		cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+			//		GameText << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+			//		return true;
+			//	}
+
+
+			//	if ((LCP = (NumberOfPlayers - 1)) && (CP = 0) && (DirectionOfPlay == GameDirection::Clockwise))
+			//	{
+			//		cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+			//		GameText << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+			//		return true;
+			//	}
+
+			//	if ((LCP = 0) && (CP = (NumberOfPlayers - 1)) && (DirectionOfPlay == GameDirection::AntiClockwise))
+			//	{
+			//		cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+			//		GameText << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+			//		return true;
+			//	}
+			//	cout << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
+			//	GameText << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
+			//	return false;
+			//}
 		}
 		//Same for Jack but no need for prints
 		else if (DeckOfCards.lastCard[0]->cardType == card::type::Jack)
@@ -360,46 +366,50 @@ auto getDirectionOfPlay()
 				{
 					return false;
 				}
+				else
+				{
+					return true;
+				}
 
 				//If the card was played more than 0 turns ago, then it doesn't even matter
-				if (DeckOfCards.lastCard[0]->turnsSincePlayed = 1)
-				{
-					int LCP = 0;
-					int CP = 0;
+				//if (DeckOfCards.lastCard[0]->turnsSincePlayed = 1)
+				//{
+				//	int LCP = 0;
+				//	int CP = 0;
 
-					//Find index of current player and the last player to play a card
-					for (int i = 0; i < ListOfPlayers.size(); i++)
-					{
-						if (ListOfPlayers[i] == LastCardPlayer)
-						{
-							LCP = i;
-						}
+				//	//Find index of current player and the last player to play a card
+				//	for (int i = 0; i < ListOfPlayers.size(); i++)
+				//	{
+				//		if (ListOfPlayers[i] == LastCardPlayer)
+				//		{
+				//			LCP = i;
+				//		}
 
-						if (ListOfPlayers[i] == CurrentPlayer)
-						{
-							CP = i;
-						}
-					}
+				//		if (ListOfPlayers[i] == CurrentPlayer)
+				//		{
+				//			CP = i;
+				//		}
+				//	}
 
-					//Using the indexes to determine whether or not the card was played by the previous player
-					//Not sure if all of this logic is right yet tbh
-					if (LCP = (CP - 1) || (LCP = (CP + 1)))
-					{
-						return true;
-					}
+				//	//Using the indexes to determine whether or not the card was played by the previous player
+				//	//Not sure if all of this logic is right yet tbh
+				//	if (LCP = (CP - 1) || (LCP = (CP + 1)))
+				//	{
+				//		return true;
+				//	}
 
 
-					if ((LCP = (NumberOfPlayers - 1)) && (CP = 0) && (DirectionOfPlay == GameDirection::Clockwise))
-					{
-						return true;
-					}
+				//	if ((LCP = (NumberOfPlayers - 1)) && (CP = 0) && (DirectionOfPlay == GameDirection::Clockwise))
+				//	{
+				//		return true;
+				//	}
 
-					if ((LCP = 0) && (CP = (NumberOfPlayers - 1)) && (DirectionOfPlay == GameDirection::AntiClockwise))
-					{
-						return true;
-					}
-					return false;
-				}
+				//	if ((LCP = 0) && (CP = (NumberOfPlayers - 1)) && (DirectionOfPlay == GameDirection::AntiClockwise))
+				//	{
+				//		return true;
+				//	}
+				//	return false;
+				//}
 			}
 			return false;
 	}
@@ -416,23 +426,14 @@ auto getDirectionOfPlay()
 
 		if (card_is_playable(c))
 		{
-			//if (GetCurrentPlayer()->playstyle != player::Playstyle::Human)
-			//{
-			//	cout << "Not human, sleeping for 3" << endl << endl;
-			//	//If the current player is not human, take 3 seconds before trying to make a move
-			//	//just to allow us to see what the player is doing, and also to make it feel a bit
-			//	//more authentic, rather than being able to loop through several non-human players'
-			//	//moves in the blink of an eye
-			//	sleep(seconds(3.0f));
-			//}
-
 			//Trying to sort the problem where rules are enforced more than once if the last card remains the same
 			NoLongerLastCard(DeckOfCards.lastCard[0]);
-			//c->turnsSincePlayed = 0;
 
 			DeckOfCards.lastCard.push_back(c);
 			DeckOfCards.cardStack.push_back(DeckOfCards.lastCard[0]);
 			DeckOfCards.lastCard.erase(DeckOfCards.lastCard.begin());
+
+			DeckOfCards.lastCard[0]->turnsSincePlayed = 0;
 
 			cout << GetCurrentPlayer()->name << " played the ";
 			GameText << GetCurrentPlayer()->name << " played the ";

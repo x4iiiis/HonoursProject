@@ -178,3 +178,30 @@ Scoreboard:
 4th:	Uncle Albert                                      (Hardcoded - Unaggressive)
 ------------------------------------------------------------------------------------
 
+Date:	31/12/2017	Time:	16:03
+
+Scoreboard:
+1st:	Chris Ostreicher                                  (Hardcoded - Unaggressive)
+2nd:	Chuck Sherman                                     (Hardcoded - Random)
+3rd:	Paul Finch                                        (Hardcoded - Aggressive)
+4th:	Steve Stifler                                     (Human)
+------------------------------------------------------------------------------------
+
+Date:	31/12/2017	Time:	16:04
+
+Scoreboard:
+1st:	Victoria Lathum                                   (Hardcoded - Unaggressive)
+2nd:	Jim Levenstein                                    (Human)
+3rd:	Kevin Myres                                       (Hardcoded - Random)
+4th:	Michelle Flaherty                                 (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	31/12/2017	Time:	16:27
+
+Scoreboard:
+1st:	Eleanor                                           (Hardcoded - Aggressive)
+2nd:	Shaun-Michael                                     (Hardcoded - Random)
+3rd:	Ryan                                              (Human)
+4th:	Karen                                             (Hardcoded - Unaggressive)
+------------------------------------------------------------------------------------
+
