@@ -85,3 +85,70 @@ Scoreboard:
 4th:	Zoe                                               (Hardcoded - Aggressive)
 ------------------------------------------------------------------------------------
 
+Date:	31/12/2017	Time:	01:17
+
+Scoreboard:
+1st:	Tom                                               (Human)
+2nd:	Jerry                                             (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	31/12/2017	Time:	01:20
+
+Scoreboard:
+1st:	Woody                                             (Human)
+2nd:	Bullseye                                          (Hardcoded - Random)
+3rd:	Jessie                                            (Hardcoded - Unaggressive)
+4th:	Buzz                                              (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	31/12/2017	Time:	01:38
+
+Scoreboard:
+1st:	Zoe                                               (Hardcoded - Aggressive)
+2nd:	Ryan                                              (Human)
+------------------------------------------------------------------------------------
+
+Date:	31/12/2017	Time:	01:59
+
+Scoreboard:
+1st:	Scott                                             (Hardcoded - Random)
+2nd:	Ryan                                              (Human)
+3rd:	Mikey                                             (Hardcoded - Aggressive)
+4th:	Chris                                             (Hardcoded - Unaggressive)
+------------------------------------------------------------------------------------
+
+Date:	31/12/2017	Time:	02:22
+
+Scoreboard:
+1st:	Kevin Bridges                                     (Hardcoded - Unaggressive)
+2nd:	Russell Brand                                     (Hardcoded - Random)
+3rd:	Jimmy Carr                                        (Human)
+4th:	Frankie Boyle                                     (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	31/12/2017	Time:	02:41
+
+Scoreboard:
+1st:	Pluto                                             (Hardcoded - Random)
+2nd:	Goofy                                             (Hardcoded - Unaggressive)
+3rd:	Mickey                                            (Human)
+4th:	Minnie                                            (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	31/12/2017	Time:	03:14
+
+Scoreboard:
+1st:	Endgame                                           (Hardcoded - Unaggressive)
+2nd:	The Sufferer and the Witness                      (Hardcoded - Aggressive)
+3rd:	Appeal to Reason                                  (Human)
+4th:	Siren Song of the Counter Culture                 (Hardcoded - Random)
+------------------------------------------------------------------------------------
+
+Date:	31/12/2017	Time:	03:25
+
+Scoreboard:
+1st:	out                                               (Hardcoded - Aggressive)
+2nd:	jack                                              (Hardcoded - Unaggressive)
+3rd:	Trying                                            (Human)
+------------------------------------------------------------------------------------
+

@@ -19,11 +19,19 @@ public:
 	
 	void PlayerIsOut(shared_ptr<player> player, int numberOfPlayers)
 	{
+		//For keeping track of what happened each game
+		fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
+		if (!GameText.is_open())
+		{
+			cout << "Error opening GameRecords.txt" << endl << endl;
+		}
+
 		Scoreboard.push_back(player);
 
 		if (Scoreboard.size() < numberOfPlayers)
 		{
 			cout << endl << player->name << " is out!";
+			GameText << endl << player->name << " is out!" << endl << endl;;
 
 			if (Scoreboard.size() != numberOfPlayers - 1)
 			{

@@ -262,11 +262,11 @@ auto getDirectionOfPlay()
 	{
 		if (DirectionOfPlay == GameDirection::Clockwise)
 		{
-			DirectionOfPlay = GameDirection::AntiClockwise;
+			DirectionOfPlay == GameDirection::AntiClockwise;
 		}
 		else
 		{
-			DirectionOfPlay = GameDirection::Clockwise;
+			DirectionOfPlay == GameDirection::Clockwise;
 		}
 	}
 
@@ -276,8 +276,20 @@ auto getDirectionOfPlay()
 		return LastCardPlayer;
 	}
 
+	void SetLastCardPlayer(shared_ptr<player> lcp)
+	{
+		LastCardPlayer = lcp;
+	}
+
 	bool DoesLastCardAffectCurrentPlayer(shared_ptr<player> LastCardPlayer, shared_ptr<player> CurrentPlayer)
 	{
+		//For keeping track of what happened each game
+		fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
+		if (!GameText.is_open())
+		{
+			cout << "Error opening GameRecords.txt" << endl << endl;
+		}
+
 		//printing whether the player is affected by cards that don't bare rules was annoying me 
 		if ((DeckOfCards.lastCard[0]->cardType == card::type::Queen && DeckOfCards.lastCard[0]->cardColour == card::colour::Black)
 			|| (DeckOfCards.lastCard[0]->cardType == card::type::Two)
@@ -288,6 +300,7 @@ auto getDirectionOfPlay()
 			if (DeckOfCards.lastCard[0]->turnsSincePlayed != 1)
 			{
 				cout << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
+				GameText << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
 				return false;
 			}
 
@@ -316,6 +329,7 @@ auto getDirectionOfPlay()
 				if (LCP = (CP - 1) || (LCP = (CP + 1)))
 				{
 					cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+					GameText << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
 					return true;
 				}
 
@@ -323,15 +337,18 @@ auto getDirectionOfPlay()
 				if ((LCP = (NumberOfPlayers - 1)) && (CP = 0) && (DirectionOfPlay == GameDirection::Clockwise))
 				{
 					cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+					GameText << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
 					return true;
 				}
 
 				if ((LCP = 0) && (CP = (NumberOfPlayers - 1)) && (DirectionOfPlay == GameDirection::AntiClockwise))
 				{
 					cout << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
+					GameText << "Last played card DOES affect " << GetCurrentPlayer()->name << endl << endl;
 					return true;
 				}
 				cout << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
+				GameText << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
 				return false;
 			}
 		}
@@ -341,6 +358,13 @@ auto getDirectionOfPlay()
 	//Play your chosen card
 	void play(shared_ptr<card> c)
 	{
+		//For keeping track of what happened each game
+		fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
+		if (!GameText.is_open())
+		{
+			cout << "Error opening GameRecords.txt" << endl << endl;
+		}
+
 		if (card_is_playable(c))
 		{
 			//if (GetCurrentPlayer()->playstyle != player::Playstyle::Human)
@@ -362,8 +386,10 @@ auto getDirectionOfPlay()
 			DeckOfCards.lastCard.erase(DeckOfCards.lastCard.begin());
 
 			cout << GetCurrentPlayer()->name << " played the ";
+			GameText << GetCurrentPlayer()->name << " played the ";
 			DeckOfCards.identify_card(c);
 			cout << endl << endl;
+			GameText << endl << endl;
 
 			GetCurrentPlayer()->canPlay = false;
 			GetCurrentPlayer()->canPickUp = false;
@@ -394,10 +420,13 @@ auto getDirectionOfPlay()
 		else
 		{
 			cout << "Sorry " << CurrentPlayer->name << ", you cannot play this card. The " << endl;
+			GameText << "Sorry " << CurrentPlayer->name << ", you cannot play this card. The " << endl;
 			DeckOfCards.identify_card(c);
 			cout << "cannot be played on top of the ";
+			GameText << "cannot be played on top of the ";
 			DeckOfCards.identify_cards(DeckOfCards.lastCard);
 			cout << "." << endl << endl;
+			GameText << "." << endl << endl;
 		}
 	}
 	
@@ -457,6 +486,13 @@ auto getDirectionOfPlay()
 
 	void GameOver()
 	{
+		//For keeping track of what happened each game
+		fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
+		if (!GameText.is_open())
+		{
+			cout << "Error opening GameRecords.txt" << endl << endl;
+		}
+
 		fstream GameRecords("../GameRecords/GameRecords.txt", ios::in | ios::out | ios::app);
 		if (!GameRecords.is_open())
 		{
@@ -512,6 +548,7 @@ auto getDirectionOfPlay()
 			GameRecords << endl;
 
 			GameRecords << endl << "Scoreboard:" << endl;
+			GameText << endl << "Scoreboard:" << endl;
 
 			//Printing scoreboard to file
 			for (int i = 0; i < Scoreboard.getScoreboard().size(); i++)
@@ -520,15 +557,19 @@ auto getDirectionOfPlay()
 				{
 				case 0:
 					GameRecords << "1st:\t" << setw(50) << left << Scoreboard.getScoreboard()[i]->name << Scoreboard.getScoreboard()[i]->getPlaystyle() << endl;
+					GameText << "1st:\t" << setw(50) << left << Scoreboard.getScoreboard()[i]->name << Scoreboard.getScoreboard()[i]->getPlaystyle() << endl;
 					break;
 				case 1:
 					GameRecords << "2nd:\t" << setw(50) << left << Scoreboard.getScoreboard()[i]->name << Scoreboard.getScoreboard()[i]->getPlaystyle() << endl;
+					GameText << "2nd:\t" << setw(50) << left << Scoreboard.getScoreboard()[i]->name << Scoreboard.getScoreboard()[i]->getPlaystyle() << endl;
 					break;
 				case 2:
 					GameRecords << "3rd:\t" << setw(50) << left << Scoreboard.getScoreboard()[i]->name << Scoreboard.getScoreboard()[i]->getPlaystyle() << endl;
+					GameText << "3rd:\t" << setw(50) << left << Scoreboard.getScoreboard()[i]->name << Scoreboard.getScoreboard()[i]->getPlaystyle() << endl;
 					break;
 				case 3:
 					GameRecords << "4th:\t" << setw(50) << left << Scoreboard.getScoreboard()[i]->name << Scoreboard.getScoreboard()[i]->getPlaystyle() << endl;
+					GameText << "4th:\t" << setw(50) << left << Scoreboard.getScoreboard()[i]->name << Scoreboard.getScoreboard()[i]->getPlaystyle() << endl;
 					break;
 				default:
 					break;
@@ -569,6 +610,13 @@ auto getDirectionOfPlay()
 	//Rules
 	void ConsultRules()
 	{
+		//For keeping track of what happened each game
+		fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
+		if (!GameText.is_open())
+		{
+			cout << "Error opening GameRecords.txt" << endl << endl;
+		}
+
 		if (Scoreboard.Gameover(GetNumberOfPlayers()))
 		{
 			return;
@@ -584,14 +632,15 @@ auto getDirectionOfPlay()
 
 			switch (DeckOfCards.lastCard[0]->cardType)
 			{
-				//Need to be able to tell who played it, otherwise that black queen is gonna make everyone pick up 5 until we run out of cards
-				//Also it isn't PlayerList[0], it'll be whoever's turn it is once we've got that figured out
 				case(card::type::Queen):
 				{
 					if (DeckOfCards.lastCard[0]->cardColour == card::colour::Black)
 					{
 						cout << "The last card was a black queen!" << endl;
-						cout << GetCurrentPlayer()->name << " must now pick up 5 cards." << endl << endl;
+						cout << GetCurrentPlayer()->name << " must now pick up 5 cards." << endl << endl; 
+						
+						GameText << "The last card was a black queen!" << endl;
+						GameText << GetCurrentPlayer()->name << " must now pick up 5 cards." << endl << endl;
 
 						GetCurrentPlayer()->canPickUp = true;
 						GetCurrentPlayer()->canPlay = false;
@@ -605,6 +654,7 @@ auto getDirectionOfPlay()
 
 						//Display updated hand
 						cout << GetCurrentPlayer()->name << "'s updated hand:" << endl;
+						GameText << GetCurrentPlayer()->name << "'s updated hand:" << endl;
 						DeckOfCards.identify_cards(GetCurrentPlayer()->hand);
 
 						GetCurrentPlayer()->canPickUp = false;
@@ -622,7 +672,10 @@ auto getDirectionOfPlay()
 				case(card::type::Two):
 				{
 					cout << "The last card was a two!" << endl;
-					cout << GetCurrentPlayer()->name << " must now pick 2 cards." << endl << endl;
+					cout << GetCurrentPlayer()->name << " must now pick up 2 cards." << endl << endl;
+
+					GameText << "The last card was a two!" << endl;
+					GameText << GetCurrentPlayer()->name << " must now pick up 2 cards." << endl << endl;
 
 					GetCurrentPlayer()->canPickUp = true;
 					GetCurrentPlayer()->canPlay = false;
@@ -637,6 +690,7 @@ auto getDirectionOfPlay()
 
 					//Display PlayerList[0]'s updated hand
 					cout << GetCurrentPlayer()->name << "'s updated hand:" << endl;
+					GameText << GetCurrentPlayer()->name << "'s updated hand:" << endl;
 					DeckOfCards.identify_cards(GetCurrentPlayer()->hand);
 					//GameManager::Manager()->DeckOfCards.identify_cards(PlayerList[0]->hand);
 
@@ -651,6 +705,7 @@ auto getDirectionOfPlay()
 				case(card::type::Jack):
 				{
 					cout << "The last card was a jack!" << endl;
+					GameText << "The last card was a jack!" << endl;
 					ChangeDirectionOfPlay();
 
 					GetCurrentPlayer()->canPickUp = false;
@@ -658,8 +713,12 @@ auto getDirectionOfPlay()
 
 					NextPlayer();
 					NextPlayer();
+					
 					cout << "The direction of play has been reversed." << endl << endl;
 					cout << GetCurrentPlayer()->name << ", it's your turn." << endl << endl;
+
+					GameText << "The direction of play has been reversed." << endl << endl;
+					GameText << GetCurrentPlayer()->name << ", it's your turn." << endl << endl;
 
 					can_play_checker(GetCurrentPlayer()->hand);
 					break;
@@ -671,25 +730,30 @@ auto getDirectionOfPlay()
 					cout << "The last card was an eight!" << endl;
 					cout << GetCurrentPlayer()->name << " is forced to skip their turn." << endl << endl;
 
+					GameText << "The last card was an eight!" << endl;
+					GameText << GetCurrentPlayer()->name << " is forced to skip their turn." << endl << endl; 
+
 					GetCurrentPlayer()->canPickUp = false;
 					GetCurrentPlayer()->canPlay = false;
 
 					NextPlayer();
 					cout << GetCurrentPlayer()->name << ", it's your turn." << endl << endl;
+					GameText << GetCurrentPlayer()->name << ", it's your turn." << endl << endl;
 
 					can_play_checker(GetCurrentPlayer()->hand);
+					break;
 				}
 				//case(card::type::Ace):
-				{
+				//{
 					//Can nominate a suit (Won't be in AI version)
-				}
+				//}
 				//case(card::type::Seven):
-				{
+				//{
 					//Can play the rest of that suit (Not in AI version)
-				}
+				//}
 				default:
 				{
-					can_play_checker(GetCurrentPlayer()->hand);
+					//can_play_checker(GetCurrentPlayer()->hand);
 					break;
 				}
 			}

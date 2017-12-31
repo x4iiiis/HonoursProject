@@ -239,91 +239,123 @@ public:
 
 	void identify_cards(vector<shared_ptr<card>> unidentifiedCards)
 	{
+		fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
+		if (!GameText.is_open())
+		{
+			cout << "Error opening GameRecords.txt" << endl << endl;
+		}
+
 		for (auto c : unidentifiedCards)
 		{
 			if (c->cardType == card::type::Ace)
 			{
 				cout << "Ace of ";
+				GameText << "Ace of ";
 			}
 			if (c->cardType == card::type::Jack)
 			{
 				cout << "Jack of ";
+				GameText << "Jack of ";
 			}
 			if (c->cardType == card::type::Queen)
 			{
 				cout << "Queen of ";
+				GameText << "Queen of ";
 			}
 			if (c->cardType == card::type::King)
 			{
-				cout << "King of ";
+				cout << "Queen of ";
+				GameText << "Queen of ";
 			}
 			if (c->cardType != card::type::Ace && c->cardType != card::type::Jack && c->cardType != card::type::Queen && c->cardType != card::type::King)
 			{
 				cout << (static_cast<int>(c->cardType) + 1) << " of ";
+				GameText << (static_cast<int>(c->cardType) + 1) << " of ";
 			}
 
 
 			if (c->cardSuit == card::suit::Diamonds)
 			{
 				cout << "Diamonds!" << endl;
+				GameText << "Diamonds!" << endl;
 			}
 			if (c->cardSuit == card::suit::Clubs)
 			{
 				cout << "Clubs!" << endl;
+				GameText << "Clubs!" << endl;
 			}
 			if (c->cardSuit == card::suit::Hearts)
 			{
 				cout << "Hearts!" << endl;
+				GameText << "Hearts!" << endl;
 			}
 			if (c->cardSuit == card::suit::Spades)
 			{
 				cout << "Spades!" << endl;
+				GameText << "Spades!" << endl;
 			}
 		}
 		cout << endl;
+		GameText << endl;
 	}
 
 	void identify_card(shared_ptr<card> c)
 	{
+		fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
+		if (!GameText.is_open())
+		{
+			cout << "Error opening GameRecords.txt" << endl << endl;
+		}
+
 		if (c->cardType == card::type::Ace)
 		{
 			cout << "Ace of ";
+			GameText << "Ace of ";
 		}
 		if (c->cardType == card::type::Jack)
 		{
 			cout << "Jack of ";
+			GameText << "Jack of ";
 		}
 		if (c->cardType == card::type::Queen)
 		{
 			cout << "Queen of ";
+			GameText << "Queen of ";
 		}
 		if (c->cardType == card::type::King)
 		{
 			cout << "King of ";
+			GameText << "King of ";
 		}
 		if (c->cardType != card::type::Ace && c->cardType != card::type::Jack && c->cardType != card::type::Queen && c->cardType != card::type::King)
 		{
 			cout << (static_cast<int>(c->cardType) + 1) << " of ";
+			GameText << (static_cast<int>(c->cardType) + 1) << " of ";
 		}
 
 
 		if (c->cardSuit == card::suit::Diamonds)
 		{
 			cout << "Diamonds!" << endl;
+			GameText << "Diamonds!" << endl;
 		}
 		if (c->cardSuit == card::suit::Clubs)
 		{
 			cout << "Clubs!" << endl;
+			GameText << "Clubs!" << endl;
 		}
 		if (c->cardSuit == card::suit::Hearts)
 		{
 			cout << "Hearts!" << endl;
+			GameText << "Hearts!" << endl;
 		}
 		if (c->cardSuit == card::suit::Spades)
 		{
 			cout << "Spades!" << endl;
+			GameText << "Spades!" << endl;
 		}
 		cout << endl;
+		GameText << endl;
 	}
 
 	void defineCardColours(vector<shared_ptr<card>> allCards)

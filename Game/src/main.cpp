@@ -22,23 +22,36 @@ using namespace std;
 
 int main()
 {
-	//Initialising SFML window
-	//RenderWindow window(VideoMode(800, 600), "Welcome to NeuroSwitch!");
-	//window.setFramerateLimit(60);	//60FPS (not really necessary for this project) 
-	//window.clear(Color(63, 191, 127, 255));	//Setting the background colour for the game window
+	//Wipe GameText.txt when a new game starts
+	if (remove("../GameRecords/GameText.txt") != 0)
+	{
+		cout << "Error deleting GameText.txt";
+	}
 
+	//For keeping track of what happened each game
+	fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
+	if (!GameText.is_open())
+	{
+		cout << "Error opening GameRecords.txt" << endl << endl;
+	}
 
+	//Get the game initialised
 	GameManager::Manager()->DeckOfCards.LoadTextures();
 	GameManager::Manager()->PlayerCreation();
 	GameManager::Manager()->setFirstPlayer();
 	GameManager::Manager()->DeckOfCards.SetUpDeck();
 
-
-
+	//Display player names in GameText.txt
+	GameText << "Players:" << endl;
+	for (auto &p : GameManager::Manager()->GetListOfPlayers())
+	{
+		GameText << p->name << endl;
+	}
+	GameText << endl << endl;
 
 	//For all cards in allCards, shout out the suit (testing that populating and shuffling works)
 	//For some reason both this and the [i] method are getting a first result but then crashing the program
-	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->DeckOfCards.allCards);
+	//GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->DeckOfCards.allCards);
 
 
 	//We need to know how many cards each player is going to be dealt.
@@ -70,25 +83,32 @@ int main()
 	GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
 
 	cout << "The cards have been dealt by " << GameManager::Manager()->GetCurrentPlayer()->name << " and our first card to be played on is" << endl;
+	GameText << "The cards have been dealt by " << GameManager::Manager()->GetCurrentPlayer()->name << " and our first card to be played on is" << endl;
 	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->DeckOfCards.lastCard);
+
+	GameManager::Manager()->DeckOfCards.lastCard[0]->turnsSincePlayed = 0;
+	GameManager::Manager()->SetLastCardPlayer(GameManager::Manager()->GetCurrentPlayer());
+
 	cout << "The player left of the dealer will start." << endl << endl;
+	GameText << "The player left of the dealer will start." << endl << endl;
 
 	//Player left of the dealer starts, so we need to move current player on to that player
 	GameManager::Manager()->NextPlayer();
+	GameManager::Manager()->ConsultRules();
 
 	//Display Current Player's hand
-	cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s hand:" << endl;
-	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
-
-	//Check the current player can play (sets canPlay and canPickUp bools)
-	if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
-	{
-		cout << GameManager::Manager()->GetCurrentPlayer()->name << " can play." << endl << endl;
-	}
-	else
-	{
-		cout << GameManager::Manager()->GetCurrentPlayer()->name << ", you'll have to pick up." << endl << endl;
-	}
+	//cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s hand:" << endl;
+	//GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
+	//
+	////Check the current player can play (sets canPlay and canPickUp bools)
+	//if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
+	//{
+	//	cout << GameManager::Manager()->GetCurrentPlayer()->name << " can play." << endl << endl;
+	//}
+	//else
+	//{
+	//	cout << GameManager::Manager()->GetCurrentPlayer()->name << ", you'll have to pick up." << endl << endl;
+	//}
 
 
 
@@ -129,6 +149,8 @@ int main()
 		//For checking if mouse is released
 		sf::Event eventt;
 
+		
+
 		while (window.pollEvent(eventt))
 		{
 
@@ -146,8 +168,7 @@ int main()
 			{
 				//This prints endlessly until a move is made... D: 
 				cout << GameManager::Manager()->GetCurrentPlayer()->name << " to play." << endl << endl;
-
-
+				
 				//Messing about with clicking sprites
 				for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
 				{
@@ -197,6 +218,10 @@ int main()
 									//Update Hand and draw it
 									cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
 									cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+
+									GameText << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
+									GameText << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+
 									GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
 
 									GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
@@ -227,7 +252,7 @@ int main()
 				if (!GameManager::Manager()->Scoreboard.Gameover(GameManager::Manager()->GetNumberOfPlayers()))
 				{
 					cout << GameManager::Manager()->GetCurrentPlayer()->name << " to play." << endl << endl;
-
+					
 					//Draw hand etc before sleep
 					GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
 					for (auto &c : GameManager::Manager()->DeckOfCards.allCards)
@@ -337,6 +362,10 @@ int main()
 							//Update Hand and draw it
 							cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
 							cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+
+							GameText << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
+							GameText << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+
 							GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
 
 							GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
@@ -361,7 +390,7 @@ int main()
 			if (!GameManager::Manager()->Scoreboard.Gameover(GameManager::Manager()->GetNumberOfPlayers()))
 			{
 				cout << GameManager::Manager()->GetCurrentPlayer()->name << " to play." << endl << endl;
-
+				
 				//Draw hand etc before sleep
 				GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
 				for (auto &c : GameManager::Manager()->DeckOfCards.allCards)
@@ -447,6 +476,10 @@ int main()
 						//Update Hand and draw it
 						cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
 						cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+
+						GameText << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
+						GameText << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+
 						GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
 
 						GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
@@ -470,7 +503,7 @@ int main()
 			if (!GameManager::Manager()->Scoreboard.Gameover(GameManager::Manager()->GetNumberOfPlayers()))
 			{
 				cout << GameManager::Manager()->GetCurrentPlayer()->name << " to play." << endl << endl;
-
+				
 				//Draw hand etc before sleep
 				GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
 				for (auto &c : GameManager::Manager()->DeckOfCards.allCards)
@@ -529,6 +562,10 @@ int main()
 						//Update Hand and draw it
 						cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
 						cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+
+						GameText << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
+						GameText << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+						
 						GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
 
 						GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());

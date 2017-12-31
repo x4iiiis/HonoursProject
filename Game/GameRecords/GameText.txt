@@ -1,0 +1,288 @@
+Players:
+jack 
+plz
+work
+ya dick
+
+
+The cards have been dealt by jack  and our first card to be played on is
+Queen of Spades!
+
+The player left of the dealer will start.
+
+plz picked up.
+plz's updated hand:
+8 of Clubs!
+8 of Hearts!
+6 of Diamonds!
+
+Queen of Spades!
+
+work played the 
+
+Last played card DOES affect ya dick
+
+The last card was a black queen!
+ya dick must now pick up 5 cards.
+
+ya dick's updated hand:
+4 of Clubs!
+8 of Diamonds!
+4 of Spades!
+7 of Spades!
+9 of Hearts!
+10 of Hearts!
+Ace of Clubs!
+
+jack  picked up.
+jack 's updated hand:
+10 of Clubs!
+Jack of Clubs!
+5 of Clubs!
+
+plz is not affected by last played card
+
+plz picked up.
+plz's updated hand:
+8 of Clubs!
+8 of Hearts!
+6 of Diamonds!
+2 of Diamonds!
+
+work is not affected by last played card
+
+work picked up.
+work's updated hand:
+6 of Hearts!
+2 of Hearts!
+
+ya dick is not affected by last played card
+
+7 of Spades!
+
+ya dick played the 
+
+jack  picked up.
+jack 's updated hand:
+10 of Clubs!
+Jack of Clubs!
+5 of Clubs!
+10 of Diamonds!
+
+plz picked up.
+plz's updated hand:
+8 of Clubs!
+8 of Hearts!
+6 of Diamonds!
+2 of Diamonds!
+Ace of Hearts!
+
+work picked up.
+work's updated hand:
+6 of Hearts!
+2 of Hearts!
+3 of Spades!
+
+4 of Spades!
+
+ya dick played the 
+
+jack  picked up.
+jack 's updated hand:
+10 of Clubs!
+Jack of Clubs!
+5 of Clubs!
+10 of Diamonds!
+5 of Diamonds!
+
+plz picked up.
+plz's updated hand:
+8 of Clubs!
+8 of Hearts!
+6 of Diamonds!
+2 of Diamonds!
+Ace of Hearts!
+Jack of Hearts!
+
+3 of Spades!
+
+work played the 
+
+ya dick picked up.
+ya dick's updated hand:
+Ace of Clubs!
+8 of Diamonds!
+10 of Hearts!
+9 of Hearts!
+4 of Clubs!
+3 of Hearts!
+
+jack  picked up.
+jack 's updated hand:
+10 of Clubs!
+Jack of Clubs!
+5 of Clubs!
+10 of Diamonds!
+5 of Diamonds!
+6 of Clubs!
+
+plz picked up.
+plz's updated hand:
+8 of Clubs!
+8 of Hearts!
+6 of Diamonds!
+2 of Diamonds!
+Ace of Hearts!
+Jack of Hearts!
+Jack of Spades!
+
+work picked up.
+work's updated hand:
+6 of Hearts!
+2 of Hearts!
+9 of Clubs!
+
+3 of Hearts!
+
+ya dick played the 
+
+jack  picked up.
+jack 's updated hand:
+10 of Clubs!
+Jack of Clubs!
+5 of Clubs!
+10 of Diamonds!
+5 of Diamonds!
+6 of Clubs!
+4 of Hearts!
+
+8 of Hearts!
+
+plz played the 
+
+Last played card DOES affect work
+
+The last card was an eight!
+work is forced to skip their turn.
+
+ya dick, it's your turn.
+
+10 of Hearts!
+
+ya dick played the 
+
+10 of Clubs!
+
+jack  played the 
+
+8 of Clubs!
+
+plz played the 
+
+Last played card DOES affect work
+
+The last card was an eight!
+work is forced to skip their turn.
+
+ya dick, it's your turn.
+
+8 of Diamonds!
+
+ya dick played the 
+
+Last played card DOES affect jack 
+
+The last card was an eight!
+jack  is forced to skip their turn.
+
+plz, it's your turn.
+
+2 of Diamonds!
+
+plz played the 
+
+Last played card DOES affect work
+
+The last card was a two!
+work must now pick up 2 cards.
+
+work's updated hand:
+6 of Hearts!
+2 of Hearts!
+9 of Clubs!
+Queen of Hearts!
+9 of Diamonds!
+
+ya dick picked up.
+ya dick's updated hand:
+9 of Hearts!
+Ace of Clubs!
+4 of Clubs!
+Ace of Diamonds!
+
+jack  is not affected by last played card
+
+5 of Diamonds!
+
+jack  played the 
+
+6 of Diamonds!
+
+plz played the 
+
+6 of Hearts!
+
+work played the 
+
+9 of Hearts!
+
+ya dick played the 
+
+4 of Hearts!
+
+jack  played the 
+
+Ace of Hearts!
+
+plz played the 
+
+Queen of Hearts!
+
+work played the 
+
+ya dick picked up.
+ya dick's updated hand:
+Ace of Diamonds!
+4 of Clubs!
+Ace of Clubs!
+Jack of Diamonds!
+
+jack  picked up.
+jack 's updated hand:
+Jack of Clubs!
+5 of Clubs!
+10 of Diamonds!
+6 of Clubs!
+3 of Clubs!
+
+Jack of Hearts!
+
+plz played the 
+
+2 of Hearts!
+
+work played the 
+
+Last played card DOES affect ya dick
+
+The last card was a two!
+ya dick must now pick up 2 cards.
+
+ya dick's updated hand:
+Ace of Diamonds!
+4 of Clubs!
+Ace of Clubs!
+Jack of Diamonds!
+Queen of Clubs!
+Queen of Clubs!
+
