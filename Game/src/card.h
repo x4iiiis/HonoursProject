@@ -1,8 +1,10 @@
 #pragma once
 
+
 #include <SFML/Graphics.hpp>
 
 using namespace sf;
+using namespace std;
 
 class card
 {
@@ -16,6 +18,7 @@ public:
 	colour cardColour;
 	Sprite sprite;
 	Texture texture;
+	string lastPlayedBy = "";
 	int turnsSincePlayed = 0;
 
 	//Set cards to be red or black based on their suit

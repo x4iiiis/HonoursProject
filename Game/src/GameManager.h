@@ -416,6 +416,7 @@ public:
 				}
 			}
 			
+			setLastPlayedBy(DeckOfCards.lastCard[0]);
 
 			NextPlayer();
 
@@ -471,6 +472,22 @@ public:
 	}
 
 
+	void setLastPlayedBy(shared_ptr<card> c)
+	{
+		c->lastPlayedBy = GetCurrentPlayer()->name;
+	}
+
+	bool lastCardPlayerIsOut()
+	{
+		for (auto &p : Scoreboard.getScoreboard())
+		{
+			if (DeckOfCards.lastCard[0]->lastPlayedBy == p->name)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
 	
 
 	bool can_play_checker(vector<shared_ptr<card>> hand)
@@ -748,8 +765,14 @@ public:
 					GetCurrentPlayer()->canPlay = false;
 
 					NextPlayer();
-					NextPlayer();
-					
+
+					//If the last card is a jack and the player that played it is now out of the game, 
+					//only move on one player.
+					if (!lastCardPlayerIsOut())
+					{
+						NextPlayer();
+					}
+
 					cout << "The direction of play has been reversed." << endl << endl;
 					cout << GetCurrentPlayer()->name << ", it's your turn." << endl << endl;
 

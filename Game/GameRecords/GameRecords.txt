@@ -248,3 +248,39 @@ Scoreboard:
 4th:	Dutchy                                            (Hardcoded - Aggressive)
 ------------------------------------------------------------------------------------
 
+Date:	02/01/2018	Time:	03:03
+
+Scoreboard:
+1st:	Antz                                              (Hardcoded - Aggressive)
+2nd:	Kevin                                             (Hardcoded - Unaggressive)
+3rd:	Ryan                                              (Human)
+4th:	Liam                                              (Hardcoded - Random)
+------------------------------------------------------------------------------------
+
+Date:	02/01/2018	Time:	03:06
+
+Scoreboard:
+1st:	Kevin Chalmers                                    (Hardcoded - Aggressive)
+2nd:	Dean James                                        (Hardcoded - Unaggressive)
+3rd:	Andrew Cumming                                    (Human)
+4th:	David Torsney                                     (Hardcoded - Random)
+------------------------------------------------------------------------------------
+
+Date:	02/01/2018	Time:	03:18
+
+Scoreboard:
+1st:	Manos                                             (Hardcoded - Unaggressive)
+2nd:	Ryan                                              (Human)
+3rd:	Beej                                              (Hardcoded - Aggressive)
+4th:	Conner                                            (Hardcoded - Random)
+------------------------------------------------------------------------------------
+
+Date:	02/01/2018	Time:	03:25
+
+Scoreboard:
+1st:	Halo Reach                                        (Hardcoded - Unaggressive)
+2nd:	Halo 5                                            (Hardcoded - Random)
+3rd:	Halo 2                                            (Hardcoded - Aggressive)
+4th:	Halo 3                                            (Human)
+------------------------------------------------------------------------------------
+
