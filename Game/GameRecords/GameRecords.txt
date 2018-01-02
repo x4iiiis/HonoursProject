@@ -205,3 +205,46 @@ Scoreboard:
 4th:	Karen                                             (Hardcoded - Unaggressive)
 ------------------------------------------------------------------------------------
 
+Date:	31/12/2017	Time:	16:47
+
+Scoreboard:
+1st:	Wilshere                                          (Human)
+2nd:	Sanchez                                           (Hardcoded - Aggressive)
+3rd:	Özil                                              (Hardcoded - Unaggressive)
+4th:	Lacazette                                         (Hardcoded - Random)
+------------------------------------------------------------------------------------
+
+Date:	02/01/2018	Time:	01:23
+
+Scoreboard:
+1st:	Judd Trump                                        (Human)
+2nd:	Ronnie O'Sullivan                                 (Hardcoded - Aggressive)
+3rd:	Mark Selby                                        (Hardcoded - Unaggressive)
+4th:	Ding Junhui                                       (Hardcoded - Random)
+------------------------------------------------------------------------------------
+
+Date:	02/01/2018	Time:	02:02
+
+Scoreboard:
+1st:	Bench Press                                       (Hardcoded - Unaggressive)
+2nd:	Deadlift                                          (Human)
+3rd:	Squat                                             (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	02/01/2018	Time:	02:19
+
+Scoreboard:
+1st:	Push                                              (Human)
+2nd:	Pull                                              (Hardcoded - Aggressive)
+3rd:	Legs                                              (Hardcoded - Unaggressive)
+------------------------------------------------------------------------------------
+
+Date:	02/01/2018	Time:	02:45
+
+Scoreboard:
+1st:	Walshy                                            (Hardcoded - Random)
+2nd:	Snipedown                                         (Hardcoded - Unaggressive)
+3rd:	Kampy                                             (Human)
+4th:	Dutchy                                            (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+

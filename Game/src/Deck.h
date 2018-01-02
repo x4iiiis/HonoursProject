@@ -3,18 +3,15 @@
 #include <vector>
 #include <memory>
 #include <ctime>
-
 #include <iostream>
 #include <stdexcept>
 #include <stdlib.h>
 #include <fstream>
-
-
+#include <SFML/Graphics.hpp>
 
 #include "card.h"
 #include "GameManager.h"
 
-#include <SFML/Graphics.hpp>
 
 using namespace std;
 using namespace sf;
@@ -22,28 +19,26 @@ using namespace sf;
 class Deck
 {
 private:
-	//GameManager *GM = GameManager::Manager();
-
 	//Creating all the cards
 	card ca, c2, c3, c4, c5, c6, c7, c8, c9, c10, cj, cq, ck;	//Clubs
 	card da, d2, d3, d4, d5, d6, d7, d8, d9, d10, dj, dq, dk;	//Diamonds
 	card ha, h2, h3, h4, h5, h6, h7, h8, h9, h10, hj, hq, hk;	//Hearts
 	card sa, s2, s3, s4, s5, s6, s7, s8, s9, s10, sj, sq, sk;	//Spades
-
-
+	
 	//Creating card Textures
 	Texture caTex, c2Tex, c3Tex, c4Tex, c5Tex, c6Tex, c7Tex, c8Tex, c9Tex, c10Tex, cjTex, cqTex, ckTex;	//Clubs
 	Texture	daTex, d2Tex, d3Tex, d4Tex, d5Tex, d6Tex, d7Tex, d8Tex, d9Tex, d10Tex, djTex, dqTex, dkTex;	//Diamonds
 	Texture	haTex, h2Tex, h3Tex, h4Tex, h5Tex, h6Tex, h7Tex, h8Tex, h9Tex, h10Tex, hjTex, hqTex, hkTex;	//Hearts
 	Texture	saTex, s2Tex, s3Tex, s4Tex, s5Tex, s6Tex, s7Tex, s8Tex, s9Tex, s10Tex, sjTex, sqTex, skTex;	//Spades
 
+	//Back of a card for cards you don't want to see their identity 
 	Texture FaceDownTex;
 
 public:
-	//52 cards, first index = 0
 	vector<shared_ptr<card>> allCards;		//All of the cards in the pack
 	vector<shared_ptr<card>> cardStack;		//Cards available to be picked up 
 	vector<shared_ptr<card>> lastCard;		//Card we're going to play on top of
+
 
 	void Deal(vector<shared_ptr<player>> PlayersVector, int CardsPerPlayer)
 	{
@@ -186,8 +181,8 @@ public:
 			make_shared<card>(sk)
 		};
 
-		//Hold on apparently there's a random shuffle for vectors
-		std::srand(std::time(0));	//For some reason shuffle doesn't work when you restart the program, it uses the previously shuffled version... this line solves that.Needs <ctime> included 
+		//Shuffle each suit independently 
+		std::srand(std::time(0));	//For some reason shuffle doesn't work when you restart the program, it uses the previously shuffled version... this line solves that. Needs <ctime> included 
 		std::random_shuffle(clubsArray.begin(), clubsArray.end());
 		std::random_shuffle(diamondsArray.begin(), diamondsArray.end());
 		std::random_shuffle(heartsArray.begin(), heartsArray.end());
@@ -196,7 +191,6 @@ public:
 		//Add shuffled clubs to allCards
 		for (auto &c : clubsArray)
 		{
-			//allCards->push_back(clubsArray);
 			allCards.push_back(c);
 		}
 
@@ -229,6 +223,7 @@ public:
 		std::random_shuffle(allCards.begin(), allCards.end());
 		std::random_shuffle(allCards.begin(), allCards.end());
 
+		//Add all cards to the card stack
 		for (auto &c : allCards)
 		{
 			cardStack.push_back(c);
@@ -236,9 +231,10 @@ public:
 	}
 
 
-
+	//For printing out suits and types of cards
 	void identify_cards(vector<shared_ptr<card>> unidentifiedCards)
 	{
+		//Keeping a record of moves in the current game
 		fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
 		if (!GameText.is_open())
 		{
@@ -299,8 +295,10 @@ public:
 		GameText << endl;
 	}
 
+	//For printing out suits and types of cards
 	void identify_card(shared_ptr<card> c)
 	{
+		//Keeping a record of moves in the current game
 		fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
 		if (!GameText.is_open())
 		{
@@ -357,7 +355,8 @@ public:
 		cout << endl;
 		GameText << endl;
 	}
-
+	
+	//Set whether all the cards are red of black
 	void defineCardColours(vector<shared_ptr<card>> allCards)
 	{
 		for (auto &c : allCards)
@@ -366,6 +365,7 @@ public:
 		}
 	}
 
+	//Check which colour a particular card is 
 	string checkColour(shared_ptr<card> Card)
 	{
 		if (Card->cardColour == card::colour::Black)
@@ -380,12 +380,12 @@ public:
 	void SetFaceDown(shared_ptr<card> c)
 	{
 		c->sprite.setTexture(FaceDownTex);
-		//c.sprite.setScale(Vector2f(0.5f, 0.5f));		//Not sure if this is necessary
 	}
 
+	//Updates the positions and textuers of cards depending on whether they are in the current player's hand, in the stack, or are the last played card
 	void UpdatePositionsAndTextures(shared_ptr<player> player)
 	{
-		for (auto &c : allCards) //&?
+		for (auto &c : allCards)
 		{
 			//Just set all cards to be positioned offscreen, and those that are in the stack, hand, or are the last played card will be moved back
 			c->sprite.setPosition(Vector2f(-100.0, -100.0));
@@ -506,63 +506,63 @@ public:
 	void LoadTextures()
 	{
 		//Cards that are face down
-		if (!FaceDownTex.loadFromFile("Cards/cardBack_blue5.png")) { throw std::invalid_argument("FaceDownTex is fucked!"); }
+		if (!FaceDownTex.loadFromFile("Cards/cardBack_blue5.png")) { throw std::invalid_argument("FaceDownTex isn't loading"); }
 
 		//Clubs
-		if (!caTex.loadFromFile("Cards/cardClubsA.png")) { throw std::invalid_argument("caTex is fucked!"); }
-		if (!c2Tex.loadFromFile("Cards/cardClubs2.png")) { throw std::invalid_argument("c2Tex is fucked!"); }
-		if (!c3Tex.loadFromFile("Cards/cardClubs3.png")) { throw std::invalid_argument("c3Tex is fucked!"); }
-		if (!c4Tex.loadFromFile("Cards/cardClubs4.png")) { throw std::invalid_argument("c4Tex is fucked!"); }
-		if (!c5Tex.loadFromFile("Cards/cardClubs5.png")) { throw std::invalid_argument("c5Tex is fucked!"); }
-		if (!c6Tex.loadFromFile("Cards/cardClubs6.png")) { throw std::invalid_argument("c6Tex is fucked!"); }
-		if (!c7Tex.loadFromFile("Cards/cardClubs7.png")) { throw std::invalid_argument("c7Tex is fucked!"); }
-		if (!c8Tex.loadFromFile("Cards/cardClubs8.png")) { throw std::invalid_argument("c8Tex is fucked!"); }
-		if (!c9Tex.loadFromFile("Cards/cardClubs9.png")) { throw std::invalid_argument("c9Tex is fucked!"); }
-		if (!c10Tex.loadFromFile("Cards/cardClubs10.png")) { throw std::invalid_argument("c10Tex is fucked!"); }
-		if (!cjTex.loadFromFile("Cards/cardClubsJ.png")) { throw std::invalid_argument("cjTex is fucked!"); }
-		if (!cqTex.loadFromFile("Cards/cardClubsQ.png")) { throw std::invalid_argument("cqTex is fucked!"); }
-		if (!ckTex.loadFromFile("Cards/cardClubsK.png")) { throw std::invalid_argument("ckTex is fucked!"); }
+		if (!caTex.loadFromFile("Cards/cardClubsA.png")) { throw std::invalid_argument("caTex isn't loading"); }
+		if (!c2Tex.loadFromFile("Cards/cardClubs2.png")) { throw std::invalid_argument("c2Tex isn't loading"); }
+		if (!c3Tex.loadFromFile("Cards/cardClubs3.png")) { throw std::invalid_argument("c3Tex isn't loading"); }
+		if (!c4Tex.loadFromFile("Cards/cardClubs4.png")) { throw std::invalid_argument("c4Tex isn't loading"); }
+		if (!c5Tex.loadFromFile("Cards/cardClubs5.png")) { throw std::invalid_argument("c5Tex isn't loading"); }
+		if (!c6Tex.loadFromFile("Cards/cardClubs6.png")) { throw std::invalid_argument("c6Tex isn't loading"); }
+		if (!c7Tex.loadFromFile("Cards/cardClubs7.png")) { throw std::invalid_argument("c7Tex isn't loading"); }
+		if (!c8Tex.loadFromFile("Cards/cardClubs8.png")) { throw std::invalid_argument("c8Tex isn't loading"); }
+		if (!c9Tex.loadFromFile("Cards/cardClubs9.png")) { throw std::invalid_argument("c9Tex isn't loading"); }
+		if (!c10Tex.loadFromFile("Cards/cardClubs10.png")) { throw std::invalid_argument("c10Tex isn't loading"); }
+		if (!cjTex.loadFromFile("Cards/cardClubsJ.png")) { throw std::invalid_argument("cjTex isn't loading"); }
+		if (!cqTex.loadFromFile("Cards/cardClubsQ.png")) { throw std::invalid_argument("cqTex isn't loading"); }
+		if (!ckTex.loadFromFile("Cards/cardClubsK.png")) { throw std::invalid_argument("ckTex isn't loading"); }
 		//Diamonds
-		if (!daTex.loadFromFile("Cards/cardDiamondsA.png")) { throw std::invalid_argument("daTex is fucked!"); }
-		if (!d2Tex.loadFromFile("Cards/cardDiamonds2.png")) { throw std::invalid_argument("d2Tex is fucked!"); }
-		if (!d3Tex.loadFromFile("Cards/cardDiamonds3.png")) { throw std::invalid_argument("d3Tex is fucked!"); }
-		if (!d4Tex.loadFromFile("Cards/cardDiamonds4.png")) { throw std::invalid_argument("d4Tex is fucked!"); }
-		if (!d5Tex.loadFromFile("Cards/cardDiamonds5.png")) { throw std::invalid_argument("d5Tex is fucked!"); }
-		if (!d6Tex.loadFromFile("Cards/cardDiamonds6.png")) { throw std::invalid_argument("d6Tex is fucked!"); }
-		if (!d7Tex.loadFromFile("Cards/cardDiamonds7.png")) { throw std::invalid_argument("d7Tex is fucked!"); }
-		if (!d8Tex.loadFromFile("Cards/cardDiamonds8.png")) { throw std::invalid_argument("d8Tex is fucked!"); }
-		if (!d9Tex.loadFromFile("Cards/cardDiamonds9.png")) { throw std::invalid_argument("d9Tex is fucked!"); }
-		if (!d10Tex.loadFromFile("Cards/cardDiamonds10.png")) { throw std::invalid_argument("d10Tex is fucked!"); }
-		if (!djTex.loadFromFile("Cards/cardDiamondsJ.png")) { throw std::invalid_argument("djTex is fucked!"); }
-		if (!dqTex.loadFromFile("Cards/cardDiamondsQ.png")) { throw std::invalid_argument("dqTex is fucked!"); }
-		if (!dkTex.loadFromFile("Cards/cardDiamondsK.png")) { throw std::invalid_argument("dkTex is fucked!"); }
+		if (!daTex.loadFromFile("Cards/cardDiamondsA.png")) { throw std::invalid_argument("daTex isn't loading"); }
+		if (!d2Tex.loadFromFile("Cards/cardDiamonds2.png")) { throw std::invalid_argument("d2Tex isn't loading"); }
+		if (!d3Tex.loadFromFile("Cards/cardDiamonds3.png")) { throw std::invalid_argument("d3Tex isn't loading"); }
+		if (!d4Tex.loadFromFile("Cards/cardDiamonds4.png")) { throw std::invalid_argument("d4Tex isn't loading"); }
+		if (!d5Tex.loadFromFile("Cards/cardDiamonds5.png")) { throw std::invalid_argument("d5Tex isn't loading"); }
+		if (!d6Tex.loadFromFile("Cards/cardDiamonds6.png")) { throw std::invalid_argument("d6Tex isn't loading"); }
+		if (!d7Tex.loadFromFile("Cards/cardDiamonds7.png")) { throw std::invalid_argument("d7Tex isn't loading"); }
+		if (!d8Tex.loadFromFile("Cards/cardDiamonds8.png")) { throw std::invalid_argument("d8Tex isn't loading"); }
+		if (!d9Tex.loadFromFile("Cards/cardDiamonds9.png")) { throw std::invalid_argument("d9Tex isn't loading"); }
+		if (!d10Tex.loadFromFile("Cards/cardDiamonds10.png")) { throw std::invalid_argument("d10Tex isn't loading"); }
+		if (!djTex.loadFromFile("Cards/cardDiamondsJ.png")) { throw std::invalid_argument("djTex isn't loading"); }
+		if (!dqTex.loadFromFile("Cards/cardDiamondsQ.png")) { throw std::invalid_argument("dqTex isn't loading"); }
+		if (!dkTex.loadFromFile("Cards/cardDiamondsK.png")) { throw std::invalid_argument("dkTex isn't loading"); }
 		//Hearts
-		if (!haTex.loadFromFile("Cards/cardHeartsA.png")) { throw std::invalid_argument("haTex is fucked!"); }
-		if (!h2Tex.loadFromFile("Cards/cardHearts2.png")) { throw std::invalid_argument("h2Tex is fucked!"); }
-		if (!h3Tex.loadFromFile("Cards/cardHearts3.png")) { throw std::invalid_argument("h3Tex is fucked!"); }
-		if (!h4Tex.loadFromFile("Cards/cardHearts4.png")) { throw std::invalid_argument("h4Tex is fucked!"); }
-		if (!h5Tex.loadFromFile("Cards/cardHearts5.png")) { throw std::invalid_argument("h5Tex is fucked!"); }
-		if (!h6Tex.loadFromFile("Cards/cardHearts6.png")) { throw std::invalid_argument("h6Tex is fucked!"); }
-		if (!h7Tex.loadFromFile("Cards/cardHearts7.png")) { throw std::invalid_argument("h7Tex is fucked!"); }
-		if (!h8Tex.loadFromFile("Cards/cardHearts8.png")) { throw std::invalid_argument("h8Tex is fucked!"); }
-		if (!h9Tex.loadFromFile("Cards/cardHearts9.png")) { throw std::invalid_argument("h9Tex is fucked!"); }
-		if (!h10Tex.loadFromFile("Cards/cardHearts10.png")) { throw std::invalid_argument("h10Tex is fucked!"); }
-		if (!hjTex.loadFromFile("Cards/cardHeartsJ.png")) { throw std::invalid_argument("hjTex is fucked!"); }
-		if (!hqTex.loadFromFile("Cards/cardHeartsQ.png")) { throw std::invalid_argument("hqTex is fucked!"); }
-		if (!hkTex.loadFromFile("Cards/cardHeartsK.png")) { throw std::invalid_argument("hkTex is fucked!"); }
+		if (!haTex.loadFromFile("Cards/cardHeartsA.png")) { throw std::invalid_argument("haTex isn't loading"); }
+		if (!h2Tex.loadFromFile("Cards/cardHearts2.png")) { throw std::invalid_argument("h2Tex isn't loading"); }
+		if (!h3Tex.loadFromFile("Cards/cardHearts3.png")) { throw std::invalid_argument("h3Tex isn't loading"); }
+		if (!h4Tex.loadFromFile("Cards/cardHearts4.png")) { throw std::invalid_argument("h4Tex isn't loading"); }
+		if (!h5Tex.loadFromFile("Cards/cardHearts5.png")) { throw std::invalid_argument("h5Tex isn't loading"); }
+		if (!h6Tex.loadFromFile("Cards/cardHearts6.png")) { throw std::invalid_argument("h6Tex isn't loading"); }
+		if (!h7Tex.loadFromFile("Cards/cardHearts7.png")) { throw std::invalid_argument("h7Tex isn't loading"); }
+		if (!h8Tex.loadFromFile("Cards/cardHearts8.png")) { throw std::invalid_argument("h8Tex isn't loading"); }
+		if (!h9Tex.loadFromFile("Cards/cardHearts9.png")) { throw std::invalid_argument("h9Tex isn't loading"); }
+		if (!h10Tex.loadFromFile("Cards/cardHearts10.png")) { throw std::invalid_argument("h10Tex isn't loading"); }
+		if (!hjTex.loadFromFile("Cards/cardHeartsJ.png")) { throw std::invalid_argument("hjTex isn't loading"); }
+		if (!hqTex.loadFromFile("Cards/cardHeartsQ.png")) { throw std::invalid_argument("hqTex isn't loading"); }
+		if (!hkTex.loadFromFile("Cards/cardHeartsK.png")) { throw std::invalid_argument("hkTex isn't loading"); }
 		//Spades
-		if (!saTex.loadFromFile("Cards/cardSpadesA.png")) { throw std::invalid_argument("saTex is fucked!"); }
-		if (!s2Tex.loadFromFile("Cards/cardSpades2.png")) { throw std::invalid_argument("s2Tex is fucked!"); }
-		if (!s3Tex.loadFromFile("Cards/cardSpades3.png")) { throw std::invalid_argument("s3Tex is fucked!"); }
-		if (!s4Tex.loadFromFile("Cards/cardSpades4.png")) { throw std::invalid_argument("s4Tex is fucked!"); }
-		if (!s5Tex.loadFromFile("Cards/cardSpades5.png")) { throw std::invalid_argument("s5Tex is fucked!"); }
-		if (!s6Tex.loadFromFile("Cards/cardSpades6.png")) { throw std::invalid_argument("s6Tex is fucked!"); }
-		if (!s7Tex.loadFromFile("Cards/cardSpades7.png")) { throw std::invalid_argument("s7Tex is fucked!"); }
-		if (!s8Tex.loadFromFile("Cards/cardSpades8.png")) { throw std::invalid_argument("s8Tex is fucked!"); }
-		if (!s9Tex.loadFromFile("Cards/cardSpades9.png")) { throw std::invalid_argument("s9Tex is fucked!"); }
-		if (!s10Tex.loadFromFile("Cards/cardSpades10.png")) { throw std::invalid_argument("s10Tex is fucked!"); }
-		if (!sjTex.loadFromFile("Cards/cardSpadesJ.png")) { throw std::invalid_argument("sjTex is fucked!"); }
-		if (!sqTex.loadFromFile("Cards/cardSpadesQ.png")) { throw std::invalid_argument("sqTex is fucked!"); }
-		if (!skTex.loadFromFile("Cards/cardSpadesK.png")) { throw std::invalid_argument("skTex is fucked!"); }
+		if (!saTex.loadFromFile("Cards/cardSpadesA.png")) { throw std::invalid_argument("saTex isn't loading"); }
+		if (!s2Tex.loadFromFile("Cards/cardSpades2.png")) { throw std::invalid_argument("s2Tex isn't loading"); }
+		if (!s3Tex.loadFromFile("Cards/cardSpades3.png")) { throw std::invalid_argument("s3Tex isn't loading"); }
+		if (!s4Tex.loadFromFile("Cards/cardSpades4.png")) { throw std::invalid_argument("s4Tex isn't loading"); }
+		if (!s5Tex.loadFromFile("Cards/cardSpades5.png")) { throw std::invalid_argument("s5Tex isn't loading"); }
+		if (!s6Tex.loadFromFile("Cards/cardSpades6.png")) { throw std::invalid_argument("s6Tex isn't loading"); }
+		if (!s7Tex.loadFromFile("Cards/cardSpades7.png")) { throw std::invalid_argument("s7Tex isn't loading"); }
+		if (!s8Tex.loadFromFile("Cards/cardSpades8.png")) { throw std::invalid_argument("s8Tex isn't loading"); }
+		if (!s9Tex.loadFromFile("Cards/cardSpades9.png")) { throw std::invalid_argument("s9Tex isn't loading"); }
+		if (!s10Tex.loadFromFile("Cards/cardSpades10.png")) { throw std::invalid_argument("s10Tex isn't loading"); }
+		if (!sjTex.loadFromFile("Cards/cardSpadesJ.png")) { throw std::invalid_argument("sjTex isn't loading"); }
+		if (!sqTex.loadFromFile("Cards/cardSpadesQ.png")) { throw std::invalid_argument("sqTex isn't loading"); }
+		if (!skTex.loadFromFile("Cards/cardSpadesK.png")) { throw std::invalid_argument("skTex isn't loading"); }
 	}
 };

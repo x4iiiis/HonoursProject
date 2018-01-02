@@ -1,765 +1,870 @@
 Players:
-Ryan
-Eleanor
-Karen
-Shaun-Michael
+Kampy
+Dutchy
+Snipedown
+Walshy
 
 
-The cards have been dealt by Ryan and our first card to be played on is
-9 of Diamonds!
+The cards have been dealt by Kampy and our first card to be played on is the
+Queen of Clubs!
 
 The player left of the dealer will start.
 
-9 of Spades!
+3 of Clubs!
 
-Eleanor played the 
+Dutchy played the 
 
-9 of Clubs!
+3 of Spades!
 
-Karen played the 
+Snipedown played the 
+
+3 of Hearts!
+
+Walshy played the 
+
+Kampy picked up.
+Kampy's updated hand:
+10 of Diamonds!
+Jack of Clubs!
+Ace of Hearts!
+
+Dutchy picked up.
+Dutchy's updated hand:
+Ace of Clubs!
+5 of Diamonds!
+
+Snipedown picked up.
+Snipedown's updated hand:
+2 of Clubs!
+4 of Spades!
+
+Jack of Hearts!
+
+Walshy played the 
+
+
+Walshy is out!
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Dutchy, it's your turn.
+
+Dutchy picked up.
+Dutchy's updated hand:
+Ace of Clubs!
+5 of Diamonds!
+3 of Diamonds!
+
+Jack of Clubs!
+
+Kampy played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Dutchy, it's your turn.
 
 Ace of Clubs!
 
-Shaun-Michael played the 
+Dutchy played the 
 
-Ryan picked up.
-Ryan's updated hand:
-9 of Hearts!
-4 of Diamonds!
-4 of Spades!
+2 of Clubs!
 
-3 of Clubs!
+Snipedown played the 
 
-Eleanor played the 
+Last played card DOES affect Kampy
 
+The last card was a two!
+Kampy must now pick up 2 cards.
 
-Eleanor is out!
-
-Karen picked up.
-Karen's updated hand:
-Jack of Spades!
-5 of Diamonds!
-
-Shaun-Michael picked up.
-Shaun-Michael's updated hand:
-2 of Hearts!
-6 of Clubs!
-
-Ryan picked up.
-Ryan's updated hand:
-9 of Hearts!
-4 of Diamonds!
-4 of Spades!
-8 of Diamonds!
-
-Karen picked up.
-Karen's updated hand:
-Jack of Spades!
-5 of Diamonds!
-7 of Diamonds!
-
-6 of Clubs!
-
-Shaun-Michael played the 
-
-Ryan picked up.
-Ryan's updated hand:
-9 of Hearts!
-4 of Diamonds!
-4 of Spades!
-8 of Diamonds!
-Queen of Hearts!
-
-Karen picked up.
-Karen's updated hand:
-Jack of Spades!
-5 of Diamonds!
-7 of Diamonds!
-8 of Spades!
-
-Shaun-Michael picked up.
-Shaun-Michael's updated hand:
-2 of Hearts!
-7 of Clubs!
-
-Ryan picked up.
-Ryan's updated hand:
-9 of Hearts!
-4 of Diamonds!
-4 of Spades!
-8 of Diamonds!
-Queen of Hearts!
+Kampy's updated hand:
+10 of Diamonds!
+Ace of Hearts!
 4 of Clubs!
+Queen of Hearts!
 
-Karen picked up.
-Karen's updated hand:
-Jack of Spades!
+Dutchy picked up.
+Dutchy's updated hand:
 5 of Diamonds!
-7 of Diamonds!
-8 of Spades!
+3 of Diamonds!
 7 of Spades!
 
-7 of Clubs!
+Snipedown is not affected by last played card
 
-Shaun-Michael played the 
+Snipedown picked up.
+Snipedown's updated hand:
+4 of Spades!
+4 of Diamonds!
+
+Kampy is not affected by last played card
 
 4 of Clubs!
 
-Ryan played the 
+Kampy played the 
 
-Karen picked up.
-Karen's updated hand:
-Jack of Spades!
+Dutchy picked up.
+Dutchy's updated hand:
 5 of Diamonds!
-7 of Diamonds!
-8 of Spades!
+3 of Diamonds!
 7 of Spades!
-6 of Hearts!
+10 of Clubs!
 
-Shaun-Michael picked up.
-Shaun-Michael's updated hand:
-2 of Hearts!
-Ace of Spades!
-
-4 of Diamonds!
-
-Ryan played the 
-
-5 of Diamonds!
-
-Karen played the 
-
-Shaun-Michael picked up.
-Shaun-Michael's updated hand:
-2 of Hearts!
-Ace of Spades!
-6 of Spades!
-
-8 of Diamonds!
-
-Ryan played the 
-
-Last played card DOES affect Karen
-
-The last card was an eight!
-Karen is forced to skip their turn.
-
-Shaun-Michael, it's your turn.
-
-Shaun-Michael picked up.
-Shaun-Michael's updated hand:
-2 of Hearts!
-Ace of Spades!
-6 of Spades!
-Jack of Hearts!
-
-Ryan is not affected by last played card
-
-Ryan picked up.
-Ryan's updated hand:
-9 of Hearts!
 4 of Spades!
+
+Snipedown played the 
+
+Kampy picked up.
+Kampy's updated hand:
+10 of Diamonds!
+Ace of Hearts!
+Queen of Hearts!
+10 of Spades!
+
+7 of Spades!
+
+Dutchy played the 
+
+Snipedown picked up.
+Snipedown's updated hand:
+4 of Diamonds!
+6 of Clubs!
+
+10 of Spades!
+
+Kampy played the 
+
+10 of Clubs!
+
+Dutchy played the 
+
+6 of Clubs!
+
+Snipedown played the 
+
+Kampy picked up.
+Kampy's updated hand:
+10 of Diamonds!
+Ace of Hearts!
 Queen of Hearts!
 Queen of Diamonds!
 
-Karen is not affected by last played card
+Dutchy picked up.
+Dutchy's updated hand:
+5 of Diamonds!
+3 of Diamonds!
+8 of Hearts!
 
-7 of Diamonds!
+Snipedown picked up.
+Snipedown's updated hand:
+4 of Diamonds!
+Jack of Diamonds!
 
-Karen played the 
-
-Shaun-Michael picked up.
-Shaun-Michael's updated hand:
-2 of Hearts!
-Ace of Spades!
-6 of Spades!
-Jack of Hearts!
-10 of Spades!
-
-King of Diamonds!
-
-Ryan played the 
-
-Karen picked up.
-Karen's updated hand:
-Jack of Spades!
-8 of Spades!
-7 of Spades!
-6 of Hearts!
+Kampy picked up.
+Kampy's updated hand:
+10 of Diamonds!
 Ace of Hearts!
-
-Shaun-Michael picked up.
-Shaun-Michael's updated hand:
-2 of Hearts!
-Ace of Spades!
-6 of Spades!
-Jack of Hearts!
-10 of Spades!
 Queen of Hearts!
+Queen of Diamonds!
+5 of Hearts!
 
-King of Hearts!
+Dutchy picked up.
+Dutchy's updated hand:
+5 of Diamonds!
+3 of Diamonds!
+8 of Hearts!
+8 of Clubs!
 
-Ryan played the 
+Snipedown picked up.
+Snipedown's updated hand:
+4 of Diamonds!
+Jack of Diamonds!
+6 of Spades!
 
-6 of Hearts!
+Kampy picked up.
+Kampy's updated hand:
+10 of Diamonds!
+Ace of Hearts!
+Queen of Hearts!
+Queen of Diamonds!
+5 of Hearts!
+Queen of Clubs!
 
-Karen played the 
+8 of Clubs!
 
-Jack of Hearts!
+Dutchy played the 
 
-Shaun-Michael played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Karen, it's your turn.
-
-Jack of Spades!
-
-Karen played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Shaun-Michael, it's your turn.
-
-Ace of Spades!
-
-Shaun-Michael played the 
-
-4 of Spades!
-
-Ryan played the 
-
-7 of Spades!
-
-Karen played the 
-
-10 of Spades!
-
-Shaun-Michael played the 
-
-Ryan picked up.
-Ryan's updated hand:
-9 of Hearts!
-5 of Clubs!
-
-8 of Spades!
-
-Karen played the 
-
-Last played card DOES affect Shaun-Michael
+Last played card DOES affect Snipedown
 
 The last card was an eight!
-Shaun-Michael is forced to skip their turn.
+Snipedown is forced to skip their turn.
 
-Ryan, it's your turn.
+Kampy, it's your turn.
 
-Ryan picked up.
-Ryan's updated hand:
+Queen of Clubs!
+
+Kampy played the 
+
+Last played card DOES affect Dutchy
+
+The last card was a black queen!
+Dutchy must now pick up 5 cards.
+
+Dutchy's updated hand:
+5 of Diamonds!
+3 of Diamonds!
+8 of Hearts!
+Queen of Spades!
+Ace of Diamonds!
+2 of Diamonds!
+9 of Spades!
+7 of Hearts!
+
+Snipedown picked up.
+Snipedown's updated hand:
+4 of Diamonds!
+Jack of Diamonds!
+6 of Spades!
+8 of Spades!
+
+Kampy is not affected by last played card
+
+Kampy picked up.
+Kampy's updated hand:
+10 of Diamonds!
+Ace of Hearts!
+Queen of Hearts!
+Queen of Diamonds!
+5 of Hearts!
+5 of Spades!
+
+Dutchy is not affected by last played card
+
+Queen of Spades!
+
+Dutchy played the 
+
+Last played card DOES affect Snipedown
+
+The last card was a black queen!
+Snipedown must now pick up 5 cards.
+
+Snipedown's updated hand:
+4 of Diamonds!
+Jack of Diamonds!
+6 of Spades!
+8 of Spades!
+6 of Diamonds!
+9 of Clubs!
+2 of Spades!
 9 of Hearts!
+2 of Hearts!
+
+5 of Spades!
+
+Kampy played the 
+
+5 of Diamonds!
+
+Dutchy played the 
+
+4 of Diamonds!
+
+Snipedown played the 
+
+10 of Diamonds!
+
+Kampy played the 
+
+2 of Diamonds!
+
+Dutchy played the 
+
+Last played card DOES affect Snipedown
+
+The last card was a two!
+Snipedown must now pick up 2 cards.
+
+Snipedown's updated hand:
+Jack of Diamonds!
+6 of Spades!
+8 of Spades!
+6 of Diamonds!
+9 of Clubs!
+2 of Spades!
+9 of Hearts!
+2 of Hearts!
 5 of Clubs!
 Queen of Spades!
 
-Karen is not affected by last played card
+King of Diamonds!
 
-Karen picked up.
-Karen's updated hand:
+Kampy played the 
+
+3 of Diamonds!
+
+Dutchy played the 
+
+Jack of Diamonds!
+
+Snipedown played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Dutchy, it's your turn.
+
+Ace of Diamonds!
+
+Dutchy played the 
+
 Ace of Hearts!
-Queen of Clubs!
 
-Shaun-Michael is not affected by last played card
+Kampy played the 
+
+9 of Hearts!
+
+Snipedown played the 
+
+8 of Hearts!
+
+Dutchy played the 
+
+Last played card DOES affect Kampy
+
+The last card was an eight!
+Kampy is forced to skip their turn.
+
+Snipedown, it's your turn.
+
+8 of Spades!
+
+Snipedown played the 
+
+Last played card DOES affect Dutchy
+
+The last card was an eight!
+Dutchy is forced to skip their turn.
+
+Kampy, it's your turn.
+
+Kampy picked up.
+Kampy's updated hand:
+Queen of Hearts!
+5 of Hearts!
+4 of Hearts!
+
+Snipedown is not affected by last played card
 
 6 of Spades!
 
-Shaun-Michael played the 
+Snipedown played the 
+
+9 of Spades!
+
+Dutchy played the 
+
+Kampy picked up.
+Kampy's updated hand:
+Queen of Hearts!
+5 of Hearts!
+4 of Hearts!
+Queen of Hearts!
+
+9 of Clubs!
+
+Snipedown played the 
+
+Dutchy picked up.
+Dutchy's updated hand:
+7 of Hearts!
+6 of Hearts!
+
+Kampy picked up.
+Kampy's updated hand:
+Queen of Hearts!
+5 of Hearts!
+4 of Hearts!
+Queen of Hearts!
+Ace of Spades!
+
+5 of Clubs!
+
+Snipedown played the 
+
+Dutchy picked up.
+Dutchy's updated hand:
+7 of Hearts!
+6 of Hearts!
+8 of Diamonds!
+
+5 of Hearts!
+
+Kampy played the 
+
+2 of Hearts!
+
+Snipedown played the 
+
+Last played card DOES affect Dutchy
+
+The last card was a two!
+Dutchy must now pick up 2 cards.
+
+Dutchy's updated hand:
+7 of Hearts!
+6 of Hearts!
+8 of Diamonds!
+7 of Clubs!
+10 of Hearts!
+
+4 of Hearts!
+
+Kampy played the 
+
+Snipedown picked up.
+Snipedown's updated hand:
+6 of Diamonds!
+2 of Spades!
+Queen of Spades!
+9 of Diamonds!
+
+7 of Hearts!
+
+Dutchy played the 
+
+King of Hearts!
+
+Kampy played the 
 
 King of Spades!
 
-Ryan played the 
+Snipedown played the 
 
-Karen picked up.
-Karen's updated hand:
-Ace of Hearts!
-Queen of Clubs!
-4 of Hearts!
-
-Shaun-Michael picked up.
-Shaun-Michael's updated hand:
-2 of Hearts!
-Queen of Hearts!
-7 of Hearts!
-
-Ryan picked up.
-Ryan's updated hand:
-9 of Hearts!
-5 of Clubs!
-Jack of Diamonds!
-
-Karen picked up.
-Karen's updated hand:
-Ace of Hearts!
-Queen of Clubs!
-4 of Hearts!
-5 of Hearts!
-
-Shaun-Michael picked up.
-Shaun-Michael's updated hand:
-2 of Hearts!
-Queen of Hearts!
-7 of Hearts!
-3 of Diamonds!
-
-Ryan picked up.
-Ryan's updated hand:
-9 of Hearts!
-5 of Clubs!
-Jack of Diamonds!
-8 of Clubs!
-
-Karen picked up.
-Karen's updated hand:
-Ace of Hearts!
-Queen of Clubs!
-4 of Hearts!
-5 of Hearts!
-3 of Spades!
-
-Shaun-Michael picked up.
-Shaun-Michael's updated hand:
-2 of Hearts!
-Queen of Hearts!
-7 of Hearts!
-3 of Diamonds!
+Dutchy picked up.
+Dutchy's updated hand:
+6 of Hearts!
+8 of Diamonds!
+7 of Clubs!
+10 of Hearts!
 Queen of Diamonds!
 
-Ryan picked up.
-Ryan's updated hand:
-9 of Hearts!
-5 of Clubs!
-Jack of Diamonds!
-8 of Clubs!
-5 of Spades!
+Ace of Spades!
 
-3 of Spades!
+Kampy played the 
 
-Karen played the 
+2 of Spades!
 
-3 of Diamonds!
+Snipedown played the 
 
-Shaun-Michael played the 
+Last played card DOES affect Dutchy
 
-Jack of Diamonds!
+The last card was a two!
+Dutchy must now pick up 2 cards.
 
-Ryan played the 
+Dutchy's updated hand:
+6 of Hearts!
+8 of Diamonds!
+7 of Clubs!
+10 of Hearts!
+Queen of Diamonds!
+Jack of Spades!
+7 of Diamonds!
+
+Kampy picked up.
+Kampy's updated hand:
+Queen of Hearts!
+Queen of Clubs!
+
+Snipedown is not affected by last played card
+
+Snipedown picked up.
+Snipedown's updated hand:
+6 of Diamonds!
+9 of Diamonds!
+3 of Clubs!
+
+Dutchy is not affected by last played card
+
+Jack of Spades!
+
+Dutchy played the 
 
 The last card was a jack!
 The direction of play has been reversed.
 
-Shaun-Michael, it's your turn.
+Snipedown, it's your turn.
 
-Queen of Diamonds!
-
-Shaun-Michael played the 
-
-Queen of Clubs!
-
-Karen played the 
-
-Last played card DOES affect Ryan
-
-The last card was a black queen!
-Ryan must now pick up 5 cards.
-
-Ryan's updated hand:
-9 of Hearts!
-5 of Clubs!
-8 of Clubs!
-5 of Spades!
-10 of Hearts!
-10 of Diamonds!
-8 of Hearts!
+Snipedown picked up.
+Snipedown's updated hand:
 6 of Diamonds!
-Queen of Spades!
+9 of Diamonds!
+3 of Clubs!
+3 of Spades!
 
+Kampy picked up.
+Kampy's updated hand:
 Queen of Hearts!
-
-Shaun-Michael played the 
-
-Ace of Hearts!
-
-Karen played the 
-
-8 of Hearts!
-
-Ryan played the 
-
-Last played card DOES affect Shaun-Michael
-
-The last card was an eight!
-Shaun-Michael is forced to skip their turn.
-
-Karen, it's your turn.
-
-4 of Hearts!
-
-Karen played the 
-
-9 of Hearts!
-
-Ryan played the 
-
-2 of Hearts!
-
-Shaun-Michael played the 
-
-Last played card DOES affect Karen
-
-The last card was a two!
-Karen must now pick up 2 cards.
-
-Karen's updated hand:
-5 of Hearts!
-Ace of Diamonds!
-Jack of Clubs!
-
-10 of Hearts!
-
-Ryan played the 
-
-7 of Hearts!
-
-Shaun-Michael played the 
-
-
-Shaun-Michael is out!
-
-5 of Hearts!
-
-Karen played the 
-
-5 of Spades!
-
-Ryan played the 
-
-Karen picked up.
-Karen's updated hand:
-Ace of Diamonds!
-Jack of Clubs!
-10 of Clubs!
-
-Queen of Spades!
-
-Ryan played the 
-
-Last played card DOES affect Karen
-
-The last card was a black queen!
-Karen must now pick up 5 cards.
-
-Karen's updated hand:
-Ace of Diamonds!
-Jack of Clubs!
-10 of Clubs!
 Queen of Clubs!
 3 of Hearts!
-2 of Clubs!
-2 of Diamonds!
-2 of Spades!
 
-Ryan picked up.
-Ryan's updated hand:
-5 of Clubs!
-8 of Clubs!
-10 of Diamonds!
+Dutchy picked up.
+Dutchy's updated hand:
+6 of Hearts!
+8 of Diamonds!
+7 of Clubs!
+10 of Hearts!
+Queen of Diamonds!
+7 of Diamonds!
+Jack of Hearts!
+
+3 of Spades!
+
+Snipedown played the 
+
+3 of Hearts!
+
+Kampy played the 
+
+6 of Hearts!
+
+Dutchy played the 
+
 6 of Diamonds!
-9 of Diamonds!
 
-Karen is not affected by last played card
+Snipedown played the 
 
-2 of Spades!
+Kampy picked up.
+Kampy's updated hand:
+Queen of Hearts!
+Queen of Clubs!
+Jack of Clubs!
 
-Karen played the 
+8 of Diamonds!
 
-Last played card DOES affect Ryan
+Dutchy played the 
 
-The last card was a two!
-Ryan must now pick up 2 cards.
+Last played card DOES affect Snipedown
 
-Ryan's updated hand:
-5 of Clubs!
-8 of Clubs!
-10 of Diamonds!
-6 of Diamonds!
-9 of Diamonds!
-9 of Spades!
-9 of Clubs!
+The last card was an eight!
+Snipedown is forced to skip their turn.
 
-2 of Clubs!
+Kampy, it's your turn.
 
-Karen played the 
-
-Last played card DOES affect Ryan
-
-The last card was a two!
-Ryan must now pick up 2 cards.
-
-Ryan's updated hand:
-5 of Clubs!
-8 of Clubs!
-10 of Diamonds!
-6 of Diamonds!
-9 of Diamonds!
-9 of Spades!
-9 of Clubs!
+Kampy picked up.
+Kampy's updated hand:
+Queen of Hearts!
+Queen of Clubs!
+Jack of Clubs!
 Ace of Clubs!
+
+Dutchy is not affected by last played card
+
+Queen of Diamonds!
+
+Dutchy played the 
+
+9 of Diamonds!
+
+Snipedown played the 
+
+Kampy picked up.
+Kampy's updated hand:
+Queen of Hearts!
+Queen of Clubs!
+Jack of Clubs!
+Ace of Clubs!
+2 of Clubs!
+
+7 of Diamonds!
+
+Dutchy played the 
+
+Snipedown picked up.
+Snipedown's updated hand:
 3 of Clubs!
+4 of Clubs!
+
+Kampy picked up.
+Kampy's updated hand:
+Queen of Hearts!
+Queen of Clubs!
+Jack of Clubs!
+Ace of Clubs!
+2 of Clubs!
+4 of Spades!
+
+7 of Clubs!
+
+Dutchy played the 
+
+3 of Clubs!
+
+Snipedown played the 
 
 Jack of Clubs!
 
-Karen played the 
+Kampy played the 
 
 The last card was a jack!
 The direction of play has been reversed.
 
-Ryan, it's your turn.
+Snipedown, it's your turn.
 
-8 of Clubs!
+4 of Clubs!
 
-Ryan played the 
+Snipedown played the 
 
-Last played card DOES affect Karen
 
-The last card was an eight!
-Karen is forced to skip their turn.
+Snipedown is out!
 
-Ryan, it's your turn.
+Dutchy picked up.
+Dutchy's updated hand:
+10 of Hearts!
+Jack of Hearts!
+7 of Spades!
 
-3 of Clubs!
+2 of Clubs!
 
-Ryan played the 
+Kampy played the 
 
+Last played card DOES affect Dutchy
+
+The last card was a two!
+Dutchy must now pick up 2 cards.
+
+Dutchy's updated hand:
+10 of Hearts!
+Jack of Hearts!
+7 of Spades!
+10 of Spades!
 10 of Clubs!
-
-Karen played the 
-
-5 of Clubs!
-
-Ryan played the 
 
 King of Clubs!
 
-Karen played the 
+Kampy played the 
+
+10 of Clubs!
+
+Dutchy played the 
 
 Ace of Clubs!
 
-Ryan played the 
+Kampy played the 
 
+Dutchy picked up.
+Dutchy's updated hand:
+10 of Hearts!
+Jack of Hearts!
+7 of Spades!
+10 of Spades!
+6 of Clubs!
+
+Kampy picked up.
+Kampy's updated hand:
+Queen of Hearts!
+4 of Spades!
+8 of Clubs!
+
+6 of Clubs!
+
+Dutchy played the 
+
+8 of Clubs!
+
+Kampy played the 
+
+Last played card DOES affect Dutchy
+
+The last card was an eight!
+Dutchy is forced to skip their turn.
+
+Kampy, it's your turn.
+
+Kampy picked up.
+Kampy's updated hand:
+Queen of Hearts!
+4 of Spades!
+Queen of Clubs!
+
+Dutchy is not affected by last played card
+
+Dutchy picked up.
+Dutchy's updated hand:
+10 of Hearts!
+Jack of Hearts!
+7 of Spades!
+10 of Spades!
+Queen of Spades!
+
+Kampy is not affected by last played card
+
+Queen of Clubs!
+
+Kampy played the 
+
+Last played card DOES affect Dutchy
+
+The last card was a black queen!
+Dutchy must now pick up 5 cards.
+
+Dutchy's updated hand:
+10 of Hearts!
+Jack of Hearts!
+7 of Spades!
+10 of Spades!
+Queen of Spades!
+5 of Spades!
+5 of Diamonds!
+4 of Diamonds!
+10 of Diamonds!
+2 of Diamonds!
+
+Queen of Hearts!
+
+Kampy played the 
+
+Queen of Spades!
+
+Dutchy played the 
+
+Last played card DOES affect Kampy
+
+The last card was a black queen!
+Kampy must now pick up 5 cards.
+
+Kampy's updated hand:
+4 of Spades!
+Queen of Diamonds!
+3 of Diamonds!
+Jack of Diamonds!
 Ace of Diamonds!
+Ace of Hearts!
 
-Karen played the 
+7 of Spades!
 
-6 of Diamonds!
+Dutchy played the 
 
-Ryan played the 
+4 of Spades!
+
+Kampy played the 
+
+10 of Spades!
+
+Dutchy played the 
+
+Kampy picked up.
+Kampy's updated hand:
+Queen of Diamonds!
+3 of Diamonds!
+Jack of Diamonds!
+Ace of Diamonds!
+Ace of Hearts!
+9 of Hearts!
+
+10 of Hearts!
+
+Dutchy played the 
+
+9 of Hearts!
+
+Kampy played the 
+
+Jack of Hearts!
+
+Dutchy played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Kampy, it's your turn.
+
+Jack of Diamonds!
+
+Kampy played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Dutchy, it's your turn.
 
 2 of Diamonds!
 
-Karen played the 
+Dutchy played the 
 
-Last played card DOES affect Ryan
+Last played card DOES affect Kampy
 
 The last card was a two!
-Ryan must now pick up 2 cards.
+Kampy must now pick up 2 cards.
 
-Ryan's updated hand:
-10 of Diamonds!
-9 of Diamonds!
-9 of Spades!
-9 of Clubs!
-6 of Clubs!
-7 of Clubs!
+Kampy's updated hand:
+Queen of Diamonds!
+3 of Diamonds!
+Ace of Diamonds!
+Ace of Hearts!
+8 of Hearts!
+8 of Spades!
 
-Karen picked up.
-Karen's updated hand:
-3 of Hearts!
-4 of Clubs!
+5 of Diamonds!
 
-Ryan is not affected by last played card
+Dutchy played the 
 
-10 of Diamonds!
+3 of Diamonds!
 
-Ryan played the 
-
-Karen picked up.
-Karen's updated hand:
-3 of Hearts!
-4 of Clubs!
-4 of Diamonds!
-
-9 of Diamonds!
-
-Ryan played the 
+Kampy played the 
 
 4 of Diamonds!
 
-Karen played the 
-
-Ryan picked up.
-Ryan's updated hand:
-9 of Spades!
-9 of Clubs!
-6 of Clubs!
-7 of Clubs!
-5 of Diamonds!
-
-4 of Clubs!
-
-Karen played the 
-
-7 of Clubs!
-
-Ryan played the 
-
-Karen picked up.
-Karen's updated hand:
-3 of Hearts!
-8 of Diamonds!
-
-6 of Clubs!
-
-Ryan played the 
-
-Karen picked up.
-Karen's updated hand:
-3 of Hearts!
-8 of Diamonds!
-7 of Diamonds!
-
-9 of Clubs!
-
-Ryan played the 
-
-Karen picked up.
-Karen's updated hand:
-3 of Hearts!
-8 of Diamonds!
-7 of Diamonds!
-Queen of Diamonds!
-
-9 of Spades!
-
-Ryan played the 
-
-Karen picked up.
-Karen's updated hand:
-3 of Hearts!
-8 of Diamonds!
-7 of Diamonds!
-Queen of Diamonds!
-Queen of Hearts!
-
-Ryan picked up.
-Ryan's updated hand:
-5 of Diamonds!
-6 of Hearts!
-
-Karen picked up.
-Karen's updated hand:
-3 of Hearts!
-8 of Diamonds!
-7 of Diamonds!
-Queen of Diamonds!
-Queen of Hearts!
-Jack of Hearts!
-
-Ryan picked up.
-Ryan's updated hand:
-5 of Diamonds!
-6 of Hearts!
-Jack of Spades!
-
-Karen picked up.
-Karen's updated hand:
-3 of Hearts!
-8 of Diamonds!
-7 of Diamonds!
-Queen of Diamonds!
-Queen of Hearts!
-Jack of Hearts!
-Ace of Spades!
-
-Jack of Spades!
-
-Ryan played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Karen, it's your turn.
-
-Jack of Hearts!
-
-Karen played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Ryan, it's your turn.
-
-6 of Hearts!
-
-Ryan played the 
-
-3 of Hearts!
-
-Karen played the 
-
-Ryan picked up.
-Ryan's updated hand:
-5 of Diamonds!
-4 of Spades!
-
-King of Hearts!
-
-Karen played the 
-
-Ryan picked up.
-Ryan's updated hand:
-5 of Diamonds!
-4 of Spades!
-7 of Spades!
+Dutchy played the 
 
 King of Diamonds!
 
-Karen played the 
+Kampy played the 
 
-5 of Diamonds!
+10 of Diamonds!
 
-Ryan played the 
+Dutchy played the 
 
-7 of Diamonds!
+Ace of Diamonds!
 
-Karen played the 
+Kampy played the 
 
-7 of Spades!
+Dutchy picked up.
+Dutchy's updated hand:
+5 of Spades!
+6 of Spades!
 
-Ryan played the 
+Ace of Hearts!
 
-Ace of Spades!
+Kampy played the 
 
-Karen played the 
+Dutchy picked up.
+Dutchy's updated hand:
+5 of Spades!
+6 of Spades!
+9 of Spades!
 
-4 of Spades!
+8 of Hearts!
 
-Ryan played the 
+Kampy played the 
+
+Last played card DOES affect Dutchy
+
+The last card was an eight!
+Dutchy is forced to skip their turn.
+
+Kampy, it's your turn.
+
+8 of Spades!
+
+Kampy played the 
 
 
-Ryan is out!
+Kampy is out!
 
 
 Scoreboard:
-1st:	Eleanor                                           (Hardcoded - Aggressive)
-2nd:	Shaun-Michael                                     (Hardcoded - Random)
-3rd:	Ryan                                              (Human)
-4th:	Karen                                             (Hardcoded - Unaggressive)
+1st:	Walshy                                            (Hardcoded - Random)
+2nd:	Snipedown                                         (Hardcoded - Unaggressive)
+3rd:	Kampy                                             (Human)
+4th:	Dutchy                                            (Hardcoded - Aggressive)

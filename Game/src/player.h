@@ -2,10 +2,10 @@
 
 #include <string>
 #include <vector>
-
 #include <memory>
 
 #include "card.h"
+
 using namespace std;
 
 class player
@@ -20,6 +20,7 @@ public:
 	bool canPickUp;
 	bool myTurn;
 
+	//Return the player's playstyle as a string
 	string getPlaystyle()
 	{
 		switch (playstyle)

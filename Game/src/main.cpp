@@ -4,18 +4,15 @@
 #include <fstream>
 #include <istream>
 #include <random> 
-/////////////////////////////
-#include "card.h"
-#include "player.h"
-#include "GameManager.h"
-//#include "Rules.h"
-//#include "Deck.h"
 #include <vector>
 #include <ctime>
 #include <memory>
-//SFML
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
+
+#include "card.h"
+#include "player.h"
+#include "GameManager.h"
 
 using namespace sf;
 using namespace std;
@@ -40,6 +37,7 @@ int main()
 	GameManager::Manager()->PlayerCreation();
 	GameManager::Manager()->setFirstPlayer();
 	GameManager::Manager()->DeckOfCards.SetUpDeck();
+	GameManager::Manager()->SetCardsPerPlayer(2);
 
 	//Display player names in GameText.txt
 	GameText << "Players:" << endl;
@@ -49,66 +47,46 @@ int main()
 	}
 	GameText << endl << endl;
 
-	//For all cards in allCards, shout out the suit (testing that populating and shuffling works)
-	//For some reason both this and the [i] method are getting a first result but then crashing the program
-	//GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->DeckOfCards.allCards);
-
-
-	//We need to know how many cards each player is going to be dealt.
-	//This could be something we let the user decide...
-	//But for now let's make it 7.
-	//int CardsPerPlayer = 7;
-	GameManager::Manager()->SetCardsPerPlayer(2);
-
-
-	//Let's deal!
-	//We need a nested for loop here so that the outside loop deals 7 times
-	//but the inside loop makes sure that it doesn't just deal 7 cards to each player
-	//sequentially. Cards should be dealt 1 by 1 around the table until everyone has 
-	//[CardsPerPlayer] cards.
-	//The inner loop decides who is recieving the next card.
+	//Deal the cards
 	GameManager::Manager()->DeckOfCards.Deal(GameManager::Manager()->GetListOfPlayers(), GameManager::Manager()->GetCardsPerPlayer());
 
 
-	//I'm not confident about the * notation so let's get some tests done here
-	cout << endl << endl;
-	cout << "allCards.size() = " << GameManager::Manager()->DeckOfCards.allCards.size() << endl;
-	cout << "cardStack.size() = " << GameManager::Manager()->DeckOfCards.cardStack.size() << endl << endl;
-	cout << "If that worked, each player should have 7 cards." << endl << "allCards should still have 52 cards, and cardstack should have "
-		<< 52 - (GameManager::Manager()->GetListOfPlayers().size() * GameManager::Manager()->GetCardsPerPlayer()) << endl << endl;
-
-
-	//Right let's turn the top (or bottom in our case) card over and see what we're playing on
+	//Let's turn the top card over and see what we're playing on
 	GameManager::Manager()->DeckOfCards.lastCard.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
 	GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
 
-	cout << "The cards have been dealt by " << GameManager::Manager()->GetCurrentPlayer()->name << " and our first card to be played on is" << endl;
-	GameText << "The cards have been dealt by " << GameManager::Manager()->GetCurrentPlayer()->name << " and our first card to be played on is" << endl;
+	cout << "The cards have been dealt by " << GameManager::Manager()->GetCurrentPlayer()->name << " and our first card to be played on is the" << endl;
+	GameText << "The cards have been dealt by " << GameManager::Manager()->GetCurrentPlayer()->name << " and our first card to be played on is the" << endl;
 	GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->DeckOfCards.lastCard);
 
 	GameManager::Manager()->DeckOfCards.lastCard[0]->turnsSincePlayed = 0;
 	GameManager::Manager()->SetLastCardPlayer(GameManager::Manager()->GetCurrentPlayer());
 
-	cout << "The player left of the dealer will start." << endl << endl;
-	GameText << "The player left of the dealer will start." << endl << endl;
+	//Left of the dealer starts, unless the first card to be played on is a jack 
+	if (GameManager::Manager()->DeckOfCards.lastCard[0]->cardType != card::type::Jack)
+	{
+		cout << "The player left of the dealer will start." << endl << endl;
+		GameText << "The player left of the dealer will start." << endl << endl;
+		
+		//Player left of the dealer starts, so we need to move current player on to that player
+		GameManager::Manager()->NextPlayer();
+		GameManager::Manager()->ConsultRules();
+	}
+	else
+	{
+		cout << "The player right of the dealer will start." << endl << endl;
+		GameText << "The player right of the dealer will start." << endl << endl;
+
+		GameManager::Manager()->DeckOfCards.lastCard[0]->turnsSincePlayed == 1;
+		GameManager::Manager()->ConsultRules();
+	}
 
 	//Player left of the dealer starts, so we need to move current player on to that player
-	GameManager::Manager()->NextPlayer();
-	GameManager::Manager()->ConsultRules();
+	//GameManager::Manager()->NextPlayer();
+	//GameManager::Manager()->ConsultRules();
 
-	//Display Current Player's hand
-	//cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s hand:" << endl;
-	//GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
-	//
-	////Check the current player can play (sets canPlay and canPickUp bools)
-	//if (GameManager::Manager()->can_play_checker(GameManager::Manager()->GetCurrentPlayer()->hand))
-	//{
-	//	cout << GameManager::Manager()->GetCurrentPlayer()->name << " can play." << endl << endl;
-	//}
-	//else
-	//{
-	//	cout << GameManager::Manager()->GetCurrentPlayer()->name << ", you'll have to pick up." << endl << endl;
-	//}
+	//^ I'm gonna move the nextplayer() here and put it in the if
+	//I'm thinking that if the first card to play on is a jack, it's gonna do that automatically
 
 
 
@@ -172,13 +150,11 @@ int main()
 				//Messing about with clicking sprites
 				for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
 				{
-					//More serious now, going to 'play' a card (add it to last card[])
 					//If sprite is clicked on
 					if (mousePos.x > c->sprite.getPosition().x
 						&& mousePos.x < c->sprite.getPosition().x + c->sprite.getGlobalBounds().width
 						&& mousePos.y > c->sprite.getPosition().y
-						&& mousePos.y < c->sprite.getPosition().y + c->sprite.getGlobalBounds().height
-						)//&& Mouse::isButtonPressed(Mouse::Left))
+						&& mousePos.y < c->sprite.getPosition().y + c->sprite.getGlobalBounds().height)
 					{
 						if (eventt.type == Event::MouseButtonReleased)
 						{
@@ -202,8 +178,7 @@ int main()
 				if (mousePos.x > GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().x
 					&& mousePos.x < GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().x + GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getGlobalBounds().width
 					&& mousePos.y > GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().y
-					&& mousePos.y < GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().y + GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getGlobalBounds().height
-					)//&& Mouse::isButtonPressed(Mouse::Left))
+					&& mousePos.y < GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getPosition().y + GameManager::Manager()->DeckOfCards.cardStack[0]->sprite.getGlobalBounds().height)
 				{
 					if (eventt.type == Event::MouseButtonReleased)
 					{
@@ -214,9 +189,10 @@ int main()
 							{
 								if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
 								{
-									GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
+									//GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
+									GameManager::Manager()->pickup();
 									//Update Hand and draw it
-									cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
+									/*cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
 									cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
 
 									GameText << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
@@ -228,7 +204,7 @@ int main()
 									GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
 
 									GameManager::Manager()->NextPlayer();
-									GameManager::Manager()->ConsultRules();
+									GameManager::Manager()->ConsultRules();*/
 
 									//Setting the background colour
 									window.clear(Color(63, 191, 127, 255));
@@ -358,9 +334,10 @@ int main()
 					{
 						if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
 						{
-							GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
+							//GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
+							GameManager::Manager()->pickup();
 							//Update Hand and draw it
-							cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
+							/*cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
 							cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
 
 							GameText << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
@@ -372,7 +349,7 @@ int main()
 							GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
 
 							GameManager::Manager()->NextPlayer();
-							GameManager::Manager()->ConsultRules();
+							GameManager::Manager()->ConsultRules();*/
 
 							//Setting the background colour
 							window.clear(Color(63, 191, 127, 255));
@@ -472,9 +449,10 @@ int main()
 				{
 					if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
 					{
-						GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
+						//GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
+						GameManager::Manager()->pickup();
 						//Update Hand and draw it
-						cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
+						/*cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
 						cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
 
 						GameText << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
@@ -486,7 +464,7 @@ int main()
 						GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
 
 						GameManager::Manager()->NextPlayer();
-						GameManager::Manager()->ConsultRules();
+						GameManager::Manager()->ConsultRules();*/
 
 						//Setting the background colour
 						window.clear(Color(63, 191, 127, 255));
@@ -558,21 +536,22 @@ int main()
 				{
 					if (GameManager::Manager()->GetCurrentPlayer()->canPickUp)
 					{
-						GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
-						//Update Hand and draw it
-						cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
-						cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+						////GameManager::Manager()->GetCurrentPlayer()->hand.push_back(GameManager::Manager()->DeckOfCards.cardStack[0]);
+						GameManager::Manager()->pickup();
+						////Update Hand and draw it
+						//cout << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
+						//cout << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
 
-						GameText << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
-						GameText << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
-						
-						GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
+						//GameText << GameManager::Manager()->GetCurrentPlayer()->name << " picked up." << endl;
+						//GameText << GameManager::Manager()->GetCurrentPlayer()->name << "'s updated hand:" << endl;
+						//
+						//GameManager::Manager()->DeckOfCards.identify_cards(GameManager::Manager()->GetCurrentPlayer()->hand);
 
-						GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
-						GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
+						//GameManager::Manager()->DeckOfCards.cardStack.erase(GameManager::Manager()->DeckOfCards.cardStack.begin());
+						//GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
 
-						GameManager::Manager()->NextPlayer();
-						GameManager::Manager()->ConsultRules();
+						//GameManager::Manager()->NextPlayer();
+						//GameManager::Manager()->ConsultRules();
 
 						//Setting the background colour
 						window.clear(Color(63, 191, 127, 255));
@@ -583,7 +562,6 @@ int main()
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
 draw:
 		GameManager::Manager()->DeckOfCards.UpdatePositionsAndTextures(GameManager::Manager()->GetCurrentPlayer());
 
@@ -592,8 +570,6 @@ draw:
 			window.draw(c->sprite);
 		}
 		window.display();
-
-
 
 
 		//If only one player is left, Gameover will be true. 

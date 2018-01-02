@@ -18,7 +18,7 @@ public:
 	Texture texture;
 	int turnsSincePlayed = 0;
 
-
+	//Set cards to be red or black based on their suit
 	void setColour()
 	{
 		if (cardSuit == card::suit::Clubs || cardSuit == card::suit::Spades)

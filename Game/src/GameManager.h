@@ -15,249 +15,213 @@ class GameManager
 public:
 	enum GameDirection { Clockwise, AntiClockwise };
 private:
-
+	//Game Manager is a singleton 
 	static GameManager *instance;
-
 	GameManager() {}
-
-	/////////////////////////////
 
 	int NumberOfPlayers;
 	int CardsPerPlayer;
 
 	vector<shared_ptr<player>> ListOfPlayers;
 
-	//enum GameDirection { Clockwise, AntiClockwise };
+	//Game initially flows clockwise (left of the dealer!)
 	GameDirection DirectionOfPlay = GameDirection::Clockwise;
 
 	//Player who played the most recent card
 	shared_ptr<player> LastCardPlayer;
 
-	//Will be a part of ListOfPlayers (aka []) and will be set dependant on direction 
+	//Player taking the current turn
 	shared_ptr<player> CurrentPlayer; 
 
-	//whose turn is it?
-	//Maybe players could have a bool IsItMyTurn that we set either here or somewhere else
-
-	//Oh just had a random thought and putting it here
-	//In our game loop, we can have 2 different if statements that's like
-	//If direction = clockwise, turn ++
-	//if direction = anticlockwise, turn --
-	//Or maybe it'll just be part of a function I dunno
-
-
-	//Something to check if last card was played by previous player
-	//Maybe have a function that is called every time a card is played that passes the player that played it...
-	//Then, at the beginning of every turn, call another function that checks who played the last card.
-	//If their index in the vector is more than 1 (or -1?) of a difference then it doesn't effect you
-	//Maybe only need to check it if a special card is the last card?
-
 public:
-
-static GameManager *Manager()
-{
-	if (instance == NULL)
+	//Game Manager is a singleton
+	static GameManager *Manager()
 	{
-		instance = new GameManager();
+		if (instance == NULL)
+		{
+			instance = new GameManager();
+		}
+		return instance;
 	}
 
-	return instance;
-}
+	//Creating instances of Scoreboard and Deck objects for the game manager
+	Deck DeckOfCards;
+	Ranking Scoreboard;
 
 
-
-Deck DeckOfCards;
-Ranking Scoreboard;
-
-
-void PlayerCreation()
-{
-	string PlayerName;
-
-	//Making sure Number of players is between 2 and 4
-	while (!(NumberOfPlayers > 1 && NumberOfPlayers < 5))
+	//Creation of players
+	void PlayerCreation()
 	{
-		cout << "How many players do you want in the game? (2-4)" << endl;
-		cin >> NumberOfPlayers;
-		cout << endl;
-
-		//If non-numeric characters are input, ignore it and try again
-		if (cin.fail())
-		{
-			cin.clear();
-			cin.ignore(100, '\n');
-		}
-	}
-
-	//Take in player names and create players with said names
-	for (int i = 0; i < NumberOfPlayers; i++)
-	{
-		cout << "Enter a player name:" << endl;
-
-		while (PlayerName == "")
-		{
-			getline(cin, PlayerName);
-		}
-		cout << endl;
-
-		player newPlayer;
-		newPlayer.name = PlayerName;
-
-		ListOfPlayers.push_back(make_shared<player>(newPlayer));
-		
-		PlayerName = "";
-	}
-
-	//TEMP - setting playstyles
-	ListOfPlayers[0]->playstyle = player::Playstyle::Human;
-	ListOfPlayers[1]->playstyle = player::Playstyle::Aggressive;
-
-	if(ListOfPlayers.size() > 2)
-	{
-		ListOfPlayers[2]->playstyle = player::Playstyle::Unaggressive;	//Change me back to unaggressive
-		
-		if(ListOfPlayers.size() > 3)
-		{
-		ListOfPlayers[3]->playstyle = player::Playstyle::Random;
-		}
-	}
-
-}
-
-
-void SetNumberOfPlayers(int NumPlayers)
-{
-	NumberOfPlayers = NumPlayers;
-}
-
-int GetNumberOfPlayers()
-{
-	return NumberOfPlayers;
-}
-
-vector<shared_ptr<player>> GetListOfPlayers()
-{
-	return ListOfPlayers;
-}
-
-void setFirstPlayer()
-{
-	CurrentPlayer = ListOfPlayers[0];
-}
-
-void SetCardsPerPlayer(int NumCards)
-{
-	CardsPerPlayer = NumCards;
-}
-
-int GetCardsPerPlayer()
-{
-	return CardsPerPlayer;
-}
-
-shared_ptr<player>GetCurrentPlayer()
-{
-	return CurrentPlayer;
-}
-
-void NextPlayer()
-{
-	//if (Scoreboard.Gameover(GetNumberOfPlayers()))
-	//{
-	//	return;  //?? right thing to do? 
-	//}
-
-	if (DirectionOfPlay == GameDirection::Clockwise)
-	{
-		//Set the previous (current before this method is complete) player's myTurn boolean to false
-		CurrentPlayer->myTurn = false;
-
-		if (CurrentPlayer == ListOfPlayers[ListOfPlayers.size() - 1])
-		{
-			CurrentPlayer = ListOfPlayers[0];
-			CurrentPlayer->myTurn = true;
-		}
-		else if (CurrentPlayer == ListOfPlayers[0])
-		{
-			CurrentPlayer = ListOfPlayers[1];
-			CurrentPlayer->myTurn = true;
-		}
-		else if (CurrentPlayer == ListOfPlayers[1] && ListOfPlayers.size() > 2)
-		{
-			CurrentPlayer = ListOfPlayers[2];
-			CurrentPlayer->myTurn = true;
-		}
-		else if (CurrentPlayer == ListOfPlayers[2] && ListOfPlayers.size() > 3)
-		{
-			CurrentPlayer = ListOfPlayers[3];
-			CurrentPlayer->myTurn = true;
-		}
-	}
-	else if (DirectionOfPlay == GameDirection::AntiClockwise)
-	{
-		if (CurrentPlayer == ListOfPlayers[0])
-		{
-			CurrentPlayer = ListOfPlayers[ListOfPlayers.size() - 1];
-			CurrentPlayer->myTurn = true;
-		}
-		else if (CurrentPlayer == ListOfPlayers[1])
-		{
-			CurrentPlayer = ListOfPlayers[0];
-			CurrentPlayer->myTurn = true;
-		}
-		else if (CurrentPlayer == ListOfPlayers[2])
-		{
-			CurrentPlayer = ListOfPlayers[1];
-			CurrentPlayer->myTurn = true;
-		}
-		else if (CurrentPlayer == ListOfPlayers[3])
-		{
-			CurrentPlayer = ListOfPlayers[2];
-			CurrentPlayer->myTurn = true;
-		}
-	}
-
-	//Set canPlay and canPickUp to false by default, can_play_checker will sort it
-	CurrentPlayer->canPlay = false;
-	CurrentPlayer->canPickUp = false;
-
-	//Trying to sort recursive rule enforcement
-	DeckOfCards.lastCard[0]->turnsSincePlayed += 1;
-
-	DeckOfCards.UpdatePositionsAndTextures(GetCurrentPlayer());
-
-	if (Scoreboard.Gameover(GetNumberOfPlayers()))
-	{
-		Scoreboard.PlayerIsOut(GetCurrentPlayer(), GetNumberOfPlayers());
-		return;  //?? right thing to do? 
-	}
-
-	//if (GetCurrentPlayer()->playstyle != player::Playstyle::Human)
-	//{
-	//	cout << "Not human, sleeping for 3" << endl << endl;
-	//	//If the current player is not human, take 3 seconds before trying to make a move
-	//	//just to allow us to see what the player is doing, and also to make it feel a bit
-	//	//more authentic, rather than being able to loop through several non-human players'
-	//	//moves in the blink of an eye
-	//	sleep(seconds(3.0f));
-	//}
-}
-
-
-
-//Don't think you can return enums so I'm passing strings
-auto getDirectionOfPlay()
-{
-	return DirectionOfPlay;
+		string PlayerName;
 	
-	//if (DirectionOfPlay == GameDirection::Clockwise)
-	//{
-	//	return Direction
-	//	//return "Clockwise";
-	//}
-	//return "Anti-Clockwise";
-}
+		//Making sure Number of players is between 2 and 4
+		while (!(NumberOfPlayers > 1 && NumberOfPlayers < 5))
+		{
+			cout << "How many players do you want in the game? (2-4)" << endl;
+			cin >> NumberOfPlayers;
+			cout << endl;
+	
+			//If non-numeric characters are input, ignore it and try again
+			if (cin.fail())
+			{
+				cin.clear();
+				cin.ignore(100, '\n');
+			}
+		}
+	
+		//Take in player names and create players with said names
+		for (int i = 0; i < NumberOfPlayers; i++)
+		{
+			cout << "Enter a player name:" << endl;
+	
+			while (PlayerName == "")
+			{
+				getline(cin, PlayerName);
+			}
+			cout << endl;
+	
+			player newPlayer;
+			newPlayer.name = PlayerName;
+	
+			ListOfPlayers.push_back(make_shared<player>(newPlayer));
+			
+			PlayerName = "";
+		}
+	
+		//TEMP - setting playstyles
+		ListOfPlayers[0]->playstyle = player::Playstyle::Human;
+		ListOfPlayers[1]->playstyle = player::Playstyle::Aggressive;
+	
+		if(ListOfPlayers.size() > 2)
+		{
+			ListOfPlayers[2]->playstyle = player::Playstyle::Unaggressive;	//Change me back to unaggressive
+			
+			if(ListOfPlayers.size() > 3)
+			{
+			ListOfPlayers[3]->playstyle = player::Playstyle::Random;
+			}
+		}
+	
+	}
+	
+	
+	void SetNumberOfPlayers(int NumPlayers)
+	{
+		NumberOfPlayers = NumPlayers;
+	}
+	
+	int GetNumberOfPlayers()
+	{
+		return NumberOfPlayers;
+	}
+	
+	vector<shared_ptr<player>> GetListOfPlayers()
+	{
+		return ListOfPlayers;
+	}
+	
+	void setFirstPlayer()
+	{
+		CurrentPlayer = ListOfPlayers[0];
+	}
+	
+	void SetCardsPerPlayer(int NumCards)
+	{
+		CardsPerPlayer = NumCards;
+	}
+	
+	int GetCardsPerPlayer()
+	{
+		return CardsPerPlayer;
+	}
+	
+	shared_ptr<player>GetCurrentPlayer()
+	{
+		return CurrentPlayer;
+	}
+	
+	void NextPlayer()
+	{
+		//if (Scoreboard.Gameover(GetNumberOfPlayers()))
+		//{
+		//	return;  //?? right thing to do? 
+		//}
+	
+		if (DirectionOfPlay == GameDirection::Clockwise)
+		{
+			//Set the previous (current before this method is complete) player's myTurn boolean to false
+			CurrentPlayer->myTurn = false;
+	
+			if (CurrentPlayer == ListOfPlayers[ListOfPlayers.size() - 1])
+			{
+				CurrentPlayer = ListOfPlayers[0];
+				CurrentPlayer->myTurn = true;
+			}
+			else if (CurrentPlayer == ListOfPlayers[0])
+			{
+				CurrentPlayer = ListOfPlayers[1];
+				CurrentPlayer->myTurn = true;
+			}
+			else if (CurrentPlayer == ListOfPlayers[1] && ListOfPlayers.size() > 2)
+			{
+				CurrentPlayer = ListOfPlayers[2];
+				CurrentPlayer->myTurn = true;
+			}
+			else if (CurrentPlayer == ListOfPlayers[2] && ListOfPlayers.size() > 3)
+			{
+				CurrentPlayer = ListOfPlayers[3];
+				CurrentPlayer->myTurn = true;
+			}
+		}
+		else if (DirectionOfPlay == GameDirection::AntiClockwise)
+		{
+			if (CurrentPlayer == ListOfPlayers[0])
+			{
+				CurrentPlayer = ListOfPlayers[ListOfPlayers.size() - 1];
+				CurrentPlayer->myTurn = true;
+			}
+			else if (CurrentPlayer == ListOfPlayers[1])
+			{
+				CurrentPlayer = ListOfPlayers[0];
+				CurrentPlayer->myTurn = true;
+			}
+			else if (CurrentPlayer == ListOfPlayers[2])
+			{
+				CurrentPlayer = ListOfPlayers[1];
+				CurrentPlayer->myTurn = true;
+			}
+			else if (CurrentPlayer == ListOfPlayers[3])
+			{
+				CurrentPlayer = ListOfPlayers[2];
+				CurrentPlayer->myTurn = true;
+			}
+		}
+	
+		//Set canPlay and canPickUp to false by default, can_play_checker will sort it
+		CurrentPlayer->canPlay = false;
+		CurrentPlayer->canPickUp = false;
+	
+		//Trying to sort recursive rule enforcement
+		DeckOfCards.lastCard[0]->turnsSincePlayed += 1;
+	
+		DeckOfCards.UpdatePositionsAndTextures(GetCurrentPlayer());
+	
+		if (Scoreboard.Gameover(GetNumberOfPlayers()))
+		{
+			Scoreboard.PlayerIsOut(GetCurrentPlayer(), GetNumberOfPlayers());
+			return;
+		}
+	}
+	
+	
+	
+	//Returns the direction that play is flowing
+	auto getDirectionOfPlay()
+	{
+		return DirectionOfPlay;
+	}
 
+	//Flips the direction of play when a jack is played
 	void ChangeDirectionOfPlay()
 	{
 		if (DirectionOfPlay == GameDirection::Clockwise)
@@ -281,7 +245,7 @@ auto getDirectionOfPlay()
 		LastCardPlayer = lcp;
 	}
 
-	bool DoesLastCardAffectCurrentPlayer(shared_ptr<player> LastCardPlayer, shared_ptr<player> CurrentPlayer)
+	bool DoesLastCardAffectCurrentPlayer()
 	{
 		//For keeping track of what happened each game
 		fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
@@ -296,7 +260,7 @@ auto getDirectionOfPlay()
 			|| (DeckOfCards.lastCard[0]->cardType == card::type::Eight)
 			|| (DeckOfCards.lastCard[0]->cardType == card::type::Eight))
 		{
-			//If the card was played more than 0 turns ago, then it doesn't even matter
+			//If the card was played more than 1 turn ago, then it doesn't even matter
 			if (DeckOfCards.lastCard[0]->turnsSincePlayed != 1)
 			{
 				cout << GetCurrentPlayer()->name << " is not affected by last played card" << endl << endl;
@@ -360,58 +324,58 @@ auto getDirectionOfPlay()
 		}
 		//Same for Jack but no need for prints
 		else if (DeckOfCards.lastCard[0]->cardType == card::type::Jack)
+		{
+			//If the card was played more than 0 turns ago, then it doesn't even matter
+			if (DeckOfCards.lastCard[0]->turnsSincePlayed != 1)
 			{
-				//If the card was played more than 0 turns ago, then it doesn't even matter
-				if (DeckOfCards.lastCard[0]->turnsSincePlayed != 1)
-				{
-					return false;
-				}
-				else
-				{
-					return true;
-				}
-
-				//If the card was played more than 0 turns ago, then it doesn't even matter
-				//if (DeckOfCards.lastCard[0]->turnsSincePlayed = 1)
-				//{
-				//	int LCP = 0;
-				//	int CP = 0;
-
-				//	//Find index of current player and the last player to play a card
-				//	for (int i = 0; i < ListOfPlayers.size(); i++)
-				//	{
-				//		if (ListOfPlayers[i] == LastCardPlayer)
-				//		{
-				//			LCP = i;
-				//		}
-
-				//		if (ListOfPlayers[i] == CurrentPlayer)
-				//		{
-				//			CP = i;
-				//		}
-				//	}
-
-				//	//Using the indexes to determine whether or not the card was played by the previous player
-				//	//Not sure if all of this logic is right yet tbh
-				//	if (LCP = (CP - 1) || (LCP = (CP + 1)))
-				//	{
-				//		return true;
-				//	}
-
-
-				//	if ((LCP = (NumberOfPlayers - 1)) && (CP = 0) && (DirectionOfPlay == GameDirection::Clockwise))
-				//	{
-				//		return true;
-				//	}
-
-				//	if ((LCP = 0) && (CP = (NumberOfPlayers - 1)) && (DirectionOfPlay == GameDirection::AntiClockwise))
-				//	{
-				//		return true;
-				//	}
-				//	return false;
-				//}
+				return false;
 			}
-			return false;
+			else
+			{
+				return true;
+			}
+
+			//If the card was played more than 0 turns ago, then it doesn't even matter
+			//if (DeckOfCards.lastCard[0]->turnsSincePlayed = 1)
+			//{
+			//	int LCP = 0;
+			//	int CP = 0;
+
+			//	//Find index of current player and the last player to play a card
+			//	for (int i = 0; i < ListOfPlayers.size(); i++)
+			//	{
+			//		if (ListOfPlayers[i] == LastCardPlayer)
+			//		{
+			//			LCP = i;
+			//		}
+
+			//		if (ListOfPlayers[i] == CurrentPlayer)
+			//		{
+			//			CP = i;
+			//		}
+			//	}
+
+			//	//Using the indexes to determine whether or not the card was played by the previous player
+			//	//Not sure if all of this logic is right yet tbh
+			//	if (LCP = (CP - 1) || (LCP = (CP + 1)))
+			//	{
+			//		return true;
+			//	}
+
+
+			//	if ((LCP = (NumberOfPlayers - 1)) && (CP = 0) && (DirectionOfPlay == GameDirection::Clockwise))
+			//	{
+			//		return true;
+			//	}
+
+			//	if ((LCP = 0) && (CP = (NumberOfPlayers - 1)) && (DirectionOfPlay == GameDirection::AntiClockwise))
+			//	{
+			//		return true;
+			//	}
+			//	return false;
+			//}
+		}
+		return false;
 	}
 
 	//Play your chosen card
@@ -479,6 +443,34 @@ auto getDirectionOfPlay()
 			GameText << "." << endl << endl;
 		}
 	}
+
+
+	void pickup()
+	{
+		//For keeping track of what happened each game
+		fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
+		if (!GameText.is_open())
+		{
+			cout << "Error opening GameRecords.txt" << endl << endl;
+		}
+
+		GetCurrentPlayer()->hand.push_back(DeckOfCards.cardStack[0]);
+		DeckOfCards.cardStack.erase(DeckOfCards.cardStack.begin());
+		DeckOfCards.UpdatePositionsAndTextures(GetCurrentPlayer());
+
+		cout << GetCurrentPlayer()->name << " picked up." << endl;
+		cout << GetCurrentPlayer()->name << "'s updated hand:" << endl;
+
+		GameText << GetCurrentPlayer()->name << " picked up." << endl;
+		GameText << GetCurrentPlayer()->name << "'s updated hand:" << endl;
+
+		DeckOfCards.identify_cards(GetCurrentPlayer()->hand);
+
+		NextPlayer();
+		ConsultRules();
+	}
+
+
 	
 
 	bool can_play_checker(vector<shared_ptr<card>> hand)
@@ -672,7 +664,8 @@ auto getDirectionOfPlay()
 			return;
 		}
 
-		if (DoesLastCardAffectCurrentPlayer(WhoPlayedTheLastCard(), GetCurrentPlayer()) || (DeckOfCards.lastCard[0]->cardType == card::type::Jack))
+		//if (DoesLastCardAffectCurrentPlayer() || (DeckOfCards.lastCard[0]->cardType == card::type::Jack))
+		if (DoesLastCardAffectCurrentPlayer())
 		{
 			//By default, assume player can play and can't pick up.
 			//If this isn't the case, the following code will sort that out.

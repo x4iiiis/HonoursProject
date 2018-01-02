@@ -3,7 +3,6 @@
 #include <string>
 #include <iostream>
 #include <vector>
-
 #include <memory>
 
 #include "player.h"
@@ -14,9 +13,8 @@ class Ranking
 {
 private:
 	vector<shared_ptr<player>> Scoreboard;
-
 public:
-	
+	//When a player is out, add them to the scoreboard
 	void PlayerIsOut(shared_ptr<player> player, int numberOfPlayers)
 	{
 		//For keeping track of what happened each game
@@ -41,6 +39,7 @@ public:
 		}
 	}
 
+	//Print the scoreboard
 	void DisplayScoreboard()
 	{
 		cout << endl << endl << "Scoreboard:" << endl;
@@ -66,6 +65,7 @@ public:
 		}
 	}
 
+	//If there 1 less player in the scoreboard than the total number of players, it's gameover
 	bool Gameover(int InitialNumberOfPlayers)
 	{
 		if (Scoreboard.size() == InitialNumberOfPlayers - 1)
@@ -75,6 +75,7 @@ public:
 		return false;
 	}
 
+	//For accessing the scoreboard elsewhere
 	vector<shared_ptr<player>> getScoreboard()
 	{
 		return Scoreboard;
