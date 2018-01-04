@@ -1,755 +1,865 @@
 Players:
-Halo 3
-Halo 2
-Halo Reach
-Halo 5
+Gray Fox
+Meryl
+Otacon
+Colonel Campbell
 
 
-The cards have been dealt by Halo 3 and our first card to be played on is the
-5 of Diamonds!
+The cards have been dealt by Gray Fox and our first card to be played on is the
+2 of Hearts!
 
 The player left of the dealer will start.
 
-Halo 2 picked up.
-Halo 2's updated hand:
-4 of Hearts!
-10 of Hearts!
-5 of Clubs!
-
-3 of Diamonds!
-
-Halo Reach played the 
-
-Ace of Diamonds!
-
-Halo 5 played the 
-
-Halo 3 picked up.
-Halo 3's updated hand:
-9 of Spades!
-4 of Spades!
-3 of Hearts!
-
-Halo 2 picked up.
-Halo 2's updated hand:
-4 of Hearts!
-10 of Hearts!
-5 of Clubs!
-7 of Diamonds!
-
-Halo Reach picked up.
-Halo Reach's updated hand:
-10 of Clubs!
-6 of Clubs!
-
-Halo 5 picked up.
-Halo 5's updated hand:
-7 of Hearts!
-5 of Spades!
-
-Halo 3 picked up.
-Halo 3's updated hand:
-9 of Spades!
-4 of Spades!
-3 of Hearts!
-7 of Spades!
-
-7 of Diamonds!
-
-Halo 2 played the 
-
-Halo Reach picked up.
-Halo Reach's updated hand:
-10 of Clubs!
-6 of Clubs!
-7 of Clubs!
-
-7 of Hearts!
-
-Halo 5 played the 
-
-7 of Spades!
-
-Halo 3 played the 
-
-Halo 2 picked up.
-Halo 2's updated hand:
-4 of Hearts!
-10 of Hearts!
-5 of Clubs!
-9 of Diamonds!
-
-7 of Clubs!
-
-Halo Reach played the 
-
-Halo 5 picked up.
-Halo 5's updated hand:
-5 of Spades!
-2 of Hearts!
-
-Halo 3 picked up.
-Halo 3's updated hand:
-9 of Spades!
-4 of Spades!
-3 of Hearts!
-6 of Spades!
-
-5 of Clubs!
-
-Halo 2 played the 
-
-10 of Clubs!
-
-Halo Reach played the 
-
-Halo 5 picked up.
-Halo 5's updated hand:
-5 of Spades!
-2 of Hearts!
-9 of Clubs!
-
-Halo 3 picked up.
-Halo 3's updated hand:
-9 of Spades!
-4 of Spades!
-3 of Hearts!
-6 of Spades!
-Queen of Hearts!
-
-10 of Hearts!
-
-Halo 2 played the 
-
-Halo Reach picked up.
-Halo Reach's updated hand:
-6 of Clubs!
-Jack of Diamonds!
-
-2 of Hearts!
-
-Halo 5 played the 
-
-Last played card DOES affect Halo 3
+Last played card DOES affect Meryl
 
 The last card was a two!
-Halo 3 must now pick up 2 cards.
+Meryl must now pick up 2 cards.
 
-Halo 3's updated hand:
-9 of Spades!
-4 of Spades!
-3 of Hearts!
-6 of Spades!
-Queen of Hearts!
-Ace of Spades!
-8 of Hearts!
-
-4 of Hearts!
-
-Halo 2 played the 
-
-Halo Reach picked up.
-Halo Reach's updated hand:
-6 of Clubs!
-Jack of Diamonds!
-10 of Diamonds!
-
-Halo 5 picked up.
-Halo 5's updated hand:
-9 of Clubs!
-5 of Spades!
-4 of Clubs!
-
-8 of Hearts!
-
-Halo 3 played the 
-
-Last played card DOES affect Halo 2
-
-The last card was an eight!
-Halo 2 is forced to skip their turn.
-
-Halo Reach, it's your turn.
-
-Halo Reach picked up.
-Halo Reach's updated hand:
-6 of Clubs!
-Jack of Diamonds!
-10 of Diamonds!
+Meryl's updated hand:
 Jack of Spades!
-
-Halo 5 is not affected by last played card
-
-Halo 5 picked up.
-Halo 5's updated hand:
-9 of Clubs!
-5 of Spades!
-4 of Clubs!
-Queen of Spades!
-
-Halo 3 is not affected by last played card
-
-3 of Hearts!
-
-Halo 3 played the 
-
-Halo 2 picked up.
-Halo 2's updated hand:
+10 of Clubs!
 9 of Diamonds!
-8 of Clubs!
+4 of Diamonds!
 
-Halo Reach picked up.
-Halo Reach's updated hand:
-6 of Clubs!
-Jack of Diamonds!
-10 of Diamonds!
-Jack of Spades!
-Queen of Spades!
+7 of Hearts!
 
-Halo 5 picked up.
-Halo 5's updated hand:
-9 of Clubs!
-5 of Spades!
-4 of Clubs!
-Queen of Spades!
-Queen of Diamonds!
+Otacon played the 
 
-King of Hearts!
+7 of Diamonds!
 
-Halo 3 played the 
-
-Halo 2 picked up.
-Halo 2's updated hand:
-9 of Diamonds!
-8 of Clubs!
-8 of Diamonds!
-
-King of Spades!
-
-Halo Reach played the 
-
-5 of Spades!
-
-Halo 5 played the 
-
-6 of Spades!
-
-Halo 3 played the 
-
-Halo 2 picked up.
-Halo 2's updated hand:
-9 of Diamonds!
-8 of Clubs!
-8 of Diamonds!
-6 of Hearts!
-
-6 of Clubs!
-
-Halo Reach played the 
-
-9 of Clubs!
-
-Halo 5 played the 
-
-9 of Spades!
-
-Halo 3 played the 
-
-9 of Diamonds!
-
-Halo 2 played the 
-
-Jack of Diamonds!
-
-Halo Reach played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Halo 2, it's your turn.
-
-8 of Diamonds!
-
-Halo 2 played the 
-
-Last played card DOES affect Halo 3
-
-The last card was an eight!
-Halo 3 is forced to skip their turn.
-
-Halo 5, it's your turn.
+Colonel Campbell played the 
 
 King of Diamonds!
 
-Halo 5 played the 
+Gray Fox played the 
 
-10 of Diamonds!
+9 of Diamonds!
 
-Halo Reach played the 
+Meryl played the 
 
-Halo 2 picked up.
-Halo 2's updated hand:
-8 of Clubs!
-6 of Hearts!
-3 of Spades!
-
-Halo 3 picked up.
-Halo 3's updated hand:
-4 of Spades!
-Ace of Spades!
-Queen of Clubs!
-
-Halo 5 picked up.
-Halo 5's updated hand:
-Queen of Spades!
-4 of Clubs!
-Queen of Diamonds!
-
-Halo Reach picked up.
-Halo Reach's updated hand:
-Jack of Spades!
-Jack of Hearts!
-
-Halo 2 picked up.
-Halo 2's updated hand:
-8 of Clubs!
-6 of Hearts!
-3 of Spades!
-Queen of Hearts!
-
-Halo 3 picked up.
-Halo 3's updated hand:
-4 of Spades!
-Ace of Spades!
-Queen of Clubs!
-2 of Spades!
-
-Queen of Diamonds!
-
-Halo 5 played the 
-
-Halo Reach picked up.
-Halo Reach's updated hand:
-Jack of Spades!
-Jack of Hearts!
-5 of Hearts!
-
-Queen of Hearts!
-
-Halo 2 played the 
-
-Queen of Clubs!
-
-Halo 3 played the 
-
-Last played card DOES affect Halo 5
-
-The last card was a black queen!
-Halo 5 must now pick up 5 cards.
-
-Halo 5's updated hand:
-4 of Clubs!
-Queen of Spades!
-10 of Spades!
-9 of Hearts!
-6 of Diamonds!
-4 of Diamonds!
-2 of Diamonds!
-
-Halo Reach picked up.
-Halo Reach's updated hand:
-Jack of Spades!
-Jack of Hearts!
-5 of Hearts!
-2 of Clubs!
-
-Halo 2 is not affected by last played card
-
-8 of Clubs!
-
-Halo 2 played the 
-
-Last played card DOES affect Halo 3
-
-The last card was an eight!
-Halo 3 is forced to skip their turn.
-
-Halo 5, it's your turn.
-
-4 of Clubs!
-
-Halo 5 played the 
-
-2 of Clubs!
-
-Halo Reach played the 
-
-Last played card DOES affect Halo 2
-
-The last card was a two!
-Halo 2 must now pick up 2 cards.
-
-Halo 2's updated hand:
-6 of Hearts!
-3 of Spades!
-3 of Clubs!
-Ace of Hearts!
-
-2 of Spades!
-
-Halo 3 played the 
-
-Last played card DOES affect Halo 5
-
-The last card was a two!
-Halo 5 must now pick up 2 cards.
-
-Halo 5's updated hand:
-6 of Diamonds!
-4 of Diamonds!
-2 of Diamonds!
-9 of Hearts!
-10 of Spades!
-Queen of Spades!
-Queen of Clubs!
-Ace of Clubs!
-
-Jack of Spades!
-
-Halo Reach played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Halo 5, it's your turn.
-
-Queen of Spades!
-
-Halo 5 played the 
-
-Last played card DOES affect Halo 3
-
-The last card was a black queen!
-Halo 3 must now pick up 5 cards.
-
-Halo 3's updated hand:
-4 of Spades!
-Ace of Spades!
-Jack of Clubs!
-8 of Spades!
-5 of Diamonds!
-3 of Diamonds!
-Ace of Diamonds!
-
-3 of Spades!
-
-Halo 2 played the 
-
-Halo Reach picked up.
-Halo Reach's updated hand:
-Jack of Hearts!
-5 of Hearts!
-7 of Diamonds!
-
-10 of Spades!
-
-Halo 5 played the 
-
-8 of Spades!
-
-Halo 3 played the 
-
-Last played card DOES affect Halo 2
-
-The last card was an eight!
-Halo 2 is forced to skip their turn.
-
-Halo Reach, it's your turn.
-
-Halo Reach picked up.
-Halo Reach's updated hand:
-Jack of Hearts!
-5 of Hearts!
-7 of Diamonds!
-7 of Hearts!
-
-Halo 5 is not affected by last played card
-
-Halo 5 picked up.
-Halo 5's updated hand:
-6 of Diamonds!
-Ace of Clubs!
-Queen of Clubs!
-2 of Diamonds!
-4 of Diamonds!
-9 of Hearts!
+Otacon picked up.
+Otacon's updated hand:
 7 of Spades!
-
-Halo 3 is not affected by last played card
-
-4 of Spades!
-
-Halo 3 played the 
-
-Halo 2 picked up.
-Halo 2's updated hand:
-6 of Hearts!
-3 of Clubs!
-Ace of Hearts!
-7 of Clubs!
-
-Halo Reach picked up.
-Halo Reach's updated hand:
-Jack of Hearts!
-5 of Hearts!
-7 of Diamonds!
-7 of Hearts!
-5 of Clubs!
-
-4 of Diamonds!
-
-Halo 5 played the 
-
-5 of Diamonds!
-
-Halo 3 played the 
-
-Halo 2 picked up.
-Halo 2's updated hand:
-6 of Hearts!
-3 of Clubs!
-Ace of Hearts!
-7 of Clubs!
-10 of Clubs!
-
-5 of Hearts!
-
-Halo Reach played the 
-
-9 of Hearts!
-
-Halo 5 played the 
-
-Halo 3 picked up.
-Halo 3's updated hand:
-Ace of Spades!
-Jack of Clubs!
-3 of Diamonds!
-Ace of Diamonds!
-10 of Hearts!
-
-6 of Hearts!
-
-Halo 2 played the 
-
-Jack of Hearts!
-
-Halo Reach played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Halo 2, it's your turn.
-
-Ace of Hearts!
-
-Halo 2 played the 
-
-10 of Hearts!
-
-Halo 3 played the 
-
-Halo 5 picked up.
-Halo 5's updated hand:
-2 of Diamonds!
-Ace of Clubs!
-6 of Diamonds!
-Queen of Clubs!
-7 of Spades!
-2 of Hearts!
-
-7 of Hearts!
-
-Halo Reach played the 
-
-7 of Clubs!
-
-Halo 2 played the 
-
-Jack of Clubs!
-
-Halo 3 played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Halo 2, it's your turn.
-
-3 of Clubs!
-
-Halo 2 played the 
-
-5 of Clubs!
-
-Halo Reach played the 
-
-Ace of Clubs!
-
-Halo 5 played the 
-
-Ace of Diamonds!
-
-Halo 3 played the 
-
-Halo 2 picked up.
-Halo 2's updated hand:
-10 of Clubs!
-4 of Hearts!
-
-7 of Diamonds!
-
-Halo Reach played the 
-
-
-Halo Reach is out!
-
-6 of Diamonds!
-
-Halo 5 played the 
-
-3 of Diamonds!
-
-Halo 3 played the 
-
-Halo 2 picked up.
-Halo 2's updated hand:
-10 of Clubs!
-4 of Hearts!
-8 of Hearts!
-
-2 of Diamonds!
-
-Halo 5 played the 
-
-Last played card DOES affect Halo 3
-
-The last card was a two!
-Halo 3 must now pick up 2 cards.
-
-Halo 3's updated hand:
-Ace of Spades!
-3 of Hearts!
-Queen of Hearts!
-
-Halo 2 picked up.
-Halo 2's updated hand:
-10 of Clubs!
-4 of Hearts!
-8 of Hearts!
-Queen of Spades!
-
-Halo 5 is not affected by last played card
-
-2 of Hearts!
-
-Halo 5 played the 
-
-Last played card DOES affect Halo 3
-
-The last card was a two!
-Halo 3 must now pick up 2 cards.
-
-Halo 3's updated hand:
-Ace of Spades!
-3 of Hearts!
-Queen of Hearts!
-5 of Spades!
-6 of Spades!
-
-8 of Hearts!
-
-Halo 2 played the 
-
-Last played card DOES affect Halo 5
-
-The last card was an eight!
-Halo 5 is forced to skip their turn.
-
-Halo 3, it's your turn.
-
-3 of Hearts!
-
-Halo 3 played the 
-
-4 of Hearts!
-
-Halo 2 played the 
-
-Halo 5 picked up.
-Halo 5's updated hand:
-Queen of Clubs!
-7 of Spades!
-6 of Clubs!
-
-King of Hearts!
-
-Halo 3 played the 
-
-King of Spades!
-
-Halo 2 played the 
-
-7 of Spades!
-
-Halo 5 played the 
-
-6 of Spades!
-
-Halo 3 played the 
-
-Halo 2 picked up.
-Halo 2's updated hand:
-10 of Clubs!
 9 of Clubs!
 
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+3 of Spades!
+5 of Diamonds!
+
+Queen of Diamonds!
+
+Gray Fox played the 
+
+
+Gray Fox is out!
+
+4 of Diamonds!
+
+Meryl played the 
+
+Otacon picked up.
+Otacon's updated hand:
+7 of Spades!
+9 of Clubs!
+Jack of Hearts!
+
+5 of Diamonds!
+
+Colonel Campbell played the 
+
+Meryl picked up.
+Meryl's updated hand:
+Jack of Spades!
+10 of Clubs!
+2 of Spades!
+
+Otacon picked up.
+Otacon's updated hand:
+7 of Spades!
+9 of Clubs!
+Jack of Hearts!
+Ace of Hearts!
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+3 of Spades!
+9 of Spades!
+
+Meryl picked up.
+Meryl's updated hand:
+Jack of Spades!
+10 of Clubs!
+2 of Spades!
+Queen of Hearts!
+
+Otacon picked up.
+Otacon's updated hand:
+7 of Spades!
+9 of Clubs!
+Jack of Hearts!
+Ace of Hearts!
+Queen of Clubs!
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+3 of Spades!
+9 of Spades!
+Queen of Spades!
+
+Meryl picked up.
+Meryl's updated hand:
+Jack of Spades!
+10 of Clubs!
+2 of Spades!
+Queen of Hearts!
 6 of Clubs!
 
-Halo 5 played the 
+Otacon picked up.
+Otacon's updated hand:
+7 of Spades!
+9 of Clubs!
+Jack of Hearts!
+Ace of Hearts!
+Queen of Clubs!
+9 of Hearts!
 
-Halo 3 picked up.
-Halo 3's updated hand:
-Ace of Spades!
-5 of Spades!
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+3 of Spades!
 9 of Spades!
+Queen of Spades!
+Ace of Clubs!
+
+Meryl picked up.
+Meryl's updated hand:
+Jack of Spades!
+10 of Clubs!
+2 of Spades!
+Queen of Hearts!
+6 of Clubs!
+5 of Clubs!
+
+Otacon picked up.
+Otacon's updated hand:
+7 of Spades!
+9 of Clubs!
+Jack of Hearts!
+Ace of Hearts!
+Queen of Clubs!
+9 of Hearts!
+Jack of Clubs!
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+3 of Spades!
+9 of Spades!
+Queen of Spades!
+Ace of Clubs!
+10 of Hearts!
+
+5 of Clubs!
+
+Meryl played the 
+
+9 of Clubs!
+
+Otacon played the 
+
+Ace of Clubs!
+
+Colonel Campbell played the 
 
 10 of Clubs!
 
-Halo 2 played the 
+Meryl played the 
 
 King of Clubs!
 
-Halo 5 played the 
+Otacon played the 
 
-
-Halo 5 is out!
-
-Halo 3 picked up.
-Halo 3's updated hand:
-Ace of Spades!
-5 of Spades!
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+Queen of Spades!
+10 of Hearts!
+3 of Spades!
 9 of Spades!
+10 of Diamonds!
+
+6 of Clubs!
+
+Meryl played the 
+
+Jack of Clubs!
+
+Otacon played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Meryl, it's your turn.
+
+Jack of Spades!
+
+Meryl played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Otacon, it's your turn.
+
+7 of Spades!
+
+Otacon played the 
+
+Queen of Spades!
+
+Colonel Campbell played the 
+
+Last played card DOES affect Meryl
+
+The last card was a black queen!
+Meryl must now pick up 5 cards.
+
+Meryl's updated hand:
+2 of Spades!
+Queen of Hearts!
+8 of Hearts!
+4 of Clubs!
+3 of Clubs!
+5 of Spades!
+Ace of Diamonds!
+
+Otacon picked up.
+Otacon's updated hand:
+Jack of Hearts!
+Ace of Hearts!
+9 of Hearts!
+8 of Clubs!
+
+Colonel Campbell is not affected by last played card
+
+9 of Spades!
+
+Colonel Campbell played the 
+
+2 of Spades!
+
+Meryl played the 
+
+Last played card DOES affect Otacon
+
+The last card was a two!
+Otacon must now pick up 2 cards.
+
+Otacon's updated hand:
+Jack of Hearts!
+Ace of Hearts!
+9 of Hearts!
+8 of Clubs!
+4 of Hearts!
+6 of Diamonds!
+
+3 of Spades!
+
+Colonel Campbell played the 
+
+3 of Clubs!
+
+Meryl played the 
+
+8 of Clubs!
+
+Otacon played the 
+
+Last played card DOES affect Colonel Campbell
+
+The last card was an eight!
+Colonel Campbell is forced to skip their turn.
+
+Meryl, it's your turn.
+
+8 of Hearts!
+
+Meryl played the 
+
+Last played card DOES affect Otacon
+
+The last card was an eight!
+Otacon is forced to skip their turn.
+
+Colonel Campbell, it's your turn.
+
+10 of Hearts!
+
+Colonel Campbell played the 
+
+Queen of Hearts!
+
+Meryl played the 
+
+Jack of Hearts!
+
+Otacon played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Meryl, it's your turn.
+
+Meryl picked up.
+Meryl's updated hand:
+4 of Clubs!
+5 of Spades!
+Ace of Diamonds!
+Queen of Clubs!
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+10 of Diamonds!
+5 of Hearts!
+
+Ace of Hearts!
+
+Otacon played the 
+
+Ace of Diamonds!
+
+Meryl played the 
+
+10 of Diamonds!
+
+Colonel Campbell played the 
+
+6 of Diamonds!
+
+Otacon played the 
+
+Meryl picked up.
+Meryl's updated hand:
+4 of Clubs!
+5 of Spades!
+Queen of Clubs!
+6 of Hearts!
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+5 of Hearts!
+2 of Clubs!
+
+Otacon picked up.
+Otacon's updated hand:
+9 of Hearts!
+4 of Hearts!
+Ace of Spades!
+
+6 of Hearts!
+
+Meryl played the 
+
+5 of Hearts!
+
+Colonel Campbell played the 
+
+9 of Hearts!
+
+Otacon played the 
+
+Meryl picked up.
+Meryl's updated hand:
+4 of Clubs!
+5 of Spades!
+Queen of Clubs!
+10 of Spades!
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+2 of Clubs!
+4 of Spades!
+
+4 of Hearts!
+
+Otacon played the 
+
+4 of Clubs!
+
+Meryl played the 
+
+2 of Clubs!
+
+Colonel Campbell played the 
+
+Last played card DOES affect Otacon
+
+The last card was a two!
+Otacon must now pick up 2 cards.
+
+Otacon's updated hand:
+Ace of Spades!
+3 of Hearts!
+7 of Clubs!
+
+Queen of Clubs!
+
+Meryl played the 
+
+Last played card DOES affect Colonel Campbell
+
+The last card was a black queen!
+Colonel Campbell must now pick up 5 cards.
+
+Colonel Campbell's updated hand:
+4 of Spades!
+Queen of Spades!
+8 of Spades!
+Jack of Diamonds!
+8 of Diamonds!
+Queen of Hearts!
+
+7 of Clubs!
+
+Otacon played the 
+
+Meryl picked up.
+Meryl's updated hand:
+5 of Spades!
+10 of Spades!
+6 of Spades!
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+4 of Spades!
+Queen of Spades!
+8 of Spades!
+Jack of Diamonds!
+8 of Diamonds!
+Queen of Hearts!
+3 of Diamonds!
+
+Otacon picked up.
+Otacon's updated hand:
+Ace of Spades!
+3 of Hearts!
+2 of Diamonds!
+
+Meryl picked up.
+Meryl's updated hand:
+5 of Spades!
+10 of Spades!
+6 of Spades!
+2 of Hearts!
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+4 of Spades!
+Queen of Spades!
+8 of Spades!
+Jack of Diamonds!
+8 of Diamonds!
+Queen of Hearts!
+3 of Diamonds!
+7 of Hearts!
+
+Otacon picked up.
+Otacon's updated hand:
+Ace of Spades!
+3 of Hearts!
+2 of Diamonds!
+7 of Diamonds!
+
+Meryl picked up.
+Meryl's updated hand:
+5 of Spades!
+10 of Spades!
+6 of Spades!
+2 of Hearts!
+Queen of Diamonds!
+
+7 of Hearts!
+
+Colonel Campbell played the 
+
+3 of Hearts!
+
+Otacon played the 
+
+2 of Hearts!
+
+Meryl played the 
+
+Last played card DOES affect Colonel Campbell
+
+The last card was a two!
+Colonel Campbell must now pick up 2 cards.
+
+Colonel Campbell's updated hand:
+4 of Spades!
+8 of Spades!
+3 of Diamonds!
+Queen of Hearts!
+Jack of Diamonds!
+Queen of Spades!
+8 of Diamonds!
 9 of Diamonds!
+Queen of Diamonds!
+
+2 of Diamonds!
+
+Otacon played the 
+
+Last played card DOES affect Meryl
+
+The last card was a two!
+Meryl must now pick up 2 cards.
+
+Meryl's updated hand:
+5 of Spades!
+10 of Spades!
+6 of Spades!
+Queen of Diamonds!
+4 of Diamonds!
+5 of Diamonds!
+
+3 of Diamonds!
+
+Colonel Campbell played the 
+
+7 of Diamonds!
+
+Otacon played the 
+
+King of Diamonds!
+
+Meryl played the 
+
+9 of Diamonds!
+
+Colonel Campbell played the 
+
+Otacon picked up.
+Otacon's updated hand:
+Ace of Spades!
+5 of Clubs!
+
+4 of Diamonds!
+
+Meryl played the 
+
+Queen of Diamonds!
+
+Colonel Campbell played the 
+
+Otacon picked up.
+Otacon's updated hand:
+Ace of Spades!
+5 of Clubs!
+9 of Clubs!
+
+5 of Diamonds!
+
+Meryl played the 
+
+8 of Diamonds!
+
+Colonel Campbell played the 
+
+Last played card DOES affect Otacon
+
+The last card was an eight!
+Otacon is forced to skip their turn.
+
+Meryl, it's your turn.
+
+Meryl picked up.
+Meryl's updated hand:
+5 of Spades!
+10 of Spades!
+6 of Spades!
+Ace of Clubs!
+
+Colonel Campbell is not affected by last played card
+
+Jack of Diamonds!
+
+Colonel Campbell played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Meryl, it's your turn.
+
+Meryl picked up.
+Meryl's updated hand:
+5 of Spades!
+10 of Spades!
+6 of Spades!
+Ace of Clubs!
+10 of Clubs!
+
+Otacon picked up.
+Otacon's updated hand:
+Ace of Spades!
+5 of Clubs!
+9 of Clubs!
+Queen of Clubs!
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+4 of Spades!
+Queen of Hearts!
+Queen of Spades!
+8 of Spades!
+6 of Clubs!
+
+Meryl picked up.
+Meryl's updated hand:
+5 of Spades!
+10 of Spades!
+6 of Spades!
+Ace of Clubs!
+10 of Clubs!
+Jack of Clubs!
+
+Otacon picked up.
+Otacon's updated hand:
+Ace of Spades!
+5 of Clubs!
+9 of Clubs!
+Queen of Clubs!
+Jack of Spades!
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+4 of Spades!
+Queen of Hearts!
+Queen of Spades!
+8 of Spades!
+6 of Clubs!
+7 of Spades!
+
+Jack of Clubs!
+
+Meryl played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Colonel Campbell, it's your turn.
+
+6 of Clubs!
+
+Colonel Campbell played the 
+
+5 of Clubs!
+
+Otacon played the 
+
+5 of Spades!
+
+Meryl played the 
+
+7 of Spades!
+
+Colonel Campbell played the 
+
+Ace of Spades!
+
+Otacon played the 
+
+10 of Spades!
+
+Meryl played the 
+
+8 of Spades!
+
+Colonel Campbell played the 
+
+Last played card DOES affect Otacon
+
+The last card was an eight!
+Otacon is forced to skip their turn.
+
+Meryl, it's your turn.
+
+6 of Spades!
+
+Meryl played the 
+
+King of Spades!
+
+Colonel Campbell played the 
+
+King of Clubs!
+
+Otacon played the 
+
+Ace of Clubs!
+
+Meryl played the 
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+4 of Spades!
+Queen of Hearts!
+Queen of Spades!
 
 9 of Clubs!
 
-Halo 2 played the 
+Otacon played the 
+
+10 of Clubs!
+
+Meryl played the 
 
 
-Halo 2 is out!
+Meryl is out!
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+4 of Spades!
+Queen of Hearts!
+Queen of Spades!
+9 of Spades!
+
+Otacon picked up.
+Otacon's updated hand:
+Jack of Spades!
+2 of Spades!
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+4 of Spades!
+Queen of Hearts!
+Queen of Spades!
+9 of Spades!
+3 of Spades!
+
+Otacon picked up.
+Otacon's updated hand:
+Jack of Spades!
+2 of Spades!
+3 of Clubs!
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+4 of Spades!
+Queen of Hearts!
+Queen of Spades!
+9 of Spades!
+3 of Spades!
+8 of Clubs!
+
+3 of Clubs!
+
+Otacon played the 
+
+8 of Clubs!
+
+Colonel Campbell played the 
+
+Last played card DOES affect Otacon
+
+The last card was an eight!
+Otacon is forced to skip their turn.
+
+Colonel Campbell, it's your turn.
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+3 of Spades!
+Queen of Spades!
+9 of Spades!
+4 of Spades!
+Queen of Hearts!
+8 of Hearts!
+
+Otacon is not affected by last played card
+
+Otacon picked up.
+Otacon's updated hand:
+Jack of Spades!
+2 of Spades!
+10 of Hearts!
+
+Colonel Campbell is not affected by last played card
+
+8 of Hearts!
+
+Colonel Campbell played the 
+
+Last played card DOES affect Otacon
+
+The last card was an eight!
+Otacon is forced to skip their turn.
+
+Colonel Campbell, it's your turn.
+
+King of Hearts!
+
+Colonel Campbell played the 
+
+10 of Hearts!
+
+Otacon played the 
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+4 of Spades!
+9 of Spades!
+3 of Spades!
+Queen of Spades!
+Queen of Hearts!
+
+Otacon picked up.
+Otacon's updated hand:
+Jack of Spades!
+2 of Spades!
+Jack of Hearts!
+
+Queen of Hearts!
+
+Colonel Campbell played the 
+
+Jack of Hearts!
+
+Otacon played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Colonel Campbell, it's your turn.
+
+Colonel Campbell picked up.
+Colonel Campbell's updated hand:
+9 of Spades!
+4 of Spades!
+3 of Spades!
+Queen of Spades!
+Ace of Hearts!
+
+Jack of Spades!
+
+Otacon played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Colonel Campbell, it's your turn.
+
+9 of Spades!
+
+Colonel Campbell played the 
+
+2 of Spades!
+
+Otacon played the 
+
+
+Otacon is out!
 
 
 Scoreboard:
-1st:	Halo Reach                                        (Hardcoded - Unaggressive)
-2nd:	Halo 5                                            (Hardcoded - Random)
-3rd:	Halo 2                                            (Hardcoded - Aggressive)
-4th:	Halo 3                                            (Human)
+1st:	Gray Fox                                          (Human)
+2nd:	Meryl                                             (Hardcoded - Aggressive)
+3rd:	Otacon                                            (Hardcoded - Unaggressive)
+4th:	Colonel Campbell                                  (Hardcoded - Random)

@@ -284,3 +284,12 @@ Scoreboard:
 4th:	Halo 3                                            (Human)
 ------------------------------------------------------------------------------------
 
+Date:	04/01/2018	Time:	23:10
+
+Scoreboard:
+1st:	Gray Fox                                          (Human)
+2nd:	Meryl                                             (Hardcoded - Aggressive)
+3rd:	Otacon                                            (Hardcoded - Unaggressive)
+4th:	Colonel Campbell                                  (Hardcoded - Random)
+------------------------------------------------------------------------------------
+
