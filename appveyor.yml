@@ -1,0 +1,30 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+
+configuration:
+- Debug
+- Release
+
+before_build:
+  - cmd: >-
+      cd Game
+  
+      git submodule update --init --recursive
+
+      mkdir build
+      
+      cd build
+      
+      cmake -G "Visual Studio 15 2017 Win64" ../
+    
+build:
+  project: Game/build/HonoursProject.vcxproj
+  parallel: true
+  verbosity: minimal
+  
+after_build:
+  - cmd: 7z a HonoursProject_%CONFIGURATION%.zip %APPVEYOR_BUILD_FOLDER%/Game/build/%CONFIGURATION%/HonoursProject.exe %APPVEYOR_BUILD_FOLDER%/Game/build/%CONFIGURATION%/*.dll  %APPVEYOR_BUILD_FOLDER%/Game/build/%CONFIGURATION%/**/*
+
+artifacts:
+  path: Game/build/HonoursProject_%CONFIGURATION%.zip
+  name: HonoursProject_%CONFIGURATION%
