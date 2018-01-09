@@ -1,3 +1,6 @@
+#image:
+#  - Visual Studio 2017
+#clone_folder: c:\projects\source\Testing\This\File\Is\Even\Being\Read
 version: 1.0.{build}
 image: Visual Studio 2017
 
@@ -23,7 +26,15 @@ build:
   verbosity: minimal
   
 after_build:
-  - cmd: 7z a HonoursProject_%CONFIGURATION%.zip %APPVEYOR_BUILD_FOLDER%/Game/build/%CONFIGURATION%/HonoursProject.exe %APPVEYOR_BUILD_FOLDER%/Game/build/%CONFIGURATION%/*.dll  %APPVEYOR_BUILD_FOLDER%/Game/build/%CONFIGURATION%/**/*
+  - cmd: >-
+      mkdir play
+
+      echo D | xcopy %APPVEYOR_BUILD_FOLDER%\Game\build\%CONFIGURATION%\*.* %APPVEYOR_BUILD_FOLDER%\Game\build\play /y
+
+      echo D | xcopy %APPVEYOR_BUILD_FOLDER%\Game\build\%CONFIGURATION%\* %APPVEYOR_BUILD_FOLDER%\Game\build\play /s /y
+
+      7z a HonoursProject_%CONFIGURATION%.zip %APPVEYOR_BUILD_FOLDER%/Game/build/GameRecords %APPVEYOR_BUILD_FOLDER%/Game/build/play
+      
 
 artifacts:
   path: Game/build/HonoursProject_%CONFIGURATION%.zip
