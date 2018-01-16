@@ -310,8 +310,6 @@ Scoreboard:
 4th:	Josh                                              (Hardcoded - Aggressive)
 ------------------------------------------------------------------------------------
 
-
-
 Date:	09/01/2018	Time:	21:09
 
 Scoreboard:
@@ -357,3 +355,18 @@ Scoreboard:
 4th:	Crash Bandicoot                                   (Hardcoded - Unaggressive)
 ------------------------------------------------------------------------------------
 
+Date:	16/01/2018	Time:	12:41
+
+Scoreboard:
+1st:	Kaze Z                                            (Hardcoded - Aggressive)
+2nd:	ryan o f                                          (Hardcoded - Aggressive)
+3rd:	Jin Zeige                                         (Hardcoded - Aggressive)
+4th:	x4iiiis                                           (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	16/01/2018	Time:	12:48
+
+Scoreboard:
+1st:	Fortnite                                          (Hardcoded - Aggressive)
+2nd:	PUBG                                              (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------

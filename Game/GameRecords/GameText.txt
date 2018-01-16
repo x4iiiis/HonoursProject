@@ -1,156 +1,164 @@
 Players:
-Rayman
-Spyro the Dragon
-Crash Bandicoot
-Mario
+Testing
+Restarting Games
 
 
-The cards have been dealt by Rayman and our first card to be played on is the
-6 of Clubs!
+The cards have been dealt by Testing and our first card to be played on is the
+8 of Hearts!
 
 The player left of the dealer will start.
 
-6 of Diamonds!
+Last played card DOES affect Restarting Games
 
-Spyro the Dragon played the 
+The last card was an eight!
+Restarting Games is forced to skip their turn.
 
-Crash Bandicoot picked up.
-Crash Bandicoot's updated hand:
-2 of Clubs!
-Jack of Clubs!
-10 of Spades!
+Testing, it's your turn.
 
-Jack of Diamonds!
+7 of Hearts!
 
-Mario played the 
+Testing played the 
 
-The last card was a jack!
-The direction of play has been reversed.
+7 of Diamonds!
 
-Crash Bandicoot, it's your turn.
+Restarting Games played the 
 
-Jack of Clubs!
-
-Crash Bandicoot played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Mario, it's your turn.
-
-4 of Clubs!
-
-Mario played the 
-
-
-Mario is out!
-
-Rayman picked up.
-Rayman's updated hand:
-5 of Spades!
-6 of Hearts!
-Ace of Clubs!
-
-Spyro the Dragon picked up.
-Spyro the Dragon's updated hand:
-2 of Hearts!
-3 of Spades!
-
-2 of Clubs!
-
-Crash Bandicoot played the 
-
-Last played card DOES affect Rayman
-
-The last card was a two!
-Rayman must now pick up 2 cards.
-
-Rayman's updated hand:
-5 of Spades!
-6 of Hearts!
-Ace of Clubs!
-10 of Clubs!
+Testing picked up.
+Testing's updated hand:
+Queen of Spades!
 Queen of Hearts!
 
-2 of Hearts!
+Restarting Games picked up.
+Restarting Games's updated hand:
+9 of Spades!
+8 of Diamonds!
 
-Spyro the Dragon played the 
+Testing picked up.
+Testing's updated hand:
+Queen of Spades!
+Queen of Hearts!
+Jack of Spades!
 
-Last played card DOES affect Crash Bandicoot
+8 of Diamonds!
 
-The last card was a two!
-Crash Bandicoot must now pick up 2 cards.
+Restarting Games played the 
 
-Crash Bandicoot's updated hand:
-10 of Spades!
-3 of Clubs!
-9 of Clubs!
+Last played card DOES affect Testing
 
-6 of Hearts!
+The last card was an eight!
+Testing is forced to skip their turn.
 
-Rayman played the 
+Restarting Games, it's your turn.
 
-Spyro the Dragon picked up.
-Spyro the Dragon's updated hand:
-3 of Spades!
-5 of Hearts!
+Restarting Games picked up.
+Restarting Games's updated hand:
+9 of Spades!
+9 of Diamonds!
 
-Crash Bandicoot picked up.
-Crash Bandicoot's updated hand:
-10 of Spades!
-3 of Clubs!
-9 of Clubs!
-4 of Spades!
+Testing is not affected by last played card
 
-King of Hearts!
+Testing picked up.
+Testing's updated hand:
+Queen of Spades!
+Queen of Hearts!
+Jack of Spades!
+3 of Hearts!
 
-Rayman played the 
+Restarting Games is not affected by last played card
 
-5 of Hearts!
+9 of Diamonds!
 
-Spyro the Dragon played the 
+Restarting Games played the 
 
-Crash Bandicoot picked up.
-Crash Bandicoot's updated hand:
-10 of Spades!
-3 of Clubs!
-9 of Clubs!
-4 of Spades!
-7 of Spades!
+Testing picked up.
+Testing's updated hand:
+Queen of Spades!
+Queen of Hearts!
+Jack of Spades!
+3 of Hearts!
+2 of Diamonds!
 
-5 of Spades!
+9 of Spades!
 
-Rayman played the 
-
-3 of Spades!
-
-Spyro the Dragon played the 
-
-
-Spyro the Dragon is out!
-
-10 of Spades!
-
-Crash Bandicoot played the 
-
-10 of Clubs!
-
-Rayman played the 
-
-3 of Clubs!
-
-Crash Bandicoot played the 
-
-Ace of Clubs!
-
-Rayman played the 
+Restarting Games played the 
 
 
-Rayman is out!
+Restarting Games is out!
 
 
 Scoreboard:
-1st:	Mario                                             (Hardcoded - Unaggressive)
-2nd:	Spyro the Dragon                                  (Hardcoded - Unaggressive)
-3rd:	Rayman                                            (Hardcoded - Unaggressive)
-4th:	Crash Bandicoot                                   (Hardcoded - Unaggressive)
+1st:	Restarting Games                                  (Hardcoded - Aggressive)
+2nd:	Testing                                           (Hardcoded - Aggressive)
+Players:
+Testing
+Testing
+Restarting Games
+
+
+The cards have been dealt by Testing and our first card to be played on is the
+10 of Clubs!
+
+The player left of the dealer will start.
+
+Ace of Clubs!
+
+Testing played the 
+
+Testing picked up.
+Testing's updated hand:
+6 of Hearts!
+9 of Hearts!
+Jack of Hearts!
+5 of Diamonds!
+
+Testing picked up.
+Testing's updated hand:
+6 of Hearts!
+9 of Hearts!
+Jack of Hearts!
+5 of Diamonds!
+2 of Clubs!
+
+2 of Clubs!
+
+Testing played the 
+
+Last played card DOES affect Testing
+
+The last card was a two!
+Testing must now pick up 2 cards.
+
+Testing's updated hand:
+6 of Hearts!
+9 of Hearts!
+Jack of Hearts!
+5 of Diamonds!
+6 of Hearts!
+2 of Hearts!
+
+2 of Hearts!
+
+Testing played the 
+
+Last played card DOES affect Testing
+
+The last card was a two!
+Testing must now pick up 2 cards.
+
+Testing's updated hand:
+6 of Hearts!
+9 of Hearts!
+Jack of Hearts!
+5 of Diamonds!
+6 of Hearts!
+8 of Clubs!
+5 of Clubs!
+
+6 of Hearts!
+
+Testing played the 
+
+9 of Hearts!
+
+Testing played the 
+

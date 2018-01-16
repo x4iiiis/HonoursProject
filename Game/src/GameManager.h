@@ -23,6 +23,7 @@ private:
 	int CardsPerPlayer;
 
 	vector<shared_ptr<player>> ListOfPlayers;
+	vector<shared_ptr<player>> BackupListOfPlayers;
 
 	//Game initially flows clockwise (left of the dealer!)
 	GameDirection DirectionOfPlay = GameDirection::Clockwise;
@@ -89,19 +90,36 @@ public:
 		}
 	
 		//TEMP - setting playstyles
-		ListOfPlayers[0]->playstyle = player::Playstyle::Unaggressive;	//Change me back to Human
-		ListOfPlayers[1]->playstyle = player::Playstyle::Unaggressive;	//Change me back to Aggressive
+		ListOfPlayers[0]->playstyle = player::Playstyle::Aggressive;	//Change me back to Human
+		ListOfPlayers[1]->playstyle = player::Playstyle::Aggressive;	//Change me back to Aggressive
 	
 		if(ListOfPlayers.size() > 2)
 		{
-			ListOfPlayers[2]->playstyle = player::Playstyle::Unaggressive;	//Change me back to Unaggressive
+			ListOfPlayers[2]->playstyle = player::Playstyle::Aggressive;	//Change me back to Unaggressive
 			
 			if(ListOfPlayers.size() > 3)
 			{
-			ListOfPlayers[3]->playstyle = player::Playstyle::Unaggressive;	//Change me back to Random
+			ListOfPlayers[3]->playstyle = player::Playstyle::Aggressive;	//Change me back to Random
 			}
 		}
 	
+
+		//Setup backup list of players for rematches
+		for (auto &p : ListOfPlayers)
+		{
+			BackupListOfPlayers.push_back(p);
+		}
+	}
+
+	void RespawnPlayers()
+	{
+		for (auto &p : BackupListOfPlayers)
+		{
+			ListOfPlayers.push_back(p);
+
+			//TEMP
+			cout << p->name << " respawned." << endl;
+		}
 	}
 	
 	

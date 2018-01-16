@@ -80,4 +80,9 @@ public:
 	{
 		return Scoreboard;
 	}
+
+	void clear()
+	{
+		Scoreboard.clear();
+	}
 };
