@@ -1,164 +1,170 @@
 Players:
-Testing
-Restarting Games
+Ryan
+Zoe
 
 
-The cards have been dealt by Testing and our first card to be played on is the
-8 of Hearts!
+The cards have been dealt by Ryan and our first card to be played on is the
+6 of Spades!
 
 The player left of the dealer will start.
 
-Last played card DOES affect Restarting Games
+Zoe picked up.
+Zoe's updated hand:
+Jack of Hearts!
+4 of Clubs!
+5 of Hearts!
 
-The last card was an eight!
-Restarting Games is forced to skip their turn.
-
-Testing, it's your turn.
-
-7 of Hearts!
-
-Testing played the 
-
-7 of Diamonds!
-
-Restarting Games played the 
-
-Testing picked up.
-Testing's updated hand:
+Ryan picked up.
+Ryan's updated hand:
+10 of Clubs!
+Ace of Hearts!
 Queen of Spades!
-Queen of Hearts!
 
-Restarting Games picked up.
-Restarting Games's updated hand:
-9 of Spades!
+Zoe picked up.
+Zoe's updated hand:
+Jack of Hearts!
+4 of Clubs!
+5 of Hearts!
+3 of Clubs!
+
+King of Spades!
+
+Ryan played the 
+
+Zoe picked up.
+Zoe's updated hand:
+Jack of Hearts!
+4 of Clubs!
+5 of Hearts!
+3 of Clubs!
+4 of Spades!
+
+Ryan picked up.
+Ryan's updated hand:
+10 of Clubs!
+Ace of Hearts!
 8 of Diamonds!
 
-Testing picked up.
-Testing's updated hand:
-Queen of Spades!
-Queen of Hearts!
-Jack of Spades!
+4 of Spades!
 
+Zoe played the 
+
+Ryan picked up.
+Ryan's updated hand:
+10 of Clubs!
+Ace of Hearts!
 8 of Diamonds!
-
-Restarting Games played the 
-
-Last played card DOES affect Testing
-
-The last card was an eight!
-Testing is forced to skip their turn.
-
-Restarting Games, it's your turn.
-
-Restarting Games picked up.
-Restarting Games's updated hand:
-9 of Spades!
-9 of Diamonds!
-
-Testing is not affected by last played card
-
-Testing picked up.
-Testing's updated hand:
-Queen of Spades!
-Queen of Hearts!
 Jack of Spades!
-3 of Hearts!
 
-Restarting Games is not affected by last played card
+4 of Clubs!
 
-9 of Diamonds!
+Zoe played the 
 
-Restarting Games played the 
-
-Testing picked up.
-Testing's updated hand:
-Queen of Spades!
-Queen of Hearts!
-Jack of Spades!
-3 of Hearts!
-2 of Diamonds!
-
-9 of Spades!
-
-Restarting Games played the 
-
-
-Restarting Games is out!
-
-
-Scoreboard:
-1st:	Restarting Games                                  (Hardcoded - Aggressive)
-2nd:	Testing                                           (Hardcoded - Aggressive)
-Players:
-Testing
-Testing
-Restarting Games
-
-
-The cards have been dealt by Testing and our first card to be played on is the
 10 of Clubs!
 
-The player left of the dealer will start.
+Ryan played the 
+
+3 of Clubs!
+
+Zoe played the 
+
+Ryan picked up.
+Ryan's updated hand:
+Ace of Hearts!
+8 of Diamonds!
+Jack of Spades!
+6 of Hearts!
+
+Zoe picked up.
+Zoe's updated hand:
+Jack of Hearts!
+5 of Hearts!
+Ace of Clubs!
+
+Ryan picked up.
+Ryan's updated hand:
+Ace of Hearts!
+8 of Diamonds!
+Jack of Spades!
+6 of Hearts!
+8 of Spades!
 
 Ace of Clubs!
 
-Testing played the 
+Zoe played the 
 
-Testing picked up.
-Testing's updated hand:
-6 of Hearts!
-9 of Hearts!
+Ace of Hearts!
+
+Ryan played the 
+
 Jack of Hearts!
+
+Zoe played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Ryan, it's your turn.
+
+Jack of Spades!
+
+Ryan played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Zoe, it's your turn.
+
+Zoe picked up.
+Zoe's updated hand:
+5 of Hearts!
+6 of Diamonds!
+
+8 of Spades!
+
+Ryan played the 
+
+Last played card DOES affect Zoe
+
+The last card was an eight!
+Zoe is forced to skip their turn.
+
+Ryan, it's your turn.
+
+8 of Diamonds!
+
+Ryan played the 
+
+Last played card DOES affect Zoe
+
+The last card was an eight!
+Zoe is forced to skip their turn.
+
+Ryan, it's your turn.
+
+Ryan picked up.
+Ryan's updated hand:
+6 of Hearts!
 5 of Diamonds!
 
-Testing picked up.
-Testing's updated hand:
-6 of Hearts!
-9 of Hearts!
-Jack of Hearts!
-5 of Diamonds!
-2 of Clubs!
+Zoe is not affected by last played card
 
-2 of Clubs!
+6 of Diamonds!
 
-Testing played the 
-
-Last played card DOES affect Testing
-
-The last card was a two!
-Testing must now pick up 2 cards.
-
-Testing's updated hand:
-6 of Hearts!
-9 of Hearts!
-Jack of Hearts!
-5 of Diamonds!
-6 of Hearts!
-2 of Hearts!
-
-2 of Hearts!
-
-Testing played the 
-
-Last played card DOES affect Testing
-
-The last card was a two!
-Testing must now pick up 2 cards.
-
-Testing's updated hand:
-6 of Hearts!
-9 of Hearts!
-Jack of Hearts!
-5 of Diamonds!
-6 of Hearts!
-8 of Clubs!
-5 of Clubs!
+Zoe played the 
 
 6 of Hearts!
 
-Testing played the 
+Ryan played the 
 
-9 of Hearts!
+5 of Hearts!
 
-Testing played the 
+Zoe played the 
 
+
+Zoe is out!
+
+
+Scoreboard:
+1st:	Zoe                                               (Hardcoded - Aggressive)
+2nd:	Ryan                                              (Hardcoded - Aggressive)
