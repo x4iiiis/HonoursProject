@@ -1,0 +1,156 @@
+Players:
+Rayman
+Spyro the Dragon
+Crash Bandicoot
+Mario
+
+
+The cards have been dealt by Rayman and our first card to be played on is the
+6 of Clubs!
+
+The player left of the dealer will start.
+
+6 of Diamonds!
+
+Spyro the Dragon played the 
+
+Crash Bandicoot picked up.
+Crash Bandicoot's updated hand:
+2 of Clubs!
+Jack of Clubs!
+10 of Spades!
+
+Jack of Diamonds!
+
+Mario played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Crash Bandicoot, it's your turn.
+
+Jack of Clubs!
+
+Crash Bandicoot played the 
+
+The last card was a jack!
+The direction of play has been reversed.
+
+Mario, it's your turn.
+
+4 of Clubs!
+
+Mario played the 
+
+
+Mario is out!
+
+Rayman picked up.
+Rayman's updated hand:
+5 of Spades!
+6 of Hearts!
+Ace of Clubs!
+
+Spyro the Dragon picked up.
+Spyro the Dragon's updated hand:
+2 of Hearts!
+3 of Spades!
+
+2 of Clubs!
+
+Crash Bandicoot played the 
+
+Last played card DOES affect Rayman
+
+The last card was a two!
+Rayman must now pick up 2 cards.
+
+Rayman's updated hand:
+5 of Spades!
+6 of Hearts!
+Ace of Clubs!
+10 of Clubs!
+Queen of Hearts!
+
+2 of Hearts!
+
+Spyro the Dragon played the 
+
+Last played card DOES affect Crash Bandicoot
+
+The last card was a two!
+Crash Bandicoot must now pick up 2 cards.
+
+Crash Bandicoot's updated hand:
+10 of Spades!
+3 of Clubs!
+9 of Clubs!
+
+6 of Hearts!
+
+Rayman played the 
+
+Spyro the Dragon picked up.
+Spyro the Dragon's updated hand:
+3 of Spades!
+5 of Hearts!
+
+Crash Bandicoot picked up.
+Crash Bandicoot's updated hand:
+10 of Spades!
+3 of Clubs!
+9 of Clubs!
+4 of Spades!
+
+King of Hearts!
+
+Rayman played the 
+
+5 of Hearts!
+
+Spyro the Dragon played the 
+
+Crash Bandicoot picked up.
+Crash Bandicoot's updated hand:
+10 of Spades!
+3 of Clubs!
+9 of Clubs!
+4 of Spades!
+7 of Spades!
+
+5 of Spades!
+
+Rayman played the 
+
+3 of Spades!
+
+Spyro the Dragon played the 
+
+
+Spyro the Dragon is out!
+
+10 of Spades!
+
+Crash Bandicoot played the 
+
+10 of Clubs!
+
+Rayman played the 
+
+3 of Clubs!
+
+Crash Bandicoot played the 
+
+Ace of Clubs!
+
+Rayman played the 
+
+
+Rayman is out!
+
+
+Scoreboard:
+1st:	Mario                                             (Hardcoded - Unaggressive)
+2nd:	Spyro the Dragon                                  (Hardcoded - Unaggressive)
+3rd:	Rayman                                            (Hardcoded - Unaggressive)
+4th:	Crash Bandicoot                                   (Hardcoded - Unaggressive)

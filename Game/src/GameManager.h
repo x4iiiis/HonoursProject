@@ -89,16 +89,16 @@ public:
 		}
 	
 		//TEMP - setting playstyles
-		ListOfPlayers[0]->playstyle = player::Playstyle::Human;
-		ListOfPlayers[1]->playstyle = player::Playstyle::Aggressive;
+		ListOfPlayers[0]->playstyle = player::Playstyle::Unaggressive;	//Change me back to Human
+		ListOfPlayers[1]->playstyle = player::Playstyle::Unaggressive;	//Change me back to Aggressive
 	
 		if(ListOfPlayers.size() > 2)
 		{
-			ListOfPlayers[2]->playstyle = player::Playstyle::Unaggressive;	//Change me back to unaggressive
+			ListOfPlayers[2]->playstyle = player::Playstyle::Unaggressive;	//Change me back to Unaggressive
 			
 			if(ListOfPlayers.size() > 3)
 			{
-			ListOfPlayers[3]->playstyle = player::Playstyle::Random;
+			ListOfPlayers[3]->playstyle = player::Playstyle::Unaggressive;	//Change me back to Random
 			}
 		}
 	

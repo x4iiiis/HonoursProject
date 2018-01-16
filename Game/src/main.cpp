@@ -570,6 +570,7 @@ draw:
 			window.draw(c->sprite);
 		}
 		window.display();
+		window.setActive(); //Trying to deal with having to move the mouse cause of weird pause
 
 
 		//If only one player is left, Gameover will be true. 
