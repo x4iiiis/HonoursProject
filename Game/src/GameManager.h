@@ -111,6 +111,14 @@ public:
 		}
 	}
 
+	void ClearListOfPlayers()
+	{
+		for (int i = 0; i < ListOfPlayers.size(); i++)
+		{
+			ListOfPlayers.erase(ListOfPlayers.begin());
+		}
+	}
+
 	void RespawnPlayers()
 	{
 		for (auto &p : BackupListOfPlayers)
@@ -120,6 +128,8 @@ public:
 			//TEMP
 			cout << p->name << " respawned." << endl;
 		}
+
+		cout << endl << endl << endl;
 	}
 	
 	
@@ -656,11 +666,16 @@ public:
 		}
 
 
-		cout << endl << endl << endl << "\t\t     GAME OVER \n\n\n\t\tPress enter to quit" << endl;
+		cout << endl << endl << endl << "\t\t     GAME OVER \n\n\n\t\tPress enter to quit" << "\n\n\t      or Space for a rematch" <<endl;
 		
-		while (!sf::Keyboard::isKeyPressed(Keyboard::Return))
+		//while (!sf::Keyboard::isKeyPressed(Keyboard::Return))
+		//{
+		//	//Wait for Return to be pressed 
+		//}
+
+		while ((!sf::Keyboard::isKeyPressed(Keyboard::Return)) && (!sf::Keyboard::isKeyPressed(Keyboard::Space)))
 		{
-			//Wait for Return to be pressed 
+			//Wait for Return or Space to be pressed 
 		}
 	}
 

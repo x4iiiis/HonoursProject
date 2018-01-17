@@ -19,18 +19,18 @@ using namespace std;
 
 int main()
 {
-	//Wipe GameText.txt when a new game starts
-	if (remove("../GameRecords/GameText.txt") != 0)
-	{
-		cout << "Error deleting GameText.txt";
-	}
+	////Wipe GameText.txt when a new game starts
+	//if (remove("../GameRecords/GameText.txt") != 0)
+	//{
+	//	cout << "Error deleting GameText.txt";
+	//}
 
-	//For keeping track of what happened each game
-	fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
-	if (!GameText.is_open())
-	{
-		cout << "Error opening GameRecords.txt" << endl << endl;
-	}
+	////For keeping track of what happened each game
+	//fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
+	//if (!GameText.is_open())
+	//{
+	//	cout << "Error opening GameRecords.txt" << endl << endl;
+	//}
 
 	//Get the game initialised
 	GameManager::Manager()->DeckOfCards.LoadTextures();
@@ -41,6 +41,19 @@ int main()
 
 
 RestartPoint:
+	//Wipe GameText.txt when a new game starts
+	if (remove("../GameRecords/GameText.txt") != 0)
+	{
+		cout << "Error deleting GameText.txt";
+	}
+
+	//For keeping track of what happened each game
+	fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
+	if (!GameText.is_open())
+	{
+		cout << "Error opening GameText.txt" << endl << endl;
+	}
+
 	//Display player names in GameText.txt
 	GameText << "Players:" << endl;
 	for (auto &p : GameManager::Manager()->GetListOfPlayers())
@@ -587,35 +600,30 @@ draw:
 
 	GameManager::Manager()->GameOver();
 
-
+	if (sf::Keyboard::isKeyPressed(Keyboard::Return))
+	{
+		goto Close;
+	}
 
 	//Trying to start games over
 	GameManager::Manager()->GetCurrentPlayer()->hand.clear();
 	GameManager::Manager()->DeckOfCards.cardStack.clear();
 	GameManager::Manager()->DeckOfCards.lastCard.clear();
 	GameManager::Manager()->DeckOfCards.allCards.clear();
-	GameManager::Manager()->GetListOfPlayers().clear();
+	GameManager::Manager()->ClearListOfPlayers();
 	GameManager::Manager()->Scoreboard.clear();
 	
 	GameManager::Manager()->RespawnPlayers();
 	GameManager::Manager()->setFirstPlayer();
 	GameManager::Manager()->DeckOfCards.SetUpDeck();
 
-	//Wipe GameText.txt when a new game starts
-	if (remove("../GameRecords/GameText.txt") != 0)
-	{
-		cout << "Error deleting GameText.txt";
-	}
+	GameText.close();
 
-	//For keeping track of what happened each game
-	//fstream GameText("../GameRecords/GameText.txt", ios::in | ios::out | ios::app);
-	if (!GameText.is_open())
-	{
-		cout << "Error opening GameRecords.txt" << endl << endl;
-	}
+	
 
 	goto RestartPoint;
 
+Close:
 	return 0;
 }
 

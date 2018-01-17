@@ -317,6 +317,24 @@ Scoreboard:
 2nd:	Neil                                              (Hardcoded - Aggressive)
 3rd:	Simon                                             (Hardcoded - Unaggressive)
 ------------------------------------------------------------------------------------
+
+Date:	10/01/2018	Time:	00:52
+
+Scoreboard:
+1st:	Sky Captain                                       (Human)
+2nd:	Red Dreadnought                                   (Hardcoded - Aggressive)
+3rd:	Red Flying Fortress                               (Hardcoded - Random)
+4th:	X1 Alpha                                          (Hardcoded - Unaggressive)
+------------------------------------------------------------------------------------
+
+Date:	10/01/2018	Time:	00:56
+
+Scoreboard:
+1st:	Serve                                             (Human)
+2nd:	Survive                                           (Hardcoded - Unaggressive)
+3rd:	Protect                                           (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
 Date:	16/01/2018	Time:	12:11
 
 Scoreboard:
@@ -370,6 +388,7 @@ Scoreboard:
 1st:	Fortnite                                          (Hardcoded - Aggressive)
 2nd:	PUBG                                              (Hardcoded - Aggressive)
 ------------------------------------------------------------------------------------
+
 Date:	16/01/2018	Time:	13:56
 
 Scoreboard:
@@ -389,5 +408,110 @@ Date:	16/01/2018	Time:	14:05
 Scoreboard:
 1st:	Zoe                                               (Hardcoded - Aggressive)
 2nd:	Ryan                                              (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	17/01/2018	Time:	11:48
+
+Scoreboard:
+1st:	Horseman                                          (Hardcoded - Aggressive)
+2nd:	Bojack                                            (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	17/01/2018	Time:	11:49
+
+Scoreboard:
+1st:	Sterling                                          (Hardcoded - Aggressive)
+2nd:	Archer                                            (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	17/01/2018	Time:	12:04
+
+Scoreboard:
+1st:	Horsing                                           (Hardcoded - Aggressive)
+2nd:	Around                                            (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	17/01/2018	Time:	12:06
+
+Scoreboard:
+1st:	Horsing                                           (Hardcoded - Aggressive)
+2nd:	Around                                            (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	17/01/2018	Time:	12:14
+
+Scoreboard:
+1st:	Jake Peralta                                      (Hardcoded - Aggressive)
+2nd:	Amy Santiago                                      (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	17/01/2018	Time:	12:20
+
+Scoreboard:
+1st:	Amy Santiago                                      (Hardcoded - Aggressive)
+2nd:	Jake Peralta                                      (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	17/01/2018	Time:	12:31
+
+Scoreboard:
+1st:	Four                                              (Hardcoded - Aggressive)
+2nd:	Eyes                                              (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	17/01/2018	Time:	12:32
+
+Scoreboard:
+1st:	Android                                           (Hardcoded - Aggressive)
+2nd:	iOS                                               (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	17/01/2018	Time:	12:38
+
+Scoreboard:
+1st:	Android                                           (Hardcoded - Aggressive)
+2nd:	iOS                                               (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	17/01/2018	Time:	12:42
+
+Scoreboard:
+1st:	Android                                           (Hardcoded - Aggressive)
+2nd:	iOS                                               (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	17/01/2018	Time:	15:35
+
+Scoreboard:
+1st:	Gavin                                             (Hardcoded - Aggressive)
+2nd:	Stacey                                            (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	17/01/2018	Time:	15:41
+
+Scoreboard:
+1st:	Donkey                                            (Hardcoded - Aggressive)
+2nd:	Kong                                              (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	17/01/2018	Time:	15:49
+
+Scoreboard:
+1st:	Lobster                                           (Hardcoded - Aggressive)
+2nd:	Swordfish                                         (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	17/01/2018	Time:	15:50
+
+Scoreboard:
+1st:	Cage                                              (Hardcoded - Aggressive)
+2nd:	Harpoon                                           (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	17/01/2018	Time:	15:54
+
+Scoreboard:
+1st:	Bojack Horseman                                   (Hardcoded - Aggressive)
+2nd:	Mr Peanutbutter                                   (Hardcoded - Aggressive)
 ------------------------------------------------------------------------------------
 

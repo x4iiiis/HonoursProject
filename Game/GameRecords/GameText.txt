@@ -1,170 +1,356 @@
 Players:
-Ryan
-Zoe
+Bojack Horseman
+Mr Peanutbutter 
 
 
-The cards have been dealt by Ryan and our first card to be played on is the
-6 of Spades!
+The cards have been dealt by Bojack Horseman and our first card to be played on is the
+2 of Diamonds!
 
 The player left of the dealer will start.
 
-Zoe picked up.
-Zoe's updated hand:
-Jack of Hearts!
-4 of Clubs!
-5 of Hearts!
+Last played card DOES affect Mr Peanutbutter 
 
-Ryan picked up.
-Ryan's updated hand:
-10 of Clubs!
-Ace of Hearts!
+The last card was a two!
+Mr Peanutbutter  must now pick up 2 cards.
+
+Mr Peanutbutter 's updated hand:
+Jack of Spades!
+Ace of Clubs!
+5 of Hearts!
+6 of Hearts!
+
+Bojack Horseman picked up.
+Bojack Horseman's updated hand:
+3 of Hearts!
+3 of Spades!
+7 of Diamonds!
+
+Mr Peanutbutter  is not affected by last played card
+
+Mr Peanutbutter  picked up.
+Mr Peanutbutter 's updated hand:
+Jack of Spades!
+Ace of Clubs!
+5 of Hearts!
+6 of Hearts!
+5 of Spades!
+
+Bojack Horseman is not affected by last played card
+
+7 of Diamonds!
+
+Bojack Horseman played the 
+
+Mr Peanutbutter  picked up.
+Mr Peanutbutter 's updated hand:
+Jack of Spades!
+Ace of Clubs!
+5 of Hearts!
+6 of Hearts!
+5 of Spades!
+8 of Spades!
+
+Bojack Horseman picked up.
+Bojack Horseman's updated hand:
+3 of Hearts!
+3 of Spades!
+8 of Clubs!
+
+Mr Peanutbutter  picked up.
+Mr Peanutbutter 's updated hand:
+Jack of Spades!
+Ace of Clubs!
+5 of Hearts!
+6 of Hearts!
+5 of Spades!
+8 of Spades!
+2 of Hearts!
+
+Bojack Horseman picked up.
+Bojack Horseman's updated hand:
+3 of Hearts!
+3 of Spades!
+8 of Clubs!
 Queen of Spades!
 
-Zoe picked up.
-Zoe's updated hand:
-Jack of Hearts!
-4 of Clubs!
-5 of Hearts!
-3 of Clubs!
-
-King of Spades!
-
-Ryan played the 
-
-Zoe picked up.
-Zoe's updated hand:
-Jack of Hearts!
-4 of Clubs!
-5 of Hearts!
-3 of Clubs!
-4 of Spades!
-
-Ryan picked up.
-Ryan's updated hand:
-10 of Clubs!
-Ace of Hearts!
-8 of Diamonds!
-
-4 of Spades!
-
-Zoe played the 
-
-Ryan picked up.
-Ryan's updated hand:
-10 of Clubs!
-Ace of Hearts!
-8 of Diamonds!
+Mr Peanutbutter  picked up.
+Mr Peanutbutter 's updated hand:
 Jack of Spades!
-
-4 of Clubs!
-
-Zoe played the 
-
-10 of Clubs!
-
-Ryan played the 
-
-3 of Clubs!
-
-Zoe played the 
-
-Ryan picked up.
-Ryan's updated hand:
-Ace of Hearts!
-8 of Diamonds!
-Jack of Spades!
-6 of Hearts!
-
-Zoe picked up.
-Zoe's updated hand:
-Jack of Hearts!
-5 of Hearts!
 Ace of Clubs!
-
-Ryan picked up.
-Ryan's updated hand:
-Ace of Hearts!
-8 of Diamonds!
-Jack of Spades!
+5 of Hearts!
 6 of Hearts!
+5 of Spades!
+8 of Spades!
+2 of Hearts!
+Jack of Clubs!
+
+Bojack Horseman picked up.
+Bojack Horseman's updated hand:
+3 of Hearts!
+3 of Spades!
+8 of Clubs!
+Queen of Spades!
+9 of Diamonds!
+
+Mr Peanutbutter  picked up.
+Mr Peanutbutter 's updated hand:
+Jack of Spades!
+Ace of Clubs!
+5 of Hearts!
+6 of Hearts!
+5 of Spades!
+8 of Spades!
+2 of Hearts!
+Jack of Clubs!
+4 of Spades!
+
+9 of Diamonds!
+
+Bojack Horseman played the 
+
+Mr Peanutbutter  picked up.
+Mr Peanutbutter 's updated hand:
+Jack of Spades!
+Ace of Clubs!
+5 of Hearts!
+6 of Hearts!
+5 of Spades!
+8 of Spades!
+2 of Hearts!
+Jack of Clubs!
+4 of Spades!
+8 of Hearts!
+
+Bojack Horseman picked up.
+Bojack Horseman's updated hand:
+3 of Hearts!
+3 of Spades!
+8 of Clubs!
+Queen of Spades!
+7 of Hearts!
+
+Mr Peanutbutter  picked up.
+Mr Peanutbutter 's updated hand:
+Jack of Spades!
+Ace of Clubs!
+5 of Hearts!
+6 of Hearts!
+5 of Spades!
+8 of Spades!
+2 of Hearts!
+Jack of Clubs!
+4 of Spades!
+8 of Hearts!
+9 of Clubs!
+
+Bojack Horseman picked up.
+Bojack Horseman's updated hand:
+3 of Hearts!
+3 of Spades!
+8 of Clubs!
+Queen of Spades!
+7 of Hearts!
+Queen of Hearts!
+
+9 of Clubs!
+
+Mr Peanutbutter  played the 
+
+8 of Clubs!
+
+Bojack Horseman played the 
+
+Last played card DOES affect Mr Peanutbutter 
+
+The last card was an eight!
+Mr Peanutbutter  is forced to skip their turn.
+
+Bojack Horseman, it's your turn.
+
+Bojack Horseman picked up.
+Bojack Horseman's updated hand:
+3 of Hearts!
+3 of Spades!
+Queen of Spades!
+7 of Hearts!
+Queen of Hearts!
+10 of Clubs!
+
+Mr Peanutbutter  is not affected by last played card
+
 8 of Spades!
 
+Mr Peanutbutter  played the 
+
+Last played card DOES affect Bojack Horseman
+
+The last card was an eight!
+Bojack Horseman is forced to skip their turn.
+
+Mr Peanutbutter , it's your turn.
+
+8 of Hearts!
+
+Mr Peanutbutter  played the 
+
+Last played card DOES affect Bojack Horseman
+
+The last card was an eight!
+Bojack Horseman is forced to skip their turn.
+
+Mr Peanutbutter , it's your turn.
+
+2 of Hearts!
+
+Mr Peanutbutter  played the 
+
+Last played card DOES affect Bojack Horseman
+
+The last card was a two!
+Bojack Horseman must now pick up 2 cards.
+
+Bojack Horseman's updated hand:
+3 of Hearts!
+3 of Spades!
+Queen of Spades!
+7 of Hearts!
+Queen of Hearts!
+10 of Clubs!
+5 of Clubs!
+9 of Hearts!
+
+5 of Hearts!
+
+Mr Peanutbutter  played the 
+
+3 of Hearts!
+
+Bojack Horseman played the 
+
+6 of Hearts!
+
+Mr Peanutbutter  played the 
+
+7 of Hearts!
+
+Bojack Horseman played the 
+
+Mr Peanutbutter  picked up.
+Mr Peanutbutter 's updated hand:
+Jack of Spades!
 Ace of Clubs!
+5 of Spades!
+Jack of Clubs!
+4 of Spades!
+9 of Spades!
 
-Zoe played the 
+King of Hearts!
 
-Ace of Hearts!
+Bojack Horseman played the 
 
-Ryan played the 
+Mr Peanutbutter  picked up.
+Mr Peanutbutter 's updated hand:
+Jack of Spades!
+Ace of Clubs!
+5 of Spades!
+Jack of Clubs!
+4 of Spades!
+9 of Spades!
+Queen of Clubs!
 
-Jack of Hearts!
+9 of Hearts!
 
-Zoe played the 
+Bojack Horseman played the 
+
+9 of Spades!
+
+Mr Peanutbutter  played the 
+
+Queen of Spades!
+
+Bojack Horseman played the 
+
+Last played card DOES affect Mr Peanutbutter 
+
+The last card was a black queen!
+Mr Peanutbutter  must now pick up 5 cards.
+
+Mr Peanutbutter 's updated hand:
+Jack of Spades!
+Ace of Clubs!
+5 of Spades!
+Jack of Clubs!
+4 of Spades!
+Queen of Clubs!
+10 of Diamonds!
+6 of Diamonds!
+Ace of Diamonds!
+4 of Hearts!
+3 of Diamonds!
+
+3 of Spades!
+
+Bojack Horseman played the 
+
+Jack of Spades!
+
+Mr Peanutbutter  played the 
 
 The last card was a jack!
 The direction of play has been reversed.
 
-Ryan, it's your turn.
+Bojack Horseman, it's your turn.
 
-Jack of Spades!
+Bojack Horseman picked up.
+Bojack Horseman's updated hand:
+10 of Clubs!
+5 of Clubs!
+Queen of Clubs!
 
-Ryan played the 
+5 of Spades!
 
-The last card was a jack!
-The direction of play has been reversed.
+Mr Peanutbutter  played the 
 
-Zoe, it's your turn.
+5 of Clubs!
 
-Zoe picked up.
-Zoe's updated hand:
-5 of Hearts!
+Bojack Horseman played the 
+
+Ace of Clubs!
+
+Mr Peanutbutter  played the 
+
+Queen of Clubs!
+
+Bojack Horseman played the 
+
+Last played card DOES affect Mr Peanutbutter 
+
+The last card was a black queen!
+Mr Peanutbutter  must now pick up 5 cards.
+
+Mr Peanutbutter 's updated hand:
+Jack of Clubs!
+4 of Spades!
+Queen of Clubs!
+10 of Diamonds!
 6 of Diamonds!
+Ace of Diamonds!
+4 of Hearts!
+3 of Diamonds!
+6 of Clubs!
+4 of Clubs!
+Queen of Diamonds!
+2 of Clubs!
+2 of Spades!
 
-8 of Spades!
+10 of Clubs!
 
-Ryan played the 
-
-Last played card DOES affect Zoe
-
-The last card was an eight!
-Zoe is forced to skip their turn.
-
-Ryan, it's your turn.
-
-8 of Diamonds!
-
-Ryan played the 
-
-Last played card DOES affect Zoe
-
-The last card was an eight!
-Zoe is forced to skip their turn.
-
-Ryan, it's your turn.
-
-Ryan picked up.
-Ryan's updated hand:
-6 of Hearts!
-5 of Diamonds!
-
-Zoe is not affected by last played card
-
-6 of Diamonds!
-
-Zoe played the 
-
-6 of Hearts!
-
-Ryan played the 
-
-5 of Hearts!
-
-Zoe played the 
+Bojack Horseman played the 
 
 
-Zoe is out!
+Bojack Horseman is out!
 
 
 Scoreboard:
-1st:	Zoe                                               (Hardcoded - Aggressive)
-2nd:	Ryan                                              (Hardcoded - Aggressive)
+1st:	Bojack Horseman                                   (Hardcoded - Aggressive)
+2nd:	Mr Peanutbutter                                   (Hardcoded - Aggressive)
