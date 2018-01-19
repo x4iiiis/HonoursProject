@@ -22,6 +22,8 @@ private:
 	int NumberOfPlayers;
 	int CardsPerPlayer;
 
+	int MatchCounter = 0;
+
 	vector<shared_ptr<player>> ListOfPlayers;
 	vector<shared_ptr<player>> BackupListOfPlayers;
 
@@ -132,6 +134,10 @@ public:
 		cout << endl << endl << endl;
 	}
 	
+	void NewMatch()
+	{
+		MatchCounter += 1;
+	}
 	
 	void SetNumberOfPlayers(int NumPlayers)
 	{
@@ -631,6 +637,8 @@ public:
 			{
 				GameRecords << now->tm_min;
 			}
+
+			GameRecords << "\t\t\t\tGame " << MatchCounter;
 
 			GameRecords << endl;
 

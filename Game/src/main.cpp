@@ -41,6 +41,9 @@ int main()
 
 
 RestartPoint:
+	//Increment match counter for GameRecords.txt
+	GameManager::Manager()->NewMatch();
+
 	//Wipe GameText.txt when a new game starts
 	if (remove("../GameRecords/GameText.txt") != 0)
 	{
@@ -155,13 +158,13 @@ RestartPoint:
 
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-			//Human Players playing
+			//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+						//Human Players playing
 			if (GameManager::Manager()->GetCurrentPlayer()->playstyle == player::Playstyle::Human)
 			{
 				//This prints endlessly until a move is made... D: 
 				cout << GameManager::Manager()->GetCurrentPlayer()->name << " to play." << endl << endl;
-				
+
 				//Messing about with clicking sprites
 				for (auto &c : GameManager::Manager()->GetCurrentPlayer()->hand)
 				{
@@ -229,6 +232,7 @@ RestartPoint:
 					}
 				}
 			}
+		}
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			//If Neural Network AI Agent is playing
@@ -372,7 +376,6 @@ RestartPoint:
 					}
 				}
 			}
-		}
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//If "Unaggressive" player is playing
@@ -619,8 +622,6 @@ draw:
 
 	GameText.close();
 
-	
-
 	goto RestartPoint;
 
 Close:
@@ -639,21 +640,3 @@ Close:
 //Realistically this is probably something we should do anyway as it would be 
 //pointless to give it a turn when it can't play anything. 
 //Could also implement 8 or wait (without the 8) and just force the wait
-
-
-//Need to work out a game manager or a way to decide whose turn it is 
-//and what direction the play is going in.
-//Also going to need something to tell us whether or not something has just been played
-//For example, if someone plays a black queen, the next player has to pick up 5
-//(unless they have a red queen but probably leaving that rule out for now)
-//but the person after that doesn't have to pick up five, despite the last played
-//card being a black queen. 
-
-//Might be unwise but constant check to see if last card is a rule-bearing card?
-//Switch Case statements maybe? 
-
-
-//Check/define colours isn't working because we're not referencing cards... :( 
-
-//shared_ptr sounds a shout 
-//Indeed they were!

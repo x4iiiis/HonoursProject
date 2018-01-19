@@ -515,3 +515,52 @@ Scoreboard:
 2nd:	Mr Peanutbutter                                   (Hardcoded - Aggressive)
 ------------------------------------------------------------------------------------
 
+Date:	18/01/2018	Time:	21:05	Game 1
+
+Scoreboard:
+1st:	Peralta                                           (Hardcoded - Aggressive)
+2nd:	Diaz                                              (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	18/01/2018	Time:	21:08	Game 2
+
+Scoreboard:
+1st:	Peralta                                           (Hardcoded - Aggressive)
+2nd:	Diaz                                              (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	19/01/2018	Time:	00:28			Game 1
+
+Scoreboard:
+1st:	Testing                                           (Hardcoded - Aggressive)
+2nd:	Fully Auto                                        (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	19/01/2018	Time:	00:30			Game 2
+
+Scoreboard:
+1st:	Fully Auto                                        (Hardcoded - Aggressive)
+2nd:	Testing                                           (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	19/01/2018	Time:	00:33			Game 3
+
+Scoreboard:
+1st:	Fully Auto                                        (Hardcoded - Aggressive)
+2nd:	Testing                                           (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	19/01/2018	Time:	00:38			Game 4
+
+Scoreboard:
+1st:	Testing                                           (Hardcoded - Aggressive)
+2nd:	Fully Auto                                        (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	19/01/2018	Time:	00:48			Game 5
+
+Scoreboard:
+1st:	Fully Auto                                        (Hardcoded - Aggressive)
+2nd:	Testing                                           (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
