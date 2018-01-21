@@ -564,3 +564,57 @@ Scoreboard:
 2nd:	Testing                                           (Hardcoded - Aggressive)
 ------------------------------------------------------------------------------------
 
+Date:	19/01/2018	Time:	00:58				Game 1
+
+Scoreboard:
+1st:	FTW                                               (Hardcoded - Aggressive)
+2nd:	AFK                                               (Hardcoded - Aggressive)
+3rd:	Games                                             (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	19/01/2018	Time:	01:01				Game 2
+
+Scoreboard:
+1st:	AFK                                               (Hardcoded - Aggressive)
+2nd:	FTW                                               (Hardcoded - Aggressive)
+3rd:	Games                                             (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	19/01/2018	Time:	01:10				Game 3
+
+Scoreboard:
+1st:	FTW                                               (Hardcoded - Aggressive)
+2nd:	Games                                             (Hardcoded - Aggressive)
+3rd:	AFK                                               (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	21/01/2018	Time:	01:19				Game 1
+
+Scoreboard:
+1st:	Fixing                                            (Hardcoded - Aggressive)
+2nd:	GameText.txt                                      (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	21/01/2018	Time:	01:23				Game 1
+
+Scoreboard:
+1st:	It                                                (Hardcoded - Aggressive)
+2nd:	Works!                                            (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	21/01/2018	Time:	01:26				Game 1
+
+Scoreboard:
+1st:	Working                                           (Hardcoded - Aggressive)
+2nd:	It                                                (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+
+Date:	21/01/2018	Time:	01:36				Game 1
+
+Scoreboard:
+1st:	Yay                                               (Hardcoded - Aggressive)
+2nd:	:)                                                (Hardcoded - Aggressive)
+3rd:	:D                                                (Hardcoded - Aggressive)
+4th:	w00t                                              (Hardcoded - Aggressive)
+------------------------------------------------------------------------------------
+

@@ -256,7 +256,7 @@ RestartPoint:
 					}
 					window.display();
 
-					cout << "[Not human, sleeping for 3 seconds . . .]" << endl << endl;
+					cout << "[" << GameManager::Manager()->GetCurrentPlayer()->name << " is thinking . . .]" << endl << endl;
 					//If the current player is not human, take 3 seconds before trying to make a move
 					//just to allow us to see what the player is doing, and also to make it feel a bit
 					//more authentic, rather than being able to loop through several non-human players'
@@ -395,7 +395,7 @@ RestartPoint:
 				window.display();
 
 
-				cout << "[Not human, sleeping for 3 seconds . . .]" << endl << endl;
+				cout << "[" << GameManager::Manager()->GetCurrentPlayer()->name << " is thinking . . .]" << endl << endl;
 				//If the current player is not human, take 3 seconds before trying to make a move
 				//just to allow us to see what the player is doing, and also to make it feel a bit
 				//more authentic, rather than being able to loop through several non-human players'
@@ -508,7 +508,7 @@ RestartPoint:
 				}
 				window.display();
 
-				cout << "[Not human, sleeping for 3 seconds . . .]" << endl << endl;
+				cout << "[" << GameManager::Manager()->GetCurrentPlayer()->name << " is thinking . . .]" << endl << endl;
 				//If the current player is not human, take 3 seconds before trying to make a move
 				//just to allow us to see what the player is doing, and also to make it feel a bit
 				//more authentic, rather than being able to loop through several non-human players'

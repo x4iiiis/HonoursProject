@@ -1,959 +1,1227 @@
 Players:
-Testing
-Fully Auto
+Yay
+w00t
+:D
+:)
 
 
-The cards have been dealt by Testing and our first card to be played on is the
-Queen of Diamonds!
+The cards have been dealt by Yay and our first card to be played on is the
+3 of Spades!
 
 The player left of the dealer will start.
 
-King of Spades!
-
-Fully Auto played the 
-
-Testing picked up.
-Testing's updated hand:
-8 of Hearts!
-Jack of Hearts!
-10 of Diamonds!
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-4 of Hearts!
-10 of Hearts!
-
-Testing picked up.
-Testing's updated hand:
-8 of Hearts!
-Jack of Hearts!
-10 of Diamonds!
-2 of Clubs!
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-4 of Hearts!
-10 of Hearts!
-5 of Hearts!
-
-Testing picked up.
-Testing's updated hand:
-8 of Hearts!
-Jack of Hearts!
-10 of Diamonds!
-2 of Clubs!
-9 of Spades!
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-4 of Hearts!
-10 of Hearts!
-5 of Hearts!
-Queen of Spades!
-
-9 of Spades!
-
-Testing played the 
-
-Queen of Spades!
-
-Fully Auto played the 
-
-Last played card DOES affect Testing
-
-The last card was a black queen!
-Testing must now pick up 5 cards.
-
-Testing's updated hand:
-8 of Hearts!
-Jack of Hearts!
-10 of Diamonds!
-2 of Clubs!
-8 of Spades!
-3 of Diamonds!
-3 of Hearts!
-Jack of Diamonds!
-6 of Spades!
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-4 of Hearts!
-10 of Hearts!
-5 of Hearts!
-3 of Spades!
-
-Testing is not affected by last played card
-
-8 of Spades!
-
-Testing played the 
-
-Last played card DOES affect Fully Auto
-
-The last card was an eight!
-Fully Auto is forced to skip their turn.
-
-Testing, it's your turn.
-
-8 of Hearts!
-
-Testing played the 
-
-Last played card DOES affect Fully Auto
-
-The last card was an eight!
-Fully Auto is forced to skip their turn.
-
-Testing, it's your turn.
-
-Jack of Hearts!
-
-Testing played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Fully Auto, it's your turn.
-
-4 of Hearts!
-
-Fully Auto played the 
-
-3 of Hearts!
-
-Testing played the 
-
-10 of Hearts!
-
-Fully Auto played the 
-
-10 of Diamonds!
-
-Testing played the 
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-5 of Hearts!
-3 of Spades!
-Queen of Diamonds!
-
-3 of Diamonds!
-
-Testing played the 
-
-3 of Spades!
-
-Fully Auto played the 
-
-6 of Spades!
-
-Testing played the 
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-5 of Hearts!
-Queen of Diamonds!
-9 of Clubs!
-
-Testing picked up.
-Testing's updated hand:
-2 of Clubs!
-Jack of Diamonds!
-Ace of Spades!
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-5 of Hearts!
-Queen of Diamonds!
-9 of Clubs!
-Queen of Hearts!
-
-Ace of Spades!
-
-Testing played the 
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-5 of Hearts!
-Queen of Diamonds!
-9 of Clubs!
-Queen of Hearts!
-7 of Clubs!
-
-Testing picked up.
-Testing's updated hand:
-2 of Clubs!
-Jack of Diamonds!
-2 of Hearts!
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-5 of Hearts!
-Queen of Diamonds!
-9 of Clubs!
-Queen of Hearts!
-7 of Clubs!
-5 of Diamonds!
-
-Testing picked up.
-Testing's updated hand:
-2 of Clubs!
-Jack of Diamonds!
-2 of Hearts!
-Ace of Clubs!
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-5 of Hearts!
-Queen of Diamonds!
-9 of Clubs!
-Queen of Hearts!
-7 of Clubs!
-5 of Diamonds!
-3 of Clubs!
-
-Ace of Clubs!
-
-Testing played the 
-
-9 of Clubs!
-
-Fully Auto played the 
-
-2 of Clubs!
-
-Testing played the 
-
-Last played card DOES affect Fully Auto
-
-The last card was a two!
-Fully Auto must now pick up 2 cards.
-
-Fully Auto's updated hand:
-5 of Hearts!
-Queen of Diamonds!
-Queen of Hearts!
-7 of Clubs!
-5 of Diamonds!
-3 of Clubs!
-4 of Diamonds!
-4 of Clubs!
-
-2 of Hearts!
-
-Testing played the 
-
-Last played card DOES affect Fully Auto
-
-The last card was a two!
-Fully Auto must now pick up 2 cards.
-
-Fully Auto's updated hand:
-5 of Hearts!
-Queen of Diamonds!
-Queen of Hearts!
-7 of Clubs!
-5 of Diamonds!
-3 of Clubs!
-4 of Diamonds!
-4 of Clubs!
-10 of Spades!
-Ace of Hearts!
-
-Testing picked up.
-Testing's updated hand:
-Jack of Diamonds!
-9 of Diamonds!
-
-Fully Auto is not affected by last played card
-
-5 of Hearts!
-
-Fully Auto played the 
-
-Testing picked up.
-Testing's updated hand:
-Jack of Diamonds!
-9 of Diamonds!
-Jack of Spades!
-
-King of Hearts!
-
-Fully Auto played the 
-
-Testing picked up.
-Testing's updated hand:
-Jack of Diamonds!
-9 of Diamonds!
-Jack of Spades!
-Queen of Clubs!
-
-Ace of Hearts!
-
-Fully Auto played the 
-
-Testing picked up.
-Testing's updated hand:
-Jack of Diamonds!
-9 of Diamonds!
-Jack of Spades!
-Queen of Clubs!
-5 of Clubs!
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Queen of Diamonds!
-7 of Clubs!
-5 of Diamonds!
-3 of Clubs!
-4 of Diamonds!
-4 of Clubs!
-10 of Spades!
-4 of Spades!
-
-Testing picked up.
-Testing's updated hand:
-Jack of Diamonds!
-9 of Diamonds!
-Jack of Spades!
-Queen of Clubs!
-5 of Clubs!
-6 of Clubs!
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Queen of Diamonds!
-7 of Clubs!
-5 of Diamonds!
-3 of Clubs!
-4 of Diamonds!
-4 of Clubs!
-10 of Spades!
-4 of Spades!
-Ace of Diamonds!
-
-Testing picked up.
-Testing's updated hand:
-Jack of Diamonds!
-9 of Diamonds!
-Jack of Spades!
-Queen of Clubs!
-5 of Clubs!
-6 of Clubs!
-2 of Spades!
-
-Ace of Diamonds!
-
-Fully Auto played the 
-
-Jack of Diamonds!
-
-Testing played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Fully Auto, it's your turn.
-
-Queen of Diamonds!
-
-Fully Auto played the 
-
-9 of Diamonds!
-
-Testing played the 
-
-5 of Diamonds!
-
-Fully Auto played the 
-
-5 of Clubs!
-
-Testing played the 
-
-7 of Clubs!
-
-Fully Auto played the 
-
-King of Clubs!
-
-Testing played the 
-
-3 of Clubs!
-
-Fully Auto played the 
-
-6 of Clubs!
-
-Testing played the 
-
-4 of Clubs!
-
-Fully Auto played the 
-
-Testing picked up.
-Testing's updated hand:
-Jack of Spades!
-2 of Spades!
-7 of Hearts!
-
-4 of Diamonds!
-
-Fully Auto played the 
-
-Testing picked up.
-Testing's updated hand:
-Jack of Spades!
-2 of Spades!
-7 of Hearts!
-8 of Diamonds!
-
-4 of Spades!
-
-Fully Auto played the 
-
-2 of Spades!
-
-Testing played the 
-
-Last played card DOES affect Fully Auto
-
-The last card was a two!
-Fully Auto must now pick up 2 cards.
-
-Fully Auto's updated hand:
-10 of Spades!
-5 of Spades!
-Jack of Clubs!
-
-Jack of Spades!
-
-Testing played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Fully Auto, it's your turn.
-
-10 of Spades!
-
-Fully Auto played the 
-
-Testing picked up.
-Testing's updated hand:
-7 of Hearts!
-8 of Diamonds!
+w00t picked up.
+w00t's updated hand:
 2 of Diamonds!
+4 of Clubs!
+2 of Spades!
 
+:D played the 9 of Spades!
+
+
+
+:) picked up.
+:)'s updated hand:
+Ace of Clubs!
+Queen of Clubs!
+7 of Hearts!
+
+Yay picked up.
+Yay's updated hand:
+6 of Hearts!
+3 of Hearts!
+3 of Diamonds!
+
+w00t played the 2 of Spades!
+
+
+
+Last played card DOES affect :D
+
+The last card was a two!
+:D must now pick up 2 cards.
+
+:D's updated hand:
+10 of Hearts!
+6 of Clubs!
+Queen of Spades!
+
+:) picked up.
+:)'s updated hand:
+Ace of Clubs!
+Queen of Clubs!
+7 of Hearts!
+5 of Diamonds!
+
+Yay is not affected by last played card
+
+Yay picked up.
+Yay's updated hand:
+6 of Hearts!
+3 of Hearts!
+3 of Diamonds!
+6 of Spades!
+
+w00t is not affected by last played card
+
+w00t played the 2 of Diamonds!
+
+
+
+Last played card DOES affect :D
+
+The last card was a two!
+:D must now pick up 2 cards.
+
+:D's updated hand:
+10 of Hearts!
+6 of Clubs!
+Queen of Spades!
+6 of Diamonds!
 5 of Spades!
 
-Fully Auto played the 
+:) played the 5 of Diamonds!
 
-Testing picked up.
-Testing's updated hand:
-7 of Hearts!
-8 of Diamonds!
-2 of Diamonds!
-6 of Hearts!
 
-Fully Auto picked up.
-Fully Auto's updated hand:
-Jack of Clubs!
-7 of Spades!
 
-Testing picked up.
-Testing's updated hand:
-7 of Hearts!
-8 of Diamonds!
-2 of Diamonds!
-6 of Hearts!
-8 of Clubs!
+Yay played the 3 of Diamonds!
 
-7 of Spades!
 
-Fully Auto played the 
 
-7 of Hearts!
-
-Testing played the 
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Jack of Clubs!
-Queen of Hearts!
-
-6 of Hearts!
-
-Testing played the 
-
-Queen of Hearts!
-
-Fully Auto played the 
-
-Testing picked up.
-Testing's updated hand:
-8 of Diamonds!
-2 of Diamonds!
-8 of Clubs!
-10 of Clubs!
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Jack of Clubs!
-9 of Hearts!
-
-Testing picked up.
-Testing's updated hand:
-8 of Diamonds!
-2 of Diamonds!
-8 of Clubs!
-10 of Clubs!
-7 of Diamonds!
-
-9 of Hearts!
-
-Fully Auto played the 
-
-Testing picked up.
-Testing's updated hand:
-8 of Diamonds!
-2 of Diamonds!
-8 of Clubs!
-10 of Clubs!
-7 of Diamonds!
-6 of Diamonds!
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Jack of Clubs!
-Queen of Clubs!
-
-Testing picked up.
-Testing's updated hand:
-8 of Diamonds!
-2 of Diamonds!
-8 of Clubs!
-10 of Clubs!
-7 of Diamonds!
-6 of Diamonds!
-Queen of Diamonds!
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Jack of Clubs!
-Queen of Clubs!
-Queen of Spades!
-
-Testing picked up.
-Testing's updated hand:
-8 of Diamonds!
-2 of Diamonds!
-8 of Clubs!
-10 of Clubs!
-7 of Diamonds!
-6 of Diamonds!
-Queen of Diamonds!
-9 of Spades!
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Jack of Clubs!
-Queen of Clubs!
-Queen of Spades!
-Queen of Spades!
-
-9 of Spades!
-
-Testing played the 
-
-Queen of Spades!
-
-Fully Auto played the 
-
-Last played card DOES affect Testing
-
-The last card was a black queen!
-Testing must now pick up 5 cards.
-
-Testing's updated hand:
-8 of Diamonds!
-2 of Diamonds!
-8 of Clubs!
-10 of Clubs!
-7 of Diamonds!
-6 of Diamonds!
-Queen of Diamonds!
-8 of Spades!
-8 of Hearts!
-Jack of Hearts!
-4 of Hearts!
-3 of Hearts!
-
-Queen of Clubs!
-
-Fully Auto played the 
-
-Last played card DOES affect Testing
-
-The last card was a black queen!
-Testing must now pick up 5 cards.
-
-Testing's updated hand:
-8 of Diamonds!
-2 of Diamonds!
-8 of Clubs!
-10 of Clubs!
-7 of Diamonds!
-6 of Diamonds!
-Queen of Diamonds!
-8 of Spades!
-8 of Hearts!
-Jack of Hearts!
-4 of Hearts!
-3 of Hearts!
-10 of Hearts!
-10 of Diamonds!
-3 of Diamonds!
-3 of Spades!
-6 of Spades!
-
-Jack of Clubs!
-
-Fully Auto played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Testing, it's your turn.
-
-8 of Clubs!
-
-Testing played the 
-
-Last played card DOES affect Fully Auto
-
-The last card was an eight!
-Fully Auto is forced to skip their turn.
-
-Testing, it's your turn.
-
-8 of Diamonds!
-
-Testing played the 
-
-Last played card DOES affect Fully Auto
-
-The last card was an eight!
-Fully Auto is forced to skip their turn.
-
-Testing, it's your turn.
-
-2 of Diamonds!
-
-Testing played the 
-
-Last played card DOES affect Fully Auto
-
-The last card was a two!
-Fully Auto must now pick up 2 cards.
-
-Fully Auto's updated hand:
-Queen of Spades!
-Ace of Spades!
-Ace of Clubs!
-
-7 of Diamonds!
-
-Testing played the 
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Queen of Spades!
-Ace of Spades!
-Ace of Clubs!
-9 of Clubs!
-
-6 of Diamonds!
-
-Testing played the 
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Queen of Spades!
-Ace of Spades!
-Ace of Clubs!
-9 of Clubs!
-2 of Clubs!
-
-King of Diamonds!
-
-Testing played the 
-
-King of Spades!
-
-Fully Auto played the 
-
-8 of Spades!
-
-Testing played the 
-
-Last played card DOES affect Fully Auto
-
-The last card was an eight!
-Fully Auto is forced to skip their turn.
-
-Testing, it's your turn.
-
-8 of Hearts!
-
-Testing played the 
-
-Last played card DOES affect Fully Auto
-
-The last card was an eight!
-Fully Auto is forced to skip their turn.
-
-Testing, it's your turn.
-
-Jack of Hearts!
-
-Testing played the 
-
-The last card was a jack!
-The direction of play has been reversed.
-
-Fully Auto, it's your turn.
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Ace of Spades!
-Ace of Clubs!
-9 of Clubs!
-2 of Clubs!
-2 of Hearts!
-
-4 of Hearts!
-
-Testing played the 
-
-2 of Hearts!
-
-Fully Auto played the 
-
-Last played card DOES affect Testing
-
-The last card was a two!
-Testing must now pick up 2 cards.
-
-Testing's updated hand:
-10 of Clubs!
-3 of Hearts!
-10 of Hearts!
-10 of Diamonds!
-3 of Diamonds!
-3 of Spades!
-6 of Spades!
-5 of Hearts!
-Queen of Hearts!
-
-2 of Clubs!
-
-Fully Auto played the 
-
-Last played card DOES affect Testing
-
-The last card was a two!
-Testing must now pick up 2 cards.
-
-Testing's updated hand:
-10 of Clubs!
-3 of Hearts!
-10 of Hearts!
-10 of Diamonds!
-3 of Diamonds!
-3 of Spades!
-6 of Spades!
-5 of Hearts!
-Queen of Hearts!
-Ace of Hearts!
-Ace of Diamonds!
-
-Ace of Clubs!
-
-Fully Auto played the 
-
-10 of Clubs!
-
-Testing played the 
-
-9 of Clubs!
-
-Fully Auto played the 
-
-Testing picked up.
-Testing's updated hand:
-3 of Hearts!
-10 of Hearts!
-10 of Diamonds!
-3 of Diamonds!
-3 of Spades!
-6 of Spades!
-5 of Hearts!
-Queen of Hearts!
-Ace of Hearts!
-Ace of Diamonds!
-Jack of Diamonds!
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Ace of Spades!
-Queen of Diamonds!
-
-Testing picked up.
-Testing's updated hand:
-3 of Hearts!
-10 of Hearts!
-10 of Diamonds!
-3 of Diamonds!
-3 of Spades!
-6 of Spades!
-5 of Hearts!
-Queen of Hearts!
-Ace of Hearts!
-Ace of Diamonds!
-Jack of Diamonds!
-9 of Diamonds!
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Ace of Spades!
-Queen of Diamonds!
-5 of Diamonds!
-
-9 of Diamonds!
-
-Testing played the 
-
-Queen of Diamonds!
-
-Fully Auto played the 
-
-10 of Diamonds!
-
-Testing played the 
-
-5 of Diamonds!
-
-Fully Auto played the 
-
-3 of Diamonds!
-
-Testing played the 
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Ace of Spades!
-5 of Clubs!
-
-3 of Hearts!
-
-Testing played the 
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Ace of Spades!
-5 of Clubs!
-7 of Clubs!
-
-10 of Hearts!
-
-Testing played the 
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Ace of Spades!
-5 of Clubs!
-7 of Clubs!
-Queen of Clubs!
-
-5 of Hearts!
-
-Testing played the 
-
-5 of Clubs!
-
-Fully Auto played the 
-
-Testing picked up.
-Testing's updated hand:
-3 of Spades!
-6 of Spades!
-Queen of Hearts!
-Ace of Hearts!
-Ace of Diamonds!
-Jack of Diamonds!
-3 of Clubs!
-
-7 of Clubs!
-
-Fully Auto played the 
-
-3 of Clubs!
-
-Testing played the 
-
-King of Clubs!
-
-Fully Auto played the 
-
-King of Hearts!
-
-Testing played the 
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-Ace of Spades!
-6 of Clubs!
-
-Ace of Hearts!
-
-Testing played the 
-
-Ace of Spades!
-
-Fully Auto played the 
-
-3 of Spades!
-
-Testing played the 
-
-Fully Auto picked up.
-Fully Auto's updated hand:
-6 of Clubs!
+w00t picked up.
+w00t's updated hand:
 4 of Clubs!
+9 of Hearts!
 
-6 of Spades!
+:D played the 6 of Diamonds!
 
-Testing played the 
 
+
+:) picked up.
+:)'s updated hand:
+Ace of Clubs!
+Queen of Clubs!
+7 of Hearts!
+Queen of Diamonds!
+
+Yay played the 6 of Hearts!
+
+
+
+w00t played the 9 of Hearts!
+
+
+
+:D played the 10 of Hearts!
+
+
+
+:) played the 7 of Hearts!
+
+
+
+Yay played the 3 of Hearts!
+
+
+
+w00t picked up.
+w00t's updated hand:
+4 of Clubs!
+8 of Clubs!
+
+:D picked up.
+:D's updated hand:
 6 of Clubs!
+Queen of Spades!
+5 of Spades!
+2 of Clubs!
 
-Fully Auto played the 
+:) picked up.
+:)'s updated hand:
+Ace of Clubs!
+Queen of Clubs!
+Queen of Diamonds!
+7 of Diamonds!
 
-Testing picked up.
-Testing's updated hand:
+Yay picked up.
+Yay's updated hand:
+6 of Spades!
+Ace of Spades!
+
+w00t picked up.
+w00t's updated hand:
+4 of Clubs!
+8 of Clubs!
+Queen of Hearts!
+
+:D picked up.
+:D's updated hand:
+6 of Clubs!
+Queen of Spades!
+5 of Spades!
+2 of Clubs!
+Ace of Hearts!
+
+:) picked up.
+:)'s updated hand:
+Ace of Clubs!
+Queen of Clubs!
+Queen of Diamonds!
+7 of Diamonds!
+Queen of Hearts!
+
+Yay picked up.
+Yay's updated hand:
+6 of Spades!
+Ace of Spades!
+5 of Clubs!
+
+w00t played the King of Hearts!
+
+
+
+:D played the Ace of Hearts!
+
+
+
+:) played the Ace of Clubs!
+
+
+
+Yay played the Ace of Spades!
+
+
+
+w00t picked up.
+w00t's updated hand:
+4 of Clubs!
+8 of Clubs!
+Queen of Clubs!
+
+:D played the Queen of Spades!
+
+
+
+Last played card DOES affect :)
+
+The last card was a black queen!
+:) must now pick up 5 cards.
+
+:)'s updated hand:
+Queen of Clubs!
+Queen of Diamonds!
+7 of Diamonds!
+Queen of Hearts!
+7 of Clubs!
+8 of Spades!
+7 of Spades!
+4 of Hearts!
+8 of Diamonds!
+
+Yay played the 6 of Spades!
+
+
+
+w00t picked up.
+w00t's updated hand:
+4 of Clubs!
+8 of Clubs!
+Queen of Clubs!
 Ace of Diamonds!
-Jack of Diamonds!
+
+:D played the 6 of Clubs!
+
+
+
+:) played the King of Clubs!
+
+
+
+Yay played the 5 of Clubs!
+
+
+
+
+Yay is out!
+
+w00t played the Queen of Clubs!
+
+
+
+Last played card DOES affect :D
+
+The last card was a black queen!
+:D must now pick up 5 cards.
+
+:D's updated hand:
+5 of Spades!
+2 of Clubs!
+9 of Diamonds!
+10 of Diamonds!
+3 of Clubs!
+Queen of Diamonds!
+Jack of Spades!
+
+:) played the Queen of Diamonds!
+
+
+
+w00t played the Ace of Diamonds!
+
+
+
+:D played the 9 of Diamonds!
+
+
+
+:) played the 8 of Diamonds!
+
+
+
+Last played card DOES affect w00t
+
+The last card was an eight!
+w00t is forced to skip their turn.
+
+:D, it's your turn.
+
+:D played the 10 of Diamonds!
+
+
+
+:) played the 7 of Diamonds!
+
+
+
+w00t picked up.
+w00t's updated hand:
+4 of Clubs!
+8 of Clubs!
+10 of Spades!
+
+:D played the King of Diamonds!
+
+
+
+:) picked up.
+:)'s updated hand:
+Queen of Hearts!
+7 of Clubs!
+8 of Spades!
+7 of Spades!
+4 of Hearts!
 4 of Diamonds!
 
+w00t picked up.
+w00t's updated hand:
+4 of Clubs!
+8 of Clubs!
+10 of Spades!
+5 of Hearts!
+
+:D picked up.
+:D's updated hand:
+5 of Spades!
+2 of Clubs!
+3 of Clubs!
+Jack of Spades!
+Jack of Clubs!
+
+:) played the 4 of Diamonds!
+
+
+
+w00t played the 4 of Clubs!
+
+
+
+:D played the 2 of Clubs!
+
+
+
+Last played card DOES affect :)
+
+The last card was a two!
+:) must now pick up 2 cards.
+
+:)'s updated hand:
+Queen of Hearts!
+7 of Clubs!
+8 of Spades!
+7 of Spades!
+4 of Hearts!
+8 of Hearts!
+Queen of Spades!
+
+w00t played the 8 of Clubs!
+
+
+
+Last played card DOES affect :D
+
+The last card was an eight!
+:D is forced to skip their turn.
+
+:), it's your turn.
+
+:) played the 8 of Spades!
+
+
+
+Last played card DOES affect w00t
+
+The last card was an eight!
+w00t is forced to skip their turn.
+
+:D, it's your turn.
+
+:D played the 5 of Spades!
+
+
+
+:) played the 7 of Spades!
+
+
+
+w00t played the 10 of Spades!
+
+
+
+:D played the Jack of Spades!
+
+
+
+The last card was a jack!
+The direction of play has been reversed.
+
+w00t, it's your turn.
+
+w00t picked up.
+w00t's updated hand:
+5 of Hearts!
+2 of Hearts!
+
+:) played the King of Spades!
+
+
+
+:D picked up.
+:D's updated hand:
+3 of Clubs!
+Jack of Clubs!
+10 of Clubs!
+
+w00t picked up.
+w00t's updated hand:
+5 of Hearts!
+2 of Hearts!
+Jack of Hearts!
+
+:) picked up.
+:)'s updated hand:
+Queen of Hearts!
+7 of Clubs!
+4 of Hearts!
+8 of Hearts!
+Jack of Diamonds!
+
+:D picked up.
+:D's updated hand:
+3 of Clubs!
+Jack of Clubs!
+10 of Clubs!
+4 of Spades!
+
+w00t picked up.
+w00t's updated hand:
+5 of Hearts!
+2 of Hearts!
+Jack of Hearts!
+9 of Clubs!
+
+:) picked up.
+:)'s updated hand:
+Queen of Hearts!
+7 of Clubs!
+4 of Hearts!
+8 of Hearts!
+Jack of Diamonds!
+3 of Spades!
+
+:D played the 4 of Spades!
+
+
+
+w00t picked up.
+w00t's updated hand:
+5 of Hearts!
+2 of Hearts!
+Jack of Hearts!
+9 of Clubs!
+9 of Spades!
+
+:) played the 4 of Hearts!
+
+
+
+:D picked up.
+:D's updated hand:
+3 of Clubs!
+Jack of Clubs!
+10 of Clubs!
+2 of Spades!
+
+w00t played the 2 of Hearts!
+
+
+
+Last played card DOES affect :)
+
+The last card was a two!
+:) must now pick up 2 cards.
+
+:)'s updated hand:
+Queen of Hearts!
+7 of Clubs!
+8 of Hearts!
+Jack of Diamonds!
+3 of Spades!
+2 of Diamonds!
+5 of Diamonds!
+
+:D played the 2 of Spades!
+
+
+
+Last played card DOES affect w00t
+
+The last card was a two!
+w00t must now pick up 2 cards.
+
+w00t's updated hand:
+5 of Hearts!
+Jack of Hearts!
+9 of Clubs!
+9 of Spades!
+3 of Diamonds!
+6 of Diamonds!
+
+:) played the 2 of Diamonds!
+
+
+
+Last played card DOES affect :D
+
+The last card was a two!
+:D must now pick up 2 cards.
+
+:D's updated hand:
+3 of Clubs!
+Jack of Clubs!
+10 of Clubs!
+6 of Hearts!
+9 of Hearts!
+
+w00t played the 3 of Diamonds!
+
+
+
+:) played the Jack of Diamonds!
+
+
+
+The last card was a jack!
+The direction of play has been reversed.
+
+w00t, it's your turn.
+
+w00t played the Jack of Hearts!
+
+
+
+The last card was a jack!
+The direction of play has been reversed.
+
+:), it's your turn.
+
+:) played the 8 of Hearts!
+
+
+
+Last played card DOES affect :D
+
+The last card was an eight!
+:D is forced to skip their turn.
+
+w00t, it's your turn.
+
+w00t played the 5 of Hearts!
+
+
+
+:) played the Queen of Hearts!
+
+
+
+:D played the 6 of Hearts!
+
+
+
+w00t played the 6 of Diamonds!
+
+
+
+:) played the 5 of Diamonds!
+
+
+
+:D picked up.
+:D's updated hand:
+3 of Clubs!
+Jack of Clubs!
+10 of Clubs!
+9 of Hearts!
+10 of Hearts!
+
+w00t picked up.
+w00t's updated hand:
+9 of Clubs!
+9 of Spades!
+7 of Hearts!
+
+:) picked up.
+:)'s updated hand:
+7 of Clubs!
+3 of Spades!
+3 of Hearts!
+
+:D picked up.
+:D's updated hand:
+3 of Clubs!
+Jack of Clubs!
+10 of Clubs!
+9 of Hearts!
+10 of Hearts!
+Queen of Hearts!
+
+w00t picked up.
+w00t's updated hand:
+9 of Clubs!
+9 of Spades!
+7 of Hearts!
+Ace of Hearts!
+
+:) picked up.
+:)'s updated hand:
+7 of Clubs!
+3 of Spades!
+3 of Hearts!
+Ace of Clubs!
+
+:D picked up.
+:D's updated hand:
+3 of Clubs!
+Jack of Clubs!
+10 of Clubs!
+9 of Hearts!
+10 of Hearts!
+Queen of Hearts!
+Ace of Spades!
+
+w00t picked up.
+w00t's updated hand:
+9 of Clubs!
+9 of Spades!
+7 of Hearts!
+Ace of Hearts!
+Queen of Spades!
+
+:) picked up.
+:)'s updated hand:
+7 of Clubs!
+3 of Spades!
+3 of Hearts!
+Ace of Clubs!
+6 of Spades!
+
+:D picked up.
+:D's updated hand:
+3 of Clubs!
+Jack of Clubs!
+10 of Clubs!
+9 of Hearts!
+10 of Hearts!
+Queen of Hearts!
+Ace of Spades!
+6 of Clubs!
+
+w00t picked up.
+w00t's updated hand:
+9 of Clubs!
+9 of Spades!
+7 of Hearts!
+Ace of Hearts!
+Queen of Spades!
+Queen of Clubs!
+
+:) picked up.
+:)'s updated hand:
+7 of Clubs!
+3 of Spades!
+3 of Hearts!
+Ace of Clubs!
+6 of Spades!
+5 of Clubs!
+
+:D picked up.
+:D's updated hand:
+3 of Clubs!
+Jack of Clubs!
+10 of Clubs!
+9 of Hearts!
+10 of Hearts!
+Queen of Hearts!
+Ace of Spades!
+6 of Clubs!
+Queen of Clubs!
+
+w00t picked up.
+w00t's updated hand:
+9 of Clubs!
+9 of Spades!
+7 of Hearts!
+Ace of Hearts!
+Queen of Spades!
+Queen of Clubs!
+Queen of Diamonds!
+
+:) played the 5 of Clubs!
+
+
+
+:D played the Queen of Clubs!
+
+
+
+Last played card DOES affect w00t
+
+The last card was a black queen!
+w00t must now pick up 5 cards.
+
+w00t's updated hand:
+9 of Clubs!
+9 of Spades!
+7 of Hearts!
+Ace of Hearts!
+Queen of Spades!
+Queen of Clubs!
+Queen of Diamonds!
+Ace of Diamonds!
+9 of Diamonds!
+8 of Diamonds!
+10 of Diamonds!
+7 of Diamonds!
+
+:) played the 7 of Clubs!
+
+
+
+:D played the 3 of Clubs!
+
+
+
+w00t played the 9 of Clubs!
+
+
+
+:) played the Ace of Clubs!
+
+
+
+:D played the Jack of Clubs!
+
+
+
+The last card was a jack!
+The direction of play has been reversed.
+
+:), it's your turn.
+
+:) picked up.
+:)'s updated hand:
+3 of Spades!
+3 of Hearts!
+6 of Spades!
+Queen of Diamonds!
+
+w00t played the King of Clubs!
+
+
+
+:D played the 10 of Clubs!
+
+
+
+:) picked up.
+:)'s updated hand:
+3 of Spades!
+3 of Hearts!
+6 of Spades!
+Queen of Diamonds!
+4 of Diamonds!
+
+w00t played the 10 of Diamonds!
+
+
+
+:D played the 10 of Hearts!
+
+
+
+:) played the 3 of Hearts!
+
+
+
+w00t played the 7 of Hearts!
+
+
+
+:D played the 9 of Hearts!
+
+
+
+:) picked up.
+:)'s updated hand:
+3 of Spades!
+6 of Spades!
+Queen of Diamonds!
+4 of Diamonds!
 4 of Clubs!
 
-Fully Auto played the 
+w00t played the 9 of Spades!
 
 
-Fully Auto is out!
+
+:D played the Ace of Spades!
+
+
+
+:) played the 3 of Spades!
+
+
+
+w00t played the Queen of Spades!
+
+
+
+Last played card DOES affect :D
+
+The last card was a black queen!
+:D must now pick up 5 cards.
+
+:D's updated hand:
+Queen of Hearts!
+6 of Clubs!
+2 of Clubs!
+8 of Clubs!
+8 of Spades!
+5 of Spades!
+7 of Spades!
+
+:) played the 6 of Spades!
+
+
+
+w00t picked up.
+w00t's updated hand:
+Ace of Hearts!
+Queen of Diamonds!
+Ace of Diamonds!
+9 of Diamonds!
+8 of Diamonds!
+7 of Diamonds!
+10 of Spades!
+
+:D played the 8 of Spades!
+
+
+
+Last played card DOES affect :)
+
+The last card was an eight!
+:) is forced to skip their turn.
+
+w00t, it's your turn.
+
+w00t played the 8 of Diamonds!
+
+
+
+Last played card DOES affect :D
+
+The last card was an eight!
+:D is forced to skip their turn.
+
+:), it's your turn.
+
+:) played the King of Diamonds!
+
+
+
+w00t played the Queen of Diamonds!
+
+
+
+:D picked up.
+:D's updated hand:
+Queen of Hearts!
+6 of Clubs!
+2 of Clubs!
+8 of Clubs!
+5 of Spades!
+7 of Spades!
+Jack of Spades!
+
+:) played the 4 of Diamonds!
+
+
+
+w00t played the Ace of Diamonds!
+
+
+
+:D picked up.
+:D's updated hand:
+Queen of Hearts!
+6 of Clubs!
+2 of Clubs!
+8 of Clubs!
+5 of Spades!
+7 of Spades!
+Jack of Spades!
+Queen of Spades!
+
+:) picked up.
+:)'s updated hand:
+4 of Clubs!
+4 of Spades!
+
+w00t played the Ace of Hearts!
+
+
+
+:D played the King of Hearts!
+
+
+
+:) picked up.
+:)'s updated hand:
+4 of Clubs!
+4 of Spades!
+4 of Hearts!
+
+w00t picked up.
+w00t's updated hand:
+9 of Diamonds!
+7 of Diamonds!
+10 of Spades!
+2 of Hearts!
+
+:D played the King of Spades!
+
+
+
+:) played the 4 of Spades!
+
+
+
+w00t played the 10 of Spades!
+
+
+
+:D played the 5 of Spades!
+
+
+
+:) picked up.
+:)'s updated hand:
+4 of Clubs!
+4 of Hearts!
+2 of Spades!
+
+w00t picked up.
+w00t's updated hand:
+9 of Diamonds!
+7 of Diamonds!
+2 of Hearts!
+2 of Diamonds!
+
+:D played the 7 of Spades!
+
+
+
+:) played the 2 of Spades!
+
+
+
+Last played card DOES affect w00t
+
+The last card was a two!
+w00t must now pick up 2 cards.
+
+w00t's updated hand:
+9 of Diamonds!
+7 of Diamonds!
+2 of Hearts!
+2 of Diamonds!
+3 of Diamonds!
+Jack of Diamonds!
+
+:D played the 2 of Clubs!
+
+
+
+Last played card DOES affect :)
+
+The last card was a two!
+:) must now pick up 2 cards.
+
+:)'s updated hand:
+4 of Clubs!
+4 of Hearts!
+Jack of Hearts!
+8 of Hearts!
+
+w00t played the 2 of Hearts!
+
+
+
+Last played card DOES affect :D
+
+The last card was a two!
+:D must now pick up 2 cards.
+
+:D's updated hand:
+6 of Clubs!
+8 of Clubs!
+Jack of Spades!
+5 of Hearts!
+Queen of Hearts!
+
+:) played the 8 of Hearts!
+
+
+
+Last played card DOES affect w00t
+
+The last card was an eight!
+w00t is forced to skip their turn.
+
+:D, it's your turn.
+
+:D played the 8 of Clubs!
+
+
+
+Last played card DOES affect :)
+
+The last card was an eight!
+:) is forced to skip their turn.
+
+w00t, it's your turn.
+
+w00t picked up.
+w00t's updated hand:
+9 of Diamonds!
+7 of Diamonds!
+2 of Diamonds!
+3 of Diamonds!
+Jack of Diamonds!
+6 of Hearts!
+
+:D is not affected by last played card
+
+:D played the 6 of Clubs!
+
+
+
+:) played the 4 of Clubs!
+
+
+
+w00t picked up.
+w00t's updated hand:
+9 of Diamonds!
+7 of Diamonds!
+2 of Diamonds!
+3 of Diamonds!
+Jack of Diamonds!
+6 of Hearts!
+6 of Diamonds!
+
+:D picked up.
+:D's updated hand:
+Jack of Spades!
+5 of Hearts!
+Queen of Hearts!
+5 of Diamonds!
+
+:) played the 4 of Hearts!
+
+
+
+w00t played the 6 of Hearts!
+
+
+
+:D played the 5 of Hearts!
+
+
+
+:) played the Jack of Hearts!
+
+
+
+
+:) is out!
+
+The last card was a jack!
+The direction of play has been reversed.
+
+:D, it's your turn.
+
+:D played the Jack of Spades!
+
+
+
+The last card was a jack!
+The direction of play has been reversed.
+
+w00t, it's your turn.
+
+w00t played the Jack of Diamonds!
+
+
+
+The last card was a jack!
+The direction of play has been reversed.
+
+:D, it's your turn.
+
+:D played the 5 of Diamonds!
+
+
+
+w00t played the 2 of Diamonds!
+
+
+
+Last played card DOES affect :D
+
+The last card was a two!
+:D must now pick up 2 cards.
+
+:D's updated hand:
+Queen of Hearts!
+5 of Clubs!
+Queen of Clubs!
+
+w00t played the 9 of Diamonds!
+
+
+
+:D picked up.
+:D's updated hand:
+Queen of Hearts!
+5 of Clubs!
+Queen of Clubs!
+7 of Clubs!
+
+w00t played the 7 of Diamonds!
+
+
+
+:D played the 7 of Clubs!
+
+
+
+w00t picked up.
+w00t's updated hand:
+3 of Diamonds!
+6 of Diamonds!
+3 of Clubs!
+
+:D played the Queen of Clubs!
+
+
+
+Last played card DOES affect w00t
+
+The last card was a black queen!
+w00t must now pick up 5 cards.
+
+w00t's updated hand:
+3 of Diamonds!
+6 of Diamonds!
+3 of Clubs!
+9 of Clubs!
+Ace of Clubs!
+Jack of Clubs!
+Queen of Clubs!
+10 of Clubs!
+
+:D played the Queen of Hearts!
+
+
+
+w00t picked up.
+w00t's updated hand:
+3 of Diamonds!
+6 of Diamonds!
+3 of Clubs!
+9 of Clubs!
+Ace of Clubs!
+Jack of Clubs!
+Queen of Clubs!
+10 of Clubs!
+10 of Diamonds!
+
+:D picked up.
+:D's updated hand:
+5 of Clubs!
+10 of Hearts!
+
+w00t picked up.
+w00t's updated hand:
+3 of Diamonds!
+6 of Diamonds!
+3 of Clubs!
+9 of Clubs!
+Ace of Clubs!
+Jack of Clubs!
+Queen of Clubs!
+10 of Clubs!
+10 of Diamonds!
+3 of Hearts!
+
+:D played the 10 of Hearts!
+
+
+
+w00t played the 10 of Clubs!
+
+
+
+:D played the 5 of Clubs!
+
+
+
+
+:D is out!
 
 
 Scoreboard:
-1st:	Fully Auto                                        (Hardcoded - Aggressive)
-2nd:	Testing                                           (Hardcoded - Aggressive)
+1st:	Yay                                               (Hardcoded - Aggressive)
+2nd:	:)                                                (Hardcoded - Aggressive)
+3rd:	:D                                                (Hardcoded - Aggressive)
+4th:	w00t                                              (Hardcoded - Aggressive)

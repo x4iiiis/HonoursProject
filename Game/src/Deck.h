@@ -352,8 +352,8 @@ public:
 			cout << "Spades!" << endl;
 			GameText << "Spades!" << endl;
 		}
-		cout << endl;
-		GameText << endl;
+		cout << endl << endl << endl;
+		GameText << endl << endl << endl;
 	}
 	
 	//Set whether all the cards are red of black

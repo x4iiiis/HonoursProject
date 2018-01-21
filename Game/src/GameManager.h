@@ -435,9 +435,8 @@ public:
 
 			cout << GetCurrentPlayer()->name << " played the ";
 			GameText << GetCurrentPlayer()->name << " played the ";
+			GameText.close();
 			DeckOfCards.identify_card(c);
-			cout << endl << endl;
-			GameText << endl << endl;
 
 			GetCurrentPlayer()->canPlay = false;
 			GetCurrentPlayer()->canPickUp = false;
