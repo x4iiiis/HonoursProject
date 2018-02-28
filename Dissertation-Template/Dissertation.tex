@@ -72,21 +72,41 @@
 %you can import other documents into your main one, these layout the Title and Declarations on its own page.
 %you might need to change these to \ if your on Microsoft Windows.
 \input{./Dissertation-Title.tex}
-\input{./Dissertation-Dec.tex}
+\clearpage\input{./Dissertation-Dec.tex}
+\thispagestyle{empty}
 \pagebreak
-\input{./Dissertation-DP.tex}
+\clearpage\input{./Dissertation-DP.tex}
+\thispagestyle{empty}
 \pagebreak
+
+\pagenumbering{roman}
+\setcounter{page}{1}
 
 %LaTeX let you define the abstract separately so it wont get sucked into the main document.
 \begin{abstract}
+\
 % fill the abstract in here
 $\\ \clubsuit \\\\ \diamondsuit \\\\ \heartsuit \\\\ \spadesuit$
 
 \end{abstract}
 \pagebreak
 
-\tableofcontents % is generated for you
+%\pagenumbering{arabic}
+%\tableofcontents % is generated for you
+%\pagenumbering{roman}
 \newpage
+
+
+
+\cleardoublepage
+% Let's change \thepage so it prints one less than
+% the real page number; \pagenumbering{arabic}
+% will redefine it to the right meaning afterwards.
+\renewcommand\thepage{\romannumeral\numexpr\value{page}\relax}
+
+\tableofcontents
+
+\cleardoublepage
 
 \listoftables
 %generated in same way as figures
@@ -105,6 +125,9 @@ I would like to thank my friends and family for ensuring that I remained positiv
 I am also hugely appreciative of my project supervisor, Dr Simon Powers. Simon has provided me with excellent support and guidance throughout the process and for that I am extremely grateful.
 
 \newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
 \section{Introduction}
 This chapter highlights the aims and objectives for this honours project, providing a brief insight into the what is to come. It also outlines the desired deliverables for the completed project. \\
 
