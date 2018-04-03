@@ -34,7 +34,7 @@
 \contentsline {subsection}{\numberline {3.5}Summary}{18}{subsection.3.5}
 \contentsline {section}{\numberline {4}Methodology}{20}{section.4}
 \contentsline {subsection}{\numberline {4.1}Language and Libraries}{20}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Design}{20}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.2}Design}{21}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Neural Network}{22}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Evolutionary Algorithm}{22}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Fitness Evaluation}{22}{subsection.4.5}
@@ -51,4 +51,7 @@
 \contentsline {section}{\numberline {A}Project Overview}{}{Appendix.a.A}
 \contentsline {section}{\numberline {B}Second Formal Review Output}{}{Appendix.a.B}
 \contentsline {section}{\numberline {C}Diary Sheets}{}{Appendix.a.C}
-\contentsline {section}{\numberline {D}Appendix 4 and following}{}{Appendix.a.D}
+\contentsline {section}{\numberline {D}Timeline Gantt Charts}{}{Appendix.a.D}
+\contentsline {section}{\numberline {E}My Website}{}{Appendix.a.E}
+\contentsline {section}{\numberline {F}Textures}{}{Appendix.a.F}
+\contentsline {section}{\numberline {G}Appendix 7 and following}{}{Appendix.a.G}

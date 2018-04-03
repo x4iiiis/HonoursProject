@@ -555,8 +555,8 @@ As Switch is largely down to luck like most (if not all) card games, there is ne
 
 \newpage
 \section{Methodology}
-%And so on for each of the chapters.  The template automatically starts new chapters on a new page.  The associated guidelines tell you what the available styles do and also how to structure a report.
-%There is a section break on this page that you should be careful NOT to delete otherwise the references and appendices will be numbered continuously with the rest of the document.
+The entire project source code can be found on \href{http://www.github.com/x4iiiis/honoursproject}{my github account.}
+
 
 \subsection{Language and Libraries}
 The programming language used to build this project is C++. It is used in collaboration with the NeuroEvolution of Augmenting Topologies (NEAT) library. 
@@ -564,8 +564,11 @@ The programming language used to build this project is C++. It is used in collab
 \^ Following a tutorial that I can't seem to find the download link to the .ps file but I've uploaded the converted pdf to my website\\
 
 
+Somethings about an object oriented programming and the fact that it's modern C++ (C++11) to facilitate the use of shared pointers. \\
 
-The graphical aspect was developed using an import of the Simple and Fast Multimedia Library (SFML), with playing card textures courtesy of Kenney Vleugels, found here:\\ https://opengameart.org/content/boardgame-pack
+The graphical aspect of the game on show in figure 11 was implemented using an import of the Simple and Fast Multimedia Library (SFML), with playing card textures courtesy of Kenney Vleugels (see appendix F).
+
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = \textwidth]{SFML.png}
@@ -600,8 +603,10 @@ Could've started from scratch rather than use NEAT, but used it for reasons X Y 
 NEAT has special crossover operations cause taking half of a NN and sticking to another one probably won't perform well 
 
 \subsection{Evolutionary Algorithm}
+.
 
 \subsection{Fitness Evaluation}
+Had issues with what I tried so Simon told me to do 1 if it wins and 0 if it loses.. simples. -999 if the network fails to activate which i dunno why that's happening anyway
 
 
 \newpage
@@ -830,8 +835,27 @@ Exploring possibilities and limits of AI in games, particularly evolved controll
 \includepdf[ pages=-,pagecommand={},width=\textwidth]{SupervisorMeetings/All.pdf}
 
 \newpage
-\section{Appendix 4 and following}
+\section{Timeline Gantt Charts}
+Insert gantt charts here
+
+\newpage
+\section{My Website}
+http://www.x4iiiis.com/honoursproject\\
+
+probably a screenshot - perhaps of the video at the bottom 
+
+\newpage
+\section{Textures}
+\includegraphics[width = \textwidth]{Kenney.jpg}
+
+Insert image of the board pack and a link to Kenny Vleugels' boardgame texture pack here\\
+
+https://opengameart.org/content/boardgame-pack
+
+\newpage
+\section{Appendix 7 and following}
 insert content here and for each of the other appendices, the title may be just on a page by itself, the pages of the appendices are not numbered, unless an included document such as a user manual or design document is itself pager numbered.
+
 \end{appendices}
 
 \end{document}
