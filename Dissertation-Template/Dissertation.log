@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.11)  28 FEB 2018 22:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.11)  3 APR 2018 01:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -605,40 +605,73 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count125
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box29
+\sift@deathcycles=\count126
+\@vwid@loff=\dimen141
+\@vwid@roff=\dimen142
+)
+\c@taburow=\count127
+\tabu@nbcols=\count128
+\tabu@cnt=\count129
+\tabu@Xcol=\count130
+\tabu@alloc=\count131
+\tabu@nested=\count132
+\tabu@target=\dimen143
+\tabu@spreadtarget=\dimen144
+\tabu@naturalX=\dimen145
+\tabucolX=\dimen146
+\tabu@Xsum=\dimen147
+\extrarowdepth=\dimen148
+\abovetabulinesep=\dimen149
+\belowtabulinesep=\dimen150
+\tabustrutrule=\dimen151
+\tabu@thebody=\toks26
+\tabu@footnotes=\toks27
+\tabu@box=\box30
+\tabu@arstrutbox=\box31
+\tabu@hleads=\box32
+\tabu@vleads=\box33
+\tabu@cellskip=\skip71
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
 
 (./Dissertation.aux)
 \openout1 = `Dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
-\scratchdimen=\dimen141
-\scratchbox=\box29
-\nofMPsegments=\count127
-\nofMParguments=\count128
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count129
-\MPscratchDim=\dimen142
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count133
+\scratchdimen=\dimen152
+\scratchbox=\box34
+\nofMPsegments=\count134
+\nofMParguments=\count135
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count136
+\MPscratchDim=\dimen153
+\MPnumerator=\count137
+\makeMPintoPDFobject=\count138
+\everyMPtoPDFconversion=\toks29
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -658,8 +691,8 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 70.
+\AtBeginShipoutBox=\box35
+Package hyperref Info: Link coloring OFF on input line 72.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -667,25 +700,25 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count132
+\c@section@level=\count139
 )
-LaTeX Info: Redefining \ref on input line 70.
-LaTeX Info: Redefining \pageref on input line 70.
-LaTeX Info: Redefining \nameref on input line 70.
+LaTeX Info: Redefining \ref on input line 72.
+LaTeX Info: Redefining \pageref on input line 72.
+LaTeX Info: Redefining \nameref on input line 72.
 
 (./Dissertation.out) (./Dissertation.out)
 \@outlinefile=\write3
 \openout3 = `Dissertation.out'.
 
-LaTeX Info: Redefining \celsius on input line 70.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 70.
+LaTeX Info: Redefining \celsius on input line 72.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 72.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 70.
-Package gensymb Info: Using \Omega for \ohm on input line 70.
+LaTeX Info: Redefining \ohm on input line 72.
+Package gensymb Info: Using \Omega for \ohm on input line 72.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -703,7 +736,7 @@ sertation-Dec.tex)pdfTeX warning (ext4): destination with the same identifier (
 name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.78 \clearpage
+l.80 \clearpage
                \input{./Dissertation-DP.tex} [1
 
 ] (./Dissertation-DP.tex)
@@ -711,8 +744,24 @@ l.78 \clearpage
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 89.
- [1] (./Dissertation.toc [2
+(Font)              <10.95> on input line 91.
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
+
+ []
+
+
+Overfull \hbox (23.43861pt too wide) in paragraph at lines 99--101
+[]\OT1/cmr/m/n/10.95 Actually it's in the down-load here, as a .ps http://nn.cs
+.utexas.edu/soft-
+ []
+
+[1] (./Dissertation.toc [2
 
 ])
 \tf@toc=\write4
@@ -724,58 +773,63 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [4
 
-]
-(./Dissertation.lof)
+] (./Dissertation.lof)
 \tf@lof=\write6
 \openout6 = `Dissertation.lof'.
 
- [5]
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 134--139
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 152--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--139
+Underfull \hbox (badness 10000) in paragraph at lines 152--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--160
+Underfull \hbox (badness 10000) in paragraph at lines 174--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--160
+Underfull \hbox (badness 10000) in paragraph at lines 174--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--174
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 186--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
@@ -783,9 +837,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.179 
+l.195 
        [1]
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
@@ -793,170 +847,154 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.202 
+l.218 
        [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
-[4] <images/Perceptron.png, id=429, 281.05pt x 138.5175pt>
+[4] <images/Perceptron.png, id=479, 281.05pt x 138.5175pt>
 File: images/Perceptron.png Graphic file (type png)
 
 <use images/Perceptron.png>
-Package pdftex.def Info: images/Perceptron.png used on input line 245.
+Package pdftex.def Info: images/Perceptron.png used on input line 261.
 (pdftex.def)             Requested size: 281.0493pt x 138.51715pt.
  [5 <./images/Perceptron.png>]
-<images/SigmoidFunction.png, id=444, 781.92125pt x 488.82625pt>
+<images/SigmoidFunction.png, id=493, 781.92125pt x 488.82625pt>
 File: images/SigmoidFunction.png Graphic file (type png)
 
 <use images/SigmoidFunction.png>
-Package pdftex.def Info: images/SigmoidFunction.png used on input line 261.
+Package pdftex.def Info: images/SigmoidFunction.png used on input line 277.
 (pdftex.def)             Requested size: 390.00517pt x 142.26318pt.
  [6 <./images/SigmoidFunction.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 307.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 323.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 307.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 323.
  [7]
-<images/GenoToPheno.png, id=478, 1473.505pt x 232.87pt>
+<images/GenoToPheno.png, id=527, 1473.505pt x 232.87pt>
 File: images/GenoToPheno.png Graphic file (type png)
 
 <use images/GenoToPheno.png>
-Package pdftex.def Info: images/GenoToPheno.png used on input line 319.
+Package pdftex.def Info: images/GenoToPheno.png used on input line 335.
 (pdftex.def)             Requested size: 390.0pt x 61.63208pt.
  [8 <./images/GenoToPheno.png>]
-<images/OnePointCrossover.png, id=490, 1761.58125pt x 475.7775pt>
+<images/OnePointCrossover.png, id=539, 1761.58125pt x 475.7775pt>
 File: images/OnePointCrossover.png Graphic file (type png)
 
 <use images/OnePointCrossover.png>
-Package pdftex.def Info: images/OnePointCrossover.png used on input line 342.
+Package pdftex.def Info: images/OnePointCrossover.png used on input line 358.
 (pdftex.def)             Requested size: 390.0pt x 105.332pt.
 
-<images/NPointCrossover.png, id=491, 1723.43875pt x 504.88625pt>
+<images/NPointCrossover.png, id=540, 1723.43875pt x 504.88625pt>
 File: images/NPointCrossover.png Graphic file (type png)
 
 <use images/NPointCrossover.png>
-Package pdftex.def Info: images/NPointCrossover.png used on input line 350.
+Package pdftex.def Info: images/NPointCrossover.png used on input line 366.
 (pdftex.def)             Requested size: 390.0pt x 114.24933pt.
 
-<images/UniformCrossover.png, id=492, 1767.60374pt x 335.2525pt>
+<images/UniformCrossover.png, id=541, 1767.60374pt x 335.2525pt>
 File: images/UniformCrossover.png Graphic file (type png)
 
 <use images/UniformCrossover.png>
-Package pdftex.def Info: images/UniformCrossover.png used on input line 358.
+Package pdftex.def Info: images/UniformCrossover.png used on input line 374.
 (pdftex.def)             Requested size: 390.0pt x 73.96552pt.
  [9 <./images/OnePointCrossover.png> <./images/NPointCrossover.png>]
-<images/ArithmeticCrossover.png, id=499, 1047.915pt x 583.17876pt>
+<images/ArithmeticCrossover.png, id=548, 1047.915pt x 583.17876pt>
 File: images/ArithmeticCrossover.png Graphic file (type png)
 
 <use images/ArithmeticCrossover.png>
-Package pdftex.def Info: images/ArithmeticCrossover.png used on input line 367.
+Package pdftex.def Info: images/ArithmeticCrossover.png used on input line 383.
 
 (pdftex.def)             Requested size: 390.0pt x 217.03636pt.
 
-Overfull \hbox (17.29022pt too wide) in paragraph at lines 374--375
+Overfull \hbox (17.29022pt too wide) in paragraph at lines 390--391
 \OT1/cmr/m/n/12 When ap-plied to a geno-type, mu-ta-tion re-turns a slightly mu
 -tated off-spring([]Eiben
  []
 
 [10 <./images/UniformCrossover.png> <./images/ArithmeticCrossover.png>]
-<images/BinaryMutation.png, id=510, 1756.5625pt x 231.86626pt>
+<images/BinaryMutation.png, id=560, 1756.5625pt x 231.86626pt>
 File: images/BinaryMutation.png Graphic file (type png)
 
 <use images/BinaryMutation.png>
-Package pdftex.def Info: images/BinaryMutation.png used on input line 382.
+Package pdftex.def Info: images/BinaryMutation.png used on input line 398.
 (pdftex.def)             Requested size: 390.0pt x 51.47774pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--387
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 
  []
 
-<images/IntegerMutation.png, id=511, 1627.07875pt x 145.54375pt>
+<images/IntegerMutation.png, id=561, 1627.07875pt x 145.54375pt>
 File: images/IntegerMutation.png Graphic file (type png)
 
 <use images/IntegerMutation.png>
-Package pdftex.def Info: images/IntegerMutation.png used on input line 391.
+Package pdftex.def Info: images/IntegerMutation.png used on input line 407.
 (pdftex.def)             Requested size: 390.0pt x 34.88457pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
 
 [11 <./images/BinaryMutation.png> <./images/IntegerMutation.png>] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 427--428
+Underfull \hbox (badness 10000) in paragraph at lines 443--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
+Underfull \hbox (badness 10000) in paragraph at lines 461--462
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
 
  []
 
-<images/MarIO.png, id=530, 1649.16125pt x 1368.11125pt>
+<images/MarIO.png, id=580, 1649.16125pt x 1368.11125pt>
 File: images/MarIO.png Graphic file (type png)
  <use images/MarIO.png>
-Package pdftex.def Info: images/MarIO.png used on input line 451.
+Package pdftex.def Info: images/MarIO.png used on input line 467.
 (pdftex.def)             Requested size: 390.0pt x 323.53113pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 458--459
+Underfull \hbox (badness 10000) in paragraph at lines 474--475
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--461
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 462--463
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--465
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
 [14 <./images/MarIO.png>] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 482--483
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 490--491
-
- []
-
-[16]
 Underfull \hbox (badness 10000) in paragraph at lines 498--499
 
- []
-
-
-Overfull \hbox (0.38345pt too wide) in paragraph at lines 506--507
-[]\OT1/cmr/m/n/12 Other com-pa-nies which ben-e-fit from the use of Ten-sor-Flo
-w in-clude Nvidia,
  []
 
 
@@ -964,45 +1002,124 @@ Underfull \hbox (badness 10000) in paragraph at lines 506--507
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 513--514
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 514--515
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--516
+Overfull \hbox (0.38345pt too wide) in paragraph at lines 522--523
+[]\OT1/cmr/m/n/12 Other com-pa-nies which ben-e-fit from the use of Ten-sor-Flo
+w in-clude Nvidia,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--532
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 517--518
+Underfull \hbox (badness 10000) in paragraph at lines 533--534
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--525
+Underfull \hbox (badness 10000) in paragraph at lines 540--541
 
  []
 
-[18] [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 557--558
+[18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
 
  []
 
-[21] <images/Gantt1.png, id=634, 553.1064pt x 257.2812pt>
+<images/SFML.png, id=675, 605.26125pt x 477.28313pt>
+File: images/SFML.png Graphic file (type png)
+ <use images/SFML.png>
+Package pdftex.def Info: images/SFML.png used on input line 571.
+(pdftex.def)             Requested size: 390.0pt x 307.53574pt.
+
+<images/ClassDiagram.jpg, id=676, 1054.94125pt x 939.51pt>
+File: images/ClassDiagram.jpg Graphic file (type jpg)
+
+<use images/ClassDiagram.jpg>
+Package pdftex.def Info: images/ClassDiagram.jpg used on input line 581.
+(pdftex.def)             Requested size: 390.0pt x 347.32654pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20 <./images/SFML.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
+
+ []
+
+[21 <./images/ClassDiagram.jpg>] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 612--613
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 614--615
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 616--617
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 656--657
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--673
+
+ []
+
+[24] [25] <images/Gantt1.png, id=703, 552.6246pt x 256.7994pt>
 File: images/Gantt1.png Graphic file (type png)
 
 <use images/Gantt1.png>
-Package pdftex.def Info: images/Gantt1.png used on input line 577.
-(pdftex.def)             Requested size: 390.0pt x 181.41467pt.
- <images/Gantt2.png, id=635, 553.1064pt x 257.2812pt>
+Package pdftex.def Info: images/Gantt1.png used on input line 706.
+(pdftex.def)             Requested size: 390.0pt x 181.2356pt.
+ <images/Gantt2.png, id=704, 552.6246pt x 256.7994pt>
 File: images/Gantt2.png Graphic file (type png)
 
 <use images/Gantt2.png>
-Package pdftex.def Info: images/Gantt2.png used on input line 583.
-(pdftex.def)             Requested size: 390.0pt x 181.41467pt.
- [22 <./images/Gantt1.png> <./images/Gantt2.png>]
-[23] (./Dissertation.bbl
+Package pdftex.def Info: images/Gantt2.png used on input line 712.
+(pdftex.def)             Requested size: 390.0pt x 181.2356pt.
+ [26 <./images/Gantt1.png> <./images/Gantt2.png>]
+<images/Gantt3.png, id=711, 552.6246pt x 256.7994pt>
+File: images/Gantt3.png Graphic file (type png)
+ <use images/Gantt3.png>
+Package pdftex.def Info: images/Gantt3.png used on input line 720.
+(pdftex.def)             Requested size: 390.0pt x 181.2356pt.
+
+<images/Gantt4.png, id=712, 552.6246pt x 257.763pt>
+File: images/Gantt4.png Graphic file (type png)
+ <use images/Gantt4.png>
+Package pdftex.def Info: images/Gantt4.png used on input line 728.
+(pdftex.def)             Requested size: 390.0pt x 181.91566pt.
+
+[27 <./images/Gantt3.png> <./images/Gantt4.png>] [28] (./Dissertation.bbl
 Underfull \hbox (badness 6510) in paragraph at lines 49--53
 []\OT1/cmr/m/n/12 David Fuh-ri-man.  How Many Pos-si-ble Move Com-bi-na-tions a
 re
@@ -1014,76 +1131,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--53
 edical . com / blog /
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 129--134
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 128--133
 []\OT1/cmr/m/n/12 Darren Orf.  This Robot That Runs En-tirely off a Neu-ral
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--134
+Underfull \hbox (badness 10000) in paragraph at lines 128--133
 \OT1/cmr/m/n/12 Net-work is Creepy as Hell.  URL []$\OT1/cmtt/m/n/12 https : / 
 / gizmodo . com /
  []
 
 
-Overfull \hbox (38.06393pt too wide) in paragraph at lines 129--134
+Overfull \hbox (38.06393pt too wide) in paragraph at lines 128--133
 \OT1/cmtt/m/n/12 this-[]robot-[]that-[]runs-[]entirely-[]off-[]a-[]neural-[]net
 work-[]is-[]c-[]1784649778$[]\OT1/cmr/m/n/12 . 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--145
+Underfull \hbox (badness 10000) in paragraph at lines 140--144
 []\OT1/cmr/m/n/12 RoboCup.  Robocup Overview, 2017.  URL []$\OT1/cmtt/m/n/12 ht
 tps :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--145
+Underfull \hbox (badness 10000) in paragraph at lines 140--144
 \OT1/cmtt/m/n/12 / / www . youtube . com / watch ? v = Cnh43cCsDKU{&}list =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--152
+Underfull \hbox (badness 10000) in paragraph at lines 146--151
 \OT1/cmtt/m/n/12 youtube . com / playlist ? list = PLQVvvaa0QuDeETZEOy4VdocT7TO
 jfSA8a$[]\OT1/cmr/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--164
+Underfull \hbox (badness 10000) in paragraph at lines 159--163
 []\OT1/cmr/m/n/12 Mat Smith.  Japan's Lat-est Hu-manoid Robot Makes its
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--164
+Underfull \hbox (badness 10000) in paragraph at lines 159--163
 \OT1/cmr/m/n/12 Own Moves.  URL []$\OT1/cmtt/m/n/12 https : / / www . engadget 
 . com / 2016 / 07 / 30 /
  []
 
-[25]) [26]
-Underfull \hbox (badness 10000) in paragraph at lines 618--619
+[30]) [31]
+Underfull \hbox (badness 10000) in paragraph at lines 752--753
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 620--621
+Underfull \hbox (badness 10000) in paragraph at lines 754--755
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 624--625
+Underfull \hbox (badness 10000) in paragraph at lines 758--759
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 637--638
+Underfull \hbox (badness 10000) in paragraph at lines 771--772
 
  []
 
-[27]
+[32]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 642.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 776.
 
-Underfull \hbox (badness 10000) in paragraph at lines 649--650
+Underfull \hbox (badness 10000) in paragraph at lines 783--784
 
  []
 
@@ -1091,26 +1208,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.652 \large
-            {\textbf{The Work to be Undertaken:}} [28]
-Overfull \hbox (1.1135pt too wide) in paragraph at lines 658--659
+l.786 \large
+            {\textbf{The Work to be Undertaken:}} [33]
+Overfull \hbox (1.1135pt too wide) in paragraph at lines 792--793
 \OT1/cmr/m/n/14.4 they per-form in terms of im-prov-ing or de-creas-ing the age
 nt's
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 663--664
+Underfull \hbox (badness 10000) in paragraph at lines 797--798
 
  []
 
 
-Overfull \hbox (6.90292pt too wide) in paragraph at lines 667--668
+Overfull \hbox (6.90292pt too wide) in paragraph at lines 801--802
 []\OT1/cmr/m/n/14.4 Lubberts, & Mi-ikku-lainen (2001). Co-Evolving a Go-Playing
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 674--675
+Underfull \hbox (badness 10000) in paragraph at lines 808--809
 
  []
 
@@ -1118,16 +1235,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.681 \newpage
-               [29]
-<images/Week9Report1.jpg, id=699, 2559.5625pt x 3520.15125pt>
+l.815 \newpage
+               [34]
+<images/Week9Report1.jpg, id=776, 2559.5625pt x 3520.15125pt>
 File: images/Week9Report1.jpg Graphic file (type jpg)
 
 <use images/Week9Report1.jpg>
-Package pdftex.def Info: images/Week9Report1.jpg used on input line 685.
+Package pdftex.def Info: images/Week9Report1.jpg used on input line 819.
 (pdftex.def)             Requested size: 390.0pt x 536.32544pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 685--686
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 819--820
 [][] 
  []
 
@@ -1135,16 +1252,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.687 \newpage
-               [30 <./images/Week9Report1.jpg>]
-<images/Week9Report2.jpg, id=703, 2559.5625pt x 3520.15125pt>
+l.821 \newpage
+               [35 <./images/Week9Report1.jpg>]
+<images/Week9Report2.jpg, id=780, 2559.5625pt x 3520.15125pt>
 File: images/Week9Report2.jpg Graphic file (type jpg)
 
 <use images/Week9Report2.jpg>
-Package pdftex.def Info: images/Week9Report2.jpg used on input line 688.
+Package pdftex.def Info: images/Week9Report2.jpg used on input line 822.
 (pdftex.def)             Requested size: 389.97145pt x 591.97223pt.
 
-Overfull \hbox (17.59627pt too wide) in paragraph at lines 688--689
+Overfull \hbox (17.59627pt too wide) in paragraph at lines 822--823
 [][] 
  []
 
@@ -1152,257 +1269,257 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.690 \newpage
-               [31 <./images/Week9Report2.jpg>]
-<SupervisorMeetings/All.pdf, id=707, 597.51233pt x 845.0471pt>
+l.824 \newpage
+               [36 <./images/Week9Report2.jpg>]
+<SupervisorMeetings/All.pdf, id=784, 597.51233pt x 845.0471pt>
 File: SupervisorMeetings/All.pdf Graphic file (type pdf)
 
 <use SupervisorMeetings/All.pdf>
-Package pdftex.def Info: SupervisorMeetings/All.pdf used on input line 696.
+Package pdftex.def Info: SupervisorMeetings/All.pdf used on input line 830.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 File: SupervisorMeetings/All.pdf Graphic file (type pdf)
  <use SupervisorMeetings/All.pdf>
-Package pdftex.def Info: SupervisorMeetings/All.pdf used on input line 696.
+Package pdftex.def Info: SupervisorMeetings/All.pdf used on input line 830.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 
-<SupervisorMeetings/All.pdf, id=710, page=1, 597.51233pt x 845.0471pt>
+<SupervisorMeetings/All.pdf, id=787, page=1, 597.51233pt x 845.0471pt>
 File: SupervisorMeetings/All.pdf Graphic file (type pdf)
 
 <use SupervisorMeetings/All.pdf, page 1>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page1 used on input line 6
-96.
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page1 used on input line 8
+30.
 (pdftex.def)             Requested size: 390.0pt x 551.5693pt.
 File: SupervisorMeetings/All.pdf Graphic file (type pdf)
 
 <use SupervisorMeetings/All.pdf, page 1>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page1 used on input line 6
-96.
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page1 used on input line 8
+30.
 (pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
 File: SupervisorMeetings/All.pdf Graphic file (type pdf)
 
 <use SupervisorMeetings/All.pdf, page 1>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page1 used on input line 6
-96.
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page1 used on input line 8
+30.
 (pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
 File: SupervisorMeetings/All.pdf Graphic file (type pdf)
 
 <use SupervisorMeetings/All.pdf, page 1>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page1 used on input line 6
-96.
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page1 used on input line 8
+30.
 (pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.696 ...h=\textwidth]{SupervisorMeetings/All.pdf}
-                                                   [32]
-<SupervisorMeetings/All.pdf, id=714, page=2, 597.51233pt x 845.0471pt>
+l.830 ...h=\textwidth]{SupervisorMeetings/All.pdf}
+                                                   [37]
+<SupervisorMeetings/All.pdf, id=791, page=2, 597.51233pt x 845.0471pt>
 File: SupervisorMeetings/All.pdf Graphic file (type pdf)
 
 <use SupervisorMeetings/All.pdf, page 2>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page2 used on input line 6
-96.
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page2 used on input line 8
+30.
 (pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
 File: SupervisorMeetings/All.pdf Graphic file (type pdf)
 
 <use SupervisorMeetings/All.pdf, page 2>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page2 used on input line 6
-96.
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page2 used on input line 8
+30.
 (pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
 File: SupervisorMeetings/All.pdf Graphic file (type pdf)
 
 <use SupervisorMeetings/All.pdf, page 1>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page1 used on input line 6
-96.
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page1 used on input line 8
+30.
 (pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.696 ...h=\textwidth]{SupervisorMeetings/All.pdf}
-                                                   [33 <./SupervisorMeetings/Al
-l.pdf>] <SupervisorMeetings/All.pdf, id=754, page=3, 597.51233pt x 845.0471pt>
-File: SupervisorMeetings/All.pdf Graphic file (type pdf)
-
-<use SupervisorMeetings/All.pdf, page 3>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page3 used on input line 6
-96.
-(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
-File: SupervisorMeetings/All.pdf Graphic file (type pdf)
-
-<use SupervisorMeetings/All.pdf, page 3>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page3 used on input line 6
-96.
-(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
-File: SupervisorMeetings/All.pdf Graphic file (type pdf)
-
-<use SupervisorMeetings/All.pdf, page 2>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page2 used on input line 6
-96.
-(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.696 ...h=\textwidth]{SupervisorMeetings/All.pdf}
-                                                   [34 <./SupervisorMeetings/Al
-l.pdf>] <SupervisorMeetings/All.pdf, id=759, page=4, 597.51233pt x 845.0471pt>
-File: SupervisorMeetings/All.pdf Graphic file (type pdf)
-
-<use SupervisorMeetings/All.pdf, page 4>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page4 used on input line 6
-96.
-(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
-File: SupervisorMeetings/All.pdf Graphic file (type pdf)
-
-<use SupervisorMeetings/All.pdf, page 4>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page4 used on input line 6
-96.
-(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
-File: SupervisorMeetings/All.pdf Graphic file (type pdf)
-
-<use SupervisorMeetings/All.pdf, page 3>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page3 used on input line 6
-96.
-(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.696 ...h=\textwidth]{SupervisorMeetings/All.pdf}
-                                                   [35 <./SupervisorMeetings/Al
-l.pdf>] <SupervisorMeetings/All.pdf, id=764, page=5, 597.51233pt x 845.0471pt>
-File: SupervisorMeetings/All.pdf Graphic file (type pdf)
-
-<use SupervisorMeetings/All.pdf, page 5>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page5 used on input line 6
-96.
-(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
-File: SupervisorMeetings/All.pdf Graphic file (type pdf)
-
-<use SupervisorMeetings/All.pdf, page 5>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page5 used on input line 6
-96.
-(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
-File: SupervisorMeetings/All.pdf Graphic file (type pdf)
-
-<use SupervisorMeetings/All.pdf, page 4>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page4 used on input line 6
-96.
-(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.696 ...h=\textwidth]{SupervisorMeetings/All.pdf}
-                                                   [36 <./SupervisorMeetings/Al
-l.pdf>] <SupervisorMeetings/All.pdf, id=772, page=6, 597.51233pt x 845.0471pt>
-File: SupervisorMeetings/All.pdf Graphic file (type pdf)
-
-<use SupervisorMeetings/All.pdf, page 6>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page6 used on input line 6
-96.
-(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
-File: SupervisorMeetings/All.pdf Graphic file (type pdf)
-
-<use SupervisorMeetings/All.pdf, page 6>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page6 used on input line 6
-96.
-(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
-File: SupervisorMeetings/All.pdf Graphic file (type pdf)
-
-<use SupervisorMeetings/All.pdf, page 5>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page5 used on input line 6
-96.
-(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.696 ...h=\textwidth]{SupervisorMeetings/All.pdf}
-                                                   [37 <./SupervisorMeetings/Al
-l.pdf>] <SupervisorMeetings/All.pdf, id=776, page=7, 597.51233pt x 845.0471pt>
-File: SupervisorMeetings/All.pdf Graphic file (type pdf)
-
-<use SupervisorMeetings/All.pdf, page 7>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page7 used on input line 6
-96.
-(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
-File: SupervisorMeetings/All.pdf Graphic file (type pdf)
-
-<use SupervisorMeetings/All.pdf, page 7>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page7 used on input line 6
-96.
-(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
-File: SupervisorMeetings/All.pdf Graphic file (type pdf)
-
-<use SupervisorMeetings/All.pdf, page 6>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page6 used on input line 6
-96.
-(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.696 ...h=\textwidth]{SupervisorMeetings/All.pdf}
+l.830 ...h=\textwidth]{SupervisorMeetings/All.pdf}
                                                    [38 <./SupervisorMeetings/Al
-l.pdf>] <SupervisorMeetings/All.pdf, id=780, page=8, 597.51233pt x 845.0471pt>
+l.pdf>] <SupervisorMeetings/All.pdf, id=831, page=3, 597.51233pt x 845.0471pt>
 File: SupervisorMeetings/All.pdf Graphic file (type pdf)
 
-<use SupervisorMeetings/All.pdf, page 8>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page8 used on input line 6
-96.
+<use SupervisorMeetings/All.pdf, page 3>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page3 used on input line 8
+30.
 (pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
 File: SupervisorMeetings/All.pdf Graphic file (type pdf)
 
-<use SupervisorMeetings/All.pdf, page 8>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page8 used on input line 6
-96.
+<use SupervisorMeetings/All.pdf, page 3>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page3 used on input line 8
+30.
 (pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
 File: SupervisorMeetings/All.pdf Graphic file (type pdf)
 
-<use SupervisorMeetings/All.pdf, page 7>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page7 used on input line 6
-96.
+<use SupervisorMeetings/All.pdf, page 2>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page2 used on input line 8
+30.
 (pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.696 ...h=\textwidth]{SupervisorMeetings/All.pdf}
+l.830 ...h=\textwidth]{SupervisorMeetings/All.pdf}
                                                    [39 <./SupervisorMeetings/Al
+l.pdf>] <SupervisorMeetings/All.pdf, id=835, page=4, 597.51233pt x 845.0471pt>
+File: SupervisorMeetings/All.pdf Graphic file (type pdf)
+
+<use SupervisorMeetings/All.pdf, page 4>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page4 used on input line 8
+30.
+(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
+File: SupervisorMeetings/All.pdf Graphic file (type pdf)
+
+<use SupervisorMeetings/All.pdf, page 4>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page4 used on input line 8
+30.
+(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
+File: SupervisorMeetings/All.pdf Graphic file (type pdf)
+
+<use SupervisorMeetings/All.pdf, page 3>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page3 used on input line 8
+30.
+(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.830 ...h=\textwidth]{SupervisorMeetings/All.pdf}
+                                                   [40 <./SupervisorMeetings/Al
+l.pdf>] <SupervisorMeetings/All.pdf, id=840, page=5, 597.51233pt x 845.0471pt>
+File: SupervisorMeetings/All.pdf Graphic file (type pdf)
+
+<use SupervisorMeetings/All.pdf, page 5>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page5 used on input line 8
+30.
+(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
+File: SupervisorMeetings/All.pdf Graphic file (type pdf)
+
+<use SupervisorMeetings/All.pdf, page 5>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page5 used on input line 8
+30.
+(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
+File: SupervisorMeetings/All.pdf Graphic file (type pdf)
+
+<use SupervisorMeetings/All.pdf, page 4>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page4 used on input line 8
+30.
+(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.830 ...h=\textwidth]{SupervisorMeetings/All.pdf}
+                                                   [41 <./SupervisorMeetings/Al
+l.pdf>] <SupervisorMeetings/All.pdf, id=848, page=6, 597.51233pt x 845.0471pt>
+File: SupervisorMeetings/All.pdf Graphic file (type pdf)
+
+<use SupervisorMeetings/All.pdf, page 6>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page6 used on input line 8
+30.
+(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
+File: SupervisorMeetings/All.pdf Graphic file (type pdf)
+
+<use SupervisorMeetings/All.pdf, page 6>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page6 used on input line 8
+30.
+(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
+File: SupervisorMeetings/All.pdf Graphic file (type pdf)
+
+<use SupervisorMeetings/All.pdf, page 5>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page5 used on input line 8
+30.
+(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.830 ...h=\textwidth]{SupervisorMeetings/All.pdf}
+                                                   [42 <./SupervisorMeetings/Al
+l.pdf>] <SupervisorMeetings/All.pdf, id=852, page=7, 597.51233pt x 845.0471pt>
+File: SupervisorMeetings/All.pdf Graphic file (type pdf)
+
+<use SupervisorMeetings/All.pdf, page 7>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page7 used on input line 8
+30.
+(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
+File: SupervisorMeetings/All.pdf Graphic file (type pdf)
+
+<use SupervisorMeetings/All.pdf, page 7>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page7 used on input line 8
+30.
+(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
+File: SupervisorMeetings/All.pdf Graphic file (type pdf)
+
+<use SupervisorMeetings/All.pdf, page 6>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page6 used on input line 8
+30.
+(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.830 ...h=\textwidth]{SupervisorMeetings/All.pdf}
+                                                   [43 <./SupervisorMeetings/Al
+l.pdf>] <SupervisorMeetings/All.pdf, id=856, page=8, 597.51233pt x 845.0471pt>
+File: SupervisorMeetings/All.pdf Graphic file (type pdf)
+
+<use SupervisorMeetings/All.pdf, page 8>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page8 used on input line 8
+30.
+(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
+File: SupervisorMeetings/All.pdf Graphic file (type pdf)
+
+<use SupervisorMeetings/All.pdf, page 8>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page8 used on input line 8
+30.
+(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
+File: SupervisorMeetings/All.pdf Graphic file (type pdf)
+
+<use SupervisorMeetings/All.pdf, page 7>
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page7 used on input line 8
+30.
+(pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.830 ...h=\textwidth]{SupervisorMeetings/All.pdf}
+                                                   [44 <./SupervisorMeetings/Al
 l.pdf>]
 File: SupervisorMeetings/All.pdf Graphic file (type pdf)
  <use SupervisorMeetings/All.pdf, page 8>
-Package pdftex.def Info: SupervisorMeetings/All.pdf, page8 used on input line 6
-96.
+Package pdftex.def Info: SupervisorMeetings/All.pdf, page8 used on input line 8
+30.
 (pdftex.def)             Requested size: 915.42172pt x 1294.65862pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.696 ...h=\textwidth]{SupervisorMeetings/All.pdf}
-                                                   [40 <./SupervisorMeetings/Al
+l.830 ...h=\textwidth]{SupervisorMeetings/All.pdf}
+                                                   [45 <./SupervisorMeetings/Al
 l.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 703.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 837.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.703 \end{document}
-                     [41]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 703.
+l.837 \end{document}
+                     [46]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 837.
  (./Dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 703.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 703.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 837.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 837.
 Package rerunfilecheck Info: File `Dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: DEFB5108DF1667E55BE46D0BAE80B7EA;3458.
+(rerunfilecheck)             Checksum: 46921F22D3AC564E951C92C0735CDEBA;3752.
  ) 
 Here is how much of TeX's memory you used:
- 10100 strings out of 493089
- 151266 string characters out of 6134842
- 262801 words of memory out of 5000000
- 13277 multiletter control sequences out of 15000+600000
+ 10858 strings out of 493089
+ 162233 string characters out of 6134842
+ 278173 words of memory out of 5000000
+ 14006 multiletter control sequences out of 15000+600000
  10844 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,18n,75p,836b,643s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1411,15 +1528,16 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
 usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Dissertation.pdf (50 pages, 2505523 bytes).
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Dissertation.pdf (55 pages, 2745995 bytes).
 PDF statistics:
- 857 PDF objects out of 1000 (max. 8388607)
- 740 compressed objects within 8 object streams
- 136 named destinations out of 1000 (max. 500000)
- 526 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 941 PDF objects out of 1000 (max. 8388607)
+ 811 compressed objects within 9 object streams
+ 153 named destinations out of 1000 (max. 500000)
+ 578 words of extra memory for PDF output out of 10000 (max. 10000000)
 

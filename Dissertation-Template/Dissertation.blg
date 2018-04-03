@@ -27,7 +27,7 @@ Warning--empty year in 23
 Warning--empty year in 21
 You've used 30 entries,
             2773 wiz_defined-function locations,
-            729 strings with 10220 characters,
+            729 strings with 10208 characters,
 and the built_in function-call counts, 13054 in all, are:
 = -- 1027
 > -- 1013

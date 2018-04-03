@@ -40,6 +40,8 @@
 \usepackage{gensymb}
 \usepackage[round]{natbib}
 
+\usepackage{tabu}
+
 %header and footer settings
 \pagestyle{fancyplain}
 \fancyhf{}
@@ -88,6 +90,17 @@
 % fill the abstract in here
 $\\ \clubsuit \\\\ \diamondsuit \\\\ \heartsuit \\\\ \spadesuit$
 
+Original NEAT publication:\\
+http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf\\\\
+
+Couldn't find the tutorial but I stuck it on my website:\\
+http://x4iiiis.com/honours/NEATDOC.pdf
+
+Actually it's in the download here, as a .ps 
+http://nn.cs.utexas.edu/soft-view.php?SoftID=4
+
+
+
 \end{abstract}
 \pagebreak
 
@@ -120,9 +133,14 @@ $\\ \clubsuit \\\\ \diamondsuit \\\\ \heartsuit \\\\ \spadesuit$
 \section*{Acknowledgements}
 %The Games Development course has been journey of personal development in addition to gaining a higher education by obtaining and improving skills. It has been the proverbial roller-coaster ride with several highs, lows, moments of complete disorientation, and a feeling of wishing you could do it all over again. The last four years have gone by in the blink of an eye, but have provided experiences and created friendships that will remain far beyond graduation.\\
 
-I would like to thank my friends and family for ensuring that I remained positive and motivated along the way, and for their participation in the testing phases. All of the support, assistance and feedback has been invaluable to both myself and the project as a whole. \\
 
-I am also hugely appreciative of my project supervisor, Dr Simon Powers. Simon has provided me with excellent support and guidance throughout the process and for that I am extremely grateful.
+%I would like to thank my friends and family for ensuring that I remained positive and motivated along the way, and for their participation in the testing phases. All of the support, assistance and feedback has been invaluable to both myself and the project as a whole. \\
+
+%I am also hugely appreciative of my project supervisor, Dr Simon Powers. Simon has provided me with excellent support and guidance throughout the process and for that I am extremely grateful.
+
+I would like to thank Calum and Steven for abstaining from Fortnite duties on the night of 24/03/18 as not having my squaddies meant actually fixing this fucking thing.
+
+Also, cheers to my supervisor, I suppose. 
 
 \newpage
 \setcounter{page}{1}
@@ -158,11 +176,9 @@ C++ (11)
 NEAT
 SMFL\\\\
 
-Sixteen years prior to this project, researchers(?) at The University of Texas at Austin published a paper in which they detailed the development of their innovative neural network evolution library\citep{NEAT} entitled, \enquote{NeuroEvolution of Augmenting Topologies,} or \enquote{NEAT} in abbreviated form. The library has been converted to several programming languages over the years; However this project will stick with the original C++ version. 
+Sixteen years prior to this project, researchers(?) at The University of Texas at Austin published a paper in which they detailed the development of their innovative neural network evolution library\citep{NEAT} entitled, \enquote{NeuroEvolution of Augmenting Topologies,} or \enquote{NEAT} in abbreviated form. The library has been converted to several programming languages over the years; However this project will stick with the original C++ version. The NEAT library will be discussed in depth in the Methodology section of this dissertation.\\
 
-The NEAT library will be discussed in depth in the Methodology section of this dissertation.
-
-This project will be built in C++, and will need to be compiled to a minimum of C++11 standard due to the use of shared pointers.
+This project will be built in C++, and will need to be compiled to a minimum of C++11 standard due to the use of shared pointers.\\
 
 Visual aspects of the project will be developed with SFML imported.\\
 
@@ -545,7 +561,43 @@ As Switch is largely down to luck like most (if not all) card games, there is ne
 \subsection{Language and Libraries}
 The programming language used to build this project is C++. It is used in collaboration with the NeuroEvolution of Augmenting Topologies (NEAT) library. 
 
+\^ Following a tutorial that I can't seem to find the download link to the .ps file but I've uploaded the converted pdf to my website\\
+
+
+
+The graphical aspect was developed using an import of the Simple and Fast Multimedia Library (SFML), with playing card textures courtesy of Kenney Vleugels, found here:\\ https://opengameart.org/content/boardgame-pack
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{SFML.png}
+	\caption{Game UI}
+\end{figure}
+
+
+\subsection{Design}
+Design patterns / class diagrams and such for my code
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{ClassDiagram.jpg}
+	\caption{Game Class Diagram}
+\end{figure}
+
+Figure 12 helps to visualise the code structure behind the game, showing the five classes and their member functions. 
+
+The Game Manager singleton class is central, with its deck of cards object class on the right. For the sake space and readability, 105 card and texture objects have been omitted from the image. The specifics of what a card object is made up of can be seen on the far right.
+
+Looking back on the other side of our singleton, we see the ranking system and a look at the components of a player object. \\
+
+I can't help but feel that these should have relationship lines, but I couldn't figure out how to add them. D: \\
+
+
+As seen in the diagram, the game management class is the hub that interacts with everything throughout each match. It is an integral part of the game operation, and needed to be accessible by most of the classes. This meant that circular dependency issues were going to arise, and so the need for a singleton class was established. 
+
+With all necessary classes being able to access the same instance of the game manager class whenever it was necessary made things a whole lot easier than trying to find a way around circular dependency problems. 
 \subsection{Neural Network}
+Could've started from scratch rather than use NEAT, but used it for reasons X Y Z
+
+NEAT has special crossover operations cause taking half of a NN and sticking to another one probably won't perform well 
 
 \subsection{Evolutionary Algorithm}
 
@@ -554,13 +606,90 @@ The programming language used to build this project is C++. It is used in collab
 
 \newpage
 \section{Results}
-A compilation of results from all of the test phases.\\
+%Hardcoded stuff\\\\
+When the underlying game foundation had been built, it only allowed for human vs human interaction. This meant testing was not only very click-intensive, but also extremely time consuming. As a result, some automatic playability was implemented to allow for speedy, hands-free testing. The automatic players were given hard-coded strategies for playing the game, aptly named, 'Aggressive,' 'Unaggressive,' and 'Random.' 
+
+The aggressive player will check their hand for cards that will inflict the most damage to their opponents, before just selecting the first legal card in the hand if none are available. Unaggressive does the opposite. It actively avoids playing twos, eights and black queens unless no other playable cards are contained in their hand. Random players will just shuffle their hand before choosing a playable card.\\
+
+Once the game had been thoroughly tested and all bugs eradicated, work on the final player type was to ready to be begin. Of course, the 'Neural' player was going to be playing against the hard-coded play-styles, as well as potentially facing humans in future. For this reason, a baseline of hard-coded performances was measured. The strategies were tested against one another in a one on one format, before a free for all between the three.\\
+
+Below are a series of tables depicting the results of this testing.\\
+
+\begin{table}[h!]
+	\begin{tabu} to \textwidth { | X[c] | X[c] | X[c] | }
+		\hline
+		Games Played & Aggressive Wins & Unaggressive Wins \\
+		\hline
+		1000  & 552	& 448 \\
+		\hline
+	\end{tabu}
+\caption{Hard-coded Results | Aggressive vs Unaggressive}
+\label{table:1}
+\end{table}
+
+\begin{table}[h!]
+	\begin{tabu} to \textwidth { | X[c] | X[c] | X[c] | }
+		\hline
+		Games Played & Aggressive Wins & Random Wins \\
+		\hline
+		1000  & 501 & 499 \\
+		\hline
+	\end{tabu}
+\caption{Hard-coded Results | Aggressive vs Random}
+\label{table:2}
+\end{table}
+
+\begin{table}[h!]
+	\begin{tabu} to \textwidth { | X[c] | X[c] | X[c] | }
+		\hline
+		Games Played & Random Wins & Unaggressive Wins \\
+		\hline
+		1000  & 539 & 461 \\
+		\hline
+	\end{tabu}
+\caption{Hard-coded Results | Random vs Unaggressive}
+\label{table:3}
+\end{table}
+
+As expected, the more attacking player had the most success. However, I was taken aback to discover it only won 55.2\% of 1000 games against the unaggressive player affectionately known as 'Passive Pete.' This was less surprising, though, than the difference between 'Angry Adalia' and 'Random Rachel!' I had predicted a landslide victory for aggressive, but had the random strategy won just a single game more, it would've been a tie over 1000 iterations. I think these results in particular are testament to the unpredictability of Switch. 
+
+The remaining battle was between Random Rachel and Passive Pete. There is not a lot to be said about this. An unaggressive approach to the game is effectively allowing the opposition to play without being severely punished, and deserves to yield poor results. Similarly, the random approach is totally unpredictable, and so this contest could probably go either way if repeatedly tested.\\
+
+Finally, the ultimate showdown; Aggressive vs Unaggressive vs Random. 
+
+\begin{table}[h!]
+	\begin{tabu} to \textwidth { | X[c] | X[c] | X[c] | X[c] |}
+		\hline
+		Games Played & Aggressive Wins & Unaggressive Wins & Random Wins\\
+		\hline
+		1000  & 346	& 314 & 340 \\
+		\hline
+	\end{tabu}
+	\caption{Hardcoded Results | Aggressive vs Unaggressive vs Random}
+	\label{table:4}
+\end{table}
+
+As the results show, the aggressive play-style is the most successful. However, the margin of victory was somewhat surprising.\\
+
 \subsection{Agent vs Hard-coded Strategy}
+-Population of 20-50 initially - could be something we grow experimentally
+
+-100-150 generations
+
+-30 replicates of these generations 
+
+\subsubsection{Neural vs Unaggressive}
 .
+\subsubsection{Neural vs Random}
+.
+\subsubsection{Neural vs Aggressive}
+.
+
 \subsection{Agent vs Human(s)}
-.
+[Future work] move to evaluation 
+
 \subsection{Agent vs Agent}
-.
+[Potential future work]
 
 \newpage
 \section{Critical Evaluation}
@@ -581,20 +710,25 @@ A compilation of results from all of the test phases.\\
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = \textwidth]{Gantt2.png}
-	\caption{Updated Project Timeline Gantt Chart}
+	\caption{Updated Gantt Chart - New Year}
 \end{figure}
 
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width = \textwidth]{Gantt3.png}
-%	\caption{Updated Project Timeline Gantt Chart}
-%\end{figure}
+The research phase of the project ran a little over the initial prediction, but as it ran concurrently with game development, I was able to recover without any early knock-on effects. The foundation of my card game had always been targeted for completion by Christmas - and the final bug was crushed in the small hours of the morning on boxing day. 
 
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width = \textwidth]{Gantt4.png}
-%	\caption{Updated Project Timeline Gantt Chart}
-%\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{Gantt3.png}
+	\caption{Post-AI Project Gantt Chart}
+\end{figure}
+
+AI implementation took far longer than anticipated, and so the final two stages had to be re-evaluated for the final stretch. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{Gantt4.png}
+	\caption{Complete Project Gantt Chart}
+\end{figure}
+
 
 
 \newpage
