@@ -35,23 +35,24 @@
 \BOOKMARK [1][-]{section.4}{Methodology}{}% 35
 \BOOKMARK [2][-]{subsection.4.1}{Language and Libraries}{section.4}% 36
 \BOOKMARK [2][-]{subsection.4.2}{Design}{section.4}% 37
-\BOOKMARK [2][-]{subsection.4.3}{Neural Network}{section.4}% 38
-\BOOKMARK [2][-]{subsection.4.4}{Evolutionary Algorithm}{section.4}% 39
-\BOOKMARK [2][-]{subsection.4.5}{Fitness Evaluation}{section.4}% 40
-\BOOKMARK [1][-]{section.5}{Results}{}% 41
-\BOOKMARK [2][-]{subsection.5.1}{Agent vs Hard-coded Strategy}{section.5}% 42
-\BOOKMARK [3][-]{subsubsection.5.1.1}{Neural vs Unaggressive}{subsection.5.1}% 43
-\BOOKMARK [3][-]{subsubsection.5.1.2}{Neural vs Random}{subsection.5.1}% 44
-\BOOKMARK [3][-]{subsubsection.5.1.3}{Neural vs Aggressive}{subsection.5.1}% 45
-\BOOKMARK [2][-]{subsection.5.2}{Agent vs Human\(s\)}{section.5}% 46
-\BOOKMARK [2][-]{subsection.5.3}{Agent vs Agent}{section.5}% 47
-\BOOKMARK [1][-]{section.6}{Critical Evaluation}{}% 48
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 49
-\BOOKMARK [1][-]{section*.28}{Appendices}{}% 50
-\BOOKMARK [1][-]{Appendix.a.A}{Project Overview}{}% 51
-\BOOKMARK [1][-]{Appendix.a.B}{Second Formal Review Output}{}% 52
-\BOOKMARK [1][-]{Appendix.a.C}{Diary Sheets}{}% 53
-\BOOKMARK [1][-]{Appendix.a.D}{Timeline Gantt Charts}{}% 54
-\BOOKMARK [1][-]{Appendix.a.E}{My Website}{}% 55
-\BOOKMARK [1][-]{Appendix.a.F}{Textures}{}% 56
-\BOOKMARK [1][-]{Appendix.a.G}{Appendix 7 and following}{}% 57
+\BOOKMARK [2][-]{subsection.4.3}{Game}{section.4}% 38
+\BOOKMARK [2][-]{subsection.4.4}{Neural Network}{section.4}% 39
+\BOOKMARK [2][-]{subsection.4.5}{Evolutionary Algorithm}{section.4}% 40
+\BOOKMARK [2][-]{subsection.4.6}{Fitness Evaluation}{section.4}% 41
+\BOOKMARK [1][-]{section.5}{Results}{}% 42
+\BOOKMARK [2][-]{subsection.5.1}{Agent vs Hard-coded Strategy}{section.5}% 43
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Neural vs Unaggressive}{subsection.5.1}% 44
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Neural vs Random}{subsection.5.1}% 45
+\BOOKMARK [3][-]{subsubsection.5.1.3}{Neural vs Aggressive}{subsection.5.1}% 46
+\BOOKMARK [2][-]{subsection.5.2}{Agent vs Human\(s\)}{section.5}% 47
+\BOOKMARK [2][-]{subsection.5.3}{Agent vs Agent}{section.5}% 48
+\BOOKMARK [1][-]{section.6}{Critical Evaluation}{}% 49
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 50
+\BOOKMARK [1][-]{section*.28}{Appendices}{}% 51
+\BOOKMARK [1][-]{Appendix.a.A}{Project Overview}{}% 52
+\BOOKMARK [1][-]{Appendix.a.B}{Second Formal Review Output}{}% 53
+\BOOKMARK [1][-]{Appendix.a.C}{Diary Sheets}{}% 54
+\BOOKMARK [1][-]{Appendix.a.D}{Timeline Gantt Charts}{}% 55
+\BOOKMARK [1][-]{Appendix.a.E}{My Website}{}% 56
+\BOOKMARK [1][-]{Appendix.a.F}{Textures}{}% 57
+\BOOKMARK [1][-]{Appendix.a.G}{Appendix 7 and following}{}% 58

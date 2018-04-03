@@ -35,18 +35,19 @@
 \contentsline {section}{\numberline {4}Methodology}{20}{section.4}
 \contentsline {subsection}{\numberline {4.1}Language and Libraries}{20}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Design}{21}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Neural Network}{22}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Evolutionary Algorithm}{22}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Fitness Evaluation}{22}{subsection.4.5}
-\contentsline {section}{\numberline {5}Results}{23}{section.5}
-\contentsline {subsection}{\numberline {5.1}Agent vs Hard-coded Strategy}{24}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Neural vs Unaggressive}{24}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Neural vs Random}{24}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Neural vs Aggressive}{24}{subsubsection.5.1.3}
-\contentsline {subsection}{\numberline {5.2}Agent vs Human(s)}{24}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Agent vs Agent}{25}{subsection.5.3}
-\contentsline {section}{\numberline {6}Critical Evaluation}{26}{section.6}
-\contentsline {section}{\numberline {7}Conclusion}{28}{section.7}
+\contentsline {subsection}{\numberline {4.3}Game}{22}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Neural Network}{22}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Evolutionary Algorithm}{23}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Fitness Evaluation}{23}{subsection.4.6}
+\contentsline {section}{\numberline {5}Results}{24}{section.5}
+\contentsline {subsection}{\numberline {5.1}Agent vs Hard-coded Strategy}{25}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Neural vs Unaggressive}{25}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Neural vs Random}{25}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Neural vs Aggressive}{25}{subsubsection.5.1.3}
+\contentsline {subsection}{\numberline {5.2}Agent vs Human(s)}{25}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Agent vs Agent}{26}{subsection.5.3}
+\contentsline {section}{\numberline {6}Critical Evaluation}{27}{section.6}
+\contentsline {section}{\numberline {7}Conclusion}{29}{section.7}
 \contentsline {section}{Appendices}{}{section*.28}
 \contentsline {section}{\numberline {A}Project Overview}{}{Appendix.a.A}
 \contentsline {section}{\numberline {B}Second Formal Review Output}{}{Appendix.a.B}

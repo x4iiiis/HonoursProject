@@ -597,10 +597,25 @@ I can't help but feel that these should have relationship lines, but I couldn't 
 As seen in the diagram, the game management class is the hub that interacts with everything throughout each match. It is an integral part of the game operation, and needed to be accessible by most of the classes. This meant that circular dependency issues were going to arise, and so the need for a singleton class was established. 
 
 With all necessary classes being able to access the same instance of the game manager class whenever it was necessary made things a whole lot easier than trying to find a way around circular dependency problems. 
+
+\subsection{Game}
+The game loops until all but one player has successfully emptied their hand. 
+
+
 \subsection{Neural Network}
 Could've started from scratch rather than use NEAT, but used it for reasons X Y Z
 
-NEAT has special crossover operations cause taking half of a NN and sticking to another one probably won't perform well 
+NEAT has special crossover operations cause taking half of a NN and sticking to another one probably won't perform well \\
+
+
+Pick up whatever you said about the game looping in the last subsection and carry on to talk about resetting the network nodes.\\
+
+In early stages of development, it was thought that there would be a long period where the network would have to learn how to play the game. With this, it was suspected that a means to recognise and punish illegal move attempts. However, an alternative was implemented. Each time the game loops back around to the Neural player's turn, the entire first layer of input nodes is reset to -10, before then stepping through their hand one card at a time, calling a method in the game manager class to determine whether or not the current card is playable against the most recently played card. Assigning a value of 1 to the corresponding node for cards that receive a positive response from the legality-checking function in this manner then allows the network to choose from the set of cards it is allowed to play.
+
+The network then runs through all of the output nodes, seeking the node with the greatest activation. Once this node has been discovered, a large switch case function is in place to actually make the move for the network, using the card that relates to the most activated output node. 
+
+If unable to play due to having no playable cards available, the Neural player will automatically pick up a card without bothering the network. 
+
 
 \subsection{Evolutionary Algorithm}
 .
@@ -840,17 +855,27 @@ Insert gantt charts here
 
 \newpage
 \section{My Website}
-http://www.x4iiiis.com/honoursproject\\
+\href{http://www.x4iiiis.com/honoursproject}
+{\includegraphics[width=\textwidth]{Website.jpg}}
 
-probably a screenshot - perhaps of the video at the bottom 
+\begin{center}
+	{\href{http://www.x4iiiis.com/honoursproject}{www.x4iiiis.com/honoursproject}}
+\end{center}
+
 
 \newpage
 \section{Textures}
-\includegraphics[width = \textwidth]{Kenney.jpg}
+\href{https://opengameart.org/content/boardgame-pack}
+{\includegraphics[width=\textwidth]{Kenney.jpg}}
 
-Insert image of the board pack and a link to Kenny Vleugels' boardgame texture pack here\\
+\begin{center}
+	{\href{https://opengameart.org/content/boardgame-pack}{www.opengameart.org/content/boardgame-pack}}
+\end{center}
 
-https://opengameart.org/content/boardgame-pack
+
+Playing card textures used in NeuroSwitch were courtesy of Kenney Vleugels, coming as part of his boardgame texture pack.\\
+
+
 
 \newpage
 \section{Appendix 7 and following}
