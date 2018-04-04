@@ -599,7 +599,13 @@ As seen in the diagram, the game management class is the hub that interacts with
 With all necessary classes being able to access the same instance of the game manager class whenever it was necessary made things a whole lot easier than trying to find a way around circular dependency problems. 
 
 \subsection{Game}
-The game loops until all but one player has successfully emptied their hand. 
+The game loops until all but one player has successfully emptied their hand. \\
+
+Also talk about how when running multiple games the random generator is pseudo-random\\
+
+An issue that arose when the game was hooked up to the NEAT library was that the random function used to shuffle the cards before dealing is not does not produce authentic random results. The generator is seeded by the current time at which it is called, down to the present second. When the graphical aspect of the game was removed, the need for a pause between each play to allow the user to see what happened went with it, and what remained was a very fast, console-based application. So fast, in fact, several tens of games can be completed in a single second. This presents a problem as the pseudo-random dealing of cards is seeded to a single second. Thus, any games sharing a second of time when cards are dealt consequentially result in the players receiving exactly the same first hand, and the same first card to play on top of. It is highly probable that these games should result in the same outcome. 
+
+This can easily be overcome by allowing the process to pause for a second after each game, but this drastically increases the time taken to obtain results from larger populations and multiple generations. 
 
 
 \subsection{Neural Network}
