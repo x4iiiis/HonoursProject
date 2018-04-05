@@ -182,6 +182,8 @@ This project will be built in C++, and will need to be compiled to a minimum of 
 
 Visual aspects of the project will be developed with SFML imported.\\
 
+Documentation/tutorial file in Appendix G.\\
+
 \subsection{1.6 - Chapter Outlines / Structure of Dissertation}
 Chapter outlines / structure of dissertation
 Chapter 1 contains intro
@@ -561,7 +563,7 @@ The entire project source code can be found on \href{http://www.github.com/x4iii
 \subsection{Language and Libraries}
 The programming language used to build this project is C++. It is used in collaboration with the NeuroEvolution of Augmenting Topologies (NEAT) library. 
 
-\^ Following a tutorial that I can't seem to find the download link to the .ps file but I've uploaded the converted pdf to my website\\
+When working with NEAT, I was reading documentation including a tutorial on how to write new experiments. This file can be found as part of a download link as a PostScript (.ps) file. This, along with an alternative to view only this file as a Portable Document Format (.pdf) file, can be seen in Appendix G.\\
 
 
 Somethings about an object oriented programming and the fact that it's modern C++ (C++11) to facilitate the use of shared pointers. \\
@@ -609,6 +611,12 @@ This can easily be overcome by allowing the process to pause for a second after 
 
 
 \subsection{Neural Network}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth/2]{neFile.png}
+	\caption{NeuroSwitch.ne}
+\end{figure}
+
 Could've started from scratch rather than use NEAT, but used it for reasons X Y Z
 
 NEAT has special crossover operations cause taking half of a NN and sticking to another one probably won't perform well \\
@@ -724,72 +732,74 @@ test:
 		\hline
 		Generation & Population Size & Average Wins & Average Losses \\
 		\hline
-		1  & 50	& 314 & 340 \\
+		1  & 50	&  &  \\
 		\hline
-		5  & 50	& 314 & 340 \\
+		5  & 50	& & \\
 		\hline
-		10  & 50	& 314 & 340 \\
+		10  & 50	& &  \\
 		\hline
-		15 & 50	& 314 & 340 \\
+		15 & 50	& & \\
 		\hline
-		20  & 50	& 314 & 340 \\
+		20  & 50	& & \\
 		\hline
-	    25  & 50	& 314 & 340 \\
+		25  & 50	& & \\
 		\hline
-		30  & 50	& 314 & 340 \\
+		30  & 50	& & \\
 		\hline
-		35  & 50	& 314 & 340 \\
+		35  & 50	& & \\
 		\hline
-		40  & 50	& 314 & 340 \\
+		40  & 50	& & \\
 		\hline
-		45  & 50	& 314 & 340 \\
+		45  & 50	& & \\
 		\hline
-		50  & 50	& 314 & 340 \\
+		50  & 50	& & \\
 		\hline
-		55  & 50	& 314 & 340 \\
+		55  & 50	& & \\
 		\hline
-		60  & 50	& 314 & 340 \\
+		60  & 50	& & \\
 		\hline
-		65  & 50	& 314 & 340 \\
+		65  & 50	& & \\
 		\hline
-		70  & 50	& 314 & 340 \\
+		70  & 50	& & \\
 		\hline
-		75  & 50	& 314 & 340 \\
+		75  & 50	& & \\
 		\hline
-		80  & 50	& 314 & 340 \\
+		80  & 50	& & \\
 		\hline
-		85  & 50	& 314 & 340 \\
+		85  & 50	& & \\
 		\hline
-		90  & 50	& 314 & 340 \\
+		90  & 50	& & \\
 		\hline
-		95  & 50	& 314 & 340 \\
+		95  & 50	& & \\
 		\hline
-		100  & 50	& 314 & 340 \\
+		100  & 50	& & \\
 		\hline
-		105  & 50	& 314 & 340 \\
+		105  & 50	& & \\
 		\hline
-		110  & 50	& 314 & 340 \\
+		110  & 50	& & \\
 		\hline
-		115  & 50	& 314 & 340 \\
+		115  & 50	& & \\
 		\hline
-		120  & 50	& 314 & 340 \\
+		120  & 50	& & \\
 		\hline
-		125  & 50	& 314 & 340 \\
+		125  & 50	& & \\
 		\hline
-		130  & 50	& 314 & 340 \\
+		130  & 50	& & \\
 		\hline
-		135  & 50	& 314 & 340 \\
+		135  & 50	& & \\
 		\hline
-		140  & 50	& 314 & 340 \\
+		140  & 50	& & \\
 		\hline
-		145  & 50	& 314 & 340 \\
+		145  & 50	& & \\
 		\hline
-		150  & 50	& 314 & 340 \\
+		150  & 50	& & \\
 		\hline
 	\end{tabu}
 	\caption{Average Results | Neural vs Unaggressive}
 	\label{table:5}
 \end{table}
+
+GRAPH THESE AS PERCENTAGES
 
 \subsubsection{Neural vs Random}
 .
@@ -800,72 +810,74 @@ test:
 		\hline
 		Generation & Population Size & Average Wins & Average Losses \\
 		\hline
-		1  & 50	& 314 & 340 \\
+		1  & 50	&  &  \\
 		\hline
-		5  & 50	& 314 & 340 \\
+		5  & 50	& & \\
 		\hline
-		10  & 50	& 314 & 340 \\
+		10  & 50	& &  \\
 		\hline
-		15 & 50	& 314 & 340 \\
+		15 & 50	& & \\
 		\hline
-		20  & 50	& 314 & 340 \\
+		20  & 50	& & \\
 		\hline
-		25  & 50	& 314 & 340 \\
+		25  & 50	& & \\
 		\hline
-		30  & 50	& 314 & 340 \\
+		30  & 50	& & \\
 		\hline
-		35  & 50	& 314 & 340 \\
+		35  & 50	& & \\
 		\hline
-		40  & 50	& 314 & 340 \\
+		40  & 50	& & \\
 		\hline
-		45  & 50	& 314 & 340 \\
+		45  & 50	& & \\
 		\hline
-		50  & 50	& 314 & 340 \\
+		50  & 50	& & \\
 		\hline
-		55  & 50	& 314 & 340 \\
+		55  & 50	& & \\
 		\hline
-		60  & 50	& 314 & 340 \\
+		60  & 50	& & \\
 		\hline
-		65  & 50	& 314 & 340 \\
+		65  & 50	& & \\
 		\hline
-		70  & 50	& 314 & 340 \\
+		70  & 50	& & \\
 		\hline
-		75  & 50	& 314 & 340 \\
+		75  & 50	& & \\
 		\hline
-		80  & 50	& 314 & 340 \\
+		80  & 50	& & \\
 		\hline
-		85  & 50	& 314 & 340 \\
+		85  & 50	& & \\
 		\hline
-		90  & 50	& 314 & 340 \\
+		90  & 50	& & \\
 		\hline
-		95  & 50	& 314 & 340 \\
+		95  & 50	& & \\
 		\hline
-		100  & 50	& 314 & 340 \\
+		100  & 50	& & \\
 		\hline
-		105  & 50	& 314 & 340 \\
+		105  & 50	& & \\
 		\hline
-		110  & 50	& 314 & 340 \\
+		110  & 50	& & \\
 		\hline
-		115  & 50	& 314 & 340 \\
+		115  & 50	& & \\
 		\hline
-		120  & 50	& 314 & 340 \\
+		120  & 50	& & \\
 		\hline
-		125  & 50	& 314 & 340 \\
+		125  & 50	& & \\
 		\hline
-		130  & 50	& 314 & 340 \\
+		130  & 50	& & \\
 		\hline
-		135  & 50	& 314 & 340 \\
+		135  & 50	& & \\
 		\hline
-		140  & 50	& 314 & 340 \\
+		140  & 50	& & \\
 		\hline
-		145  & 50	& 314 & 340 \\
+		145  & 50	& & \\
 		\hline
-		150  & 50	& 314 & 340 \\
+		150  & 50	& & \\
 		\hline
 	\end{tabu}
 	\caption{Average Results | Neural vs Random}
 	\label{table:6}
 \end{table}
+
+GRAPH THESE AS PERCENTAGES
 
 \subsubsection{Neural vs Aggressive}
 .
@@ -875,73 +887,74 @@ test:
 		\hline
 		Generation & Population Size & Average Wins & Average Losses \\
 		\hline
-		1  & 50	& 314 & 340 \\
+		1  & 50	&  &  \\
 		\hline
-		5  & 50	& 314 & 340 \\
+		5  & 50	& & \\
 		\hline
-		10  & 50	& 314 & 340 \\
+		10  & 50	& &  \\
 		\hline
-		15 & 50	& 314 & 340 \\
+		15 & 50	& & \\
 		\hline
-		20  & 50	& 314 & 340 \\
+		20  & 50	& & \\
 		\hline
-		25  & 50	& 314 & 340 \\
+		25  & 50	& & \\
 		\hline
-		30  & 50	& 314 & 340 \\
+		30  & 50	& & \\
 		\hline
-		35  & 50	& 314 & 340 \\
+		35  & 50	& & \\
 		\hline
-		40  & 50	& 314 & 340 \\
+		40  & 50	& & \\
 		\hline
-		45  & 50	& 314 & 340 \\
+		45  & 50	& & \\
 		\hline
-		50  & 50	& 314 & 340 \\
+		50  & 50	& & \\
 		\hline
-		55  & 50	& 314 & 340 \\
+		55  & 50	& & \\
 		\hline
-		60  & 50	& 314 & 340 \\
+		60  & 50	& & \\
 		\hline
-		65  & 50	& 314 & 340 \\
+		65  & 50	& & \\
 		\hline
-		70  & 50	& 314 & 340 \\
+		70  & 50	& & \\
 		\hline
-		75  & 50	& 314 & 340 \\
+		75  & 50	& & \\
 		\hline
-		80  & 50	& 314 & 340 \\
+		80  & 50	& & \\
 		\hline
-		85  & 50	& 314 & 340 \\
+		85  & 50	& & \\
 		\hline
-		90  & 50	& 314 & 340 \\
+		90  & 50	& & \\
 		\hline
-		95  & 50	& 314 & 340 \\
+		95  & 50	& & \\
 		\hline
-		100  & 50	& 314 & 340 \\
+		100  & 50	& & \\
 		\hline
-		105  & 50	& 314 & 340 \\
+		105  & 50	& & \\
 		\hline
-		110  & 50	& 314 & 340 \\
+		110  & 50	& & \\
 		\hline
-		115  & 50	& 314 & 340 \\
+		115  & 50	& & \\
 		\hline
-		120  & 50	& 314 & 340 \\
+		120  & 50	& & \\
 		\hline
-		125  & 50	& 314 & 340 \\
+		125  & 50	& & \\
 		\hline
-		130  & 50	& 314 & 340 \\
+		130  & 50	& & \\
 		\hline
-		135  & 50	& 314 & 340 \\
+		135  & 50	& & \\
 		\hline
-		140  & 50	& 314 & 340 \\
+		140  & 50	& & \\
 		\hline
-		145  & 50	& 314 & 340 \\
+		145  & 50	& & \\
 		\hline
-		150  & 50	& 314 & 340 \\
+		150  & 50	& & \\
 		\hline
 	\end{tabu}
 	\caption{Average Results | Neural vs Aggressive}
 	\label{table:7}
 \end{table}
 
+GRAPH THESE AS PERCENTAGES
 
 \subsubsection{Free For All }
 Every radge for eezsel
@@ -1130,7 +1143,11 @@ Insert gantt charts here
 
 Playing card textures used in NeuroSwitch were courtesy of Kenney Vleugels, coming as part of his boardgame texture pack.\\
 
+\newpage
+\section{NEAT Documentation/Tutorial}
+Link to original download
 
+Link to pdf on x4iiiis.com
 
 %\newpage
 %\section{Appendix 7 and following}

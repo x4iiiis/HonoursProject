@@ -34,26 +34,27 @@
 \contentsline {subsection}{\numberline {3.5}Summary}{18}{subsection.3.5}
 \contentsline {section}{\numberline {4}Methodology}{20}{section.4}
 \contentsline {subsection}{\numberline {4.1}Language and Libraries}{20}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Design}{21}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Game}{22}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.2}Design}{20}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Game}{21}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Neural Network}{22}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Evolutionary Algorithm}{23}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Fitness Evaluation}{23}{subsection.4.6}
-\contentsline {section}{\numberline {5}Results}{24}{section.5}
-\contentsline {subsection}{\numberline {5.1}Agent vs Hard-coded Strategy}{25}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Neural vs Unaggressive}{26}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Neural vs Random}{27}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Neural vs Aggressive}{28}{subsubsection.5.1.3}
-\contentsline {subsubsection}{\numberline {5.1.4}Free For All }{29}{subsubsection.5.1.4}
-\contentsline {subsection}{\numberline {5.2}Agent vs Human(s)}{30}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Agent vs Agent}{30}{subsection.5.3}
-\contentsline {section}{\numberline {6}Critical Evaluation}{31}{section.6}
-\contentsline {subsection}{\numberline {6.1}Future Work}{33}{subsection.6.1}
-\contentsline {section}{\numberline {7}Conclusion}{34}{section.7}
-\contentsline {section}{Appendices}{}{section*.31}
+\contentsline {subsection}{\numberline {4.5}Evolutionary Algorithm}{24}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Fitness Evaluation}{24}{subsection.4.6}
+\contentsline {section}{\numberline {5}Results}{25}{section.5}
+\contentsline {subsection}{\numberline {5.1}Agent vs Hard-coded Strategy}{26}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Neural vs Unaggressive}{27}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Neural vs Random}{28}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Neural vs Aggressive}{29}{subsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.4}Free For All }{30}{subsubsection.5.1.4}
+\contentsline {subsection}{\numberline {5.2}Agent vs Human(s)}{31}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Agent vs Agent}{31}{subsection.5.3}
+\contentsline {section}{\numberline {6}Critical Evaluation}{32}{section.6}
+\contentsline {subsection}{\numberline {6.1}Future Work}{34}{subsection.6.1}
+\contentsline {section}{\numberline {7}Conclusion}{35}{section.7}
+\contentsline {section}{Appendices}{}{section*.32}
 \contentsline {section}{\numberline {A}Project Overview}{}{Appendix.a.A}
 \contentsline {section}{\numberline {B}Second Formal Review Output}{}{Appendix.a.B}
 \contentsline {section}{\numberline {C}Diary Sheets}{}{Appendix.a.C}
 \contentsline {section}{\numberline {D}Timeline Gantt Charts}{}{Appendix.a.D}
 \contentsline {section}{\numberline {E}My Website}{}{Appendix.a.E}
 \contentsline {section}{\numberline {F}Textures}{}{Appendix.a.F}
+\contentsline {section}{\numberline {G}NEAT Documentation/Tutorial}{}{Appendix.a.G}
