@@ -698,18 +698,262 @@ Finally, the ultimate showdown; Aggressive vs Unaggressive vs Random.
 As the results show, the aggressive play-style is the most successful. However, the margin of victory was somewhat surprising.\\
 
 \subsection{Agent vs Hard-coded Strategy}
--Population of 20-50 initially - could be something we grow experimentally
+The following tables show the average results of each generation performing against the stated hard-coded play-style. Each generation consists of the following:
 
--100-150 generations
+\begin{itemize}
+	\item Population of 50 (before dropoff)
+	\item Dropoff age of 100
+	\item 1 run per member of population
+\end{itemize}
 
--30 replicates of these generations 
+These average results are contrived from 30 replicates of the same tests. \\\\
+
+\begin{small}
+	\textit{Tables show only the averages of every 5th generation to ensure only a single page of space is required. The full dataset is available on my website(Appendix E).}
+\end{small}
+
 
 \subsubsection{Neural vs Unaggressive}
 .
+So I'm thinking save all the replicates of the data but go through all of them generation by generation and average the amount of wins per generation with the replicates. Then have a big table of the average win rate for all of the generations. Doubt you'll fit 150 on a page though so may have to do it per 5 or something.
+
+test:
+\newpage
+\begin{table}[h!]
+	\begin{tabu} to \textwidth { | X[c] | X[c] | X[c] | X[c] |}
+		\hline
+		Generation & Population Size & Average Wins & Average Losses \\
+		\hline
+		1  & 50	& 314 & 340 \\
+		\hline
+		5  & 50	& 314 & 340 \\
+		\hline
+		10  & 50	& 314 & 340 \\
+		\hline
+		15 & 50	& 314 & 340 \\
+		\hline
+		20  & 50	& 314 & 340 \\
+		\hline
+	    25  & 50	& 314 & 340 \\
+		\hline
+		30  & 50	& 314 & 340 \\
+		\hline
+		35  & 50	& 314 & 340 \\
+		\hline
+		40  & 50	& 314 & 340 \\
+		\hline
+		45  & 50	& 314 & 340 \\
+		\hline
+		50  & 50	& 314 & 340 \\
+		\hline
+		55  & 50	& 314 & 340 \\
+		\hline
+		60  & 50	& 314 & 340 \\
+		\hline
+		65  & 50	& 314 & 340 \\
+		\hline
+		70  & 50	& 314 & 340 \\
+		\hline
+		75  & 50	& 314 & 340 \\
+		\hline
+		80  & 50	& 314 & 340 \\
+		\hline
+		85  & 50	& 314 & 340 \\
+		\hline
+		90  & 50	& 314 & 340 \\
+		\hline
+		95  & 50	& 314 & 340 \\
+		\hline
+		100  & 50	& 314 & 340 \\
+		\hline
+		105  & 50	& 314 & 340 \\
+		\hline
+		110  & 50	& 314 & 340 \\
+		\hline
+		115  & 50	& 314 & 340 \\
+		\hline
+		120  & 50	& 314 & 340 \\
+		\hline
+		125  & 50	& 314 & 340 \\
+		\hline
+		130  & 50	& 314 & 340 \\
+		\hline
+		135  & 50	& 314 & 340 \\
+		\hline
+		140  & 50	& 314 & 340 \\
+		\hline
+		145  & 50	& 314 & 340 \\
+		\hline
+		150  & 50	& 314 & 340 \\
+		\hline
+	\end{tabu}
+	\caption{Average Results | Neural vs Unaggressive}
+	\label{table:5}
+\end{table}
+
 \subsubsection{Neural vs Random}
 .
+
+\newpage
+\begin{table}[h!]
+	\begin{tabu} to \textwidth { | X[c] | X[c] | X[c] | X[c] |}
+		\hline
+		Generation & Population Size & Average Wins & Average Losses \\
+		\hline
+		1  & 50	& 314 & 340 \\
+		\hline
+		5  & 50	& 314 & 340 \\
+		\hline
+		10  & 50	& 314 & 340 \\
+		\hline
+		15 & 50	& 314 & 340 \\
+		\hline
+		20  & 50	& 314 & 340 \\
+		\hline
+		25  & 50	& 314 & 340 \\
+		\hline
+		30  & 50	& 314 & 340 \\
+		\hline
+		35  & 50	& 314 & 340 \\
+		\hline
+		40  & 50	& 314 & 340 \\
+		\hline
+		45  & 50	& 314 & 340 \\
+		\hline
+		50  & 50	& 314 & 340 \\
+		\hline
+		55  & 50	& 314 & 340 \\
+		\hline
+		60  & 50	& 314 & 340 \\
+		\hline
+		65  & 50	& 314 & 340 \\
+		\hline
+		70  & 50	& 314 & 340 \\
+		\hline
+		75  & 50	& 314 & 340 \\
+		\hline
+		80  & 50	& 314 & 340 \\
+		\hline
+		85  & 50	& 314 & 340 \\
+		\hline
+		90  & 50	& 314 & 340 \\
+		\hline
+		95  & 50	& 314 & 340 \\
+		\hline
+		100  & 50	& 314 & 340 \\
+		\hline
+		105  & 50	& 314 & 340 \\
+		\hline
+		110  & 50	& 314 & 340 \\
+		\hline
+		115  & 50	& 314 & 340 \\
+		\hline
+		120  & 50	& 314 & 340 \\
+		\hline
+		125  & 50	& 314 & 340 \\
+		\hline
+		130  & 50	& 314 & 340 \\
+		\hline
+		135  & 50	& 314 & 340 \\
+		\hline
+		140  & 50	& 314 & 340 \\
+		\hline
+		145  & 50	& 314 & 340 \\
+		\hline
+		150  & 50	& 314 & 340 \\
+		\hline
+	\end{tabu}
+	\caption{Average Results | Neural vs Random}
+	\label{table:6}
+\end{table}
+
 \subsubsection{Neural vs Aggressive}
 .
+\newpage
+\begin{table}[h!]
+	\begin{tabu} to \textwidth { | X[c] | X[c] | X[c] | X[c] |}
+		\hline
+		Generation & Population Size & Average Wins & Average Losses \\
+		\hline
+		1  & 50	& 314 & 340 \\
+		\hline
+		5  & 50	& 314 & 340 \\
+		\hline
+		10  & 50	& 314 & 340 \\
+		\hline
+		15 & 50	& 314 & 340 \\
+		\hline
+		20  & 50	& 314 & 340 \\
+		\hline
+		25  & 50	& 314 & 340 \\
+		\hline
+		30  & 50	& 314 & 340 \\
+		\hline
+		35  & 50	& 314 & 340 \\
+		\hline
+		40  & 50	& 314 & 340 \\
+		\hline
+		45  & 50	& 314 & 340 \\
+		\hline
+		50  & 50	& 314 & 340 \\
+		\hline
+		55  & 50	& 314 & 340 \\
+		\hline
+		60  & 50	& 314 & 340 \\
+		\hline
+		65  & 50	& 314 & 340 \\
+		\hline
+		70  & 50	& 314 & 340 \\
+		\hline
+		75  & 50	& 314 & 340 \\
+		\hline
+		80  & 50	& 314 & 340 \\
+		\hline
+		85  & 50	& 314 & 340 \\
+		\hline
+		90  & 50	& 314 & 340 \\
+		\hline
+		95  & 50	& 314 & 340 \\
+		\hline
+		100  & 50	& 314 & 340 \\
+		\hline
+		105  & 50	& 314 & 340 \\
+		\hline
+		110  & 50	& 314 & 340 \\
+		\hline
+		115  & 50	& 314 & 340 \\
+		\hline
+		120  & 50	& 314 & 340 \\
+		\hline
+		125  & 50	& 314 & 340 \\
+		\hline
+		130  & 50	& 314 & 340 \\
+		\hline
+		135  & 50	& 314 & 340 \\
+		\hline
+		140  & 50	& 314 & 340 \\
+		\hline
+		145  & 50	& 314 & 340 \\
+		\hline
+		150  & 50	& 314 & 340 \\
+		\hline
+	\end{tabu}
+	\caption{Average Results | Neural vs Aggressive}
+	\label{table:7}
+\end{table}
+
+
+\subsubsection{Free For All }
+Every radge for eezsel
+
+Just do a pretty short, 1 replicate, fatal four way thing
+. . . . . . . 
+
+\begin{small}
+	\begin{center}
+		\textit{All results can be downloaded from my website (Appendix E).}
+	\end{center}
+\end{small}
 
 \subsection{Agent vs Human(s)}
 [Future work] move to evaluation 
@@ -755,7 +999,12 @@ AI implementation took far longer than anticipated, and so the final two stages 
 	\caption{Complete Project Gantt Chart}
 \end{figure}
 
+\subsection{Future Work}
+The code for human vs neural play IS there, but the problems with SFML when switching to the mac removed that playability. Hopefully in future I'll be able to incorporate the mac version of SFML to this project, and allow for human vs AI gameplay. It probably wouldn't take much to fix but the switch had cost me enough time as it was without trying to figure that out too. \\
 
+It would also be cool to implement neural vs neural, but unfortunately we ran out of time for that. Again, I'd imagine it'd be pretty simple. Just create a "Neural2" playstyle for players, and copy and paste the neural rules from Game.h and change Neural to Neural2. Of course, I'd also need to create a second network and pass that in from NEAT to my game. 
+
+Tbh I might try it just to say like I've done this but didn't have time to properly guage results. Maybe I'll just run one massive fuckin test with it and be like bruh take it or leave it  
 
 \newpage
 \section{Conclusion}
@@ -883,9 +1132,9 @@ Playing card textures used in NeuroSwitch were courtesy of Kenney Vleugels, comi
 
 
 
-\newpage
-\section{Appendix 7 and following}
-insert content here and for each of the other appendices, the title may be just on a page by itself, the pages of the appendices are not numbered, unless an included document such as a user manual or design document is itself pager numbered.
+%\newpage
+%\section{Appendix 7 and following}
+%insert content here and for each of the other appendices, the title may be just on a page by itself, the pages of the appendices are not numbered, unless an included document such as a user manual or design document is itself pager numbered.
 
 \end{appendices}
 
