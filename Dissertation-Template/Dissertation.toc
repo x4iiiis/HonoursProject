@@ -2,15 +2,14 @@
 \contentsline {subsection}{\numberline {1.1}1.2 - Aims and Objectives}{1}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}1.3 - Scope}{1}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}1.4 - Constraints}{1}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}1.5 - Sources of Information (\nobreakspace {}/Similar Work)}{1}{subsection.1.4}
-\contentsline {subsection}{\numberline {1.5}1.6 - Chapter Outlines / Structure of Dissertation}{1}{subsection.1.5}
-\contentsline {subsection}{\numberline {1.6}Project Aims and Structure}{2}{subsection.1.6}
-\contentsline {subsection}{\numberline {1.7}Overview Of Project Content and Milestones}{2}{subsection.1.7}
-\contentsline {subsubsection}{\numberline {1.7.1}Research}{2}{subsubsection.1.7.1}
-\contentsline {subsubsection}{\numberline {1.7.2}Game Foundation}{2}{subsubsection.1.7.2}
-\contentsline {subsubsection}{\numberline {1.7.3}Implementation of Artificial Intelligence}{3}{subsubsection.1.7.3}
-\contentsline {subsubsection}{\numberline {1.7.4}Experiments and Testing}{3}{subsubsection.1.7.4}
-\contentsline {subsubsection}{\numberline {1.7.5}Evalution and Conclusion}{3}{subsubsection.1.7.5}
+\contentsline {subsection}{\numberline {1.4}1.5 - Sources of Information}{1}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}1.6 - Dissertation Structure}{2}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}Overview Of Project Content and Milestones}{2}{subsection.1.6}
+\contentsline {subsubsection}{\numberline {1.6.1}Research}{2}{subsubsection.1.6.1}
+\contentsline {subsubsection}{\numberline {1.6.2}Game Foundation}{2}{subsubsection.1.6.2}
+\contentsline {subsubsection}{\numberline {1.6.3}Implementation of Artificial Intelligence}{2}{subsubsection.1.6.3}
+\contentsline {subsubsection}{\numberline {1.6.4}Experiments and Testing}{3}{subsubsection.1.6.4}
+\contentsline {subsubsection}{\numberline {1.6.5}Evalution and Conclusion}{3}{subsubsection.1.6.5}
 \contentsline {section}{\numberline {2}Background}{4}{section.2}
 \contentsline {subsection}{\numberline {2.1}Introduction}{4}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}History of AI in Games}{4}{subsection.2.2}
@@ -32,25 +31,30 @@
 \contentsline {subsection}{\numberline {3.3}Why Evolve Neural Networks?}{17}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Why Co-Evolve Topologies and Weights?}{18}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Summary}{18}{subsection.3.5}
-\contentsline {section}{\numberline {4}Methodology}{20}{section.4}
-\contentsline {subsection}{\numberline {4.1}Language and Libraries}{20}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Design}{20}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Game}{21}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Neural Network}{22}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Evolutionary Algorithm}{24}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Fitness Evaluation}{24}{subsection.4.6}
-\contentsline {section}{\numberline {5}Results}{25}{section.5}
-\contentsline {subsection}{\numberline {5.1}Agent vs Hard-coded Strategy}{26}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Neural vs Unaggressive}{27}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Neural vs Random}{28}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Neural vs Aggressive}{29}{subsubsection.5.1.3}
-\contentsline {subsubsection}{\numberline {5.1.4}Free For All }{30}{subsubsection.5.1.4}
-\contentsline {subsection}{\numberline {5.2}Agent vs Human(s)}{31}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Agent vs Agent}{31}{subsection.5.3}
-\contentsline {section}{\numberline {6}Critical Evaluation}{32}{section.6}
-\contentsline {subsection}{\numberline {6.1}Future Work}{34}{subsection.6.1}
-\contentsline {section}{\numberline {7}Conclusion}{35}{section.7}
-\contentsline {section}{Appendices}{}{section*.32}
+\contentsline {section}{\numberline {4}Rules of Switch}{20}{section.4}
+\contentsline {section}{\numberline {5}Methodology}{21}{section.5}
+\contentsline {subsection}{\numberline {5.1}Language and Libraries}{21}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Design}{22}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Game}{23}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Neural Network}{25}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Evolutionary Algorithm}{27}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Fitness Evaluation}{28}{subsection.5.6}
+\contentsline {section}{\numberline {6}Results}{29}{section.6}
+\contentsline {subsection}{\numberline {6.1}Agent vs Hard-coded Strategy}{30}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Neural vs Unaggressive}{31}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Neural vs Random}{32}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}Neural vs Aggressive}{34}{subsubsection.6.1.3}
+\contentsline {subsection}{\numberline {6.2}Deeper Examination}{35}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Evolution | Mating vs Mutating}{38}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Comparison | Unaggressive}{38}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Comparison | Aggressive}{39}{subsubsection.6.3.2}
+\contentsline {subsection}{\numberline {6.4}External Comparisons}{40}{subsection.6.4}
+\contentsline {section}{\numberline {7}Critical Evaluation}{42}{section.7}
+\contentsline {subsection}{\numberline {7.1}Achievements vs Objectives}{42}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Project Management}{43}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Future Work}{44}{subsection.7.3}
+\contentsline {section}{\numberline {8}Conclusion}{45}{section.8}
+\contentsline {section}{Appendices}{}{section*.41}
 \contentsline {section}{\numberline {A}Project Overview}{}{Appendix.a.A}
 \contentsline {section}{\numberline {B}Second Formal Review Output}{}{Appendix.a.B}
 \contentsline {section}{\numberline {C}Diary Sheets}{}{Appendix.a.C}

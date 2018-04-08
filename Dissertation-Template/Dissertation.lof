@@ -10,8 +10,16 @@
 \contentsline {figure}{\numberline {10}{\ignorespaces MarI/O\relax }}{14}{figure.caption.16}
 \contentsline {figure}{\numberline {11}{\ignorespaces Game UI\relax }}{21}{figure.caption.17}
 \contentsline {figure}{\numberline {12}{\ignorespaces Game Class Diagram\relax }}{22}{figure.caption.18}
-\contentsline {figure}{\numberline {13}{\ignorespaces NeuroSwitch.ne\relax }}{23}{figure.caption.19}
-\contentsline {figure}{\numberline {14}{\ignorespaces Original Project Timeline Gantt Chart\relax }}{32}{figure.caption.27}
-\contentsline {figure}{\numberline {15}{\ignorespaces Updated Gantt Chart - New Year\relax }}{32}{figure.caption.28}
-\contentsline {figure}{\numberline {16}{\ignorespaces Post-AI Project Gantt Chart\relax }}{33}{figure.caption.29}
-\contentsline {figure}{\numberline {17}{\ignorespaces Complete Project Gantt Chart\relax }}{33}{figure.caption.30}
+\contentsline {figure}{\numberline {13}{\ignorespaces NeuroSwitch.ne\relax }}{27}{figure.caption.19}
+\contentsline {figure}{\numberline {14}{\ignorespaces Average Results vs Unaggressive\relax }}{32}{figure.caption.25}
+\contentsline {figure}{\numberline {15}{\ignorespaces Average Results vs Random\relax }}{32}{figure.caption.26}
+\contentsline {figure}{\numberline {16}{\ignorespaces Average Results vs Aggressive\relax }}{35}{figure.caption.29}
+\contentsline {figure}{\numberline {17}{\ignorespaces Box Chart | Neural vs Unaggressive\relax }}{36}{figure.caption.30}
+\contentsline {figure}{\numberline {18}{\ignorespaces Box Chart | Neural vs Random\relax }}{36}{figure.caption.31}
+\contentsline {figure}{\numberline {19}{\ignorespaces Box Chart | Neural vs Aggressive\relax }}{37}{figure.caption.32}
+\contentsline {figure}{\numberline {20}{\ignorespaces Box Chart | Neural vs Unaggressive | Mating \relax }}{38}{figure.caption.34}
+\contentsline {figure}{\numberline {21}{\ignorespaces Box Chart | Neural vs Unaggressive | Mutation\relax }}{38}{figure.caption.35}
+\contentsline {figure}{\numberline {22}{\ignorespaces Box Chart | Neural vs Aggressive | Mating\relax }}{39}{figure.caption.36}
+\contentsline {figure}{\numberline {23}{\ignorespaces Box Chart | Neural vs Aggressive | Mutation\relax }}{39}{figure.caption.37}
+\contentsline {figure}{\numberline {24}{\ignorespaces Original Project Timeline Gantt Chart\relax }}{43}{figure.caption.38}
+\contentsline {figure}{\numberline {25}{\ignorespaces Complete Project Gantt Chart\relax }}{43}{figure.caption.39}

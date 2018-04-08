@@ -2,59 +2,63 @@
 \BOOKMARK [2][-]{subsection.1.1}{1.2 - Aims and Objectives}{section.1}% 2
 \BOOKMARK [2][-]{subsection.1.2}{1.3 - Scope}{section.1}% 3
 \BOOKMARK [2][-]{subsection.1.3}{1.4 - Constraints}{section.1}% 4
-\BOOKMARK [2][-]{subsection.1.4}{1.5 - Sources of Information \( /Similar Work\)}{section.1}% 5
-\BOOKMARK [2][-]{subsection.1.5}{1.6 - Chapter Outlines / Structure of Dissertation}{section.1}% 6
-\BOOKMARK [2][-]{subsection.1.6}{Project Aims and Structure}{section.1}% 7
-\BOOKMARK [2][-]{subsection.1.7}{Overview Of Project Content and Milestones}{section.1}% 8
-\BOOKMARK [3][-]{subsubsection.1.7.1}{Research}{subsection.1.7}% 9
-\BOOKMARK [3][-]{subsubsection.1.7.2}{Game Foundation}{subsection.1.7}% 10
-\BOOKMARK [3][-]{subsubsection.1.7.3}{Implementation of Artificial Intelligence}{subsection.1.7}% 11
-\BOOKMARK [3][-]{subsubsection.1.7.4}{Experiments and Testing}{subsection.1.7}% 12
-\BOOKMARK [3][-]{subsubsection.1.7.5}{Evalution and Conclusion}{subsection.1.7}% 13
-\BOOKMARK [1][-]{section.2}{Background}{}% 14
-\BOOKMARK [2][-]{subsection.2.1}{Introduction}{section.2}% 15
-\BOOKMARK [2][-]{subsection.2.2}{History of AI in Games}{section.2}% 16
-\BOOKMARK [2][-]{subsection.2.3}{What is a Neural Network?}{section.2}% 17
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Perceptrons}{subsection.2.3}% 18
-\BOOKMARK [3][-]{subsubsection.2.3.2}{Sigmoid Neurons}{subsection.2.3}% 19
-\BOOKMARK [2][-]{subsection.2.4}{Evolutionary Algorithms}{section.2}% 20
-\BOOKMARK [3][-]{subsubsection.2.4.1}{Representation}{subsection.2.4}% 21
-\BOOKMARK [3][-]{subsubsection.2.4.2}{Initialisation}{subsection.2.4}% 22
-\BOOKMARK [3][-]{subsubsection.2.4.3}{Fitness}{subsection.2.4}% 23
-\BOOKMARK [3][-]{subsubsection.2.4.4}{Selection}{subsection.2.4}% 24
-\BOOKMARK [3][-]{subsubsection.2.4.5}{Crossover}{subsection.2.4}% 25
-\BOOKMARK [3][-]{subsubsection.2.4.6}{Mutation}{subsection.2.4}% 26
-\BOOKMARK [3][-]{subsubsection.2.4.7}{Replacement}{subsection.2.4}% 27
-\BOOKMARK [2][-]{subsection.2.5}{NeuroEvolution for Augmenting Topologies \(NEAT\)}{section.2}% 28
-\BOOKMARK [1][-]{section.3}{Literature Review}{}% 29
-\BOOKMARK [2][-]{subsection.3.1}{AI for Playing Games}{section.3}% 30
-\BOOKMARK [2][-]{subsection.3.2}{Why Neural Networks?}{section.3}% 31
-\BOOKMARK [2][-]{subsection.3.3}{Why Evolve Neural Networks?}{section.3}% 32
-\BOOKMARK [2][-]{subsection.3.4}{Why Co-Evolve Topologies and Weights?}{section.3}% 33
-\BOOKMARK [2][-]{subsection.3.5}{Summary}{section.3}% 34
-\BOOKMARK [1][-]{section.4}{Methodology}{}% 35
-\BOOKMARK [2][-]{subsection.4.1}{Language and Libraries}{section.4}% 36
-\BOOKMARK [2][-]{subsection.4.2}{Design}{section.4}% 37
-\BOOKMARK [2][-]{subsection.4.3}{Game}{section.4}% 38
-\BOOKMARK [2][-]{subsection.4.4}{Neural Network}{section.4}% 39
-\BOOKMARK [2][-]{subsection.4.5}{Evolutionary Algorithm}{section.4}% 40
-\BOOKMARK [2][-]{subsection.4.6}{Fitness Evaluation}{section.4}% 41
-\BOOKMARK [1][-]{section.5}{Results}{}% 42
-\BOOKMARK [2][-]{subsection.5.1}{Agent vs Hard-coded Strategy}{section.5}% 43
-\BOOKMARK [3][-]{subsubsection.5.1.1}{Neural vs Unaggressive}{subsection.5.1}% 44
-\BOOKMARK [3][-]{subsubsection.5.1.2}{Neural vs Random}{subsection.5.1}% 45
-\BOOKMARK [3][-]{subsubsection.5.1.3}{Neural vs Aggressive}{subsection.5.1}% 46
-\BOOKMARK [3][-]{subsubsection.5.1.4}{Free For All }{subsection.5.1}% 47
-\BOOKMARK [2][-]{subsection.5.2}{Agent vs Human\(s\)}{section.5}% 48
-\BOOKMARK [2][-]{subsection.5.3}{Agent vs Agent}{section.5}% 49
-\BOOKMARK [1][-]{section.6}{Critical Evaluation}{}% 50
-\BOOKMARK [2][-]{subsection.6.1}{Future Work}{section.6}% 51
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 52
-\BOOKMARK [1][-]{section*.32}{Appendices}{}% 53
-\BOOKMARK [1][-]{Appendix.a.A}{Project Overview}{}% 54
-\BOOKMARK [1][-]{Appendix.a.B}{Second Formal Review Output}{}% 55
-\BOOKMARK [1][-]{Appendix.a.C}{Diary Sheets}{}% 56
-\BOOKMARK [1][-]{Appendix.a.D}{Timeline Gantt Charts}{}% 57
-\BOOKMARK [1][-]{Appendix.a.E}{My Website}{}% 58
-\BOOKMARK [1][-]{Appendix.a.F}{Textures}{}% 59
-\BOOKMARK [1][-]{Appendix.a.G}{NEAT Documentation/Tutorial}{}% 60
+\BOOKMARK [2][-]{subsection.1.4}{1.5 - Sources of Information}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{1.6 - Dissertation Structure}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.6}{Overview Of Project Content and Milestones}{section.1}% 7
+\BOOKMARK [3][-]{subsubsection.1.6.1}{Research}{subsection.1.6}% 8
+\BOOKMARK [3][-]{subsubsection.1.6.2}{Game Foundation}{subsection.1.6}% 9
+\BOOKMARK [3][-]{subsubsection.1.6.3}{Implementation of Artificial Intelligence}{subsection.1.6}% 10
+\BOOKMARK [3][-]{subsubsection.1.6.4}{Experiments and Testing}{subsection.1.6}% 11
+\BOOKMARK [3][-]{subsubsection.1.6.5}{Evalution and Conclusion}{subsection.1.6}% 12
+\BOOKMARK [1][-]{section.2}{Background}{}% 13
+\BOOKMARK [2][-]{subsection.2.1}{Introduction}{section.2}% 14
+\BOOKMARK [2][-]{subsection.2.2}{History of AI in Games}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.3}{What is a Neural Network?}{section.2}% 16
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Perceptrons}{subsection.2.3}% 17
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Sigmoid Neurons}{subsection.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.4}{Evolutionary Algorithms}{section.2}% 19
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Representation}{subsection.2.4}% 20
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Initialisation}{subsection.2.4}% 21
+\BOOKMARK [3][-]{subsubsection.2.4.3}{Fitness}{subsection.2.4}% 22
+\BOOKMARK [3][-]{subsubsection.2.4.4}{Selection}{subsection.2.4}% 23
+\BOOKMARK [3][-]{subsubsection.2.4.5}{Crossover}{subsection.2.4}% 24
+\BOOKMARK [3][-]{subsubsection.2.4.6}{Mutation}{subsection.2.4}% 25
+\BOOKMARK [3][-]{subsubsection.2.4.7}{Replacement}{subsection.2.4}% 26
+\BOOKMARK [2][-]{subsection.2.5}{NeuroEvolution for Augmenting Topologies \(NEAT\)}{section.2}% 27
+\BOOKMARK [1][-]{section.3}{Literature Review}{}% 28
+\BOOKMARK [2][-]{subsection.3.1}{AI for Playing Games}{section.3}% 29
+\BOOKMARK [2][-]{subsection.3.2}{Why Neural Networks?}{section.3}% 30
+\BOOKMARK [2][-]{subsection.3.3}{Why Evolve Neural Networks?}{section.3}% 31
+\BOOKMARK [2][-]{subsection.3.4}{Why Co-Evolve Topologies and Weights?}{section.3}% 32
+\BOOKMARK [2][-]{subsection.3.5}{Summary}{section.3}% 33
+\BOOKMARK [1][-]{section.4}{Rules of Switch}{}% 34
+\BOOKMARK [1][-]{section.5}{Methodology}{}% 35
+\BOOKMARK [2][-]{subsection.5.1}{Language and Libraries}{section.5}% 36
+\BOOKMARK [2][-]{subsection.5.2}{Design}{section.5}% 37
+\BOOKMARK [2][-]{subsection.5.3}{Game}{section.5}% 38
+\BOOKMARK [2][-]{subsection.5.4}{Neural Network}{section.5}% 39
+\BOOKMARK [2][-]{subsection.5.5}{Evolutionary Algorithm}{section.5}% 40
+\BOOKMARK [2][-]{subsection.5.6}{Fitness Evaluation}{section.5}% 41
+\BOOKMARK [1][-]{section.6}{Results}{}% 42
+\BOOKMARK [2][-]{subsection.6.1}{Agent vs Hard-coded Strategy}{section.6}% 43
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Neural vs Unaggressive}{subsection.6.1}% 44
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Neural vs Random}{subsection.6.1}% 45
+\BOOKMARK [3][-]{subsubsection.6.1.3}{Neural vs Aggressive}{subsection.6.1}% 46
+\BOOKMARK [2][-]{subsection.6.2}{Deeper Examination}{section.6}% 47
+\BOOKMARK [2][-]{subsection.6.3}{Evolution | Mating vs Mutating}{section.6}% 48
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Comparison | Unaggressive}{subsection.6.3}% 49
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Comparison | Aggressive}{subsection.6.3}% 50
+\BOOKMARK [2][-]{subsection.6.4}{External Comparisons}{section.6}% 51
+\BOOKMARK [1][-]{section.7}{Critical Evaluation}{}% 52
+\BOOKMARK [2][-]{subsection.7.1}{Achievements vs Objectives}{section.7}% 53
+\BOOKMARK [2][-]{subsection.7.2}{Project Management}{section.7}% 54
+\BOOKMARK [2][-]{subsection.7.3}{Future Work}{section.7}% 55
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 56
+\BOOKMARK [1][-]{section*.41}{Appendices}{}% 57
+\BOOKMARK [1][-]{Appendix.a.A}{Project Overview}{}% 58
+\BOOKMARK [1][-]{Appendix.a.B}{Second Formal Review Output}{}% 59
+\BOOKMARK [1][-]{Appendix.a.C}{Diary Sheets}{}% 60
+\BOOKMARK [1][-]{Appendix.a.D}{Timeline Gantt Charts}{}% 61
+\BOOKMARK [1][-]{Appendix.a.E}{My Website}{}% 62
+\BOOKMARK [1][-]{Appendix.a.F}{Textures}{}% 63
+\BOOKMARK [1][-]{Appendix.a.G}{NEAT Documentation/Tutorial}{}% 64

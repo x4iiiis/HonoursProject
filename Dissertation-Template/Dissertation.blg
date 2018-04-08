@@ -22,48 +22,51 @@ Warning--empty year in 25
 Warning--empty year in 25
 Warning--empty year in ABriefHistoryOfGameAI
 Warning--empty journal in 29
+Warning--empty year in sharedptr
 Warning--empty year in 22
 Warning--empty year in 23
+Warning--empty year in SFML
 Warning--empty year in 21
-You've used 30 entries,
+Warning--empty year in 31
+You've used 33 entries,
             2773 wiz_defined-function locations,
-            729 strings with 10208 characters,
-and the built_in function-call counts, 13054 in all, are:
-= -- 1027
-> -- 1013
-< -- 24
-+ -- 353
-- -- 321
-* -- 994
-:= -- 2116
-add.period$ -- 92
-call.type$ -- 30
-change.case$ -- 194
-chr.to.int$ -- 28
-cite$ -- 76
-duplicate$ -- 524
-empty$ -- 949
-format.name$ -- 359
-if$ -- 2633
+            741 strings with 10473 characters,
+and the built_in function-call counts, 13942 in all, are:
+= -- 1102
+> -- 1043
+< -- 27
++ -- 365
+- -- 330
+* -- 1039
+:= -- 2248
+add.period$ -- 101
+call.type$ -- 33
+change.case$ -- 206
+chr.to.int$ -- 31
+cite$ -- 85
+duplicate$ -- 569
+empty$ -- 1045
+format.name$ -- 371
+if$ -- 2822
 int.to.chr$ -- 3
 int.to.str$ -- 1
 missing$ -- 19
-newline$ -- 160
-num.names$ -- 120
-pop$ -- 484
+newline$ -- 175
+num.names$ -- 132
+pop$ -- 523
 preamble$ -- 1
-purify$ -- 167
+purify$ -- 176
 quote$ -- 0
-skip$ -- 471
+skip$ -- 513
 stack$ -- 0
-substring$ -- 79
-swap$ -- 31
+substring$ -- 85
+swap$ -- 34
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 315
-warning$ -- 16
-while$ -- 92
+type$ -- 348
+warning$ -- 19
+while$ -- 101
 width$ -- 0
-write$ -- 362
+write$ -- 395
 (There was 1 error message)

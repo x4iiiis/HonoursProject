@@ -86,18 +86,20 @@
 
 %LaTeX let you define the abstract separately so it wont get sucked into the main document.
 \begin{abstract}
-\
+	Neural networks and evolutionary algorithms have been paired to in game-related research and experimental projects in the field of artificial intelligence many times before, but similar papers are hard to come by when applied to card games.
+	
+	Recreating and using the card game Switch, an investigation into the effectiveness of a machine learning technique of this type in such an environment will take place.
+	
+\begin{center}
 % fill the abstract in here
-$\\ \clubsuit \\\\ \diamondsuit \\\\ \heartsuit \\\\ \spadesuit$
+$\clubsuit$ \\
 
-Original NEAT publication:\\
-http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf\\\\
+$ \diamondsuit$ \\ 
 
-Couldn't find the tutorial but I stuck it on my website:\\
-http://x4iiiis.com/honours/NEATDOC.pdf
+$ \heartsuit$ \\
 
-Actually it's in the download here, as a .ps 
-http://nn.cs.utexas.edu/soft-view.php?SoftID=4
+$ \spadesuit$
+\end{center}
 
 
 
@@ -131,84 +133,52 @@ http://nn.cs.utexas.edu/soft-view.php?SoftID=4
 \newpage
 
 \section*{Acknowledgements}
-%The Games Development course has been journey of personal development in addition to gaining a higher education by obtaining and improving skills. It has been the proverbial roller-coaster ride with several highs, lows, moments of complete disorientation, and a feeling of wishing you could do it all over again. The last four years have gone by in the blink of an eye, but have provided experiences and created friendships that will remain far beyond graduation.\\
+The Games Development course has been journey of personal development in addition to gaining a higher education by obtaining and improving existing skills. I would like to thank my family and friends for ensuring that I remained as positive as possible throughout not only this project but my degree as a whole. I am particularly thankful to those who encouraged me to further my education in the first place.\\
 
+%It has been the proverbial roller-coaster ride with several highs, lows, moments of complete disorientation, and a feeling of wishing you could do it all over again. The last four years have gone by in the blink of an eye, but have provided experiences and created friendships that will remain far beyond graduation.\\
 
 %I would like to thank my friends and family for ensuring that I remained positive and motivated along the way, and for their participation in the testing phases. All of the support, assistance and feedback has been invaluable to both myself and the project as a whole. \\
 
-%I am also hugely appreciative of my project supervisor, Dr Simon Powers. Simon has provided me with excellent support and guidance throughout the process and for that I am extremely grateful.
+I am also hugely appreciative of my project supervisor, Dr Simon Powers. Simon has provided me with excellent support and guidance throughout the process and for that I am eternally grateful. %Toy Story reference that probably sounds daft 
 
-I would like to thank Calum and Steven for abstaining from Fortnite duties on the night of 24/03/18 as not having my squaddies meant actually fixing this fucking thing.
+%I would like to thank Calum and Steven for abstaining from Fortnite duties on the night of 24/03/18 as not having my squaddies meant actually fixing this fucking thing.
 
-Also, cheers to my supervisor, I suppose. 
+%Also, cheers to my supervisor, I suppose. 
 
 \newpage
 \setcounter{page}{1}
 \pagenumbering{arabic}
 
 \section{Introduction}
-
-% Jyoti's advice
-Jyoti's advice\\\\
-% 1 
-background to topic
-rationale for project
-x2 paragraphs\\
+Card games appear to be an unexplored area in relation to neuro-evolution, and this project intends change that. This chapter outlines the project plan for how that will be achieved. \\
 
 \subsection{1.2 - Aims and Objectives}
-Aim and objectives
-Aim is one sentence (the deliverable)
-In order to reach this goal, the following objectives will be achieved:
-- etc
-- etc
+
+The goal of this project is to develop a card game, and incorporate an artificially intelligent autonomous player. The underlying purpose of the project is to research and demonstrate the effectiveness of artificial neural networks and evolutionary algorithms in a game of this type.  \\
+
+In order to achieve this goal, smaller objectives must be reached. These include researching and learning about neural networks and evolutionary algorithms, building a card game from scratch, and then gathering data from an extensive testing regime. This data must then be critically evaluated and discussed. \\
 
 \subsection{1.3 - Scope}
-Scope
-Don’t let them ask you at the viva voce “why didn’t you build it for X” 
+The game will be constructed for two to four players - human or otherwise. An increased number of players may break the game due to running out of cards. \\
 
 \subsection{1.4 - Constraints}
-Constraints
-Everyone has time constraints so don’t be a dickhead
+The project begins as a first endeavour into researching and working with artificial intelligence techniques. As a result, this project will not only involve the development of an intricate game system, and gathering and evaluating experimental results, but a lot of learning will also need to take place. \\
 
-\subsection{1.5 - Sources of Information (~/Similar Work)} 
-Sources of information ( ~/similar work )
-C++ (11) 
-NEAT
-SMFL\\\\
+\subsection{1.5 - Sources of Information} 
+Sixteen years prior to this project, researchers at The University of Texas at Austin published a paper in which they detailed the development of their innovative neural network evolution library\citep{NEAT} entitled, \enquote{NeuroEvolution of Augmenting Topologies,} or \enquote{NEAT} in abbreviated form. The library has been converted to several programming languages over the years; However this project will stick with the original C++ version. The NEAT library will be discussed in depth in the Methodology section of this dissertation.
 
-Sixteen years prior to this project, researchers(?) at The University of Texas at Austin published a paper in which they detailed the development of their innovative neural network evolution library\citep{NEAT} entitled, \enquote{NeuroEvolution of Augmenting Topologies,} or \enquote{NEAT} in abbreviated form. The library has been converted to several programming languages over the years; However this project will stick with the original C++ version. The NEAT library will be discussed in depth in the Methodology section of this dissertation.\\
+The documentation file in Appendix G will be used to aid work with the NEAT library.\\
 
-This project will be built in C++, and will need to be compiled to a minimum of C++11 standard due to the use of shared pointers.\\
+%This project will be built in C++, and will need to be compiled to a minimum of C++11 standard due to the use of shared pointers.\\
 
-Visual aspects of the project will be developed with SFML imported.\\
+The graphical element of the project will be developed with SFML imported. SFML stands for Simple and Fast Multimedia Library, and \enquote{provides a simple interface to the various components of your PC, to ease the development of games and multimedia applications\citep{SFML}.}\\
 
-Documentation/tutorial file in Appendix G.\\
 
-\subsection{1.6 - Chapter Outlines / Structure of Dissertation}
-Chapter outlines / structure of dissertation
-Chapter 1 contains intro
-Chapter 2 contains
-Chapter 3 … \\
-
-% end of Jyoti's advice
-end of Jyoti's advice\\\\
-
-This chapter highlights the aims and objectives for this honours project, providing a brief insight into the what is to come. It also outlines the desired deliverables for the completed project. \\
-
-\subsection{Project Aims and Structure}
-%Or have sections that are relevant to your main body of work above but warrant their own section. Both - with numbering would be entered into the Table of contents.
-
-This project intends to provide a digitally playable card game that can be played by a human user against one or more artificial intelligence agents. The underlying purpose of the project is to research and demonstrate the effectiveness of artificial neural networks and evolutionary algorithms in a game of this type. 
-
-It plans to do so by using the NeuroEvolution of Augmenting Topologies (NEAT) library to co-evolve neural network structures as well as input weights to make decisions relating to in-game moves that can be made, and to learn from the results of those decisions. 
-
-This report will document how well the agent performs over a vast amount of games and topologies, presenting the results through a mixture of figures and charts. An in-depth explanation of the way in which the performance is measured will be described in the methodology section. 
-
-While the project has research at its core, it is also intended to be a game that can provide an enjoyable experience for a playing user who may not appreciate what is going on under the hood.\\
+\subsection{1.6 - Dissertation Structure}
+The current chapter provides an introduction to the project, explaining the ambitions and rationale. Chapter 2 provides a background to the field of artificial intelligence with respect to games development. This is followed by a literature review, discussing previous and current projects with similarities to this topic. The rules of the Switch card game are briefly explained in chapter 4, before chapter 5 explains the technicalities of the development phase. Results are then discussed, and chapter 7 evaluates the project as a whole. A summary is provided in the final chapter. \\
 
  \subsection{Overview Of Project Content and Milestones}
-
-Milestone proposals for the project are as follows: 
+Milestones and objectives for the project are as follows: 
 \subsubsection{Research}
 Neural networks and Evolutionary algorithms research is necessary to aid with the project development and to make up for current lack of knowledge
 
@@ -556,86 +526,113 @@ Despite the disadvantages and complexities of evolved neural networks, the negat
 As Switch is largely down to luck like most (if not all) card games, there is never going to be a perfect solution. That said, the aim of this project is to see whether evolved neural networks are more capable of finding a consistently positive solution than a programmer implementing a strategy in advance could be. 
 
 \newpage
+\section{Rules of Switch}
+Before proceeding to discuss the inner workings of the digital version, it may help to explain how the game works physically.\\
+
+The objective of Switch is to be the first player to successfully empty their hand of cards, although the game can - and in this case does - continue until all players - except last place - has done so. Players are equally dealt a number of cards, before the card on top of the stack is turned over to reveal its type and suit. 
+
+The player left (or right if the upturned card was a Jack) of the dealer must then play a card which matches in either type or suit. An inability to do so results in the current player adding a new card from the top of the pack into their hand. The next player on the left must then do the same, and play continues in this vein.\\
+
+Of course, there is more to it than that. Certain cards have rules attached to them. Not all of the rules played in real life are (fully) implemented into this project. To avoid confusion, only the rules associated with the project will be explained here; A more inclusive explanation can be seen on my website (Appendix E).\\
+
+The special cards are as follows:
+\begin{itemize}
+	\item Black Queen
+	\item Two
+	\item Eight
+	\item Jack
+\end{itemize}
+
+A Queen of either Clubs or Spades will result in the next player having to pick up five cards, and any Two forces an addition of two cards. Playing an Eight means your next opposing player skips a turn, and a Jack will switch the direction of play. 
+
+
+\newpage
 \section{Methodology}
-The entire project source code can be found on \href{http://www.github.com/x4iiiis/honoursproject}{my github account.}
+%The entire project source code can be found on \href{http://www.github.com/x4iiiis/honoursproject}{my github account.}
 
 
 \subsection{Language and Libraries}
-The programming language used to build this project is C++. It is used in collaboration with the NeuroEvolution of Augmenting Topologies (NEAT) library. 
+The software development language used to build this project is C++. It is used in collaboration with the NeuroEvolution of Augmenting Topologies (NEAT) library. In order to run the application, compatibility with C++11 is necessary of the user's chosen compiler, due to the use of shared pointers - a relatively modern development concept. \\
 
-When working with NEAT, I was reading documentation including a tutorial on how to write new experiments. This file can be found as part of a download link as a PostScript (.ps) file. This, along with an alternative to view only this file as a Portable Document Format (.pdf) file, can be seen in Appendix G.\\
+When working with NEAT, documentation including a tutorial on how to write new experiments was observed. This file can be found as part of a download link as a PostScript (.ps) file. This, along with an alternative to view only this file as a Portable Document Format (.pdf) file, can be found in Appendix G.\\
 
-
-Somethings about an object oriented programming and the fact that it's modern C++ (C++11) to facilitate the use of shared pointers. \\
-
-The graphical aspect of the game on show in figure 11 was implemented using an import of the Simple and Fast Multimedia Library (SFML), with playing card textures courtesy of Kenney Vleugels (see appendix F).
-
+The graphical aspect of the game on show in figure 11 was implemented using an import of the Simple and Fast Multimedia Library (SFML), with playing card textures courtesy of Kenney Vleugels (Appendix F).\\
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width = \textwidth]{SFML.png}
+	\includegraphics[scale = 0.6]{SFML.png}
 	\caption{Game UI}
 \end{figure}
 
 
 \subsection{Design}
-Design patterns / class diagrams and such for my code
+%Design patterns / class diagrams and such for my code
+%An object oriented approach to the programming of this game made sense as the intention was to replicate a game that was physically played in the real world. Thinking of the digital version in the same way as the real world game 
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = \textwidth]{ClassDiagram.jpg}
 	\caption{Game Class Diagram}
 \end{figure}
+Figure 12 helps to visualise the code structure behind the game, showing the five classes and their member functions. \\
 
-Figure 12 helps to visualise the code structure behind the game, showing the five classes and their member functions. 
+The Game Manager class is central, with its deck of cards object class on the right. For the sake space and readability, 105 card and texture objects have been omitted from the image. The specifics of what a card object is made up of can be seen on the far right. Also pictured, we see the ranking system and a look at the components of a player object.
 
-The Game Manager singleton class is central, with its deck of cards object class on the right. For the sake space and readability, 105 card and texture objects have been omitted from the image. The specifics of what a card object is made up of can be seen on the far right.
+As seen in the diagram, the game management class is the hub that interacts with everything throughout each match. It is an integral part of the game operation, and needed to be reliable. For example, if a bug was existed where a second game manager was created with some functions referencing the first instance, and other methods using the second, then the game would jump around as the states of the two decks would be different. While this would most likely cause the program to crash anyway, it was good to know it was not going to happen when the class was converted to a singleton.\\
 
-Looking back on the other side of our singleton, we see the ranking system and a look at the components of a player object. \\
+A singleton is a software engineering design pattern used to eliminate the risk of accidentally duplicating the existence of an object that is only meant to be instantiated once in an application\citep{31}. To achieve this, the function call whereby an object of this type would be created first checks to see if an instance already exists. If it does, then the function returns access to the existing version of the object. If the object instance is set to null, then it is yet to be created, and the creation process can then go ahead.\\
 
-I can't help but feel that these should have relationship lines, but I couldn't figure out how to add them. D: \\
+The singleton pattern was at one stage thought to be essential to the development of this project, but was later realised as slightly unnecessary. However, there is no harm in keeping it.\\
 
-
-As seen in the diagram, the game management class is the hub that interacts with everything throughout each match. It is an integral part of the game operation, and needed to be accessible by most of the classes. This meant that circular dependency issues were going to arise, and so the need for a singleton class was established. 
-
-With all necessary classes being able to access the same instance of the game manager class whenever it was necessary made things a whole lot easier than trying to find a way around circular dependency problems. 
+Player and card objects are used across multiple classes in the game code via the use of shared pointers. \enquote{The shared\_ptr type is a smart pointer in the C++ standard library that is designed for scenarios in which more than one owner might have to manage the lifetime of the object in memory\citep{sharedptr}.} Introduced in C++11, shared pointers are a relatively new concept, and so a modern compiler is required to execute the game. This created a few issues when interfacing with the NEAT library, whose code was written over fifteen years ago. \\
 
 \subsection{Game}
-The game loops until all but one player has successfully emptied their hand. \\
+The game manager class creates a ranking system, and a deck of cards. The ranking class is very simple. It is merely an external object to keep track of the scoreboard, by storing the players that have successfully got out of the game. It is also used to check if the game is over. The class method is passed a value describing the amount of players that started the game, which it then compares to the count of players currently in its scoreboard. If the difference between the two values leaves a single player alone in the game, then the game is over, and that player is also added to the scoreboard in last place. This scoreboard is then displayed on screen in the console, and printed to file.
 
-Also talk about how when running multiple games the random generator is pseudo-random\\
+The deck creates and stores all of the card objects, and is responsible for their textures and positions on screen, and is also the class responsible for keeping track of the stack and last played card. The game manager carries out some tasks via the deck object too. These methods did not necessarily need to be in the deck object; It was just easier to keep card and deck related methods together when developing the system. The most important example of this is the deal method, used for distributing the cards to the players at the beginning of a game.\\
+
+Game.h, the main file used to run games, is where the game manager is created. Once it has been instantiated, the game class then gets the game manager to create the players and set their names and play-styles, before then dealing the cards. Once the cards have been dished out and the first card to be played on is known, the program enters the game loop. Once in this phase of the application, the same segment of code is repeatedly executed until the game-over criteria of the ranking system has been reached. 
+
+The loop contains conditional statements used to determine which type (play-style) of player the current turn belongs to. Then the system will check whether or not the current player can legally play a card. If not, the player will have to pick up, and non-human players will automatically do so. Otherwise, play-style specific mechanics are in place for moves to be made. Each time a move is made or a card is picked up, the game manager ends the turn of that player and moves on to the next, making a quick call to the scoreboard to ensure that the game is not yet complete, before the game class returns to the beginning of the loop. When that game-over check returns a positive result, the loop is broken and the game is terminated; returning the fitness of any existing neural players to the NEAT code.\\
 
 An issue that arose when the game was hooked up to the NEAT library was that the random function used to shuffle the cards before dealing is not does not produce authentic random results. The generator is seeded by the current time at which it is called, down to the present second. When the graphical aspect of the game was removed, the need for a pause between each play to allow the user to see what happened went with it, and what remained was a very fast, console-based application. So fast, in fact, several tens of games can be completed in a single second. This presents a problem as the pseudo-random dealing of cards is seeded to a single second. Thus, any games sharing a second of time when cards are dealt consequentially result in the players receiving exactly the same first hand, and the same first card to play on top of. It is highly probable that these games should result in the same outcome. 
 
-This can easily be overcome by allowing the process to pause for a second after each game, but this drastically increases the time taken to obtain results from larger populations and multiple generations. 
+This can easily be overcome by allowing the process to pause for a second after each game, but this drastically increases the time taken to obtain results from larger populations and multiple generations. Instead, a decision to pause after each generation was taken. This means that several - and potentially all - members of the population are playing games with the same initial game states. This invariably results in some games playing out in exactly the same way, but as the population evolves, organisms will make differing decisions in scenarios where more than one potential move is available to them. Of course, even one variation in card choice alters the entire game trajectory from that point onwards, and so as long as a situation arises where a choice can occur, the \textit{exact} same game is less probable. 
+
+In a way, this makes judgement of generational results slightly less harsh, as similar games were played and the actions resulted differently.\\
 
 
 \subsection{Neural Network}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = \textwidth/2]{neFile.png}
-	\caption{NeuroSwitch.ne}
-\end{figure}
-
-Could've started from scratch rather than use NEAT, but used it for reasons X Y Z
-
-NEAT has special crossover operations cause taking half of a NN and sticking to another one probably won't perform well \\
-
-
-Pick up whatever you said about the game looping in the last subsection and carry on to talk about resetting the network nodes.\\
+Whilst a possibility, building a neural network from scratch was an option that was given little consideration due to the lack of knowledge in the field already evident at the beginning of the project. Using pre-built and thoroughly documented software allowed for more time to be allocated to the development of the game structure, and experimenting with neuro-evolution techniques more freely. The project was intended to be primarily about developing the game and analysing results obtained by evolving a neural network over a significant number of games. \\
 
 In early stages of development, it was thought that there would be a long period where the network would have to learn how to play the game. With this, it was suspected that a means to recognise and punish illegal move attempts. However, an alternative was implemented. Each time the game loops back around to the Neural player's turn, the entire first layer of input nodes is reset to -10, before then stepping through their hand one card at a time, calling a method in the game manager class to determine whether or not the current card is playable against the most recently played card. Assigning a value of 1 to the corresponding node for cards that receive a positive response from the legality-checking function in this manner then allows the network to choose from the set of cards it is allowed to play.
 
 The network then runs through all of the output nodes, seeking the node with the greatest activation. Once this node has been discovered, a large switch case function is in place to actually make the move for the network, using the card that relates to the most activated output node. 
 
-If unable to play due to having no playable cards available, the Neural player will automatically pick up a card without bothering the network. 
+If unable to play due to having no playable cards available, the Neural player will automatically pick up a card without bothering the network.\\
 
+Creating the network for this project was a straightforward procedure of setting 52 input nodes, and 52 output nodes. Each card in the deck corresponds to one of each node type. Node 1 relates to the Ace of Clubs, and so does node 53 (the first output node). 
 
+\newpage
 \subsection{Evolutionary Algorithm}
-.
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[width = \textwidth/2]{neFile.png}
+	\caption{NeuroSwitch.ne}
+\end{figure}
 
+Figure 13 contains the variables available to be tampered with when using NEAT. The library reads this file in, and uses it to evolve the neural network as experiments are executed. 
+
+
+
+\newpage
 \subsection{Fitness Evaluation}
-Had issues with what I tried so Simon told me to do 1 if it wins and 0 if it loses.. simples. -999 if the network fails to activate which i dunno why that's happening anyway
+A fitness function was always going to be a challenge with this project. The stochastic nature of the game makes evaluating performance extremely difficult. One idea was to reward the neural player for playing cards that would negatively influence the opposition. This was promptly counter-thought as that would promote playing aggressively. Whilst this may not be a bad thing, it would almost create an elaborate replicate of the hard-coded aggressive player. 
+
+Another thought was to negatively affect the fitness every time the player's hand increased in size. However, the unpredictability of would often lead to negative fitness values - even if the player won the game. There was briefly an attempt to counteract this with large increases or decreases when the game ends - depending on whether or not the neural player won or lost. This was insufficient as the length of games varies every time, so the effect of the counterweight fluctuated.
+
+In the end, fitness was simply evaluated in a binary fashion; Win or loss. The survival threshold for organisms in the population of a generation was later set so that only winning members survived. This seems harsh as the player could theoretically perform exceptionally well in one game, only to be dealt a poor hand in its next match and be terminated as a result. However, an alternative was difficult to come by.
+
 
 
 \newpage
@@ -709,280 +706,405 @@ As the results show, the aggressive play-style is the most successful. However, 
 The following tables show the average results of each generation performing against the stated hard-coded play-style. Each generation consists of the following:
 
 \begin{itemize}
-	\item Population of 50 (before dropoff)
+	\item Population of 20 (pre-dropoff)
 	\item Dropoff age of 100
 	\item 1 run per member of population
 \end{itemize}
 
-These average results are contrived from 30 replicates of the same tests. \\\\
+Averages are contrived from 10 replicates of the same tests. \\\\
 
 \begin{small}
 	\textit{Tables show only the averages of every 5th generation to ensure only a single page of space is required. The full dataset is available on my website(Appendix E).}
 \end{small}
 
-
-\subsubsection{Neural vs Unaggressive}
-.
-So I'm thinking save all the replicates of the data but go through all of them generation by generation and average the amount of wins per generation with the replicates. Then have a big table of the average win rate for all of the generations. Doubt you'll fit 150 on a page though so may have to do it per 5 or something.
-
-test:
 \newpage
+\subsubsection{Neural vs Unaggressive}
+
 \begin{table}[h!]
-	\begin{tabu} to \textwidth { | X[c] | X[c] | X[c] | X[c] |}
+	\begin{tabu} to \textwidth { | X[c] | X[c] | X[c] |}
 		\hline
-		Generation & Population Size & Average Wins & Average Losses \\
+		Generation & Population Size & Average Wins \\
 		\hline
-		1  & 50	&  &  \\
+		1  & 20  &  11.9\\
 		\hline
-		5  & 50	& & \\
+		5  & 20 & 11.8\\
 		\hline
-		10  & 50	& &  \\
+		10 & 20 &  9.6\\
 		\hline
-		15 & 50	& & \\
+		15 & 20 & 10.9\\
 		\hline
-		20  & 50	& & \\
+		20  & 20 & 8.7\\
 		\hline
-		25  & 50	& & \\
+		25  & 20 & 11.1\\
 		\hline
-		30  & 50	& & \\
+		30  & 20 & 13\\
 		\hline
-		35  & 50	& & \\
+		35  & 20 & 11.4\\
 		\hline
-		40  & 50	& & \\
+		40  & 20 & 10\\
 		\hline
-		45  & 50	& & \\
+		45  & 20 & 11.2\\
 		\hline
-		50  & 50	& & \\
+		50  & 20 & 12.1\\
 		\hline
-		55  & 50	& & \\
+		55  & 20 & 11.4\\
 		\hline
-		60  & 50	& & \\
+		60  & 20 & 11.5\\
 		\hline
-		65  & 50	& & \\
+		65  & 20 & 11.2\\
 		\hline
-		70  & 50	& & \\
+		70  & 20 & 11\\
 		\hline
-		75  & 50	& & \\
+		75  & 20 & 9.4\\
 		\hline
-		80  & 50	& & \\
+		80  & 20 & 13.1\\
 		\hline
-		85  & 50	& & \\
+		85  & 20 & 8.9\\
 		\hline
-		90  & 50	& & \\
+		90  & 20 & 5.3\\
 		\hline
-		95  & 50	& & \\
+		95  & 20 & 5\\
 		\hline
-		100  & 50	& & \\
+		100  & 20 & 6.2\\
 		\hline
-		105  & 50	& & \\
+		105  & 20 & 5.5\\
 		\hline
-		110  & 50	& & \\
+		110  & 10 & 5\\
 		\hline
-		115  & 50	& & \\
+		115  & 10 & 6.2\\
 		\hline
-		120  & 50	& & \\
+		120  & 10 & 5.5\\
 		\hline
-		125  & 50	& & \\
+		125  & 10 & 5\\
 		\hline
-		130  & 50	& & \\
+		130  & 10 & 5\\
 		\hline
-		135  & 50	& & \\
+		135  & 10 & 6.9\\
 		\hline
-		140  & 50	& & \\
+		140  & 10 & 5.1\\
 		\hline
-		145  & 50	& & \\
+		145  & 10 & 5.2\\
 		\hline
-		150  & 50	& & \\
+		150  & 10 & 6\\
 		\hline
 	\end{tabu}
 	\caption{Average Results | Neural vs Unaggressive}
 	\label{table:5}
 \end{table}
 
-GRAPH THESE AS PERCENTAGES
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{Una1.png}
+	\caption{Average Results vs Unaggressive}
+\end{figure}
+
+\newpage
+These average results affirm scepticism about the likelihood of any consistency in terms of machine learning and progressive improvement in performance. However, these results show that the neural players were winning the majority of their generation's games, with the exception of a handful. It is important to remember that the unaggressive player is less likely to play cards that significantly hinder the chances of neural success, though.
 
 \subsubsection{Neural vs Random}
-.
+When the network took on the random strategy, it appears to have played worse on average than it did in the previous results. With the exception of a single sub-30\% generation, the average does not stray far below the 50\% win rate. Again, there are no exceptionally successful generations. However, the unpredictability may present a mildly more authentic opponent.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{Rand1.png}
+	\caption{Average Results vs Random}
+\end{figure}
 
 \newpage
 \begin{table}[h!]
-	\begin{tabu} to \textwidth { | X[c] | X[c] | X[c] | X[c] |}
+	\begin{tabu} to \textwidth { | X[c] | X[c] | X[c] |}
 		\hline
-		Generation & Population Size & Average Wins & Average Losses \\
+		Generation & Population Size & Average Wins \\
 		\hline
-		1  & 50	&  &  \\
+		1  & 20  & 9 \\
 		\hline
-		5  & 50	& & \\
+		5  & 20 & 8.9\\
 		\hline
-		10  & 50	& &  \\
+		10 & 20 & 11.5\\
 		\hline
-		15 & 50	& & \\
+		15 & 20 & 9.9\\
 		\hline
-		20  & 50	& & \\
+		20  & 20 &7.5\\
 		\hline
-		25  & 50	& & \\
+		25  & 20 &7.6 \\
 		\hline
-		30  & 50	& & \\
+		30  & 20 & 10.9\\
 		\hline
-		35  & 50	& & \\
+		35  & 20 & 8.9\\
 		\hline
-		40  & 50	& & \\
+		40  & 20 &  10.9\\
 		\hline
-		45  & 50	& & \\
+		45  & 20 & 10.6\\
 		\hline
-		50  & 50	& & \\
+		50  & 20 &9.4 \\
 		\hline
-		55  & 50	& & \\
+		55  & 20 &8.3 \\
 		\hline
-		60  & 50	& & \\
+		60  & 20 &10.7\\
 		\hline
-		65  & 50	& & \\
+		65  & 20 &7.3\\
 		\hline
-		70  & 50	& & \\
+		70  & 20 &9.7 \\
 		\hline
-		75  & 50	& & \\
+		75  & 20 &7.7 \\
 		\hline
-		80  & 50	& & \\
+		80  & 20 & 11.2\\
 		\hline
-		85  & 50	& & \\
+		85  & 20 & 9.8 \\
 		\hline
-		90  & 50	& & \\
+		90  & 20 & 10.3\\
 		\hline
-		95  & 50	& & \\
+		95  & 20 &8.9 \\
 		\hline
-		100  & 50	& & \\
+		100  & 20 &9.7 \\
 		\hline
-		105  & 50	& & \\
+		105  & 20 &9.3 \\
 		\hline
-		110  & 50	& & \\
+		110  & 10 & 4.3\\
 		\hline
-		115  & 50	& & \\
+		115  & 10 &2.9 \\
 		\hline
-		120  & 50	& & \\
+		120  & 10 &4.8 \\
 		\hline
-		125  & 50	& & \\
+		125  & 10 & 4.1\\
 		\hline
-		130  & 50	& & \\
+		130  & 10 & 5.4\\
 		\hline
-		135  & 50	& & \\
+		135  & 10 & 4\\
 		\hline
-		140  & 50	& & \\
+		140  & 10 &5.9 \\
 		\hline
-		145  & 50	& & \\
+		145  & 10 & 5.9 \\
 		\hline
-		150  & 50	& & \\
+		150  & 10 & 4.3\\
 		\hline
 	\end{tabu}
 	\caption{Average Results | Neural vs Random}
 	\label{table:6}
 \end{table}
 
-GRAPH THESE AS PERCENTAGES
 
-\subsubsection{Neural vs Aggressive}
-.
 \newpage
+\subsubsection{Neural vs Aggressive}
 \begin{table}[h!]
-	\begin{tabu} to \textwidth { | X[c] | X[c] | X[c] | X[c] |}
+	\begin{tabu} to \textwidth { | X[c] | X[c] | X[c] |}
 		\hline
-		Generation & Population Size & Average Wins & Average Losses \\
+		Generation & Population Size & Average Wins \\
 		\hline
-		1  & 50	&  &  \\
+		1  & 20  & 9.2 \\
 		\hline
-		5  & 50	& & \\
+		5  & 20 & 10.1\\
 		\hline
-		10  & 50	& &  \\
+		10 & 20 &  10.1\\
 		\hline
-		15 & 50	& & \\
+		15 & 20 & 8.7\\
 		\hline
-		20  & 50	& & \\
+		20  & 20 & 10.2\\
 		\hline
-		25  & 50	& & \\
+		25  & 20 & 9.4\\
 		\hline
-		30  & 50	& & \\
+		30  & 20 & 9.3\\
 		\hline
-		35  & 50	& & \\
+		35  & 20 & 7.7 \\
 		\hline
-		40  & 50	& & \\
+		40  & 20 & 11.5\\
 		\hline
-		45  & 50	& & \\
+		45  & 20 & 9.1 \\
 		\hline
-		50  & 50	& & \\
+		50  & 20 & 6.8 \\
 		\hline
-		55  & 50	& & \\
+		55  & 20 & 9.4\\
 		\hline
-		60  & 50	& & \\
+		60  & 20 & 7.2\\
 		\hline
-		65  & 50	& & \\
+		65  & 20 & 8.6\\
 		\hline
-		70  & 50	& & \\
+		70  & 20 & 8.7\\
 		\hline
-		75  & 50	& & \\
+		75  & 20 & 10.4\\
 		\hline
-		80  & 50	& & \\
+		80  & 20 & 9.4\\
 		\hline
-		85  & 50	& & \\
+		85  & 20 & 9.7\\
 		\hline
-		90  & 50	& & \\
+		90  & 20 & 9.8\\
 		\hline
-		95  & 50	& & \\
+		95  & 20 & 8.7\\
 		\hline
-		100  & 50	& & \\
+		100  & 20 & 10\\
 		\hline
-		105  & 50	& & \\
+		105  & 20 & 10\\
 		\hline
-		110  & 50	& & \\
+		110  & 10 & 4\\
 		\hline
-		115  & 50	& & \\
+		115  & 10 & 4.7\\
 		\hline
-		120  & 50	& & \\
+		120  & 10 & 4.7 \\
 		\hline
-		125  & 50	& & \\
+		125  & 10 & 4.4 \\
 		\hline
-		130  & 50	& & \\
+		130  & 10 & 4.5 \\
 		\hline
-		135  & 50	& & \\
+		135  & 10 & 3.4 \\
 		\hline
-		140  & 50	& & \\
+		140  & 10 & 3.9 \\
 		\hline
-		145  & 50	& & \\
+		145  & 10 & 6.6\\
 		\hline
-		150  & 50	& & \\
+		150  & 10 & 4.2\\
 		\hline
 	\end{tabu}
 	\caption{Average Results | Neural vs Aggressive}
 	\label{table:7}
 \end{table}
 
-GRAPH THESE AS PERCENTAGES
+\newpage
+The attacking nature of this opponent made it the most likely to hurt the network's success rate. The data concurs, as almost all of the generations won less than half of their games on average. Interestingly, one of the later generations broke the trend with some consistently high win rates, but the huge drop from that generation to five generations later suggests that this was coincidental good fortune.
 
-\subsubsection{Free For All }
-Every radge for eezsel
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{Agg1.png}
+	\caption{Average Results vs Aggressive}
+\end{figure}
 
-Just do a pretty short, 1 replicate, fatal four way thing
-. . . . . . . 
+%\newpage
+%\subsubsection{Free For All }
+%Every radge for eezsel
 
+%Just do a pretty short, 1 replicate, fatal four way thing
+%. . . . . . . 
 \begin{small}
 	\begin{center}
 		\textit{All results can be downloaded from my website (Appendix E).}
 	\end{center}
 \end{small}
 
-\subsection{Agent vs Human(s)}
-[Future work] move to evaluation 
+\subsection{Deeper Examination}
+Graphing the average win rate merely shows that success fluctuates across the range, largely due to the stochastic nature of the card game at hand. 
 
-\subsection{Agent vs Agent}
-[Potential future work]
+Using box charts to further investigate the results provides more interesting information about the games. However, while this new evaluative approach delves more into the success rate of generations, the set needed to be more sparse for the sake of graph readability. Thus, the generations are split quarterly to one hundred, including the first generation. \\
+
+The height of each box indicates the standard deviation of the corresponding generation. Simply put, standard deviation is a means of calculating the variance from the average across all of the values - in this case games won. The horizontal line across the boxes represent the (previously inspected) median, and the lines attached to the vertical line through the centre are error bars; Used to represent extremes and uncertainty of the dataset. The circles are the actual values.
+
+\newpage
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{BoxUna.jpg}
+	\caption{Box Chart | Neural vs Unaggressive}
+\end{figure}
+
+Despite the fact that there are 24 missing generations between each box, there appears to be a trend with the unaggressive opposition. It looks as if the generations became more consistent. Albeit in a less-successful manner, it appears that the variety across experiments was reduced over time. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{BoxRand.jpg}
+	\caption{Box Chart | Neural vs Random}
+\end{figure}
+
+The random chart is interesting. Taking a look at generation 25, average performance was below 50\%. Despite this, one of the replicates of this experiment won all 20 games. This generation is the only one pictured with an outlier. Had there been a trend of highly successful outliers across the graph, perhaps there would be an argument that it is possible to perform strongly in a consistent manner, or that the network had maintained a plausible strategy. This is unfortunately not the case though, as the graph shows that even that collection of games dropped back down to a lower win rate and managed to blend in with the other results.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{BoxAgg.jpg}
+	\caption{Box Chart | Neural vs Aggressive}
+\end{figure}
+
+Eyes are immediately drawn to the 50th generation in the aggressive chart. Worse off than the 1st and 25th generation, our middle box shows a real dip in form for the neural player when taking on aggressive opposition. The extremes also show large fluctuation, including a generation that lost every game. 
+
+Losing every game would result in a complete rebuild in the population, and so the next generations would be expected to perform poorly too.\\ 
+
+Breaking down the gap in the graph, relative to the winless experiment:
+
+\begin{table}[h!]
+	\begin{tabu} to \textwidth { | X[c] | X[c] | X[c] |}
+		\hline
+		Generation & Population Size & Wins \\
+		\hline
+		55  & 20  & 14 \\
+		\hline
+		60 & 20 & 3\\
+		\hline
+		65 & 20 & 5\\
+		\hline
+		70 & 20 & 13\\
+		\hline
+	\end{tabu}
+	\caption{Investigating Aggressive Extremes}
+	\label{table:8}
+\end{table}
+
+Unsurprisingly, the stochastic nature of dealing cards in the beginning of games has thoroughly skewed the data.
+
+\newpage
+\subsection{Evolution | Mating vs Mutating}
+As seen in Figure 13, the NeuroEvolution input file had a \enquote{mate only probability} value of 0.2, and a \enquote{mutate only probability} of 0.25. These variables were experimented with in this subsection. Creating a 75\% to 25\% split in produced the following charts.  
+%\newpage
+\subsubsection{Comparison | Unaggressive}
+
+%Have these two figures next to each other
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{BoxUna2.jpg}
+	\caption{Box Chart | Neural vs Unaggressive | Mating }
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{BoxUna3.jpg}
+	\caption{Box Chart | Neural vs Unaggressive | Mutation}
+\end{figure}
+
+In terms of the diagram flow, the two are very similar. In the mutation tests, generation 25 did better than in the mating example, while the 100th generation did more poorly.
+
+Although nothing to do with the evolution, the first generation gathered results in a more confined range in the first graph, but then created a diverse range by the 25th generation, whereas the mutation example maintained a similar standard deviation throughout, with the exception of the final box in the graph, which shows considerable expansion by contrast.  
+
+%\newpage
+\subsubsection{Comparison | Aggressive}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{BoxAgg2.jpg}
+	\caption{Box Chart | Neural vs Aggressive | Mating}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{BoxAgg3.jpg}
+	\caption{Box Chart | Neural vs Aggressive | Mutation}
+\end{figure}
+
+Overall, neither mating nor mutation present themselves as the more suitable candidate for the primary method of evolution. Both are unfairly offset by the stochastic nature of the game, and are fighting a losing battle.\\
+
+Across the board, all presented results seem to perform to a mid-range rate of success; Even the hard-coded results are all have a winning score of just above 500 out of 1000. This suggests that regardless of the approach to the game, anyone can and will perform in to an average level.\\
+
+\subsection{External Comparisons}
+In a game such as chess with a wide variety of possible moves at any given time, coupled with a knowledge of the opposing players board positions throughout, allows for an intricate neural network setup for evaluating fitness. While it would still present an extremely difficult task to maintain a fair balance with this method, access to the variable values helps quantify the effectiveness of a move.
+
+Contrastingly, Switch is full of unknowns. For example, in chess (assuming a clear understanding of the rules) a player can see potential consequences of making a move before you do it. Meanwhile, in Switch, playing a particular card may make or break a game, with no way of knowing what the potential consequences are without knowing the opponent's hand. 
+
+For example, imagine the neural player has two cards left, and the opposing player is down to their last card. These two cards are the 9 of Hearts, and the 9 of Clubs. The card to be played on top of is the 9 of Diamonds. The neural player then has a decision to make, as both cards are playable. With no idea what the other player holds, the decision cannot be based on anything, and so a card just has to be selected. Now suppose the neural player chooses the 9 of Hearts, and the opponent does not have a Heart, or another 9. This paves the way to victory, as the remaining card can be played. However, if 9 of Clubs had been played instead, it may have allowed the other player to release their final card, which was a club. Similarly, if the opponent had more than one card left in the same scenario, playing the club first may have resulted in the Queen of Clubs being played, forcing the neural player to go from one card to six. Without knowing what other players hold, there is no way to predict the consequence of actions in this way, thus making evaluating the fitness in relation to playing cards would not accurately represent the adequacy of an organism playing the game. 
+
+Thus, without an evaluational function linked to specific cards, it is unlikely to see a case of over-fitting like that on show in the MarI/O simulation where the network learned to continually jump through the level. However, it is not impossible that a card may grow to be favoured over a period of several generations. As previously mentioned, it is possible for an organism to win a single game, and then be killed off for losing immediately after, and so that organism is not going to continue to try to play its favoured card, but due to the fitness being evaluated in a binary fashion in this project, there is a good fair chance that such an organism would be chosen for mating to replace a loser from the population that this one had found success in. As a result of that, it is not impossible for similarities to breed. However, it is safe to assume that any such trend would be minor enough to go undetected. 
 
 \newpage
 \section{Critical Evaluation}
-\begin{itemize}
-	\item Gantt chart from beginning of project
-	\item Gantt chart from week 9 milestone (ie now, when lit review is done)
-	\item Gantt chart at Christmas/New Year
-	\item Completed project gantt chart 
-\end{itemize}
 
+\subsection{Achievements vs Objectives}
+The initial idea for the project was to build a digital version of the card game Switch, which would be playable by humans, against a neural network. The network would have no indication on what it should do, and how to play the game, with measures in place to ensure that the game did not get stuck, and there were methods of influencing the fitness to promote machine learning in relation to the rules and objective of the game. 
+
+Switch was built and tested in a timely manner to meet the scheduled Christmas target - with the final issue being resolved on Boxing Day in the early hours. The game ran smoothly, had a graphical user interface, and could be played by humans. I was very happy with the project at that stage. 
+
+That happiness was short lived as getting NEAT working turned out to be a real challenge. Without even incorporating any of my own work, WindowsNEAT refused to compile. Having written over 2000 lines of code for my game, I was reluctant to try switching languages, and so I tried to persevere - but to no avail. 
+
+Fortunately I have a Macbook, and was able to get the original version of NEAT to work with that. However, that took far longer than I could have anticipated, as the next section will show. Xcode, the programming environment I used on the Macbook, did not like my code. A lot of alterations had to be made for compatibility reasons, and for a while it seemed like fixing one problem bred two more. Eventually NEAT was bedded in, and I was then able to write my own code to interface the two applications, with some alterations in my own program to accommodate. 
+
+As a result of the switch of operating system, the graphics had to be removed. The library that had been used on Windows does have a Mac version, but enough time was being lost without having to rewrite that as well. Unfortunately this meant losing the functionality of human players too. The code for humans is still in the game, but they are now sadly obsolete. 
+
+This was hugely disappointing as I'd hoped to round up my friends from high school against whom I used to play Switch, and ask them to partake in surveys to use as extra results data. 
+
+\newpage
+\subsection{Project Management}
+At the beginning of the project, a draft timeline was produced. This would always be subject to change, but setting mini-deadlines can help to keep a realistic view of how much time remains for the project.
 
 \begin{figure}[h]
 	\centering
@@ -990,21 +1112,19 @@ Just do a pretty short, 1 replicate, fatal four way thing
 	\caption{Original Project Timeline Gantt Chart}
 \end{figure}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = \textwidth]{Gantt2.png}
-	\caption{Updated Gantt Chart - New Year}
-\end{figure}
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width = \textwidth]{Gantt2.png}
+%	\caption{Updated Gantt Chart - New Year}
+%\end{figure}
 
 The research phase of the project ran a little over the initial prediction, but as it ran concurrently with game development, I was able to recover without any early knock-on effects. The foundation of my card game had always been targeted for completion by Christmas - and the final bug was crushed in the small hours of the morning on boxing day. 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = \textwidth]{Gantt3.png}
-	\caption{Post-AI Project Gantt Chart}
-\end{figure}
-
-AI implementation took far longer than anticipated, and so the final two stages had to be re-evaluated for the final stretch. 
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width = \textwidth]{Gantt3.png}
+%	\caption{Post-AI Project Gantt Chart}
+%\end{figure}
 
 \begin{figure}[h]
 	\centering
@@ -1012,16 +1132,22 @@ AI implementation took far longer than anticipated, and so the final two stages 
 	\caption{Complete Project Gantt Chart}
 \end{figure}
 
+AI implementation took far longer than anticipated due to an unprecedented amount of unforseen issues, and so the final two stages had to be re-evaluated for the final stretch. As a result, these were forced to be completed semi-synergistically.\\
+
+Despite a much less comfortable closing stage than hoped for, experimentation and evaluation did not suffer to a severe extent.\\
+
 \subsection{Future Work}
-The code for human vs neural play IS there, but the problems with SFML when switching to the mac removed that playability. Hopefully in future I'll be able to incorporate the mac version of SFML to this project, and allow for human vs AI gameplay. It probably wouldn't take much to fix but the switch had cost me enough time as it was without trying to figure that out too. \\
+I intend to revive the human players by re-introducing SFML, this time with the Mac version. I may also tackle WindowsNEAT again in a bid to make the project accessible on both systems.\\
 
-It would also be cool to implement neural vs neural, but unfortunately we ran out of time for that. Again, I'd imagine it'd be pretty simple. Just create a "Neural2" playstyle for players, and copy and paste the neural rules from Game.h and change Neural to Neural2. Of course, I'd also need to create a second network and pass that in from NEAT to my game. 
-
-Tbh I might try it just to say like I've done this but didn't have time to properly guage results. Maybe I'll just run one massive fuckin test with it and be like bruh take it or leave it  
+It would also be interesting to facilitate multiple neural players with their own networks.\\
 
 \newpage
 \section{Conclusion}
+Switch is not a game that can be mastered. Players can develop their attitude and methods of play but there is no reliable formula for success, and the hard-coded data proves this. When aggressive and unaggressive play-styles square off, the attacking strategy should theoretically perform extremely well, but the degree at which luck enters the equation means that this is far from the case. No matter how many experiments and generations of tests are carried out, the network is never going to be able to defeat a Switch champion, as such a being does not exist. 
 
+Realistically speaking, the average performance of neural players is akin to that of a human player. Of course, a human that knows the rules well will be able to exercise caution in certain scenarios that the network would not recognise as a potential pitfall, such as choosing to play a Queen of Hearts first when down to two cards and another Heart could've been played first. A human may be aware that they have not seen any black Queens for a while and be wary of allowing one to be played against themselves by selecting their red Queen, whereas the network will not have this kind of information. Or similarly, if all three other Queens have recently been played, playing the Queen of Hearts would guarantee that the opponent has to either pick up or play another Heart, allowing the last card to be played and claim victory. 
+
+Even if allowed to play through every possible permutation of game states repeatedly, it would still be impossible to master the game because there is no way of knowing what the game state is! The only knowledge available is the last card, and the contents of your hand. Thus, it is virtually impossible to truly evaluate effectiveness of the evolution at play throughout the project, as there is no benchmark for what a \textit{good} level entails. 
 
 \newpage
 \bibliographystyle{plainnat}
@@ -1119,12 +1245,21 @@ Exploring possibilities and limits of AI in games, particularly evolved controll
 
 \newpage
 \section{Timeline Gantt Charts}
-Insert gantt charts here
+
+\begin{center}
+	{
+		\includegraphics[scale = 0.5]{Gantt1.png}
+		\includegraphics[scale = 0.5]{Gantt2.png}
+		\includegraphics[scale = 0.5]{Gantt3.png}
+		\includegraphics[scale = 0.5]{Gantt4.png}
+	}
+\end{center}
+	
 
 \newpage
 \section{My Website}
 \href{http://www.x4iiiis.com/honoursproject}
-{\includegraphics[width=\textwidth]{Website.jpg}}
+{\includegraphics[width=\textwidth]{Website.png}}
 
 \begin{center}
 	{\href{http://www.x4iiiis.com/honoursproject}{www.x4iiiis.com/honoursproject}}
@@ -1145,9 +1280,17 @@ Playing card textures used in NeuroSwitch were courtesy of Kenney Vleugels, comi
 
 \newpage
 \section{NEAT Documentation/Tutorial}
-Link to original download
+The documentation file used throughout the use of the NEAT library is found as part of a download at the link below. The file is called NEATDOC.ps.
 
-Link to pdf on x4iiiis.com
+\begin{center}
+\href{http://www.cs.utexas.edu/users/nn/downloads/software/neat.1.1.tar.gz}{http://nn.cs.utexas.edu/soft-view.php?SoftID=4}
+\end{center}
+
+Alternatively it can be viewed as a Portable File Format at
+
+\begin{center}
+	\href{http://x4iiiis.com/honours/NEATDOC.pdf}{www.x4iiiis.com/honours/NEATDOC.pdf}
+\end{center}
 
 %\newpage
 %\section{Appendix 7 and following}

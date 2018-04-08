@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -112,6 +112,11 @@ Simon~M. Lucas.
 \newblock \emph{Proceedings of the 2005 {IEEE S}ymposium on {C}omputational
   {I}ntelligence and {G}ames}, 2005.
 
+\bibitem[Microsoft()]{sharedptr}
+Microsoft.
+\newblock How to: {C}reate and {U}se shared$\_$ptr {I}nstances.
+\newblock URL \url{https://msdn.microsoft.com/en-us/library/hh279669.aspx}.
+
 \bibitem[Nelson(2016)]{27}
 Nick Nelson.
 \newblock Mario {K}art 64 with {N}eural {E}volution of {A}ugmenting
@@ -155,6 +160,11 @@ SethBling.
 \newblock URL \url{https://www.youtube.com/watch?v=qv6UVOQ0F44}.
 \newblock Source code: https://pastebin.com/ZZmSNaHX.
 
+\bibitem[SFML()]{SFML}
+SFML.
+\newblock Simple and {F}ast {M}ultimedia {L}ibrary.
+\newblock URL \url{https://www.sfml-dev.org}.
+
 \bibitem[Smith()]{21}
 Mat Smith.
 \newblock Japan's {L}atest {H}umanoid {R}obot {M}akes its {O}wn {M}oves.
@@ -178,6 +188,11 @@ Kenneth~O. Stanley and Risto Miikkulainen.
 \newblock Evolving a {R}oving {E}ye for {G}o.
 \newblock \emph{Proceedings of the {G}enetic and {E}volutionary {C}omputation
   {C}onference}, 2004.
+
+\bibitem[Techopia()]{31}
+Techopia.
+\newblock Singleton.
+\newblock URL \url{https://www.techopedia.com/definition/15830/singleton}.
 
 \bibitem[Thrun(1995)]{L2PChess}
 Sebastian Thrun.
