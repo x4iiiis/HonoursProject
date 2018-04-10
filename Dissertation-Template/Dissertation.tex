@@ -86,7 +86,7 @@
 
 %LaTeX let you define the abstract separately so it wont get sucked into the main document.
 \begin{abstract}
-	Neural networks and evolutionary algorithms have been paired to in game-related research and experimental projects in the field of artificial intelligence many times before, but similar papers are hard to come by when applied to card games.
+	Neural networks and evolutionary algorithms have been paired in game-related research and experimental projects in the field of artificial intelligence many times before, but similar papers are hard to come by when applied to card games.
 	
 	Recreating and using the card game Switch, an investigation into the effectiveness of a machine learning technique of this type in such an environment will take place.
 	
@@ -152,35 +152,35 @@ I am also hugely appreciative of my project supervisor, Dr Simon Powers. Simon h
 \section{Introduction}
 Card games appear to be an unexplored area in relation to neuro-evolution, and this project intends change that. This chapter outlines the project plan for how that will be achieved. \\
 
-\subsection{1.2 - Aims and Objectives}
+\subsection{Aims and Objectives}
 
 The goal of this project is to develop a card game, and incorporate an artificially intelligent autonomous player. The underlying purpose of the project is to research and demonstrate the effectiveness of artificial neural networks and evolutionary algorithms in a game of this type.  \\
 
 In order to achieve this goal, smaller objectives must be reached. These include researching and learning about neural networks and evolutionary algorithms, building a card game from scratch, and then gathering data from an extensive testing regime. This data must then be critically evaluated and discussed. \\
 
-\subsection{1.3 - Scope}
+\subsection{Scope}
 The game will be constructed for two to four players - human or otherwise. An increased number of players may break the game due to running out of cards. \\
 
-\subsection{1.4 - Constraints}
+\subsection{Constraints}
 The project begins as a first endeavour into researching and working with artificial intelligence techniques. As a result, this project will not only involve the development of an intricate game system, and gathering and evaluating experimental results, but a lot of learning will also need to take place. \\
 
-\subsection{1.5 - Sources of Information} 
-Sixteen years prior to this project, researchers at The University of Texas at Austin published a paper in which they detailed the development of their innovative neural network evolution library\citep{NEAT} entitled, \enquote{NeuroEvolution of Augmenting Topologies,} or \enquote{NEAT} in abbreviated form. The library has been converted to several programming languages over the years; However this project will stick with the original C++ version. The NEAT library will be discussed in depth in the Methodology section of this dissertation.
+\subsection{Sources of Information} 
+Sixteen years prior to this project, researchers at The University of Texas at Austin published a paper in which they detailed the development of their innovative neural network evolution library\citep{NEAT} entitled, \enquote{NeuroEvolution of Augmenting Topologies,} or \enquote{NEAT} in abbreviated form. The library has been converted to several programming languages over the years; However, this project will stick with the original C++ version. The NEAT library will be discussed in depth in the Methodology section of this dissertation.
 
 The documentation file in Appendix G will be used to aid work with the NEAT library.\\
 
 %This project will be built in C++, and will need to be compiled to a minimum of C++11 standard due to the use of shared pointers.\\
 
-The graphical element of the project will be developed with SFML imported. SFML stands for Simple and Fast Multimedia Library, and \enquote{provides a simple interface to the various components of your PC, to ease the development of games and multimedia applications\citep{SFML}.}\\
+The graphical element of the project will be developed with Simple and Fast Multimedia Library (SFML) imported. SFML \enquote{provides a simple interface to the various components of your PC, to ease the development of games and multimedia applications\citep{SFML}.}\\
 
 
-\subsection{1.6 - Dissertation Structure}
-The current chapter provides an introduction to the project, explaining the ambitions and rationale. Chapter 2 provides a background to the field of artificial intelligence with respect to games development. This is followed by a literature review, discussing previous and current projects with similarities to this topic. The rules of the Switch card game are briefly explained in chapter 4, before chapter 5 explains the technicalities of the development phase. Results are then discussed, and chapter 7 evaluates the project as a whole. A summary is provided in the final chapter. \\
+\subsection{Dissertation Structure}
+The current chapter provides an introduction to the project, explaining the ambitions and rationale. Chapter 2 provides a background to the field of artificial intelligence with respect to games development. This is followed by a literature review, discussing previous and current projects with similarities to this topic. The rules of the Switch card game are briefly explained in Chapter 4, before Chapter 5 explains the technicalities of the development phase. Results are then discussed, and Chapter 7 evaluates the project as a whole. A summary is provided in the final chapter. \\
 
  \subsection{Overview Of Project Content and Milestones}
 Milestones and objectives for the project are as follows: 
 \subsubsection{Research}
-Neural networks and Evolutionary algorithms research is necessary to aid with the project development and to make up for current lack of knowledge
+Neural networks and evolutionary algorithms research are necessary to aid with the project development and to make up for current lack of knowledge.
 
 \subsubsection{Game Foundation}
 A short-term goal of the project is to create a bare-bones version of the card game without any artificial intelligence. This has to be created as it is the foundation on which the rest of the project will reside, and as such it needs to be rigorously tested to ensure that the rules of the game have been correctly implemented without any bugs. That way, any future problems will be related to the artificial intelligence itself.
@@ -216,7 +216,7 @@ With Go, developers are unable to use brute force approaches due to the vastly c
 
 This would theoretically result in AlphaGo performing at a similar level to that of the human players it learned from. To go above and beyond that level, and to be able to beat a champion like Sedol, AlphaGo was then put up against itself, consequently improving with every game it played\citep{13}. It can be said that in this phase, AlphaGo literally taught itself. 
 
-In terms of Chess, a machine managed to win against a human of World Champion status named Gerry Kasparov in the late 1990s\citep{14}. That machine was Deep Blue. In actual fact, it was the second version of IBM's Deep Blue. The first Deep Blue lost to the same opponent a year prior to it's successor's achievement in 1997\citep{14}. That success came in the form of two wins, a loss, and three draws\citep{15}, over the course of several days. However, IBM did not use artificial intelligence with Deep Blue, relying instead on computational power and a less complex search and evaluation function\citep{16}. \\
+In terms of Chess, a machine managed to win against a human of World Champion status named Gerry Kasparov in the late 1990s\citep{14}. That machine was Deep Blue. In actual fact, it was the second version of IBM's Deep Blue. The first Deep Blue lost to the same opponent a year prior to its successor's achievement in 1997\citep{14}. That success came in the form of two wins, a loss, and three draws\citep{15}, over the course of several days. However, IBM did not use artificial intelligence with Deep Blue, relying instead on computational power and a less complex search and evaluation function\citep{16}. \\
 
 \subsection{What is a Neural Network?}
 Artificial neural networks, commonly referred to simply as neural networks, are a rough representation of the human brain. Human brains can be thought of as highly complex and non-linear systems for processing information in parallel\citep{NeuralNetworksAComprehensiveFoundation}. 
@@ -232,9 +232,10 @@ One type of artificial neuron (or node) is known as a \enquote{perceptron.} Each
 	\centering
 	\includegraphics{Perceptron.png}
 	\caption{A Single Perceptron}
+	\centering{\citep{NeuralNetworksAndDeepLearning}}
 \end{figure}
 
-Frank Rosenblatt, the scientist who developed the perceptron in the 1950s and 1960s, devised a rule for computing the output from these neurons. Using what he called \enquote{weights,} the importance of each input is assessed and expressed. Each input has a weight assigned to it, and the resultant output from these inputs - either a 1 or 0 - is dependent on whether or not some threshold value is less than or greater than the sum of the weights from all of the inputs to that particular perceptron. Therefore, if the weighted sum is less than or equal to the threshold value, the output is a 0. Otherwise, a 1\citep{NeuralNetworksAndDeepLearning}. Both the threshold value and the input weights are real numbers. These can be tweaked to alter the decisions made by a neural network. 
+Frank Rosenblatt, the scientist who developed the perceptron in the 1950s and 1960s, devised a rule for computing the output from these neurons. Using what he called \enquote{weights,} the importance of each input is assessed and expressed. Each input has a weight assigned to it, and the resultant output from these inputs - either a 1 or 0 - is dependent on whether or not some threshold value is less than or greater than the sum of the weights from all of the inputs to that particular perceptron. Therefore, if the weighted sum is less than or equal to the threshold value, the output is a 0; Otherwise, a 1\citep{NeuralNetworksAndDeepLearning}. Both the threshold value and the input weights are real numbers. These can be tweaked to alter the decisions made by a neural network. 
 
 \subsubsection{Sigmoid Neurons}
 
@@ -327,24 +328,28 @@ Crossover can be defined in a few ways. There is one-point crossover, where a ra
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width = \textwidth]{OnePointCrossover.png}
+	\includegraphics[width = \textwidth]{one_point_crossover.jpg}
 	\caption{One-Point Crossover}
+	\centering{\citep{crossover}}
 \end{figure}
 
 Next, n-point crossover is when more than one (n) point is chosen, and chromosomes can be split up in different ways, as seen in Figure 5. 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width = \textwidth]{NPointCrossover.png}
+	\includegraphics[width = \textwidth]{multi_point_crossover.jpg}
 	\caption{N-Point Crossover}
+	\centering{\citep{crossover}}
 \end{figure}
 
+%\newpage
 Another type of crossover is called uniform. In this case, each gene of the offspring is randomly selected by deciding which of the two parents to inherit from. This is demonstrated in Figure 6.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width = \textwidth]{UniformCrossover.png}
+	\includegraphics[width = \textwidth]{uniform_crossover.jpg}
 	\caption{Uniform Crossover}
+	\centering{\citep{crossover}}
 \end{figure}
 
 
@@ -352,8 +357,9 @@ In the case of arithmetic crossover, an average of the two parent genes is calcu
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width = \textwidth]{ArithmeticCrossover.png}
+	\includegraphics[width = \textwidth]{arith_crossover.png}
 	\caption{Arithmetic Crossover}
+	\centering{\citep{crossover}}
 \end{figure}
 
 All of the above techniques are used in binary and integer chromosome representations. Permutations cannot be recombined using any of these techniques, but are beyond the scope of this project. 
@@ -369,22 +375,18 @@ Like with crossover, there are different ways to perform mutation. In the case o
 	\centering
 	\includegraphics[width = \textwidth]{BinaryMutation.png}
 	\caption{Binary Mutation}
+	\centering{\citep{mutation}}
 \end{figure}
 
-Integers are slightly different. The probability is remains the same, but the difference is that a set of possible numbers, for example 0 to 9, is set up and when a gene is chosen for mutation, a number within that range is randomly generated and used in the offspring. This is displayed in Figure 9.\\
-
-%Integer
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = \textwidth]{IntegerMutation.png}
-	\caption{Integer Mutation}
-\end{figure}
+\newpage
+Integers are slightly different. The probability remains the same, but the difference is that a set of possible numbers, for example 0 to 9, is set up and when a gene is chosen for mutation, a number within that range is randomly generated and used in the offspring. 
  
 Again, permutations work in a completely different way, but are not considered as part of this project. 
 
 \subsubsection{Replacement}
-This is the part where individuals are removed from the population to make way for a generation of new and hopefully improved genotypes. We could just remove the oldest genotype in the population, but this could be one with a high fitness! This can also be done randomly, but again there's a risk that we could be removing individuals of high quality. The other way is to determine which individuals to remove using the fitness. We could just get rid of the least fit genotypes, which could lead to the population improving very quickly, however it could also lead to premature convergence.\\
+This is the part where individuals are removed from the population to make way for a generation of new and hopefully improved genotypes. We could just remove the oldest genotype in the population, but this could be one with a high fitness! This can also be done randomly, but again there is a risk that we could be removing individuals of high quality. The other way is to determine which individuals to remove using the fitness. We could just get rid of the least fit genotypes, which could lead to the population improving very quickly, however it could also lead to premature convergence.\\
 
+\newpage
 \subsection{NeuroEvolution for Augmenting Topologies (NEAT)}
 \enquote{NEAT is a method for evolving speciated neural networks of arbitrary structures and sizes. NEAT leverages the evolution of structure to make neuroevolution more efficient}\citep{NEAT}.
 
@@ -443,13 +445,13 @@ When researching neural networks in relation to games, a stand-out is MarI/O. Th
 %Probably need to ask for permission to use that 
 %Sent a message on facebook to request permission
 
-Despite that description, the intelligence of MarI/O is questionable. Although it has mastered the art of manoeuvring its way across the level in question, that is all it has done. In other words, if we were to take the same agent and run it on another Super Mario level, it wouldn't do so well. It has figured out how to pass through the level by continually moving right, and jumping at optimal times to avoid enemies and gaps in the map. Albeit successful, this is not a strategy that could be deemed as \textit{intelligent}.\\
+Despite that description, the intelligence of MarI/O is questionable. Although it has mastered the art of manoeuvring its way across the level in question, that is all it has done. In other words, if we were to take the same agent and run it on another Super Mario level, it would not do so well. It has figured out how to pass through the level by continually moving right, and jumping at optimal times to avoid enemies and gaps in the map. Albeit successful, this is not a strategy that could be deemed as \textit{intelligent}.
 
-For Alan Turing to consider a machine intelligent, it must be able to act in a way that would be indistinguishable from the way a human would act. The Turing Test, created by Turing himself in 1950, was an imitation game whereby a human would hold textual conversations with another human, and with a computer. If the testing human is unable to successfully differentiate between the two based on interrogation within those conversations, then Turing would deem it unreasonable not to call the computer intelligent\citep{TuringTest}.\\
+For Alan Turing to consider a machine intelligent, it must be able to act in a way that would be indistinguishable from the way a human would act. The Turing Test, created by Turing himself in 1950, was an imitation game whereby a human would hold textual conversations with another human, and with a computer. If the testing human is unable to successfully differentiate between the two based on interrogation within those conversations, then Turing would deem it unreasonable not to call the computer intelligent\citep{TuringTest}.
 
-Although dealing in a different realm altogether, applying the same principle to MarI/O and questioning if the strategy it presents could pass a similar test of human judgement to decide whether or not it is a strategy that is likely to have been played by a human, then we cannot possibly declare MarI/O's technique as an intelligent solution.\\
+Although dealing in a different realm altogether, applying the same principle to MarI/O and questioning if the strategy it presents could pass a similar test of human judgement to decide whether or not it is a strategy that is likely to have been played by a human, then we cannot possibly declare MarI/O's technique as an intelligent solution.
 
-Related videos include a Unity3D project that uses NeuroEvolution of Augmenting Technologies (NEAT) to teach a car model how to drive around a purpose-build track\citep{26}, and another neural network that plays Mario Kart 64\citep{27}. Furthermore, there is an interesting tutorial series entitled, \enquote{Python Plays: Grand Theft Auto V}\citep{28}, which makes use of TensorFlow\citep{17}.\\
+Related videos include a Unity3D project that uses NeuroEvolution of Augmenting Technologies (NEAT) to teach a car model how to drive around a purpose-build track\citep{26}, and another neural network that plays Mario Kart 64\citep{27}. Furthermore, there is an interesting tutorial series entitled, \enquote{Python Plays: Grand Theft Auto V}\citep{28}, which makes use of TensorFlow\citep{17}.
 
 %Particularly card games
 \subsection{Why Neural Networks?}
@@ -465,9 +467,9 @@ In Chess, there are 400 configurations possible after each player has made a sin
 
 Additionally, hard-coding solutions to given situations would make the game predictable, and could also lead to making moves that are not actually the best for that current game state. The flexible nature of a neural network provides the potential to reach better solutions that hard-coding might miss out on. 
 
-In our Switch card game for example, there is a rule that states if the previous player played a 2, you must pick up two cards unless you have another 2. Knowing this, and wanting to force our opponent to inherit more cards, we might hard-code a strategy that says, \enquote{if you have a 2 and it is available to be played, play it.} This could cost us a chance to win the game though! 
+In our Switch card game for example, there is a rule that states if the previous player played a 2, you must pick up two cards unless you have another 2. Knowing this, and wanting to force our opponent to inherit more cards, we might hard-code a strategy that says, \enquote{if you have a 2 and it is available to be played, play it.} This could cost an opportunity to win the game though. 
 
-If we only had two cards left, both of the same suit and matching the suit of the most recently played card, one being a 2 and the other being a 7, we could play the 7 first, and that would allow us to play a run of that suit. This would allow us to play both cards and win the game. A neural network might learn that playing a 7 is better than deploying a 2, but our hard-coded strategy may not.\\
+If we only had two cards left, both of the same suit and matching the suit of the most recently played card, one being a 2 and the other being a 7, we could play the 7 first, and that would allow us to play a run of that suit. This would allow us to play both cards and win the game. A neural network might learn that playing a 7 is better than deploying a 2, but our hard-coded strategy may not.
 
 %*****what have people used neural networks for with control problems and how is it related to my problem******\\
 
@@ -475,7 +477,7 @@ Alter\citep{21} is another example implementation of artificial neural networks.
 
 Technologically, it consists of 42 pneumatic actuators and a \enquote{central pattern generator} with a neural network used to let the robot develop movement patterns\citep{21}. The network receives input in the form of sensory data relating to temperature and humidity as well as proximity and noise\citep{22}. 
 
-Although it does not behave in a human-esque manner, Alter is continually perceiving the nearby environment, and reacting to it in such a way that is completely uncontrolled by a human, and not pre-programmed. This is how it somewhat provides the illusion of life. \\
+Although it does not behave in a human-esque manner, Alter is continually perceiving the nearby environment, and reacting to it in such a way that is completely uncontrolled by a human, and not pre-programmed. This is how it somewhat provides the illusion of life. 
 
 RoboCup\citep{23} is a robotics competition whereby robots compete in a game of football (soccer). The competition was launched by Japanese researchers in 1993, who soon after found themselves inundated with requests from other nations to make the project an international joint effort\citep{23}. 
 
@@ -483,9 +485,9 @@ RoboCup Soccer is an annual competition, and the performance of contestants is s
 
 As the robots that participate in these competitions vary in size and shape, detecting fellow robots visually is not a simple task. It is however a job for a neural network of multi-layer perceptrons\citep{24}. Robots should also be able to recognise team-mates and tell them apart from opposing players. 
 
-In terms of playing the game, it is infeasible due to the dynamic nature of the game to consider all situations ahead of time when programming the robot\citep{25}. Machine learning is therefore a necessity for RoboCup participation.\\
+In terms of playing the game, it is infeasible due to the dynamic nature of the game to consider all situations ahead of time when programming the robot\citep{25}. Machine learning is therefore a necessity for RoboCup participation.
 
-To demonstrate the significance of neural networks in the real world, let's look at an open source software library that is used worldwide. 
+To demonstrate the significance of neural networks in the real world, here is a look at an open source software library that is used worldwide. 
 
 Google initially developed TensorFlow, the successor to the DistBelief system they used from 2011\citep{19}, for research in neural networks and machine learning\citep{17}, but has since grown into a much wider-serving interface. It has found itself deployed in complex computational areas such as speech recognition and natural language processing, as well as image recognition\citep{18}. 
 
@@ -498,11 +500,11 @@ Other companies which benefit from the use of TensorFlow include Nvidia, Snapcha
 \subsection{Why Evolve Neural Networks?}
 Artificial neural network evolution has demonstrated positive results with tasks involving reinforcement learning, and has performed especially well with those that include hidden state information\citep{EfficientEvolutionOfNeuralNetworkTopologies}. This appeals to the needs of this project as it deals with unknown game aspects, such as the cards in other people's hands. 
 
-The evolution of neural networks has demonstrated a large degree of potential when coupled with tasks solvable by reinforcement learning techniques\citep{EfficientEvolutionOfNeuralNetworkTopologies}. It outperforms the basic methods of reinforcement learning against tasks that are considered benchmarks, and is therefore a justifiably sought after means of decision making.\\
+The evolution of neural networks has demonstrated a large degree of potential when coupled with tasks solvable by reinforcement learning techniques\citep{EfficientEvolutionOfNeuralNetworkTopologies}. It outperforms the basic methods of reinforcement learning against tasks that are considered benchmarks, and is therefore a justifiably sought after means of decision making.
 
-Another arcade-style game that has been used in the research of neural networks is PAC-MAN. In a particular paper introducing the concept of trying to evolve a player for the retro classic, a simple ghost avoidance strategy was given a hard-coded implementation for comparison purposes. Perhaps expectedly, the results were underwhelming - in particular when compared to other implementations in the same project. The aim was to demonstrate that the neural networks were learning something more sophisticated than such a simple strategy\citep{MSPacMan}. Evolving neural networks and allowing the controller to develop its own strategies, as opposed to hard-coding them, produced universally superior results.\\
+Another arcade-style game that has been used in the research of neural networks is PAC-MAN. In a particular paper introducing the concept of trying to evolve a player for the retro classic, a simple ghost avoidance strategy was given a hard-coded implementation for comparison purposes. Perhaps expectedly, the results were underwhelming - in particular when compared to other implementations in the same project. The aim was to demonstrate that the neural networks were learning something more sophisticated than such a simple strategy\citep{MSPacMan}. Evolving neural networks and allowing the controller to develop its own strategies, as opposed to hard-coding them, produced universally superior results.
 
-Evolved neural networks are not without disadvantages. Their black-box nature means that we don't get an understanding of why it makes certain decisions or takes particular actions, and it can be difficult to modify behaviours. Furthermore, there is the problem of potential overfitting, as previously described with the MarI/O\citep{MarIO} example where the agent has perfected that particular Mario map, but if it were to be placed in a new environment, the same strategy would not suffice. It would be the same as introducing a robot of never before seen size or shape in our RoboCup\citep{24} example, without allowing retraining with images of the new robot machine.\\
+Evolved neural networks are not without disadvantages. Their black-box nature means that we do not get an understanding of why it makes certain decisions or takes particular actions, and it can be difficult to modify behaviours. Furthermore, there is the problem of potential overfitting, as previously described with the MarI/O\citep{MarIO} example where the agent has perfected that particular Mario map, but if it were to be placed in a new environment, the same strategy would not suffice. It would be the same as introducing a robot of never before seen size or shape in our RoboCup\citep{24} example, without allowing retraining with images of the new robot machine.\\
 
 \subsection{Why Co-Evolve Topologies and Weights?}
 Much like when we compare evolving neural networks to standard reinforcement learning techniques, evolving network topologies often performs in a significantly superior manner to the alternative - in this case fixed topology neural network evolution\citep{EfficientEvolutionOfNeuralNetworkTopologies}. 
@@ -527,11 +529,11 @@ As Switch is largely down to luck like most (if not all) card games, there is ne
 
 \newpage
 \section{Rules of Switch}
-Before proceeding to discuss the inner workings of the digital version, it may help to explain how the game works physically.\\
+Before proceeding to discuss the inner workings of the digital version, it may help to explain how the game works physically.
 
 The objective of Switch is to be the first player to successfully empty their hand of cards, although the game can - and in this case does - continue until all players - except last place - has done so. Players are equally dealt a number of cards, before the card on top of the stack is turned over to reveal its type and suit. 
 
-The player left (or right if the upturned card was a Jack) of the dealer must then play a card which matches in either type or suit. An inability to do so results in the current player adding a new card from the top of the pack into their hand. The next player on the left must then do the same, and play continues in this vein.\\
+The player left (or right if the upturned card was a Jack) of the dealer must then play a card which matches in either type or suit. An inability to do so results in the current player adding a new card from the top of the pack into their hand. The next player on the left must then do the same, and play continues in this vein.
 
 Of course, there is more to it than that. Certain cards have rules attached to them. Not all of the rules played in real life are (fully) implemented into this project. To avoid confusion, only the rules associated with the project will be explained here; A more inclusive explanation can be seen on my website (Appendix E).\\
 
@@ -552,11 +554,11 @@ A Queen of either Clubs or Spades will result in the next player having to pick 
 
 
 \subsection{Language and Libraries}
-The software development language used to build this project is C++. It is used in collaboration with the NeuroEvolution of Augmenting Topologies (NEAT) library. In order to run the application, compatibility with C++11 is necessary of the user's chosen compiler, due to the use of shared pointers - a relatively modern development concept. \\
+The software development language used to build this project is C++. It is used in collaboration with the NeuroEvolution of Augmenting Topologies (NEAT) library. In order to run the application, compatibility with C++11 is necessary of the user's chosen compiler, due to the use of shared pointers - a relatively modern development concept. 
 
-When working with NEAT, documentation including a tutorial on how to write new experiments was observed. This file can be found as part of a download link as a PostScript (.ps) file. This, along with an alternative to view only this file as a Portable Document Format (.pdf) file, can be found in Appendix G.\\
+When working with NEAT, documentation including a tutorial on how to write new experiments was observed(Appendix G). 
 
-The graphical aspect of the game on show in figure 11 was implemented using an import of the Simple and Fast Multimedia Library (SFML), with playing card textures courtesy of Kenney Vleugels (Appendix F).\\
+The graphical aspect of the game on show in Figure 10 was implemented using an import of the Simple and Fast Multimedia Library (SFML), with playing card textures courtesy of Kenney Vleugels (Appendix F).\\
 
 \begin{figure}[h]
 	\centering
@@ -564,36 +566,37 @@ The graphical aspect of the game on show in figure 11 was implemented using an i
 	\caption{Game UI}
 \end{figure}
 
-
+\newpage
 \subsection{Design}
 %Design patterns / class diagrams and such for my code
 %An object oriented approach to the programming of this game made sense as the intention was to replicate a game that was physically played in the real world. Thinking of the digital version in the same way as the real world game 
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width = \textwidth]{ClassDiagram.jpg}
+	\includegraphics[width = \textwidth, height = 400pt]{ClassDiagram.jpg}
 	\caption{Game Class Diagram}
 \end{figure}
-Figure 12 helps to visualise the code structure behind the game, showing the five classes and their member functions. \\
+
+Figure 11 helps to visualise the code structure behind the game, showing the five classes and their member functions. 
 
 The Game Manager class is central, with its deck of cards object class on the right. For the sake space and readability, 105 card and texture objects have been omitted from the image. The specifics of what a card object is made up of can be seen on the far right. Also pictured, we see the ranking system and a look at the components of a player object.
 
-As seen in the diagram, the game management class is the hub that interacts with everything throughout each match. It is an integral part of the game operation, and needed to be reliable. For example, if a bug was existed where a second game manager was created with some functions referencing the first instance, and other methods using the second, then the game would jump around as the states of the two decks would be different. While this would most likely cause the program to crash anyway, it was good to know it was not going to happen when the class was converted to a singleton.\\
+As seen in the diagram, the game management class is the hub that interacts with everything throughout each match. It is an integral part of the game operation, and needed to be reliable. For example, if a bug was existed where a second game manager was created with some functions referencing the first instance, and other methods using the second, then the game would jump around as the states of the two decks would be different. While this would most likely cause the program to crash anyway, it was good to know it was not going to happen when the class was converted to a singleton.
 
-A singleton is a software engineering design pattern used to eliminate the risk of accidentally duplicating the existence of an object that is only meant to be instantiated once in an application\citep{31}. To achieve this, the function call whereby an object of this type would be created first checks to see if an instance already exists. If it does, then the function returns access to the existing version of the object. If the object instance is set to null, then it is yet to be created, and the creation process can then go ahead.\\
+A singleton is a software engineering design pattern used to eliminate the risk of accidentally duplicating the existence of an object that is only meant to be instantiated once in an application\citep{31}. To achieve this, the function call whereby an object of this type would be created first checks to see if an instance already exists. If it does, then the function returns access to the existing version of the object. If the object instance is set to null, then it is yet to be created, and the creation process can then go ahead.
 
-The singleton pattern was at one stage thought to be essential to the development of this project, but was later realised as slightly unnecessary. However, there is no harm in keeping it.\\
+The singleton pattern was at one stage thought to be essential to the development of this project, but was later realised as slightly unnecessary. However, there is no harm in keeping it.
 
 Player and card objects are used across multiple classes in the game code via the use of shared pointers. \enquote{The shared\_ptr type is a smart pointer in the C++ standard library that is designed for scenarios in which more than one owner might have to manage the lifetime of the object in memory\citep{sharedptr}.} Introduced in C++11, shared pointers are a relatively new concept, and so a modern compiler is required to execute the game. This created a few issues when interfacing with the NEAT library, whose code was written over fifteen years ago. \\
 
 \subsection{Game}
 The game manager class creates a ranking system, and a deck of cards. The ranking class is very simple. It is merely an external object to keep track of the scoreboard, by storing the players that have successfully got out of the game. It is also used to check if the game is over. The class method is passed a value describing the amount of players that started the game, which it then compares to the count of players currently in its scoreboard. If the difference between the two values leaves a single player alone in the game, then the game is over, and that player is also added to the scoreboard in last place. This scoreboard is then displayed on screen in the console, and printed to file.
 
-The deck creates and stores all of the card objects, and is responsible for their textures and positions on screen, and is also the class responsible for keeping track of the stack and last played card. The game manager carries out some tasks via the deck object too. These methods did not necessarily need to be in the deck object; It was just easier to keep card and deck related methods together when developing the system. The most important example of this is the deal method, used for distributing the cards to the players at the beginning of a game.\\
+The deck creates and stores all of the card objects, and is responsible for their textures and positions on screen, and is also the class responsible for keeping track of the stack and last played card. The game manager carries out some tasks via the deck object too. These methods did not necessarily need to be in the deck object; Having them there just made it simpler to keep card and deck related methods together when developing the system. The most important example of this is the deal method, used for distributing the cards to the players at the beginning of a game.
 
 Game.h, the main file used to run games, is where the game manager is created. Once it has been instantiated, the game class then gets the game manager to create the players and set their names and play-styles, before then dealing the cards. Once the cards have been dished out and the first card to be played on is known, the program enters the game loop. Once in this phase of the application, the same segment of code is repeatedly executed until the game-over criteria of the ranking system has been reached. 
 
-The loop contains conditional statements used to determine which type (play-style) of player the current turn belongs to. Then the system will check whether or not the current player can legally play a card. If not, the player will have to pick up, and non-human players will automatically do so. Otherwise, play-style specific mechanics are in place for moves to be made. Each time a move is made or a card is picked up, the game manager ends the turn of that player and moves on to the next, making a quick call to the scoreboard to ensure that the game is not yet complete, before the game class returns to the beginning of the loop. When that game-over check returns a positive result, the loop is broken and the game is terminated; returning the fitness of any existing neural players to the NEAT code.\\
+The loop contains conditional statements used to determine which type (play-style) of player the current turn belongs to. Then the system will check whether or not the current player can legally play a card. If not, the player will have to pick up, and non-human players will automatically do so. Otherwise, play-style specific mechanics are in place for moves to be made. Each time a move is made or a card is picked up, the game manager ends the turn of that player and moves on to the next, making a quick call to the scoreboard to ensure that the game is not yet complete, before the game class returns to the beginning of the loop. When that game-over check returns a positive result, the loop is broken and the game is terminated; returning the fitness of any existing neural players to the NEAT code.
 
 An issue that arose when the game was hooked up to the NEAT library was that the random function used to shuffle the cards before dealing is not does not produce authentic random results. The generator is seeded by the current time at which it is called, down to the present second. When the graphical aspect of the game was removed, the need for a pause between each play to allow the user to see what happened went with it, and what remained was a very fast, console-based application. So fast, in fact, several tens of games can be completed in a single second. This presents a problem as the pseudo-random dealing of cards is seeded to a single second. Thus, any games sharing a second of time when cards are dealt consequentially result in the players receiving exactly the same first hand, and the same first card to play on top of. It is highly probable that these games should result in the same outcome. 
 
@@ -603,13 +606,13 @@ In a way, this makes judgement of generational results slightly less harsh, as s
 
 
 \subsection{Neural Network}
-Whilst a possibility, building a neural network from scratch was an option that was given little consideration due to the lack of knowledge in the field already evident at the beginning of the project. Using pre-built and thoroughly documented software allowed for more time to be allocated to the development of the game structure, and experimenting with neuro-evolution techniques more freely. The project was intended to be primarily about developing the game and analysing results obtained by evolving a neural network over a significant number of games. \\
+Whilst a possibility, building a neural network from scratch was an option that was given little consideration due to the lack of knowledge in the field already evident at the beginning of the project. Using pre-built and thoroughly documented software allowed for more time to be allocated to the development of the game structure, and experimenting with neuro-evolution techniques more freely. The project was intended to be primarily about developing the game and analysing results obtained by evolving a neural network over a significant number of games. 
 
 In early stages of development, it was thought that there would be a long period where the network would have to learn how to play the game. With this, it was suspected that a means to recognise and punish illegal move attempts. However, an alternative was implemented. Each time the game loops back around to the Neural player's turn, the entire first layer of input nodes is reset to -10, before then stepping through their hand one card at a time, calling a method in the game manager class to determine whether or not the current card is playable against the most recently played card. Assigning a value of 1 to the corresponding node for cards that receive a positive response from the legality-checking function in this manner then allows the network to choose from the set of cards it is allowed to play.
 
 The network then runs through all of the output nodes, seeking the node with the greatest activation. Once this node has been discovered, a large switch case function is in place to actually make the move for the network, using the card that relates to the most activated output node. 
 
-If unable to play due to having no playable cards available, the Neural player will automatically pick up a card without bothering the network.\\
+If unable to play due to having no playable cards available, the Neural player will automatically pick up a card without bothering the network.
 
 Creating the network for this project was a straightforward procedure of setting 52 input nodes, and 52 output nodes. Each card in the deck corresponds to one of each node type. Node 1 relates to the Ace of Clubs, and so does node 53 (the first output node). 
 
@@ -621,8 +624,11 @@ Creating the network for this project was a straightforward procedure of setting
 	\caption{NeuroSwitch.ne}
 \end{figure}
 
-Figure 13 contains the variables available to be tampered with when using NEAT. The library reads this file in, and uses it to evolve the neural network as experiments are executed. 
+Figure 12 contains the variables available to be tampered with when using NEAT. The library reads this file in, and uses it to evolve the neural network as experiments are executed. 
 
+As NEAT takes care of the reproduction work, this input file is as close as the project got to that level. The \enquote{survival\_thresh} variable relates to the fitness function in the upcoming subsection, and \enquote{pop\_size} is how many members are in the population. Setting \enquote{mutate\_add\_node\_prob} to 0 ensured that the network structure remained the same, as having more input or output nodes than cards would have the potential to break the game. 
+
+Most of the other variables can be used to experiment with the evolution of the population. 
 
 
 \newpage
@@ -638,11 +644,11 @@ In the end, fitness was simply evaluated in a binary fashion; Win or loss. The s
 \newpage
 \section{Results}
 %Hardcoded stuff\\\\
-When the underlying game foundation had been built, it only allowed for human vs human interaction. This meant testing was not only very click-intensive, but also extremely time consuming. As a result, some automatic playability was implemented to allow for speedy, hands-free testing. The automatic players were given hard-coded strategies for playing the game, aptly named, 'Aggressive,' 'Unaggressive,' and 'Random.' 
+When the underlying game foundation had been built, it only allowed for human vs human interaction. This meant testing was not only very click-intensive, but also extremely time consuming. As a result, some automatic playability was implemented to allow for speedy, hands-free testing. The automatic players were given hard-coded strategies for playing the game, aptly named, `Aggressive,' `Unaggressive,' and `Random.' 
 
-The aggressive player will check their hand for cards that will inflict the most damage to their opponents, before just selecting the first legal card in the hand if none are available. Unaggressive does the opposite. It actively avoids playing twos, eights and black queens unless no other playable cards are contained in their hand. Random players will just shuffle their hand before choosing a playable card.\\
+The aggressive player will check their hand for cards that will inflict the most damage to their opponents, before just selecting the first legal card in the hand if none are available. Unaggressive does the opposite. It actively avoids playing twos, eights and black queens unless no other playable cards are contained in their hand. Random players will just shuffle their hand before choosing a playable card.
 
-Once the game had been thoroughly tested and all bugs eradicated, work on the final player type was to ready to be begin. Of course, the 'Neural' player was going to be playing against the hard-coded play-styles, as well as potentially facing humans in future. For this reason, a baseline of hard-coded performances was measured. The strategies were tested against one another in a one on one format, before a free for all between the three.\\
+Once the game had been thoroughly tested and all bugs eradicated, work on the final player type was to ready to be begin. Of course, the `Neural' player was going to be playing against the hard-coded play-styles, as well as potentially facing humans in future. For this reason, a baseline of hard-coded performances was measured. The strategies were tested against one another in a one on one format, before a free for all between the three.\\
 
 Below are a series of tables depicting the results of this testing.\\
 
@@ -682,7 +688,7 @@ Below are a series of tables depicting the results of this testing.\\
 \label{table:3}
 \end{table}
 
-As expected, the more attacking player had the most success. However, I was taken aback to discover it only won 55.2\% of 1000 games against the unaggressive player affectionately known as 'Passive Pete.' This was less surprising, though, than the difference between 'Angry Adalia' and 'Random Rachel!' I had predicted a landslide victory for aggressive, but had the random strategy won just a single game more, it would've been a tie over 1000 iterations. I think these results in particular are testament to the unpredictability of Switch. 
+As expected, the more attacking player had the most success. However, I was taken aback to discover it only won 55.2\% of 1000 games against the unaggressive player affectionately known as `Passive Pete.' This was less surprising than the difference between 	`Angry Adalia' and `Random Rachel' however. I had predicted a landslide victory for aggressive, but had the random strategy won just a single game more, it would have been a tie over 1000 iterations. I think these results in particular are testament to the unpredictability of Switch. 
 
 The remaining battle was between Random Rachel and Passive Pete. There is not a lot to be said about this. An unaggressive approach to the game is effectively allowing the opposition to play without being severely punished, and deserves to yield poor results. Similarly, the random approach is totally unpredictable, and so this contest could probably go either way if repeatedly tested.\\
 
@@ -702,7 +708,7 @@ Finally, the ultimate showdown; Aggressive vs Unaggressive vs Random.
 
 As the results show, the aggressive play-style is the most successful. However, the margin of victory was somewhat surprising.\\
 
-\subsection{Agent vs Hard-coded Strategy}
+\subsection{Network vs Hard-coded Strategy}
 The following tables show the average results of each generation performing against the stated hard-coded play-style. Each generation consists of the following:
 
 \begin{itemize}
@@ -711,7 +717,7 @@ The following tables show the average results of each generation performing agai
 	\item 1 run per member of population
 \end{itemize}
 
-Averages are contrived from 10 replicates of the same tests. \\\\
+Averages are calculated from 10 replicates of the same tests. \\\\
 
 \begin{small}
 	\textit{Tables show only the averages of every 5th generation to ensure only a single page of space is required. The full dataset is available on my website(Appendix E).}
@@ -982,7 +988,13 @@ The attacking nature of this opponent made it the most likely to hurt the networ
 \subsection{Deeper Examination}
 Graphing the average win rate merely shows that success fluctuates across the range, largely due to the stochastic nature of the card game at hand. 
 
-Using box charts to further investigate the results provides more interesting information about the games. However, while this new evaluative approach delves more into the success rate of generations, the set needed to be more sparse for the sake of graph readability. Thus, the generations are split quarterly to one hundred, including the first generation. \\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = \textwidth]{ComparisonLineGraph.png}
+	\caption{Neural vs Hard-Coded Comparison}
+\end{figure}
+
+Using box charts to further investigate the results provides more interesting information about the games. However, while this new evaluative approach delves more into the success rate of generations, the set needed to be more sparse for the sake of graph readability. Thus, the generations are split quarterly to one hundred, including the first generation. 
 
 The height of each box indicates the standard deviation of the corresponding generation. Simply put, standard deviation is a means of calculating the variance from the average across all of the values - in this case games won. The horizontal line across the boxes represent the (previously inspected) median, and the lines attached to the vertical line through the centre are error bars; Used to represent extremes and uncertainty of the dataset. The circles are the actual values.
 
@@ -1037,7 +1049,7 @@ Unsurprisingly, the stochastic nature of dealing cards in the beginning of games
 
 \newpage
 \subsection{Evolution | Mating vs Mutating}
-As seen in Figure 13, the NeuroEvolution input file had a \enquote{mate only probability} value of 0.2, and a \enquote{mutate only probability} of 0.25. These variables were experimented with in this subsection. Creating a 75\% to 25\% split in produced the following charts.  
+As seen in Figure 12, the NeuroEvolution input file had a \enquote{mate only probability} value of 0.2, and a \enquote{mutate only probability} of 0.25. These variables were experimented with in this subsection. Creating a 75\% to 25\% split in produced the following charts.  
 %\newpage
 \subsubsection{Comparison | Unaggressive}
 
@@ -1073,7 +1085,7 @@ Although nothing to do with the evolution, the first generation gathered results
 	\caption{Box Chart | Neural vs Aggressive | Mutation}
 \end{figure}
 
-Overall, neither mating nor mutation present themselves as the more suitable candidate for the primary method of evolution. Both are unfairly offset by the stochastic nature of the game, and are fighting a losing battle.\\
+Overall, neither mating nor mutation present themselves as the more suitable candidate for the primary method of evolution. Both are unfairly offset by the stochastic nature of the game, and are fighting a losing battle.
 
 Across the board, all presented results seem to perform to a mid-range rate of success; Even the hard-coded results are all have a winning score of just above 500 out of 1000. This suggests that regardless of the approach to the game, anyone can and will perform in to an average level.\\
 
@@ -1100,7 +1112,7 @@ Fortunately I have a Macbook, and was able to get the original version of NEAT t
 
 As a result of the switch of operating system, the graphics had to be removed. The library that had been used on Windows does have a Mac version, but enough time was being lost without having to rewrite that as well. Unfortunately this meant losing the functionality of human players too. The code for humans is still in the game, but they are now sadly obsolete. 
 
-This was hugely disappointing as I'd hoped to round up my friends from high school against whom I used to play Switch, and ask them to partake in surveys to use as extra results data. 
+This was hugely disappointing as I had hoped to round up my friends from high school against whom I used to play Switch, and ask them to partake in surveys to use as extra results data. 
 
 \newpage
 \subsection{Project Management}
@@ -1118,7 +1130,7 @@ At the beginning of the project, a draft timeline was produced. This would alway
 %	\caption{Updated Gantt Chart - New Year}
 %\end{figure}
 
-The research phase of the project ran a little over the initial prediction, but as it ran concurrently with game development, I was able to recover without any early knock-on effects. The foundation of my card game had always been targeted for completion by Christmas - and the final bug was crushed in the small hours of the morning on boxing day. 
+The research phase of the project ran a little over the initial prediction, but as it ran concurrently with game development, I was able to recover without any early knock-on effects. The foundation of my card game had always been targeted for completion by Christmas - and the final bug was crushed in the small hours of the morning on December 26th. 
 
 %\begin{figure}[h]
 %	\centering
@@ -1132,12 +1144,12 @@ The research phase of the project ran a little over the initial prediction, but 
 	\caption{Complete Project Gantt Chart}
 \end{figure}
 
-AI implementation took far longer than anticipated due to an unprecedented amount of unforseen issues, and so the final two stages had to be re-evaluated for the final stretch. As a result, these were forced to be completed semi-synergistically.\\
+AI implementation took far longer than anticipated due to an unprecedented amount of unforseen issues, and so the final two stages had to be re-evaluated for the final stretch. As a result, these were forced to be completed semi-synergistically.
 
 Despite a much less comfortable closing stage than hoped for, experimentation and evaluation did not suffer to a severe extent.\\
 
 \subsection{Future Work}
-I intend to revive the human players by re-introducing SFML, this time with the Mac version. I may also tackle WindowsNEAT again in a bid to make the project accessible on both systems.\\
+I intend to revive the human players by re-introducing SFML, this time with the Mac version. I may also tackle WindowsNEAT again in a bid to make the project accessible on both systems.
 
 It would also be interesting to facilitate multiple neural players with their own networks.\\
 
@@ -1145,7 +1157,7 @@ It would also be interesting to facilitate multiple neural players with their ow
 \section{Conclusion}
 Switch is not a game that can be mastered. Players can develop their attitude and methods of play but there is no reliable formula for success, and the hard-coded data proves this. When aggressive and unaggressive play-styles square off, the attacking strategy should theoretically perform extremely well, but the degree at which luck enters the equation means that this is far from the case. No matter how many experiments and generations of tests are carried out, the network is never going to be able to defeat a Switch champion, as such a being does not exist. 
 
-Realistically speaking, the average performance of neural players is akin to that of a human player. Of course, a human that knows the rules well will be able to exercise caution in certain scenarios that the network would not recognise as a potential pitfall, such as choosing to play a Queen of Hearts first when down to two cards and another Heart could've been played first. A human may be aware that they have not seen any black Queens for a while and be wary of allowing one to be played against themselves by selecting their red Queen, whereas the network will not have this kind of information. Or similarly, if all three other Queens have recently been played, playing the Queen of Hearts would guarantee that the opponent has to either pick up or play another Heart, allowing the last card to be played and claim victory. 
+Realistically speaking, the average performance of neural players is akin to that of a human player. Of course, a human that knows the rules well will be able to exercise caution in certain scenarios that the network would not recognise as a potential pitfall, such as choosing to play a Queen of Hearts first when down to two cards and another Heart could have been played first. A human may be aware that they have not seen any black Queens for a while and be wary of allowing one to be played against themselves by selecting their red Queen, whereas the network will not have this kind of information. Or similarly, if all three other Queens have recently been played, playing the Queen of Hearts would guarantee that the opponent has to either pick up or play another Heart, allowing the last card to be played and claim victory. 
 
 Even if allowed to play through every possible permutation of game states repeatedly, it would still be impossible to master the game because there is no way of knowing what the game state is! The only knowledge available is the last card, and the contents of your hand. Thus, it is virtually impossible to truly evaluate effectiveness of the evolution at play throughout the project, as there is no benchmark for what a \textit{good} level entails. 
 
@@ -1176,7 +1188,7 @@ Even if allowed to play through every possible permutation of game states repeat
 The idea is to implement a card game with four players. One of the players is the human, another is an AI agent that has no idea how to play the game, and the other two are hard-coded to know the rules and how to play. The intention is for said card game to be Switch, however this is subject to change if the rules are found to be too difficult for the scale of the project – in which case a simpler game will be substituted in.
 
 
-The agent then learns how to play by trying to make moves based on neural networks. Initially this will be totally random but after the first generation of the algorithm cycle, it will be based on the chromosomes with the highest fitness, which should then begin to provide better results. These moves can be blocked if they are not legal. There'll be a scoring system for the agent that will be negatively affected by illegal moves and it will then use this to learn how to do better the next time it plays. The scoring system will also see the agent penalised for losing or not winning. This will be what our fitness is based on. 
+The agent then learns how to play by trying to make moves based on neural networks. Initially this will be totally random but after the first generation of the algorithm cycle, it will be based on the chromosomes with the highest fitness, which should then begin to provide better results. These moves can be blocked if they are not legal. There will be a scoring system for the agent that will be negatively affected by illegal moves and it will then use this to learn how to do better the next time it plays. The scoring system will also see the agent penalised for losing or not winning. This will be what our fitness is based on. 
 
 
 It is worth noting that how successful you are in a game of Switch depends entirely on the hand you’re dealt, and how your opponents play the hands they are dealt. A lot of the game is about luck, and so negatively affecting the agent’s score should take this into account and deploy some leniency. 

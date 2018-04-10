@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -114,7 +114,7 @@ Simon~M. Lucas.
 
 \bibitem[Microsoft()]{sharedptr}
 Microsoft.
-\newblock How to: {C}reate and {U}se shared$\_$ptr {I}nstances.
+\newblock How to: {C}reate and {U}se shared\_ptr {I}nstances.
 \newblock URL \url{https://msdn.microsoft.com/en-us/library/hh279669.aspx}.
 
 \bibitem[Nelson(2016)]{27}
@@ -204,6 +204,18 @@ Tomek{\ }S.
 \newblock Evolution of {N}eural {N}etworks {U}sing {G}enetic {A}lgorithm for a
   3{D} {C}ar made in {U}nity, 2017.
 \newblock URL \url{https://www.youtube.com/watch?v=8V2sX9BhAW8}.
+
+\bibitem[tutorialspoint({\natexlab{a}})]{crossover}
+tutorialspoint.
+\newblock Genetic {A}lgorithms - {C}rossover, {\natexlab{a}}.
+\newblock URL
+  \url{https://www.tutorialspoint.com/genetic\_algorithms/genetic\_algorithms\_crossover.htm}.
+
+\bibitem[tutorialspoint({\natexlab{b}})]{mutation}
+tutorialspoint.
+\newblock Genetic {A}lgorithms - {M}utation, {\natexlab{b}}.
+\newblock URL
+  \url{https://www.tutorialspoint.com/genetic\_algorithms/genetic\_algorithms\_mutation.htm}.
 
 \bibitem[Wang(2003)]{ArtificialNeuralNetwork}
 Sun-Chong Wang.

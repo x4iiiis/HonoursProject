@@ -1,9 +1,9 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}1.2 - Aims and Objectives}{1}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}1.3 - Scope}{1}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}1.4 - Constraints}{1}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}1.5 - Sources of Information}{1}{subsection.1.4}
-\contentsline {subsection}{\numberline {1.5}1.6 - Dissertation Structure}{2}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.1}Aims and Objectives}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scope}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Constraints}{1}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Sources of Information}{1}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Dissertation Structure}{2}{subsection.1.5}
 \contentsline {subsection}{\numberline {1.6}Overview Of Project Content and Milestones}{2}{subsection.1.6}
 \contentsline {subsubsection}{\numberline {1.6.1}Research}{2}{subsubsection.1.6.1}
 \contentsline {subsubsection}{\numberline {1.6.2}Game Foundation}{2}{subsubsection.1.6.2}
@@ -24,36 +24,36 @@
 \contentsline {subsubsection}{\numberline {2.4.5}Crossover}{9}{subsubsection.2.4.5}
 \contentsline {subsubsection}{\numberline {2.4.6}Mutation}{10}{subsubsection.2.4.6}
 \contentsline {subsubsection}{\numberline {2.4.7}Replacement}{11}{subsubsection.2.4.7}
-\contentsline {subsection}{\numberline {2.5}NeuroEvolution for Augmenting Topologies (NEAT)}{11}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.5}NeuroEvolution for Augmenting Topologies (NEAT)}{12}{subsection.2.5}
 \contentsline {section}{\numberline {3}Literature Review}{13}{section.3}
 \contentsline {subsection}{\numberline {3.1}AI for Playing Games}{13}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Why Neural Networks?}{15}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Why Evolve Neural Networks?}{17}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Why Co-Evolve Topologies and Weights?}{18}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Summary}{18}{subsection.3.5}
-\contentsline {section}{\numberline {4}Rules of Switch}{20}{section.4}
-\contentsline {section}{\numberline {5}Methodology}{21}{section.5}
-\contentsline {subsection}{\numberline {5.1}Language and Libraries}{21}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Design}{22}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Game}{23}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Neural Network}{25}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Evolutionary Algorithm}{27}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Fitness Evaluation}{28}{subsection.5.6}
-\contentsline {section}{\numberline {6}Results}{29}{section.6}
-\contentsline {subsection}{\numberline {6.1}Agent vs Hard-coded Strategy}{30}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}Neural vs Unaggressive}{31}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}Neural vs Random}{32}{subsubsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.3}Neural vs Aggressive}{34}{subsubsection.6.1.3}
-\contentsline {subsection}{\numberline {6.2}Deeper Examination}{35}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Evolution | Mating vs Mutating}{38}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Comparison | Unaggressive}{38}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Comparison | Aggressive}{39}{subsubsection.6.3.2}
-\contentsline {subsection}{\numberline {6.4}External Comparisons}{40}{subsection.6.4}
-\contentsline {section}{\numberline {7}Critical Evaluation}{42}{section.7}
-\contentsline {subsection}{\numberline {7.1}Achievements vs Objectives}{42}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Project Management}{43}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Future Work}{44}{subsection.7.3}
-\contentsline {section}{\numberline {8}Conclusion}{45}{section.8}
+\contentsline {section}{\numberline {4}Rules of Switch}{19}{section.4}
+\contentsline {section}{\numberline {5}Methodology}{20}{section.5}
+\contentsline {subsection}{\numberline {5.1}Language and Libraries}{20}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Design}{21}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Game}{22}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Neural Network}{24}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Evolutionary Algorithm}{25}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Fitness Evaluation}{26}{subsection.5.6}
+\contentsline {section}{\numberline {6}Results}{27}{section.6}
+\contentsline {subsection}{\numberline {6.1}Network vs Hard-coded Strategy}{28}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Neural vs Unaggressive}{29}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Neural vs Random}{30}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}Neural vs Aggressive}{32}{subsubsection.6.1.3}
+\contentsline {subsection}{\numberline {6.2}Deeper Examination}{33}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Evolution | Mating vs Mutating}{37}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Comparison | Unaggressive}{37}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Comparison | Aggressive}{38}{subsubsection.6.3.2}
+\contentsline {subsection}{\numberline {6.4}External Comparisons}{39}{subsection.6.4}
+\contentsline {section}{\numberline {7}Critical Evaluation}{41}{section.7}
+\contentsline {subsection}{\numberline {7.1}Achievements vs Objectives}{41}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Project Management}{42}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Future Work}{43}{subsection.7.3}
+\contentsline {section}{\numberline {8}Conclusion}{44}{section.8}
 \contentsline {section}{Appendices}{}{section*.41}
 \contentsline {section}{\numberline {A}Project Overview}{}{Appendix.a.A}
 \contentsline {section}{\numberline {B}Second Formal Review Output}{}{Appendix.a.B}

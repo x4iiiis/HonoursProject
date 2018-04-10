@@ -28,45 +28,47 @@ Warning--empty year in 23
 Warning--empty year in SFML
 Warning--empty year in 21
 Warning--empty year in 31
-You've used 33 entries,
+Warning--empty year in crossover
+Warning--empty year in mutation
+You've used 35 entries,
             2773 wiz_defined-function locations,
-            741 strings with 10473 characters,
-and the built_in function-call counts, 13942 in all, are:
-= -- 1102
-> -- 1043
-< -- 27
-+ -- 365
-- -- 330
-* -- 1039
-:= -- 2248
-add.period$ -- 101
-call.type$ -- 33
-change.case$ -- 206
-chr.to.int$ -- 31
-cite$ -- 85
-duplicate$ -- 569
-empty$ -- 1045
-format.name$ -- 371
-if$ -- 2822
-int.to.chr$ -- 3
+            748 strings with 10740 characters,
+and the built_in function-call counts, 14546 in all, are:
+= -- 1154
+> -- 1063
+< -- 29
++ -- 374
+- -- 336
+* -- 1075
+:= -- 2338
+add.period$ -- 107
+call.type$ -- 35
+change.case$ -- 214
+chr.to.int$ -- 32
+cite$ -- 91
+duplicate$ -- 599
+empty$ -- 1109
+format.name$ -- 379
+if$ -- 2950
+int.to.chr$ -- 4
 int.to.str$ -- 1
 missing$ -- 19
-newline$ -- 175
-num.names$ -- 132
-pop$ -- 523
+newline$ -- 185
+num.names$ -- 140
+pop$ -- 547
 preamble$ -- 1
-purify$ -- 176
+purify$ -- 182
 quote$ -- 0
-skip$ -- 513
+skip$ -- 538
 stack$ -- 0
-substring$ -- 85
-swap$ -- 34
+substring$ -- 89
+swap$ -- 38
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 348
-warning$ -- 19
-while$ -- 101
+type$ -- 370
+warning$ -- 21
+while$ -- 107
 width$ -- 0
-write$ -- 395
+write$ -- 419
 (There was 1 error message)
